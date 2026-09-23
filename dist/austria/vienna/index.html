@@ -54,15 +54,21 @@
     .toast{position:fixed;left:50%;bottom:22px;transform:translate(-50%,120px);background:#000000;color:white;padding:12px 18px;border-radius:99px;font-weight:600;box-shadow:var(--shadow);transition:.3s;z-index:5}.toast.show{transform:translate(-50%,0)}
     @media(max-width:600px){.hero{padding-top:38px}.wrap{width:min(100% - 22px,920px)}.day{padding:19px 15px;border-radius:18px}.day-head{grid-template-columns:auto 1fr}.day-count{grid-column:2}.number{width:47px;height:47px}.actions{align-items:stretch;flex-direction:column}.actions button{width:100%}}
     @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+    .hero .fn-vienna-hero-grid{width:min(1176px,calc(100% - 32px));display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:64px;align-items:center}
+    .fn-vienna-hero-photo{margin:0 10px 12px 0;padding:10px;background:#E4F5E0;box-shadow:10px 10px 0 #000;transform:rotate(1deg)}
+    .fn-vienna-hero-photo img{display:block;width:100%;height:auto;max-height:480px;object-fit:cover;object-position:center 58%}
+    @media(max-width:760px){.hero .fn-vienna-hero-grid{grid-template-columns:1fr;gap:30px;width:100%}.fn-vienna-hero-photo{width:calc(100% - 10px);max-width:380px;justify-self:center;transform:none}.fn-vienna-hero-photo img{max-height:400px}.fn-vienna-hero-copy{min-width:0}}
   </style>
 <link rel="stylesheet" href="/assets/shared.css?v=4"><link rel="icon" href="/assets/favicon.svg"><script src="/assets/maps.js?v=2" defer></script></head>
 <body class="fn-vienna"><a class="fn-skip" href="#content">Skip to content</a><header class="fn-header"><a class="fn-logo" href="/">Frolicking <em>Nicky</em><span>A TRAVEL JOURNAL BY NICOLE MARIA PEZZA</span></a><nav aria-label="Main navigation" class="fn-nav"><a href="/my-travels">My travels</a><a href="/about">About me</a></nav></header><div class="fn-breadcrumb" id="content"><a href="/my-travels">My travels</a> / Austria / Vienna</div>
   <header class="hero">
-    <div class="wrap">
-      <div class="eyebrow">A relaxed city plan</div>
+    <div class="wrap fn-vienna-hero-grid">
+      <div class="fn-vienna-hero-copy"><div class="eyebrow">A relaxed city plan</div>
       <h1>Four days<br><em>in Vienna</em></h1>
       <p class="subtitle">Imperial rooms, Klimt, neighbourhood wandering and a wine-tavern finale. Tick things off as you go—your progress is saved automatically.</p>
       <p id="save-status" role="status">Your progress is saved on this device.</p><div class="progress-shell"><div class="progress-track" role="progressbar" aria-label="Overall progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="progress-bar"></div></div><div class="progress-text">0%</div></div>
+      </div>
+      <figure class="fn-vienna-hero-photo"><img src="/assets/vienna-church.jpeg" alt="A church interior in Vienna, with Gothic arches, chandeliers and a carved stone staircase" width="1200" height="1600" fetchpriority="high"></figure>
     </div>
   </header>
   <div class="wrap">
