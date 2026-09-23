@@ -1,0 +1,20 @@
+[
+  {
+    "country": "Austria",
+    "city": "Vienna",
+    "length": "4 days",
+    "url": "/austria/vienna",
+    "image": "vienna.jpg",
+    "alt": "Vienna rooftops seen from St Stephen’s Cathedral",
+    "desc": "Imperial rooms, Klimt, coffee-house pauses and a wine-tavern finale."
+  },
+  {
+    "country": "Mexico",
+    "city": "Mexico City",
+    "length": "2 weeks · flexible",
+    "url": "/mexico/mexico-city",
+    "image": "bellas-artes.jpg",
+    "alt": "The Palacio de Bellas Artes and its golden dome in Mexico City",
+    "desc": "Slow afternoons, neighbourhood wandering, good food and two Saturday adventures."
+  }
+]

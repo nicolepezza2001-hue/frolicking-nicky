@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#a53b34">
+  <title>Four days in Vienna — Frolicking Nicky</title>
+  <meta name="description" content="A relaxed four-day Vienna itinerary with a checklist that remembers your progress.">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,600&display=swap');
+    :root{--paper:#f4efe5;--ink:#26221e;--muted:#6f675f;--wine:#9d3934;--wine-dark:#762721;--gold:#d5a647;--card:#fffdf8;--line:#ddd2c1;--green:#3f6d59;--shadow:0 12px 35px rgba(74,49,31,.09)}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans",sans-serif;background-image:radial-gradient(#c8bda9 0.7px,transparent 0.7px);background-size:18px 18px}
+    .hero{background:var(--wine);color:white;padding:52px 22px 38px;position:relative;overflow:hidden}
+    .hero:after{content:"V";position:absolute;right:-12px;top:-82px;font:700 270px/1 "Playfair Display",serif;color:rgba(255,255,255,.055);transform:rotate(7deg)}
+    .wrap{width:min(920px,calc(100% - 32px));margin:auto;position:relative;z-index:1}
+    .eyebrow{text-transform:uppercase;letter-spacing:.17em;font-size:.74rem;font-weight:700;color:#f5d78d;margin-bottom:10px}
+    h1{font:700 clamp(2.6rem,8vw,5rem)/.95 "Playfair Display",serif;margin:0;max-width:650px}
+    .subtitle{max-width:590px;font-size:1.03rem;line-height:1.55;margin:20px 0 28px;color:#f2ddd9}
+    .progress-shell{display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center;max-width:620px}
+    .progress-track{height:11px;border-radius:99px;background:rgba(255,255,255,.22);overflow:hidden}
+    .progress-bar{height:100%;width:0;background:var(--gold);border-radius:inherit;transition:width .35s ease}
+    .progress-text{font-weight:700;min-width:46px;text-align:right}
+    nav{display:flex;gap:8px;overflow:auto;padding:18px 0 5px;scrollbar-width:none}
+    nav a{white-space:nowrap;text-decoration:none;color:var(--ink);background:rgba(255,255,255,.62);border:1px solid var(--line);padding:9px 14px;border-radius:99px;font-weight:600;font-size:.88rem}
+    main{padding:23px 0 62px}
+    .day{background:var(--card);border:1px solid var(--line);border-radius:22px;margin:18px 0;padding:24px;box-shadow:var(--shadow);scroll-margin-top:12px}
+    .day-head{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:14px;padding-bottom:18px;border-bottom:1px solid var(--line)}
+    .number{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;background:var(--wine);color:#fff;font:700 1.7rem "Playfair Display",serif}
+    h2{font:700 clamp(1.45rem,5vw,2rem)/1.1 "Playfair Display",serif;margin:0}
+    .day-theme{margin:5px 0 0;color:var(--muted);font-size:.88rem}
+    .day-count{font-size:.8rem;font-weight:700;color:var(--wine);background:#f5e3de;padding:7px 9px;border-radius:99px}
+    .period{margin-top:23px}
+    h3{font-size:.72rem;letter-spacing:.15em;text-transform:uppercase;color:var(--wine);margin:0 0 8px}
+    label.item{display:grid;grid-template-columns:26px 1fr;gap:10px;padding:10px 6px;border-radius:10px;cursor:pointer;transition:.18s;background:transparent}
+    label.item:hover{background:#f7f0e6}
+    input[type=checkbox]{appearance:none;width:22px;height:22px;border:2px solid #b9aa96;border-radius:7px;margin:0;display:grid;place-items:center;background:white;transition:.18s}
+    input[type=checkbox]:checked{background:var(--green);border-color:var(--green)}
+    input[type=checkbox]:checked:after{content:"✓";color:white;font-size:15px;font-weight:700}
+    input:checked+.copy{text-decoration:line-through;color:#928a81}
+    .copy{line-height:1.42}
+    .copy strong{font-weight:700}
+    .detail{display:block;color:var(--muted);font-size:.84rem;margin-top:3px;text-decoration:none!important}
+    .tip{margin:18px 0 0;padding:14px 15px;border-left:3px solid var(--gold);background:#fbf3df;border-radius:0 10px 10px 0;color:#62513b;font-size:.88rem;line-height:1.45}
+    .actions{display:flex;justify-content:space-between;gap:10px;align-items:center;margin-top:25px}
+    button{border:0;border-radius:99px;padding:11px 17px;font:700 .86rem "DM Sans";cursor:pointer}
+    .complete{background:var(--wine);color:white}.complete:hover{background:var(--wine-dark)}
+    .reset{background:transparent;color:var(--muted);border:1px solid var(--line)}
+    .practical{background:#282522;color:#fff;border-radius:22px;padding:25px;margin-top:24px}
+    .practical h2{color:#fff}.practical p{color:#d7cec4;line-height:1.55}
+    .chips{display:flex;gap:8px;flex-wrap:wrap}.chip{background:#3b3733;padding:8px 11px;border-radius:9px;font-size:.82rem;color:#eee5db}
+    footer{text-align:center;color:var(--muted);font-size:.78rem;padding:0 20px 35px}
+    .toast{position:fixed;left:50%;bottom:22px;transform:translate(-50%,120px);background:#26221e;color:white;padding:12px 18px;border-radius:99px;font-weight:600;box-shadow:var(--shadow);transition:.3s;z-index:5}.toast.show{transform:translate(-50%,0)}
+    @media(max-width:600px){.hero{padding-top:38px}.wrap{width:min(100% - 22px,920px)}.day{padding:19px 15px;border-radius:18px}.day-head{grid-template-columns:auto 1fr}.day-count{grid-column:2}.number{width:47px;height:47px}.actions{align-items:stretch;flex-direction:column}.actions button{width:100%}}
+    @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+  </style>
+<link rel="stylesheet" href="/assets/shared.css"><link rel="icon" href="/assets/favicon.svg"></head>
+<body class="fn-vienna"><a class="fn-skip" href="#content">Skip to content</a><header class="fn-header"><a class="fn-logo" href="/">Frolicking <em>Nicky</em><span>A TRAVEL JOURNAL BY NICOLE MARIA PEZZA</span></a><nav aria-label="Main navigation" class="fn-nav"><a href="/my-travels">My travels</a><a href="/about">About me</a></nav></header><div class="fn-breadcrumb" id="content"><a href="/my-travels">My travels</a> / Austria / Vienna</div>
+  <header class="hero">
+    <div class="wrap">
+      <div class="eyebrow">A relaxed city plan</div>
+      <h1>Four days<br><em>in Vienna</em></h1>
+      <p class="subtitle">Imperial rooms, Klimt, neighbourhood wandering and a wine-tavern finale. Tick things off as you go—your progress is saved automatically.</p>
+      <p id="save-status" role="status">Your progress is saved on this device.</p><div class="progress-shell"><div class="progress-track" role="progressbar" aria-label="Overall progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="progress-bar"></div></div><div class="progress-text">0%</div></div>
+    </div>
+  </header>
+  <div class="wrap">
+    <nav aria-label="Jump to a day"><a href="#day1">Day 1 · Centre</a><a href="#day2">Day 2 · Schönbrunn</a><a href="#day3">Day 3 · Art</a><a href="#day4">Day 4 · Prater & wine</a></nav>
+    <main id="itinerary"></main>
+    <section class="practical">
+      <h2>Before you go</h2>
+      <p>Book the timed-entry attractions and any evening performance first. Everything else can stay flexible around weather and energy levels.</p>
+      <div class="chips"><span class="chip">Book Schönbrunn</span><span class="chip">Book Upper Belvedere</span><span class="chip">Choose one big museum</span><span class="chip">Check opera & concert programmes</span><span class="chip">Wear comfortable shoes</span></div>
+      <div class="actions"><button class="complete" id="checkAll">Tick everything</button><button class="reset" id="reset">Reset checklist</button></div>
+    </section>
+  </div>
+  <div class="toast" role="status" aria-live="polite">Progress saved ✓</div>
+  <footer>Made for slow wandering, excellent cake and minimal palace fatigue.</footer>
+  <script>
+    const days=[
+      {title:'Historic Vienna',theme:'Old streets, imperial Vienna & coffee',periods:[
+        ['Morning',[['St Stephen’s Cathedral','See the nave, then choose either the tower or catacombs.'],['Graben and Kohlmarkt','Walk from Stephansplatz towards Michaelerplatz.'],['Austrian National Library','Visit the spectacular State Hall.'],['Hofburg courtyards','Continue through Heldenplatz and Volksgarten.']]],
+        ['Afternoon',[['Lunch at a Viennese Beisl','Try Reinthaler’s Beisl or another traditional inn.'],['Walk the Ring','Parliament → Rathaus → Burgtheater → University → Votivkirche.'],['Coffee-house pause','Café Sperl, Jelinek or Kleines Café—no need to queue for Café Central.']]],
+        ['Evening',[['Dinner around Neubau or Spittelberg','A more relaxed atmosphere than the central tourist streets.'],['Opera, concert or theatre','Check the Staatsoper, Volksoper, Musikverein or Konzerthaus.']]]],tip:'If you enter Schönbrunn tomorrow, you can comfortably skip the Hofburg’s paid imperial apartments today.'},
+      {title:'Schönbrunn & Neubau',theme:'Palace gardens, design and local streets',periods:[
+        ['Morning',[['Schönbrunn Palace','Use your timed ticket and allow 60–90 minutes inside.'],['Palace gardens','Walk past Neptune Fountain and climb to the Gloriette.']]],
+        ['Afternoon',[['Lunch away from the palace','Meidling or Mariahilf offer better-value choices.'],['Walk Mariahilfer Straße','Then leave the main shopping street for Neubaugasse.'],['Explore the 6th and 7th districts','Browse independent shops and the lanes around Spittelberg.'],['See some Otto Wagner architecture','Try the Karlsplatz pavilion or Majolikahaus.']]],
+        ['Evening',[['Traditional Austrian dinner','Try schnitzel, goulash, käsespätzle or tafelspitz.'],['Share a Kaiserschmarrn','The correct amount of torn pancake is always “too much.”']]]],tip:'Book the palace for the morning. The gardens are free, so you can take your time after the scheduled rooms.'},
+      {title:'Klimt & Grand Art',theme:'Belvedere, Naschmarkt and one serious museum',periods:[
+        ['Morning',[['Upper Belvedere','See Klimt’s The Kiss, Schiele and the palace rooms.'],['Belvedere gardens','Walk downhill rather than doubling back.'],['Karlskirche and Secession','Continue via Schwarzenbergplatz; enter only if they interest you.']]],
+        ['Afternoon',[['Lunch at Naschmarkt','Good for atmosphere; compare menus before choosing.'],['Choose one major museum','Kunsthistorisches for old masters; Leopold for Schiele/Klimt; Albertina for prints and modern art.'],['Explore MuseumsQuartier','Take a courtyard break after the museum.']]],
+        ['Evening',[['Dinner in the 7th district','Stay around Neubau for restaurants and bars.'],['Unscheduled wandering','Keep this evening loose—you will have absorbed a lot of art.']]]],tip:'My pick is the Kunsthistorisches Museum. Give it at least 2½ hours and stop before museum fatigue turns Bruegel into wallpaper.'},
+      {title:'Prater & Viennese Wine',theme:'Playful architecture, green space and a Heuriger',periods:[
+        ['Morning',[['Hundertwasserhaus','View the exterior and the neighbouring architecture.'],['Kunst Haus Wien','Go inside if you enjoy Hundertwasser’s anti-straight-line world.'],['Ride the Riesenrad','Best when the sky is clear.'],['Walk into the Green Prater','Continue beyond the amusement rides for quiet paths.']]],
+        ['Afternoon',[['Lunch near Karmelitermarkt','Then wander the quieter streets of Leopoldstadt.'],['Danube Canal walk','Follow the water, murals and summer terraces.'],['Travel to Kahlenberg','Go via Nussdorf and enjoy the city view.']]],
+        ['Evening',[['Dinner at a Heuriger','Choose Nussdorf, Grinzing or Neustift am Walde.'],['Try local wine','Order by the glass and pick food from the buffet.']]]],tip:'Nussdorf and Neustift tend to feel calmer. Grinzing is picturesque but has the most tour groups.'}
+    ];
+    const root=document.querySelector('#itinerary');let ix=0;
+    days.forEach((d,di)=>{const section=document.createElement('section');section.className='day';section.id='day'+(di+1);let body='';d.periods.forEach(([p,items])=>{body+=`<div class="period"><h3>${p}</h3>`;items.forEach(([name,detail])=>{const id='v'+ix++;body+=`<label class="item"><input type="checkbox" id="${id}"><span class="copy"><strong>${name}</strong><span class="detail">${detail}</span></span></label>`});body+='</div>'});section.innerHTML=`<div class="day-head"><div class="number">${di+1}</div><div><h2>${d.title}</h2><p class="day-theme">${d.theme}</p></div><span class="day-count">0/${d.periods.flatMap(x=>x[1]).length}</span></div>${body}<div class="tip"><strong>Nicole’s note:</strong> ${d.tip}</div>`;root.append(section)});
+    const boxes=[...document.querySelectorAll('input[type=checkbox]')];const key='frolicking-nicky-vienna-v1';
+    function save(show=true){try{localStorage.setItem(key,JSON.stringify(boxes.map(b=>b.checked)));document.querySelector("#save-status").textContent="Your progress is saved on this device."}catch{document.querySelector("#save-status").textContent="Saving is unavailable in this browser; ticks work until you leave."}update();if(show&&document.querySelector("#save-status").textContent.startsWith("Your")){const t=document.querySelector('.toast');t.classList.add('show');clearTimeout(window.toastTimer);window.toastTimer=setTimeout(()=>t.classList.remove('show'),1100)}}
+    function update(){const done=boxes.filter(b=>b.checked).length,p=Math.round(done/boxes.length*100);document.querySelector('.progress-bar').style.width=p+'%';document.querySelector('.progress-text').textContent=p+'%';document.querySelector('.progress-track').setAttribute('aria-valuenow',p);document.querySelectorAll('.day').forEach(day=>{const bs=[...day.querySelectorAll('input')];day.querySelector('.day-count').textContent=bs.filter(b=>b.checked).length+'/'+bs.length})}
+    try{const state=JSON.parse(localStorage.getItem(key)||'[]');boxes.forEach((b,i)=>b.checked=Array.isArray(state)&&state[i]===true)}catch(e){document.querySelector("#save-status").textContent="Saving is unavailable in this browser; ticks work until you leave."}
+    boxes.forEach(b=>b.addEventListener('change',()=>save()));
+    document.querySelector('#checkAll').onclick=()=>{boxes.forEach(b=>b.checked=true);save()};
+    document.querySelector('#reset').onclick=()=>{if(confirm('Clear all your ticks and start again?')){boxes.forEach(b=>b.checked=false);save(false);update()}};
+    update();
+  </script>
+<footer class="fn-footer"><a class="fn-logo" href="/">Frolicking <em>Nicky</em></a><p>A little planning. Plenty of room to wander.</p><a href="/my-travels">Find your next itinerary ↗</a></footer></body>
+</html>
