@@ -3,21 +3,21 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#a53b34">
+  <meta name="theme-color" content="#86324A">
   <title>Four days in Vienna — Frolicking Nicky</title>
   <meta name="description" content="A relaxed four-day Vienna itinerary with a checklist that remembers your progress.">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,600&display=swap');
-    :root{--paper:#f4efe5;--ink:#26221e;--muted:#6f675f;--wine:#9d3934;--wine-dark:#762721;--gold:#d5a647;--card:#fffdf8;--line:#ddd2c1;--green:#3f6d59;--shadow:0 12px 35px rgba(74,49,31,.09)}
+    :root{--paper:#E4F5E0;--ink:#000000;--muted:#303030;--wine:#86324A;--wine-dark:#86324A;--gold:#E4F5E0;--card:#F5FBF3;--line:#00000030;--green:#86324A;--shadow:0 12px 35px rgba(74,49,31,.09)}
     *{box-sizing:border-box}
     html{scroll-behavior:smooth}
-    body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans",sans-serif;background-image:radial-gradient(#c8bda9 0.7px,transparent 0.7px);background-size:18px 18px}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans",sans-serif;background-image:radial-gradient(#00000030 0.7px,transparent 0.7px);background-size:18px 18px}
     .hero{background:var(--wine);color:white;padding:52px 22px 38px;position:relative;overflow:hidden}
     .hero:after{content:"V";position:absolute;right:-12px;top:-82px;font:700 270px/1 "Playfair Display",serif;color:rgba(255,255,255,.055);transform:rotate(7deg)}
     .wrap{width:min(920px,calc(100% - 32px));margin:auto;position:relative;z-index:1}
-    .eyebrow{text-transform:uppercase;letter-spacing:.17em;font-size:.74rem;font-weight:700;color:#f5d78d;margin-bottom:10px}
+    .eyebrow{text-transform:uppercase;letter-spacing:.17em;font-size:.74rem;font-weight:700;color:#E4F5E0;margin-bottom:10px}
     h1{font:700 clamp(2.6rem,8vw,5rem)/.95 "Playfair Display",serif;margin:0;max-width:650px}
-    .subtitle{max-width:590px;font-size:1.03rem;line-height:1.55;margin:20px 0 28px;color:#f2ddd9}
+    .subtitle{max-width:590px;font-size:1.03rem;line-height:1.55;margin:20px 0 28px;color:#E4F5E0}
     .progress-shell{display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center;max-width:620px}
     .progress-track{height:11px;border-radius:99px;background:rgba(255,255,255,.22);overflow:hidden}
     .progress-bar{height:100%;width:0;background:var(--gold);border-radius:inherit;transition:width .35s ease}
@@ -27,35 +27,35 @@
     main{padding:23px 0 62px}
     .day{background:var(--card);border:1px solid var(--line);border-radius:22px;margin:18px 0;padding:24px;box-shadow:var(--shadow);scroll-margin-top:12px}
     .day-head{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:14px;padding-bottom:18px;border-bottom:1px solid var(--line)}
-    .number{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;background:var(--wine);color:#fff;font:700 1.7rem "Playfair Display",serif}
+    .number{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;background:var(--wine);color:#F5FBF3;font:700 1.7rem "Playfair Display",serif}
     h2{font:700 clamp(1.45rem,5vw,2rem)/1.1 "Playfair Display",serif;margin:0}
     .day-theme{margin:5px 0 0;color:var(--muted);font-size:.88rem}
-    .day-count{font-size:.8rem;font-weight:700;color:var(--wine);background:#f5e3de;padding:7px 9px;border-radius:99px}
+    .day-count{font-size:.8rem;font-weight:700;color:var(--wine);background:#E4F5E0;padding:7px 9px;border-radius:99px}
     .period{margin-top:23px}
     h3{font-size:.72rem;letter-spacing:.15em;text-transform:uppercase;color:var(--wine);margin:0 0 8px}
     label.item{display:grid;grid-template-columns:26px 1fr;gap:10px;padding:10px 6px;border-radius:10px;cursor:pointer;transition:.18s;background:transparent}
-    label.item:hover{background:#f7f0e6}
-    input[type=checkbox]{appearance:none;width:22px;height:22px;border:2px solid #b9aa96;border-radius:7px;margin:0;display:grid;place-items:center;background:white;transition:.18s}
+    label.item:hover{background:#F5FBF3}
+    input[type=checkbox]{appearance:none;width:22px;height:22px;border:2px solid #00000030;border-radius:7px;margin:0;display:grid;place-items:center;background:white;transition:.18s}
     input[type=checkbox]:checked{background:var(--green);border-color:var(--green)}
     input[type=checkbox]:checked:after{content:"✓";color:white;font-size:15px;font-weight:700}
-    input:checked+.copy{text-decoration:line-through;color:#928a81}
+    input:checked+.copy{text-decoration:line-through;color:#303030}
     .copy{line-height:1.42}
     .copy strong{font-weight:700}
     .detail{display:block;color:var(--muted);font-size:.84rem;margin-top:3px;text-decoration:none!important}
-    .tip{margin:18px 0 0;padding:14px 15px;border-left:3px solid var(--gold);background:#fbf3df;border-radius:0 10px 10px 0;color:#62513b;font-size:.88rem;line-height:1.45}
+    .tip{margin:18px 0 0;padding:14px 15px;border-left:3px solid var(--gold);background:#E4F5E0;border-radius:0 10px 10px 0;color:#303030;font-size:.88rem;line-height:1.45}
     .actions{display:flex;justify-content:space-between;gap:10px;align-items:center;margin-top:25px}
     button{border:0;border-radius:99px;padding:11px 17px;font:700 .86rem "DM Sans";cursor:pointer}
     .complete{background:var(--wine);color:white}.complete:hover{background:var(--wine-dark)}
     .reset{background:transparent;color:var(--muted);border:1px solid var(--line)}
-    .practical{background:#282522;color:#fff;border-radius:22px;padding:25px;margin-top:24px}
-    .practical h2{color:#fff}.practical p{color:#d7cec4;line-height:1.55}
-    .chips{display:flex;gap:8px;flex-wrap:wrap}.chip{background:#3b3733;padding:8px 11px;border-radius:9px;font-size:.82rem;color:#eee5db}
+    .practical{background:#000000;color:#F5FBF3;border-radius:22px;padding:25px;margin-top:24px}
+    .practical h2{color:#F5FBF3}.practical p{color:#E4F5E0;line-height:1.55}
+    .chips{display:flex;gap:8px;flex-wrap:wrap}.chip{background:#303030;padding:8px 11px;border-radius:9px;font-size:.82rem;color:#E4F5E0}
     footer{text-align:center;color:var(--muted);font-size:.78rem;padding:0 20px 35px}
-    .toast{position:fixed;left:50%;bottom:22px;transform:translate(-50%,120px);background:#26221e;color:white;padding:12px 18px;border-radius:99px;font-weight:600;box-shadow:var(--shadow);transition:.3s;z-index:5}.toast.show{transform:translate(-50%,0)}
+    .toast{position:fixed;left:50%;bottom:22px;transform:translate(-50%,120px);background:#000000;color:white;padding:12px 18px;border-radius:99px;font-weight:600;box-shadow:var(--shadow);transition:.3s;z-index:5}.toast.show{transform:translate(-50%,0)}
     @media(max-width:600px){.hero{padding-top:38px}.wrap{width:min(100% - 22px,920px)}.day{padding:19px 15px;border-radius:18px}.day-head{grid-template-columns:auto 1fr}.day-count{grid-column:2}.number{width:47px;height:47px}.actions{align-items:stretch;flex-direction:column}.actions button{width:100%}}
     @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
   </style>
-<link rel="stylesheet" href="/assets/shared.css"><link rel="icon" href="/assets/favicon.svg"></head>
+<link rel="stylesheet" href="/assets/shared.css?v=2"><link rel="icon" href="/assets/favicon.svg"></head>
 <body class="fn-vienna"><a class="fn-skip" href="#content">Skip to content</a><header class="fn-header"><a class="fn-logo" href="/">Frolicking <em>Nicky</em><span>A TRAVEL JOURNAL BY NICOLE MARIA PEZZA</span></a><nav aria-label="Main navigation" class="fn-nav"><a href="/my-travels">My travels</a><a href="/about">About me</a></nav></header><div class="fn-breadcrumb" id="content"><a href="/my-travels">My travels</a> / Austria / Vienna</div>
   <header class="hero">
     <div class="wrap">

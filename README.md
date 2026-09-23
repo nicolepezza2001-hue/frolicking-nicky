@@ -8,4 +8,6 @@ Original itinerary content is preserved from Nicole’s existing sites. Shared b
 
 To add a trip, create its country/city/index.html, copy shared navigation and assets, assign a new stable localStorage key, then add its destination card to home and My travels and its country to the filter. dist/assets/trips.json records card metadata for future expansion. Use stable item IDs for new checklists.
 
-Personal photographs and Nicole’s final About Me copy are still to be supplied; current About text uses only the project brief. Destination images are credited on the collection pages. No world map is included in this initial two-trip edition.
+Nicole’s supplied portrait is on About Me; her final About Me copy is still to be supplied; current About text uses only the project brief. Destination images are credited on the collection pages. No world map is included in this initial two-trip edition.
+
+Brand colours: black, #86324A and #E4F5E0.
