@@ -25,5 +25,12 @@
     "image": "vietnam-river-view.jpeg",
     "alt": "A river winding between green fields and limestone mountains",
     "desc": "Phu Quoc, Hanoi, Ninh Binh, Ha Long Bay, the Ha Giang Loop and Hoi An."
+  },
+  {
+    "country": "Japan",
+    "city": "Japan for first-timers",
+    "length": "About a month",
+    "url": "/japan",
+    "desc": "Tokyo, Kyoto, Osaka and a weekend in Takayama."
   }
 ]
