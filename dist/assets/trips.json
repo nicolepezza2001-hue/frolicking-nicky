@@ -16,5 +16,14 @@
     "image": "bellas-artes.jpg",
     "alt": "The Palacio de Bellas Artes and its golden dome in Mexico City",
     "desc": "Slow afternoons, neighbourhood wandering, good food and two Saturday adventures."
+  },
+  {
+    "country": "Vietnam",
+    "city": "Vietnam",
+    "length": "About a month",
+    "url": "/vietnam",
+    "image": null,
+    "alt": "",
+    "desc": "Phu Quoc, Hanoi, Ninh Binh, Ha Long Bay, the Ha Giang Loop and Hoi An."
   }
 ]
