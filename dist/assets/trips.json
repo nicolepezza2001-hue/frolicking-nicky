@@ -32,5 +32,14 @@
     "length": "About a month",
     "url": "/japan",
     "desc": "Tokyo, Kyoto, Osaka and a weekend in Takayama."
+  },
+  {
+    "country": "Slovakia",
+    "city": "Bratislava",
+    "length": "One day on foot",
+    "url": "/slovakia/bratislava",
+    "image": "bratislava.jpg",
+    "alt": "Bratislava Castle",
+    "desc": "Urban House brunch, Old Town wandering, castle views and flexible dinner choices."
   }
 ]
