@@ -1,0 +1,24 @@
+# macOS and editors
+.DS_Store
+._*
+.idea/
+.vscode/
+*.swp
+
+# Local secrets and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+secrets.*
+
+# Dependencies, caches and temporary output
+node_modules/
+.cache/
+coverage/
+*.log
+tmp/
+
+# dist/ is the website source and must stay tracked.
