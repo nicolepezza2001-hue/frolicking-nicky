@@ -9,7 +9,7 @@ const groups = [
 ['EAT & LINGER',[
 ['maizajo','Maizajo','taquería; traditional corn tortillas'],
 ['chava','Mi Compa Chava','seafood; ceviches, aguachiles and tostadas'],
-['rosetta','Rosetta','seasonal Mexican ingredients, handmade pasta','One planned dinner. Reserve ahead.'],
+['maximo','Máximo','seasonal fine dining with French influences','Our booked dinner.'],
 ['conchudo','Conchudo','oyster bar, seafood and wine','An easy meal near your Juárez base.'],
 ['drinks','Pistilo or Salón Palomilla','mezcal and Mexican spirits / cocktails and terrace','Choose whichever suits the evening.']]]], note:'Monday–Wednesday can be just dinner, a short stroll, or nothing at all.'},
 {id:'centro',number:'02',title:'Centro Histórico',timing:'TWO RELAXED AFTERNOONS',color:'blue',description:'Old Mexico City, temple ruins, murals and a very good reason to stop for churros.',sections:[
@@ -28,7 +28,8 @@ const groups = [
 ['park','Bosque de Chapultepec','vast city park','A short walk afterward, if you feel like it.']]],
 ['ANOTHER AFTERNOON',[
 ['castle','Chapultepec Castle','historic royal residence and Mexican history museum'],
-['terraces','Castle terraces & gardens','panoramic city views','Leave time to enjoy the view.']]]],note:'Both museums close on Mondays. The castle closes at 5 p.m., so save it for an earlier finish to work.',link:['Castle visitor information','https://mnh.inah.gob.mx/informacion-general']},
+['terraces','Castle terraces & gardens','panoramic city views','Leave time to enjoy the view.'],
+['moderno','Museo de Arte Moderno','modern Mexican art, including Frida Kahlo','A must. Close to the castle entrance.']]]],note:'All three museums close on Mondays. The castle closes at 5 p.m. and the Museo de Arte Moderno at 5:45 p.m., so save this afternoon for an earlier finish to work.',link:['Castle visitor information','https://mnh.inah.gob.mx/informacion-general']},
 {id:'coyoacan',number:'04',title:'Coyoacán',timing:'SATURDAY DAY TRIP',color:'blue',weekend:true,description:'Frida’s world, neighborhood squares and an afternoon with room to wander.',sections:[
 ['FRIDA & SLOW WANDERING',[
 ['frida','Frida Kahlo Museum / Casa Azul','Frida’s home, life and art','Book your timed ticket online in advance.'],
@@ -48,12 +49,11 @@ const groups = [
 const optional = [
 ['quetzal','Parque Quetzalcóatl','surreal organic architecture and gardens; guided visit','A separate outing. Reserve in advance.'],
 ['soumaya','Museo Soumaya','European and Mexican art, including Rodin sculptures'],
-['moderno','Museo de Arte Moderno','modern Mexican art, including Frida Kahlo'],
 ['dolores','Panteón de Dolores','historic cemetery; notable Mexican figures'],
 ['frances','Panteón Francés de la Piedad','ornate historic cemetery with European influence','South of Roma, on Avenida Cuauhtémoc. Allow about an hour; choose de la Piedad, not the San Joaquín cemetery.'],
 ['odette','ODETTE, Lomas branch','French-style bakery and pastries','If you’re already heading that way.'],
 ['mercadoroma','Mercado Roma','food hall with multiple vendors'],
-['maximo','Máximo','seasonal fine dining with French influences'],
+['rosettapan','Panadería Rosetta','Rosetta’s bakery; pastries and bread'],
 ['migrante','Migrante','contemporary Mexican food with global influences'],
 ['xuna','Xuna','contemporary Mexican fine dining'],
 ['expendio','Expendio de Maíz','corn-focused Mexican cooking; no fixed menu'],
