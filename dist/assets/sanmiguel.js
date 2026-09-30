@@ -28,9 +28,16 @@ const groups = [
 ['tostevere','Tostévere','small plates, tostadas and mezcal cocktails','Reserve well ahead; it’s small.'],
 ['rosewood','Rosewood — Luna Rooftop','rooftop bar with views over town','Go for sunset.'],
 ['santuario','Hacienda El Santuario','hotel garden bar; mezcal cocktails']]]],note:'Panina and Luna de Queso are close together in San Antonio. Easy walking from the Jardín.'},
-{id:'sazon',number:'04',title:'A cooking class',timing:'ONE MORNING OR AFTERNOON',color:'yellow',description:'A market walk, then cooking and eating what we made.',sections:[
-['LEARN SOMETHING DELICIOUS',[
-['sazonclass','Sazón Cooking School','market tour and hands-on Mexican cooking class','About 2½ hours. Classes at 11 a.m. or 3 p.m.; closed Mondays.']]]],note:'Book ahead and check which dishes are on that day’s menu.'},
+{id:'sazon',number:'04',title:'Market day & a cooking class',timing:'A TUESDAY',color:'yellow',description:'The big weekly market in the morning, then cooking and eating what we made.',sections:[
+['THE MORNING',[
+['tianguis','Tianguis de los Martes','huge weekly flea market with food stalls','Tuesdays only. Go early and snack as you browse.']]],
+['THE AFTERNOON',[
+['sazonclass','Sazón Cooking School','market tour and hands-on Mexican cooking class','Take the 3 p.m. class. About 2½ hours; closed Mondays.']]]],note:'Book the class ahead and check which dishes are on that day’s menu.'},
+{id:'dayout',number:'05',title:'A pyramid & a vineyard',timing:'ONE DAY OUT · WEDNESDAY–SUNDAY',color:'pink',description:'An ancient ceremonial site in the morning, then a long lunch among the vines.',sections:[
+['THE MORNING',[
+['canada','Cañada de la Virgen','pyramid site visited with a guide; 1½ km uphill walk','Closed Mondays. Bring water and a hat.']]],
+['THE AFTERNOON',[
+['dosbuhos','Bodega Dos Búhos','winery; tastings and lunch under the trees','Open Wednesday–Sunday. Reserve the tasting.']]]],note:'Cañada is west of town and Dos Búhos east, so book a driver or taxis for the day.'},
 {id:'guanajuato',number:'★',title:'Guanajuato',timing:'SATURDAY DAY TRIP',color:'blue',weekend:true,description:'A colorful university city in a ravine. A whole day, taken slowly.',sections:[
 ['IDEAS FOR THE DAY',[
 ['gtoearly','Leave early','about 1½ hours each way by road'],
@@ -49,9 +56,6 @@ const groups = [
 ];
 const optional = [
 ['zipline','San Miguel Parque de Aventura','seven zip lines and a suspension bridge over a canyon','Reserve in advance.'],
-['canada','Cañada de la Virgen','pyramid site visited with a guide; 1½ km uphill walk','Closed Mondays. Allow a morning, with water and a hat.'],
-['tianguis','Tianguis de los Martes','huge weekly flea market with food stalls','Tuesdays only.'],
-['dosbuhos','Bodega Dos Búhos','winery; tastings and lunch under the trees','About 10 minutes out. Open Wednesday–Sunday; reserve.'],
 ['sanlucas','Viñedos San Lucas','vineyard; wine tasting, brunch and lunch','About 25 minutes east of town.'],
 ['presa','Amigos de La Presa Boathouse','walks and boating on the reservoir','Only open Wednesday and Saturday mornings.']
 ];
