@@ -4,7 +4,9 @@ const groups = [
 ['WANDER A LITTLE',[
 ['parroquia','Parroquia de San Miguel Arcángel & Jardín Allende','pink neo-Gothic church and the main square','The easiest place to start, and to end an evening.'],
 ['mesones','San Ignacio Mesón','courtyard of small shops on Mesones'],
-['soles','Hotel Casa de los Soles','courtyard hotel decorated with suns','Visitors can usually pop in for a look.']]],
+['soles','Hotel Casa de los Soles','courtyard hotel decorated with suns','Visitors can usually pop in for a look.'],
+['artesanias','Mercado de Artesanías','crafts market by Lavanda','Walk further in for more choice and better prices.'],
+['mirador','El Mirador','viewpoint over the town at sunset','Arrive about 30 minutes before sunset.']]],
 ['EAT & LINGER',[
 ['lavanda','Lavanda Café de Especialidad','specialty coffee and breakfast; rooftop terrace','Closed Sundays. Go early or expect a short wait.'],
 ['tata','La Cocina de Tata','Mexican breakfast and lunch on a rooftop','Open Thursday–Sunday only.'],
@@ -41,11 +43,15 @@ const groups = [
 ['THE MORNING',[
 ['horses','Horse riding','SoTeZ Horse Ranch or Coyote Canyon Adventures','SoTeZ is about 10 minutes out, with mountain trail rides. Coyote Canyon includes lunch and is a longer, faster canyon ride.']]],
 ['THE AFTERNOON',[
+['atotonilco','Santuario de Atotonilco','UNESCO-listed church with painted walls and ceilings','Just up the road from La Gruta. Arrange a ride back; taxis are scarce there.'],
 ['gruta','La Gruta hot springs','thermal pools and a steamy cave','Open Wednesday–Sunday, 7 a.m.–5 p.m. Busy at weekends, so go early. Bring a towel.'],
-['spaalt','Or a hotel spa in town','Rosewood or Hacienda El Santuario','If we’d rather stay close.']]]],note:'Our other Saturday. Book the ride in advance and choose one spa option.'}
+['spaalt','Or a hotel spa in town','Rosewood or Hacienda El Santuario','If we’d rather stay close.']]]],note:'Our other Saturday. Book the ride in advance, choose one spa option, and fit Atotonilco in if the day allows.'}
 ];
 const optional = [
 ['zipline','San Miguel Parque de Aventura','seven zip lines and a suspension bridge over a canyon','Reserve in advance.'],
+['canada','Cañada de la Virgen','pyramid site visited with a guide; 1½ km uphill walk','Closed Mondays. Allow a morning, with water and a hat.'],
+['tianguis','Tianguis de los Martes','huge weekly flea market with food stalls','Tuesdays only.'],
+['dosbuhos','Bodega Dos Búhos','winery; tastings and lunch under the trees','About 10 minutes out. Open Wednesday–Sunday; reserve.'],
 ['sanlucas','Viñedos San Lucas','vineyard; wine tasting, brunch and lunch','About 25 minutes east of town.'],
 ['presa','Amigos de La Presa Boathouse','walks and boating on the reservoir','Only open Wednesday and Saturday mornings.']
 ];
