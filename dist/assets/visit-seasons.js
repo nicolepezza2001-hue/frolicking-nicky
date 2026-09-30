@@ -15,6 +15,13 @@ export const visitSeasons = {
     reasons: ['Mostly dry; cold mornings and evenings.','Dry days and comfortable daytime wandering.','Dry, warming days; a lovely walking month.','Hotter afternoons; Easter can affect opening hours.','Often the hottest period; rain begins to build.','Rainy season; keep outdoor plans for mornings.','Frequent afternoon rain; leave room to rearrange outings.','Rain continues; museums make useful afternoon plans.','Wet weather persists; Independence Day brings celebrations.','Rain usually eases; late-month events increase demand.','Drier and mild; Día de Muertos brings crowds.','Dry days, chilly nights and Christmas demand.'],
     sources: [['Lonely Planet · Mexico City through the year','https://www.lonelyplanet.com/articles/best-time-to-visit-mexico-city']]
   },
+  'san-miguel': {
+    scope: 'For San Miguel de Allende and the Guanajuato and hot-springs day trips in this itinerary.',
+    ratings: ['Good','Best','Best','Good','Okay','Okay','Okay','Okay','Okay','Good','Best','Good'],
+    note: 'My pick: November, or February–March, for dry, sunny days and rooftop evenings. April and May are the warmest months; June–September brings afternoon storms, so keep outings for the morning. Nights from December to February get chilly, so pack a warm layer, and book ahead around Semana Santa, Día de Muertos and Christmas.',
+    reasons: ['Dry and sunny; cold nights and mornings.','Dry, mild days; comfortable walking weather.','Warm, dry days; Semana Santa or the film festival can bring crowds.','Warm and very dry; Easter demand in some years.','The warmest month, still mostly dry.','Rainy season begins; afternoon storms.','Wettest stretch; plan mornings outdoors.','Frequent afternoon rain, greener hills.','Rain continues; patron-saint celebrations late in the month.','Rain eases; cooler, fresher days.','Dry and clear; Día de Muertos brings visitors.','Dry, chilly nights and Christmas demand.'],
+    sources: [['Falling in Love with San Miguel · weather by month','https://fallinginlovewithsanmiguel.com/san-miguel-de-allende-monthly-weather-guide/']]
+  },
   vietnam: {
     scope: 'A compromise for this south–north–central route; regional seasons differ.',
     ratings: ['Good','Good','Best','Best','Okay','Okay','Okay','Okay','Avoid','Avoid','Okay','Good'],
