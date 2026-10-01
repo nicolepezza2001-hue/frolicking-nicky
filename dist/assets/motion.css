@@ -7,26 +7,26 @@
   ::view-transition-new(root) { animation: fn-fade-in .38s ease both; }
 
   /* 1 · Headline reveal: first line, then the red italic line */
-  h1 { animation: fn-rise .8s cubic-bezier(.2,.8,.2,1) both; }
-  h1 em { display: inline-block; animation: fn-rise .8s .35s cubic-bezier(.2,.8,.2,1) both; }
+  h1 { animation: fn-fade-in .9s ease both; }
+  h1 em { animation: fn-fade-in .9s .4s ease both; }
   .fn-kicker, .eyebrow, .fn-lede, .lede, .intro-tags, .fn-breadcrumb { animation: fn-fade-up .7s .15s ease both; }
   .fn-lede, .lede { animation-delay: .55s; }
   .intro-tags { animation-delay: .7s; }
 
   /* 2 · Photos land like a polaroid placed on a table, then settle into their tilt */
   .fn-home-portrait, .fn-about-portrait, .postcard, .fn-vienna-hero-photo, .vn-portrait, .ba-photo {
-    animation: fn-drop 1.1s .25s cubic-bezier(.3,1.35,.5,1) both;
+    animation: fn-develop 1.6s .2s ease both;
   }
 
   /* 4 + 5 · Rise in on scroll; photos come into focus */
-  .fn-reveal { opacity: 0; translate: 0 34px; transition: opacity .7s ease, translate .8s cubic-bezier(.2,.8,.2,1); transition-delay: var(--fn-d, 0s); }
-  .fn-reveal.fn-in { opacity: 1; translate: 0 0; }
-  .fn-focus { filter: blur(10px) saturate(.6); scale: 1.04; transition: filter 1.1s ease, scale 1.4s cubic-bezier(.2,.8,.2,1); }
-  .fn-focus.fn-in { filter: none; scale: 1; }
+  .fn-reveal { opacity: 0; transition: opacity .8s ease; transition-delay: var(--fn-d, 0s); }
+  .fn-reveal.fn-in { opacity: 1; }
+  .fn-focus { filter: blur(10px) saturate(.6); transition: filter 1.1s ease; }
+  .fn-focus.fn-in { filter: none; }
 
   /* 6 · The red note box swings into its tilt */
-  .fn-note.fn-swing { rotate: -9deg; opacity: 0; transform-origin: 20% 0; transition: rotate 1.2s cubic-bezier(.3,1.6,.45,1), opacity .5s ease; }
-  .fn-note.fn-swing.fn-in { rotate: 0deg; opacity: 1; }
+  .fn-note.fn-swing { opacity: 0; transition: opacity .9s ease; }
+  .fn-note.fn-swing.fn-in { opacity: 1; }
 
   /* 7 · Best-time strip fills in month by month */
   .fn-season.fn-season-wait .fn-season-swatch { scale: 0; opacity: 0; }
@@ -39,16 +39,11 @@
 
   /* 9 · Progress glides; finished sections celebrate */
   .progress-bar { transition: width .6s cubic-bezier(.2,.8,.2,1); }
-  .fn-cheer { animation: fn-cheer .9s cubic-bezier(.3,1.6,.5,1); display: inline-block; color: var(--fn-red); }
+  .fn-cheer { animation: fn-cheer 1.2s ease; }
 
   /* 11 · Cards lift, tilt and zoom their photo */
-  .fn-card { transition: transform .35s cubic-bezier(.2,.8,.2,1), box-shadow .35s ease; }
-  .fn-card:hover { transform: translateY(-8px) rotate(-.6deg); box-shadow: 0 18px 34px #0000001a; }
-  .fn-card:nth-child(even):hover { transform: translateY(-8px) rotate(.6deg); }
   .fn-card .fn-photo img { transition: scale .8s cubic-bezier(.2,.8,.2,1); }
   .fn-card:hover .fn-photo img { scale: 1.06; }
-  .vn-album-photo img, .ba-scrap-photo img, .jp-photo img { transition: scale .6s cubic-bezier(.2,.8,.2,1); }
-  .vn-album-photo:hover img, .ba-scrap-photo:hover img, .jp-photo:hover img { scale: 1.04; }
 
   /* 12 · Arrows nudge outwards; nav underline draws in */
   .fn-arrow { display: inline-block; transition: translate .3s cubic-bezier(.3,1.6,.5,1); }
@@ -74,20 +69,70 @@
   .fn-trail.fn-in .fn-trail-pin { opacity: 1; animation: fn-bob 2.4s 3.2s ease-in-out infinite; }
 
   /* 15 · Headline words wiggle every so often */
+  .fn-word { white-space: nowrap; }
   .fn-wiggle-letter { display: inline-block; animation: fn-wave 7s calc(1.4s + var(--fn-i) * 45ms) ease-in-out infinite; }
 
   @keyframes fn-fade-in { from { opacity: 0; } }
   @keyframes fn-fade-out { to { opacity: 0; } }
-  @keyframes fn-rise { from { opacity: 0; translate: 0 .45em; } }
-  @keyframes fn-fade-up { from { opacity: 0; translate: 0 14px; } }
-  @keyframes fn-drop { 0% { opacity: 0; translate: 0 -70px; scale: 1.12; rotate: -7deg; } 55% { opacity: 1; } 100% { translate: 0 0; scale: 1; rotate: 0deg; } }
+    @keyframes fn-fade-up { from { opacity: 0; } }
+  @keyframes fn-develop { 0% { opacity: 0; filter: sepia(1) brightness(1.6) blur(6px); } 40% { opacity: 1; } 100% { filter: none; } }
   @keyframes fn-pop-in { from { scale: 0; opacity: 0; } }
   @keyframes fn-tick { 0% { scale: 1; } 35% { scale: 1.035; background-color: #86324A14; } 100% { scale: 1; } }
   @keyframes fn-tick-box { 30% { scale: 1.45; } 60% { scale: .9; } }
-  @keyframes fn-cheer { 0% { scale: 1; } 30% { scale: 1.6; rotate: -10deg; } 60% { scale: .95; rotate: 6deg; } 100% { scale: 1; rotate: 0deg; } }
+  @keyframes fn-cheer { 30% { color: var(--fn-red); text-shadow: 0 0 12px #86324A66; } }
   @keyframes fn-bob { 50% { translate: 0 -5px; } }
-  @keyframes fn-wave { 0%, 12%, 100% { translate: 0 0; rotate: 0deg; } 3% { translate: 0 -.12em; rotate: -6deg; } 6% { translate: 0 .03em; rotate: 4deg; } 9% { translate: 0 0; rotate: -2deg; } }
+  @keyframes fn-wave { 0%, 12%, 100% { translate: 0 0; rotate: 0deg; } 3% { translate: 0 -.06em; rotate: -4deg; } 6% { rotate: 3deg; } 9% { rotate: -1deg; } }
 }
 .fn-sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 .fn-confetti { position: fixed; inset: 0; pointer-events: none; z-index: 1000; overflow: hidden; }
 .fn-confetti i { position: absolute; top: -20px; width: 9px; height: 14px; border-radius: 2px; }
+
+/* Cute heading icons */
+.fn-icon-tag { white-space: nowrap; }
+.fn-icon-tag.fn-icon-hang { display: inline-block; width: 0; overflow: visible; vertical-align: baseline; }
+.fn-icon-tag.fn-icon-off { display: none; }
+.fn-icon { display: inline-block; width: .82em; height: .82em; vertical-align: -.08em; color: var(--fn-red); overflow: visible; }
+h3 .fn-icon { width: 1.1em; height: 1.1em; vertical-align: -.2em; }
+.fn-icon * { transform-box: fill-box; transform-origin: center; }
+@media (prefers-reduced-motion: no-preference) {
+  .fn-i-steam path { animation: fn-i-steam 2.6s ease-in-out infinite; }
+  .fn-i-steam path:nth-child(2) { animation-delay: .5s; } .fn-i-steam path:nth-child(3) { animation-delay: 1s; }
+  .fn-i-wob { animation: fn-i-wob 2s ease-in-out infinite; }
+  .fn-i-beat { animation: fn-i-beat 1.6s ease-in-out infinite; }
+  .fn-i-spin { animation: fn-i-spin 14s linear infinite; }
+  .fn-i-spin-slow { animation: fn-i-spin 20s linear infinite; }
+  .fn-i-sway { transform-origin: 50% 100%; animation: fn-i-sway 3.4s ease-in-out infinite; }
+  .fn-i-twinkle { animation: fn-i-twinkle 2.2s ease-in-out infinite; }
+  .fn-i-twinkle2 { animation: fn-i-twinkle 2.2s 1.1s ease-in-out infinite; }
+  .fn-i-fly { animation: fn-i-fly 3s ease-in-out infinite; }
+  .fn-i-dash { animation: fn-i-dash 1.6s linear infinite; }
+  .fn-i-write { transform-origin: 20% 90%; animation: fn-i-write 1.8s ease-in-out infinite; }
+  .fn-i-tick { stroke-dasharray: 1; animation: fn-i-tick 3s ease-in-out infinite; }
+  .fn-i-rise { animation: fn-i-rise 3.6s ease-in-out infinite; }
+  .fn-i-rock { transform-origin: 50% 90%; animation: fn-i-rock 2.8s ease-in-out infinite; }
+  .fn-i-wave { animation: fn-i-wave 2.8s ease-in-out infinite; }
+  .fn-i-swing { transform-origin: 50% 0; animation: fn-i-swing 3s ease-in-out infinite; }
+  .fn-i-flag { transform-origin: 0 50%; animation: fn-i-flag 1.4s ease-in-out infinite; }
+  .fn-i-clink { transform-origin: 50% 100%; animation: fn-i-clink 3s ease-in-out infinite; }
+  .fn-i-hop { animation: fn-i-hop 1.4s cubic-bezier(.3,0,.5,1) infinite; }
+  .fn-i-wobble { transform-origin: 50% 100%; animation: fn-i-clink 3.4s ease-in-out infinite; }
+  .fn-i-dot1, .fn-i-dot2, .fn-i-dot3 { animation: fn-i-twinkle 2.4s ease-in-out infinite; }
+  .fn-i-dot2 { animation-delay: .4s; } .fn-i-dot3 { animation-delay: .8s; }
+  @keyframes fn-i-steam { 0% { opacity: 0; translate: 0 2px; } 40% { opacity: 1; } 100% { opacity: 0; translate: 0 -3px; } }
+  @keyframes fn-i-wob { 50% { translate: 0 -.6px; } }
+  @keyframes fn-i-beat { 0%, 60%, 100% { scale: 1; } 15% { scale: 1.18; } 30% { scale: .96; } 45% { scale: 1.1; } }
+  @keyframes fn-i-spin { to { rotate: 360deg; } }
+  @keyframes fn-i-sway { 50% { rotate: 8deg; } 0%, 100% { rotate: -6deg; } }
+  @keyframes fn-i-twinkle { 50% { opacity: .25; scale: .7; } }
+  @keyframes fn-i-fly { 50% { translate: 1.5px -2px; rotate: -4deg; } }
+  @keyframes fn-i-dash { to { stroke-dashoffset: -8; } }
+  @keyframes fn-i-write { 25% { rotate: -8deg; translate: -1px 0; } 50% { rotate: 4deg; translate: 1px 0; } 75% { rotate: -6deg; translate: 2px 0; } }
+  @keyframes fn-i-tick { 0%, 15% { stroke-dashoffset: 1; } 45%, 85% { stroke-dashoffset: 0; } 100% { stroke-dashoffset: 1; } }
+  @keyframes fn-i-rise { 50% { translate: 0 -2px; } }
+  @keyframes fn-i-rock { 0%, 100% { rotate: -7deg; } 50% { rotate: 7deg; } }
+  @keyframes fn-i-wave { 50% { translate: -1.5px 0; } }
+  @keyframes fn-i-swing { 0%, 100% { rotate: -9deg; } 50% { rotate: 9deg; } }
+  @keyframes fn-i-flag { 50% { scale: .75 1; } }
+  @keyframes fn-i-clink { 0%, 60%, 100% { rotate: 0deg; } 70% { rotate: -12deg; } 80% { rotate: 6deg; } 90% { rotate: -3deg; } }
+  @keyframes fn-i-hop { 0%, 100% { translate: 0 0; } 40% { translate: 0 -2.5px; } }
+}
