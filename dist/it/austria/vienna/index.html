@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#86324A">
+  <title>Tre settimane a Vienna — Frolicking Nicky</title>
+  <meta name="description" content="Appunti dalle nostre tre settimane a Vienna, organizzati in quattro giornate consigliate con una checklist interattiva.">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,600&display=swap');
+    :root{--paper:#E4F5E0;--ink:#000000;--muted:#303030;--wine:#86324A;--wine-dark:#86324A;--gold:#E4F5E0;--card:#F5FBF3;--line:#00000030;--green:#86324A;--shadow:0 12px 35px rgba(74,49,31,.09)}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans",sans-serif;background-image:radial-gradient(#00000030 0.7px,transparent 0.7px);background-size:18px 18px}
+    .hero{background:var(--wine);color:white;padding:52px 22px 38px;position:relative;overflow:hidden}
+    .hero:after{content:"V";position:absolute;right:-12px;top:-82px;font:700 270px/1 "Playfair Display",serif;color:rgba(255,255,255,.055);transform:rotate(7deg)}
+    .wrap{width:min(920px,calc(100% - 32px));margin:auto;position:relative;z-index:1}
+    .eyebrow{text-transform:uppercase;letter-spacing:.17em;font-size:.74rem;font-weight:700;color:#E4F5E0;margin-bottom:10px}
+    h1{font:700 clamp(2.6rem,8vw,5rem)/.95 "Playfair Display",serif;margin:0;max-width:650px}
+    .subtitle{max-width:590px;font-size:1.03rem;line-height:1.55;margin:20px 0 28px;color:#E4F5E0}
+    .progress-shell{display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center;max-width:620px}
+    .progress-track{height:11px;border-radius:99px;background:rgba(255,255,255,.22);overflow:hidden}
+    .progress-bar{height:100%;width:0;background:var(--gold);border-radius:inherit;transition:width .35s ease}
+    .progress-text{font-weight:700;min-width:46px;text-align:right}
+    nav{display:flex;gap:8px;overflow:auto;padding:18px 0 5px;scrollbar-width:none}
+    nav a{white-space:nowrap;text-decoration:none;color:var(--ink);background:rgba(255,255,255,.62);border:1px solid var(--line);padding:9px 14px;border-radius:99px;font-weight:600;font-size:.88rem}
+    main{padding:23px 0 62px}
+    .day{background:var(--card);border:1px solid var(--line);border-radius:22px;margin:18px 0;padding:24px;box-shadow:var(--shadow);scroll-margin-top:12px}
+    .day-head{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:14px;padding-bottom:18px;border-bottom:1px solid var(--line)}
+    .number{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;background:var(--wine);color:#F5FBF3;font:700 1.7rem "Playfair Display",serif}
+    h2{font:700 clamp(1.45rem,5vw,2rem)/1.1 "Playfair Display",serif;margin:0}
+    .day-theme{margin:5px 0 0;color:var(--muted);font-size:.88rem}
+    .day-count{font-size:.8rem;font-weight:700;color:var(--wine);background:#E4F5E0;padding:7px 9px;border-radius:99px}
+    .period{margin-top:23px}
+    h3{font-size:.72rem;letter-spacing:.15em;text-transform:uppercase;color:var(--wine);margin:0 0 8px}
+    label.item{display:grid;grid-template-columns:26px 1fr;gap:10px;padding:10px 6px;border-radius:10px;cursor:pointer;transition:.18s;background:transparent}
+    label.item:hover{background:#F5FBF3}
+    input[type=checkbox]{appearance:none;width:22px;height:22px;border:2px solid #00000030;border-radius:7px;margin:0;display:grid;place-items:center;background:white;transition:.18s}
+    input[type=checkbox]:checked{background:var(--green);border-color:var(--green)}
+    input[type=checkbox]:checked:after{content:"✓";color:white;font-size:15px;font-weight:700}
+    input:checked+.copy{text-decoration:line-through;color:#303030}
+    .copy{line-height:1.42}
+    .copy strong{font-weight:700}
+    .detail{display:block;color:var(--muted);font-size:.84rem;margin-top:3px;text-decoration:none!important}
+    .tip{margin:18px 0 0;padding:14px 15px;border-left:3px solid var(--gold);background:#E4F5E0;border-radius:0 10px 10px 0;color:#303030;font-size:.88rem;line-height:1.45}
+    .actions{display:flex;justify-content:space-between;gap:10px;align-items:center;margin-top:25px}
+    button{border:0;border-radius:99px;padding:11px 17px;font:700 .86rem "DM Sans";cursor:pointer}
+    .complete{background:var(--wine);color:white}.complete:hover{background:var(--wine-dark)}
+    .reset{background:transparent;color:var(--muted);border:1px solid var(--line)}
+    .practical{background:#000000;color:#F5FBF3;border-radius:22px;padding:25px;margin-top:24px}
+    .practical h2{color:#F5FBF3}.practical p{color:#E4F5E0;line-height:1.55}
+    .chips{display:flex;gap:8px;flex-wrap:wrap}.chip{background:#303030;padding:8px 11px;border-radius:9px;font-size:.82rem;color:#E4F5E0}
+    footer{text-align:center;color:var(--muted);font-size:.78rem;padding:0 20px 35px}
+    .toast{position:fixed;left:50%;bottom:22px;transform:translate(-50%,120px);background:#000000;color:white;padding:12px 18px;border-radius:99px;font-weight:600;box-shadow:var(--shadow);transition:.3s;z-index:5}.toast.show{transform:translate(-50%,0)}
+    @media(max-width:600px){.hero{padding-top:38px}.wrap{width:min(100% - 22px,920px)}.day{padding:19px 15px;border-radius:18px}.day-head{grid-template-columns:auto 1fr}.day-count{grid-column:2}.number{width:47px;height:47px}.actions{align-items:stretch;flex-direction:column}.actions button{width:100%}}
+    @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+    .hero .fn-vienna-hero-grid{width:min(1176px,calc(100% - 32px));display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:64px;align-items:center}
+    .fn-vienna-hero-photo{margin:0 10px 12px 0;padding:10px;background:#E4F5E0;box-shadow:10px 10px 0 #000;transform:rotate(1deg)}
+    .fn-vienna-hero-photo img{display:block;width:100%;height:auto;max-height:480px;object-fit:cover;object-position:center 58%}
+    @media(max-width:760px){.hero .fn-vienna-hero-grid{grid-template-columns:1fr;gap:30px;width:100%}.fn-vienna-hero-photo{width:calc(100% - 10px);max-width:380px;justify-self:center;transform:none}.fn-vienna-hero-photo img{max-height:400px}.fn-vienna-hero-copy{min-width:0}}
+  </style>
+<link rel="stylesheet" href="/assets/shared.css?v=8"><link rel="icon" href="/assets/favicon.svg"><script src="/assets/maps.js?v=3" defer></script><script src="/assets/share.js" defer></script><link rel="stylesheet" href="/assets/best-time-to-visit.css?v=1"><script type="module" src="/assets/best-time-to-visit.js?v=2"></script><link rel="alternate" hreflang="en" href="https://frolickingnicky.com/austria/vienna"><link rel="alternate" hreflang="it" href="https://frolickingnicky.com/it/austria/vienna"><link rel="alternate" hreflang="x-default" href="https://frolickingnicky.com/austria/vienna"></head>
+<body class="fn-vienna"><a class="fn-skip" href="#content">Vai al contenuto</a><header class="fn-header"><a class="fn-logo" href="/it/">Frolicking <em>Nicky</em><span>UN DIARIO DI VIAGGIO DI NICOLE MARIA PEZZA</span></a><nav aria-label="Navigazione principale" class="fn-nav"><a href="/it/i-miei-viaggi">I miei viaggi</a><a href="/it/chi-sono">Chi sono</a><div class="fn-lang" role="group" aria-label="Lingua"><a href="/austria/vienna" hreflang="en" lang="en" aria-label="English">EN</a><span class="fn-lang-sep" aria-hidden="true">|</span><span aria-current="true">IT</span></div></nav></header><div class="fn-breadcrumb" id="content"><a href="/it/i-miei-viaggi">I miei viaggi</a> / Austria / Vienna</div><div class="fn-share-row"><button class="fn-share" type="button">Condividi l’itinerario ↗</button></div>
+  <header class="hero">
+    <div class="wrap fn-vienna-hero-grid">
+      <div class="fn-vienna-hero-copy"><div class="eyebrow">Il nostro soggiorno · il tuo programma in città</div>
+      <h1>Tre settimane<br><em>a Vienna</em></h1>
+      <p class="subtitle">Abbiamo passato tre settimane a Vienna. Queste tappe sono raggruppate in quattro giornate consigliate per il tuo viaggio, con altri musei da distribuire se hai più tempo. Spunta le cose man mano: i tuoi progressi si salvano in automatico.</p>
+      <p id="save-status" role="status">I tuoi progressi vengono salvati su questo dispositivo.</p><div class="progress-shell"><div class="progress-track" role="progressbar" aria-label="Progressi complessivi" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="progress-bar"></div></div><div class="progress-text">0%</div></div>
+      </div>
+      <figure class="fn-vienna-hero-photo"><img src="/assets/vienna-church.jpeg" alt="L’interno di una chiesa a Vienna, con archi gotici, lampadari e una scala in pietra scolpita" width="1200" height="1600" fetchpriority="high"></figure>
+    </div>
+  </header>
+  <div class="wrap">
+    <best-time-to-visit destination="vienna" id="best-time-to-visit"></best-time-to-visit>
+<nav aria-label="Vai a una giornata"><a href="#day1">Giorno 1 · Centro</a><a href="#day2">Giorno 2 · Schönbrunn</a><a href="#day3">Giorno 3 · Arte</a><a href="#day4">Giorno 4 · Prater e vino</a></nav>
+    <main id="itinerary"></main>
+    <section class="fn-experiences" style="padding:26px 0"><h2>Esperienze dal nostro soggiorno</h2><h3 style="margin-top:24px">Dimostrazione di pasticceria e degustazione da Gerstner</h3><p>Siamo state anche alla dimostrazione di pasticceria con degustazione di Gerstner KuK Hofzuckerbäcker.</p><a href="https://www.getyourguide.com/vienna-l7/vienna-gerstner-kuk-hofzuckerbacker-baking-show-tasting-t652816/" target="_blank" rel="noopener noreferrer">Vedi l’attività su GetYourGuide ↗</a><h3 style="margin-top:24px">Cripta Imperiale / Cripta dei Cappuccini</h3><p>Durante il nostro soggiorno a Vienna abbiamo visitato anche la Cripta Imperiale.</p><a href="https://www.getyourguide.com/vienna-l7/vienna-imperial-crypt-entrance-ticket-t344651/" target="_blank" rel="noopener noreferrer">Vedi i biglietti per la Cripta Imperiale su GetYourGuide ↗</a></section><section class="practical">
+      <h2>Prima di partire</h2>
+      <p>Prenota per prime le attrazioni con ingresso a orario e gli eventuali spettacoli serali. Tutto il resto può restare flessibile, a seconda del meteo e delle energie.</p>
+      <div class="chips"><span class="chip">Prenota Schönbrunn</span><span class="chip">Prenota il Belvedere Superiore</span><span class="chip">Scegli un grande museo</span><span class="chip">Controlla i programmi di opera e concerti</span><span class="chip">Metti scarpe comode</span></div>
+      <div class="actions"><button class="complete" id="checkAll">Spunta tutto</button><button class="reset" id="reset">Azzera la checklist</button></div>
+    </section>
+  </div>
+  <div class="toast" role="status" aria-live="polite">Progressi salvati ✓</div>
+  <footer>Pensato per girare con calma, ottime torte e il minimo di stanchezza da palazzi.</footer>
+  <script>
+    const days=[
+      {title:'La Vienna storica',theme:'Vie antiche, la Vienna imperiale e caffè',periods:[
+        ['Mattina',[['Duomo di Santo Stefano','Cattedrale gotica nel cuore di Vienna. Guarda la navata, poi scegli tra la torre e le catacombe.'],['Graben e Kohlmarkt','Storiche vie dello shopping in centro. Cammina da Stephansplatz verso Michaelerplatz.'],['Biblioteca Nazionale Austriaca','Biblioteca barocca con un grandioso salone di rappresentanza. Visita la spettacolare Sala di Stato.'],['I cortili dell’Hofburg','I cortili dell’antico palazzo degli Asburgo. Prosegui per Heldenplatz e il Volksgarten.']]],
+        ['Pomeriggio',[['Pranzo in un Beisl viennese','Prova Reinthaler’s Beisl o un’altra osteria tradizionale.'],['Passeggiata sul Ring','Parlamento → Rathaus → Burgtheater → Università → Votivkirche.'],['Pausa in un caffè storico','Café Sperl, Jelinek o Kleines Café: non serve fare la fila al Café Central.']]],
+        ['Sera',[['Cena dalle parti di Neubau o Spittelberg','Un’atmosfera più rilassata rispetto alle vie turistiche del centro.'],['Opera, concerto o teatro','Dai un’occhiata a Staatsoper, Volksoper, Musikverein o Konzerthaus.']]]],tip:'Se domani entri a Schönbrunn, oggi puoi tranquillamente saltare gli appartamenti imperiali a pagamento dell’Hofburg.'},
+      {title:'Schönbrunn e Neubau',theme:'Giardini del palazzo, design e vie di quartiere',periods:[
+        ['Mattina',[['Castello di Schönbrunn','L’antica residenza estiva degli Asburgo. Usa il biglietto a orario e calcola 60–90 minuti all’interno.'],['I giardini del castello','Giardini all’italiana e vista dalla collina. Passa davanti alla Fontana di Nettuno e sali fino alla Gloriette.']]],
+        ['Pomeriggio',[['Pranzo lontano dal castello','Meidling o Mariahilf offrono un miglior rapporto qualità-prezzo.'],['Passeggiata sulla Mariahilfer Straße','Poi lascia la via dello shopping principale per la Neubaugasse.'],['Esplora il 6° e il 7° distretto','Curiosa tra i negozi indipendenti e le stradine intorno a Spittelberg.'],['Un po’ di architettura di Otto Wagner','Prova il padiglione di Karlsplatz o la Majolikahaus.']]],
+        ['Sera',[['Cena tradizionale austriaca','Prova schnitzel, gulasch, käsespätzle o tafelspitz.'],['Dividi un Kaiserschmarrn','La giusta quantità di frittata dolce sminuzzata è sempre “troppa”.']]]],tip:'Prenota il castello per la mattina. I giardini sono gratuiti, quindi dopo la visita delle sale puoi prenderti tutto il tempo che vuoi.'},
+      {title:'Klimt e grande arte',theme:'Belvedere, Naschmarkt e giornate al museo',periods:[
+        ['Mattina',[['Belvedere Superiore','Palazzo barocco che ospita l’arte austriaca. Guarda Il bacio di Klimt, Schiele e le sale del palazzo.'],['I giardini del Belvedere','Giardini a terrazze tra i due palazzi. Scendi in discesa invece di tornare indietro.'],['Karlskirche','Chiesa barocca con una cupola imponente. Prosegui per Schwarzenbergplatz; entra se ti incuriosisce.']]],
+        ['Pomeriggio',[['Pranzo al Naschmarkt','Mercato alimentare con bancarelle e ristoranti. Ottimo per l’atmosfera; confronta i menù prima di scegliere.'],['Kunsthistorisches Museum','Museo di belle arti con gli antichi maestri e collezioni storiche. Uno dei tre grandi musei che abbiamo visitato durante il soggiorno.'],['Esplora il MuseumsQuartier','Musei e spazi culturali attorno a cortili all’aperto. Dopo il museo, fai una pausa in cortile.']]],
+        ['Sera',[['Cena nel 7° distretto','Resta dalle parti di Neubau per ristoranti e bar.'],['Girovagare senza programma','Tieni libera questa serata: avrai assorbito parecchia arte.']]],['Altri musei · da distribuire in più giorni',[['Secessione','Palazzo espositivo Art Nouveau con il Fregio di Beethoven di Klimt. Un’altra tappa del nostro soggiorno a Vienna.'],['Leopold Museum','Arte moderna austriaca, tra cui Egon Schiele. Anche questo fa parte delle nostre tre settimane.'],['Albertina','Museo d’arte noto per la collezione di grafica e le mostre. Abbiamo visitato anche questo.']]]],tip:'Nelle nostre tre settimane qui abbiamo visitato il Kunsthistorisches, il Leopold e l’Albertina. Se hai tempo, distribuisci i musei in giorni diversi: è una lista da cui scegliere, non una maratona di musei in un giorno.'},
+      {title:'Prater e vino viennese',theme:'Architettura giocosa, spazi verdi e un Heuriger',periods:[
+        ['Mattina',[['Hundertwasserhaus','Un condominio coloratissimo dalle forme irregolari. Guarda l’esterno e gli edifici vicini.'],['Kunst Haus Wien','Museo dedicato a Hundertwasser e alla fotografia. Entra se ti piace il mondo di Hundertwasser, nemico delle linee rette.'],['Un giro sulla Riesenrad','La storica ruota panoramica del Prater. Meglio con il cielo sereno.'],['Passeggiata nel Prater verde','Un parco boscoso oltre il luna park. Supera le giostre per trovare sentieri più appartati.']]],
+        ['Pomeriggio',[['Pranzo vicino al Karmelitermarkt','Piazza del mercato di quartiere a Leopoldstadt. Poi gironzola per le vie meno affollate di Leopoldstadt.'],['Passeggiata lungo il Canale del Danubio','Segui l’acqua, i murales e le terrazze estive.'],['Gita al Kahlenberg','La collina che domina Vienna e i suoi vigneti. Passa da Nussdorf e goditi la vista sulla città.']]],
+        ['Sera',[['Cena in un Heuriger','Tradizionale osteria del vino con vino e cucina locali. Scegli tra Nussdorf, Grinzing o Neustift am Walde.'],['Assaggia il vino locale','Ordina al bicchiere e prendi da mangiare al buffet.']]]],tip:'Nussdorf e Neustift di solito sono più tranquille. Grinzing è pittoresca ma è quella con più gruppi turistici.'}
+    ];
+    const root=document.querySelector('#itinerary');let ix=0;
+    days.forEach((d,di)=>{const section=document.createElement('section');section.className='day';section.id='day'+(di+1);let body='';d.periods.forEach(([p,items])=>{body+=`<div class="period"><h3>${p}</h3>`;items.forEach(([name,detail])=>{const id='v'+ix++;body+=`<label class="item"><input type="checkbox" id="${id}"><span class="copy"><strong>${name}</strong><span class="detail">${detail}</span></span></label>`});body+='</div>'});section.innerHTML=`<div class="day-head"><div class="number">${di+1}</div><div><h2>${d.title}</h2><p class="day-theme">${d.theme}</p></div><span class="day-count">0/${d.periods.flatMap(x=>x[1]).length}</span></div>${body}<div class="tip"><strong>La nota di Nicole:</strong> ${d.tip}</div>`;root.append(section)});
+    const boxes=[...document.querySelectorAll('input[type=checkbox]')];const key='frolicking-nicky-vienna-v2';
+    function save(show=true){try{localStorage.setItem(key,JSON.stringify(boxes.map(b=>b.checked)));document.querySelector("#save-status").textContent="I tuoi progressi vengono salvati su questo dispositivo."}catch{document.querySelector("#save-status").textContent="In questo browser il salvataggio non è disponibile; le spunte funzionano finché resti sulla pagina."}update();if(show&&document.querySelector("#save-status").textContent.startsWith("I tuoi")){const t=document.querySelector('.toast');t.classList.add('show');clearTimeout(window.toastTimer);window.toastTimer=setTimeout(()=>t.classList.remove('show'),1100)}}
+    function update(){const done=boxes.filter(b=>b.checked).length,p=Math.round(done/boxes.length*100);document.querySelector('.progress-bar').style.width=p+'%';document.querySelector('.progress-text').textContent=p+'%';document.querySelector('.progress-track').setAttribute('aria-valuenow',p);document.querySelectorAll('.day').forEach(day=>{const bs=[...day.querySelectorAll('input')];day.querySelector('.day-count').textContent=bs.filter(b=>b.checked).length+'/'+bs.length})}
+    try{const saved=localStorage.getItem(key);const old=JSON.parse(localStorage.getItem('frolicking-nicky-vienna-v1')||'[]');const state=saved?JSON.parse(saved):Array.from({length:boxes.length},(_,i)=>i<25?(i===19||i===21?false:old[i]):i<28?false:old[i-3]);boxes.forEach((b,i)=>b.checked=Array.isArray(state)&&state[i]===true)}catch(e){document.querySelector("#save-status").textContent="In questo browser il salvataggio non è disponibile; le spunte funzionano finché resti sulla pagina."}
+    boxes.forEach(b=>b.addEventListener('change',()=>save()));
+    document.querySelector('#checkAll').onclick=()=>{boxes.forEach(b=>b.checked=true);save()};
+    document.querySelector('#reset').onclick=()=>{if(confirm('Cancellare tutte le spunte e ricominciare?')){boxes.forEach(b=>b.checked=false);save(false);update()}};
+    update();
+  </script>
+<section class="fn-support" id="support-local-women" aria-labelledby="support-title"><h2 id="support-title">Sostieni le donne del posto</h2><p>Se puoi e ti va, considera una donazione a Wiener Frauenhäuser per sostenere donne e bambini che subiscono violenza domestica.</p><p>Non ricevo soldi né commissioni da queste donazioni. Sostenere le donne del posto per me è importante, ed è un piccolo modo per restituire qualcosa ai luoghi che visito. Serve l’impegno di tutti per opporsi alla violenza di genere e domestica.</p><a href="https://frauenhaeuser-wien.at/spenden/" target="_blank" rel="noopener noreferrer">Dona a Wiener Frauenhäuser ↗</a></section><footer class="fn-footer"><a class="fn-logo" href="/it/">Frolicking <em>Nicky</em></a><p>Un po’ di programmazione. Tanto spazio per vagabondare.</p><a href="/it/i-miei-viaggi">Trova il tuo prossimo itinerario ↗</a></footer></body>
+</html>

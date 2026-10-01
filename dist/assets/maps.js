@@ -8,6 +8,9 @@ const directMapLinks = {
  'Rosetta': 'https://maps.app.goo.gl/icKcDtrBtksoT8bH8',
  'Maizajo': 'https://www.google.com/maps/place/Maizajo/@19.4148572,-99.1781999,17z/data=!3m1!4b1!4m6!3m5!1s0x85d1f8662726bc5d:0xd437703208a9d19a!8m2!3d19.4148572!4d-99.1781999!16s%2Fg%2F11ggptnjt4'
 };
+const MAPS_IT=document.documentElement.lang==='it';
+const MAP=MAPS_IT?'Mappa ↗':'Map ↗';
+const findLabel=p=>MAPS_IT?'Trova '+p+' su Google Maps (si apre in una nuova scheda)':'Find '+p+' on Google Maps (opens in a new tab)';
 function mapUrl(place, city) {
  if(directMapLinks[place]) return directMapLinks[place];
  const outsideCity=/Teotihuac|Naucalpan/i.test(place);
@@ -18,7 +21,7 @@ function addMapLinks(label, places, city) {
  const row=document.createElement('div'); row.className='fn-stop';
  label.before(row); row.append(label);
  const links=document.createElement('div');links.className='fn-map-links';
- for(const place of places){const a=document.createElement('a');a.href=mapUrl(place,city);a.target='_blank';a.rel='noopener noreferrer';a.textContent=places.length===1?'Map ↗':place+' ↗';a.setAttribute('aria-label','Find '+place+' on Google Maps (opens in a new tab)');links.append(a);}
+ for(const place of places){const a=document.createElement('a');a.href=mapUrl(place,city);a.target='_blank';a.rel='noopener noreferrer';a.textContent=places.length===1?MAP:place+' ↗';a.setAttribute('aria-label',findLabel(place));links.append(a);}
  row.append(links);
 }
 if(document.body.classList.contains('fn-vienna')){
@@ -26,8 +29,8 @@ if(document.body.classList.contains('fn-vienna')){
 }else if(document.body.classList.contains('fn-sanmiguel')){
  document.querySelectorAll('label.task').forEach(label=>{const id=label.querySelector('input').id;const q=sanMiguelMapStops[id]??[label.querySelector('.task-title').textContent+' San Miguel de Allende'];if(!q.length)return;const names=sanMiguelMapLabels[id];
   const row=document.createElement('div');row.className='fn-stop';label.before(row);row.append(label);const links=document.createElement('div');links.className='fn-map-links';
-  q.forEach((query,i)=>{const a=document.createElement('a');a.href='https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(query);a.target='_blank';a.rel='noopener noreferrer';a.textContent=q.length===1?'Map ↗':(names?names[i]:query)+' ↗';a.setAttribute('aria-label','Find '+query+' on Google Maps (opens in a new tab)');links.append(a);});row.append(links);});
+  q.forEach((query,i)=>{const a=document.createElement('a');a.href='https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(query);a.target='_blank';a.rel='noopener noreferrer';a.textContent=q.length===1?MAP:(names?names[i]:query)+' ↗';a.setAttribute('aria-label',findLabel(query));links.append(a);});row.append(links);});
 }else if(document.body.classList.contains('fn-mexico')){
  document.querySelectorAll('label.task').forEach(label=>{const id=label.querySelector('input').id;addMapLinks(label,mexicoMapStops[id]||[label.querySelector('.task-title').textContent],'Mexico City');});
- document.querySelectorAll('.useful li').forEach(li=>{const a=document.createElement('a');a.href=mapUrl(li.querySelector('strong').textContent,'Mexico City');a.target='_blank';a.rel='noopener noreferrer';a.className='fn-salon-map';a.textContent='Map ↗';li.append(a);});
+ document.querySelectorAll('.useful li').forEach(li=>{const a=document.createElement('a');a.href=mapUrl(li.querySelector('strong').textContent,'Mexico City');a.target='_blank';a.rel='noopener noreferrer';a.className='fn-salon-map';a.textContent=MAP;li.append(a);});
 }

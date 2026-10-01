@@ -32,3 +32,20 @@ section exposes the monthly reasoning on touch screens and keyboards.
 Ratings are editorial route-specific judgments, not forecasts. Review sources
 when changing them; do not apply national averages to a specific city or assume
 one season fits every region of a multi-stop itinerary.
+
+
+## Italian version
+
+Every page has an Italian copy under `/it/` with Italian slugs
+(`/it/i-miei-viaggi`, `/it/chi-sono`, `/it/austria/vienna`,
+`/it/messico/citta-del-messico`, `/it/messico/san-miguel-de-allende`,
+`/it/slovacchia/bratislava`, `/it/vietnam`, `/it/giappone`).
+The `EN | IT` toggle in the header links each page to its twin, and each
+page lists both versions with `hreflang` links.
+
+When you change an English page, make the same change to its Italian copy.
+Itinerary data for Mexico City and San Miguel lives in `mexico.it.js` and
+`sanmiguel.it.js`; seasonal notes in `visit-seasons.it.js`. Shared scripts
+switch their interface text on `<html lang="it">`. Both languages use the
+same localStorage keys and item IDs, so ticks carry over between them; keep
+IDs and item order identical in both copies.
