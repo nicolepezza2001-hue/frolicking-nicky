@@ -111,3 +111,51 @@ html,body{overflow-x:clip}
 /* Handwritten notes in the margin of some stops */
 .fn-margin-note{display:flex;align-items:flex-start;gap:6px;margin:6px 0 2px;font:600 1.3rem/1.15 'Caveat',cursive;color:#1f3474;rotate:-1.5deg;transform-origin:left}
 .fn-margin-note svg{flex:0 0 26px;width:26px;height:18px;margin-top:2px}
+
+/* ---------- Phones ---------- */
+/* Cards: the photo grows to fill the card, so the front never has an empty gap under the text */
+.fn-card-front{display:flex;flex-direction:column}
+.fn-card-front .fn-photo{position:relative;flex:1 0 auto;min-height:280px}
+.fn-card-front .fn-photo img{position:absolute;inset:0;height:100%}
+@media(max-width:760px){.fn-card-front .fn-photo{min-height:250px}}
+
+/* Map: tapped country, close-up and trip links */
+.fn-hint-tap{display:none}
+@media(hover:none){.fn-hint-hover{display:none}.fn-hint-tap{display:inline}}
+.fn-map-picked{min-height:1.6em;margin:16px 0 0;font:600 1.5rem/1.2 'Caveat',cursive;color:#1f3474}
+.fn-map-picked:empty{margin:0;min-height:0}
+.fn-map-v.fn-map-hit{fill:#b8476a}
+.fn-map-numbers{display:none}
+.fn-map-zoom{margin:26px 10px 0 0;padding:12px;background:linear-gradient(135deg,#f7f0df,#efe4cb);border-radius:4px;box-shadow:6px 6px 0 #000}
+.fn-map-zoom p{margin:0 0 6px;font:600 1.3rem/1 'Caveat',cursive;color:#1f3474}
+.fn-map-zoom svg{display:block;width:100%;height:auto}
+.fn-map-zoom .fn-map-pin text{font-size:7px;stroke-width:2px}
+.fn-map-trips{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 0}
+.fn-map-trips a{display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border:1px solid var(--fn-red);border-radius:99px;font-weight:600;font-size:14px;text-decoration:none;color:var(--fn-red);background:#F5FBF3}
+@media(max-width:760px){
+  .fn-map-scroll{aspect-ratio:auto;overflow:visible}
+  .fn-map-svg{width:100%;max-width:100%}
+  .fn-map-scroll .fn-map-pin text,.fn-map-scroll .fn-map-stats{display:none}
+  .fn-map-numbers{display:flex;gap:10px;margin:22px 0 0}
+  .fn-map-numbers p{flex:1;margin:0;padding:10px 8px;text-align:center;background:#F5FBF3;border:1px solid #00000018;border-radius:14px;font:600 1.2rem/1.1 'Caveat',cursive;color:#1f3474}
+  .fn-map-numbers strong{display:block;font:700 1.9rem/1 'Playfair Display',Georgia,serif;color:var(--fn-red)}
+  .fn-map-card{margin-top:30px}
+}
+
+/* Bratislava: photos sit above each stop on phones, at a proper size */
+@media(max-width:650px){
+  body .ba-scrap-row{grid-template-columns:1fr;gap:14px;margin:30px 0}
+  body .ba-scrap-photos,body .ba-scrap-photos:has(.ba-scrap-photo:only-child){justify-content:center;gap:14px;padding:0 6px}
+  body .ba-scrap-photo{flex:1 1 0;max-width:48%;padding:6px}
+  body .ba-scrap-photo:only-child{max-width:72%}
+  body .ba-scrap-row>.vn-stop{padding:22px 18px}
+}
+
+/* Rough budget: one compact row per category on phones */
+@media(max-width:600px){
+  .fn-budget-grid{grid-template-columns:1fr;gap:8px}
+  .fn-budget-row{display:grid;grid-template-columns:112px 1fr;column-gap:14px;align-items:start;padding:12px 14px}
+  .fn-budget-cat{grid-column:1}
+  .fn-budget-level{grid-column:1;margin:6px 0 0!important}
+  .fn-budget-note{grid-column:2;grid-row:1 / span 2}
+}

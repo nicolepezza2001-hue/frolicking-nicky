@@ -38,6 +38,13 @@ Italian copies and the best-time-to-visit data.
 - **Photos**: keep JPEGs at most 1400px on the long side, quality ~76, with
   metadata stripped (this also removes GPS).
 
+## Phones
+
+Check every change on a phone-sized screen too (Nicky mostly looks on her
+iPhone). On touch screens destination cards turn over by themselves once fully
+on screen and on tap; the map fits the screen with a Europe close-up, number
+tiles and trip links instead of tiny pin labels (`extras()` in `motion.js`).
+
 ## Working with Nicky
 
 - Make every finished change live without asking: open a pull request into
