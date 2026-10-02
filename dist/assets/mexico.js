@@ -30,12 +30,14 @@ const groups = [
 ['castle','Chapultepec Castle','historic royal residence and Mexican history museum'],
 ['terraces','Castle terraces & gardens','panoramic city views','Leave time to enjoy the view.'],
 ['moderno','Museo de Arte Moderno','modern Mexican art, including Frida Kahlo','A must. Close to the castle entrance.']]]],note:'All three museums close on Mondays. The castle closes at 5 p.m. and the Museo de Arte Moderno at 5:45 p.m., so save this afternoon for an earlier finish to work.',link:['Castle visitor information','https://mnh.inah.gob.mx/informacion-general']},
-{id:'coyoacan',number:'04',title:'Coyoacán',timing:'SATURDAY DAY TRIP',color:'blue',weekend:true,description:'Frida’s world, neighborhood squares and an afternoon with room to wander.',sections:[
+{id:'coyoacan',number:'04',title:'Xochimilco & Coyoacán',timing:'SATURDAY DAY TRIP',color:'blue',weekend:true,description:'A morning on the canals, then Frida’s world, neighborhood squares and an afternoon with room to wander.',sections:[
+['A MORNING ON THE CANALS',[
+['xochimilco','Xochimilco trajinera ride','painted boats on the old canals; music and snacks from passing boats','Go in the morning and rent a boat for one or two hours. Coyoacán is about 30–40 minutes away by taxi.']]],
 ['FRIDA & SLOW WANDERING',[
 ['frida','Frida Kahlo Museum / Casa Azul','Frida’s home, life and art','Book your timed ticket online in advance.'],
 ['squares','Jardín Centenario & Plaza Hidalgo','historic neighborhood squares'],
 ['market','Mercado de Coyoacán','traditional market; food and local stalls'],
-['coffee','Coffee & neighborhood wandering','a pause and a few unhurried streets']]]],note:'One of our two Saturdays. Keep the day for Coyoacán; there’s no need to add another neighborhood.',link:['Book Frida Kahlo Museum','https://www.museofridakahlo.org.mx/visita/']},
+['coffee','Coffee & neighborhood wandering','a pause and a few unhurried streets']]]],note:'One of our two Saturdays. Canals in the morning, Coyoacán after lunch, so book an afternoon slot for Casa Azul.',link:['Book Frida Kahlo Museum','https://www.museofridakahlo.org.mx/visita/']},
 {id:'teotihuacan',number:'★',title:'Teotihuacán',timing:'SATURDAY DAY TRIP',color:'yellow',weekend:true,description:'Our definite big adventure. Ancient pyramids, an early start and the evening off.',sections:[
 ['THE WHOLE DAY, TAKEN SLOWLY',[
 ['early','Leave Triver early','make room for travel and an unhurried visit'],

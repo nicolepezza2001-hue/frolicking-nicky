@@ -196,7 +196,7 @@
     [/wine|vino|vineyard|vigneto/i, 'wine'],
     [/hot springs|sorgenti termali/i, 'springs'],
     [/mount|monte|ha giang|takayama/i, 'mountain'],
-    [/ha long|phu quoc|ninh binh/i, 'boat'],
+    [/ha long|phu quoc|ninh binh|xochimilco/i, 'boat'],
     [/hoi an|kyoto/i, 'lantern'],
     [/^tokyo$/i, 'blossom'],
     [/schönbrunn|^chapultepec$|osaka|historic vienna|vienna storica|guanajuato/i, 'castle'],
