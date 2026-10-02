@@ -18,3 +18,50 @@
 
 .fn-stop-description{font-weight:400;font-size:1rem;line-height:1.6;color:inherit}
 .fn-nav{align-items:center}.fn-lang{display:flex;align-items:center;gap:8px;font:500 15px 'DM Sans',sans-serif;margin-left:4px}.fn-lang a,.fn-lang span[aria-current]{padding:10px 0}.fn-nav .fn-lang a{color:var(--fn-ink);opacity:.55;text-decoration:none}.fn-nav .fn-lang a:hover{opacity:1;color:var(--fn-red)}.fn-lang span[aria-current]{font-weight:700;color:var(--fn-red)}.fn-lang-sep{opacity:.4}@media(max-width:760px){.fn-nav{align-items:flex-start}.fn-lang{margin-left:0;font-size:14px}.fn-lang a,.fn-lang span[aria-current]{padding:3px 0}}
+
+/* Destination cards flip over on hover (or with the Quick look button) to show a short summary */
+.fn-card{padding:0;border:0;background:none;box-shadow:none;perspective:1800px;border-radius:22px}
+.fn-card-inner{display:grid;height:100%;transform-style:preserve-3d;transition:transform .75s cubic-bezier(.3,.7,.25,1)}
+.fn-card-face{grid-area:1/1;min-width:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;border:1px solid #00000020;border-radius:22px;box-shadow:0 8px 20px #0000000d}
+.fn-card-front{position:relative;background:#F5FBF3;padding:14px 14px 24px}
+.fn-card-front .fn-photo{border-radius:15px}
+.fn-card-back{transform:rotateY(180deg);background:var(--fn-red);color:#E4F5E0;padding:30px clamp(22px,3vw,34px) 28px;display:flex;flex-direction:column;pointer-events:none}
+.fn-card.fn-flipped .fn-card-inner,.fn-card:has(.fn-card-back :focus-visible) .fn-card-inner{transform:rotateY(180deg)}
+.fn-card.fn-flipped .fn-card-front,.fn-card:has(.fn-card-back :focus-visible) .fn-card-front{pointer-events:none}
+.fn-card.fn-flipped .fn-card-back,.fn-card:has(.fn-card-back :focus-visible) .fn-card-back{pointer-events:auto}
+@media(hover:hover){.fn-card:hover .fn-card-inner{transform:rotateY(180deg)}.fn-card:hover .fn-card-front{pointer-events:none}.fn-card:hover .fn-card-back{pointer-events:auto}}
+.fn-flip{position:absolute;z-index:2;display:inline-flex;align-items:center;gap:6px;border:0;border-radius:99px;padding:7px 13px;font:600 13px/1.2 'DM Sans',sans-serif;cursor:pointer}
+.fn-flip-front{top:26px;right:26px;background:#F5FBF3e8;color:var(--fn-red);box-shadow:0 2px 8px #0000001f}
+.fn-flip-back{position:static;align-self:flex-end;margin:-12px -10px 6px 0;background:transparent;color:#E4F5E0;border:1px solid #E4F5E066}
+.fn-flip-back:focus-visible,.fn-back-link:focus-visible,.fn-card-back a:focus-visible{outline-color:#E4F5E0}
+.fn-back-kicker{margin:0 0 14px;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;opacity:.85}
+.fn-card-back h4{font:600 24px/1.2 'Playfair Display',Georgia,serif;margin:0 0 8px}
+.fn-back-list{margin:0 0 18px;padding:0;list-style:none}
+.fn-back-list li{position:relative;padding:3px 0 3px 22px;line-height:1.45}
+.fn-back-list li::before{content:"✦";position:absolute;left:0;top:4px;font-size:12px;opacity:.8}
+.fn-back-facts{margin:0 0 22px;display:grid;gap:12px}
+.fn-back-facts div{border-top:1px solid #E4F5E040;padding-top:10px}
+.fn-back-facts dt{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;opacity:.85}
+.fn-back-facts dd{margin:2px 0 0;line-height:1.45}
+.fn-back-aside{opacity:.8;font-size:.92em}
+.fn-back-link{margin-top:auto;align-self:flex-start;background:#E4F5E0;color:var(--fn-red);padding:10px 18px;border-radius:99px;font-weight:700;text-decoration:none}
+.fn-back-link:hover{background:#fff}
+@media(max-width:760px){.fn-card-back{padding:26px 20px 24px}.fn-flip-front{top:22px;right:22px}}
+
+/* Softer, rounded corners on the cards and itinerary summaries below the hero */
+body .fn-main>.fn-note,body .fn-support,body .vn-stop,body .vn-album .vn-stop,body .ba-scrap-row>.vn-stop,body .ba-dinners article,body .outing,body .before,body .pace,body .progress-panel{border-radius:22px}
+body .weekend .outing-heading{border-radius:17px 17px 0 0}
+
+/* Bratislava: the main photo sits beside the introduction */
+.ba-hero-layout .ba-photo{margin:20px 12px 25px 0;max-width:none;background:var(--fn-red);padding:10px 10px 8px;transform:rotate(1deg);box-shadow:10px 10px #000}
+.ba-hero-layout .ba-photo img{max-height:none;aspect-ratio:4/3.4;object-fit:cover}
+.ba-hero-layout .ba-photo figcaption{color:#E4F5E0;font-size:.75rem;padding-top:8px}
+@media(max-width:760px){.ba-hero-layout .ba-photo{transform:none;max-width:440px;justify-self:center}}
+
+/* Support local women: illustration */
+.fn-support{display:flow-root}
+.fn-support-art{float:right;width:clamp(150px,22vw,230px);height:auto;margin:-6px 0 12px 28px}
+@media(max-width:600px){.fn-support-art{float:none;display:block;width:190px;margin:0 auto 18px}}
+
+/* Decorations (tape, travel line) may poke past the edge of the screen but never make the page scroll sideways */
+html,body{overflow-x:clip}

@@ -49,3 +49,18 @@ Itinerary data for Mexico City and San Miguel lives in `mexico.it.js` and
 switch their interface text on `<html lang="it">`. Both languages use the
 same localStorage keys and item IDs, so ticks carry over between them; keep
 IDs and item order identical in both copies.
+
+
+## Motion
+
+All animation is in `dist/assets/motion.css` and `dist/assets/motion.js`, and
+switches off for visitors who prefer reduced motion. Hero photos are held down
+along the top with masking tape while the bottom flutters in the wind. For
+travel motion, use **footsteps that fade behind the walker** (Marauder's Map
+style) rather than paper planes; see CLAUDE.md for the house rules.
+
+Destination cards on the home and My travels pages flip over on hover, or with
+the "Quick look" button on touch screens and keyboards, to show highlights,
+best months, getting around and one practical tip. The back of each card is
+plain HTML inside the card, so edit it there (in both languages) when an
+itinerary changes.
