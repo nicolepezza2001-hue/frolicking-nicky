@@ -186,3 +186,14 @@ html,body{overflow-x:clip}
   html body .fn-header .fn-lang a,html body .fn-header .fn-lang span[aria-current]{padding:6px 2px}
   .fn-lang::after{display:none}
 }
+
+/* Touch screens: iPhone Safari can show the turned-away side mirrored, so each side is fully hidden
+   halfway through the turn. Phones also don't need the Quick look button: cards turn by themselves or on tap. */
+@media(hover:none){
+  .fn-flip-front{display:none}
+  .fn-card-front,.fn-card-back{transition:visibility 0s .37s}
+  .fn-card.fn-flipped .fn-card-front,.fn-card:not(.fn-flipped) .fn-card-back{visibility:hidden}
+  .fn-pc-host>*{transition:visibility 0s .45s}
+  .fn-pc-host.fn-pc-flipped>:not(.fn-pc-back),.fn-pc-host:not(.fn-pc-flipped)>.fn-pc-back{visibility:hidden}
+}
+@media(max-width:760px){.fn-map-legend{display:none}}

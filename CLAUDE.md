@@ -43,10 +43,10 @@ Italian copies and the best-time-to-visit data.
 Check every change on a phone-sized screen too (Nicky mostly looks on her
 iPhone). On phones: the header links sit behind a menu button; destination
 cards and the hero postcard turn over by themselves (cards once fully on
-screen, the postcard after a few seconds) and on tap, with no Turn over button;
+screen, the postcard after 1½ seconds) and on tap, with no Turn over or Quick look buttons;
 the map fits the screen with number tiles and trip links, and can be pinched,
 dragged and zoomed with + / − (`zoomable()` in `motion.js`). Nicky didn't want
-a separate Europe close-up.
+a separate Europe close-up or the map legend on phones. On touch screens the turned-away side is hidden with `visibility` because iPhone Safari can show it mirrored.
 
 ## Working with Nicky
 
