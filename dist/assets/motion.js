@@ -186,7 +186,6 @@
   };
   const rules = [
     [/dinner|per cena|food|cibo|cooking|cucina/i, 'pasta'],
-    [/support local women|sostieni le donne/i, 'heart'],
     [/best time to visit|periodo migliore/i, 'sun'],
     [/pages from my travel journal|pagine dal mio diario|^my travels$|^i miei viaggi$/i, 'plane'],
     [/elsewhere i write|scrivo anche altrove/i, 'pencil'],
@@ -220,14 +219,12 @@
   const placed = [];
   function place(h, svg) {
     const base = size(h);
-    const tag = document.createElement('span'); tag.className = 'fn-icon-tag'; tag.innerHTML = '\u2009' + svg;
+    const tag = document.createElement('span'); tag.className = 'fn-icon-tag'; tag.innerHTML = svg;
     h.append(tag); placed.push([h, tag]); fit(h, tag, base);
   }
-  function fit(h, tag, base) {
-    tag.classList.remove('fn-icon-hang', 'fn-icon-off');
-    const now = size(h);
-    if (now.every((v, i) => Math.abs(v - base[i]) <= 1)) return;
-    tag.classList.add('fn-icon-hang');
+  function fit(h, tag) {
+    tag.classList.remove('fn-icon-off');
+    // hide the icon rather than let it run off the edge of the screen
     if (tag.querySelector('svg').getBoundingClientRect().right > document.documentElement.clientWidth - 4) tag.classList.add('fn-icon-off');
   }
   let resizeTimer;
@@ -236,5 +233,45 @@
   // Height and width of the heading and its box: if adding the icon changes any of them, the icon hangs instead.
   function size(h) { const a = h.getBoundingClientRect(), b = h.parentElement.getBoundingClientRect(); return [a.height, a.width, b.height, b.width]; }
   const run = () => { add(); document.querySelectorAll('.fn-season h2').forEach(h => { if (!h.querySelector('.fn-icon')) place(h, I.sun); }); };
+  document.readyState === 'complete' ? run() : document.addEventListener('DOMContentLoaded', run);
+})();
+
+/* Hero photos come alive: they float on the page, catch a passing glint of light and carry a fluttering strip of washi tape.
+   On the home and About pages a postmark spins on the corner, and on the home page a paper plane loops through the empty space under the intro. */
+(() => {
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  const run = () => {
+    document.querySelectorAll('.fn-home-portrait, .fn-about-portrait, .postcard, .fn-vienna-hero-photo, .vn-portrait, .ba-photo').forEach((fig, n) => {
+      if (fig.dataset.fnAlive) return; fig.dataset.fnAlive = '1';
+      if (getComputedStyle(fig).position === 'static') fig.style.position = 'relative';
+      fig.classList.add('fn-alive');
+      const glint = document.createElement('span'); glint.className = 'fn-glint'; glint.setAttribute('aria-hidden', 'true');
+      const tape = document.createElement('span'); tape.className = 'fn-tape' + (n % 2 ? ' fn-tape-right' : ''); tape.setAttribute('aria-hidden', 'true');
+      fig.append(glint, tape);
+      if (fig.matches('.fn-home-portrait, .fn-about-portrait')) {
+        const stamp = document.createElement('span'); stamp.className = 'fn-stamp'; stamp.setAttribute('aria-hidden', 'true');
+        const it = document.documentElement.lang === 'it';
+        const words = it ? 'FROLICKING NICKY ✦ DIARIO DI VIAGGIO ✦ ' : 'FROLICKING NICKY ✦ A TRAVEL JOURNAL ✦ ';
+        stamp.innerHTML = `<svg viewBox="0 0 120 120"><defs><path id="fn-stamp-ring" d="M60,60 m-43,0 a43,43 0 1,1 86,0 a43,43 0 1,1 -86,0"/></defs>
+          <circle cx="60" cy="60" r="56" fill="#E4F5E0" stroke="#86324A" stroke-width="2.5" stroke-dasharray="3 3"/><circle cx="60" cy="60" r="31" fill="none" stroke="#86324A" stroke-width="1.5"/>
+          <g class="fn-stamp-ring"><text font-size="9.4" font-weight="700" letter-spacing="0.9" textLength="266" lengthAdjust="spacing" fill="#86324A" font-family="DM Sans, sans-serif"><textPath href="#fn-stamp-ring">${words}</textPath></text></g>
+          <g class="fn-stamp-plane"><path d="M44 66l32-14-9 24-6-9z" fill="#86324A"/><path d="M61 67l15-15" stroke="#E4F5E0" stroke-width="1.5"/></g></svg>`;
+        fig.append(stamp);
+      }
+    });
+    const intro = document.querySelector('.fn-intro');
+    if (intro && !intro.querySelector('.fn-flight')) {
+      if (getComputedStyle(intro).position === 'static') intro.style.position = 'relative';
+      const f = document.createElement('div'); f.className = 'fn-flight'; f.setAttribute('aria-hidden', 'true');
+      f.innerHTML = `<svg viewBox="0 0 400 140" preserveAspectRatio="xMinYMid meet"><path class="fn-flight-path" d="M10,110 C70,20 130,130 190,70 S300,-10 320,60 S260,120 230,80 S330,20 390,40" fill="none" stroke="#86324A" stroke-width="2.2" stroke-linecap="round" stroke-dasharray="2 9"/>
+        <g class="fn-flight-plane"><path d="M-11,-7 L13,0 L-11,7 L-6,0 Z" fill="#86324A"/><path d="M-6,0 L13,0" stroke="#E4F5E0" stroke-width="1.2"/>
+          <animateMotion dur="7s" repeatCount="indefinite" rotate="auto" keyPoints="0;1;1" keyTimes="0;.85;1" calcMode="spline" keySplines=".45 0 .4 1;0 0 1 1" path="M10,110 C70,20 130,130 190,70 S300,-10 320,60 S260,120 230,80 S330,20 390,40"/></g>
+        <g class="fn-flight-heart" transform="translate(390 40)"><circle r="5" fill="#86324A"/></g></svg>`;
+      intro.append(f);
+      // Only fly where there is genuinely empty space under the intro text
+      const fit = () => { const text = intro.querySelector('.fn-lede'); f.hidden = !text || text.getBoundingClientRect().bottom + 12 > f.getBoundingClientRect().top; };
+      f.hidden = false; requestAnimationFrame(fit); addEventListener('resize', () => { f.hidden = false; fit(); });
+    }
+  };
   document.readyState === 'complete' ? run() : document.addEventListener('DOMContentLoaded', run);
 })();
