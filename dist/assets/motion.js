@@ -166,7 +166,9 @@
     heart: g('<path class="fn-i-beat" d="M12 20s-7.5-4.6-7.5-10A4.2 4.2 0 0 1 12 7.6 4.2 4.2 0 0 1 19.5 10c0 5.4-7.5 10-7.5 10z" fill="currentColor" fill-opacity=".18"/>', 'fn-i-heart'),
     sun: g('<circle cx="12" cy="12" r="4" fill="currentColor" fill-opacity=".18"/><g class="fn-i-spin"><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/></g>', 'fn-i-sun'),
     moon: g('<path class="fn-i-sway" d="M19 14.5A7.5 7.5 0 0 1 9.5 5a7.5 7.5 0 1 0 9.5 9.5z" fill="currentColor" fill-opacity=".18"/><path class="fn-i-twinkle" d="M17 4.5v2M16 5.5h2"/>', 'fn-i-moon'),
-    plane: g('<g class="fn-i-fly"><path d="M2.5 13.5l19-8-5.5 15-3.5-6.5z" fill="currentColor" fill-opacity=".14"/><path d="M12.5 14l9-8.5"/></g><path class="fn-i-dash" d="M2 20c3-.5 5-2 6.5-4" stroke-dasharray="1.5 2.5"/>', 'fn-i-plane'),
+    // Footsteps that appear one after another and fade away, like someone walking across the Marauder's Map
+    steps: g([[7, 20.5, 'l'], [12.2, 17.2, 'r'], [10.6, 11.4, 'l'], [16, 7.8, 'r']].map(([x, y, side]) =>
+      `<g class="fn-i-step"><g transform="translate(${x} ${y}) rotate(${side === 'l' ? 22 : 36})"><ellipse cx="0" cy="-1.6" rx="1.7" ry="2.6" fill="currentColor" stroke="none"/><ellipse cx="0" cy="2.6" rx="1.3" ry="1.4" fill="currentColor" stroke="none"/></g></g>`).join(''), 'fn-i-steps'),
     pencil: g('<g class="fn-i-write"><path d="M15.5 4.5l4 4L8.5 19.5 4 20l.5-4.5z"/><path d="M13.5 6.5l4 4"/></g><path d="M12 21h8" stroke-dasharray="2 2"/>', 'fn-i-pencil'),
     check: g('<rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4V2.8h6V4"/><path class="fn-i-tick" d="M8.5 12.5l2.5 2.5 4.5-5" pathLength="1"/>', 'fn-i-check'),
     mountain: g('<circle class="fn-i-rise" cx="17.5" cy="6" r="2"/><path d="M2 20l7-11 4 6 2.5-3.5L22 20z" fill="currentColor" fill-opacity=".14"/><path d="M7.2 11.8l1.8 1 1.6-1.2"/>', 'fn-i-mountain'),
@@ -187,7 +189,7 @@
   const rules = [
     [/dinner|per cena|food|cibo|cooking|cucina/i, 'pasta'],
     [/best time to visit|periodo migliore/i, 'sun'],
-    [/pages from my travel journal|pagine dal mio diario|^my travels$|^i miei viaggi$/i, 'plane'],
+    [/pages from my travel journal|pagine dal mio diario|^my travels$|^i miei viaggi$/i, 'steps'],
     [/elsewhere i write|scrivo anche altrove/i, 'pencil'],
     [/before you go|just a little planning|prima di partire|giusto un po’ di programmazione|more ideas|altre idee/i, 'check'],
     [/teotihuac|pyramid|piramide/i, 'pyramid'],
@@ -236,18 +238,24 @@
   document.readyState === 'complete' ? run() : document.addEventListener('DOMContentLoaded', run);
 })();
 
-/* Hero photos come alive: they float on the page, catch a passing glint of light and carry a fluttering strip of washi tape.
-   On the home and About pages a postmark spins on the corner, and on the home page a paper plane loops through the empty space under the intro. */
+/* Hero photos come alive: two strips of masking tape hold the top edge down while the bottom flutters in the wind,
+   and a glint of light passes now and then. On the home and About pages a postmark spins on the corner, and on the
+   home page a trail of footsteps walks through the empty space under the intro, each step fading as the next appears
+   (like the Marauder's Map). House rule: for travel motion, use footsteps rather than paper planes. */
 (() => {
   if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  const ns = 'http://www.w3.org/2000/svg';
+  // A shoe print pointing along +x: sole in front, heel behind
+  const print = (x, y, angle, cls = 'fn-step', size = 1) => `<g class="${cls}" transform="translate(${x.toFixed(1)} ${y.toFixed(1)}) rotate(${angle.toFixed(1)}) scale(${size})"><ellipse cx="2.6" cy="0" rx="4.6" ry="2.6"/><ellipse cx="-5" cy="0" rx="2.4" ry="2.1"/></g>`;
   const run = () => {
-    document.querySelectorAll('.fn-home-portrait, .fn-about-portrait, .postcard, .fn-vienna-hero-photo, .vn-portrait, .ba-photo').forEach((fig, n) => {
+    document.querySelectorAll('.fn-home-portrait, .fn-about-portrait, .postcard, .fn-vienna-hero-photo, .vn-portrait, .ba-photo').forEach(fig => {
       if (fig.dataset.fnAlive) return; fig.dataset.fnAlive = '1';
       if (getComputedStyle(fig).position === 'static') fig.style.position = 'relative';
-      fig.classList.add('fn-alive');
-      const glint = document.createElement('span'); glint.className = 'fn-glint'; glint.setAttribute('aria-hidden', 'true');
-      const tape = document.createElement('span'); tape.className = 'fn-tape' + (n % 2 ? ' fn-tape-right' : ''); tape.setAttribute('aria-hidden', 'true');
-      fig.append(glint, tape);
+      fig.classList.add('fn-alive'); fig.parentElement.classList.add('fn-wind');
+      const bits = ['fn-shade', 'fn-glint', 'fn-tape fn-tape-l', 'fn-tape fn-tape-r'].map(cls => {
+        const el = document.createElement('span'); el.className = cls; el.setAttribute('aria-hidden', 'true'); return el;
+      });
+      fig.append(...bits);
       if (fig.matches('.fn-home-portrait, .fn-about-portrait')) {
         const stamp = document.createElement('span'); stamp.className = 'fn-stamp'; stamp.setAttribute('aria-hidden', 'true');
         const it = document.documentElement.lang === 'it';
@@ -255,23 +263,51 @@
         stamp.innerHTML = `<svg viewBox="0 0 120 120"><defs><path id="fn-stamp-ring" d="M60,60 m-43,0 a43,43 0 1,1 86,0 a43,43 0 1,1 -86,0"/></defs>
           <circle cx="60" cy="60" r="56" fill="#E4F5E0" stroke="#86324A" stroke-width="2.5" stroke-dasharray="3 3"/><circle cx="60" cy="60" r="31" fill="none" stroke="#86324A" stroke-width="1.5"/>
           <g class="fn-stamp-ring"><text font-size="9.4" font-weight="700" letter-spacing="0.9" textLength="266" lengthAdjust="spacing" fill="#86324A" font-family="DM Sans, sans-serif"><textPath href="#fn-stamp-ring">${words}</textPath></text></g>
-          <g class="fn-stamp-plane"><path d="M44 66l32-14-9 24-6-9z" fill="#86324A"/><path d="M61 67l15-15" stroke="#E4F5E0" stroke-width="1.5"/></g></svg>`;
+          <g fill="#86324A">${print(51, 70, -70, 'fn-stamp-step', 1.35)}${print(68, 52, -70, 'fn-stamp-step', 1.35)}</g></svg>`;
         fig.append(stamp);
       }
     });
     const intro = document.querySelector('.fn-intro');
-    if (intro && !intro.querySelector('.fn-flight')) {
+    if (intro && !intro.querySelector('.fn-steps')) {
       if (getComputedStyle(intro).position === 'static') intro.style.position = 'relative';
-      const f = document.createElement('div'); f.className = 'fn-flight'; f.setAttribute('aria-hidden', 'true');
-      f.innerHTML = `<svg viewBox="0 0 400 140" preserveAspectRatio="xMinYMid meet"><path class="fn-flight-path" d="M10,110 C70,20 130,130 190,70 S300,-10 320,60 S260,120 230,80 S330,20 390,40" fill="none" stroke="#86324A" stroke-width="2.2" stroke-linecap="round" stroke-dasharray="2 9"/>
-        <g class="fn-flight-plane"><path d="M-11,-7 L13,0 L-11,7 L-6,0 Z" fill="#86324A"/><path d="M-6,0 L13,0" stroke="#E4F5E0" stroke-width="1.2"/>
-          <animateMotion dur="7s" repeatCount="indefinite" rotate="auto" keyPoints="0;1;1" keyTimes="0;.85;1" calcMode="spline" keySplines=".45 0 .4 1;0 0 1 1" path="M10,110 C70,20 130,130 190,70 S300,-10 320,60 S260,120 230,80 S330,20 390,40"/></g>
-        <g class="fn-flight-heart" transform="translate(390 40)"><circle r="5" fill="#86324A"/></g></svg>`;
-      intro.append(f);
-      // Only fly where there is genuinely empty space under the intro text
-      const fit = () => { const text = intro.querySelector('.fn-lede'); f.hidden = !text || text.getBoundingClientRect().bottom + 12 > f.getBoundingClientRect().top; };
-      f.hidden = false; requestAnimationFrame(fit); addEventListener('resize', () => { f.hidden = false; fit(); });
+      const box = document.createElement('div'); box.className = 'fn-steps'; box.setAttribute('aria-hidden', 'true');
+      const svg = document.createElementNS(ns, 'svg'); svg.setAttribute('viewBox', '0 0 400 140'); svg.setAttribute('preserveAspectRatio', 'xMinYMid meet');
+      const route = document.createElementNS(ns, 'path');
+      route.setAttribute('d', 'M6,124 C60,124 70,74 120,80 S180,124 232,100 S300,34 352,46 S392,66 396,58');
+      svg.append(route); box.append(svg); intro.append(box);
+      // Lay prints along the route, alternating left and right of the line
+      const len = route.getTotalLength(), stride = 21, gap = 6, steps = [];
+      for (let d = 4, i = 0; d < len - 4; d += stride, i++) {
+        const a = route.getPointAtLength(d), b = route.getPointAtLength(Math.min(len, d + 1));
+        const ang = Math.atan2(b.y - a.y, b.x - a.x), side = i % 2 ? 1 : -1;
+        steps.push([a.x - Math.sin(ang) * gap * side, a.y + Math.cos(ang) * gap * side, ang * 180 / Math.PI]);
+      }
+      route.remove();
+      const it = document.documentElement.lang === 'it';
+      svg.innerHTML = `<g fill="#86324A">${steps.map(([x, y, a]) => print(x, y, a, 'fn-step', 1.45)).join('')}</g>
+        <g class="fn-steps-name"><rect x="-22" y="-9" width="44" height="15" rx="2" fill="#F5FBF3" stroke="#86324A" stroke-width="1"/>
+        <text x="0" y="2.6" text-anchor="middle" font-size="10" font-style="italic" font-weight="600" fill="#86324A" font-family="Playfair Display, Georgia, serif">Nicky</text></g>`;
+      // Each print appears as the walker reaches it, then slowly fades; the name tag follows the newest step
+      const beat = 380, linger = 2600, cycle = steps.length * beat + linger + 900;
+      svg.querySelectorAll('.fn-step').forEach((el, i) => el.animate(
+        [{ opacity: 0 }, { opacity: .9, offset: 60 / cycle }, { opacity: .9, offset: 250 / cycle }, { opacity: 0, offset: Math.min(.99, linger / cycle) }, { opacity: 0 }],
+        { duration: cycle, delay: i * beat, iterations: Infinity, fill: 'backwards' }));
+      const tag = svg.querySelector('.fn-steps-name'), walk = steps.length * beat;
+      tag.animate(steps.map(([x, y], i) => ({ transform: `translate(${x}px, ${y - 16}px)`, opacity: 1, offset: (i * beat) / cycle }))
+        .concat([{ transform: `translate(${steps.at(-1)[0]}px, ${steps.at(-1)[1] - 16}px)`, opacity: 0, offset: (walk + 900) / cycle },
+                 { transform: `translate(${steps.at(-1)[0]}px, ${steps.at(-1)[1] - 16}px)`, opacity: 0, offset: 1 }]),
+        { duration: cycle, iterations: Infinity, easing: 'linear' });
+      // Only walk where there is genuinely empty space under the intro text
+      const fit = () => { const text = intro.querySelector('.fn-lede'); box.hidden = !text || text.getBoundingClientRect().bottom + 12 > box.getBoundingClientRect().top; };
+      box.hidden = false; requestAnimationFrame(fit); addEventListener('resize', () => { box.hidden = false; fit(); });
     }
   };
   document.readyState === 'complete' ? run() : document.addEventListener('DOMContentLoaded', run);
 })();
+
+/* Destination cards: the Quick look button flips a card for touch and keyboard users (hover flips it with a mouse) */
+document.addEventListener('click', e => {
+  const btn = e.target.closest('.fn-flip'); if (!btn) return;
+  const card = btn.closest('.fn-card'), on = card.classList.toggle('fn-flipped');
+  card.querySelector(on ? '.fn-flip-back' : '.fn-flip-front').focus({ preventScroll: true });
+});

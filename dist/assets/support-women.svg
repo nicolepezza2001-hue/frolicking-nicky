@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 230" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <style>
+    .heart { transform-box: fill-box; transform-origin: center; }
+    .glow { transform-box: fill-box; transform-origin: center; }
+    .sway-l, .sway-r { transform-box: fill-box; transform-origin: 50% 100%; }
+    @media (prefers-reduced-motion: no-preference) {
+      .heart { animation: beat 2.4s ease-in-out infinite; }
+      .glow { animation: glow 2.4s ease-in-out infinite; }
+      .sway-l { animation: sway 5s ease-in-out infinite; }
+      .sway-r { animation: sway 5s -2.5s ease-in-out infinite; }
+      .twinkle { animation: twinkle 2.8s ease-in-out infinite; }
+      .twinkle.b { animation-delay: 1.4s; }
+    }
+    @keyframes beat { 0%, 55%, 100% { transform: scale(1); } 12% { transform: scale(1.14); } 26% { transform: scale(.96); } 40% { transform: scale(1.08); } }
+    @keyframes glow { 0%, 100% { opacity: .35; transform: scale(.9); } 20% { opacity: .7; transform: scale(1.12); } }
+    @keyframes sway { 0%, 100% { transform: rotate(-1.6deg); } 50% { transform: rotate(1.6deg); } }
+    @keyframes twinkle { 0%, 100% { opacity: 1; } 50% { opacity: .15; } }
+  </style>
+
+  <!-- the shelter: a simple house that holds them -->
+  <path d="M30 108 L130 30 L230 108" stroke="#86324A" stroke-width="5"/>
+  <path d="M46 98 V214 H214 V98" stroke="#86324A" stroke-width="3" stroke-dasharray="2 8" opacity=".55"/>
+  <path d="M22 214 H238" stroke="#000" stroke-width="2.5" opacity=".75"/>
+
+  <!-- heart in the roof -->
+  <circle class="glow" cx="130" cy="70" r="17" fill="#86324A" opacity=".35"/>
+  <path class="heart" d="M130 84s-13-8-13-17.4a7.3 7.3 0 0 1 13-4.5 7.3 7.3 0 0 1 13 4.5c0 9.4-13 17.4-13 17.4z" fill="#86324A"/>
+
+  <!-- sparkles -->
+  <path class="twinkle" d="M46 46v12M40 52h12" stroke="#86324A" stroke-width="2.4"/>
+  <path class="twinkle b" d="M214 40v10M209 45h10" stroke="#86324A" stroke-width="2.4"/>
+  <circle class="twinkle b" cx="196" cy="70" r="2.6" fill="#F2C14E"/>
+  <circle class="twinkle" cx="64" cy="78" r="2.6" fill="#F2C14E"/>
+
+  <!-- left woman -->
+  <g class="sway-l">
+    <path d="M80 196v16M90 196v16" stroke="#000" stroke-width="3"/>
+    <path d="M85 132c-8 0-12 5-14 14l-9 52h46l-9-52c-2-9-6-14-14-14z" fill="#2F6B3A"/>
+    <g transform="translate(0 7)"><path d="M71 120c-3-16 3-26 14-26s17 10 14 26c-3 4-9 5-14 5s-11-1-14-5z" fill="#3a2418"/>
+    <circle cx="85" cy="112" r="11" fill="#E9B99A"/>
+    <path d="M74 109c3-8 18-10 22 0" stroke="#3a2418" stroke-width="5"/></g>
+  </g>
+
+  <!-- right woman -->
+  <g class="sway-r">
+    <path d="M170 196v16M180 196v16" stroke="#000" stroke-width="3"/>
+    <path d="M175 132c-8 0-12 5-14 14l-9 52h46l-9-52c-2-9-6-14-14-14z" fill="#F2C14E"/>
+    <g transform="translate(0 7)"><circle cx="175" cy="112" r="11" fill="#8a5a3c"/>
+    <path d="M164 110c0-9 5-14 11-14s11 5 11 14c-3-5-8-8-11-8s-8 3-11 8z" fill="#111"/>
+    <circle cx="186" cy="100" r="6.5" fill="#111"/></g>
+  </g>
+
+  <!-- middle woman -->
+  <path d="M125 198v14M135 198v14" stroke="#000" stroke-width="3"/>
+  <path d="M130 132c-9 0-13 5-15 14l-10 54h50l-10-54c-2-9-6-14-15-14z" fill="#86324A"/>
+  <g transform="translate(0 7)"><path d="M117 112c0-12 6-19 13-19s13 7 13 19v16c-4 3-9 4-13 4s-9-1-13-4z" fill="#d9a35b"/>
+  <circle cx="130" cy="113" r="11" fill="#f1cbb0"/>
+  <path d="M119 110c2-9 20-11 22 0" stroke="#d9a35b" stroke-width="5"/></g>
+
+  <!-- linked arms: hands meet between them -->
+  <path d="M96 142c6 12 12 16 22 6" stroke="#E9B99A" stroke-width="4.5"/>
+  <path d="M164 142c-6 12-12 16-22 6" stroke="#8a5a3c" stroke-width="4.5"/>
+  <path d="M116 142c-4 9-8 12-14 12" stroke="#f1cbb0" stroke-width="4.5"/>
+  <path d="M144 142c4 9 8 12 14 12" stroke="#f1cbb0" stroke-width="4.5"/>
+  <path d="M74 142c-6 14-9 22-6 30" stroke="#E9B99A" stroke-width="4.5"/>
+  <path d="M186 142c6 14 9 22 6 30" stroke="#8a5a3c" stroke-width="4.5"/>
+</svg>

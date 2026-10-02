@@ -108,7 +108,8 @@ h3 .fn-icon { width: 1.9em; height: 1.9em; margin-top: -1.02em; left: .3em; }
   .fn-i-sway { transform-origin: 50% 100%; animation: fn-i-sway 2.4s ease-in-out infinite; }
   .fn-i-twinkle { animation: fn-i-twinkle 1.6s ease-in-out infinite; }
   .fn-i-twinkle2 { animation: fn-i-twinkle 1.6s .8s ease-in-out infinite; }
-  .fn-i-fly { animation: fn-i-fly 2.6s ease-in-out infinite; }
+  .fn-i-step { opacity: 0; animation: fn-i-step 2.4s ease-in-out infinite; }
+  .fn-i-step:nth-of-type(2) { animation-delay: .4s; } .fn-i-step:nth-of-type(3) { animation-delay: .8s; } .fn-i-step:nth-of-type(4) { animation-delay: 1.2s; }
   .fn-i-dash { animation: fn-i-dash 1s linear infinite; }
   .fn-i-write { transform-origin: 20% 90%; animation: fn-i-write 1.2s ease-in-out infinite; }
   .fn-i-tick { stroke-dasharray: 1; animation: fn-i-tick 2.4s ease-in-out infinite; }
@@ -129,7 +130,7 @@ h3 .fn-icon { width: 1.9em; height: 1.9em; margin-top: -1.02em; left: .3em; }
   @keyframes fn-i-spin { to { rotate: 360deg; } }
   @keyframes fn-i-sway { 0%, 100% { rotate: -16deg; } 50% { rotate: 16deg; } }
   @keyframes fn-i-twinkle { 50% { opacity: .15; scale: .45; rotate: 45deg; } }
-  @keyframes fn-i-fly { 0%, 100% { translate: -2px 2px; rotate: 6deg; } 50% { translate: 3px -4px; rotate: -10deg; } }
+  @keyframes fn-i-step { 0% { opacity: 0; } 8%, 30% { opacity: 1; } 75%, 100% { opacity: 0; } }
   @keyframes fn-i-dash { to { stroke-dashoffset: -8; } }
   @keyframes fn-i-write { 25% { rotate: -16deg; translate: -2px 0; } 50% { rotate: 8deg; translate: 2px 0; } 75% { rotate: -12deg; translate: 4px 0; } }
   @keyframes fn-i-tick { 0%, 10% { stroke-dashoffset: 1; } 40%, 85% { stroke-dashoffset: 0; } 100% { stroke-dashoffset: 1; } }
@@ -142,32 +143,54 @@ h3 .fn-icon { width: 1.9em; height: 1.9em; margin-top: -1.02em; left: .3em; }
   @keyframes fn-i-hop { 0%, 100% { translate: 0 0; scale: 1 1; } 15% { scale: 1.1 .9; } 45% { translate: 0 -6px; scale: .95 1.05; } }
 }
 
-/* Living hero photos */
+/* Living hero photos: masking tape holds the top edge down while the bottom catches the wind */
 @media (prefers-reduced-motion: no-preference) {
-  .fn-alive { animation: fn-develop 1.6s .2s ease both, fn-polaroid 6s 1.8s ease-in-out infinite; }
+  .fn-wind { perspective: 1100px; }
+  .fn-alive { transform-origin: 50% 0; animation: fn-develop 1.6s .2s ease both, fn-flutter 6.5s 1.8s ease-in-out infinite; }
   .fn-alive:hover { animation-play-state: running, paused; }
+  .fn-alive:hover .fn-shade { animation-play-state: paused; }
+  .fn-shade { position: absolute; inset: 0; pointer-events: none; z-index: 1; opacity: 0;
+    background: linear-gradient(180deg, transparent 35%, #00000038); animation: fn-shade 6.5s 1.8s ease-in-out infinite; }
   .fn-glint { position: absolute; inset: 0; overflow: hidden; pointer-events: none; border-radius: inherit; }
   .fn-glint::after { content: ""; position: absolute; top: -20%; bottom: -20%; width: 35%; left: -60%; rotate: 18deg;
     background: linear-gradient(90deg, transparent, #fff6e055 40%, #ffffff8c 50%, #fff6e055 60%, transparent); mix-blend-mode: soft-light;
     animation: fn-glint 7s 2.4s ease-in-out infinite; }
-  .fn-tape { position: absolute; top: -16px; left: 50%; width: 112px; height: 32px; margin-left: -56px; rotate: -7deg; pointer-events: none; z-index: 2;
-    background: repeating-linear-gradient(45deg, #86324Abb 0 8px, #b5596fbb 8px 16px); box-shadow: 0 2px 4px #0000001f;
-    clip-path: polygon(3% 0, 97% 4%, 100% 30%, 96% 55%, 100% 80%, 97% 100%, 2% 96%, 0 70%, 4% 45%, 0 18%);
-    transform-origin: 50% 100%; animation: fn-tape 3.2s ease-in-out infinite; }
-  .fn-tape-right { left: auto; right: 18px; margin-left: 0; rotate: 9deg; }
   .fn-stamp { position: absolute; left: -46px; bottom: -40px; width: 118px; height: 118px; z-index: 3; pointer-events: none; rotate: -12deg;
     filter: drop-shadow(3px 4px 0 #00000022); animation: fn-stamp-in .8s 1.6s cubic-bezier(.3,1.6,.5,1) both; }
   .fn-stamp svg { width: 100%; height: 100%; overflow: visible; }
   .fn-stamp-ring { transform-origin: 60px 60px; animation: fn-i-spin 16s linear infinite; }
-  .fn-stamp-plane { transform-box: fill-box; transform-origin: center; animation: fn-i-fly 2.6s ease-in-out infinite; }
-  .fn-flight[hidden] { display: none; }
-  .fn-flight { position: absolute; left: 0; bottom: 18px; width: min(46%, 520px); height: 150px; pointer-events: none; z-index: 0; }
-  .fn-flight svg { width: 100%; height: 100%; overflow: visible; }
-  .fn-flight-path { stroke-dashoffset: 0; animation: fn-i-dash 1.4s linear infinite; opacity: .55; }
-  .fn-flight-heart circle { animation: fn-i-beat 1.3s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
-  @keyframes fn-polaroid { 0%, 100% { rotate: -1.4deg; translate: 0 0; } 50% { rotate: 1.4deg; translate: 0 -7px; } }
+  .fn-stamp-step { animation: fn-step-blink 1.6s ease-in-out infinite; }
+  .fn-stamp-step + .fn-stamp-step { animation-delay: .8s; }
+  .fn-steps[hidden] { display: none; }
+  .fn-steps { position: absolute; left: 0; bottom: 18px; width: min(46%, 520px); height: 150px; pointer-events: none; z-index: 0; }
+  .fn-steps svg { width: 100%; height: 100%; overflow: visible; }
+  .fn-steps .fn-step { opacity: 0; }
+  .fn-steps-name { opacity: 0; }
+  /* The bottom edge lifts and drops in irregular gusts; the taped top edge stays put */
+  @keyframes fn-flutter {
+    0%, 100% { rotate: 1 0 0 0deg; }
+    9% { rotate: 1 -.1 0 8deg; } 15% { rotate: 1 .06 0 3deg; } 22% { rotate: 1 -.05 0 10deg; } 30% { rotate: 1 .08 0 1.5deg; }
+    44% { rotate: 1 0 0 0deg; }
+    53% { rotate: 1 .12 0 6deg; } 58% { rotate: 1 -.04 0 2deg; } 64% { rotate: 1 .1 0 12deg; } 71% { rotate: 1 -.08 0 4deg; }
+    78% { rotate: 1 .05 0 8deg; } 88% { rotate: 1 -.03 0 1deg; }
+  }
+  @keyframes fn-shade {
+    0%, 44%, 100% { opacity: 0; } 9% { opacity: .65; } 15% { opacity: .25; } 22% { opacity: .8; } 30% { opacity: .12; }
+    53% { opacity: .5; } 58% { opacity: .18; } 64% { opacity: 1; } 71% { opacity: .33; } 78% { opacity: .65; } 88% { opacity: .08; }
+  }
+  @keyframes fn-step-blink { 0%, 100% { opacity: .15; } 30%, 50% { opacity: 1; } }
   @keyframes fn-glint { 0%, 55% { left: -60%; } 85%, 100% { left: 130%; } }
-  @keyframes fn-tape { 0%, 100% { skew: 0deg 0deg; scale: 1 1; } 50% { skew: -6deg 1deg; scale: 1.03 .96; } }
   @keyframes fn-stamp-in { from { scale: 2.2; opacity: 0; rotate: -40deg; } }
 }
-@media (max-width: 760px) { .fn-flight { display: none; } .fn-stamp { width: 84px; height: 84px; left: -14px; bottom: -26px; } }
+/* Beige masking tape with torn ends, one strip on each top corner. Shown even with reduced motion: it simply stays still. */
+.fn-tape { position: absolute; top: -12px; width: 120px; height: 34px; z-index: 4; pointer-events: none; opacity: .93;
+  background:
+    linear-gradient(180deg, #ffffff40, #ffffff00 30%, #ffffff00 72%, #7a603020),
+    repeating-linear-gradient(90deg, #6b552a0d 0 1px, transparent 1px 3px),
+    repeating-linear-gradient(0deg, #ffffff12 0 1px, transparent 1px 4px),
+    #e2d2a8;
+  box-shadow: 0 1px 2px #00000030, inset 0 0 8px #b39c6a66;
+  clip-path: polygon(2% 0, 98% 0, 100% 11%, 97.5% 24%, 99.5% 37%, 97% 50%, 100% 63%, 98% 76%, 99.5% 89%, 97.5% 100%, 2.5% 100%, 0 88%, 2% 75%, 0.5% 62%, 3% 50%, 0 37%, 2.5% 24%, 0.5% 12%); }
+.fn-tape-l { left: -34px; rotate: -34deg; }
+.fn-tape-r { right: -34px; rotate: 33deg; }
+@media (max-width: 760px) { .fn-steps { display: none; } .fn-stamp { width: 84px; height: 84px; left: -14px; bottom: -26px; } .fn-tape { width: 92px; height: 28px; } .fn-tape-l { left: -24px; } .fn-tape-r { right: -24px; } }
