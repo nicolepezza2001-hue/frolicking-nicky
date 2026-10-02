@@ -386,7 +386,7 @@
           let timer;
           new IntersectionObserver(([en]) => {
             if (fig.dataset.fnManual) return; clearTimeout(timer);
-            if (en.intersectionRatio >= .6) timer = setTimeout(() => fig.classList.add('fn-pc-flipped'), 1500);
+            if (en.intersectionRatio >= .6) timer = setTimeout(() => fig.classList.add('fn-pc-flipped'), 500);
             else if (en.intersectionRatio < .15) fig.classList.remove('fn-pc-flipped');
           }, { threshold: [0, .15, .6, 1] }).observe(fig);
         }
@@ -589,7 +589,7 @@
   const still = matchMedia('(prefers-reduced-motion: reduce)').matches, timers = new Map();
   const run = () => {
     document.querySelectorAll('.fn-card').forEach(card => card.addEventListener('click', e => {
-      if (e.target.closest('.fn-flip') || (e.target.closest('a') && !e.target.closest('.fn-photo'))) return;
+      if (e.target.closest('.fn-flip, .fn-card-back') || (e.target.closest('a') && !e.target.closest('.fn-photo'))) return;
       e.preventDefault(); card.dataset.fnManual = '1'; card.classList.toggle('fn-flipped');
     }));
     if (still) return;
@@ -598,13 +598,18 @@
       if (card.dataset.fnManual) return;
       const enough = Math.min(.9, innerHeight / card.offsetHeight * .9);
       clearTimeout(timers.get(card));
-      if (r >= enough) timers.set(card, setTimeout(() => card.classList.add('fn-flipped'), 1500));
+      if (r >= enough) timers.set(card, setTimeout(() => card.classList.add('fn-flipped'), 500));
       else if (r < .45) card.classList.remove('fn-flipped');
     }), { threshold: [0, .2, .45, .6, .7, .8, .9, 1] });
     document.querySelectorAll('.fn-card').forEach(card => io.observe(card));
   };
   document.readyState === 'complete' ? run() : document.addEventListener('DOMContentLoaded', run);
 })();
+// Anywhere on the back of a turned card opens that itinerary (except the Back to the photo button)
+document.addEventListener('click', e => {
+  const back = e.target.closest('.fn-card-back'); if (!back || e.target.closest('.fn-flip, a')) return;
+  const link = back.querySelector('.fn-back-cover'); if (link) location.href = link.href;
+});
 document.addEventListener('click', e => {
   const btn = e.target.closest('.fn-flip'); if (!btn) return;
   const card = btn.closest('.fn-card'), on = card.classList.toggle('fn-flipped');
