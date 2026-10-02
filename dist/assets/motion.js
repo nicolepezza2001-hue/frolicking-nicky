@@ -450,13 +450,20 @@
   const still = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const run = () => document.querySelectorAll('.fn-map-scroll[data-src]').forEach(box => {
     const section = box.closest('.fn-map');
-    const load = () => fetch(box.dataset.src).then(r => r.text()).then(svg => {
-      box.innerHTML = svg; box.removeAttribute('data-src');
-      if (box.scrollWidth > box.clientWidth) box.scrollLeft = box.scrollWidth * .55 - box.clientWidth / 2; // phones: start on Europe
-      if (still) { section.classList.add('fn-inked'); return; }
-      requestAnimationFrame(() => requestAnimationFrame(() => section.classList.add('fn-inked')));
-      walk(box.querySelector('.fn-map-svg'), 41 * 55 + 900);
-    });
+    let started = false;
+    const fallback = () => { box.innerHTML = `<img class="fn-map-svg" src="${box.dataset.src}" alt="${section.querySelector('h2').textContent}">`; box.removeAttribute('data-src'); section.classList.add('fn-inked'); };
+    const load = () => {
+      if (started) return; started = true;
+      fetch(box.dataset.src).then(r => { if (!r.ok) throw new Error(r.status); return r.text(); }).then(svg => {
+        box.innerHTML = svg; box.removeAttribute('data-src');
+        if (!box.querySelector('.fn-map-v')) throw new Error('empty map');
+        if (box.scrollWidth > box.clientWidth) box.scrollLeft = box.scrollWidth * .55 - box.clientWidth / 2; // phones: start on Europe
+        if (still) { section.classList.add('fn-inked'); return; }
+        requestAnimationFrame(() => requestAnimationFrame(() => section.classList.add('fn-inked')));
+        walk(box.querySelector('.fn-map-svg'), 41 * 55 + 900);
+      }).catch(fallback);
+    };
+    setTimeout(load, 4000); // in case the scroll watcher never fires
     if (!('IntersectionObserver' in window)) return load();
     const io = new IntersectionObserver(es => { if (es.some(e => e.isIntersecting)) { io.disconnect(); load(); } }, { rootMargin: '300px 0px' });
     io.observe(box);
