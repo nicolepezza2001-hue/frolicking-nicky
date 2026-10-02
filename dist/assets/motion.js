@@ -457,7 +457,7 @@
       fetch(box.dataset.src).then(r => { if (!r.ok) throw new Error(r.status); return r.text(); }).then(svg => {
         box.innerHTML = svg; box.removeAttribute('data-src');
         if (!box.querySelector('.fn-map-v')) throw new Error('empty map');
-        if (box.scrollWidth > box.clientWidth) box.scrollLeft = box.scrollWidth * .55 - box.clientWidth / 2; // phones: start on Europe
+        extras(section, box.querySelector('.fn-map-svg'));
         if (still) { section.classList.add('fn-inked'); return; }
         requestAnimationFrame(() => requestAnimationFrame(() => section.classList.add('fn-inked')));
         walk(box.querySelector('.fn-map-svg'), 41 * 55 + 900);
@@ -468,6 +468,28 @@
     const io = new IntersectionObserver(es => { if (es.some(e => e.isIntersecting)) { io.disconnect(); load(); } }, { rootMargin: '300px 0px' });
     io.observe(box);
   });
+  // Tap or click a country to see its name; on phones, fit the map to the screen and add a Europe close-up and trip links
+  function extras(section, svg) {
+    const picked = section.querySelector('.fn-map-picked');
+    section.addEventListener('click', e => {
+      const c = e.target.closest('.fn-map-v'); if (!c) return;
+      section.querySelectorAll('.fn-map-hit').forEach(el => el.classList.remove('fn-map-hit'));
+      section.querySelectorAll(`.fn-map-v[style="${c.getAttribute('style')}"]`).forEach(el => el.classList.add('fn-map-hit'));
+      if (picked) picked.textContent = '→ ' + c.querySelector('title').textContent;
+    });
+    if (!matchMedia('(max-width: 760px)').matches) return;
+    svg.setAttribute('viewBox', '165 40 775 400');
+    const zoom = section.querySelector('.fn-map-zoom');
+    if (zoom) {
+      const it = document.documentElement.lang === 'it', copy = svg.cloneNode(true);
+      copy.setAttribute('viewBox', '462 64 170 140'); copy.removeAttribute('aria-labelledby'); copy.setAttribute('aria-hidden', 'true');
+      copy.querySelectorAll('title#fn-map-t, .fn-map-walk, .fn-map-stats').forEach(el => el.remove());
+      copy.querySelectorAll('.fn-map-pin').forEach(a => { if (!/vienna|bratislava/.test(a.getAttribute('href'))) a.remove(); else a.querySelector('g').setAttribute('transform', a.querySelector('g').getAttribute('transform') + ' scale(.55)'); });
+      zoom.innerHTML = `<p>${it ? 'Da vicino: l’Europa' : 'Close-up: Europe'}</p>`; zoom.append(copy); zoom.hidden = false;
+    }
+    const trips = section.querySelector('.fn-map-trips');
+    if (trips) { trips.innerHTML = [...svg.querySelectorAll('.fn-map-pin')].map(a => `<a href="${a.getAttribute('href')}"><svg viewBox="-7 -18 14 19" width="10" height="14" aria-hidden="true"><path fill="currentColor" d="M0 0c-3.5-4.5-6-7.6-6-10.6a6 6 0 0 1 12 0c0 3-2.5 6.1-6 10.6z"/></svg>${a.textContent}</a>`).join(''); trips.hidden = false; }
+  }
   function walk(svg, delay) {
     const ns = 'http://www.w3.org/2000/svg', layer = svg.querySelector('.fn-map-walk');
     const stops = [...svg.querySelectorAll('.fn-map-v')].map(el => [+el.dataset.x, +el.dataset.y, el.querySelector('title').textContent]);
@@ -511,6 +533,28 @@
 })();
 
 /* Destination cards: the Quick look button flips a card for touch and keyboard users (hover flips it with a mouse) */
+// On touch screens a card also turns over by itself while it sits in the middle of the screen, and a tap anywhere on it turns it.
+(() => {
+  if (!matchMedia('(hover: none)').matches) return;
+  const still = matchMedia('(prefers-reduced-motion: reduce)').matches, timers = new Map();
+  const run = () => {
+    document.querySelectorAll('.fn-card').forEach(card => card.addEventListener('click', e => {
+      if (e.target.closest('.fn-flip') || (e.target.closest('a') && !e.target.closest('.fn-photo'))) return;
+      e.preventDefault(); card.dataset.fnManual = '1'; card.classList.toggle('fn-flipped');
+    }));
+    if (still) return;
+    // Turn once the whole card is on screen (or as much of it as fits), so its photo is seen first; turn back as it leaves
+    const io = new IntersectionObserver(es => es.forEach(({ target: card, intersectionRatio: r }) => {
+      if (card.dataset.fnManual) return;
+      const enough = Math.min(.9, innerHeight / card.offsetHeight * .9);
+      clearTimeout(timers.get(card));
+      if (r >= enough) timers.set(card, setTimeout(() => card.classList.add('fn-flipped'), 1200));
+      else if (r < .45) card.classList.remove('fn-flipped');
+    }), { threshold: [0, .2, .45, .6, .7, .8, .9, 1] });
+    document.querySelectorAll('.fn-card').forEach(card => io.observe(card));
+  };
+  document.readyState === 'complete' ? run() : document.addEventListener('DOMContentLoaded', run);
+})();
 document.addEventListener('click', e => {
   const btn = e.target.closest('.fn-flip'); if (!btn) return;
   const card = btn.closest('.fn-card'), on = card.classList.toggle('fn-flipped');
