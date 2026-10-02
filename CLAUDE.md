@@ -19,3 +19,8 @@ Italian copies and the best-time-to-visit data.
 - When you change a shared CSS/JS file, bump its `?v=` number in every page
   that links it.
 - Every English change needs the same change in its Italian copy under `/it/`.
+
+## Working with Nicky
+
+- After every change is pushed, send Nicky the link to it on GitHub (the branch,
+  and the pull request if there is one) in your reply.
