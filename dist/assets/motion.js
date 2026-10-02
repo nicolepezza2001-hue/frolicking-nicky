@@ -205,7 +205,7 @@
     [/parks near triver|parchi vicino/i, 'shoe'],
     [/self-care|cura di sé/i, 'flower'],
     [/experiences|esperienze|if we have time|se abbiamo tempo/i, 'sparkle'],
-    [/take a plan|prendi un itinerario/i, 'pin'],
+    [/take a plan|prendi un itinerario|where i’ve been|dove sono stata/i, 'pin'],
     [/^(hanoi|ho chi minh( city)?|around the jardín|intorno al jardín)$/i, 'cup'],
     [/^(morning|mattina)$/i, 'sun'], [/^(afternoon|pomeriggio)$/i, 'cup'], [/^(evening|sera)$/i, 'moon']
   ];
@@ -441,6 +441,65 @@
       box.hidden = false; requestAnimationFrame(fit); addEventListener('resize', () => { box.hidden = false; fit(); });
     }
   };
+  document.readyState === 'complete' ? run() : document.addEventListener('DOMContentLoaded', run);
+})();
+
+/* Where I've been: the map loads when it comes into view, inks in the visited countries one by one, and then a trail
+   of footsteps wanders from country to country in the order Nicky visited them, fading behind her (Marauder's Map). */
+(() => {
+  const still = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const run = () => document.querySelectorAll('.fn-map-scroll[data-src]').forEach(box => {
+    const section = box.closest('.fn-map');
+    const load = () => fetch(box.dataset.src).then(r => r.text()).then(svg => {
+      box.innerHTML = svg; box.removeAttribute('data-src');
+      if (box.scrollWidth > box.clientWidth) box.scrollLeft = box.scrollWidth * .55 - box.clientWidth / 2; // phones: start on Europe
+      if (still) { section.classList.add('fn-inked'); return; }
+      requestAnimationFrame(() => requestAnimationFrame(() => section.classList.add('fn-inked')));
+      walk(box.querySelector('.fn-map-svg'), 41 * 55 + 900);
+    });
+    if (!('IntersectionObserver' in window)) return load();
+    const io = new IntersectionObserver(es => { if (es.some(e => e.isIntersecting)) { io.disconnect(); load(); } }, { rootMargin: '300px 0px' });
+    io.observe(box);
+  });
+  function walk(svg, delay) {
+    const ns = 'http://www.w3.org/2000/svg', layer = svg.querySelector('.fn-map-walk');
+    const stops = [...svg.querySelectorAll('.fn-map-v')].map(el => [+el.dataset.x, +el.dataset.y, el.querySelector('title').textContent]);
+    const tag = document.createElementNS(ns, 'g'); tag.setAttribute('class', 'fn-map-tag'); tag.style.opacity = 0;
+    tag.innerHTML = '<rect rx="2" height="18" y="-27"/><text y="-13" text-anchor="middle"></text>';
+    layer.append(tag);
+    let visible = true, at = 0, timer;
+    new IntersectionObserver(es => { visible = es[0].isIntersecting; if (visible && !timer) hop(); }).observe(svg);
+    const label = name => {
+      const text = tag.querySelector('text'), rect = tag.querySelector('rect'); text.textContent = name;
+      const w = text.getComputedTextLength() + 14; rect.setAttribute('width', w); rect.setAttribute('x', -w / 2);
+    };
+    const print = (x, y, ang) => {
+      const g = document.createElementNS(ns, 'g');
+      g.setAttribute('transform', `translate(${x.toFixed(1)} ${y.toFixed(1)}) rotate(${ang.toFixed(1)}) scale(.62)`);
+      g.innerHTML = '<ellipse cx="2.6" cy="0" rx="4.6" ry="2.6"/><ellipse cx="-5" cy="0" rx="2.4" ry="2.1"/>';
+      layer.insertBefore(g, tag);
+      g.animate([{ opacity: 0 }, { opacity: .85, offset: .06 }, { opacity: 0 }], { duration: 2600, easing: 'ease-out' }).onfinish = () => g.remove();
+    };
+    function hop() {
+      timer = 0; if (!visible || document.hidden) return;
+      const [x1, y1] = stops[at], next = (at + 1) % stops.length, [x2, y2, name] = stops[next];
+      const dx = x2 - x1, dy = y2 - y1, dist = Math.hypot(dx, dy) || 1, n = Math.max(3, Math.min(24, Math.round(dist / 9)));
+      const bend = Math.min(40, dist * .18) * (at % 2 ? 1 : -1), nx = -dy / dist, ny = dx / dist; // a gentle curve, not a straight line
+      tag.style.transition = 'opacity .3s'; tag.style.opacity = 0;
+      for (let i = 1; i <= n; i++) setTimeout(() => {
+        const t = i / n, u = 1 - t, b = 4 * t * u * bend;
+        const x = x1 + dx * t + nx * b, y = y1 + dy * t + ny * b;
+        const tx = dx + nx * bend * 4 * (1 - 2 * t), ty = dy + ny * bend * 4 * (1 - 2 * t), ang = Math.atan2(ty, tx);
+        const side = i % 2 ? 2.4 : -2.4;
+        print(x - Math.sin(ang) * side, y + Math.cos(ang) * side, ang * 180 / Math.PI);
+        if (i === n) { label(name); tag.setAttribute('transform', `translate(${x2} ${y2 - 4})`); tag.style.opacity = 1; }
+      }, i * 150);
+      at = next;
+      timer = setTimeout(hop, n * 150 + 1400);
+    }
+    document.addEventListener('visibilitychange', () => { if (!document.hidden && visible && !timer) hop(); });
+    timer = setTimeout(hop, delay);
+  }
   document.readyState === 'complete' ? run() : document.addEventListener('DOMContentLoaded', run);
 })();
 
