@@ -244,6 +244,7 @@
    Built for everyone; only the develop and the turning animation switch off with reduced motion. */
 (() => {
   const it = document.documentElement.lang === 'it';
+  const touch = matchMedia('(hover: none)').matches, still = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const t = it
     ? { over: 'Gira la cartolina', back: 'Rigira la cartolina', head: 'CARTOLINA POSTALE', sub: 'POST CARD · CARTE POSTALE',
         note: ['Saluti da tutti i posti in cui ho vagato finora!', '41 paesi e non è finita.', 'Vorrei che fossi qui.'],
@@ -376,7 +377,20 @@
       const label = () => { const on = fig.classList.contains('fn-pc-flipped'); btn.innerHTML = `${on ? '↺' : '↻'} <span>${on ? t.back : t.over}</span>`; btn.setAttribute('aria-pressed', on); };
       btn.addEventListener('click', () => { fig.classList.toggle('fn-pc-flipped'); label(); });
       label();
-      fig.append(...tapes, card); wrap.append(btn);
+      fig.append(...tapes, card);
+      if (touch) {
+        // Phones: no button. The photo turns over by itself after a few seconds on screen, turns back once
+        // it has scrolled away, and a tap turns it either way (and stops it turning by itself).
+        fig.addEventListener('click', e => { e.preventDefault(); fig.dataset.fnManual = '1'; fig.classList.toggle('fn-pc-flipped'); });
+        if (!still) {
+          let timer;
+          new IntersectionObserver(([en]) => {
+            if (fig.dataset.fnManual) return; clearTimeout(timer);
+            if (en.intersectionRatio >= .6) timer = setTimeout(() => fig.classList.add('fn-pc-flipped'), 3500);
+            else if (en.intersectionRatio < .15) fig.classList.remove('fn-pc-flipped');
+          }, { threshold: [0, .15, .6, 1] }).observe(fig);
+        }
+      } else wrap.append(btn);
       const box = card.querySelector('.fn-pc-stamps');
       new ResizeObserver(() => layout(box)).observe(box);
     });
@@ -477,18 +491,54 @@
       section.querySelectorAll(`.fn-map-v[style="${c.getAttribute('style')}"]`).forEach(el => el.classList.add('fn-map-hit'));
       if (picked) picked.textContent = '→ ' + c.querySelector('title').textContent;
     });
-    if (!matchMedia('(max-width: 760px)').matches) return;
-    svg.setAttribute('viewBox', '165 40 775 400');
-    const zoom = section.querySelector('.fn-map-zoom');
-    if (zoom) {
-      const it = document.documentElement.lang === 'it', copy = svg.cloneNode(true);
-      copy.setAttribute('viewBox', '462 64 170 140'); copy.removeAttribute('aria-labelledby'); copy.setAttribute('aria-hidden', 'true');
-      copy.querySelectorAll('title#fn-map-t, .fn-map-walk, .fn-map-stats').forEach(el => el.remove());
-      copy.querySelectorAll('.fn-map-pin').forEach(a => { if (!/vienna|bratislava/.test(a.getAttribute('href'))) a.remove(); else a.querySelector('g').setAttribute('transform', a.querySelector('g').getAttribute('transform') + ' scale(.55)'); });
-      zoom.innerHTML = `<p>${it ? 'Da vicino: l’Europa' : 'Close-up: Europe'}</p>`; zoom.append(copy); zoom.hidden = false;
-    }
+    const phone = matchMedia('(max-width: 760px)').matches;
+    zoomable(section, svg, phone ? [165, 40, 775, 400] : [0, 0, 1000, 500]);
+    if (!phone) return;
     const trips = section.querySelector('.fn-map-trips');
     if (trips) { trips.innerHTML = [...svg.querySelectorAll('.fn-map-pin')].map(a => `<a href="${a.getAttribute('href')}"><svg viewBox="-7 -18 14 19" width="10" height="14" aria-hidden="true"><path fill="currentColor" d="M0 0c-3.5-4.5-6-7.6-6-10.6a6 6 0 0 1 12 0c0 3-2.5 6.1-6 10.6z"/></svg>${a.textContent}</a>`).join(''); trips.hidden = false; }
+  }
+  // Pinch or use the + / − buttons to zoom; drag to move around once zoomed in. Works with fingers, a mouse or a trackpad.
+  function zoomable(section, svg, home) {
+    const it = document.documentElement.lang === 'it', card = section.querySelector('.fn-map-card');
+    let [x, y, w, h] = home; const ratio = home[3] / home[2], minW = home[2] / 7, pts = new Map();
+    let last = null, moved = 0;
+    const set = () => {
+      w = Math.min(home[2], Math.max(minW, w)); h = w * ratio;
+      x = Math.min(Math.max(x, home[0]), home[0] + home[2] - w);
+      y = Math.min(Math.max(y, home[1]), home[1] + home[3] - h);
+      svg.setAttribute('viewBox', `${x.toFixed(1)} ${y.toFixed(1)} ${w.toFixed(1)} ${h.toFixed(1)}`);
+      const z = home[2] / w; section.classList.toggle('fn-map-zoomed', z > 1.05); section.classList.toggle('fn-map-close', z > 2.1);
+      svg.style.touchAction = z > 1.05 ? 'none' : 'pan-y';
+    };
+    const toMap = (cx, cy) => { const r = svg.getBoundingClientRect(); return [x + (cx - r.left) / r.width * w, y + (cy - r.top) / r.height * h, r]; };
+    const zoomAt = (cx, cy, f) => { const [mx, my, r] = toMap(cx, cy); const nw = Math.min(home[2], Math.max(minW, w / f)); x = mx - (cx - r.left) / r.width * nw; y = my - (cy - r.top) / r.height * nw * ratio; w = nw; set(); };
+    svg.addEventListener('pointerdown', e => { pts.set(e.pointerId, [e.clientX, e.clientY]); last = null; moved = 0; });
+    svg.addEventListener('pointermove', e => {
+      if (!pts.has(e.pointerId)) return; pts.set(e.pointerId, [e.clientX, e.clientY]);
+      const p = [...pts.values()], r = svg.getBoundingClientRect();
+      const cx = p.reduce((a, q) => a + q[0], 0) / p.length, cy = p.reduce((a, q) => a + q[1], 0) / p.length;
+      const d = p.length > 1 ? Math.hypot(p[0][0] - p[1][0], p[0][1] - p[1][1]) : 0;
+      if (last) {
+        if (p.length > 1 && last.d) zoomAt(cx, cy, d / last.d);
+        if (p.length > 1 || w < home[2] * .98) { x -= (cx - last.cx) / r.width * w; y -= (cy - last.cy) / r.height * h; set(); moved += Math.abs(cx - last.cx) + Math.abs(cy - last.cy); }
+      }
+      if (p.length > 1 || w < home[2] * .98) { try { svg.setPointerCapture(e.pointerId); } catch (_) {} }
+      last = { cx, cy, d };
+    });
+    const up = e => { pts.delete(e.pointerId); last = null; };
+    ['pointerup', 'pointercancel', 'pointerleave'].forEach(t => svg.addEventListener(t, up));
+    svg.addEventListener('click', e => { if (moved > 8) { e.preventDefault(); e.stopPropagation(); } }, true); // a drag isn't a tap
+    svg.addEventListener('wheel', e => { if (!e.ctrlKey) return; e.preventDefault(); zoomAt(e.clientX, e.clientY, Math.exp(-e.deltaY / 200)); }, { passive: false }); // trackpad pinch
+    const tools = document.createElement('div'); tools.className = 'fn-map-tools';
+    const btn = (label, txt, fn) => { const b = document.createElement('button'); b.type = 'button'; b.setAttribute('aria-label', label); b.textContent = txt; b.addEventListener('click', fn); tools.append(b); return b; };
+    const mid = f => { const r = svg.getBoundingClientRect(); zoomAt(r.left + r.width / 2, r.top + r.height / 2, f); };
+    btn(it ? 'Ingrandisci' : 'Zoom in', '+', () => mid(1.6));
+    btn(it ? 'Riduci' : 'Zoom out', '−', () => mid(1 / 1.6));
+    btn(it ? 'Mostra tutta la mappa' : 'Show the whole map', '⤢', () => { [x, y, w, h] = home; set(); });
+    card.append(tools);
+    const hint = document.createElement('p'); hint.className = 'fn-map-hint';
+    hint.textContent = it ? 'Pizzica per ingrandire, trascina per spostarti' : 'Pinch to zoom, drag to explore'; card.after(hint);
+    set();
   }
   function walk(svg, delay) {
     const ns = 'http://www.w3.org/2000/svg', layer = svg.querySelector('.fn-map-walk');
@@ -560,3 +610,22 @@ document.addEventListener('click', e => {
   const card = btn.closest('.fn-card'), on = card.classList.toggle('fn-flipped');
   card.querySelector(on ? '.fn-flip-back' : '.fn-flip-front').focus({ preventScroll: true });
 });
+
+/* Phones: the header links fold into a menu button */
+(() => {
+  const run = () => document.querySelectorAll('.fn-header').forEach(head => {
+    const nav = head.querySelector('.fn-nav'); if (!nav || head.querySelector('.fn-menu-btn')) return;
+    const it = document.documentElement.lang === 'it';
+    nav.id = nav.id || 'fn-nav';
+    const btn = document.createElement('button'); btn.type = 'button'; btn.className = 'fn-menu-btn';
+    btn.setAttribute('aria-controls', nav.id); btn.setAttribute('aria-expanded', 'false'); btn.setAttribute('aria-label', it ? 'Menu' : 'Menu');
+    btn.innerHTML = '<span></span><span></span><span></span>';
+    const open = on => { head.classList.toggle('fn-menu-open', on); btn.setAttribute('aria-expanded', on); };
+    btn.addEventListener('click', e => { e.stopPropagation(); open(!head.classList.contains('fn-menu-open')); });
+    // A tap outside only closes the menu; it doesn't also press whatever was underneath
+    document.addEventListener('click', e => { if (head.classList.contains('fn-menu-open') && !head.contains(e.target)) { open(false); e.preventDefault(); e.stopPropagation(); } }, true);
+    document.addEventListener('keydown', e => { if (e.key === 'Escape' && head.classList.contains('fn-menu-open')) { open(false); btn.focus(); } });
+    nav.before(btn);
+  });
+  document.readyState === 'loading' ? document.addEventListener('DOMContentLoaded', run) : run();
+})();
