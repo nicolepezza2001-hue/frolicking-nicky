@@ -30,14 +30,12 @@ const groups = [
 ['castle','Castello di Chapultepec','storica residenza reale e museo di storia messicana'],
 ['terraces','Terrazze e giardini del castello','vista panoramica sulla città','Lascia il tempo di goderti la vista.'],
 ['moderno','Museo de Arte Moderno','arte moderna messicana, tra cui Frida Kahlo','Da non perdere. Vicino all’ingresso del castello.']]]],note:'Tutti e tre i musei il lunedì sono chiusi. Il castello chiude alle 17 e il Museo de Arte Moderno alle 17:45, quindi tieni questo pomeriggio per un giorno in cui finisci di lavorare prima.',link:['Informazioni per visitare il castello','https://mnh.inah.gob.mx/informacion-general']},
-{id:'coyoacan',number:'04',title:'Xochimilco e Coyoacán',timing:'GITA DEL SABATO',color:'blue',weekend:true,description:'Una mattina sui canali, poi il mondo di Frida, piazze di quartiere e un pomeriggio con spazio per girovagare.',sections:[
-['UNA MATTINA SUI CANALI',[
-['xochimilco','Giro in trajinera a Xochimilco','barche dipinte sugli antichi canali; musica e spuntini dalle barche che passano','Vai la mattina e noleggia una barca per una o due ore. Coyoacán è a circa 15 km: calcola fino a un’ora in taxi, a seconda del traffico.']]],
+{id:'coyoacan',number:'04',title:'Coyoacán',timing:'GITA DEL SABATO',color:'blue',weekend:true,description:'Il mondo di Frida, piazze di quartiere e un pomeriggio con spazio per girovagare.',sections:[
 ['FRIDA E GIRI CON CALMA',[
 ['frida','Museo Frida Kahlo / Casa Azul','la casa, la vita e l’arte di Frida','Prenota online in anticipo il biglietto a orario.'],
 ['squares','Jardín Centenario e Plaza Hidalgo','storiche piazze di quartiere'],
 ['market','Mercado de Coyoacán','mercato tradizionale; cibo e bancarelle locali'],
-['coffee','Caffè e giri nel quartiere','una pausa e qualche via percorsa senza fretta']]]],note:'Uno dei nostri due sabati. Canali la mattina, Coyoacán dopo pranzo: prenota un orario pomeridiano per la Casa Azul.',link:['Prenota il Museo Frida Kahlo','https://www.museofridakahlo.org.mx/visita/']},
+['coffee','Caffè e giri nel quartiere','una pausa e qualche via percorsa senza fretta']]]],note:'Uno dei nostri due sabati. Dedica la giornata a Coyoacán; non serve aggiungere un altro quartiere.',link:['Prenota il Museo Frida Kahlo','https://www.museofridakahlo.org.mx/visita/']},
 {id:'teotihuacan',number:'★',title:'Teotihuacán',timing:'GITA DEL SABATO',color:'yellow',weekend:true,description:'La nostra grande avventura, quella sicura. Piramidi antiche, partenza presto e serata libera.',sections:[
 ['TUTTA LA GIORNATA, CON CALMA',[
 ['early','Partenza presto da Triver','lascia tempo per il viaggio e per una visita senza fretta'],
@@ -49,6 +47,7 @@ const groups = [
 ['vasconcelos','Biblioteca Vasconcelos','spettacolare biblioteca moderna con scaffali sospesi','Tienila come uscita breve a sé.']]]],note:'Inseriscila di domenica o in un pomeriggio più leggero. Nessuna maratona di musei.'}
 ];
 const optional = [
+['xochimilco','Giro in trajinera a Xochimilco','barche dipinte sugli antichi canali; musica e spuntini dalle barche che passano','Una mattina tutta per sé: è molto a sud, fino a un’ora in taxi. Noleggia una barca per una o due ore.'],
 ['quetzal','Parque Quetzalcóatl','architettura organica surreale e giardini; visita guidata','Un’uscita a parte. Prenota in anticipo.'],
 ['soumaya','Museo Soumaya','arte europea e messicana, tra cui sculture di Rodin'],
 ['dolores','Panteón de Dolores','cimitero storico; personaggi messicani illustri'],
