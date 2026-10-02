@@ -386,7 +386,7 @@
           let timer;
           new IntersectionObserver(([en]) => {
             if (fig.dataset.fnManual) return; clearTimeout(timer);
-            if (en.intersectionRatio >= .6) timer = setTimeout(() => fig.classList.add('fn-pc-flipped'), 3500);
+            if (en.intersectionRatio >= .6) timer = setTimeout(() => fig.classList.add('fn-pc-flipped'), 1500);
             else if (en.intersectionRatio < .15) fig.classList.remove('fn-pc-flipped');
           }, { threshold: [0, .15, .6, 1] }).observe(fig);
         }
@@ -598,7 +598,7 @@
       if (card.dataset.fnManual) return;
       const enough = Math.min(.9, innerHeight / card.offsetHeight * .9);
       clearTimeout(timers.get(card));
-      if (r >= enough) timers.set(card, setTimeout(() => card.classList.add('fn-flipped'), 1200));
+      if (r >= enough) timers.set(card, setTimeout(() => card.classList.add('fn-flipped'), 1500));
       else if (r < .45) card.classList.remove('fn-flipped');
     }), { threshold: [0, .2, .45, .6, .7, .8, .9, 1] });
     document.querySelectorAll('.fn-card').forEach(card => io.observe(card));
