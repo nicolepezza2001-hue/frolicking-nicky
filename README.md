@@ -55,7 +55,7 @@ IDs and item order identical in both copies.
 
 All animation is in `dist/assets/motion.css` and `dist/assets/motion.js`, and
 switches off for visitors who prefer reduced motion. Hero photos are held down
-with masking tape and develop like a Polaroid when the page opens. Turning one
+with masking tape. Turning one
 over shows a used postcard covered in stamps from every country Nicky has
 visited (the list lives in `motion.js`). For
 travel motion, use **footsteps that fade behind the walker** (Marauder's Map
