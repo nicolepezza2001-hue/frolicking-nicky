@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Homemade+Apple&display=swap');
 /* Frolicking Nicky motion layer. Everything here is off for visitors who ask for reduced motion. */
 @media (prefers-reduced-motion: no-preference) {
 
@@ -13,10 +14,9 @@
   .fn-lede, .lede { animation-delay: .55s; }
   .intro-tags { animation-delay: .7s; }
 
-  /* 2 · Photos land like a polaroid placed on a table, then settle into their tilt */
-  .fn-home-portrait, .fn-about-portrait, .postcard, .fn-vienna-hero-photo, .vn-portrait, .ba-photo {
-    animation: fn-develop 1.6s .2s ease both;
-  }
+  /* 2 · Hero photos develop like a Polaroid: the card arrives blank and the picture slowly comes through, then stays still */
+  .fn-pc-wrap { animation: fn-fade-in .5s ease both; } /* on the wrapper: animating the photo's own opacity would flatten its 3D turn */
+  .fn-alive img { animation: fn-polaroid 4.2s .5s cubic-bezier(.35,.1,.3,1) both; }
 
   /* 4 + 5 · Rise in on scroll; photos come into focus */
   .fn-reveal { opacity: 0; transition: opacity .8s ease; transition-delay: var(--fn-d, 0s); }
@@ -75,6 +75,7 @@
   @keyframes fn-fade-in { from { opacity: 0; } }
   @keyframes fn-fade-out { to { opacity: 0; } }
     @keyframes fn-fade-up { from { opacity: 0; } }
+  @keyframes fn-polaroid { 0% { filter: brightness(2.4) saturate(0) contrast(.25) blur(1.5px); } 30% { filter: brightness(1.6) sepia(.7) saturate(.4) contrast(.55) blur(.8px); } 65% { filter: brightness(1.15) sepia(.25) saturate(.8) contrast(.9); } 100% { filter: none; } }
   @keyframes fn-develop { 0% { opacity: 0; filter: sepia(1) brightness(1.6) blur(6px); } 40% { opacity: 1; } 100% { filter: none; } }
   @keyframes fn-pop-in { from { scale: 0; opacity: 0; } }
   @keyframes fn-tick { 0% { scale: 1; } 35% { scale: 1.035; background-color: #86324A14; } 100% { scale: 1; } }
@@ -143,21 +144,9 @@ h3 .fn-icon { width: 1.9em; height: 1.9em; margin-top: -1.02em; left: .3em; }
   @keyframes fn-i-hop { 0%, 100% { translate: 0 0; scale: 1 1; } 15% { scale: 1.1 .9; } 45% { translate: 0 -6px; scale: .95 1.05; } }
 }
 
-/* Living hero photos: masking tape holds the top edge down while the bottom catches the wind */
+/* Hero photos: postmark sticker and footsteps (motion only) */
 @media (prefers-reduced-motion: no-preference) {
-  .fn-wind { perspective: 1100px; }
-  .fn-alive { transform-origin: 50% 0; animation: fn-develop 1.6s .2s ease both, fn-flutter 6.5s 1.8s ease-in-out infinite; }
-  .fn-alive:hover { animation-play-state: running, paused; }
-  .fn-alive:hover .fn-shade { animation-play-state: paused; }
-  .fn-shade { position: absolute; inset: 0; pointer-events: none; z-index: 1; opacity: 0;
-    background: linear-gradient(180deg, transparent 35%, #00000038); animation: fn-shade 6.5s 1.8s ease-in-out infinite; }
-  .fn-glint { position: absolute; inset: 0; overflow: hidden; pointer-events: none; border-radius: inherit; }
-  .fn-glint::after { content: ""; position: absolute; top: -20%; bottom: -20%; width: 35%; left: -60%; rotate: 18deg;
-    background: linear-gradient(90deg, transparent, #fff6e055 40%, #ffffff8c 50%, #fff6e055 60%, transparent); mix-blend-mode: soft-light;
-    animation: fn-glint 7s 2.4s ease-in-out infinite; }
-  .fn-stamp { position: absolute; left: -46px; bottom: -40px; width: 118px; height: 118px; z-index: 3; pointer-events: none; rotate: -12deg;
-    filter: drop-shadow(3px 4px 0 #00000022); animation: fn-stamp-in .8s 1.6s cubic-bezier(.3,1.6,.5,1) both; }
-  .fn-stamp svg { width: 100%; height: 100%; overflow: visible; }
+  .fn-stamp { animation: fn-stamp-in .8s 1.6s cubic-bezier(.3,1.6,.5,1) both; }
   .fn-stamp-ring { transform-origin: 60px 60px; animation: fn-i-spin 16s linear infinite; }
   .fn-stamp-step { animation: fn-step-blink 1.6s ease-in-out infinite; }
   .fn-stamp-step + .fn-stamp-step { animation-delay: .8s; }
@@ -166,23 +155,14 @@ h3 .fn-icon { width: 1.9em; height: 1.9em; margin-top: -1.02em; left: .3em; }
   .fn-steps svg { width: 100%; height: 100%; overflow: visible; }
   .fn-steps .fn-step { opacity: 0; }
   .fn-steps-name { opacity: 0; }
-  /* The bottom edge lifts and drops in irregular gusts; the taped top edge stays put */
-  @keyframes fn-flutter {
-    0%, 100% { rotate: 1 0 0 0deg; }
-    9% { rotate: 1 -.1 0 8deg; } 15% { rotate: 1 .06 0 3deg; } 22% { rotate: 1 -.05 0 10deg; } 30% { rotate: 1 .08 0 1.5deg; }
-    44% { rotate: 1 0 0 0deg; }
-    53% { rotate: 1 .12 0 6deg; } 58% { rotate: 1 -.04 0 2deg; } 64% { rotate: 1 .1 0 12deg; } 71% { rotate: 1 -.08 0 4deg; }
-    78% { rotate: 1 .05 0 8deg; } 88% { rotate: 1 -.03 0 1deg; }
-  }
-  @keyframes fn-shade {
-    0%, 44%, 100% { opacity: 0; } 9% { opacity: .65; } 15% { opacity: .25; } 22% { opacity: .8; } 30% { opacity: .12; }
-    53% { opacity: .5; } 58% { opacity: .18; } 64% { opacity: 1; } 71% { opacity: .33; } 78% { opacity: .65; } 88% { opacity: .08; }
-  }
+  .fn-pc-host { transition: rotate .9s cubic-bezier(.3,.7,.25,1), box-shadow .45s; }
   @keyframes fn-step-blink { 0%, 100% { opacity: .15; } 30%, 50% { opacity: 1; } }
-  @keyframes fn-glint { 0%, 55% { left: -60%; } 85%, 100% { left: 130%; } }
   @keyframes fn-stamp-in { from { scale: 2.2; opacity: 0; rotate: -40deg; } }
 }
-/* Beige masking tape with torn ends, one strip on each top corner. Shown even with reduced motion: it simply stays still. */
+.fn-stamp { position: absolute; left: -46px; bottom: -40px; width: 118px; height: 118px; z-index: 3; pointer-events: none; rotate: -12deg; filter: drop-shadow(3px 4px 0 #00000022); }
+.fn-stamp svg { width: 100%; height: 100%; overflow: visible; }
+
+/* Beige masking tape with torn ends, one strip on each top corner */
 .fn-tape { position: absolute; top: -12px; width: 120px; height: 34px; z-index: 4; pointer-events: none; opacity: .93;
   background:
     linear-gradient(180deg, #ffffff40, #ffffff00 30%, #ffffff00 72%, #7a603020),
@@ -193,4 +173,60 @@ h3 .fn-icon { width: 1.9em; height: 1.9em; margin-top: -1.02em; left: .3em; }
   clip-path: polygon(2% 0, 98% 0, 100% 11%, 97.5% 24%, 99.5% 37%, 97% 50%, 100% 63%, 98% 76%, 99.5% 89%, 97.5% 100%, 2.5% 100%, 0 88%, 2% 75%, 0.5% 62%, 3% 50%, 0 37%, 2.5% 24%, 0.5% 12%); }
 .fn-tape-l { left: -34px; rotate: -34deg; }
 .fn-tape-r { right: -34px; rotate: 33deg; }
-@media (max-width: 760px) { .fn-steps { display: none; } .fn-stamp { width: 84px; height: 84px; left: -14px; bottom: -26px; } .fn-tape { width: 92px; height: 28px; } .fn-tape-l { left: -24px; } .fn-tape-r { right: -24px; } }
+
+/* The hero photo turns over to show the back of a well-travelled postcard */
+.fn-pc-wrap { position: relative; display: grid; perspective: 1600px; min-width: 0; }
+.fn-pc-wrap > .fn-pc-host { min-width: 0; }
+.fn-pc-host { transform-style: preserve-3d; }
+.fn-pc-host > :not(.fn-pc-back) { backface-visibility: hidden; -webkit-backface-visibility: hidden; }
+.fn-pc-host.fn-pc-flipped { rotate: y 180deg; box-shadow: none; }
+@media (hover: hover) {
+  .fn-pc-wrap:hover > .fn-pc-host { rotate: y 180deg; box-shadow: none; transition-delay: .12s; }
+}
+.fn-pc-back { position: absolute; inset: 0; z-index: 5; transform: rotateY(180deg) translateZ(1px); backface-visibility: hidden; -webkit-backface-visibility: hidden;
+  container-type: size; color: #1f3474; border-radius: 2px;
+  background:
+    radial-gradient(circle at 88% 92%, #b8915233 0, transparent 22%),
+    radial-gradient(circle at 8% 6%, #b8915224 0, transparent 18%),
+    repeating-linear-gradient(0deg, #00000005 0 1px, transparent 1px 3px),
+    linear-gradient(135deg, #f7f0df, #efe4cb);
+  box-shadow: 10px 10px 0 #000, inset 0 0 30px #a7884f33; }
+.fn-pc-back .fn-tape { top: -12px; }
+.fn-pc-defs { position: absolute; }
+.fn-pc-in { position: absolute; inset: 0; display: flex; flex-direction: column; padding: 5cqmin 5cqmin 4cqmin; }
+.fn-pc-head { margin: 0 0 3cqmin; text-align: center; font: 700 max(10px, 4.2cqmin)/1 'Playfair Display', Georgia, serif; letter-spacing: .3em; color: #3a3a3a; }
+.fn-pc-head span { display: block; margin-top: .6em; font: 600 max(7px, 2.1cqmin)/1 'DM Sans', sans-serif; letter-spacing: .24em; color: #6b6b6b; }
+.fn-pc-stamps { position: relative; flex: 1 1 auto; min-height: 0; }
+.fn-st { position: absolute; display: block; rotate: var(--a); background: #fbf8ef; padding: 2.5%; box-shadow: 0 1px 2px #00000033;
+  -webkit-mask: radial-gradient(circle at center, transparent 1.4px, #000 1.6px) -2.5px -2.5px / 5px 5px, linear-gradient(#000 0 0) 2.5px 2.5px / calc(100% - 5px) calc(100% - 5px) no-repeat;
+  mask: radial-gradient(circle at center, transparent 1.4px, #000 1.6px) -2.5px -2.5px / 5px 5px, linear-gradient(#000 0 0) 2.5px 2.5px / calc(100% - 5px) calc(100% - 5px) no-repeat; }
+.fn-st svg { display: block; width: 100%; height: 100%; }
+.fn-pc-foot { display: grid; grid-template-columns: 1.15fr 1fr; gap: 4cqmin; margin-top: 3cqmin; flex: 0 0 auto; }
+.fn-pc-note { position: relative; border-right: 1.5px solid #00000030; padding-right: 3cqmin; }
+.fn-pc-note p { margin: 0; font: 600 max(10px, 4.6cqmin)/1.15 'Caveat', cursive; rotate: -1.5deg; }
+.fn-pc-note .fn-pc-sign { margin-top: .5em; font: 400 max(12px, 5.8cqmin)/1.2 'Homemade Apple', cursive; color: #18306b; rotate: -6deg; transform-origin: left; }
+.fn-pc-sign span { font-size: .6em; margin-left: .3em; color: #86324A; }
+.fn-pc-scribble { display: block; width: 62%; height: auto; margin-top: -.6em; color: #18306b; }
+.fn-pc-to { align-self: end; }
+/* Wide photos: stamps on the left, the note and address on the right */
+@container (min-aspect-ratio: 21/20) {
+  .fn-pc-in { display: grid; grid-template-columns: 1.55fr 1fr; grid-template-rows: auto 1fr; column-gap: 4cqmin; }
+  .fn-pc-head { grid-column: 1 / -1; }
+  .fn-pc-foot { grid-template-columns: 1fr; align-content: space-between; margin: 0; padding-left: 4cqmin; border-left: 1.5px solid #00000030; }
+  .fn-pc-note { border: 0; padding: 0; }
+  .fn-pc-in .fn-pm-a { top: auto; bottom: 3%; left: 1%; }
+  .fn-pc-in .fn-pm-b { right: 41%; top: 13%; }
+  .fn-pc-in .fn-pm-c { right: 39%; bottom: 5%; width: min(30%, 40cqh); }
+}
+.fn-pc-to p { margin: 0; padding: .5em 0 .1em; border-bottom: 1.5px solid #00000030; font: 600 max(9px, 4cqmin)/1 'Caveat', cursive; }
+.fn-pm { position: absolute; pointer-events: none; color: #1d1b2c; opacity: .62; mix-blend-mode: multiply; filter: url(#fn-ink); }
+.fn-pm-a { width: min(62%, 105cqh); left: 2%; top: 40%; rotate: -9deg; }
+.fn-pm-b { width: min(26%, 40cqh); right: 6%; top: 15%; rotate: 14deg; opacity: .55; }
+.fn-pm-c { width: min(42%, 52cqh); right: 5%; bottom: 23%; rotate: -7deg; color: #b0182e; opacity: .72; }
+.fn-pc-turn { position: absolute; right: 22px; bottom: 22px; z-index: 6; display: inline-flex; align-items: center; gap: 6px; border: 0; border-radius: 99px; padding: 7px 13px;
+  font: 600 13px/1.2 'DM Sans', sans-serif; background: #F5FBF3e8; color: #86324A; box-shadow: 0 2px 8px #0000002a; cursor: pointer; }
+.fn-pc-turn:focus-visible { outline: 3px solid #86324A; outline-offset: 3px; }
+@media (hover: hover) { .fn-pc-turn { opacity: 0; pointer-events: none; } .fn-pc-turn:focus-visible { opacity: 1; pointer-events: auto; } }
+@media (hover: none) { .fn-pc-turn { position: static; justify-self: end; margin-top: 18px; } }
+@media (max-width: 760px) { .fn-steps { display: none; } .fn-stamp { width: 84px; height: 84px; left: -14px; bottom: -26px; } .fn-tape { width: 92px; height: 28px; } .fn-tape-l { left: -24px; } .fn-tape-r { right: -24px; } .fn-pc-turn { right: 16px; bottom: 16px; } }
+@media (max-width: 600px) { .fn-pc-wrap:has(> .postcard) { display: none; } }

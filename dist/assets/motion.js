@@ -238,10 +238,155 @@
   document.readyState === 'complete' ? run() : document.addEventListener('DOMContentLoaded', run);
 })();
 
-/* Hero photos come alive: two strips of masking tape hold the top edge down while the bottom flutters in the wind,
-   and a glint of light passes now and then. On the home and About pages a postmark spins on the corner, and on the
-   home page a trail of footsteps walks through the empty space under the intro, each step fading as the next appears
-   (like the Marauder's Map). House rule: for travel motion, use footsteps rather than paper planes. */
+/* Hero photos: two strips of masking tape hold them down, the picture develops like a Polaroid when the page opens,
+   and turning the photo over (hover, or the Turn over button on touch screens and keyboards) shows the back of a
+   well-travelled postcard, with a stamp from every country Nicky has been to, postmarks and a signed note.
+   Built for everyone; only the develop and the turning animation switch off with reduced motion. */
+(() => {
+  const it = document.documentElement.lang === 'it';
+  const t = it
+    ? { over: 'Gira la cartolina', back: 'Rigira la cartolina', head: 'CARTOLINA POSTALE', sub: 'POST CARD · CARTE POSTALE',
+        note: ['Saluti da tutti i posti in cui ho vagato finora!', '41 paesi e non è finita.', 'Vorrei che fossi qui.'],
+        to: ['A te che leggi', 'ovunque tu vada dopo', 'Il Mondo'], count: ['41 PAESI', 'E NON È FINITA'], pm: 'POSTE ✦ FROLICKING NICKY ✦ ' }
+    : { over: 'Turn the postcard over', back: 'Turn it back', head: 'POST CARD', sub: 'CARTE POSTALE · CARTOLINA',
+        note: ['Greetings from everywhere I’ve wandered so far!', '41 countries and counting.', 'Wish you were here.'],
+        to: ['To you, dear reader', 'wherever you’re headed next', 'The World'], count: ['41 COUNTRIES', 'AND COUNTING'], pm: 'POSTE ✦ FROLICKING NICKY ✦ ' };
+
+  /* Flags drawn small inside a 34 × 30 box. Names are written the way each country prints them on its own stamps. */
+  const W = 34, H = 30;
+  const rect = (x, y, w, h, f) => `<rect x="${x}" y="${y}" width="${w}" height="${h}" fill="${f}"/>`;
+  const bands = (dir, cols, weights) => {
+    const ws = weights || cols.map(() => 1), sum = ws.reduce((a, b) => a + b, 0); let at = 0;
+    return cols.map((c, i) => { const size = (dir === 'h' ? H : W) * ws[i] / sum, r = dir === 'h' ? rect(0, at, W, size + .3, c) : rect(at, 0, size + .3, H, c); at += size; return r; }).join('');
+  };
+  const star = (cx, cy, r, f, inner = .4) => `<polygon fill="${f}" points="${Array.from({ length: 10 }, (_, i) => { const a = -Math.PI / 2 + i * Math.PI / 5, rr = i % 2 ? r * inner : r; return `${(cx + rr * Math.cos(a)).toFixed(2)},${(cy + rr * Math.sin(a)).toFixed(2)}`; }).join(' ')}"/>`;
+  const nordic = (bg, cross, w = 5) => rect(0, 0, W, H, bg) + rect(10, 0, w, H, cross) + rect(0, (H - w) / 2, W, w, cross);
+  const jack = (s = 1) => `<g transform="scale(${s})">${rect(0, 0, W, H, '#012169')}<path d="M0 0L34 30M34 0L0 30" stroke="#fff" stroke-width="6"/><path d="M0 0L34 30M34 0L0 30" stroke="#C8102E" stroke-width="2"/>${rect(13, 0, 8, H, '#fff') + rect(0, 11, W, 8, '#fff') + rect(14.5, 0, 5, H, '#C8102E') + rect(0, 12.5, W, 5, '#C8102E')}</g>`;
+  const F = {
+    Italy: ['ITALIA', () => bands('v', ['#009246', '#fff', '#CE2B37'])],
+    Spain: ['ESPAÑA', () => bands('h', ['#AA151B', '#F1BF00', '#AA151B'], [1, 2, 1])],
+    Portugal: ['PORTUGAL', () => bands('v', ['#046A38', '#DA291C'], [2, 3]) + `<circle cx="13.6" cy="15" r="5.4" fill="#FFE900"/><circle cx="13.6" cy="15" r="3.2" fill="#DA291C"/><circle cx="13.6" cy="15" r="1.8" fill="#fff"/>`],
+    France: ['FRANCE', () => bands('v', ['#002654', '#fff', '#CE1126'])],
+    Germany: ['DEUTSCHLAND', () => bands('h', ['#000', '#DD0000', '#FFCE00'])],
+    Denmark: ['DANMARK', () => nordic('#C8102E', '#fff', 4)],
+    Hungary: ['MAGYARORSZÁG', () => bands('h', ['#CE2939', '#fff', '#477050'])],
+    Romania: ['ROMÂNIA', () => bands('v', ['#002B7F', '#FCD116', '#CE1126'])],
+    'United Kingdom': ['UK', () => jack()],
+    Ireland: ['ÉIRE', () => bands('v', ['#169B62', '#fff', '#FF883E'])],
+    Morocco: ['MAROC', () => rect(0, 0, W, H, '#C1272D') + `<polygon points="17,6.5 20.3,23 6.8,12.6 27.2,12.6 13.7,23" fill="none" stroke="#006233" stroke-width="1.4" stroke-linejoin="round"/>`],
+    Kazakhstan: ['QAZAQSTAN', () => rect(0, 0, W, H, '#00AFCA') + `<circle cx="17" cy="13" r="8.2" fill="none" stroke="#FEC50C" stroke-width="2.4" stroke-dasharray="1 1.1"/><circle cx="17" cy="13" r="5" fill="#FEC50C"/><path d="M8 23c3 2.5 6 2.5 9 0 3 2.5 6 2.5 9 0" stroke="#FEC50C" stroke-width="1.6" fill="none"/>`],
+    Uzbekistan: ['OʻZBEKISTON', () => bands('h', ['#0099B5', '#CE1126', '#fff', '#CE1126', '#1EB53A'], [10, .9, 8.2, .9, 10]) + `<circle cx="6" cy="5" r="3.3" fill="#fff"/><circle cx="7.4" cy="5" r="2.9" fill="#0099B5"/><circle cx="12" cy="3.4" r=".75" fill="#fff"/><circle cx="14.4" cy="3.4" r=".75" fill="#fff"/><circle cx="12" cy="6.4" r=".75" fill="#fff"/><circle cx="14.4" cy="6.4" r=".75" fill="#fff"/>`],
+    Kyrgyzstan: ['KYRGYZSTAN', () => rect(0, 0, W, H, '#E8112D') + `<circle cx="17" cy="15" r="9.5" fill="none" stroke="#FFEF00" stroke-width="3" stroke-dasharray="1.3 1.3"/><circle cx="17" cy="15" r="6.6" fill="#FFEF00"/><circle cx="17" cy="15" r="4" fill="#E8112D"/><path d="M13.6 15h6.8M17 11.6v6.8" stroke="#FFEF00" stroke-width=".8"/>`],
+    Switzerland: ['HELVETIA', () => rect(0, 0, W, H, '#DA291C') + rect(14, 6, 6, 18, '#fff') + rect(8, 12, 18, 6, '#fff')],
+    Austria: ['ÖSTERREICH', () => bands('h', ['#ED2939', '#fff', '#ED2939'])],
+    'San Marino': ['SAN MARINO', () => bands('h', ['#fff', '#5EB6E4']) + `<path d="M14.5 17h5v-4l-1-1.5v-2h-3v2l-1 1.5z" fill="#F1BF31"/>`],
+    Vatican: ['POSTE VATICANE', () => bands('v', ['#FFE000', '#fff']) + `<path d="M21 8l9 14M30 8l-9 14" stroke="#B1B1B1" stroke-width="1.6"/><path d="M21 8l9 14" stroke="#E2B13C" stroke-width="1.6"/><path d="M24 6h3v2.5h-3z" fill="#CE1126"/>`],
+    Czechia: ['ČESKO', () => bands('h', ['#fff', '#D7141A']) + `<polygon points="0,0 17,15 0,30" fill="#11457E"/>`],
+    Bulgaria: ['BULGARIA', () => bands('h', ['#fff', '#00966E', '#D62612'])],
+    Greece: ['ΕΛΛΑΣ', () => bands('h', Array.from({ length: 9 }, (_, i) => i % 2 ? '#fff' : '#0D5EAF')) + rect(0, 0, 16.7, 16.7, '#0D5EAF') + rect(6.7, 0, 3.3, 16.7, '#fff') + rect(0, 6.7, 16.7, 3.3, '#fff')],
+    Slovenia: ['SLOVENIJA', () => bands('h', ['#fff', '#005DA4', '#ED1C24']) + `<path d="M6 6h6v5c0 3-3 4.5-3 4.5S6 14 6 11z" fill="#005DA4" stroke="#ED1C24" stroke-width=".8"/><path d="M6.6 12.5l1.4-1.6 1 1.2 1-1.2 1.4 1.6" stroke="#fff" stroke-width=".7" fill="none"/>`],
+    Australia: ['AUSTRALIA', () => rect(0, 0, W, H, '#012169') + jack(.5) + star(8.5, 22.5, 3.6, '#fff', .45) + star(26, 6, 1.6, '#fff') + star(29.5, 13, 1.6, '#fff') + star(23, 15, 1.6, '#fff') + star(26, 24, 1.8, '#fff') + star(28.4, 18, .9, '#fff')],
+    Estonia: ['EESTI', () => bands('h', ['#0072CE', '#000', '#fff'])],
+    Finland: ['SUOMI FINLAND', () => nordic('#fff', '#002F6C', 6)],
+    Sweden: ['SVERIGE', () => nordic('#006AA7', '#FECC00', 5)],
+    Latvia: ['LATVIJA', () => bands('h', ['#9E3039', '#fff', '#9E3039'], [2, 1, 2])],
+    Georgia: ['SAKARTVELO', () => rect(0, 0, W, H, '#fff') + rect(14.5, 0, 5, H, '#FF0000') + rect(0, 12.5, W, 5, '#FF0000') + [[6.5, 6], [27.5, 6], [6.5, 24], [27.5, 24]].map(([x, y]) => rect(x - 2.5, y - .8, 5, 1.6, '#FF0000') + rect(x - .8, y - 2.5, 1.6, 5, '#FF0000')).join('')],
+    Albania: ['SHQIPËRIA', () => rect(0, 0, W, H, '#E41E20') + `<path d="M17 7l2 3 4-3-1 4 5-1-3 4 4 1-4 2 2 3-4-1v4l-3-2-2 3-2-3-3 2v-4l-4 1 2-3-4-2 4-1-3-4 5 1-1-4 4 3z" fill="#000"/>`],
+    Poland: ['POLSKA', () => bands('h', ['#fff', '#DC143C'])],
+    Japan: ['NIPPON', () => rect(0, 0, W, H, '#fff') + `<circle cx="17" cy="15" r="8" fill="#BC002D"/>`],
+    Turkey: ['TÜRKİYE', () => rect(0, 0, W, H, '#E30A17') + `<circle cx="13" cy="15" r="7.5" fill="#fff"/><circle cx="15" cy="15" r="6" fill="#E30A17"/>` + star(21.2, 15, 3.2, '#fff')],
+    Oman: ['OMAN', () => rect(0, 0, W, H, '#DB161B') + rect(10, 0, 24, 10, '#fff') + rect(10, 20, 24, 10, '#008000') + `<path d="M3 3l4 4M7 3L3 7" stroke="#fff" stroke-width="1"/>`],
+    India: ['BHARAT · INDIA', () => bands('h', ['#FF9933', '#fff', '#138808']) + `<circle cx="17" cy="15" r="3.6" fill="none" stroke="#000080" stroke-width=".8"/><circle cx="17" cy="15" r=".9" fill="#000080"/><path d="M17 11.4v7.2M13.4 15h7.2M14.5 12.5l5 5M19.5 12.5l-5 5" stroke="#000080" stroke-width=".35"/>`],
+    Vietnam: ['VIỆT NAM', () => rect(0, 0, W, H, '#DA251D') + star(17, 15.6, 8.4, '#FFFF00', .38)],
+    Indonesia: ['INDONESIA', () => bands('h', ['#CE1126', '#fff'])],
+    Korea: ['KOREA', () => rect(0, 0, W, H, '#fff') + `<path d="M10.5 15a6.5 6.5 0 0 1 13 0z" fill="#CD2E3A"/><path d="M10.5 15a6.5 6.5 0 0 0 13 0z" fill="#0047A0"/><path d="M10.5 15a3.25 3.25 0 0 0 6.5 0 3.25 3.25 0 0 1 6.5 0" fill="#CD2E3A"/>` + [[4.5, 5, 35], [29.5, 5, -35], [4.5, 25, -35], [29.5, 25, 35]].map(([x, y, a]) => `<g transform="translate(${x} ${y}) rotate(${a})"><path d="M-3-1.8h6M-3 0h6M-3 1.8h6" stroke="#000" stroke-width="1"/></g>`).join('')],
+    Netherlands: ['NEDERLAND', () => bands('h', ['#AE1C28', '#fff', '#21468B'])],
+    'Bosnia and Herzegovina': ['BOSNA I HERCEGOVINA', () => rect(0, 0, W, H, '#002395') + `<polygon points="10,0 28,0 28,30" fill="#FECB00"/>` + Array.from({ length: 7 }, (_, i) => star(7.2 + i * 2.8, 2 + i * 4.4, 1.5, '#fff')).join('')],
+    Slovakia: ['SLOVENSKO', () => bands('h', ['#fff', '#0B4EA2', '#EE1C25']) + `<path d="M6 7h8v7.5c0 4-4 6-4 6s-4-2-4-6z" fill="#EE1C25" stroke="#fff" stroke-width=".9"/><path d="M10 8.6v8M8 10.6h4M7.3 13h5.4" stroke="#fff" stroke-width="1"/><path d="M6.8 17.5c1-1.6 2.4-1.6 3.2 0 .8-1.6 2.2-1.6 3.2 0" fill="#0B4EA2"/>`],
+    Mexico: ['MÉXICO', () => bands('v', ['#006847', '#fff', '#CE1126']) + `<ellipse cx="17" cy="15.5" rx="3.2" ry="3.6" fill="#8C5A2B"/><path d="M14.2 18.6c1.8 1.4 3.8 1.4 5.6 0" stroke="#006847" stroke-width=".9" fill="none"/>`],
+  };
+  const order = ['Italy', 'Spain', 'Portugal', 'France', 'Germany', 'Denmark', 'Hungary', 'Romania', 'United Kingdom', 'Ireland', 'Morocco', 'Kazakhstan', 'Uzbekistan', 'Kyrgyzstan', 'Switzerland', 'Austria', 'San Marino', 'Vatican', 'Czechia', 'Bulgaria', 'Greece', 'Slovenia', 'Australia', 'Estonia', 'Finland', 'Sweden', 'Latvia', 'Georgia', 'Albania', 'Poland', 'Japan', 'Turkey', 'Oman', 'India', 'Vietnam', 'Indonesia', 'Korea', 'Netherlands', 'Bosnia and Herzegovina', 'Slovakia', 'Mexico'];
+  const values = ['1,30', '0,95', '2,40', '50', '1,20', '25', '120', '3', '0,85', '2', '7', '150', '4', '80', '1,10', '0,90'];
+  const stampSvg = (name, i) => {
+    const [label, draw] = F[name], long = label.length > 11;
+    return `<svg viewBox="0 0 40 50" aria-hidden="true"><svg x="3" y="3" width="34" height="30" viewBox="0 0 34 30">${draw()}</svg>
+      <rect x="3" y="3" width="34" height="30" fill="none" stroke="#0000001f" stroke-width=".4"/>
+      <text x="20" y="40.6" text-anchor="middle" font-size="${long ? 3.6 : 4.4}" font-weight="700" letter-spacing=".15" fill="#2b2b2b" font-family="DM Sans, sans-serif"${label.length > 15 ? ' textLength="34" lengthAdjust="spacingAndGlyphs"' : ''}>${label}</text>
+      <text x="20" y="46.6" text-anchor="middle" font-size="3.6" fill="#86324A" font-family="Playfair Display, Georgia, serif" font-style="italic">${values[i % values.length]}</text></svg>`;
+  };
+  // The same scatter every time, so the card looks the same on every visit
+  const rand = (seed => () => (seed = (seed * 16807) % 2147483647) / 2147483647)(41);
+  const jitter = order.map(() => [rand() - .5, rand() - .5, (rand() - .5) * 14]);
+
+  const ring = (id, r) => `<path id="${id}" d="M60,60 m-${r},0 a${r},${r} 0 1,1 ${2 * r},0 a${r},${r} 0 1,1 -${2 * r},0"/>`;
+  const waves = `<g stroke="currentColor" stroke-width="2.2" fill="none">${[0, 9, 18, 27, 36].map(y => `<path d="M0 ${y + 4}c12-7 24 7 36 0s24-7 36 0 24 7 36 0 24-7 36 0 24 7 36 0"/>`).join('')}</g>`;
+  const back = () => `
+    <svg class="fn-pc-defs" width="0" height="0" aria-hidden="true"><filter id="fn-ink"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" seed="7"/><feDisplacementMap in="SourceGraphic" scale="2.2"/></filter></svg>
+    <span class="fn-tape fn-tape-l"></span><span class="fn-tape fn-tape-r"></span>
+    <div class="fn-pc-in"><p class="fn-pc-head">${t.head}<span>${t.sub}</span></p>
+    <div class="fn-pc-stamps">${order.map((n, i) => `<span class="fn-st" style="--a:${jitter[i][2].toFixed(1)}deg">${stampSvg(n, i)}</span>`).join('')}</div>
+    <div class="fn-pc-foot">
+      <div class="fn-pc-note"><p>${t.note.join('<br>')}</p><p class="fn-pc-sign">Nicky <span>x</span></p>
+        <svg class="fn-pc-scribble" viewBox="0 0 120 26" aria-hidden="true"><path d="M3 18c14-10 22 8 34-1s20-12 30 1 16 2 24-6 14 0 26-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M98 6c-2-4-8-2-5 3l5 5 5-5c3-5-3-7-5-3z" fill="none" stroke="#86324A" stroke-width="1.4"/></svg></div>
+      <div class="fn-pc-to">${t.to.map(l => `<p>${l}</p>`).join('')}</div>
+    </div>
+    <svg class="fn-pm fn-pm-a" viewBox="0 0 230 120" aria-hidden="true"><defs>${ring('fn-pm-ring-a', 40)}</defs>
+      <circle cx="60" cy="60" r="52" fill="none" stroke="currentColor" stroke-width="3"/><circle cx="60" cy="60" r="31" fill="none" stroke="currentColor" stroke-width="1.6"/>
+      <text font-size="10.5" font-weight="700" letter-spacing="1" fill="currentColor" font-family="DM Sans, sans-serif" textLength="246" lengthAdjust="spacing"><textPath href="#fn-pm-ring-a">${t.pm}</textPath></text>
+      <text x="60" y="56" text-anchor="middle" font-size="12" font-weight="700" fill="currentColor" font-family="DM Sans, sans-serif">2026</text>
+      <path d="M38 62h44" stroke="currentColor" stroke-width="1.4"/><text x="60" y="75" text-anchor="middle" font-size="9" fill="currentColor" font-family="DM Sans, sans-serif">✦ 41 ✦</text>
+      <g transform="translate(116 38)">${waves}</g></svg>
+    <svg class="fn-pm fn-pm-b" viewBox="0 0 120 120" aria-hidden="true"><defs>${ring('fn-pm-ring-b', 42)}</defs>
+      <circle cx="60" cy="60" r="54" fill="none" stroke="currentColor" stroke-width="2.4" stroke-dasharray="5 3"/><circle cx="60" cy="60" r="33" fill="none" stroke="currentColor" stroke-width="1.4"/>
+      <text font-size="11" font-weight="700" letter-spacing="1.4" fill="currentColor" font-family="DM Sans, sans-serif" textLength="258" lengthAdjust="spacing"><textPath href="#fn-pm-ring-b">PRIORITY ✦ PRIORITAIRE ✦ PRIORITARIA ✦ </textPath></text>
+      ${star(60, 60, 15, 'currentColor', .42)}</svg>
+    <svg class="fn-pm fn-pm-c" viewBox="0 0 170 62" aria-hidden="true"><rect x="3" y="3" width="164" height="56" rx="4" fill="none" stroke="currentColor" stroke-width="3.4"/><rect x="9" y="9" width="152" height="44" rx="2" fill="none" stroke="currentColor" stroke-width="1.2"/>
+      <text x="85" y="30" text-anchor="middle" font-size="18" font-weight="800" letter-spacing="1.5" fill="currentColor" font-family="DM Sans, sans-serif">${t.count[0]}</text>
+      <text x="85" y="46" text-anchor="middle" font-size="11" font-weight="700" letter-spacing="3" fill="currentColor" font-family="DM Sans, sans-serif">${t.count[1]}</text></svg></div>`;
+
+  // Lay the 41 stamps out in a loose, slightly overlapping grid that fits whatever shape the photo is
+  const layout = box => {
+    const w = box.clientWidth, h = box.clientHeight; if (!w || !h) return;
+    let best = { s: 0 };
+    for (let cols = 3; cols <= 14; cols++) {
+      const rows = Math.ceil(order.length / cols), s = Math.min(w / cols / 40, h / rows / 50);
+      if (s > best.s) best = { s, cols, rows };
+    }
+    const { s, cols, rows } = best, cw = w / cols, ch = h / rows, sw = 40 * s * 1.07, sh = 50 * s * 1.07;
+    box.querySelectorAll('.fn-st').forEach((el, i) => {
+      const r = Math.floor(i / cols), c = i % cols, inRow = r === rows - 1 ? order.length - r * cols : cols;
+      const offset = (cols - inRow) * cw / 2; // centre a short last row
+      el.style.width = sw + 'px'; el.style.height = sh + 'px';
+      el.style.left = (offset + c * cw + (cw - sw) / 2 + jitter[i][0] * cw * .22) + 'px';
+      el.style.top = (r * ch + (ch - sh) / 2 + jitter[i][1] * ch * .2) + 'px';
+    });
+  };
+
+  const run = () => {
+    document.querySelectorAll('.fn-home-portrait, .fn-about-portrait, .postcard, .fn-vienna-hero-photo, .vn-portrait, .ba-photo').forEach(fig => {
+      if (fig.dataset.fnCard) return; fig.dataset.fnCard = '1';
+      // A still wrapper takes the hover, so the card doesn't flicker while it turns
+      const wrap = document.createElement('div'); wrap.className = 'fn-pc-wrap';
+      fig.before(wrap); wrap.append(fig);
+      if (getComputedStyle(fig).position === 'static') fig.style.position = 'relative';
+      fig.classList.add('fn-alive', 'fn-pc-host');
+      const tapes = ['fn-tape fn-tape-l', 'fn-tape fn-tape-r'].map(cls => { const el = document.createElement('span'); el.className = cls; el.setAttribute('aria-hidden', 'true'); return el; });
+      const card = document.createElement('div'); card.className = 'fn-pc-back'; card.setAttribute('aria-hidden', 'true'); card.innerHTML = back();
+      const btn = document.createElement('button'); btn.type = 'button'; btn.className = 'fn-pc-turn';
+      const label = () => { const on = fig.classList.contains('fn-pc-flipped'); btn.innerHTML = `${on ? '↺' : '↻'} <span>${on ? t.back : t.over}</span>`; btn.setAttribute('aria-pressed', on); };
+      btn.addEventListener('click', () => { fig.classList.toggle('fn-pc-flipped'); label(); });
+      label();
+      fig.append(...tapes, card); wrap.append(btn);
+      const box = card.querySelector('.fn-pc-stamps');
+      new ResizeObserver(() => layout(box)).observe(box);
+    });
+  };
+  document.readyState === 'complete' ? run() : document.addEventListener('DOMContentLoaded', run);
+})();
+
+/* Home and About: a postmark spins on the corner of the hero photo, and on the home page a trail of footsteps walks
+   through the empty space under the intro, each step fading as the next appears (like the Marauder's Map).
+   House rule: for travel motion, use footsteps rather than paper planes. */
 (() => {
   if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
   const ns = 'http://www.w3.org/2000/svg';
@@ -249,13 +394,7 @@
   const print = (x, y, angle, cls = 'fn-step', size = 1) => `<g class="${cls}" transform="translate(${x.toFixed(1)} ${y.toFixed(1)}) rotate(${angle.toFixed(1)}) scale(${size})"><ellipse cx="2.6" cy="0" rx="4.6" ry="2.6"/><ellipse cx="-5" cy="0" rx="2.4" ry="2.1"/></g>`;
   const run = () => {
     document.querySelectorAll('.fn-home-portrait, .fn-about-portrait, .postcard, .fn-vienna-hero-photo, .vn-portrait, .ba-photo').forEach(fig => {
-      if (fig.dataset.fnAlive) return; fig.dataset.fnAlive = '1';
-      if (getComputedStyle(fig).position === 'static') fig.style.position = 'relative';
-      fig.classList.add('fn-alive'); fig.parentElement.classList.add('fn-wind');
-      const bits = ['fn-shade', 'fn-glint', 'fn-tape fn-tape-l', 'fn-tape fn-tape-r'].map(cls => {
-        const el = document.createElement('span'); el.className = cls; el.setAttribute('aria-hidden', 'true'); return el;
-      });
-      fig.append(...bits);
+      if (fig.dataset.fnStamp) return; fig.dataset.fnStamp = '1';
       if (fig.matches('.fn-home-portrait, .fn-about-portrait')) {
         const stamp = document.createElement('span'); stamp.className = 'fn-stamp'; stamp.setAttribute('aria-hidden', 'true');
         const it = document.documentElement.lang === 'it';
@@ -264,7 +403,7 @@
           <circle cx="60" cy="60" r="56" fill="#E4F5E0" stroke="#86324A" stroke-width="2.5" stroke-dasharray="3 3"/><circle cx="60" cy="60" r="31" fill="none" stroke="#86324A" stroke-width="1.5"/>
           <g class="fn-stamp-ring"><text font-size="9.4" font-weight="700" letter-spacing="0.9" textLength="266" lengthAdjust="spacing" fill="#86324A" font-family="DM Sans, sans-serif"><textPath href="#fn-stamp-ring">${words}</textPath></text></g>
           <g fill="#86324A">${print(51, 70, -70, 'fn-stamp-step', 1.35)}${print(68, 52, -70, 'fn-stamp-step', 1.35)}</g></svg>`;
-        fig.append(stamp);
+        fig.append(stamp); // backface-hidden like the rest of the front, so it disappears when the postcard turns
       }
     });
     const intro = document.querySelector('.fn-intro');
