@@ -18,6 +18,9 @@ Italian copies and the best-time-to-visit data.
   postcard with a stamp from every country Nicky has visited. The country list
   is `order` in the postcard block of `motion.js`; add new countries there
   (with a flag in `F`) and update the "41" count in both languages.
+- Heading icons are fine-line, Art Nouveau-inspired illustrations (thin ink
+  lines, whiplash curves, each in a slender arched frame with curled feet), drawn
+  on a 48×48 grid in the icon block of `motion.js`. New icons should match.
 - All motion lives in `dist/assets/motion.css` / `motion.js` and must switch
   off for visitors with `prefers-reduced-motion: reduce`.
 - When you change a shared CSS/JS file, bump its `?v=` number in every page
