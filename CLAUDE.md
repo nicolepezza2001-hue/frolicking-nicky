@@ -26,7 +26,7 @@ Italian copies and the best-time-to-visit data.
 
 ## Where things live
 
-- **Where I've been map** (My travels, EN + IT): `dist/assets/world-map.svg` and
+- **Where I’ve been map** (home and My travels, EN + IT): `dist/assets/world-map.svg` and
   `world-map.it.svg`, generated from Natural Earth data. Inked countries carry
   `data-x`/`data-y` where the footsteps stop; the walker is in `motion.js`.
 - **Rough budget and handwritten margin notes** (itinerary pages):
