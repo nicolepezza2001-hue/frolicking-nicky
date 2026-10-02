@@ -238,7 +238,7 @@
   document.readyState === 'complete' ? run() : document.addEventListener('DOMContentLoaded', run);
 })();
 
-/* Hero photos: two strips of masking tape hold them down, the picture develops like a Polaroid when the page opens,
+/* Hero photos: two strips of masking tape hold them down,
    and turning the photo over (hover, or the Turn over button on touch screens and keyboards) shows the back of a
    well-travelled postcard, with a stamp from every country Nicky has been to, postmarks and a signed note.
    Built for everyone; only the develop and the turning animation switch off with reduced motion. */

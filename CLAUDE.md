@@ -11,8 +11,8 @@ Italian copies and the best-time-to-visit data.
   Potter. Don't use paper planes, flying planes or "flying away" motifs.
   The reusable pieces are in `dist/assets/motion.js`: the `print()` footprint
   helper and the hero footsteps, and the `steps` heading icon.
-- Hero photos are taped down at the top corners with beige masking tape. They
-  develop once like a Polaroid when the page opens, then stay still: no
+- Hero photos are taped down at the top corners with beige masking tape and
+  simply appear, then stay still: no Polaroid develop or fade-in, no
   fluttering, floating or hovering up and down (Nicky didn't like those).
 - Turning a hero photo over (hover, or the Turn over button) shows a used
   postcard with a stamp from every country Nicky has visited. The country list
