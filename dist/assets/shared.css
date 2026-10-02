@@ -65,3 +65,49 @@ body .weekend .outing-heading{border-radius:17px 17px 0 0}
 
 /* Decorations (tape, travel line) may poke past the edge of the screen but never make the page scroll sideways */
 html,body{overflow-x:clip}
+
+/* Where I've been: world map with visited countries inked in */
+.fn-map{margin:80px 0 0;scroll-margin-top:24px}
+.fn-map-head{max-width:680px}
+.fn-map-head h2{font:600 clamp(2rem,4.4vw,3.2rem)/1.15 'Playfair Display',Georgia,serif;margin:8px 0 12px}
+.fn-map-head p:last-child{margin:0}
+.fn-map-card{position:relative;margin:34px 10px 0 0;padding:clamp(10px,2.4vw,28px);background:linear-gradient(135deg,#f7f0df,#efe4cb);border-radius:4px;box-shadow:10px 10px 0 #000,inset 0 0 40px #a7884f26}
+.fn-map-scroll{aspect-ratio:2/1;overflow-x:auto;overscroll-behavior-x:contain}
+.fn-map-svg{display:block;width:100%;height:auto}
+.fn-map-land path{fill:#e3d8be;stroke:#f7f0df;stroke-width:.6}
+.fn-map-v{fill:var(--fn-red);stroke:#f7f0df;stroke-width:.6;transition:fill .7s ease calc(var(--i) * 55ms)}
+.fn-map:not(.fn-inked) .fn-map-v{fill:#e3d8be}
+.fn-map-v:hover{fill:#b8476a;transition-delay:0s}
+.fn-map-pin path{fill:#000;transition:fill .2s}
+.fn-map-pin text{font:700 13px 'DM Sans',sans-serif;fill:#000;paint-order:stroke;stroke:#f7f0df;stroke-width:3.5px;stroke-linejoin:round}
+.fn-map-pin:hover path,.fn-map-pin:focus-visible path{fill:var(--fn-red)}
+.fn-map-pin:hover text,.fn-map-pin:focus-visible text{fill:var(--fn-red);text-decoration:underline}
+.fn-map-pin:focus-visible{outline:none}
+.fn-map-walk ellipse{fill:#1d1b2c}
+.fn-map-tag rect{fill:#f7f0df;stroke:#1d1b2c;stroke-width:1}
+.fn-map-tag text{font:600 15px 'Caveat',cursive;fill:#1d1b2c}
+.fn-map-legend{display:flex;flex-wrap:wrap;gap:8px 26px;margin:22px 0 0;font-size:14px}
+.fn-map-legend span{display:inline-flex;align-items:center;gap:8px}
+.fn-map-key{display:inline-block;width:18px;height:12px;border-radius:2px;background:var(--fn-red)}
+.fn-map-legend svg{width:12px;height:16px;fill:#000}
+@media(max-width:760px){.fn-map-scroll{aspect-ratio:auto}.fn-map-svg{width:760px;max-width:none}.fn-map-pin text{font-size:15px}}
+
+/* Rough budget on the itinerary pages */
+.fn-budget{margin:40px 0;padding:clamp(22px,3vw,34px);background:#F5FBF3;border:1px solid #00000020;border-radius:22px;font-family:'DM Sans',sans-serif;color:#000}
+.fn-budget h2{font:600 clamp(1.7rem,3.4vw,2.3rem)/1.2 'Playfair Display',Georgia,serif;color:var(--fn-red);margin:0 0 6px}
+.fn-budget-intro{margin:0 0 22px;font-size:.95rem;color:#303030}
+.fn-budget-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(170px,42%),1fr));gap:14px}
+@media(max-width:600px){.fn-budget-grid{gap:10px}.fn-budget-row{padding:13px 12px 12px}.fn-budget-note{font-size:.84rem}}
+.fn-budget-row{background:#E4F5E0;border-radius:16px;padding:16px 16px 14px}
+.fn-budget-row p{margin:0}
+.fn-budget-cat{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--fn-red)}
+.fn-budget-level{display:flex;align-items:center;gap:8px;margin:8px 0 6px!important;font-weight:700}
+.fn-coins{display:inline-flex;gap:4px}
+.fn-coins i{width:15px;height:15px;border-radius:50%;border:1.6px solid var(--fn-red);background:transparent}
+.fn-coins i.on{background:var(--fn-red);box-shadow:inset 0 0 0 2px #E4F5E0}
+.fn-budget-note{font-size:.9rem;line-height:1.45;color:#303030}
+.fn-budget-tip{margin:18px 0 0;font-size:.95rem}
+
+/* Handwritten notes in the margin of some stops */
+.fn-margin-note{display:flex;align-items:flex-start;gap:6px;margin:6px 0 2px;font:600 1.3rem/1.15 'Caveat',cursive;color:#1f3474;rotate:-1.5deg;transform-origin:left}
+.fn-margin-note svg{flex:0 0 26px;width:26px;height:18px;margin-top:2px}

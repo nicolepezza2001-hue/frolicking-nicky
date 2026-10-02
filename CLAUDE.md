@@ -24,6 +24,20 @@ Italian copies and the best-time-to-visit data.
   that links it.
 - Every English change needs the same change in its Italian copy under `/it/`.
 
+## Where things live
+
+- **Where I've been map** (My travels, EN + IT): `dist/assets/world-map.svg` and
+  `world-map.it.svg`, generated from Natural Earth data. Inked countries carry
+  `data-x`/`data-y` where the footsteps stop; the walker is in `motion.js`.
+- **Rough budget and handwritten margin notes** (itinerary pages):
+  `dist/assets/journal.js`. Notes attach to a stop by its checkbox id. The
+  notes are practical asides written in Nicky's voice; she may replace them
+  with her own.
+- **Share previews**: every page has Open Graph/Twitter tags; images are
+  `dist/assets/share-*.jpg` (1200×630).
+- **Photos**: keep JPEGs at most 1400px on the long side, quality ~76, with
+  metadata stripped (this also removes GPS).
+
 ## Working with Nicky
 
 - Make every finished change live without asking: open a pull request into
