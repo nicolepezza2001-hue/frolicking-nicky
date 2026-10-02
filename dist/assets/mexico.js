@@ -32,7 +32,7 @@ const groups = [
 ['moderno','Museo de Arte Moderno','modern Mexican art, including Frida Kahlo','A must. Close to the castle entrance.']]]],note:'All three museums close on Mondays. The castle closes at 5 p.m. and the Museo de Arte Moderno at 5:45 p.m., so save this afternoon for an earlier finish to work.',link:['Castle visitor information','https://mnh.inah.gob.mx/informacion-general']},
 {id:'coyoacan',number:'04',title:'Xochimilco & Coyoacán',timing:'SATURDAY DAY TRIP',color:'blue',weekend:true,description:'A morning on the canals, then Frida’s world, neighborhood squares and an afternoon with room to wander.',sections:[
 ['A MORNING ON THE CANALS',[
-['xochimilco','Xochimilco trajinera ride','painted boats on the old canals; music and snacks from passing boats','Go in the morning and rent a boat for one or two hours. Coyoacán is about 30–40 minutes away by taxi.']]],
+['xochimilco','Xochimilco trajinera ride','painted boats on the old canals; music and snacks from passing boats','Go in the morning and rent a boat for one or two hours. Coyoacán is about 15 km away: allow up to an hour by taxi, depending on traffic.']]],
 ['FRIDA & SLOW WANDERING',[
 ['frida','Frida Kahlo Museum / Casa Azul','Frida’s home, life and art','Book your timed ticket online in advance.'],
 ['squares','Jardín Centenario & Plaza Hidalgo','historic neighborhood squares'],
