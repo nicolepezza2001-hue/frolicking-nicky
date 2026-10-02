@@ -26,5 +26,8 @@ Italian copies and the best-time-to-visit data.
 
 ## Working with Nicky
 
-- After every change is pushed, send Nicky the link to it on GitHub (the branch,
-  and the pull request if there is one) in your reply.
+- Make every finished change live without asking: open a pull request into
+  `main` and merge it straight away (Nicky asked not to be asked again).
+  Merging to `main` publishes the site via GitHub Pages.
+- After every change, send Nicky the links: the pull request, the branch and
+  the website (https://frolickingnicky.com/).
