@@ -29,7 +29,6 @@
 .fn-card.fn-flipped .fn-card-inner,.fn-card:has(.fn-card-back :focus-visible) .fn-card-inner{transform:rotateY(180deg)}
 .fn-card.fn-flipped .fn-card-front,.fn-card:has(.fn-card-back :focus-visible) .fn-card-front{pointer-events:none}
 .fn-card.fn-flipped .fn-card-back,.fn-card:has(.fn-card-back :focus-visible) .fn-card-back{pointer-events:auto}
-@media(hover:hover){.fn-card:hover .fn-card-inner{transform:rotateY(180deg)}.fn-card:hover .fn-card-front{pointer-events:none}.fn-card:hover .fn-card-back{pointer-events:auto}}
 .fn-flip{position:absolute;z-index:2;display:inline-flex;align-items:center;gap:6px;border:0;border-radius:99px;padding:7px 13px;font:600 13px/1.2 'DM Sans',sans-serif;cursor:pointer}
 .fn-flip-front{top:26px;right:26px;background:#F5FBF3e8;color:var(--fn-red);box-shadow:0 2px 8px #0000001f}
 .fn-flip-back{position:static;align-self:flex-end;margin:-12px -10px 6px 0;background:transparent;color:#E4F5E0;border:1px solid #E4F5E066}
@@ -189,10 +188,11 @@ html,body{overflow-x:clip}
 
 /* Touch screens: iPhone Safari can show the turned-away side mirrored, so each side is fully hidden
    halfway through the turn. Phones also don't need the Quick look button: cards turn by themselves or on tap. */
+@media(hover:none){.fn-flip-front{display:none}}
+.fn-card{cursor:pointer}
+.fn-card-front,.fn-card-back{transition:visibility 0s .37s}
+.fn-card.fn-flipped .fn-card-front,.fn-card:not(.fn-flipped) .fn-card-back{visibility:hidden}
 @media(hover:none){
-  .fn-flip-front{display:none}
-  .fn-card-front,.fn-card-back{transition:visibility 0s .37s}
-  .fn-card.fn-flipped .fn-card-front,.fn-card:not(.fn-flipped) .fn-card-back{visibility:hidden}
   .fn-pc-host>*{transition:visibility 0s .45s}
   .fn-pc-host.fn-pc-flipped>:not(.fn-pc-back),.fn-pc-host:not(.fn-pc-flipped)>.fn-pc-back{visibility:hidden}
 }
