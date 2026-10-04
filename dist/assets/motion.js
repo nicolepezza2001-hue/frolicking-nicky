@@ -387,17 +387,8 @@
       label();
       fig.append(...tapes, card);
       if (touch) {
-        // Phones: no button. The photo turns over by itself after a few seconds on screen, turns back once
-        // it has scrolled away, and a tap turns it either way (and stops it turning by itself).
+        // Phones: no button; a tap turns the postcard over and back
         fig.addEventListener('click', e => { e.preventDefault(); fig.dataset.fnManual = '1'; fig.classList.toggle('fn-pc-flipped'); });
-        if (!still) {
-          let timer;
-          new IntersectionObserver(([en]) => {
-            if (fig.dataset.fnManual) return; clearTimeout(timer);
-            if (en.intersectionRatio >= .6) timer = setTimeout(() => fig.classList.add('fn-pc-flipped'), 500);
-            else if (en.intersectionRatio < .15) fig.classList.remove('fn-pc-flipped');
-          }, { threshold: [0, .15, .6, 1] }).observe(fig);
-        }
       } else wrap.append(btn);
       const box = card.querySelector('.fn-pc-stamps');
       new ResizeObserver(() => layout(box)).observe(box);
@@ -591,26 +582,12 @@
 })();
 
 /* Destination cards: the Quick look button flips a card for touch and keyboard users (hover flips it with a mouse) */
-// On touch screens a card also turns over by itself while it sits in the middle of the screen, and a tap anywhere on it turns it.
+// A click or tap on a card turns it over (the title and Open the itinerary links on the front still open the page)
 (() => {
-  if (!matchMedia('(hover: none)').matches) return;
-  const still = matchMedia('(prefers-reduced-motion: reduce)').matches, timers = new Map();
-  const run = () => {
-    document.querySelectorAll('.fn-card').forEach(card => card.addEventListener('click', e => {
-      if (e.target.closest('.fn-flip, .fn-card-back') || (e.target.closest('a') && !e.target.closest('.fn-photo'))) return;
-      e.preventDefault(); card.dataset.fnManual = '1'; card.classList.toggle('fn-flipped');
-    }));
-    if (still) return;
-    // Turn once the whole card is on screen (or as much of it as fits), so its photo is seen first; turn back as it leaves
-    const io = new IntersectionObserver(es => es.forEach(({ target: card, intersectionRatio: r }) => {
-      if (card.dataset.fnManual) return;
-      const enough = Math.min(.9, innerHeight / card.offsetHeight * .9);
-      clearTimeout(timers.get(card));
-      if (r >= enough) timers.set(card, setTimeout(() => card.classList.add('fn-flipped'), 500));
-      else if (r < .45) card.classList.remove('fn-flipped');
-    }), { threshold: [0, .2, .45, .6, .7, .8, .9, 1] });
-    document.querySelectorAll('.fn-card').forEach(card => io.observe(card));
-  };
+  const run = () => document.querySelectorAll('.fn-card').forEach(card => card.addEventListener('click', e => {
+    if (e.target.closest('.fn-flip, .fn-card-back') || (e.target.closest('a') && !e.target.closest('.fn-photo'))) return;
+    e.preventDefault(); card.classList.toggle('fn-flipped');
+  }));
   document.readyState === 'complete' ? run() : document.addEventListener('DOMContentLoaded', run);
 })();
 // Anywhere on the back of a turned card opens that itinerary (except the Back to the photo button)

@@ -14,7 +14,7 @@ Italian copies and the best-time-to-visit data.
 - Hero photos are taped down at the top corners with beige masking tape and
   simply appear, then stay still: no Polaroid develop or fade-in, no
   fluttering, floating or hovering up and down (Nicky didn't like those).
-- Turning a hero photo over (hover on desktop, by itself or a tap on phones) shows a used
+- Turning a hero photo over (hover on desktop, a tap on phones) shows a used
   postcard with a stamp from every country Nicky has visited. The country list
   is `order` in the postcard block of `motion.js`; add new countries there
   (with a flag in `F`) and update the "41" count in both languages.
@@ -44,9 +44,11 @@ Italian copies and the best-time-to-visit data.
 ## Phones
 
 Check every change on a phone-sized screen too (Nicky mostly looks on her
-iPhone). On phones: the header links sit behind a menu button; destination
-cards and the hero postcard turn over by themselves (cards once fully on
-screen, the postcard after ½ second) and on tap, with no Turn over or Quick look buttons. Tapping or clicking anywhere on a turned card opens its itinerary (no Open the itinerary button);
+iPhone). On phones the header links sit behind a menu button. Nothing turns
+over by itself (Nicky tried auto-turning and went back): destination cards
+turn on click or tap on every device, the hero postcard on tap on phones and
+hover on desktop, with no Turn over or Quick look buttons on phones. Clicking
+anywhere on a turned card opens its itinerary (no Open the itinerary button);
 the map fits the screen with number tiles and trip links, and can be pinched,
 dragged and zoomed with + / − (`zoomable()` in `motion.js`). Nicky didn't want
 a separate Europe close-up, the map legend or the trip buttons under the map on phones. On touch screens the turned-away side is hidden with `visibility` because iPhone Safari can show it mirrored.
