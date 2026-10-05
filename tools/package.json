@@ -1,0 +1,7 @@
+{
+  "name": "frolicking-nicky-checks",
+  "private": true,
+  "type": "module",
+  "description": "Checks run before every publish: node check-site.mjs && node smoke.mjs",
+  "dependencies": { "playwright": "1.56.1" }
+}

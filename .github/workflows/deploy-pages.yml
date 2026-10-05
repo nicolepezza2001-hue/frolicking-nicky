@@ -1,9 +1,12 @@
-# Publishes the dist/ folder to GitHub Pages whenever main is updated.
+# Checks the site, then publishes the dist/ folder to GitHub Pages whenever main is updated.
+# The checks (tools/check-site.mjs and tools/smoke.mjs) also run on every pull request.
+# If any check fails, nothing is published and the live site stays as it was.
 name: Deploy site to GitHub Pages
 
 on:
   push:
     branches: [main]
+  pull_request:
   workflow_dispatch:
 
 permissions:
@@ -11,13 +14,34 @@ permissions:
   pages: write
   id-token: write
 
-concurrency:
-  group: pages
-  cancel-in-progress: false
-
 jobs:
-  deploy:
+  check:
     runs-on: ubuntu-latest
+    steps:
+      - name: Check out the site
+        uses: actions/checkout@v4
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Check links, Italian twins, scripts, photos and file versions
+        run: node tools/check-site.mjs
+      - name: Install the browser for the phone and desktop test
+        working-directory: tools
+        run: |
+          npm ci --no-audit --no-fund
+          npx playwright install --with-deps chromium
+      - name: Open every page as an iPhone and as a desktop browser
+        working-directory: tools
+        run: node smoke.mjs
+
+  deploy:
+    needs: check
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    concurrency:
+      group: pages
+      cancel-in-progress: false
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

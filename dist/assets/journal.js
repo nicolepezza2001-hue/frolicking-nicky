@@ -108,3 +108,43 @@
   // Some itineraries are drawn by their own scripts, so wait until the page has finished loading
   document.readyState === 'complete' ? run() : addEventListener('load', run);
 })();
+
+/* Save for offline: stores this itinerary page and everything it uses (styles, scripts, every photo, fonts)
+   on the device, so it opens with no signal. Ticks already live on the device, so they keep working too. */
+(() => {
+  if (!('caches' in window) || !('serviceWorker' in navigator)) return;
+  const it = document.documentElement.lang === 'it';
+  const t = it ? { save: 'Salva per l’offline', saving: 'Salvataggio…', saved: 'Salvato per l’offline ✓', failed: 'Riprova a salvare', tip: 'Salva questo itinerario sul dispositivo per usarlo senza connessione' }
+               : { save: 'Save for offline', saving: 'Saving…', saved: 'Saved for offline ✓', failed: 'Try saving again', tip: 'Keep this itinerary on your device to use it without a connection' };
+  const page = location.pathname.replace(/\/?$/, '/');
+  const urls = () => {
+    const set = new Set([page]);
+    document.querySelectorAll('link[rel=stylesheet][href], script[src], img, link[rel=manifest], link[rel=icon]').forEach(el => {
+      const u = el.tagName === 'IMG' ? (el.currentSrc || el.src) : (el.href || el.src); if (u) set.add(u);
+    });
+    // the best-time strip loads its season data separately
+    ['/assets/visit-seasons.js', '/assets/visit-seasons.it.js'].forEach(u => set.add(u));
+    document.querySelectorAll('a[href$=".jpeg"], a[href$=".jpg"]').forEach(a => set.add(a.href)); // full-size photos the album links to
+    return [...set];
+  };
+  const run = () => {
+    const share = document.querySelector('.fn-share'); if (!share || document.querySelector('.fn-offline')) return;
+    const btn = document.createElement('button'); btn.type = 'button'; btn.className = 'fn-share fn-offline'; btn.title = t.tip;
+    const label = s => { btn.innerHTML = s === 'saved' ? t.saved : s === 'saving' ? t.saving : s === 'failed' ? t.failed : `${t.save} <span aria-hidden="true">↓</span>`; btn.dataset.state = s; };
+    label('idle'); share.after(btn);
+    caches.open('fn-saved').then(c => c.match(page)).then(hit => hit && label('saved'));
+    btn.addEventListener('click', async () => {
+      label('saving');
+      try {
+        const cache = await caches.open('fn-saved'); let ok = 0;
+        await Promise.all(urls().map(async u => {
+          const same = new URL(u, location.href).origin === location.origin;
+          try { const res = await fetch(u, same ? {} : { mode: 'no-cors' }); if (res.ok || res.type === 'opaque') { await cache.put(u, res); ok++; } } catch (_) {}
+        }));
+        // fonts used by the page (Google Fonts) are picked up from the browser's own cache by the service worker
+        label(ok ? 'saved' : 'failed');
+      } catch (_) { label('failed'); }
+    });
+  };
+  document.readyState === 'complete' ? run() : addEventListener('load', run);
+})();

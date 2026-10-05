@@ -66,3 +66,13 @@ the "Quick look" button on touch screens and keyboards, to show highlights,
 best months, getting around and one practical tip. The back of each card is
 plain HTML inside the card, so edit it there (in both languages) when an
 itinerary changes.
+
+
+## Checks, offline and the itinerary look
+
+- **Checks**: `node tools/check-site.mjs` and `cd tools && npm ci && node smoke.mjs`
+  run automatically before every publish; a failure stops the site publishing.
+- **Offline**: `dist/sw.js` keeps visited pages; itinerary pages have a "Save for
+  offline" button. `dist/manifest.webmanifest` allows adding to the home screen.
+- **One itinerary look**: Vienna and Mexico are restyled to match the other
+  itineraries by the "One itinerary look" block in `shared.css`.
