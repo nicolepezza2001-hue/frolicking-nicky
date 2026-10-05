@@ -47,7 +47,7 @@ Check every change on a phone-sized screen too (Nicky mostly looks on her
 iPhone). On phones the header links sit behind a menu button. Nothing turns
 over by itself (Nicky tried auto-turning and went back): destination cards
 turn on click or tap on every device, the hero postcard on tap on phones and
-hover on desktop, with no Turn over or Quick look buttons on phones. Clicking
+hover on desktop, with no Turn over or Quick look buttons on phones (a dog-eared corner on each card photo, showing the wine back, hints that cards turn). Clicking
 anywhere on a turned card opens its itinerary (no Open the itinerary button);
 the map fits the screen with number tiles and trip links, and can be pinched,
 dragged and zoomed with + / − (`zoomable()` in `motion.js`). Nicky didn't want

@@ -207,3 +207,11 @@ html,body{overflow-x:clip}
 .fn-back-cover:focus-visible{outline:none}
 .fn-back-cover:focus-visible::after{outline:3px solid #E4F5E0;outline-offset:-6px}
 @media(max-width:760px){.fn-map-trips,.fn-map-legend{display:none!important}}
+
+/* Phones: a dog-eared corner on each card photo hints that the card turns over; the fold shows the wine back */
+@media(hover:none){
+  .fn-card-front .fn-photo::after{content:"";position:absolute;right:0;bottom:0;z-index:1;width:42px;height:42px;pointer-events:none;
+    background:linear-gradient(315deg,#F5FBF3 0 50%,transparent 50%),linear-gradient(315deg,transparent 50%,#c06a83 50%,#9a3d57 56%,#86324A 74%,#5e2031);
+    filter:drop-shadow(-3px -3px 4px #00000040)}
+  .fn-card-front .fn-photo{border-bottom-right-radius:0}
+}
