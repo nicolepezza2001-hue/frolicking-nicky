@@ -46,6 +46,8 @@ Italian copies and the best-time-to-visit data.
   (El Charco), papel picado (South of the center), a winking portrait (More museum
   stops), a whisk (Gerstner) and a trotting dog (Parque México). Day-by-day and
   restaurant subheadings stay without icons so pages don't get too busy.
+  On wine cards (the Saturday day trips, the home page note) icons take the
+  heading's cream colour so they don't vanish wine-on-wine.
   The "If we have time" / "Se abbiamo tempo" heading has an hourglass (Nicky's
   idea) with turned posts and curled plates: the sand runs out, a little cat pops
   up, paws it over, and it starts again (`hourglass` icon, `fn-i-turn`).
