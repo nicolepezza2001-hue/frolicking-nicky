@@ -238,7 +238,7 @@
     if (tag.querySelector('svg').getBoundingClientRect().right > document.documentElement.clientWidth - 4) tag.classList.add('fn-icon-off');
     if (tag.querySelector('.fn-i-steps')) trail(h, tag);
   }
-  // The footsteps icon: the prints in the little arch stay put and a trail carries on from its foot to the right, through the empty space beside
+  // The footsteps icon (drawn without an arch): its prints stay put and a trail carries on from them to the right, through the empty space beside
   // the heading (stopping short of anything else on that row and of the screen edge), each fading behind the walker.
   function trail(h, tag) {
     tag.querySelector('.fn-steps-walk')?.remove(); tag.classList.remove('fn-icon-trail');
@@ -256,8 +256,8 @@
     const cs = getComputedStyle(icon);
     Object.assign(svg.style, { left: cs.left, top: cs.top, marginTop: cs.marginTop, width: width + 'px', height: r.height + 'px' });
     const prints = []; let i = 0;
-    for (let x = 44; x < W - 6; x += 8.5, i++) {
-      const t = x - 44, y = 37 - 5 * Math.sin(t / 22) * Math.min(1, t / 40), slope = -5 / 22 * Math.cos(t / 22) * Math.min(1, t / 40);
+    for (let x = 34; x < W - 6; x += 8.5, i++) {
+      const t = x - 34, y = 37 - 5 * Math.sin(t / 22) * Math.min(1, t / 40), slope = -5 / 22 * Math.cos(t / 22) * Math.min(1, t / 40);
       const side = i % 2 ? 2.6 : -2.6, ang = Math.atan2(slope, 1) * 180 / Math.PI + 90;
       prints.push(`<g class="fn-walk-step" transform="translate(${x.toFixed(1)} ${(y + side).toFixed(1)}) rotate(${ang.toFixed(1)})"><path d="M-1.6 1.2c-.6-2.2-.4-4.6.8-5.8 1.2-1.2 2.8-.6 3 1.2.3 2-.2 3.6-.6 4.6z"/><path d="M-1.3 2.8c.2 1.6 1.8 2.2 2.6 1.4.6-.6.4-1.4.2-1.8"/></g>`);
     }

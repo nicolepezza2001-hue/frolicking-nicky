@@ -227,7 +227,8 @@ h3 .fn-icon { width: 2em; height: 2em; margin-top: -1.06em; left: .3em; }
 @media (max-width: 760px) { .fn-steps { display: none; } .fn-stamp { width: 84px; height: 84px; left: -14px; bottom: -26px; } .fn-tape { width: 92px; height: 28px; } .fn-tape-l { left: -24px; } .fn-tape-r { right: -24px; } .fn-pc-turn { right: 16px; bottom: 16px; } }
 @media (max-width: 600px) { .fn-pc-wrap:has(> .postcard) { display: none; } }
 
-/* Footsteps heading icon: the prints inside the arch always show; the trail leaves the arch and walks across the space to the right */
+/* Footsteps heading icon (no arch): its prints always show and a trail carries on across the space to the right */
 .fn-steps-walk { position: absolute; overflow: visible; color: var(--fn-red); pointer-events: none; }
 .fn-icon-trail .fn-i-step { animation: none; opacity: 1; }
+.fn-i-steps .fn-i-frame { display: none; } /* the footsteps icon has no arch: just prints */
 @media (prefers-reduced-motion: reduce) { .fn-steps-walk .fn-walk-step { opacity: .55; } }
