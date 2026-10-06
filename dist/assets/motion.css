@@ -220,7 +220,7 @@ h3 .fn-icon { width: 2em; height: 2em; margin-top: -1.06em; left: .3em; }
 
 /* Footsteps heading icon (no arch): its prints always show and a trail carries on across the space to the right */
 .fn-steps-walk { position: absolute; overflow: visible; color: var(--fn-red); pointer-events: none; }
-.fn-icon-trail .fn-i-step { animation: none; opacity: 1; }
+.fn-icon-trail .fn-icon.fn-i-steps { visibility: hidden; } /* when the trail walks, it is the only set of prints */
 .fn-i-steps .fn-i-frame { display: none; } /* the footsteps icon has no arch: just prints */
 .fn-icon.fn-i-steps { animation: none; scale: none; } /* the prints lie flat on the trail line, so they don't bob */
 @media (prefers-reduced-motion: reduce) { .fn-steps-walk .fn-walk-step { opacity: .55; } }

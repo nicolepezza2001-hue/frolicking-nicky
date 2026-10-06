@@ -242,9 +242,9 @@
     svg.setAttribute('viewBox', `0 0 ${W.toFixed(1)} 48`);
     const cs = getComputedStyle(icon);
     Object.assign(svg.style, { left: cs.left, top: cs.top, marginTop: cs.marginTop, width: width + 'px', height: r.height + 'px' });
-    const prints = []; let i = 1; // the icon's own three prints come first, so the trail starts on the other foot
-    for (let x = 34; x < W - 6; x += 8.5, i++) {
-      const t = x - 34, y = 37 - 5 * Math.sin(t / 22) * Math.min(1, t / 40), slope = -5 / 22 * Math.cos(t / 22) * Math.min(1, t / 40);
+    const prints = []; let i = 0; // the icon's own prints are hidden while the trail walks, so it is one moving trail
+    for (let x = 8.5; x < W - 6; x += 8.5, i++) {
+      const t = x - 8.5, y = 37 - 5 * Math.sin(t / 22) * Math.min(1, t / 40), slope = -5 / 22 * Math.cos(t / 22) * Math.min(1, t / 40);
       const side = i % 2 ? 2.6 : -2.6, ang = Math.atan2(slope, 1) * 180 / Math.PI + 90;
       prints.push(`<g class="fn-walk-step" transform="translate(${x.toFixed(1)} ${(y + side).toFixed(1)}) rotate(${ang.toFixed(1)})"><path d="M-1.6 1.2c-.6-2.2-.4-4.6.8-5.8 1.2-1.2 2.8-.6 3 1.2.3 2-.2 3.6-.6 4.6z"/><path d="M-1.3 2.8c.2 1.6 1.8 2.2 2.6 1.4.6-.6.4-1.4.2-1.8"/></g>`);
     }
