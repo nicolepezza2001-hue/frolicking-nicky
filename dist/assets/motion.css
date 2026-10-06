@@ -83,6 +83,7 @@
 h3 .fn-icon { width: 2em; height: 2em; margin-top: -1.06em; left: .3em; }
 .fn-i-frame { opacity: .85; }
 .fn-icon * { transform-box: fill-box; transform-origin: center; }
+.fn-i-cat, .fn-i-sand-fall { opacity: 0; } .fn-i-sand-bottom { scale: 1 0; } /* hourglass at rest: full on top, no cat */
 @media (prefers-reduced-motion: no-preference) {
   .fn-icon { animation: fn-i-float 3.2s ease-in-out infinite; transition: scale .3s cubic-bezier(.3,1.6,.5,1); }
   .fn-icon-tag:nth-of-type(odd) .fn-icon, h3 .fn-icon { animation-delay: -1.6s; }
@@ -109,6 +110,20 @@ h3 .fn-icon { width: 2em; height: 2em; margin-top: -1.06em; left: .3em; }
   .fn-i-wobble { transform-origin: 50% 100%; animation: fn-i-clink 2.4s ease-in-out infinite; }
   .fn-i-dot1, .fn-i-dot2, .fn-i-dot3 { animation: fn-i-twinkle 1.8s ease-in-out infinite; }
   .fn-i-dot2 { animation-delay: .3s; } .fn-i-dot3 { animation-delay: .6s; }
+  /* Hourglass: sand runs for ~5s, the cat pops up, flips it, and leaves (one 8.4s loop) */
+  .fn-icon.fn-i-hourglass { overflow: visible; }
+  .fn-i-glass { animation: fn-i-turn 8.4s infinite; }
+  .fn-i-sand-top { transform-origin: 50% 100%; animation: fn-i-drain 8.4s infinite; }
+  .fn-i-sand-bottom { transform-origin: 50% 100%; animation: fn-i-fill 8.4s infinite; }
+  .fn-i-sand-fall { animation: fn-i-pour 8.4s infinite, fn-i-dash .5s linear infinite; }
+  .fn-i-cat { animation: fn-i-cat 8.4s infinite; }
+  .fn-i-paw { transform-origin: 100% 100%; animation: fn-i-paw 8.4s infinite; }
+  @keyframes fn-i-drain { 0%, 3% { scale: 1 1; animation-timing-function: linear; } 60% { scale: 1 0; } 80% { scale: 1 0; animation-timing-function: steps(1, end); } 80.5%, 100% { scale: 1 1; } }
+  @keyframes fn-i-fill { 0%, 3% { scale: 1 0; animation-timing-function: linear; } 60% { scale: 1 1; } 80% { scale: 1 1; animation-timing-function: steps(1, end); } 80.5%, 100% { scale: 1 0; } }
+  @keyframes fn-i-pour { 0%, 2% { opacity: 0; } 4%, 57% { opacity: 1; } 60%, 100% { opacity: 0; } }
+  @keyframes fn-i-turn { 0%, 69% { rotate: 0deg; } 79.9% { rotate: 180deg; animation-timing-function: steps(1, end); } 80%, 100% { rotate: 0deg; } }
+  @keyframes fn-i-cat { 0%, 61% { opacity: 0; translate: 5px 4px; } 66%, 84% { opacity: 1; translate: 0 0; } 90%, 100% { opacity: 0; translate: 5px 4px; } }
+  @keyframes fn-i-paw { 0%, 66% { rotate: 0deg; translate: 0 0; } 69% { rotate: 8deg; translate: -1px -1px; } 76% { rotate: -14deg; translate: 0 2px; } 82%, 100% { rotate: 0deg; translate: 0 0; } }
   @keyframes fn-i-float { 0%, 100% { translate: 0 0; rotate: -2deg; } 50% { translate: 0 -.06em; rotate: 2deg; } }
   @keyframes fn-i-steam { 0% { opacity: 0; translate: 0 3px; scale: .8; } 35% { opacity: 1; } 100% { opacity: 0; translate: 0 -6px; scale: 1.15; } }
   @keyframes fn-i-wob { 50% { translate: 0 -1.5px; } }

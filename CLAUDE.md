@@ -31,6 +31,9 @@ Italian copies and the best-time-to-visit data.
 - Heading icons are fine-line, Art Nouveau-inspired illustrations (thin ink
   lines, whiplash curves, each in a slender arched frame with curled feet), drawn
   on a 48×48 grid in the icon block of `motion.js`. New icons should match.
+  The "If we have time" / "Se abbiamo tempo" heading has an hourglass (Nicky's
+  idea): the sand runs out, a little cat pops up, paws it over, and it starts
+  again (`hourglass` icon in `motion.js`, `fn-i-turn` and friends in `motion.css`).
 - All motion lives in `dist/assets/motion.css` / `motion.js` and must switch
   off for visitors with `prefers-reduced-motion: reduce`.
 - When you change a shared CSS/JS file, bump its `?v=` number in every page
