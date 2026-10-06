@@ -11,9 +11,10 @@ Italian copies and the best-time-to-visit data.
   Potter. Don't use paper planes, flying planes or "flying away" motifs.
   The reusable pieces are in `dist/assets/motion.js`: the `print()` footprint
   helper, the hero footsteps, and the `steps` heading icon, which has no arch (Nicky
-  asked for none): its prints lie flat and walk to the right (never
-  standing upright), always show, and a trail carries on from them along the same
-  line across the empty space to the right of the heading (`trail()`).
+  asked for none): where there is room it is just one moving trail of
+  flat prints walking to the right from the heading across the empty space
+  (`trail()`); the icon's own still prints are hidden then, so the trail never
+  splits into a still group and a moving group. Prints never stand upright.
   Only one trail at a time: Nicky found a second, dotted travel line winding
   down behind the trip cards weird, so it was removed; don't add one back.
 - Hero photos are taped down at the top corners with beige masking tape and
