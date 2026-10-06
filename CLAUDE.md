@@ -14,6 +14,8 @@ Italian copies and the best-time-to-visit data.
   asked for none): its prints lie flat and walk to the right (never
   standing upright), always show, and a trail carries on from them along the same
   line across the empty space to the right of the heading (`trail()`).
+  Only one trail at a time: Nicky found a second, dotted travel line winding
+  down behind the trip cards weird, so it was removed; don't add one back.
 - Hero photos are taped down at the top corners with beige masking tape and
   simply appear, then stay still: no Polaroid develop or fade-in, no
   fluttering, floating or hovering up and down (Nicky didn't like those).

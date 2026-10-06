@@ -57,14 +57,6 @@
   .fn-lang:has(> a:first-child:hover)::after { left: 0; }
   .fn-lang:has(> a:last-child:hover)::after { left: calc(100% - 20px); }
 
-  /* 14 · Wandering dotted travel line */
-  .fn-trail-host { position: relative; isolation: isolate; }
-  .fn-trail { position: absolute; inset: 40px -20px 0; width: calc(100% + 40px); height: calc(100% - 40px); z-index: -1; pointer-events: none; overflow: visible; }
-  .fn-trail .fn-trail-reveal { stroke-dasharray: 1; stroke-dashoffset: 1; transition: stroke-dashoffset 3.2s cubic-bezier(.45,.05,.3,1); }
-  .fn-trail.fn-in .fn-trail-reveal { stroke-dashoffset: 0; }
-  .fn-trail .fn-trail-pin { opacity: 0; transition: opacity .4s 3s; }
-  .fn-trail.fn-in .fn-trail-pin { opacity: 1; animation: fn-bob 2.4s 3.2s ease-in-out infinite; }
-
   /* 15 · Headline words wiggle every so often */
   .fn-word { white-space: nowrap; }
   .fn-wiggle-letter { display: inline-block; animation: fn-wave 7s calc(1.4s + var(--fn-i) * 45ms) ease-in-out infinite; }
@@ -77,7 +69,6 @@
   @keyframes fn-tick { 0% { scale: 1; } 35% { scale: 1.035; background-color: #86324A14; } 100% { scale: 1; } }
   @keyframes fn-tick-box { 30% { scale: 1.45; } 60% { scale: .9; } }
   @keyframes fn-cheer { 30% { color: var(--fn-red); text-shadow: 0 0 12px #86324A66; } }
-  @keyframes fn-bob { 50% { translate: 0 -5px; } }
   @keyframes fn-wave { 0%, 12%, 100% { translate: 0 0; rotate: 0deg; } 3% { translate: 0 -.06em; rotate: -4deg; } 6% { rotate: 3deg; } 9% { rotate: -1deg; } }
 }
 .fn-sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }

@@ -140,19 +140,6 @@
       s.querySelectorAll('.fn-season-swatch').forEach((sw, i) => sw.style.setProperty('--fn-i', i));
       s.classList.add('fn-season-wait'); io.observe(s);
     });
-
-    /* 14 · A dotted travel line draws itself behind the journal cards */
-    document.querySelectorAll('.fn-grid').forEach(grid => {
-      const host = grid.parentElement; host.classList.add('fn-trail-host');
-      const ns = 'http://www.w3.org/2000/svg', svg = document.createElementNS(ns, 'svg');
-      svg.setAttribute('class', 'fn-trail'); svg.setAttribute('viewBox', '0 0 100 100'); svg.setAttribute('preserveAspectRatio', 'none'); svg.setAttribute('aria-hidden', 'true');
-      const d = 'M2,4 C30,0 18,22 50,18 S96,10 92,34 S40,40 24,52 S8,80 46,74 S98,70 90,96';
-      const id = 'fn-trail-mask-' + Math.random().toString(36).slice(2, 7);
-      svg.innerHTML = `<defs><mask id="${id}" maskUnits="userSpaceOnUse" x="-10" y="-10" width="120" height="120"><path class="fn-trail-reveal" d="${d}" pathLength="1" fill="none" stroke="#fff" stroke-width="6" vector-effect="non-scaling-stroke"/></mask></defs>
-        <path d="${d}" fill="none" stroke="#86324A" stroke-opacity=".55" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="1 9" vector-effect="non-scaling-stroke" mask="url(#${id})"/>
-        <g class="fn-trail-pin"><circle cx="90" cy="96" r="1.1" fill="#86324A"/></g>`;
-      host.prepend(svg); io.observe(svg);
-    });
   });
 })();
 
