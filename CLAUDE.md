@@ -10,7 +10,8 @@ Italian copies and the best-time-to-visit data.
   and fade away behind the walker, like the Marauder's Map footsteps in Harry
   Potter. Don't use paper planes, flying planes or "flying away" motifs.
   The reusable pieces are in `dist/assets/motion.js`: the `print()` footprint
-  helper and the hero footsteps, and the `steps` heading icon.
+  helper, the hero footsteps, and the `steps` heading icon, whose prints walk out
+  of its arch and across the empty space to the right of the heading (`trail()`).
 - Hero photos are taped down at the top corners with beige masking tape and
   simply appear, then stay still: no Polaroid develop or fade-in, no
   fluttering, floating or hovering up and down (Nicky didn't like those).
