@@ -83,6 +83,7 @@
 h3 .fn-icon { width: 2em; height: 2em; margin-top: -1.06em; left: .3em; }
 .fn-i-frame { opacity: .85; }
 .fn-icon * { transform-box: fill-box; transform-origin: center; }
+.fn-i-hourglass .fn-i-frame { display: none; } /* just the hourglass, no arch (it looked like a tombstone) */
 .fn-i-cat, .fn-i-sand-fall { opacity: 0; } .fn-i-sand-bottom { scale: 1 0; } /* hourglass at rest: full on top, no cat */
 @media (prefers-reduced-motion: no-preference) {
   .fn-icon { animation: fn-i-float 3.2s ease-in-out infinite; transition: scale .3s cubic-bezier(.3,1.6,.5,1); }

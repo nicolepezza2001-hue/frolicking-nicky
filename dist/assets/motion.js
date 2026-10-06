@@ -171,16 +171,20 @@
     wine: g(`<g class="fn-i-clink"><path d="M17.4 9.6h11.2l-.4 7.4c-.3 3.6-2.6 6-5.2 6s-4.9-2.4-5.2-6z"/><path d="M17.8 15.4c3.4 1.2 7 1.2 10.4 0" opacity=".6"/><path d="M23 23v12.4"/><path d="M18 38.4c1.6-2 8.4-2 10 0"/></g><path d="M31 20.6c3.4.6 5.4 3.6 4.6 7"/><circle cx="34.6" cy="30.6" r="1.6"/><circle cx="32.2" cy="32.8" r="1.6"/><circle cx="35.2" cy="34" r="1.6"/><circle cx="33" cy="36.4" r="1.6"/><path d="M35.6 27.6c1.8-1 3.6-.2 3.4 1.4"/>`, 'fn-i-wine'),
     springs: g(`<g class="fn-i-steam"><path d="M18 26c-2.8-2.6 2.6-4.6 0-8.2-1.4-1.8.4-3.6 1.6-3.4"/><path d="M24 25c-2.8-2.6 2.6-4.6 0-8.2-1.4-1.8.4-3.6 1.6-3.4"/><path d="M30 26c-2.8-2.6 2.6-4.6 0-8.2-1.4-1.8.4-3.6 1.6-3.4"/></g><path d="M11.6 30c0 6 5.6 10 12.4 10s12.4-4 12.4-10"/><path d="M11.6 30h24.8"/><path d="M15 33.6c3-1.6 5.6-1.6 8 0s5.4 1.6 8 0" opacity=".6"/><path d="M9.6 30c-1.6-.4-2.2-2-1-3"/>`, 'fn-i-springs'),
     shoe: g(`<g class="fn-i-hop"><path d="M11.6 35.2v-8.6l4.6-1.2 2.6 3.6 5.4 1.6 9.4 1.6c1.8.3 3 1.6 3 3.4v.8z"/><path d="M11.6 35.2h25v2.4h-25z"/><path d="M19 28.8l1.4-2M21.6 29.8l1.4-2M24.2 30.6l1.4-2" opacity=".75"/><path d="M16.2 25.4c.4-2.6 2.6-4.2 5-3.8" /></g><path d="M30.6 22.4c-.6-3.4 1.6-6.4 5.2-6.8-.2 3.6-2.4 6.2-5.2 6.8z"/><path d="M30.6 22.4c1.4-1.8 2.6-3.4 4.2-5" opacity=".6"/><path class="fn-i-dash" d="M10 41.6h28" stroke-dasharray="1 2.6"/>`, 'fn-i-shoe'),
-    // An hourglass: the sand runs down, then a cat pops up beside the arch, paws it over and slips away, and it starts again.
+    // An hourglass (no arch, Nicky asked): the sand runs down, then a cat pops up beside it, paws it over and slips away, and it starts again.
     // The glass is symmetric about (24, 25), so once it has turned half a circle it snaps back unseen with the sand reset.
-    hourglass: g(`<g class="fn-i-glass"><path d="M15.6 12.5h16.8M15.6 37.5h16.8"/><path d="M15.6 12.5c-1.4-.2-1.8-1.6-.8-2.1M32.4 37.5c1.4.2 1.8 1.6.8 2.1" opacity=".7"/>` +
-      `<path d="M17.5 13.5c0 6 5.1 8.9 5.1 11.5s-5.1 5.5-5.1 11.5M30.5 13.5c0 6-5.1 8.9-5.1 11.5s5.1 5.5 5.1 11.5"/>` +
-      `<path class="fn-i-sand-top" d="M18.4 14h11.2c-.6 3-3.4 5.6-5.6 6-2.2-.4-5-3-5.6-6z" fill="currentColor" fill-opacity=".45" stroke="none"/>` +
-      `<path class="fn-i-sand-bottom" d="M29.6 36H18.4c.6-3 3.4-5.6 5.6-6 2.2.4 5 3 5.6 6z" fill="currentColor" fill-opacity=".45" stroke="none"/>` +
-      `<path class="fn-i-sand-fall" d="M24 25.6V35" stroke-width=".9" stroke-dasharray=".5 1.5"/></g>` +
-      `<g class="fn-i-cat"><path d="M38.6 33.6c-.4-3 .6-5.6 2.4-6.8l.2-3.2 2.2 2c1-.2 2-.2 3 0l2.2-2 .2 3.2c1.8 1.2 2.8 3.8 2.4 6.8"/>` +
+    hourglass: g(`<g class="fn-i-glass"><path d="M12 7.5h24M13 9.5h22M12 42.5h24M13 40.5h22"/>` +
+      `<path d="M12 7.5c-1.6 0-2.2-1.6-1.2-2.3M36 7.5c1.6 0 2.2-1.6 1.2-2.3M36 42.5c1.6 0 2.2 1.6 1.2 2.3M12 42.5c-1.6 0-2.2 1.6-1.2 2.3" opacity=".75"/>` +
+      `<path d="M14.2 9.5v31M33.8 9.5v31" stroke-width="1.1"/><circle cx="14.2" cy="25" r="1.1"/><circle cx="33.8" cy="25" r="1.1"/>` +
+      `<path d="M14.2 16.5h.1M33.8 33.5h.1M14.2 33.5h.1M33.8 16.5h.1" stroke-width="1.8"/>` +
+      `<path d="M17.2 9.5C17.2 18 22.6 21.6 22.6 25S17.2 32 17.2 40.5M30.8 40.5C30.8 32 25.4 28.4 25.4 25S30.8 18 30.8 9.5"/>` +
+      `<path d="M19.4 12.6c.2 2.6 1 4.4 2 5.6M28.6 37.4c-.2-2.6-1-4.4-2-5.6" stroke-width=".8" opacity=".5"/>` +
+      `<path class="fn-i-sand-top" d="M18.4 11.2h11.2c-.7 4.1-3.4 7.8-5.6 9.3-2.2-1.5-4.9-5.2-5.6-9.3z" fill="currentColor" fill-opacity=".45" stroke="none"/>` +
+      `<path class="fn-i-sand-bottom" d="M29.6 38.8H18.4c.7-4.1 3.4-7.8 5.6-9.3 2.2 1.5 4.9 5.2 5.6 9.3z" fill="currentColor" fill-opacity=".45" stroke="none"/>` +
+      `<path class="fn-i-sand-fall" d="M24 25.6V38" stroke-width=".9" stroke-dasharray=".5 1.5"/></g>` +
+      `<g transform="translate(3 0)"><g class="fn-i-cat"><path d="M38.6 33.6c-.4-3 .6-5.6 2.4-6.8l.2-3.2 2.2 2c1-.2 2-.2 3 0l2.2-2 .2 3.2c1.8 1.2 2.8 3.8 2.4 6.8"/>` +
       `<path d="M41.8 30.2c.5.4 1 .4 1.4 0M45.8 30.2c.5.4 1 .4 1.4 0M44 32.2l.5.5.5-.5M39.6 32.4l-3-.6M39.8 33.6l-2.8.4M49.4 32.4l3-.6" stroke-width=".9"/>` +
-      `<g class="fn-i-paw"><path d="M39 35.2c-2.4-.6-4.6-1.8-6.4-3.6"/><path d="M32.6 31.6c-1.1-.9-1-2.4.2-2.8 1.1-.4 2.3.5 2.3 1.7" /></g></g>`, 'fn-i-hourglass'),
+      `<g class="fn-i-paw"><path d="M39 35.2c-2.4-.6-4.6-1.8-6.4-3.6"/><path d="M32.6 31.6c-1.1-.9-1-2.4.2-2.8 1.1-.4 2.3.5 2.3 1.7" /></g></g></g>`, 'fn-i-hourglass'),
     sparkle: g(`<path class="fn-i-twinkle" d="M23 9.4c.9 6.8 3.4 9.3 10.2 10.2-6.8.9-9.3 3.4-10.2 10.2-.9-6.8-3.4-9.3-10.2-10.2 6.8-.9 9.3-3.4 10.2-10.2z"/><path d="M23 14.6v10M18 19.6h10" opacity=".45"/><path class="fn-i-twinkle2" d="M32.4 29.4l.8 2 2 .8-2 .8-.8 2-.8-2-2-.8 2-.8z"/><path class="fn-i-twinkle" d="M15.4 31.6v2.6M14.1 32.9h2.6"/><path d="M13 40.6c3.6-2.4 6.6.6 10 0s6.6-3 10.4-.4" opacity=".7"/>`, 'fn-i-sparkle'),
     pyramid: g(`<circle class="fn-i-rise" cx="32.6" cy="12.6" r="2.8"/><path d="M10.6 40h26.8M12.8 40v-4.4h22.4V40M15.6 35.6v-4.4h16.8v4.4M18.4 31.2v-4.4h11.2v4.4M21.2 26.8v-4.4h5.6v4.4M22.6 22.4v-3.2h2.8v3.2"/><path d="M24 35.6V40M24 26.8v4.4" opacity=".6"/><path d="M12.4 42.8c2.6-1.4 5.2-1.4 7.8 0" opacity=".6"/>`, 'fn-i-pyramid'),
     books: g(`<path d="M11.6 40h24.8"/><path d="M13.4 40v-5.6h21.2V40"/><path d="M15.6 37.2h16.8" opacity=".55"/><g class="fn-i-wobble"><path d="M15.4 34.4v-6h17.2v6"/><path d="M17.6 31.4h12.8" opacity=".55"/><path d="M18 28.4V22h12v6.4"/></g><path d="M24 22c-.4-3.4.6-6.4 3-8.6"/><path d="M27 13.4c1-2.2 3.4-2.8 4.6-1.4-.8 2-2.8 2.6-4.6 1.4z"/><path d="M25.2 17.6c-2-.6-3.8.2-4.2 1.8 1.8.8 3.6.2 4.2-1.8z"/>`, 'fn-i-books'),
