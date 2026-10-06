@@ -1,0 +1,14 @@
+{
+  "name": "Frolicking Nicky",
+  "short_name": "Frolicking Nicky",
+  "description": "Nicole Maria Pezza’s travel journal, with itineraries that work offline.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#E4F5E0",
+  "theme_color": "#86324A",
+  "icons": [
+    { "src": "/assets/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "/assets/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}

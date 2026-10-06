@@ -41,6 +41,33 @@ Italian copies and the best-time-to-visit data.
 - **Photos**: keep JPEGs at most 1400px on the long side, quality ~76, with
   metadata stripped (this also removes GPS).
 
+## One itinerary look
+
+All itinerary pages share the journal look of Vietnam / Japan / Bratislava:
+paper background, Playfair titles, wine kicker labels, a wine-framed hero photo
+with tape, pill jump links and soft rounded cards. Vienna and the Mexico pages
+keep their own markup but are restyled by the "One itinerary look" block in
+`shared.css` (scoped to `body.fn-vienna` / `body.fn-mexico`). New itineraries
+should copy the Vietnam/Japan page structure.
+
+## Offline
+
+`dist/sw.js` (service worker) keeps a copy of every page opened, network-first
+for pages so updates show straight away. Itinerary pages have a "Save for
+offline" button (in `journal.js`) that stores the page, its scripts and every
+photo in the `fn-saved` cache. `manifest.webmanifest` lets visitors add the site
+to their home screen. If you rename a page or asset, nothing extra is needed:
+pages and versioned assets refresh by themselves.
+
+## Checks before publishing
+
+Every push to `main` (and every pull request) runs `tools/check-site.mjs`
+(links, English/Italian twins, script syntax, photo sizes, matching `?v=`
+versions) and `tools/smoke.mjs` (opens every page as an iPhone and a desktop
+browser; fails on script errors or sideways scrolling). The site only publishes
+if both pass. Run them locally before pushing: `node tools/check-site.mjs` and
+`cd tools && npm ci && node smoke.mjs`.
+
 ## Phones
 
 Check every change on a phone-sized screen too (Nicky mostly looks on her

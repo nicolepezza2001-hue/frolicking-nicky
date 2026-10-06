@@ -619,3 +619,6 @@ document.addEventListener('click', e => {
   });
   document.readyState === 'loading' ? document.addEventListener('DOMContentLoaded', run) : run();
 })();
+
+/* Offline support: register the service worker (see /sw.js) */
+if ('serviceWorker' in navigator && isSecureContext) addEventListener('load', () => navigator.serviceWorker.register('/sw.js').catch(() => {}));
