@@ -236,6 +236,38 @@
     tag.classList.remove('fn-icon-off');
     // hide the icon rather than let it run off the edge of the screen
     if (tag.querySelector('svg').getBoundingClientRect().right > document.documentElement.clientWidth - 4) tag.classList.add('fn-icon-off');
+    if (tag.querySelector('.fn-i-steps')) trail(h, tag);
+  }
+  // The footsteps icon: the prints walk out of the little arch and on to the right, through the empty space beside
+  // the heading (stopping short of anything else on that row and of the screen edge), each fading behind the walker.
+  function trail(h, tag) {
+    tag.querySelector('.fn-steps-walk')?.remove(); tag.classList.remove('fn-icon-trail');
+    const icon = tag.querySelector('svg.fn-icon'); if (tag.classList.contains('fn-icon-off')) return;
+    const r = icon.getBoundingClientRect(), box = h.parentElement.getBoundingClientRect();
+    let limit = Math.min(box.right, document.documentElement.clientWidth - 12);
+    for (const el of h.parentElement.children) {
+      if (el === h) continue; const e = el.getBoundingClientRect();
+      if (e.left > r.left && e.top < r.bottom && e.bottom > r.top) limit = Math.min(limit, e.left - 18);
+    }
+    const width = Math.min(limit - r.left, 760); if (width < r.width * 2.2) return;
+    const unit = r.height / 48, W = width / unit, ns = 'http://www.w3.org/2000/svg';
+    const svg = document.createElementNS(ns, 'svg'); svg.setAttribute('class', 'fn-steps-walk'); svg.setAttribute('aria-hidden', 'true');
+    svg.setAttribute('viewBox', `0 0 ${W.toFixed(1)} 48`);
+    const cs = getComputedStyle(icon);
+    Object.assign(svg.style, { left: cs.left, top: cs.top, marginTop: cs.marginTop, width: width + 'px', height: r.height + 'px' });
+    const prints = []; let i = 0;
+    for (let x = 17; x < W - 6; x += 8.5, i++) {
+      const y = 36 - 5 * Math.sin(x / 22) * Math.min(1, x / 40), slope = -5 / 22 * Math.cos(x / 22) * Math.min(1, x / 40);
+      const side = i % 2 ? 2.6 : -2.6, ang = Math.atan2(slope, 1) * 180 / Math.PI + 90;
+      prints.push(`<g class="fn-walk-step" transform="translate(${x.toFixed(1)} ${(y + side).toFixed(1)}) rotate(${ang.toFixed(1)})"><path d="M-1.6 1.2c-.6-2.2-.4-4.6.8-5.8 1.2-1.2 2.8-.6 3 1.2.3 2-.2 3.6-.6 4.6z"/><path d="M-1.3 2.8c.2 1.6 1.8 2.2 2.6 1.4.6-.6.4-1.4.2-1.8"/></g>`);
+    }
+    svg.innerHTML = `<g fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">${prints.join('')}</g>`;
+    tag.append(svg); tag.classList.add('fn-icon-trail');
+    if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    const steps = [...svg.querySelectorAll('.fn-walk-step')], beat = 260, linger = 1800, cycle = steps.length * beat + linger + 700;
+    steps.forEach((el, n) => el.animate(
+      [{ opacity: 0 }, { opacity: 1, offset: 60 / cycle }, { opacity: 1, offset: 200 / cycle }, { opacity: 0, offset: Math.min(.99, linger / cycle) }, { opacity: 0 }],
+      { duration: cycle, delay: n * beat, iterations: Infinity, fill: 'backwards' }));
   }
   let resizeTimer;
   addEventListener('resize', () => { clearTimeout(resizeTimer); resizeTimer = setTimeout(() => placed.forEach(([h, tag]) => {
