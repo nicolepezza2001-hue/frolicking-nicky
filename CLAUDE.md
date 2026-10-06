@@ -10,13 +10,17 @@ Italian copies and the best-time-to-visit data.
   and fade away behind the walker, like the Marauder's Map footsteps in Harry
   Potter. Don't use paper planes, flying planes or "flying away" motifs.
   The reusable pieces are in `dist/assets/motion.js`: the `print()` footprint
-  helper, the hero footsteps, and the `steps` heading icon, which has no arch (Nicky
-  asked for none): where there is room it is just one moving trail of
-  flat prints walking to the right from the heading across the empty space
-  (`trail()`); the icon's own still prints are hidden then, so the trail never
-  splits into a still group and a moving group. Prints never stand upright.
-  Only one trail at a time: Nicky found a second, dotted travel line winding
-  down behind the trip cards weird, so it was removed; don't add one back.
+  helper, the hero footsteps, and the **door walk** (last block of `motion.js`):
+  every time a page opens (and when coming back to it), footprints appear at a
+  random spot and walk to a random button or button-like link in view (Browse by
+  country, My travels, Save for offline, the menu button…). As they arrive a
+  little Art Nouveau arched door appears beside the button in a free spot, swings
+  open, the last steps go in, then the door closes and fades away. It replaced the
+  old trail beside the "Pages from my travel journal" / "My travels" headings
+  (that heading has no icon now). Prints never stand upright.
+  Only one trail at a time: the home page's own footsteps step aside while the
+  door walk runs, and the dotted travel line behind the trip cards was removed
+  (Nicky found two trails weird); don't add one back.
 - Hero photos are taped down at the top corners with beige masking tape and
   simply appear, then stay still: no Polaroid develop or fade-in, no
   fluttering, floating or hovering up and down (Nicky didn't like those).

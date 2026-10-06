@@ -161,9 +161,6 @@
     sun: g(`<circle cx="24" cy="23" r="6.2"/><path d="M21.6 23.4c.8 1.2 4 1.2 4.8 0M22 21.2h.1M26 21.2h.1" stroke-width=".9"/><g class="fn-i-spin-slow">${Array.from({ length: 12 }, (_, i) => { const a = i * Math.PI / 6, x1 = 24 + Math.cos(a) * 8.6, y1 = 23 + Math.sin(a) * 8.6, x2 = 24 + Math.cos(a) * (i % 2 ? 11.4 : 13), y2 = 23 + Math.sin(a) * (i % 2 ? 11.4 : 13);
       return i % 2 ? `<path d="M${x1.toFixed(1)} ${y1.toFixed(1)}L${x2.toFixed(1)} ${y2.toFixed(1)}"/>` : `<path d="M${x1.toFixed(1)} ${y1.toFixed(1)}Q${(24 + Math.cos(a + .18) * 10.8).toFixed(1)} ${(23 + Math.sin(a + .18) * 10.8).toFixed(1)} ${x2.toFixed(1)} ${y2.toFixed(1)}"/>`; }).join('')}</g><path d="M13 40c3-1.6 5.4-1.6 8 0s5.4 1.6 8 0 5-1.6 6.6-.4" opacity=".7"/>`, 'fn-i-sun'),
     moon: g(`<path class="fn-i-sway" d="M28.6 11.4a11.4 11.4 0 1 0 6.6 18.4A9.2 9.2 0 0 1 28.6 11.4z"/><path d="M22.4 25.4c.6.8 1.8 1 2.6.4M21.6 21.6h.1" stroke-width=".9"/><path class="fn-i-twinkle" d="M32 14.6l.8 1.8 1.8.8-1.8.8-.8 1.8-.8-1.8-1.8-.8 1.8-.8z"/><path class="fn-i-twinkle2" d="M35.5 21.5v2.6M34.2 22.8h2.6"/><path d="M13 39.6c2.4-2.6 5.6-2.6 7 0 1.4-3.4 6.2-3.4 7.2 0 1.6-1.6 4.4-1 4.8 1H12.6z"/>`, 'fn-i-moon'),
-    // footprints walking to the right along the line the heading trail carries on (see trail())
-    steps: g([[8.5, 34.4], [17, 39.6], [25.5, 34.4]].map(([x, y]) =>
-      `<g class="fn-i-step"><g transform="translate(${x} ${y}) rotate(90)"><path d="M-1.6 1.2c-.6-2.2-.4-4.6.8-5.8 1.2-1.2 2.8-.6 3 1.2.3 2-.2 3.6-.6 4.6z"/><path d="M-1.3 2.8c.2 1.6 1.8 2.2 2.6 1.4.6-.6.4-1.4.2-1.8"/></g></g>`).join(''), 'fn-i-steps'),
     pencil: g(`<g class="fn-i-write"><path d="M30.6 10.6l4.8 4.8-13 13-6.6 1.8 1.8-6.6z"/><path d="M27.6 13.6l4.8 4.8M17.6 23.6l4.8 4.8"/><path d="M19.4 25.8l-1.2 1.2"/><path d="M15.8 30.2l-1 1"/></g><path d="M13 38c3-2.6 5.6 1.4 8.4-.6s4.6-3.4 7.2-1.2 4.4 2.6 6.6.4" /><path d="M35.2 36.6c1.4-.6 2.6.2 2.2 1.4-.4 1-1.8 1.2-2.2.4"/>`, 'fn-i-pencil'),
     check: g(`<path d="M14.6 10.4h15.6l3.4 3.4V40H14.6z"/><path d="M30.2 10.4v3.4h3.4"/><path d="M18 18h6M18 21.8h10M18 25.6h8" opacity=".6"/><path class="fn-i-tick" d="M18.4 32.4l3.2 3.2 7.4-8" pathLength="1"/><path d="M33.6 34c2.6.4 3.8 3 2.4 5"/><path d="M26 10.4V5.6l2 1.4 2-1.4v4.8" />`, 'fn-i-check'),
     mountain: g(`<circle class="fn-i-rise" cx="31.5" cy="14.5" r="3.4"/><path d="M11 39.6l9.4-16.4 4.4 7 3.6-5.4 8.6 14.8"/><path d="M17.8 27.8c1.2.8 2.2.2 2.6-.6.6 1 1.8 1.4 2.8.4" /><path d="M26.6 28c.8.6 1.6.4 2-.4" /><path d="M12.4 21.4c2-1.8 4.4-1.6 5 .4 1-1 2.6-.6 2.6.8" opacity=".7"/><path d="M11 39.6h25.8"/><path d="M14.4 42.4c3.4-1.4 6.8-1.4 10 0s6 1.4 9 0" opacity=".6"/>`, 'fn-i-mountain'),
@@ -184,7 +181,6 @@
   const rules = [
     [/dinner|per cena|food|cibo|cooking|cucina/i, 'pasta'],
     [/best time to visit|periodo migliore/i, 'sun'],
-    [/pages from my travel journal|pagine dal mio diario|^my travels$|^i miei viaggi$/i, 'steps'],
     [/elsewhere i write|scrivo anche altrove/i, 'pencil'],
     [/before you go|just a little planning|prima di partire|giusto un po’ di programmazione|more ideas|altre idee/i, 'check'],
     [/teotihuac|pyramid|piramide/i, 'pyramid'],
@@ -223,38 +219,6 @@
     tag.classList.remove('fn-icon-off');
     // hide the icon rather than let it run off the edge of the screen
     if (tag.querySelector('svg').getBoundingClientRect().right > document.documentElement.clientWidth - 4) tag.classList.add('fn-icon-off');
-    if (tag.querySelector('.fn-i-steps')) trail(h, tag);
-  }
-  // The footsteps icon (drawn without an arch): its prints stay put and a trail carries on from them to the right, through the empty space beside
-  // the heading (stopping short of anything else on that row and of the screen edge), each fading behind the walker.
-  function trail(h, tag) {
-    tag.querySelector('.fn-steps-walk')?.remove(); tag.classList.remove('fn-icon-trail');
-    const icon = tag.querySelector('svg.fn-icon'); if (tag.classList.contains('fn-icon-off')) return;
-    const r = icon.getBoundingClientRect(), box = h.parentElement.getBoundingClientRect();
-    let limit = Math.min(box.right, document.documentElement.clientWidth - 12);
-    for (const el of h.parentElement.children) {
-      if (el === h) continue; const e = el.getBoundingClientRect();
-      if (e.left > r.left && e.top < r.bottom && e.bottom > r.top) limit = Math.min(limit, e.left - 18);
-    }
-    const width = Math.min(limit - r.left, 760); if (width < r.width * 2.2) return;
-    const unit = r.height / 48, W = width / unit, ns = 'http://www.w3.org/2000/svg';
-    const svg = document.createElementNS(ns, 'svg'); svg.setAttribute('class', 'fn-steps-walk'); svg.setAttribute('aria-hidden', 'true');
-    svg.setAttribute('viewBox', `0 0 ${W.toFixed(1)} 48`);
-    const cs = getComputedStyle(icon);
-    Object.assign(svg.style, { left: cs.left, top: cs.top, marginTop: cs.marginTop, width: width + 'px', height: r.height + 'px' });
-    const prints = []; let i = 0; // the icon's own prints are hidden while the trail walks, so it is one moving trail
-    for (let x = 8.5; x < W - 6; x += 8.5, i++) {
-      const t = x - 8.5, y = 37 - 5 * Math.sin(t / 22) * Math.min(1, t / 40), slope = -5 / 22 * Math.cos(t / 22) * Math.min(1, t / 40);
-      const side = i % 2 ? 2.6 : -2.6, ang = Math.atan2(slope, 1) * 180 / Math.PI + 90;
-      prints.push(`<g class="fn-walk-step" transform="translate(${x.toFixed(1)} ${(y + side).toFixed(1)}) rotate(${ang.toFixed(1)})"><path d="M-1.6 1.2c-.6-2.2-.4-4.6.8-5.8 1.2-1.2 2.8-.6 3 1.2.3 2-.2 3.6-.6 4.6z"/><path d="M-1.3 2.8c.2 1.6 1.8 2.2 2.6 1.4.6-.6.4-1.4.2-1.8"/></g>`);
-    }
-    svg.innerHTML = `<g fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">${prints.join('')}</g>`;
-    tag.append(svg); tag.classList.add('fn-icon-trail');
-    if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-    const steps = [...svg.querySelectorAll('.fn-walk-step')], beat = 260, linger = 1800, cycle = steps.length * beat + linger + 700;
-    steps.forEach((el, n) => el.animate(
-      [{ opacity: 0 }, { opacity: 1, offset: 60 / cycle }, { opacity: 1, offset: 200 / cycle }, { opacity: 0, offset: Math.min(.99, linger / cycle) }, { opacity: 0 }],
-      { duration: cycle, delay: n * beat, iterations: Infinity, fill: 'backwards' }));
   }
   let resizeTimer;
   addEventListener('resize', () => { clearTimeout(resizeTimer); resizeTimer = setTimeout(() => placed.forEach(([h, tag]) => {
@@ -641,3 +605,101 @@ document.addEventListener('click', e => {
 
 /* Offline support: register the service worker (see /sw.js) */
 if ('serviceWorker' in navigator && isSecureContext) addEventListener('load', () => navigator.serviceWorker.register('/sw.js').catch(() => {}));
+
+/* Every time a page opens, a trail of footsteps appears somewhere on the screen and walks to one of the buttons or
+   links in view (picked at random: Browse by country, My travels, Save for offline, the menu…). As it arrives a little
+   arched door appears beside the button and swings open, the last steps go in, then the door closes and fades away.
+   Only one trail at a time: the home page's own footsteps step aside while this one walks. Off with reduced motion. */
+(() => {
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  const ns = 'http://www.w3.org/2000/svg', wine = '#86324A', paper = '#F5FBF3';
+  const print = (x, y, a) => `<g class="fn-door-step" transform="translate(${x.toFixed(1)} ${y.toFixed(1)}) rotate(${a.toFixed(1)}) scale(1.15)"><ellipse cx="2.6" cy="0" rx="4.6" ry="2.6"/><ellipse cx="-5" cy="0" rx="2.4" ry="2.1"/></g>`;
+  const skip = '.fn-lang, .fn-logo, .fn-skip, .fn-photo, .fn-back-cover, .fn-card-back, .fn-map, .fn-caption, .fn-pc-wrap, .fn-steps, dialog';
+  // Button-like targets: real buttons, navigation links and links that stand on their own (not inside a sentence)
+  const targets = () => {
+    const vw = document.documentElement.clientWidth, vh = innerHeight;
+    return [...document.querySelectorAll('a[href], button')].filter(el => {
+      if (el.closest(skip)) return false;
+      if (el.tagName === 'A' && !el.closest('nav, header, footer') && /^(P|LI|DD|DT|SPAN|EM|STRONG|H1|H2|H3|H4|LABEL)$/.test(el.parentElement.tagName)) return false;
+      const r = el.getBoundingClientRect();
+      if (r.width < 18 || r.height < 12 || r.width > 420 || r.height > 90) return false;
+      if (r.top < 8 || r.bottom > vh - 8 || r.left < 4 || r.right > vw - 4) return false;
+      if (el.checkVisibility && !el.checkVisibility({ opacityProperty: true, visibilityProperty: true })) return false;
+      const hit = document.elementFromPoint(r.left + r.width / 2, r.top + r.height / 2);
+      return hit && (hit === el || el.contains(hit));
+    });
+  };
+  // The door: a slender arch with curled feet, dark inside, and a leaf that swings open on its left hinge
+  const door = (w, h) => {
+    const k = h / 40, arch = 'M2 40V14C2 6.5 7 2 13 2s11 4.5 11 12v26z';
+    return `<g transform="scale(${(w / 26).toFixed(3)} ${k.toFixed(3)})" stroke="${wine}" stroke-width="${(1.1 / k).toFixed(2)}" stroke-linecap="round" stroke-linejoin="round">
+      <path d="${arch}" fill="${wine}" fill-opacity=".9" stroke="none"/>
+      <g class="fn-door-leaf"><path d="${arch}" fill="${paper}"/><path d="M6 37V16c0-5 3-8.5 7-8.5s7 3.5 7 8.5v21z" fill="none" opacity=".55"/><circle cx="19.6" cy="25" r="1" fill="${wine}"/></g>
+      <path d="${arch}" fill="none"/>
+      <path d="M2 40c-2 .3-3.4-.7-3.2-2 .2-1.2 1.9-1.4 2.4-.4M24 40c2 .3 3.4-.7 3.2-2-.2-1.2-1.9-1.4-2.4-.4M13 2c-1-1.2-.4-2.4.6-2.2" fill="none"/>
+      <path d="M-3 40h32" fill="none" opacity=".5"/></g>`;
+  };
+  let busy = false;
+  const go = () => {
+    if (busy || document.hidden) return;
+    const list = targets(); if (!list.length) return;
+    busy = true;
+    const vw = document.documentElement.clientWidth, vh = innerHeight, sx = scrollX, sy = scrollY;
+    // Door beside the button, in a free spot: its left, its right, or just above it, without covering anything else.
+    // Buttons are tried in a random order until one has room for a door.
+    const all = [...document.querySelectorAll('a, button, p, h1, h2, h3, h4, li, img, figure, input, select, label')]
+      .map(o => [o, o.getBoundingClientRect()]).filter(([, o]) => o.width && o.bottom > 0 && o.top < vh);
+    let el, r, w, h, spot;
+    for (const cand of list.sort(() => Math.random() - .5)) {
+      r = cand.getBoundingClientRect(); h = Math.round(Math.min(52, Math.max(34, r.height * 1.5))); w = Math.round(h * .65);
+      const others = all.filter(([o]) => o !== cand && !cand.contains(o) && !o.contains(cand)).map(([, o]) => o);
+      const free = ([x, y]) => !others.some(o => x < o.right + 2 && x + w > o.left - 2 && y < o.bottom + 2 && y + h > o.top - 2);
+      spot = [[r.left - w - 8, r.bottom + 2 - h], [r.right + 8, r.bottom + 2 - h], [r.left + Math.min(r.width - w, 14), r.top - h - 4], [r.right - w - 14, r.top - h - 4]]
+        .filter(([x, y]) => x > 6 && x + w < vw - 6 && y > 6 && y + h < vh - 6).find(free);
+      if (spot) { el = cand; break; }
+    }
+    if (!el) { busy = false; return; }
+    const [dx, dy] = spot, end = [dx + w / 2, dy + h - 5];
+    // Start somewhere random on the screen, a short walk away from the door
+    // (coming from the door's side, not across the button)
+    const ax = end[0] - (r.left + r.right) / 2, ay = end[1] - (r.top + r.bottom) / 2, al = Math.hypot(ax, ay) || 1;
+    let start = null;
+    for (let i = 0; i < 60 && !start; i++) {
+      const ang = Math.random() * Math.PI * 2, dist = 180 + Math.random() * 170, p = [end[0] + Math.cos(ang) * dist, end[1] + Math.sin(ang) * dist];
+      if (p[0] > 16 && p[0] < vw - 16 && p[1] > 60 && p[1] < vh - 20 && (Math.cos(ang) * ax + Math.sin(ang) * ay) / al > .35) start = p;
+    }
+    if (!start) start = [Math.min(vw - 16, Math.max(16, end[0] + (end[0] > vw / 2 ? -200 : 200))), Math.min(vh - 20, Math.max(60, end[1] + 120))];
+    // A gentle curve from the start to the door's threshold
+    const mx = (start[0] + end[0]) / 2, my = (start[1] + end[1]) / 2, len = Math.hypot(end[0] - start[0], end[1] - start[1]);
+    const bend = (Math.random() - .5) * .7 * len, nx = -(end[1] - start[1]) / len, ny = (end[0] - start[0]) / len;
+    const c = [Math.min(vw - 16, Math.max(16, mx + nx * bend)), Math.max(16, my + ny * bend)];
+    const at = t => [(1 - t) ** 2 * start[0] + 2 * (1 - t) * t * c[0] + t * t * end[0], (1 - t) ** 2 * start[1] + 2 * (1 - t) * t * c[1] + t * t * end[1]];
+    const steps = [], stride = 19, n = Math.max(4, Math.round(len / stride));
+    for (let i = 0; i < n; i++) {
+      const t = i / n, [x, y] = at(t), [x2, y2] = at(Math.min(1, t + .01)), a = Math.atan2(y2 - y, x2 - x), side = i % 2 ? 4.5 : -4.5;
+      steps.push([x - Math.sin(a) * side, y + Math.cos(a) * side, a * 180 / Math.PI]);
+    }
+    // Draw it in page coordinates so it stays put if the page scrolls
+    const svg = document.createElementNS(ns, 'svg'); svg.setAttribute('class', 'fn-door-walk'); svg.setAttribute('aria-hidden', 'true');
+    Object.assign(svg.style, { left: sx + 'px', top: sy + 'px', width: vw + 'px', height: vh + 'px' });
+    svg.setAttribute('viewBox', `0 0 ${vw} ${vh}`);
+    svg.innerHTML = `<g fill="${wine}" stroke="${paper}" stroke-width=".9" paint-order="stroke">${steps.map(([x, y, a]) => print(x, y, a)).join('')}</g><g class="fn-door" transform="translate(${dx.toFixed(1)} ${dy.toFixed(1)})">${door(w, h)}</g>`;
+    document.body.append(svg); document.documentElement.classList.add('fn-door-walking');
+    const beat = 280, arrive = steps.length * beat, linger = 1500;
+    svg.querySelectorAll('.fn-door-step').forEach((s, i) => {
+      // the last few steps go in through the door: they vanish as soon as they land
+      const last = i >= steps.length - 2, hold = last ? 260 : linger;
+      s.animate([{ opacity: 0 }, { opacity: .9, offset: .04 }, { opacity: .9, offset: .25 }, { opacity: 0 }], { duration: hold + 200, delay: i * beat, fill: 'both' });
+    });
+    const d = svg.querySelector('.fn-door'), leaf = svg.querySelector('.fn-door-leaf');
+    const t0 = Math.max(0, arrive - 1500);
+    d.animate([{ opacity: 0, transform: `translate(${dx}px, ${dy + 6}px)` }, { opacity: 1, transform: `translate(${dx}px, ${dy}px)` }], { duration: 450, delay: t0, fill: 'both', easing: 'ease-out' });
+    leaf.animate([{ transform: 'scaleX(1)' }, { transform: 'scaleX(.14) skewY(-8deg)' }], { duration: 600, delay: t0 + 650, fill: 'forwards', easing: 'cubic-bezier(.3,.7,.4,1)' });
+    leaf.animate([{ transform: 'scaleX(.14) skewY(-8deg)' }, { transform: 'scaleX(1)' }], { duration: 500, delay: arrive + 350, fill: 'forwards', easing: 'ease-in' });
+    const out = d.animate([{ opacity: 1 }, { opacity: 0 }], { duration: 500, delay: arrive + 1000, fill: 'forwards' });
+    out.finished.then(() => { document.documentElement.classList.remove('fn-door-walking'); setTimeout(() => { svg.remove(); busy = false; }, linger); });
+  };
+  const soon = () => setTimeout(go, 900);
+  document.readyState === 'complete' ? soon() : addEventListener('load', soon);
+  addEventListener('pageshow', e => { if (e.persisted) soon(); }); // coming back with the Back button counts as opening the page
+})();
