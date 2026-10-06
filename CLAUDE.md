@@ -29,12 +29,18 @@ Italian copies and the best-time-to-visit data.
   is `order` in the postcard block of `motion.js`; add new countries there
   (with a flag in `F`) and update the "41" count in both languages.
 - Heading icons are fine-line, Art Nouveau-inspired illustrations (thin ink
-  lines, whiplash curves, each in a slender arched frame with curled feet), drawn
-  on a 48×48 grid in the icon block of `motion.js`. New icons should match.
+  lines, whiplash curves) drawn on a 48×48 grid in the icon block of `motion.js`.
+  **No arched frame around them** (Nicky thought it made them look like
+  gravestones), and each has a playful animated extra: a Disney-style arc of
+  sparkles sweeping over the castles, a hot-air balloon by the pyramid, a
+  bookworm peeking out of the books, a butterfly round the flower, a rubber duck
+  in the hot springs, a jumping fish by the boat, a shooting star by the moon,
+  fireflies round the lantern, falling petals and confetti, hearts popping out of
+  the pin, cup and heart, and so on (`star()` / `wee()` helpers, `fn-i-shoot` and
+  friends in `motion.css`). New icons should match: no frame, and something fun.
   The "If we have time" / "Se abbiamo tempo" heading has an hourglass (Nicky's
-  idea), drawn bigger and without the arch (with it, it looked like a
-  tombstone), with turned posts and curled plates: the sand runs out, a little cat pops up, paws it over, and it starts
-  again (`hourglass` icon in `motion.js`, `fn-i-turn` and friends in `motion.css`).
+  idea) with turned posts and curled plates: the sand runs out, a little cat pops
+  up, paws it over, and it starts again (`hourglass` icon, `fn-i-turn`).
 - All motion lives in `dist/assets/motion.css` / `motion.js` and must switch
   off for visitors with `prefers-reduced-motion: reduce`.
 - When you change a shared CSS/JS file, bump its `?v=` number in every page
