@@ -174,9 +174,9 @@
     sun: g(`<circle cx="24" cy="23" r="6.2"/><path d="M21.6 23.4c.8 1.2 4 1.2 4.8 0M22 21.2h.1M26 21.2h.1" stroke-width=".9"/><g class="fn-i-spin-slow">${Array.from({ length: 12 }, (_, i) => { const a = i * Math.PI / 6, x1 = 24 + Math.cos(a) * 8.6, y1 = 23 + Math.sin(a) * 8.6, x2 = 24 + Math.cos(a) * (i % 2 ? 11.4 : 13), y2 = 23 + Math.sin(a) * (i % 2 ? 11.4 : 13);
       return i % 2 ? `<path d="M${x1.toFixed(1)} ${y1.toFixed(1)}L${x2.toFixed(1)} ${y2.toFixed(1)}"/>` : `<path d="M${x1.toFixed(1)} ${y1.toFixed(1)}Q${(24 + Math.cos(a + .18) * 10.8).toFixed(1)} ${(23 + Math.sin(a + .18) * 10.8).toFixed(1)} ${x2.toFixed(1)} ${y2.toFixed(1)}"/>`; }).join('')}</g><path d="M13 40c3-1.6 5.4-1.6 8 0s5.4 1.6 8 0 5-1.6 6.6-.4" opacity=".7"/>`, 'fn-i-sun'),
     moon: g(`<path class="fn-i-sway" d="M28.6 11.4a11.4 11.4 0 1 0 6.6 18.4A9.2 9.2 0 0 1 28.6 11.4z"/><path d="M22.4 25.4c.6.8 1.8 1 2.6.4M21.6 21.6h.1" stroke-width=".9"/><path class="fn-i-twinkle" d="M32 14.6l.8 1.8 1.8.8-1.8.8-.8 1.8-.8-1.8-1.8-.8 1.8-.8z"/><path class="fn-i-twinkle2" d="M35.5 21.5v2.6M34.2 22.8h2.6"/><path d="M13 39.6c2.4-2.6 5.6-2.6 7 0 1.4-3.4 6.2-3.4 7.2 0 1.6-1.6 4.4-1 4.8 1H12.6z"/>`, 'fn-i-moon'),
-    steps: g([[17.4, 38.5, -8], [24.6, 31.2, 12], [19.4, 22.8, -8], [26.8, 15, 12]].map(([x, y, a]) =>
-      `<g class="fn-i-step"><g transform="translate(${x} ${y}) rotate(${a})"><path d="M-1.6 1.2c-.6-2.2-.4-4.6.8-5.8 1.2-1.2 2.8-.6 3 1.2.3 2-.2 3.6-.6 4.6z"/><path d="M-1.3 2.8c.2 1.6 1.8 2.2 2.6 1.4.6-.6.4-1.4.2-1.8"/><circle cx="-1.3" cy="-5.4" r=".45"/><circle cx="0" cy="-5.9" r=".45"/><circle cx="1.3" cy="-5.6" r=".45"/></g></g>`).join('') +
-      `<path d="M12 42.4c3.4-1.6 6.6-1.6 9.4 0" opacity=".6"/>`, 'fn-i-steps'),
+    // footprints walking to the right along the line the heading trail carries on (see trail())
+    steps: g([[8.5, 34.4], [17, 39.6], [25.5, 34.4]].map(([x, y]) =>
+      `<g class="fn-i-step"><g transform="translate(${x} ${y}) rotate(90)"><path d="M-1.6 1.2c-.6-2.2-.4-4.6.8-5.8 1.2-1.2 2.8-.6 3 1.2.3 2-.2 3.6-.6 4.6z"/><path d="M-1.3 2.8c.2 1.6 1.8 2.2 2.6 1.4.6-.6.4-1.4.2-1.8"/></g></g>`).join(''), 'fn-i-steps'),
     pencil: g(`<g class="fn-i-write"><path d="M30.6 10.6l4.8 4.8-13 13-6.6 1.8 1.8-6.6z"/><path d="M27.6 13.6l4.8 4.8M17.6 23.6l4.8 4.8"/><path d="M19.4 25.8l-1.2 1.2"/><path d="M15.8 30.2l-1 1"/></g><path d="M13 38c3-2.6 5.6 1.4 8.4-.6s4.6-3.4 7.2-1.2 4.4 2.6 6.6.4" /><path d="M35.2 36.6c1.4-.6 2.6.2 2.2 1.4-.4 1-1.8 1.2-2.2.4"/>`, 'fn-i-pencil'),
     check: g(`<path d="M14.6 10.4h15.6l3.4 3.4V40H14.6z"/><path d="M30.2 10.4v3.4h3.4"/><path d="M18 18h6M18 21.8h10M18 25.6h8" opacity=".6"/><path class="fn-i-tick" d="M18.4 32.4l3.2 3.2 7.4-8" pathLength="1"/><path d="M33.6 34c2.6.4 3.8 3 2.4 5"/><path d="M26 10.4V5.6l2 1.4 2-1.4v4.8" />`, 'fn-i-check'),
     mountain: g(`<circle class="fn-i-rise" cx="31.5" cy="14.5" r="3.4"/><path d="M11 39.6l9.4-16.4 4.4 7 3.6-5.4 8.6 14.8"/><path d="M17.8 27.8c1.2.8 2.2.2 2.6-.6.6 1 1.8 1.4 2.8.4" /><path d="M26.6 28c.8.6 1.6.4 2-.4" /><path d="M12.4 21.4c2-1.8 4.4-1.6 5 .4 1-1 2.6-.6 2.6.8" opacity=".7"/><path d="M11 39.6h25.8"/><path d="M14.4 42.4c3.4-1.4 6.8-1.4 10 0s6 1.4 9 0" opacity=".6"/>`, 'fn-i-mountain'),
@@ -255,7 +255,7 @@
     svg.setAttribute('viewBox', `0 0 ${W.toFixed(1)} 48`);
     const cs = getComputedStyle(icon);
     Object.assign(svg.style, { left: cs.left, top: cs.top, marginTop: cs.marginTop, width: width + 'px', height: r.height + 'px' });
-    const prints = []; let i = 0;
+    const prints = []; let i = 1; // the icon's own three prints come first, so the trail starts on the other foot
     for (let x = 34; x < W - 6; x += 8.5, i++) {
       const t = x - 34, y = 37 - 5 * Math.sin(t / 22) * Math.min(1, t / 40), slope = -5 / 22 * Math.cos(t / 22) * Math.min(1, t / 40);
       const side = i % 2 ? 2.6 : -2.6, ang = Math.atan2(slope, 1) * 180 / Math.PI + 90;

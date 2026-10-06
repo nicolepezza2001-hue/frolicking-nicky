@@ -106,7 +106,7 @@ h3 .fn-icon { width: 2em; height: 2em; margin-top: -1.06em; left: .3em; }
   .fn-i-twinkle { animation: fn-i-twinkle 1.6s ease-in-out infinite; }
   .fn-i-twinkle2 { animation: fn-i-twinkle 1.6s .8s ease-in-out infinite; }
   .fn-i-step { opacity: .3; animation: fn-i-step 2.4s ease-in-out infinite; }
-  .fn-i-step:nth-of-type(3) { animation-delay: .4s; } .fn-i-step:nth-of-type(4) { animation-delay: .8s; } .fn-i-step:nth-of-type(5) { animation-delay: 1.2s; }
+  .fn-i-step:nth-of-type(3) { animation-delay: .4s; } .fn-i-step:nth-of-type(4) { animation-delay: .8s; }
   .fn-i-dash { animation: fn-i-dash 1s linear infinite; }
   .fn-i-write { transform-origin: 20% 90%; animation: fn-i-write 1.2s ease-in-out infinite; }
   .fn-i-tick { stroke-dasharray: 1; animation: fn-i-tick 2.4s ease-in-out infinite; }
@@ -231,4 +231,5 @@ h3 .fn-icon { width: 2em; height: 2em; margin-top: -1.06em; left: .3em; }
 .fn-steps-walk { position: absolute; overflow: visible; color: var(--fn-red); pointer-events: none; }
 .fn-icon-trail .fn-i-step { animation: none; opacity: 1; }
 .fn-i-steps .fn-i-frame { display: none; } /* the footsteps icon has no arch: just prints */
+.fn-icon.fn-i-steps { animation: none; scale: none; } /* the prints lie flat on the trail line, so they don't bob */
 @media (prefers-reduced-motion: reduce) { .fn-steps-walk .fn-walk-step { opacity: .55; } }
