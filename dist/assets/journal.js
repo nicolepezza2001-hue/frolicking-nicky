@@ -130,7 +130,7 @@
   const run = () => {
     const share = document.querySelector('.fn-share'); if (!share || document.querySelector('.fn-offline')) return;
     const btn = document.createElement('button'); btn.type = 'button'; btn.className = 'fn-share fn-offline'; btn.title = t.tip;
-    const label = s => { btn.innerHTML = s === 'saved' ? t.saved : s === 'saving' ? t.saving : s === 'failed' ? t.failed : `${t.save} <span aria-hidden="true">↓</span>`; btn.dataset.state = s; };
+    const label = s => { btn.innerHTML = s === 'saved' ? t.saved : s === 'saving' ? t.saving : s === 'failed' ? t.failed : `${t.save}&nbsp;<span aria-hidden="true">↓</span>`; btn.dataset.state = s; };
     label('idle'); share.after(btn);
     caches.open('fn-saved').then(c => c.match(page)).then(hit => hit && label('saved'));
     btn.addEventListener('click', async () => {
