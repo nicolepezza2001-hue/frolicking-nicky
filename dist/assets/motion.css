@@ -96,8 +96,6 @@ h3 .fn-icon { width: 2em; height: 2em; margin-top: -1.06em; left: .3em; }
   .fn-i-sway { transform-origin: 50% 100%; animation: fn-i-sway 2.4s ease-in-out infinite; }
   .fn-i-twinkle { animation: fn-i-twinkle 1.6s ease-in-out infinite; }
   .fn-i-twinkle2 { animation: fn-i-twinkle 1.6s .8s ease-in-out infinite; }
-  .fn-i-step { opacity: .3; animation: fn-i-step 2.4s ease-in-out infinite; }
-  .fn-i-step:nth-of-type(3) { animation-delay: .4s; } .fn-i-step:nth-of-type(4) { animation-delay: .8s; }
   .fn-i-dash { animation: fn-i-dash 1s linear infinite; }
   .fn-i-write { transform-origin: 20% 90%; animation: fn-i-write 1.2s ease-in-out infinite; }
   .fn-i-tick { stroke-dasharray: 1; animation: fn-i-tick 2.4s ease-in-out infinite; }
@@ -118,7 +116,6 @@ h3 .fn-icon { width: 2em; height: 2em; margin-top: -1.06em; left: .3em; }
   @keyframes fn-i-spin { to { rotate: 360deg; } }
   @keyframes fn-i-sway { 0%, 100% { rotate: -16deg; } 50% { rotate: 16deg; } }
   @keyframes fn-i-twinkle { 50% { opacity: .15; scale: .45; rotate: 45deg; } }
-  @keyframes fn-i-step { 0% { opacity: .3; } 8%, 30% { opacity: 1; } 75%, 100% { opacity: .3; } }
   @keyframes fn-i-dash { to { stroke-dashoffset: -8; } }
   @keyframes fn-i-write { 25% { rotate: -16deg; translate: -2px 0; } 50% { rotate: 8deg; translate: 2px 0; } 75% { rotate: -12deg; translate: 4px 0; } }
   @keyframes fn-i-tick { 0%, 10% { stroke-dashoffset: 1; } 40%, 85% { stroke-dashoffset: 0; } 100% { stroke-dashoffset: 1; } }
@@ -218,9 +215,11 @@ h3 .fn-icon { width: 2em; height: 2em; margin-top: -1.06em; left: .3em; }
 @media (max-width: 760px) { .fn-steps { display: none; } .fn-stamp { width: 84px; height: 84px; left: -14px; bottom: -26px; } .fn-tape { width: 92px; height: 28px; } .fn-tape-l { left: -24px; } .fn-tape-r { right: -24px; } .fn-pc-turn { right: 16px; bottom: 16px; } }
 @media (max-width: 600px) { .fn-pc-wrap:has(> .postcard) { display: none; } }
 
-/* Footsteps heading icon (no arch): its prints always show and a trail carries on across the space to the right */
-.fn-steps-walk { position: absolute; overflow: visible; color: var(--fn-red); pointer-events: none; }
-.fn-icon-trail .fn-icon.fn-i-steps { visibility: hidden; } /* when the trail walks, it is the only set of prints */
-.fn-i-steps .fn-i-frame { display: none; } /* the footsteps icon has no arch: just prints */
-.fn-icon.fn-i-steps { animation: none; scale: none; } /* the prints lie flat on the trail line, so they don't bob */
-@media (prefers-reduced-motion: reduce) { .fn-steps-walk .fn-walk-step { opacity: .55; } }
+/* Footsteps that walk to a button and go in through a little door (motion.js) */
+.fn-door-walk { position: absolute; z-index: 60; pointer-events: none; overflow: hidden; }
+.fn-door-walk .fn-door-step { opacity: 0; }
+.fn-door { opacity: 0; }
+.fn-door-leaf { transform-box: fill-box; transform-origin: left center; }
+.fn-steps { transition: opacity .5s; }
+.fn-door-walking .fn-steps { opacity: 0; }
+@media (prefers-reduced-motion: reduce) { .fn-door-walk { display: none; } }
