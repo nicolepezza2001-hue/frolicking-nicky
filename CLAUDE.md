@@ -38,6 +38,14 @@ Italian copies and the best-time-to-visit data.
   fireflies round the lantern, falling petals and confetti, hearts popping out of
   the pin, cup and heart, and so on (`star()` / `wee()` helpers, `fn-i-shoot` and
   friends in `motion.css`). New icons should match: no frame, and something fun.
+  Little scenes Nicky asked for: wine is a bottle pouring into a glass until it
+  overflows; Biblioteca is a quill writing across an open book and right off the
+  page; Juárez, Roma & Condesa is a taco flying into a happy mouth and vanishing.
+  Also: a piggy bank swallowing a coin (Rough budget), bats leaving the Phong Nha
+  cave, a ringing bell (Centro Histórico), a blooming cactus with a hummingbird
+  (El Charco), papel picado (South of the center), a winking portrait (More museum
+  stops), a whisk (Gerstner) and a trotting dog (Parque México). Day-by-day and
+  restaurant subheadings stay without icons so pages don't get too busy.
   The "If we have time" / "Se abbiamo tempo" heading has an hourglass (Nicky's
   idea) with turned posts and curled plates: the sand runs out, a little cat pops
   up, paws it over, and it starts again (`hourglass` icon, `fn-i-turn`).

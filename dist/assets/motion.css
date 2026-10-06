@@ -104,9 +104,7 @@ h3 .fn-icon { width: 2em; height: 2em; margin-top: -1.06em; left: .3em; }
   .fn-i-wave { animation: fn-i-wave 2s ease-in-out infinite; }
   .fn-i-swing { transform-origin: 50% 0; animation: fn-i-swing 2.2s ease-in-out infinite; }
   .fn-i-flag { transform-origin: 0 50%; animation: fn-i-flag .9s ease-in-out infinite; }
-  .fn-i-clink { transform-origin: 50% 100%; animation: fn-i-clink 2.2s ease-in-out infinite; }
   .fn-i-hop { animation: fn-i-hop 1s cubic-bezier(.3,0,.5,1) infinite; }
-  .fn-i-wobble { transform-origin: 50% 100%; animation: fn-i-clink 2.4s ease-in-out infinite; }
   .fn-i-dot1, .fn-i-dot2, .fn-i-dot3 { animation: fn-i-twinkle 1.8s ease-in-out infinite; }
   .fn-i-dot2 { animation-delay: .3s; } .fn-i-dot3 { animation-delay: .6s; }
   /* Hourglass: sand runs for ~5s, the cat pops up, flips it, and leaves (one 8.4s loop) */
@@ -126,7 +124,6 @@ h3 .fn-icon { width: 2em; height: 2em; margin-top: -1.06em; left: .3em; }
   /* The icons' playful extras (each delayed by its --d) */
   .fn-i-shoot { opacity: 0; animation: fn-i-shoot 3.2s var(--d, 0s) ease-out infinite; }
   .fn-i-balloon { animation: fn-i-balloon 5s ease-in-out infinite; }
-  .fn-i-peek { opacity: 0; animation: fn-i-peek 5s ease-in-out infinite; }
   .fn-i-fly { animation: fn-i-fly 6s ease-in-out infinite; }
   .fn-i-flap { animation: fn-i-flap .32s ease-in-out infinite alternate; }
   .fn-i-pop { opacity: 0; animation: fn-i-pop 2.6s var(--d, 0s) ease-out infinite; }
@@ -140,13 +137,10 @@ h3 .fn-icon { width: 2em; height: 2em; margin-top: -1.06em; left: .3em; }
   .fn-i-jump { opacity: 0; animation: fn-i-jump 3.6s ease-in-out infinite; }
   .fn-i-firefly { animation: fn-i-firefly 3.3s var(--d, 0s) ease-in-out infinite; }
   .fn-i-fall { opacity: 0; animation: fn-i-fall 4.5s var(--d, 0s) ease-in infinite; }
-  .fn-i-bubble { opacity: 0; animation: fn-i-bubble 1.8s var(--d, 0s) ease-out infinite; }
-  .fn-i-cheers { opacity: 0; animation: fn-i-cheers 2.2s var(--d, 0s) ease-out infinite; }
   .fn-i-duck { transform-origin: 50% 100%; animation: fn-i-duck 2.2s ease-in-out infinite; }
   .fn-i-puff { opacity: 0; animation: fn-i-puff 1s ease-out infinite; }
   @keyframes fn-i-shoot { 0% { opacity: 0; scale: .3; } 7% { opacity: 1; scale: 1.3; } 22% { opacity: 1; scale: 1; } 42% { opacity: 0; scale: .5; } 100% { opacity: 0; } }
   @keyframes fn-i-balloon { 0%, 100% { translate: 0 0; } 50% { translate: 2px -3px; } }
-  @keyframes fn-i-peek { 0%, 20% { opacity: 0; translate: 0 3px; } 32%, 70% { opacity: 1; translate: 0 0; } 76% { rotate: 8deg; } 82% { rotate: -8deg; } 90%, 100% { opacity: 0; translate: 0 3px; rotate: 0deg; } }
   @keyframes fn-i-fly { 0%, 100% { translate: 0 0; } 25% { translate: -4px 3px; } 50% { translate: -1px 6px; } 75% { translate: 3px 2px; } }
   @keyframes fn-i-flap { to { scale: .3 1; } }
   @keyframes fn-i-pop { 0% { opacity: 0; translate: 0 3px; scale: .4; } 18% { opacity: 1; scale: 1.1; } 60% { opacity: 0; translate: 0 -6px; scale: .9; } 100% { opacity: 0; } }
@@ -160,10 +154,73 @@ h3 .fn-icon { width: 2em; height: 2em; margin-top: -1.06em; left: .3em; }
   @keyframes fn-i-jump { 0%, 40% { opacity: 0; translate: 0 5px; rotate: -50deg; } 48% { opacity: 1; } 58% { translate: -5px -4px; rotate: 0deg; } 68% { opacity: 1; translate: -10px 3px; rotate: 50deg; } 74%, 100% { opacity: 0; translate: -11px 6px; rotate: 60deg; } }
   @keyframes fn-i-firefly { 0%, 100% { opacity: .15; translate: 0 0; } 50% { opacity: 1; translate: 2px -2px; } }
   @keyframes fn-i-fall { 0% { opacity: 0; translate: 0 0; rotate: 0deg; } 15% { opacity: 1; } 80% { opacity: .8; } 100% { opacity: 0; translate: 5px 22px; rotate: 200deg; } }
-  @keyframes fn-i-bubble { 0% { opacity: 0; translate: 0 0; } 20% { opacity: .9; } 100% { opacity: 0; translate: 0 -8px; } }
-  @keyframes fn-i-cheers { 0%, 58% { opacity: 0; scale: .2; } 66% { opacity: 1; scale: 1.2; } 85%, 100% { opacity: 0; scale: .5; } }
   @keyframes fn-i-duck { 0%, 100% { translate: 0 0; rotate: -6deg; } 50% { translate: 0 -1px; rotate: 6deg; } }
   @keyframes fn-i-puff { 0%, 8% { opacity: 0; scale: .4; } 18% { opacity: .9; scale: 1; } 45%, 100% { opacity: 0; scale: 1.6; translate: -2px -1px; } }
+  /* Wine: the bottle tips, pours, the glass fills and overflows, then it all clears (6s) */
+  .fn-i-bottle { transform-origin: 50% 0; animation: fn-i-tip 6s ease-in-out infinite; }
+  .fn-i-stream { stroke-dasharray: 2 1.2; animation: fn-i-stream 6s linear infinite, fn-i-dash .6s linear infinite; }
+  .fn-i-winefill { transform-origin: 50% 100%; animation: fn-i-winefill 6s linear infinite; }
+  .fn-i-spill { stroke-dasharray: 1; animation: fn-i-spill 6s linear infinite; }
+  .fn-i-puddle { animation: fn-i-puddle 6s ease-out infinite; }
+  @keyframes fn-i-tip { 0% { rotate: 32deg; } 10%, 58% { rotate: 0deg; } 68%, 100% { rotate: 32deg; } }
+  @keyframes fn-i-stream { 0%, 9% { opacity: 0; } 12%, 56% { opacity: 1; } 60%, 100% { opacity: 0; } }
+  @keyframes fn-i-winefill { 0%, 11% { scale: 1 0; opacity: 1; } 45%, 78% { scale: 1 1; opacity: 1; } 88% { scale: 1 1; opacity: 0; } 100% { scale: 1 0; opacity: 0; } }
+  @keyframes fn-i-spill { 0%, 45% { stroke-dashoffset: 1; opacity: 1; } 60%, 78% { stroke-dashoffset: 0; opacity: 1; } 88%, 100% { stroke-dashoffset: 0; opacity: 0; } }
+  @keyframes fn-i-puddle { 0%, 52% { scale: 0 1; opacity: 1; } 66%, 78% { scale: 1 1; opacity: 1; } 88%, 100% { scale: 1 1; opacity: 0; } }
+  /* Biblioteca: the quill writes across the book and right off the page (5s) */
+  .fn-i-ink { stroke-dasharray: 1; animation: fn-i-ink 5s linear infinite; }
+  .fn-i-quill { animation: fn-i-quill 5s linear infinite; }
+  @keyframes fn-i-ink { 0% { stroke-dashoffset: 1; opacity: 1; } 70%, 85% { stroke-dashoffset: 0; opacity: 1; } 95%, 100% { stroke-dashoffset: 0; opacity: 0; } }
+  @keyframes fn-i-quill { 0% { translate: 0 0; rotate: 0deg; opacity: 1; } 12% { translate: 5px -.6px; rotate: -6deg; } 25% { translate: 10px .4px; rotate: 4deg; } 40% { translate: 16px -.4px; rotate: -5deg; } 55% { translate: 22px .2px; rotate: 5deg; } 70%, 82% { translate: 28.4px 1.4px; rotate: 0deg; opacity: 1; } 92%, 100% { translate: 28.4px 1.4px; opacity: 0; } }
+  /* Piggy bank: the coin drops in, the piggy wiggles (3.2s) */
+  .fn-i-coin { opacity: 0; animation: fn-i-coin 3.2s ease-in infinite; }
+  .fn-i-jiggle { transform-origin: 50% 100%; animation: fn-i-jiggle 3.2s ease-in-out infinite; }
+  .fn-i-piggy .fn-i-burst { animation-duration: 3.2s; }
+  @keyframes fn-i-coin { 0% { opacity: 0; translate: 0 -4px; } 10% { opacity: 1; translate: 0 -4px; } 38% { opacity: 1; translate: 0 8px; scale: 1 1; } 44%, 100% { opacity: 0; translate: 0 9.4px; scale: 1 .2; } }
+  @keyframes fn-i-jiggle { 0%, 44%, 72%, 100% { rotate: 0deg; } 50% { rotate: -5deg; } 57% { rotate: 4deg; } 64% { rotate: -2deg; } }
+  /* Cave: bats flutter out */
+  .fn-i-bat { opacity: 0; animation: fn-i-bat 3s var(--d, 0s) ease-out infinite; }
+  @keyframes fn-i-bat { 0% { opacity: 0; translate: 0 0; scale: .4; } 15% { opacity: 1; } 80% { opacity: .9; translate: var(--xy); scale: 1; } 100% { opacity: 0; translate: var(--xy); scale: 1; } }
+  /* Taco: flies into the mouth, chomp chomp, crumbs and a little heart (3.6s) */
+  .fn-i-tacofly { opacity: 0; animation: fn-i-tacofly 3.6s ease-in-out infinite; }
+  .fn-i-chomp { animation: fn-i-chomp 3.6s ease-in-out infinite; }
+  .fn-i-crumbs { opacity: 0; animation: fn-i-crumbs 3.6s ease-out infinite; }
+  .fn-i-yum { opacity: 0; animation: fn-i-yum 3.6s ease-out infinite; }
+  @keyframes fn-i-tacofly { 0% { opacity: 0; translate: 0 0; scale: 1; rotate: 0deg; } 8%, 20% { opacity: 1; translate: 0 0; } 36% { translate: 12px -5px; rotate: 8deg; } 50% { opacity: 1; translate: 21px -2px; scale: .7; rotate: 14deg; } 56%, 100% { opacity: 0; translate: 23px -1px; scale: .25; } }
+  @keyframes fn-i-chomp { 0%, 20% { scale: 1 .5; } 40% { scale: 1.1 1.4; } 52% { scale: 1 .15; } 60% { scale: 1 .9; } 66% { scale: 1 .15; } 74%, 100% { scale: 1 .5; } }
+  @keyframes fn-i-crumbs { 0%, 52% { opacity: 0; translate: 0 0; } 56% { opacity: 1; } 76%, 100% { opacity: 0; translate: -1px 4px; } }
+  @keyframes fn-i-yum { 0%, 66% { opacity: 0; translate: 0 2px; scale: .4; } 72% { opacity: 1; scale: 1.1; } 95%, 100% { opacity: 0; translate: 0 -6px; scale: .9; } }
+  /* Bell: swings and rings */
+  .fn-i-ring { transform-origin: 50% 0; animation: fn-i-ring 2.4s ease-in-out infinite; }
+  .fn-i-ding { animation: fn-i-ding 2.4s ease-in-out infinite; }
+  @keyframes fn-i-ring { 0%, 100% { rotate: -16deg; } 50% { rotate: 16deg; } }
+  @keyframes fn-i-ding { 0%, 50%, 100% { opacity: 1; scale: 1.05; } 25%, 75% { opacity: 0; scale: .9; } }
+  /* Cactus: blooms, and a hummingbird drops by (5s) */
+  .fn-i-bloom { animation: fn-i-bloom 5s ease-out infinite; }
+  .fn-i-hum { opacity: 0; animation: fn-i-hum 5s ease-in-out infinite; }
+  @keyframes fn-i-bloom { 0%, 18% { scale: 0; } 34% { scale: 1.15; } 40%, 86% { scale: 1; } 96%, 100% { scale: 0; } }
+  @keyframes fn-i-hum { 0%, 30% { opacity: 0; translate: 7px -4px; } 40% { opacity: 1; translate: 0 0; } 47% { translate: 0 -1.2px; } 54% { translate: 0 0; } 61% { translate: 0 -1.2px; } 70% { opacity: 1; translate: 0 0; } 82%, 100% { opacity: 0; translate: 8px -7px; } }
+  /* Papel picado: the flags flutter */
+  .fn-i-flutter { transform-origin: 50% 0; animation: fn-i-flutter 2s var(--d, 0s) ease-in-out infinite; }
+  @keyframes fn-i-flutter { 0%, 100% { rotate: -9deg; } 50% { rotate: 9deg; } }
+  /* Portrait: the frame sways on its nail and the sitter winks */
+  .fn-i-tilt { transform-origin: 50% 0; animation: fn-i-swayf 4s ease-in-out infinite; }
+  .fn-i-wink { animation: fn-i-wink 4s ease-in-out infinite; }
+  @keyframes fn-i-swayf { 0%, 100% { rotate: -2.5deg; } 50% { rotate: 2.5deg; } }
+  @keyframes fn-i-wink { 0%, 58%, 70%, 100% { scale: 1 1; } 62%, 66% { scale: 1.6 .15; } }
+  /* Whisk: beats the batter, which splashes */
+  .fn-i-whisk { transform-origin: 80% 0; animation: fn-i-whisk .6s ease-in-out infinite alternate; }
+  .fn-i-splash { opacity: 0; animation: fn-i-splash 1.2s var(--d, 0s) ease-out infinite; }
+  @keyframes fn-i-whisk { from { rotate: -12deg; translate: -1px 0; } to { rotate: 12deg; translate: 1px 0; } }
+  @keyframes fn-i-splash { 0% { opacity: 0; translate: 0 2px; } 20% { opacity: 1; translate: 0 -4px; } 45%, 100% { opacity: 0; translate: 0 1px; } }
+  /* Dog: trots along with a wagging tail */
+  .fn-i-trot { animation: fn-i-trot .5s ease-in-out infinite alternate; }
+  .fn-i-leg { transform-origin: 50% 0; animation: fn-i-leg .5s ease-in-out infinite alternate; }
+  .fn-i-leg2 { transform-origin: 50% 0; animation: fn-i-leg .5s -.5s ease-in-out infinite alternate; }
+  .fn-i-wag { transform-origin: 100% 100%; animation: fn-i-wag .35s ease-in-out infinite alternate; }
+  @keyframes fn-i-trot { from { translate: 0 0; } to { translate: 0 -1.2px; } }
+  @keyframes fn-i-leg { from { rotate: -20deg; } to { rotate: 20deg; } }
+  @keyframes fn-i-wag { from { rotate: -18deg; } to { rotate: 22deg; } }
   @keyframes fn-i-float { 0%, 100% { translate: 0 0; rotate: -2deg; } 50% { translate: 0 -.06em; rotate: 2deg; } }
   @keyframes fn-i-steam { 0% { opacity: 0; translate: 0 3px; scale: .8; } 35% { opacity: 1; } 100% { opacity: 0; translate: 0 -6px; scale: 1.15; } }
   @keyframes fn-i-wob { 50% { translate: 0 -1.5px; } }
@@ -179,7 +236,6 @@ h3 .fn-icon { width: 2em; height: 2em; margin-top: -1.06em; left: .3em; }
   @keyframes fn-i-wave { 50% { translate: -3px 0; } }
   @keyframes fn-i-swing { 0%, 100% { rotate: -22deg; } 50% { rotate: 22deg; } }
   @keyframes fn-i-flag { 50% { scale: .55 1; } }
-  @keyframes fn-i-clink { 0%, 50%, 100% { rotate: 0deg; } 62% { rotate: -24deg; } 74% { rotate: 14deg; } 86% { rotate: -6deg; } }
   @keyframes fn-i-hop { 0%, 100% { translate: 0 0; scale: 1 1; } 15% { scale: 1.1 .9; } 45% { translate: 0 -6px; scale: .95 1.05; } }
 }
 
