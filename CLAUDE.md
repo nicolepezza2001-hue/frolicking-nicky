@@ -69,7 +69,12 @@ Italian copies and the best-time-to-visit data.
 - **Share previews**: every page has Open Graph/Twitter tags; images are
   `dist/assets/share-*.jpg` (1200×630).
 - **Photos**: keep JPEGs at most 1400px on the long side, quality ~76, with
-  metadata stripped (this also removes GPS).
+  metadata stripped (this also removes GPS). Lay new photos out the way the
+  other itinerary pages do (tilted photos beside the card they belong to, at
+  most two per card, alternating sides, above the card on phones); never invent
+  a new photo layout. Where Nicky has no photos of her own for a card or day,
+  fill in with freely licensed stock photos (e.g. Wikimedia Commons) and credit
+  the photographer and licence in a small caption.
 
 ## One itinerary look
 
