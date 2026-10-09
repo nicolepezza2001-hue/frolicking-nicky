@@ -1,0 +1,20 @@
+name: Fetch stock photo candidates
+on:
+  push:
+    branches: [claude/stock-candidates]
+    paths: [stock/queries.json]
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install pillow requests
+      - run: python stock/fetch.py
+      - run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add stock
+          git commit -m "Stock photo candidates" || exit 0
+          git push
