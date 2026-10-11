@@ -78,6 +78,13 @@ Italian copies and the best-time-to-visit data.
 
 ## One itinerary look
 
+The overall finish is "lighter journal" (Nicky picked it over warm-paper and
+editorial looks): `dist/assets/refine.css`, linked last on every page, sets one
+corner size, one soft shadow (no hard black offset shadows), hairline borders,
+semi-bold rather than bold type, small wine map links and wine (not blue)
+handwritten notes. Restyle the site there, not page by page, and link it last on
+any new page.
+
 All itinerary pages share the journal look of Vietnam / Japan / Bratislava:
 paper background, Playfair titles, wine kicker labels, a wine-framed hero photo
 with tape, pill jump links and soft rounded cards. Vienna and the Mexico pages
