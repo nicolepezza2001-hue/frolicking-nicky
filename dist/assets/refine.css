@@ -66,3 +66,5 @@ html body :is(.fn-card,.fn-card-face,.fn-flip-front,.fn-budget,.fn-support,.fn-m
   .ba-dinners article,.outing,.before,.pace,.progress-panel,.day,.fn-experiences,.practical,.outing-note){background:transparent}
 html body.fn-vienna #itinerary :is(.day-head,.period){background:transparent}
 html body .fn-header{background:#FDEBD8}
+/* The back of a turned destination card keeps its solid cherry fill (text on it is cream) */
+html body .fn-card .fn-card-back{background:var(--fn-red);color:#FDEBD8;border-color:var(--fn-red)}
