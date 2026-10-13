@@ -3,21 +3,21 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#86324A">
+  <meta name="theme-color" content="#B30545">
   <title>Tre settimane a Vienna — Frolicking Nicky</title>
   <meta name="description" content="Appunti dalle nostre tre settimane a Vienna, organizzati in quattro giornate consigliate con una checklist interattiva.">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,600&display=swap');
-    :root{--paper:#E4F5E0;--ink:#000000;--muted:#303030;--wine:#86324A;--wine-dark:#86324A;--gold:#E4F5E0;--card:#F5FBF3;--line:#00000030;--green:#86324A;--shadow:0 12px 35px rgba(74,49,31,.09)}
+    :root{--paper:#FDEBD8;--ink:#000000;--muted:#303030;--wine:#B30545;--wine-dark:#B30545;--gold:#FDEBD8;--card:#FDEBD8;--line:#00000030;--green:#B30545;--shadow:0 12px 35px rgba(74,49,31,.09)}
     *{box-sizing:border-box}
     html{scroll-behavior:smooth}
     body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans",sans-serif;background-image:radial-gradient(#00000030 0.7px,transparent 0.7px);background-size:18px 18px}
     .hero{background:var(--wine);color:white;padding:52px 22px 38px;position:relative;overflow:hidden}
     .hero:after{content:"V";position:absolute;right:-12px;top:-82px;font:700 270px/1 "Playfair Display",serif;color:rgba(255,255,255,.055);transform:rotate(7deg)}
     .wrap{width:min(920px,calc(100% - 32px));margin:auto;position:relative;z-index:1}
-    .eyebrow{text-transform:uppercase;letter-spacing:.17em;font-size:.74rem;font-weight:700;color:#E4F5E0;margin-bottom:10px}
+    .eyebrow{text-transform:uppercase;letter-spacing:.17em;font-size:.74rem;font-weight:700;color:#FDEBD8;margin-bottom:10px}
     h1{font:700 clamp(2.6rem,8vw,5rem)/.95 "Playfair Display",serif;margin:0;max-width:650px}
-    .subtitle{max-width:590px;font-size:1.03rem;line-height:1.55;margin:20px 0 28px;color:#E4F5E0}
+    .subtitle{max-width:590px;font-size:1.03rem;line-height:1.55;margin:20px 0 28px;color:#FDEBD8}
     .progress-shell{display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center;max-width:620px}
     .progress-track{height:11px;border-radius:99px;background:rgba(255,255,255,.22);overflow:hidden}
     .progress-bar{height:100%;width:0;background:var(--gold);border-radius:inherit;transition:width .35s ease}
@@ -27,14 +27,14 @@
     main{padding:23px 0 62px}
     .day{background:var(--card);border:1px solid var(--line);border-radius:22px;margin:18px 0;padding:24px;box-shadow:var(--shadow);scroll-margin-top:12px}
     .day-head{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:14px;padding-bottom:18px;border-bottom:1px solid var(--line)}
-    .number{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;background:var(--wine);color:#F5FBF3;font:700 1.7rem "Playfair Display",serif}
+    .number{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;background:var(--wine);color:#FDEBD8;font:700 1.7rem "Playfair Display",serif}
     h2{font:700 clamp(1.45rem,5vw,2rem)/1.1 "Playfair Display",serif;margin:0}
     .day-theme{margin:5px 0 0;color:var(--muted);font-size:.88rem}
-    .day-count{font-size:.8rem;font-weight:700;color:var(--wine);background:#E4F5E0;padding:7px 9px;border-radius:99px}
+    .day-count{font-size:.8rem;font-weight:700;color:var(--wine);background:#FDEBD8;padding:7px 9px;border-radius:99px}
     .period{margin-top:23px}
     h3{font-size:.72rem;letter-spacing:.15em;text-transform:uppercase;color:var(--wine);margin:0 0 8px}
     label.item{display:grid;grid-template-columns:26px 1fr;gap:10px;padding:10px 6px;border-radius:10px;cursor:pointer;transition:.18s;background:transparent}
-    label.item:hover{background:#F5FBF3}
+    label.item:hover{background:#FDEBD8}
     input[type=checkbox]{appearance:none;width:22px;height:22px;border:2px solid #00000030;border-radius:7px;margin:0;display:grid;place-items:center;background:white;transition:.18s}
     input[type=checkbox]:checked{background:var(--green);border-color:var(--green)}
     input[type=checkbox]:checked:after{content:"✓";color:white;font-size:15px;font-weight:700}
@@ -42,41 +42,41 @@
     .copy{line-height:1.42}
     .copy strong{font-weight:700}
     .detail{display:block;color:var(--muted);font-size:.84rem;margin-top:3px;text-decoration:none!important}
-    .tip{margin:18px 0 0;padding:14px 15px;border-left:3px solid var(--gold);background:#E4F5E0;border-radius:0 10px 10px 0;color:#303030;font-size:.88rem;line-height:1.45}
+    .tip{margin:18px 0 0;padding:14px 15px;border-left:3px solid var(--gold);background:#FDEBD8;border-radius:0 10px 10px 0;color:#303030;font-size:.88rem;line-height:1.45}
     .actions{display:flex;justify-content:space-between;gap:10px;align-items:center;margin-top:25px}
     button{border:0;border-radius:99px;padding:11px 17px;font:700 .86rem "DM Sans";cursor:pointer}
     .complete{background:var(--wine);color:white}.complete:hover{background:var(--wine-dark)}
     .reset{background:transparent;color:var(--muted);border:1px solid var(--line)}
-    .practical{background:#000000;color:#F5FBF3;border-radius:22px;padding:25px;margin-top:24px}
-    .practical h2{color:#F5FBF3}.practical p{color:#E4F5E0;line-height:1.55}
-    .chips{display:flex;gap:8px;flex-wrap:wrap}.chip{background:#303030;padding:8px 11px;border-radius:9px;font-size:.82rem;color:#E4F5E0}
+    .practical{background:#000000;color:#FDEBD8;border-radius:22px;padding:25px;margin-top:24px}
+    .practical h2{color:#FDEBD8}.practical p{color:#FDEBD8;line-height:1.55}
+    .chips{display:flex;gap:8px;flex-wrap:wrap}.chip{background:#303030;padding:8px 11px;border-radius:9px;font-size:.82rem;color:#FDEBD8}
     footer{text-align:center;color:var(--muted);font-size:.78rem;padding:0 20px 35px}
     .toast{position:fixed;left:50%;bottom:22px;transform:translate(-50%,120px);background:#000000;color:white;padding:12px 18px;border-radius:99px;font-weight:600;box-shadow:var(--shadow);transition:.3s;z-index:5}.toast.show{transform:translate(-50%,0)}
     @media(max-width:600px){.hero{padding-top:38px}.wrap{width:min(100% - 22px,920px)}.day{padding:19px 15px;border-radius:18px}.day-head{grid-template-columns:auto 1fr}.day-count{grid-column:2}.number{width:47px;height:47px}.actions{align-items:stretch;flex-direction:column}.actions button{width:100%}}
     @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
     .hero .fn-vienna-hero-grid{width:min(1176px,calc(100% - 32px));display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:64px;align-items:center}
-    .fn-vienna-hero-photo{margin:0 10px 12px 0;padding:10px;background:#E4F5E0;box-shadow:10px 10px 0 #000;transform:rotate(1deg)}
+    .fn-vienna-hero-photo{margin:0 10px 12px 0;padding:10px;background:#FDEBD8;box-shadow:10px 10px 0 #000;transform:rotate(1deg)}
     .fn-vienna-hero-photo img{display:block;width:100%;height:auto;max-height:480px;object-fit:cover;object-position:center 58%}
     @media(max-width:760px){.hero .fn-vienna-hero-grid{grid-template-columns:1fr;gap:30px;width:100%}.fn-vienna-hero-photo{width:calc(100% - 10px);max-width:380px;justify-self:center;transform:none}.fn-vienna-hero-photo img{max-height:400px}.fn-vienna-hero-copy{min-width:0}}
     #itinerary{width:min(1176px,calc(100vw - 32px));margin-left:50%;transform:translateX(-50%)}
     body.fn-vienna #itinerary section.day{background:none;border:0;box-shadow:none;padding:0;margin:56px 0;border-radius:0}
-    body.fn-vienna #itinerary .day-head,body.fn-vienna #itinerary .period,body.fn-vienna #itinerary .tip{background:var(--card);border:1px solid #0003;border-radius:22px;padding:24px 28px;margin:0 0 22px;box-shadow:6px 9px 0 #86324a25}
-    body.fn-vienna #itinerary .tip{border-left:3px solid var(--wine);background:#E4F5E0;box-shadow:none}
+    body.fn-vienna #itinerary .day-head,body.fn-vienna #itinerary .period,body.fn-vienna #itinerary .tip{background:var(--card);border:1px solid #0003;border-radius:22px;padding:24px 28px;margin:0 0 22px;box-shadow:6px 9px 0 #b3054525}
+    body.fn-vienna #itinerary .tip{border-left:3px solid var(--wine);background:#FDEBD8;box-shadow:none}
     #itinerary .fn-v-plain{max-width:660px}
     .fn-v-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:36px;align-items:center;margin:0 0 30px}
     .fn-v-row>.period{grid-column:2;grid-row:1}
     .fn-v-side{grid-column:1;grid-row:1;min-width:0;display:flex;gap:16px;align-items:flex-start;justify-content:center;padding:10px}
     .fn-v-rev>.period{grid-column:1}.fn-v-rev .fn-v-side{grid-column:2}
-    .fn-v-photo{flex:1 1 0;min-width:0;margin:0;padding:10px 10px 24px;background:#f5fbf3;border:1px solid #0002;box-shadow:0 10px 25px #0002;transform:rotate(-2deg)}
+    .fn-v-photo{flex:1 1 0;min-width:0;margin:0;padding:10px 10px 24px;background:#fdebd8;border:1px solid #0002;box-shadow:0 10px 25px #0002;transform:rotate(-2deg)}
     .fn-v-photo:only-child{max-width:360px}
     .fn-v-photo:nth-child(2){transform:rotate(2deg);margin-top:36px}
-    .fn-v-photo a{display:block}.fn-v-photo a:focus-visible{outline:3px solid #86324a;outline-offset:4px}
+    .fn-v-photo a{display:block}.fn-v-photo a:focus-visible{outline:3px solid #b30545;outline-offset:4px}
     .fn-v-photo img{display:block;width:100%;height:auto}
     @media(max-width:760px){#itinerary{width:100%;margin-left:0;transform:none}.fn-v-row{display:flex;flex-direction:column;gap:0}.fn-v-side{width:100%;box-sizing:border-box;padding:0 6px;gap:12px}.fn-v-photo{padding:6px 6px 16px}.fn-v-photo:only-child{max-width:78%}.fn-v-photo:nth-child(2){margin-top:22px}.fn-v-row>.period{width:100%;box-sizing:border-box;margin-top:-10px;position:relative;z-index:1}body.fn-vienna #itinerary .day-head,body.fn-vienna #itinerary .period,body.fn-vienna #itinerary .tip{padding:20px 18px}}
     .fn-v-photo figcaption{font:400 .7rem/1.35 'DM Sans',sans-serif;color:#303030;margin-top:8px}
     .fn-v-photo figcaption a{color:inherit}
   </style>
-<link rel="stylesheet" href="/assets/shared.css?v=19"><link rel="stylesheet" href="/assets/motion.css?v=21"><script src="/assets/motion.js?v=27" defer></script><link rel="icon" type="image/png" sizes="512x512" href="/assets/snail-stamp-favicon.png?v=2"><link rel="alternate icon" href="/favicon.ico?v=snailstamp2"><script src="/assets/maps.js?v=5" defer></script><script src="/assets/share.js" defer></script><link rel="stylesheet" href="/assets/best-time-to-visit.css?v=1"><script type="module" src="/assets/best-time-to-visit.js?v=2"></script><link rel="alternate" hreflang="en" href="https://frolickingnicky.com/austria/vienna"><link rel="alternate" hreflang="it" href="https://frolickingnicky.com/it/austria/vienna"><link rel="alternate" hreflang="x-default" href="https://frolickingnicky.com/austria/vienna"><link rel="canonical" href="https://frolickingnicky.com/it/austria/vienna"><meta property="og:type" content="website"><meta property="og:site_name" content="Frolicking Nicky"><meta property="og:title" content="Tre settimane a Vienna — Frolicking Nicky"><meta property="og:description" content="Appunti dalle nostre tre settimane a Vienna, organizzati in quattro giornate consigliate con una checklist interattiva."><meta property="og:url" content="https://frolickingnicky.com/it/austria/vienna"><meta property="og:image" content="https://frolickingnicky.com/assets/share-vienna.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:locale" content="it_IT"><meta property="og:locale:alternate" content="en_GB"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Tre settimane a Vienna — Frolicking Nicky"><meta name="twitter:description" content="Appunti dalle nostre tre settimane a Vienna, organizzati in quattro giornate consigliate con una checklist interattiva."><meta name="twitter:image" content="https://frolickingnicky.com/assets/share-vienna.jpg"><script src="/assets/journal.js?v=3" defer></script><link rel="manifest" href="/manifest.webmanifest"><link rel="apple-touch-icon" href="/assets/apple-touch-icon.png?v=snailstamp2"><link rel="stylesheet" href="/assets/refine.css?v=1"></head>
+<link rel="stylesheet" href="/assets/shared.css?v=20"><link rel="stylesheet" href="/assets/motion.css?v=22"><script src="/assets/motion.js?v=28" defer></script><link rel="icon" type="image/png" sizes="512x512" href="/assets/snail-stamp-favicon.png?v=3"><link rel="alternate icon" href="/favicon.ico?v=cherry1"><script src="/assets/maps.js?v=5" defer></script><script src="/assets/share.js" defer></script><link rel="stylesheet" href="/assets/best-time-to-visit.css?v=2"><script type="module" src="/assets/best-time-to-visit.js?v=2"></script><link rel="alternate" hreflang="en" href="https://frolickingnicky.com/austria/vienna"><link rel="alternate" hreflang="it" href="https://frolickingnicky.com/it/austria/vienna"><link rel="alternate" hreflang="x-default" href="https://frolickingnicky.com/austria/vienna"><link rel="canonical" href="https://frolickingnicky.com/it/austria/vienna"><meta property="og:type" content="website"><meta property="og:site_name" content="Frolicking Nicky"><meta property="og:title" content="Tre settimane a Vienna — Frolicking Nicky"><meta property="og:description" content="Appunti dalle nostre tre settimane a Vienna, organizzati in quattro giornate consigliate con una checklist interattiva."><meta property="og:url" content="https://frolickingnicky.com/it/austria/vienna"><meta property="og:image" content="https://frolickingnicky.com/assets/share-vienna.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:locale" content="it_IT"><meta property="og:locale:alternate" content="en_GB"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Tre settimane a Vienna — Frolicking Nicky"><meta name="twitter:description" content="Appunti dalle nostre tre settimane a Vienna, organizzati in quattro giornate consigliate con una checklist interattiva."><meta name="twitter:image" content="https://frolickingnicky.com/assets/share-vienna.jpg"><script src="/assets/journal.js?v=3" defer></script><link rel="manifest" href="/manifest.webmanifest"><link rel="apple-touch-icon" href="/assets/apple-touch-icon.png?v=cherry1"><link rel="stylesheet" href="/assets/refine.css?v=2"></head>
 <body class="fn-vienna"><a class="fn-skip" href="#content">Vai al contenuto</a><header class="fn-header"><a class="fn-logo" href="/it/">Frolicking <em>Nicky</em><span>UN DIARIO DI VIAGGIO DI NICOLE MARIA PEZZA</span></a><nav aria-label="Navigazione principale" class="fn-nav"><a href="/it/i-miei-viaggi">I miei viaggi</a><a href="/it/chi-sono">Chi sono</a><div class="fn-lang" role="group" aria-label="Lingua"><a href="/austria/vienna" hreflang="en" lang="en" aria-label="English">EN</a><span class="fn-lang-sep" aria-hidden="true">|</span><span aria-current="true">IT</span></div></nav></header><div class="fn-breadcrumb" id="content"><a href="/it/i-miei-viaggi">I miei viaggi</a> / Austria / Vienna</div><div class="fn-share-row"><button class="fn-share" type="button">Condividi l’itinerario ↗</button></div>
   <header class="hero">
     <div class="wrap fn-vienna-hero-grid">
@@ -133,5 +133,5 @@
     document.querySelector('#reset').onclick=()=>{if(confirm('Cancellare tutte le spunte e ricominciare?')){boxes.forEach(b=>b.checked=false);save(false);update()}};
     update();
   </script>
-<section class="fn-support" id="support-local-women" aria-labelledby="support-title"><img class="fn-support-art" src="/assets/support-women.svg" alt="" width="260" height="230" loading="lazy"><h2 id="support-title">Sostieni le donne del posto</h2><p>Se puoi e ti va, considera una donazione a Wiener Frauenhäuser per sostenere donne e bambini che subiscono violenza domestica.</p><p>Non ricevo soldi né commissioni da queste donazioni. Sostenere le donne del posto per me è importante, ed è un piccolo modo per restituire qualcosa ai luoghi che visito. Serve l’impegno di tutti per opporsi alla violenza di genere e domestica.</p><a href="https://frauenhaeuser-wien.at/spenden/" target="_blank" rel="noopener noreferrer">Dona a Wiener Frauenhäuser ↗</a></section><footer class="fn-footer"><a class="fn-logo" href="/it/">Frolicking <em>Nicky</em></a><p>Un po’ di programmi. Tanto spazio per bighellonare.</p><a href="/it/i-miei-viaggi">Trova il tuo prossimo itinerario ↗</a></footer></body>
+<section class="fn-support" id="support-local-women" aria-labelledby="support-title"><img class="fn-support-art" src="/assets/support-women.svg?v=2" alt="" width="260" height="230" loading="lazy"><h2 id="support-title">Sostieni le donne del posto</h2><p>Se puoi e ti va, considera una donazione a Wiener Frauenhäuser per sostenere donne e bambini che subiscono violenza domestica.</p><p>Non ricevo soldi né commissioni da queste donazioni. Sostenere le donne del posto per me è importante, ed è un piccolo modo per restituire qualcosa ai luoghi che visito. Serve l’impegno di tutti per opporsi alla violenza di genere e domestica.</p><a href="https://frauenhaeuser-wien.at/spenden/" target="_blank" rel="noopener noreferrer">Dona a Wiener Frauenhäuser ↗</a></section><footer class="fn-footer"><a class="fn-logo" href="/it/">Frolicking <em>Nicky</em></a><p>Un po’ di programmi. Tanto spazio per bighellonare.</p><a href="/it/i-miei-viaggi">Trova il tuo prossimo itinerario ↗</a></footer></body>
 </html>

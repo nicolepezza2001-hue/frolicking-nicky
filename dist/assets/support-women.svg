@@ -18,17 +18,17 @@
   </style>
 
   <!-- the shelter: a simple house that holds them -->
-  <path d="M30 108 L130 30 L230 108" stroke="#86324A" stroke-width="5"/>
-  <path d="M46 98 V214 H214 V98" stroke="#86324A" stroke-width="3" stroke-dasharray="2 8" opacity=".55"/>
+  <path d="M30 108 L130 30 L230 108" stroke="#B30545" stroke-width="5"/>
+  <path d="M46 98 V214 H214 V98" stroke="#B30545" stroke-width="3" stroke-dasharray="2 8" opacity=".55"/>
   <path d="M22 214 H238" stroke="#000" stroke-width="2.5" opacity=".75"/>
 
   <!-- heart in the roof -->
-  <circle class="glow" cx="130" cy="70" r="17" fill="#86324A" opacity=".35"/>
-  <path class="heart" d="M130 84s-13-8-13-17.4a7.3 7.3 0 0 1 13-4.5 7.3 7.3 0 0 1 13 4.5c0 9.4-13 17.4-13 17.4z" fill="#86324A"/>
+  <circle class="glow" cx="130" cy="70" r="17" fill="#B30545" opacity=".35"/>
+  <path class="heart" d="M130 84s-13-8-13-17.4a7.3 7.3 0 0 1 13-4.5 7.3 7.3 0 0 1 13 4.5c0 9.4-13 17.4-13 17.4z" fill="#B30545"/>
 
   <!-- sparkles -->
-  <path class="twinkle" d="M46 46v12M40 52h12" stroke="#86324A" stroke-width="2.4"/>
-  <path class="twinkle b" d="M214 40v10M209 45h10" stroke="#86324A" stroke-width="2.4"/>
+  <path class="twinkle" d="M46 46v12M40 52h12" stroke="#B30545" stroke-width="2.4"/>
+  <path class="twinkle b" d="M214 40v10M209 45h10" stroke="#B30545" stroke-width="2.4"/>
   <circle class="twinkle b" cx="196" cy="70" r="2.6" fill="#F2C14E"/>
   <circle class="twinkle" cx="64" cy="78" r="2.6" fill="#F2C14E"/>
 
@@ -52,7 +52,7 @@
 
   <!-- middle woman -->
   <path d="M125 198v14M135 198v14" stroke="#000" stroke-width="3"/>
-  <path d="M130 132c-9 0-13 5-15 14l-10 54h50l-10-54c-2-9-6-14-15-14z" fill="#86324A"/>
+  <path d="M130 132c-9 0-13 5-15 14l-10 54h50l-10-54c-2-9-6-14-15-14z" fill="#B30545"/>
   <g transform="translate(0 7)"><path d="M117 112c0-12 6-19 13-19s13 7 13 19v16c-4 3-9 4-13 4s-9-1-13-4z" fill="#d9a35b"/>
   <circle cx="130" cy="113" r="11" fill="#f1cbb0"/>
   <path d="M119 110c2-9 20-11 22 0" stroke="#d9a35b" stroke-width="5"/></g>

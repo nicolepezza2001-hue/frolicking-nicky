@@ -27,7 +27,7 @@ self.addEventListener('fetch', e => {
       } catch (_) {
         return (await caches.match(req, { ignoreSearch: true })) ||
                (await caches.match(url.pathname.replace(/\/?$/, '/'), { ignoreSearch: true })) ||
-               new Response('<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Offline</title><body style="font-family:Georgia,serif;background:#E4F5E0;color:#000;padding:40px 24px;max-width:520px;margin:auto"><h1 style="color:#86324A">You’re offline</h1><p>This page hasn’t been saved on this device yet. Itineraries you’ve opened or saved with “Save for offline” still work without a connection.</p><p><a href="/" style="color:#86324A">Back to the journal</a></p>', { headers: { 'Content-Type': 'text/html; charset=utf-8' } });
+               new Response('<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Offline</title><body style="font-family:Georgia,serif;background:#FDEBD8;color:#000;padding:40px 24px;max-width:520px;margin:auto"><h1 style="color:#B30545">You’re offline</h1><p>This page hasn’t been saved on this device yet. Itineraries you’ve opened or saved with “Save for offline” still work without a connection.</p><p><a href="/" style="color:#B30545">Back to the journal</a></p>', { headers: { 'Content-Type': 'text/html; charset=utf-8' } });
       }
     })());
     return;

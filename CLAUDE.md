@@ -85,18 +85,17 @@ Italian copies and the best-time-to-visit data.
 The overall finish is "lighter journal" (Nicky picked it over warm-paper and
 editorial looks): `dist/assets/refine.css`, linked last on every page, sets one
 corner size, one soft shadow (no hard black offset shadows), hairline borders,
-semi-bold rather than bold type, small wine map links and wine (not blue)
+semi-bold rather than bold type, small cherry map links and cherry (not blue)
 handwritten notes. Restyle the site there, not page by page, and link it last on
 any new page.
 
-**Palette trial (Oct 2026):** the English home page only (`dist/index.html`) is trying
-antique white `#FDEBD8`, black `#030301` and cherry rose `#B30545`, with outlined cards and no fills.
-It links recoloured copies: `shared.cherry.css`, `motion.cherry.css`, `motion.cherry.js`,
-`refine.cherry.css`, `world-map.cherry.svg`, `support-women.cherry.svg`. If Nicky keeps it, roll the
-colours into the real files for every page and delete the copies; if not, point the page back.
+**Palette (since Oct 2026):** antique white paper `#FDEBD8`, black ink `#030301`, cherry rose
+accent `#B30545` (it replaced mint `#E4F5E0` and wine `#86324A`). Cards are outlined only: a
+fine line, no fill, no shadow, and no white anywhere (Nicky's choice). The palette block at the end of
+`refine.css` sets it; colours also live as literal hex in the shared CSS/JS, the SVGs and the icon PNGs.
 
 All itinerary pages share the journal look of Vietnam / Japan / Bratislava:
-paper background, Playfair titles, wine kicker labels, a wine-framed hero photo
+paper background, Playfair titles, cherry kicker labels, a cherry-framed hero photo
 with tape, pill jump links and soft rounded cards. Vienna and the Mexico pages
 keep their own markup but are restyled by the "One itinerary look" block in
 `shared.css` (scoped to `body.fn-vienna` / `body.fn-mexico`). New itineraries
