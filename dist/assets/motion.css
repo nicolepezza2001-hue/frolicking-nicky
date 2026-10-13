@@ -283,10 +283,7 @@ h3 .fn-icon { width: 2em; height: 2em; margin-top: -1.06em; left: .3em; }
 .fn-pc-back { position: absolute; inset: 0; z-index: 5; transform: rotateY(180deg) translateZ(1px); backface-visibility: hidden; -webkit-backface-visibility: hidden;
   container-type: size; color: #1f3474; border-radius: 2px;
   background:
-    radial-gradient(circle at 88% 92%, #b8915233 0, transparent 22%),
-    radial-gradient(circle at 8% 6%, #b8915224 0, transparent 18%),
-    repeating-linear-gradient(0deg, #00000005 0 1px, transparent 1px 3px),
-    linear-gradient(135deg, #f7f0df, #efe4cb);
+    linear-gradient(135deg, #fbf8f0, #f4eedf);
   box-shadow: 10px 10px 0 #000, inset 0 0 30px #a7884f33; }
 .fn-pc-back .fn-tape { top: -12px; }
 .fn-pc-defs { position: absolute; }
@@ -336,3 +333,15 @@ h3 .fn-icon { width: 2em; height: 2em; margin-top: -1.06em; left: .3em; }
 .fn-steps { transition: opacity .5s; }
 .fn-door-walking .fn-steps { opacity: 0; }
 @media (prefers-reduced-motion: reduce) { .fn-door-walk { display: none; } }
+
+/* Simple postcard back: note on the left, one stamp, a wavy postmark and the address on the right */
+.fn-pc-back { color: #86324A; }
+.fn-pc-in { display: grid; grid-template-columns: 1.2fr 1fr; gap: 6cqmin; padding: 8cqmin 7cqmin; }
+.fn-pc-msg { align-self: center; }
+.fn-pc-msg p { margin: 0; font: 500 max(14px, 6.4cqmin)/1.2 'Caveat', cursive; color: #86324A; rotate: -1.5deg; }
+.fn-pc-msg .fn-pc-sign { margin-top: .7em; font-size: max(16px, 7.4cqmin); }
+.fn-pc-side { position: relative; display: flex; flex-direction: column; justify-content: space-between; padding-left: 6cqmin; border-left: 1px solid #86324a40; }
+.fn-st-one { position: relative; align-self: flex-end; width: max(44px, 21cqmin); aspect-ratio: 4 / 5; rotate: 3deg; }
+.fn-pc-mark { position: absolute; right: 9cqmin; top: 10cqmin; width: max(70px, 30cqmin); color: #86324a99; rotate: -8deg; }
+.fn-pc-to p { margin: 0; padding: .6em 0 .1em; border-bottom: 1px solid #86324a40; font: 500 max(11px, 4.6cqmin)/1 'Caveat', cursive; color: #4a4245; }
+@container (max-aspect-ratio: 1/1) { .fn-pc-in { grid-template-columns: 1fr; grid-template-rows: auto 1fr; } .fn-pc-side { order: -1; padding: 0 0 4cqmin; border: 0; border-bottom: 1px solid #86324a40; } .fn-pc-mark { top: 4cqmin; } .fn-pc-to { display: none; } }
