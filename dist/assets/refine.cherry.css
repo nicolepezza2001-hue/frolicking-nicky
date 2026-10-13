@@ -1,0 +1,68 @@
+/* TRIAL palette for the English home page only: antique white, black, cherry rose; outlined cards, no fills.
+   Generated from refine.css with the colours swapped. */
+/* Lighter journal (direction A). Loaded last on every page so it settles the whole site:
+   same colours and fonts, one corner size, one soft shadow, thinner lines, lighter type.
+   Change the look here rather than page by page. */
+:root{
+  --fn-ink:#030301;
+  --fn-soft:#4a4245;
+  --fn-hair:#0000001a;
+  --fn-r:14px;
+  --fn-lift:0 1px 2px #00000008,0 8px 22px #0000000f;
+  --fn-photo:0 1px 3px #00000014,0 10px 24px #0000001c;
+}
+html body{color:var(--fn-ink);-webkit-font-smoothing:antialiased}
+html body p{color:inherit}
+
+/* Type: fewer heavy weights */
+html body :is(strong,b,th,dt){font-weight:600}
+html body :is(h1,h2,h3,.fn-page-title){font-weight:600;letter-spacing:-.015em}
+html body .fn-intro h1,html body .fn-page-title,html body.fn-vienna h1{letter-spacing:-.03em}
+html body .jp-days h3,html body .jp-album .vn-stop h2{font-family:'Playfair Display',Georgia,serif}
+html body :is(.detail,.fn-stop-description,.day-theme,.task-note){color:var(--fn-soft)}
+html body .fn-kicker,html body .eyebrow{font-weight:600;letter-spacing:.14em}
+
+/* Cards: one corner, one hairline, one soft lift (no hard offset shadows) */
+html body :is(.vn-stop,.vn-album .vn-stop,.jp-day-card .vn-stop,.ba-scrap-row>.vn-stop,.ba-dinners article,
+  .outing,.before,.pace,.progress-panel,.fn-budget,.fn-support,.fn-card,.fn-card-face,.fn-flip-front,
+  .day,.fn-experiences,.practical){
+  border:1px solid var(--fn-hair);border-radius:var(--fn-r);box-shadow:var(--fn-lift)}
+html body.fn-vienna #itinerary :is(.day-head,.period){border:1px solid var(--fn-hair);border-radius:var(--fn-r);box-shadow:var(--fn-lift)}
+html body.fn-vienna #itinerary section.day{border:0;box-shadow:none;border-radius:0}
+html body .fn-budget-row{border-radius:10px;background:#fdebd8b3}
+html body .fn-support{border-left:3px solid var(--fn-red)}
+html body.fn-mexico .outing{border-top:3px solid var(--accent,var(--fn-red))}
+html body .weekend .outing-heading{border-radius:var(--fn-r) var(--fn-r) 0 0}
+
+/* Tips and notes: a thin wine rule, no box shadow */
+html body :is(.tip,.outing-note),html body.fn-vienna #itinerary .tip{box-shadow:none;border:0;border-left:2px solid var(--fn-red);border-radius:0 10px 10px 0}
+
+/* Photos: hero, portraits, postcards and the map card lose the hard black block shadow */
+html body :is(.fn-vienna-hero-photo,.ba-hero-layout .ba-photo,.vn-portrait,.postcard,.fn-home-portrait,.fn-about-portrait){box-shadow:var(--fn-photo)}
+html body .fn-map-card{box-shadow:var(--fn-photo),inset 0 0 40px #a7884f26}
+html body .fn-pc-back{box-shadow:var(--fn-photo),inset 0 0 30px #a7884f33}
+html body :is(.vn-album-photo,.jp-photo,.ba-scrap-photo,.fn-v-photo){box-shadow:var(--fn-photo);border-color:#00000012}
+
+/* Map links and small links: quieter */
+html body :is(.vn-map,.fn-map-links a){font-weight:500;font-size:.8rem;text-decoration:none;border-bottom:1px solid #b3054540;color:var(--fn-red)}
+html body :is(.vn-map,.fn-map-links a):hover{border-bottom-color:var(--fn-red)}
+
+/* Handwritten notes in wine, not blue */
+html body :is(.fn-margin-note,.fn-map-picked,.fn-map-hint,.fn-map-numbers p){color:var(--fn-red);font-weight:500}
+
+/* Buttons and pills: lighter */
+html body :is(button,.fn-btn,nav[aria-label] a,.vn-jump a){font-weight:500}
+html body.fn-vienna nav a{background:transparent;border-color:#b3054555}
+html body .number{font-weight:600}
+
+/* Checkboxes: thinner, wine when ticked */
+html body input[type=checkbox]{accent-color:var(--fn-red)}
+
+/* Day titles inside cards use the site's serif, like every other page */
+html body .jp-day-card .vn-stop>h3,html body .jp-days .vn-stop>h3{font:600 1.45rem/1.25 'Playfair Display',Georgia,serif;letter-spacing:-.01em;margin:0 0 14px}
+
+/* Trial: outlined cards with no fill and no lift (option B) */
+:root{--fn-paper:#FDEBD8;--fn-red:#B30545;--fn-blue:#B30545;--fn-ink:#030301;--fn-hair:#03030133;--fn-lift:none}
+html body{background:#FDEBD8}
+html body :is(.fn-card,.fn-card-face,.fn-flip-front,.fn-budget,.fn-support,.fn-map-numbers p){background:transparent}
+html body .fn-header{background:#FDEBD8}

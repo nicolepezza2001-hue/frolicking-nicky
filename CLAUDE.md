@@ -89,6 +89,12 @@ semi-bold rather than bold type, small wine map links and wine (not blue)
 handwritten notes. Restyle the site there, not page by page, and link it last on
 any new page.
 
+**Palette trial (Oct 2026):** the English home page only (`dist/index.html`) is trying
+antique white `#FDEBD8`, black `#030301` and cherry rose `#B30545`, with outlined cards and no fills.
+It links recoloured copies: `shared.cherry.css`, `motion.cherry.css`, `motion.cherry.js`,
+`refine.cherry.css`, `world-map.cherry.svg`, `support-women.cherry.svg`. If Nicky keeps it, roll the
+colours into the real files for every page and delete the copies; if not, point the page back.
+
 All itinerary pages share the journal look of Vietnam / Japan / Bratislava:
 paper background, Playfair titles, wine kicker labels, a wine-framed hero photo
 with tape, pill jump links and soft rounded cards. Vienna and the Mexico pages
