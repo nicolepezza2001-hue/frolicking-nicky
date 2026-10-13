@@ -300,7 +300,7 @@
 
 /* Hero photos: two strips of masking tape hold them down,
    and turning the photo over (hover, or the Turn over button on touch screens and keyboards) shows the back of a
-   plain postcard: a short signed note, one stamp (the page's country) and a postmark.
+   cherry postcard: "Greetings from <where Nicky is now>" (the NOW setting), that country's stamp, a postmark and a signed note.
    Built for everyone; only the develop and the turning animation switch off with reduced motion. */
 (() => {
   const it = document.documentElement.lang === 'it';
@@ -381,19 +381,20 @@
 
   const ring = (id, r) => `<path id="${id}" d="M60,60 m-${r},0 a${r},${r} 0 1,1 ${2 * r},0 a${r},${r} 0 1,1 -${2 * r},0"/>`;
   const waves = `<g stroke="currentColor" stroke-width="2.2" fill="none">${[0, 9, 18, 27, 36].map(y => `<path d="M0 ${y + 4}c12-7 24 7 36 0s24-7 36 0 24 7 36 0 24-7 36 0 24 7 36 0"/>`).join('')}</g>`;
-  // One stamp on the back: the country of the page you're on (Italy on the home and About pages)
-  const here = (() => { const u = location.pathname.replace(/^\/it\//, '/');
-    return [['/austria', 'Austria'], ['/japan', 'Japan'], ['/giappone', 'Japan'], ['/vietnam', 'Vietnam'], ['/slovakia', 'Slovakia'], ['/slovacchia', 'Slovakia'], ['/mexico', 'Mexico'], ['/messico', 'Mexico']]
-      .find(([k]) => location.pathname.includes(k))?.[1] || 'Italy'; })();
+  /* WHERE NICKY IS RIGHT NOW. Change these values when she moves country (itFrom carries the Italian preposition: dal, dalla, dall', dai, dagli):
+     the back of every hero photo then reads "Greetings from …" with that country's stamp.
+     `stamp` must be a name from `order` / `F` above. */
+  const NOW = { stamp: 'Mexico', en: 'Mexico', it: 'Messico', itFrom: 'Saluti dal' };
+
   const back = () => `
     <span class="fn-tape fn-tape-l"></span><span class="fn-tape fn-tape-r"></span>
     <div class="fn-pc-in">
-      <div class="fn-pc-msg"><p>${t.note.join(' ')}</p><p class="fn-pc-sign">Nicky x</p></div>
-      <div class="fn-pc-side">
-        <span class="fn-st fn-st-one">${stampSvg(here, order.indexOf(here))}</span>
+      <div class="fn-pc-top">
+        <p class="fn-pc-from">${it ? NOW.itFrom : 'Greetings from'}<span>${it ? NOW.it : NOW.en}</span></p>
+        <span class="fn-st fn-st-one">${stampSvg(NOW.stamp, Math.max(0, order.indexOf(NOW.stamp)))}</span>
         <svg class="fn-pc-mark" viewBox="0 0 120 40" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 12c10-6 20 6 30 0s20-6 30 0 20 6 30 0 20-6 26 0"/><path d="M2 22c10-6 20 6 30 0s20-6 30 0 20 6 30 0 20-6 26 0"/><path d="M2 32c10-6 20 6 30 0s20-6 30 0 20 6 30 0 20-6 26 0"/></g></svg>
-        <div class="fn-pc-to">${t.to.map(l => `<p>${l}</p>`).join('')}</div>
       </div>
+      <div class="fn-pc-msg"><p>${t.note.slice(1).join(' ')}</p><p class="fn-pc-sign">Nicky x</p></div>
     </div>`;
 
   const run = () => {
