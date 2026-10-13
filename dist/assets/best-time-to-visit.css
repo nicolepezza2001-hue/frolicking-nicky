@@ -1,23 +1,23 @@
 best-time-to-visit{display:block;min-width:0}
-.fn-season{margin:30px 0 38px;padding:26px 0 24px;border-top:1px solid #86324a55;border-bottom:1px solid #86324a55;color:#000;font-family:'DM Sans',sans-serif;line-height:1.6}
-.fn-season h2{margin:0;font:600 clamp(1.75rem,4vw,2.25rem)/1.2 'Playfair Display',Georgia,serif;color:#86324a;letter-spacing:-.025em}
+.fn-season{margin:30px 0 38px;padding:26px 0 24px;border-top:1px solid #b3054555;border-bottom:1px solid #b3054555;color:#000;font-family:'DM Sans',sans-serif;line-height:1.6}
+.fn-season h2{margin:0;font:600 clamp(1.75rem,4vw,2.25rem)/1.2 'Playfair Display',Georgia,serif;color:#b30545;letter-spacing:-.025em}
 .fn-season .fn-season-scope{margin:10px 0 22px;font-size:.875rem;color:#303030}
 .fn-season-months{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:6px;list-style:none;padding:0;margin:0}
 .fn-season-month{min-width:0;text-align:center;font-size:.875rem;font-weight:600}
 .fn-season-month-name{display:block;margin-bottom:8px}
 .fn-season-swatch{display:grid;place-items:center;height:38px;font-size:1rem;line-height:1;border:1px solid #00000020}
-.fn-season-best{background:#86324a;color:#fff}
+.fn-season-best{background:#b30545;color:#fff}
 .fn-season-good{background:#d7a6b4;color:#35131e}
-.fn-season-okay{background:#f5fbf3;color:#433a3d}
+.fn-season-okay{background:#fdebd8;color:#433a3d}
 .fn-season-avoid{background:#d5d3d1;color:#383331}
 .fn-season-legend{display:flex;flex-wrap:wrap;gap:12px 22px;list-style:none;margin:15px 0 0;padding:0;font-size:.875rem}
 .fn-season-legend li{display:flex;align-items:center;gap:7px}
 .fn-season-key{display:grid;place-items:center;width:19px;height:19px;border:1px solid #00000020;font-size:13px;line-height:1}
 .fn-season .fn-season-pick{max-width:850px;margin:21px 0 0;font-size:1rem;line-height:1.75}
-.fn-season-pick strong{color:#86324a}
+.fn-season-pick strong{color:#b30545}
 .fn-season-details{margin-top:16px;font-size:.875rem;color:#303030}
 .fn-season-details summary{cursor:pointer;text-decoration:underline;text-underline-offset:4px;width:fit-content}
-.fn-season-details summary:focus-visible{outline:3px solid #86324a;outline-offset:5px}
+.fn-season-details summary:focus-visible{outline:3px solid #b30545;outline-offset:5px}
 .fn-season-details p{max-width:850px;font-size:.875rem;line-height:1.6;margin:16px 0}
 .fn-season-details dl{display:grid;grid-template-columns:1fr 1fr;gap:12px 28px;margin:18px 0}
 .fn-season-details dt{font-weight:700}.fn-season-details dd{margin:0}

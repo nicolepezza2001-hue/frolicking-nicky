@@ -33,7 +33,7 @@
   function confetti() {
     if (still) return;
     const box = document.createElement('div'); box.className = 'fn-confetti'; box.setAttribute('aria-hidden', 'true');
-    const colours = ['#86324A', '#000000', '#D9A0B0', '#2F6B3A', '#F2C14E'];
+    const colours = ['#B30545', '#000000', '#D9A0B0', '#2F6B3A', '#F2C14E'];
     for (let i = 0; i < 90; i++) {
       const p = document.createElement('i');
       p.style.left = Math.random() * 100 + 'vw';
@@ -373,7 +373,7 @@
     return `<svg viewBox="0 0 40 50" aria-hidden="true"><svg x="3" y="3" width="34" height="30" viewBox="0 0 34 30">${draw()}</svg>
       <rect x="3" y="3" width="34" height="30" fill="none" stroke="#0000001f" stroke-width=".4"/>
       <text x="20" y="40.6" text-anchor="middle" font-size="${long ? 3.6 : 4.4}" font-weight="700" letter-spacing=".15" fill="#2b2b2b" font-family="DM Sans, sans-serif"${label.length > 15 ? ' textLength="34" lengthAdjust="spacingAndGlyphs"' : ''}>${label}</text>
-      <text x="20" y="46.6" text-anchor="middle" font-size="3.6" fill="#86324A" font-family="Playfair Display, Georgia, serif" font-style="italic">${values[i % values.length]}</text></svg>`;
+      <text x="20" y="46.6" text-anchor="middle" font-size="3.6" fill="#B30545" font-family="Playfair Display, Georgia, serif" font-style="italic">${values[i % values.length]}</text></svg>`;
   };
   // The same scatter every time, so the card looks the same on every visit
   const rand = (seed => () => (seed = (seed * 16807) % 2147483647) / 2147483647)(41);
@@ -449,9 +449,9 @@
       }
       route.remove();
       const it = document.documentElement.lang === 'it';
-      svg.innerHTML = `<g fill="#86324A">${steps.map(([x, y, a]) => print(x, y, a, 'fn-step', 1.45)).join('')}</g>
-        <g class="fn-steps-name"><rect x="-22" y="-9" width="44" height="15" rx="2" fill="#F5FBF3" stroke="#86324A" stroke-width="1"/>
-        <text x="0" y="2.6" text-anchor="middle" font-size="10" font-style="italic" font-weight="600" fill="#86324A" font-family="Playfair Display, Georgia, serif">Nicky</text></g>`;
+      svg.innerHTML = `<g fill="#B30545">${steps.map(([x, y, a]) => print(x, y, a, 'fn-step', 1.45)).join('')}</g>
+        <g class="fn-steps-name"><rect x="-22" y="-9" width="44" height="15" rx="2" fill="#FDEBD8" stroke="#B30545" stroke-width="1"/>
+        <text x="0" y="2.6" text-anchor="middle" font-size="10" font-style="italic" font-weight="600" fill="#B30545" font-family="Playfair Display, Georgia, serif">Nicky</text></g>`;
       // Each print appears as the walker reaches it, then slowly fades; the name tag follows the newest step
       const beat = 380, linger = 2600, cycle = steps.length * beat + linger + 900;
       svg.querySelectorAll('.fn-step').forEach((el, i) => el.animate(
@@ -642,7 +642,7 @@ if ('serviceWorker' in navigator && isSecureContext) addEventListener('load', ()
    Only one trail at a time: the home page's own footsteps step aside while this one walks. Off with reduced motion. */
 (() => {
   if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-  const ns = 'http://www.w3.org/2000/svg', wine = '#86324A', paper = '#F5FBF3';
+  const ns = 'http://www.w3.org/2000/svg', wine = '#B30545', paper = '#FDEBD8';
   const print = (x, y, a) => `<g class="fn-door-step" transform="translate(${x.toFixed(1)} ${y.toFixed(1)}) rotate(${a.toFixed(1)}) scale(1.15)"><ellipse cx="2.6" cy="0" rx="4.6" ry="2.6"/><ellipse cx="-5" cy="0" rx="2.4" ry="2.1"/></g>`;
   const skip = '.fn-lang, .fn-logo, .fn-skip, .fn-photo, .fn-back-cover, .fn-card-back, .fn-map, .fn-caption, .fn-pc-wrap, .fn-steps, dialog';
   // Button-like targets: real buttons, navigation links and links that stand on their own (not inside a sentence)
