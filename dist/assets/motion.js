@@ -300,7 +300,7 @@
 
 /* Hero photos: two strips of masking tape hold them down,
    and turning the photo over (hover, or the Turn over button on touch screens and keyboards) shows the back of a
-   well-travelled postcard, with a stamp from every country Nicky has been to, postmarks and a signed note.
+   plain postcard: a short signed note, one stamp (the page's country) and a postmark.
    Built for everyone; only the develop and the turning animation switch off with reduced motion. */
 (() => {
   const it = document.documentElement.lang === 'it';
@@ -381,47 +381,20 @@
 
   const ring = (id, r) => `<path id="${id}" d="M60,60 m-${r},0 a${r},${r} 0 1,1 ${2 * r},0 a${r},${r} 0 1,1 -${2 * r},0"/>`;
   const waves = `<g stroke="currentColor" stroke-width="2.2" fill="none">${[0, 9, 18, 27, 36].map(y => `<path d="M0 ${y + 4}c12-7 24 7 36 0s24-7 36 0 24 7 36 0 24-7 36 0 24 7 36 0"/>`).join('')}</g>`;
+  // One stamp on the back: the country of the page you're on (Italy on the home and About pages)
+  const here = (() => { const u = location.pathname.replace(/^\/it\//, '/');
+    return [['/austria', 'Austria'], ['/japan', 'Japan'], ['/giappone', 'Japan'], ['/vietnam', 'Vietnam'], ['/slovakia', 'Slovakia'], ['/slovacchia', 'Slovakia'], ['/mexico', 'Mexico'], ['/messico', 'Mexico']]
+      .find(([k]) => location.pathname.includes(k))?.[1] || 'Italy'; })();
   const back = () => `
-    <svg class="fn-pc-defs" width="0" height="0" aria-hidden="true"><filter id="fn-ink"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" seed="7"/><feDisplacementMap in="SourceGraphic" scale="2.2"/></filter></svg>
     <span class="fn-tape fn-tape-l"></span><span class="fn-tape fn-tape-r"></span>
-    <div class="fn-pc-in"><p class="fn-pc-head">${t.head}<span>${t.sub}</span></p>
-    <div class="fn-pc-stamps">${order.map((n, i) => `<span class="fn-st" style="--a:${jitter[i][2].toFixed(1)}deg">${stampSvg(n, i)}</span>`).join('')}</div>
-    <div class="fn-pc-foot">
-      <div class="fn-pc-note"><p>${t.note.join('<br>')}</p><p class="fn-pc-sign">Nicky <span>x</span></p>
-        <svg class="fn-pc-scribble" viewBox="0 0 120 26" aria-hidden="true"><path d="M3 18c14-10 22 8 34-1s20-12 30 1 16 2 24-6 14 0 26-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M98 6c-2-4-8-2-5 3l5 5 5-5c3-5-3-7-5-3z" fill="none" stroke="#86324A" stroke-width="1.4"/></svg></div>
-      <div class="fn-pc-to">${t.to.map(l => `<p>${l}</p>`).join('')}</div>
-    </div>
-    <svg class="fn-pm fn-pm-a" viewBox="0 0 230 120" aria-hidden="true"><defs>${ring('fn-pm-ring-a', 40)}</defs>
-      <circle cx="60" cy="60" r="52" fill="none" stroke="currentColor" stroke-width="3"/><circle cx="60" cy="60" r="31" fill="none" stroke="currentColor" stroke-width="1.6"/>
-      <text font-size="10.5" font-weight="700" letter-spacing="1" fill="currentColor" font-family="DM Sans, sans-serif" textLength="246" lengthAdjust="spacing"><textPath href="#fn-pm-ring-a">${t.pm}</textPath></text>
-      <text x="60" y="56" text-anchor="middle" font-size="12" font-weight="700" fill="currentColor" font-family="DM Sans, sans-serif">2026</text>
-      <path d="M38 62h44" stroke="currentColor" stroke-width="1.4"/><text x="60" y="75" text-anchor="middle" font-size="9" fill="currentColor" font-family="DM Sans, sans-serif">✦ 41 ✦</text>
-      <g transform="translate(116 38)">${waves}</g></svg>
-    <svg class="fn-pm fn-pm-b" viewBox="0 0 120 120" aria-hidden="true"><defs>${ring('fn-pm-ring-b', 42)}</defs>
-      <circle cx="60" cy="60" r="54" fill="none" stroke="currentColor" stroke-width="2.4" stroke-dasharray="5 3"/><circle cx="60" cy="60" r="33" fill="none" stroke="currentColor" stroke-width="1.4"/>
-      <text font-size="11" font-weight="700" letter-spacing="1.4" fill="currentColor" font-family="DM Sans, sans-serif" textLength="258" lengthAdjust="spacing"><textPath href="#fn-pm-ring-b">PRIORITY ✦ PRIORITAIRE ✦ PRIORITARIA ✦ </textPath></text>
-      ${star(60, 60, 15, 'currentColor', .42)}</svg>
-    <svg class="fn-pm fn-pm-c" viewBox="0 0 170 62" aria-hidden="true"><rect x="3" y="3" width="164" height="56" rx="4" fill="none" stroke="currentColor" stroke-width="3.4"/><rect x="9" y="9" width="152" height="44" rx="2" fill="none" stroke="currentColor" stroke-width="1.2"/>
-      <text x="85" y="30" text-anchor="middle" font-size="18" font-weight="800" letter-spacing="1.5" fill="currentColor" font-family="DM Sans, sans-serif">${t.count[0]}</text>
-      <text x="85" y="46" text-anchor="middle" font-size="11" font-weight="700" letter-spacing="3" fill="currentColor" font-family="DM Sans, sans-serif">${t.count[1]}</text></svg></div>`;
-
-  // Lay the 41 stamps out in a loose, slightly overlapping grid that fits whatever shape the photo is
-  const layout = box => {
-    const w = box.clientWidth, h = box.clientHeight; if (!w || !h) return;
-    let best = { s: 0 };
-    for (let cols = 3; cols <= 14; cols++) {
-      const rows = Math.ceil(order.length / cols), s = Math.min(w / cols / 40, h / rows / 50);
-      if (s > best.s) best = { s, cols, rows };
-    }
-    const { s, cols, rows } = best, cw = w / cols, ch = h / rows, sw = 40 * s * 1.07, sh = 50 * s * 1.07;
-    box.querySelectorAll('.fn-st').forEach((el, i) => {
-      const r = Math.floor(i / cols), c = i % cols, inRow = r === rows - 1 ? order.length - r * cols : cols;
-      const offset = (cols - inRow) * cw / 2; // centre a short last row
-      el.style.width = sw + 'px'; el.style.height = sh + 'px';
-      el.style.left = (offset + c * cw + (cw - sw) / 2 + jitter[i][0] * cw * .22) + 'px';
-      el.style.top = (r * ch + (ch - sh) / 2 + jitter[i][1] * ch * .2) + 'px';
-    });
-  };
+    <div class="fn-pc-in">
+      <div class="fn-pc-msg"><p>${t.note.join(' ')}</p><p class="fn-pc-sign">Nicky x</p></div>
+      <div class="fn-pc-side">
+        <span class="fn-st fn-st-one">${stampSvg(here, order.indexOf(here))}</span>
+        <svg class="fn-pc-mark" viewBox="0 0 120 40" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 12c10-6 20 6 30 0s20-6 30 0 20 6 30 0 20-6 26 0"/><path d="M2 22c10-6 20 6 30 0s20-6 30 0 20 6 30 0 20-6 26 0"/><path d="M2 32c10-6 20 6 30 0s20-6 30 0 20 6 30 0 20-6 26 0"/></g></svg>
+        <div class="fn-pc-to">${t.to.map(l => `<p>${l}</p>`).join('')}</div>
+      </div>
+    </div>`;
 
   const run = () => {
     document.querySelectorAll('.fn-home-portrait, .fn-about-portrait, .postcard, .fn-vienna-hero-photo, .vn-portrait, .ba-photo').forEach(fig => {
@@ -442,14 +415,12 @@
         // Phones: no button; a tap turns the postcard over and back
         fig.addEventListener('click', e => { e.preventDefault(); fig.dataset.fnManual = '1'; fig.classList.toggle('fn-pc-flipped'); });
       } else wrap.append(btn);
-      const box = card.querySelector('.fn-pc-stamps');
-      new ResizeObserver(() => layout(box)).observe(box);
     });
   };
   document.readyState === 'complete' ? run() : document.addEventListener('DOMContentLoaded', run);
 })();
 
-/* Home and About: a postmark spins on the corner of the hero photo, and on the home page a trail of footsteps walks
+/* On the home page a trail of footsteps walks
    through the empty space under the intro, each step fading as the next appears (like the Marauder's Map).
    House rule: for travel motion, use footsteps rather than paper planes. */
 (() => {
@@ -460,16 +431,6 @@
   const run = () => {
     document.querySelectorAll('.fn-home-portrait, .fn-about-portrait, .postcard, .fn-vienna-hero-photo, .vn-portrait, .ba-photo').forEach(fig => {
       if (fig.dataset.fnStamp) return; fig.dataset.fnStamp = '1';
-      if (fig.matches('.fn-home-portrait, .fn-about-portrait')) {
-        const stamp = document.createElement('span'); stamp.className = 'fn-stamp'; stamp.setAttribute('aria-hidden', 'true');
-        const it = document.documentElement.lang === 'it';
-        const words = it ? 'FROLICKING NICKY ✦ DIARIO DI VIAGGIO ✦ ' : 'FROLICKING NICKY ✦ A TRAVEL JOURNAL ✦ ';
-        stamp.innerHTML = `<svg viewBox="0 0 120 120"><defs><path id="fn-stamp-ring" d="M60,60 m-43,0 a43,43 0 1,1 86,0 a43,43 0 1,1 -86,0"/></defs>
-          <circle cx="60" cy="60" r="56" fill="#E4F5E0" stroke="#86324A" stroke-width="2.5" stroke-dasharray="3 3"/><circle cx="60" cy="60" r="31" fill="none" stroke="#86324A" stroke-width="1.5"/>
-          <g class="fn-stamp-ring"><text font-size="9.4" font-weight="700" letter-spacing="0.9" textLength="266" lengthAdjust="spacing" fill="#86324A" font-family="DM Sans, sans-serif"><textPath href="#fn-stamp-ring">${words}</textPath></text></g>
-          <g fill="#86324A">${print(51, 70, -70, 'fn-stamp-step', 1.35)}${print(68, 52, -70, 'fn-stamp-step', 1.35)}</g></svg>`;
-        fig.append(stamp); // backface-hidden like the rest of the front, so it disappears when the postcard turns
-      }
     });
     const intro = document.querySelector('.fn-intro');
     if (intro && !intro.querySelector('.fn-steps')) {
