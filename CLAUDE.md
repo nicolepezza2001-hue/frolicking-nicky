@@ -24,14 +24,15 @@ Italian copies and the best-time-to-visit data.
 - Hero photos are taped down at the top corners with beige masking tape and
   simply appear, then stay still: no Polaroid develop or fade-in, no
   fluttering, floating or hovering up and down (Nicky didn't like those).
-- Turning a hero photo over (hover on desktop, a tap on phones) shows a simple
-  postcard back: a short handwritten note in wine ("…41 countries and counting"),
-  signed "Nicky x", one stamp for the page's country (Italy on home/About), a
-  wavy postmark and the address lines. Nicky found the old back with a stamp for
-  every country too busy, and the round "Frolicking Nicky · a travel journal"
-  badge on the home/About photo was removed too; don't bring either back. The
-  country list `order` and flags `F` in `motion.js` still drive the stamp; when
-  she visits a new country, update the "41" in both languages.
+- Turning a hero photo over (hover on desktop, a tap on phones) shows a solid cherry postcard
+  back: "Greetings from *<country>*" ("Saluti dal …" in Italian) with that country's stamp and a
+  postmark, then "41 countries and counting. Wish you were here." and "Nicky x". The country is
+  **where Nicky is right now**: the `NOW` setting in the postcard block of `motion.js`
+  (`stamp`, `en`, `it`; `stamp` must be a name in `order`/`F`). When she says she's moved,
+  change `NOW` (and fix the Italian preposition: dal/dalla/dall'/dai/dagli). Nicky found the
+  old 41-stamp back and the round "a travel journal" badge too busy; don't bring either back.
+  When she visits a new country, add it to `order` (with a flag in `F`) and update the "41"
+  in both languages.
 - Heading icons are fine-line, Art Nouveau-inspired illustrations (thin ink
   lines, whiplash curves) drawn on a 48×48 grid in the icon block of `motion.js`.
   **No arched frame around them** (Nicky thought it made them look like

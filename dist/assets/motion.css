@@ -334,14 +334,13 @@ h3 .fn-icon { width: 2em; height: 2em; margin-top: -1.06em; left: .3em; }
 .fn-door-walking .fn-steps { opacity: 0; }
 @media (prefers-reduced-motion: reduce) { .fn-door-walk { display: none; } }
 
-/* Simple postcard back: note on the left, one stamp, a wavy postmark and the address on the right */
-.fn-pc-back { color: #B30545; }
-.fn-pc-in { display: grid; grid-template-columns: 1.2fr 1fr; gap: 6cqmin; padding: 8cqmin 7cqmin; }
-.fn-pc-msg { align-self: center; }
-.fn-pc-msg p { margin: 0; font: 500 max(14px, 6.4cqmin)/1.2 'Caveat', cursive; color: #B30545; rotate: -1.5deg; }
-.fn-pc-msg .fn-pc-sign { margin-top: .7em; font-size: max(16px, 7.4cqmin); }
-.fn-pc-side { position: relative; display: flex; flex-direction: column; justify-content: space-between; padding-left: 6cqmin; border-left: 1px solid #b3054540; }
-.fn-st-one { position: relative; align-self: flex-end; width: max(44px, 21cqmin); aspect-ratio: 4 / 5; rotate: 3deg; }
-.fn-pc-mark { position: absolute; right: 9cqmin; top: 10cqmin; width: max(70px, 30cqmin); color: #b3054599; rotate: -8deg; }
-.fn-pc-to p { margin: 0; padding: .6em 0 .1em; border-bottom: 1px solid #b3054540; font: 500 max(11px, 4.6cqmin)/1 'Caveat', cursive; color: #4a4245; }
-@container (max-aspect-ratio: 1/1) { .fn-pc-in { grid-template-columns: 1fr; grid-template-rows: auto 1fr; } .fn-pc-side { order: -1; padding: 0 0 4cqmin; border: 0; border-bottom: 1px solid #b3054540; } .fn-pc-mark { top: 4cqmin; } .fn-pc-to { display: none; } }
+/* Postcard back: solid cherry, "Greetings from <country>" in the serif, that country's stamp with a postmark, and a signed note */
+html body .fn-pc-back { background: #B30545; color: #FDEBD8; }
+.fn-pc-in { display: flex; flex-direction: column; justify-content: space-between; padding: 9cqmin 8cqmin; }
+.fn-pc-top { position: relative; display: flex; justify-content: space-between; align-items: flex-start; gap: 4cqmin; }
+.fn-pc-from { margin: 0; font: 600 max(9px, 3.4cqmin)/1 'DM Sans', sans-serif; letter-spacing: .18em; text-transform: uppercase; color: #fdebd8cc; }
+.fn-pc-from span { display: block; margin-top: .45em; font: italic 600 max(30px, 13cqmin)/1 'Playfair Display', Georgia, serif; letter-spacing: -.02em; text-transform: none; color: #FDEBD8; }
+.fn-st-one { position: relative; flex: none; width: max(44px, 20cqmin); aspect-ratio: 4 / 5; rotate: 4deg; }
+.fn-pc-mark { position: absolute; right: 12cqmin; top: 12cqmin; width: max(70px, 30cqmin); color: #fdebd8b3; rotate: -8deg; pointer-events: none; }
+.fn-pc-msg p { margin: 0; font: 500 max(16px, 7cqmin)/1.15 'Caveat', cursive; color: #FDEBD8; rotate: -1.5deg; }
+.fn-pc-msg .fn-pc-sign { margin-top: .5em; font-size: max(18px, 8cqmin); }
