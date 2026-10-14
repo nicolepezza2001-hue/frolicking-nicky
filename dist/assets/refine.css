@@ -38,7 +38,7 @@ html body :is(.tip,.outing-note),html body.fn-vienna #itinerary .tip{box-shadow:
 /* Photos: hero, portraits, postcards and the map card lose the hard black block shadow */
 html body :is(.fn-vienna-hero-photo,.ba-hero-layout .ba-photo,.vn-portrait,.postcard,.fn-home-portrait,.fn-about-portrait){box-shadow:var(--fn-photo)}
 html body .fn-map-card{box-shadow:var(--fn-photo),inset 0 0 40px #a7884f26}
-html body .fn-pc-back{box-shadow:var(--fn-photo),inset 0 0 30px #a7884f33}
+html body .fn-pc-back{box-shadow:var(--fn-photo)}
 html body :is(.vn-album-photo,.jp-photo,.ba-scrap-photo,.fn-v-photo){box-shadow:var(--fn-photo);border-color:#00000012}
 
 /* Map links and small links: quieter */
