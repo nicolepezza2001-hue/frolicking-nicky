@@ -54,14 +54,14 @@
     /* 12 · Wrap the ↗ arrows so they can nudge */
     document.querySelectorAll('a, button').forEach(el => {
       for (const node of [...el.childNodes]) {
-        if (node.nodeType === 3 && node.data.includes('↗')) {
-          const parts = node.data.split('↗'), frag = document.createDocumentFragment();
+        if (node.nodeType === 3 && /\u2197/.test(node.data)) {
+          const parts = node.data.split(/\u2197\ufe0e?/), frag = document.createDocumentFragment();
           // Keep the space before the arrow inside the same text run, so spacing is unchanged even in flex links
           parts.forEach((part, i) => {
             if (i === parts.length - 1) { if (part) frag.append(part); return; }
             const gap = part.match(/\s*$/)[0], before = part.slice(0, part.length - gap.length);
             const wrap = document.createElement('span'); wrap.className = 'fn-arrow-run'; wrap.append(before + gap);
-            const s = document.createElement('span'); s.className = 'fn-arrow'; s.textContent = '↗'; wrap.append(s); frag.append(wrap);
+            const s = document.createElement('span'); s.className = 'fn-arrow'; s.textContent = '\u2197\ufe0e'; wrap.append(s); frag.append(wrap);
           });
           node.replaceWith(frag);
         }
