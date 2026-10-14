@@ -24,9 +24,10 @@ Italian copies and the best-time-to-visit data.
 - Hero photos are taped down at the top corners with beige masking tape and
   simply appear, then stay still: no Polaroid develop or fade-in, no
   fluttering, floating or hovering up and down (Nicky didn't like those).
-- Turning a hero photo over (hover on desktop, a tap on phones) shows a solid cherry postcard
-  back: "Greetings from *<country>*" ("Saluti dal …" in Italian) with that country's stamp and a
-  postmark, then "41 countries and counting. Wish you were here." and "Nicky x". The country is
+- Turning a hero photo over (hover on desktop, a tap on phones) shows a vintage "Greetings from"
+  postcard back (Nicky picked it from four designs): antique white with a fine outline,
+  "GREETINGS FROM" small, the country in big cherry italic letters, a thin rule, then
+  "41 countries and counting. / Wish you were here." and "Nicky x" in handwriting. No stamp. The country is
   **where Nicky is right now**: the `NOW` setting in the postcard block of `motion.js`
   (`stamp`, `en`, `it`; `stamp` must be a name in `order`/`F`). When she says she's moved,
   change `NOW` (and fix the Italian preposition: dal/dalla/dall'/dai/dagli). Nicky found the

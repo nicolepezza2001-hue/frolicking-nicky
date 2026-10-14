@@ -334,13 +334,11 @@ h3 .fn-icon { width: 2em; height: 2em; margin-top: -1.06em; left: .3em; }
 .fn-door-walking .fn-steps { opacity: 0; }
 @media (prefers-reduced-motion: reduce) { .fn-door-walk { display: none; } }
 
-/* Postcard back: solid cherry, "Greetings from <country>" in the serif, that country's stamp with a postmark, and a signed note */
-html body .fn-pc-back { background: #B30545; color: #FDEBD8; }
-.fn-pc-in { display: flex; flex-direction: column; justify-content: space-between; padding: 9cqmin 8cqmin; }
-.fn-pc-top { position: relative; display: flex; justify-content: space-between; align-items: flex-start; gap: 4cqmin; }
-.fn-pc-from { margin: 0; font: 600 max(9px, 3.4cqmin)/1 'DM Sans', sans-serif; letter-spacing: .18em; text-transform: uppercase; color: #fdebd8cc; }
-.fn-pc-from span { display: block; margin-top: .45em; font: italic 600 max(30px, 13cqmin)/1 'Playfair Display', Georgia, serif; letter-spacing: -.02em; text-transform: none; color: #FDEBD8; }
-.fn-st-one { position: relative; flex: none; width: max(44px, 20cqmin); aspect-ratio: 4 / 5; rotate: 4deg; }
-.fn-pc-mark { position: absolute; right: 12cqmin; top: 12cqmin; width: max(70px, 30cqmin); color: #fdebd8b3; rotate: -8deg; pointer-events: none; }
-.fn-pc-msg p { margin: 0; font: 500 max(16px, 7cqmin)/1.15 'Caveat', cursive; color: #FDEBD8; rotate: -1.5deg; }
-.fn-pc-msg .fn-pc-sign { margin-top: .5em; font-size: max(18px, 8cqmin); }
+/* Postcard back: vintage "Greetings from" card. Antique white, a fine outline, the country in big cherry letters, a note */
+html body .fn-pc-back { background: #FDEBD8; color: #030301; border: 1px solid #03030133; }
+.fn-pc-in { display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; gap: 5cqmin; padding: 10cqmin 8cqmin; }
+.fn-pc-from { margin: 0; font: 600 max(9px, 3.4cqmin)/1 'DM Sans', sans-serif; letter-spacing: .22em; text-transform: uppercase; color: #030301; }
+.fn-pc-from span { display: block; margin-top: .35em; font: italic 600 max(40px, 19cqmin)/1 'Playfair Display', Georgia, serif; letter-spacing: -.03em; text-transform: none; color: #B30545; -webkit-text-stroke: .6px #030301; }
+.fn-pc-rule { width: 70%; height: 1px; background: #03030133; }
+.fn-pc-msg p { margin: 0; font: 500 max(17px, 7cqmin)/1.15 'Caveat', cursive; color: #030301; }
+.fn-pc-msg .fn-pc-sign { margin-top: .45em; font-size: max(19px, 8.4cqmin); color: #B30545; rotate: -3deg; }
