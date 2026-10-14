@@ -34,7 +34,8 @@ Italian copies and the best-time-to-visit data.
   old 41-stamp back and the round "a travel journal" badge too busy; don't bring either back.
   When she visits a new country, add it to `order` (with a flag in `F`) and update the "41"
   in both languages.
-- Heading icons are fine-line, Art Nouveau-inspired illustrations (thin ink
+- Heading icons are one fixed size (34px, 26px on h3) with a clear gap after the words,
+  whatever the heading size (set in `refine.css`). They are fine-line, Art Nouveau-inspired illustrations (thin ink
   lines, whiplash curves) drawn on a 48×48 grid in the icon block of `motion.js`.
   **No arched frame around them** (Nicky thought it made them look like
   gravestones), and each has a playful animated extra: a Disney-style arc of
@@ -66,7 +67,9 @@ Italian copies and the best-time-to-visit data.
 ## Where things live
 
 - **Where I’ve been map** (home and My travels, EN + IT): `dist/assets/world-map.svg` and
-  `world-map.it.svg`, generated from Natural Earth data. Inked countries carry
+  `world-map.it.svg`, generated from Natural Earth data. Under it, a "See all 41 countries" /
+  "Vedi tutti i 41 paesi" drop-down lists every country by continent (written into the four pages;
+  regenerate with the country table when she adds one; countries with an itinerary are links). Inked countries carry
   `data-x`/`data-y` where the footsteps stop; the walker is in `motion.js`.
 - **Rough budget and handwritten margin notes** (itinerary pages):
   `dist/assets/journal.js`. Notes attach to a stop by its checkbox id. The

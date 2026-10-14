@@ -68,3 +68,27 @@ html body.fn-vienna #itinerary :is(.day-head,.period){background:transparent}
 html body .fn-header{background:#FDEBD8}
 /* The back of a turned destination card keeps its solid cherry fill (text on it is cream) */
 html body .fn-card .fn-card-back{background:var(--fn-red);color:#FDEBD8;border-color:var(--fn-red)}
+
+/* Heading icons: one size whatever the heading size, with a clear gap after the words */
+html body .fn-icon{width:34px;height:34px;margin-top:-17px;left:14px}
+html body h3 .fn-icon{width:26px;height:26px;margin-top:-13px;left:12px}
+
+/* "See all 41 countries" list under the map */
+html body .fn-countries{margin:18px 0 0}
+html body .fn-countries summary{display:inline-flex;align-items:center;gap:10px;cursor:pointer;list-style:none;padding:9px 16px;border:1px solid var(--fn-red);border-radius:99px;color:var(--fn-red);font:500 .9rem 'DM Sans',sans-serif}
+html body .fn-countries summary::-webkit-details-marker{display:none}
+html body .fn-countries summary::after{content:"";width:7px;height:7px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;rotate:45deg;translate:0 -2px;transition:rotate .25s}
+html body .fn-countries[open] summary::after{rotate:225deg;translate:0 2px}
+html body .fn-countries-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:22px 34px;margin-top:22px;padding:24px 26px;border:1px solid var(--fn-hair);border-radius:var(--fn-r)}
+html body .fn-countries-grid>div:first-child ul{columns:3;column-gap:24px}
+html body .fn-countries-grid>div:nth-child(2) ul{columns:1}
+html body .fn-countries-h{margin:0 0 10px;font:600 .75rem 'DM Sans',sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--fn-red)}
+html body .fn-countries-h span{color:var(--fn-soft);font-weight:500;margin-left:4px}
+html body .fn-countries ul{margin:0;padding:0;list-style:none}
+html body .fn-countries li{padding:3px 0;font-size:.95rem;break-inside:avoid}
+html body .fn-countries li a{color:inherit;text-decoration:none;border-bottom:1px solid var(--fn-red)}
+html body .fn-countries-note{margin:10px 0 0;font-size:.8rem;color:var(--fn-soft)}
+html body .fn-countries-grid>div:nth-child(n+3){grid-column:3}
+html body .fn-countries-grid>div:nth-child(-n+2){grid-row:1 / span 4}
+html body .fn-countries-grid{align-content:start;grid-auto-rows:min-content}
+@media(max-width:760px){html body .fn-countries-grid>div:nth-child(-n+2){grid-row:auto}html body .fn-countries-grid{grid-template-columns:1fr 1fr;padding:18px}html body .fn-countries-grid>div:first-child{grid-column:1/-1}html body .fn-countries-grid>div:first-child ul{columns:2}html body .fn-countries-grid>div:nth-child(n+3){grid-column:auto}}
