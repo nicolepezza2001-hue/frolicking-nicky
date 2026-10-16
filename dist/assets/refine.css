@@ -95,3 +95,27 @@ html body .fn-countries-grid{align-content:start;grid-auto-rows:min-content}
 
 /* Map: country borders keep the same thin line when zoomed in */
 html body .fn-map-svg :is(path,circle){vector-effect:non-scaling-stroke}
+
+/* Mexico pages: each stop group splits into shorter cards (heading, one card per part of the day, note),
+   with up to two tilted photos beside a card, alternating sides; photos sit above the card on phones */
+html body.fn-mexico .outing.fn-split{border:0;background:none;box-shadow:none;padding:0;margin:0 0 56px}
+html body.fn-mexico .fn-split>.outing-heading,html body.fn-mexico .fn-split .task-group,html body.fn-mexico .fn-split>.outing-note{border:1px solid var(--fn-hair);border-radius:var(--fn-r);background:transparent;margin:0 0 22px}
+html body.fn-mexico .fn-split>.outing-heading{border-top:3px solid var(--accent,var(--fn-red))}
+html body.fn-mexico .fn-split .task-group{padding:22px 26px}
+html body.fn-mexico .fn-split>.outing-note{border:0;border-left:2px solid var(--fn-red);border-radius:0 10px 10px 0;margin:0 0 0 0}
+html body.fn-mexico .fn-split-body{display:block;padding:0;border:0}
+html body.fn-mexico .fn-split-body>.task-group{max-width:660px}
+html body.fn-mexico .fn-v-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:36px;align-items:center;margin:0 0 22px}
+html body.fn-mexico .fn-v-row>.task-group{grid-column:2;grid-row:1;margin:0}
+html body.fn-mexico .fn-v-side{grid-column:1;grid-row:1;min-width:0;display:flex;gap:16px;align-items:flex-start;justify-content:center;padding:10px}
+html body.fn-mexico .fn-v-rev>.task-group{grid-column:1}html body.fn-mexico .fn-v-rev .fn-v-side{grid-column:2}
+html body.fn-mexico .fn-v-photo{flex:1 1 0;min-width:0;margin:0;padding:10px 10px 24px;background:#fdebd8;border:1px solid #00000012;box-shadow:var(--fn-photo);transform:rotate(-2deg)}
+html body.fn-mexico .fn-v-photo:only-child{max-width:360px}
+html body.fn-mexico .fn-v-photo:nth-child(2){transform:rotate(2deg);margin-top:36px}
+html body.fn-mexico .fn-v-photo a{display:block}
+html body.fn-mexico .fn-v-photo img{display:block;width:100%;height:auto}
+html body.fn-mexico .fn-v-photo figcaption{font:400 .7rem/1.35 'DM Sans',sans-serif;color:#303030;margin-top:8px}
+html body.fn-mexico .fn-v-photo figcaption a{color:inherit}
+@media(max-width:760px){html body.fn-mexico .fn-v-row{display:flex;flex-direction:column;gap:0}html body.fn-mexico .fn-v-side{width:100%;box-sizing:border-box;padding:0 6px;gap:12px}html body.fn-mexico .fn-v-photo{padding:6px 6px 16px}html body.fn-mexico .fn-v-photo:only-child{max-width:78%}html body.fn-mexico .fn-v-photo:nth-child(2){margin-top:22px}html body.fn-mexico .fn-v-row>.task-group{width:100%;box-sizing:border-box;margin-top:-10px;position:relative;z-index:1}html body.fn-mexico .fn-split .task-group{padding:20px 18px}}
+/* Saturday day-trip headings keep their solid cherry fill with cream text */
+html body.fn-mexico .weekend.fn-split>.outing-heading{background:var(--fn-red);color:#FDEBD8;border-color:var(--fn-red)}
