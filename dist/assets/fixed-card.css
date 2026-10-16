@@ -1,0 +1,4 @@
+/* Fixed destination cards keep the normal journal appearance. */
+.fn-card-fixed .fn-card-inner{transform:none!important;transition:none}
+.fn-card-fixed .fn-card-front{visibility:visible!important;pointer-events:auto!important}
+.fn-card-fixed .fn-photo::after{display:none!important}
