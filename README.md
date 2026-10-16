@@ -80,8 +80,8 @@ itinerary changes.
 
 ## Oaxaca
 
-`/mexico/oaxaca` (and `/it/messico/oaxaca`) copies the Japan page structure: chapters
-(`.jp-city`), day cards with up to two photos beside them (`.jp-day-album`), and
-photo-less days grouped in `.jp-day-cards-only`. Ticks use `assets/oaxaca.js`
-(key `frolicking-nicky-oaxaca-v1`). Photos are credited Wikimedia Commons stock
-until Nicky sends her own; swap them in and drop the captions.
+`/mexico/oaxaca` (and `/it/messico/oaxaca`) uses the Mexico City format (Nicky's choice):
+numbered outing groups, no dates or day numbers, ★ day trips, "If we have time" and
+"Just a little planning". Data lives in `assets/oaxaca.js` / `oaxaca.it.js` (key
+`frolicking-nicky-oaxaca-v2`); map links in the `oaxacaMapStops` block of `maps.js`.
+Photos are credited Wikimedia Commons stock until Nicky sends her own.

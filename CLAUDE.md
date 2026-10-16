@@ -104,7 +104,8 @@ paper background, Playfair titles, cherry kicker labels, a cherry-framed hero ph
 with tape, pill jump links and soft rounded cards. Vienna and the Mexico pages
 keep their own markup but are restyled by the "One itinerary look" block in
 `shared.css` (scoped to `body.fn-vienna` / `body.fn-mexico`). New itineraries
-should copy the Vietnam/Japan page structure.
+should copy the Vietnam/Japan page structure, except Mexico trips, which copy the Mexico City
+format (grouped outings, no dates or day numbers in headings; Nicky dislikes dated day plans).
 
 ## Offline
 
