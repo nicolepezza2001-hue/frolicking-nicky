@@ -92,3 +92,6 @@ html body .fn-countries-grid>div:nth-child(n+3){grid-column:3}
 html body .fn-countries-grid>div:nth-child(-n+2){grid-row:1 / span 4}
 html body .fn-countries-grid{align-content:start;grid-auto-rows:min-content}
 @media(max-width:760px){html body .fn-countries-grid>div:nth-child(-n+2){grid-row:auto}html body .fn-countries-grid{grid-template-columns:1fr 1fr;padding:18px}html body .fn-countries-grid>div:first-child{grid-column:1/-1}html body .fn-countries-grid>div:first-child ul{columns:2}html body .fn-countries-grid>div:nth-child(n+3){grid-column:auto}}
+
+/* Map: country borders keep the same thin line when zoomed in */
+html body .fn-map-svg :is(path,circle){vector-effect:non-scaling-stroke}

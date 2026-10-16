@@ -133,7 +133,8 @@ turn on click or tap on every device, the hero postcard on tap on phones and
 hover on desktop, with no Turn over or Quick look buttons on phones (a dog-eared corner on each card photo, showing the wine back, hints that cards turn). Clicking
 anywhere on a turned card opens its itinerary (no Open the itinerary button);
 the map fits the screen with number tiles and trip links, and can be pinched,
-dragged and zoomed with + / − (`zoomable()` in `motion.js`). Nicky didn't want
+dragged and zoomed with + / − (`zoomable()` in `motion.js`); when zoomed, pins, names, footprints
+and tiny-country dots are counter-scaled and borders use non-scaling strokes, so only the countries grow. Nicky didn't want
 a separate Europe close-up, the map legend or the trip buttons under the map on phones. On touch screens the turned-away side is hidden with `visibility` because iPhone Safari can show it mirrored.
 
 ## Working with Nicky

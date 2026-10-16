@@ -518,6 +518,11 @@
       y = Math.min(Math.max(y, home[1]), home[1] + home[3] - h);
       svg.setAttribute('viewBox', `${x.toFixed(1)} ${y.toFixed(1)} ${w.toFixed(1)} ${h.toFixed(1)}`);
       const z = home[2] / w; section.classList.toggle('fn-map-zoomed', z > 1.05); section.classList.toggle('fn-map-close', z > 2.1);
+      // Pins, names, footprints and the dots for tiny countries stay the same size on screen however far you zoom
+      svg.dataset.z = z; const k = (1 / z).toFixed(4);
+      svg.querySelectorAll('.fn-map-pin > g').forEach(g => { g.dataset.t ??= g.getAttribute('transform'); g.setAttribute('transform', `${g.dataset.t} scale(${k})`); });
+      svg.querySelectorAll('circle.fn-map-v').forEach(c => { c.dataset.r ??= c.getAttribute('r'); c.setAttribute('r', (c.dataset.r / Math.pow(z, .75)).toFixed(2)); });
+      svg.querySelectorAll('.fn-map-tag').forEach(tag => { if (tag.dataset.x) tag.setAttribute('transform', `translate(${tag.dataset.x} ${+tag.dataset.y - 4 / z}) scale(${k})`); });
       svg.style.touchAction = z > 1.05 ? 'none' : 'pan-y';
     };
     const toMap = (cx, cy) => { const r = svg.getBoundingClientRect(); return [x + (cx - r.left) / r.width * w, y + (cy - r.top) / r.height * h, r]; };
@@ -564,7 +569,7 @@
     };
     const print = (x, y, ang) => {
       const g = document.createElementNS(ns, 'g');
-      g.setAttribute('transform', `translate(${x.toFixed(1)} ${y.toFixed(1)}) rotate(${ang.toFixed(1)}) scale(.62)`);
+      g.setAttribute('transform', `translate(${x.toFixed(1)} ${y.toFixed(1)}) rotate(${ang.toFixed(1)}) scale(${(.62 / (+svg.dataset.z || 1)).toFixed(4)})`);
       g.innerHTML = '<ellipse cx="2.6" cy="0" rx="4.6" ry="2.6"/><ellipse cx="-5" cy="0" rx="2.4" ry="2.1"/>';
       layer.insertBefore(g, tag);
       g.animate([{ opacity: 0 }, { opacity: .85, offset: .06 }, { opacity: 0 }], { duration: 2600, easing: 'ease-out' }).onfinish = () => g.remove();
@@ -581,7 +586,7 @@
         const tx = dx + nx * bend * 4 * (1 - 2 * t), ty = dy + ny * bend * 4 * (1 - 2 * t), ang = Math.atan2(ty, tx);
         const side = i % 2 ? 2.4 : -2.4;
         print(x - Math.sin(ang) * side, y + Math.cos(ang) * side, ang * 180 / Math.PI);
-        if (i === n) { label(name); tag.setAttribute('transform', `translate(${x2} ${y2 - 4})`); tag.style.opacity = 1; }
+        if (i === n) { label(name); const z = +svg.dataset.z || 1; tag.dataset.x = x2; tag.dataset.y = y2; tag.setAttribute('transform', `translate(${x2} ${y2 - 4 / z}) scale(${(1 / z).toFixed(4)})`); tag.style.opacity = 1; }
       }, i * 150);
       at = next;
       timer = setTimeout(hop, n * 150 + 1400);
