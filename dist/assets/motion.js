@@ -600,7 +600,7 @@
 /* Destination cards: the Quick look button flips a card for touch and keyboard users (hover flips it with a mouse) */
 // A click or tap on a card turns it over (the title and Open the itinerary links on the front still open the page)
 (() => {
-  const run = () => document.querySelectorAll('.fn-card').forEach(card => card.addEventListener('click', e => {
+  const run = () => document.querySelectorAll('.fn-card:not(.fn-card-fixed)').forEach(card => card.addEventListener('click', e => {
     if (e.target.closest('.fn-flip, .fn-card-back') || (e.target.closest('a') && !e.target.closest('.fn-photo'))) return;
     e.preventDefault(); card.classList.toggle('fn-flipped');
   }));
