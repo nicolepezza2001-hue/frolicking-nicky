@@ -245,9 +245,55 @@
       `<g class="fn-i-sk fn-i-sk-legr"><path d="M25.6 29.8l1 5.2.8 5.4h2.4"/></g>` +
       `<g class="fn-i-sk-bag"><path d="M20.4 30.6c-4 2-6.2 5.6-5.2 8.6.8 2.2 4.6 2.4 8.8 2.4s8-.2 8.8-2.4c1-3-1.2-6.6-5.2-8.6"/><path d="M20.4 30.6c1.6.9 5.6.9 7.2 0"/><path d="M21.6 30.4c-1.2-1.4-.8-3 .4-3.4M26.4 30.4c1.2-1.4.8-3-.4-3.4"/><path d="M21.2 36.4h5.6M21.2 36.4c-.9-.9-.2-2 .6-1.2M21.2 36.4c-.9.9-.2 2 .6 1.2M26.8 36.4c.9-.9.2-2-.6-1.2M26.8 36.4c.9.9.2 2-.6 1.2" stroke-width=".9"/></g>` +
       `<path d="M10 42.2h28" opacity=".5"/>${star(12.6, 14, 1.6, 'fn-i-sk-pop', 0)}${star(36, 22, 1.3, 'fn-i-sk-pop', .2)}`, 'fn-i-skeleton'),
+    // Guanajuato day plan: a mummy sits up in its box, waves, and lies back down
+    mummy: g(`<path d="M8 31h32l-2 9H10z"/><path d="M8 31l2-2.6h28L40 31" opacity=".7"/><path d="M14 34.4h20M15 37h18" opacity=".45" stroke-width="1"/>` +
+      `<g class="fn-i-mum"><path d="M27.4 30.6v-9.4c0-1.8 1.2-3 2.6-3s2.6 1.2 2.6 3v9.4"/><path d="M27.4 22.4l5.2-1.4M27.4 25.4l5.2-1.6M27.4 28.4l5.2-1.4" stroke-width=".9" opacity=".7"/>` +
+      `<path d="M30 10.8c-2 0-3.4 1.6-3.4 3.6s1.4 3.6 3.4 3.6 3.4-1.6 3.4-3.6-1.4-3.6-3.4-3.6z"/><path d="M26.8 13l6.6-1.2M26.8 16.4l6.6-1.2" stroke-width=".9" opacity=".7"/><circle cx="28.8" cy="14.6" r=".7" fill="currentColor" stroke="none"/><circle cx="31.4" cy="14.2" r=".7" fill="currentColor" stroke="none"/>` +
+      `<g class="fn-i-mum-arm"><path d="M32.4 21.2l3.4-2.8 1.2-4"/><path d="M37 14.4l-.2-1.4M37 14.4l1-.9" stroke-width=".9"/><path d="M34.6 18.6l1.6 1" stroke-width=".9" opacity=".7"/></g></g>` +
+      `${star(16, 16, 1.8, 'fn-i-mum-pop', 0)}${star(21, 11, 1.2, 'fn-i-mum-pop', .2)}`, 'fn-i-mummy', false),
+    // Getting there & back: a little bus rolls along a winding road, puffing
+    bus: g(`<g class="fn-i-busbody"><path d="M10.6 31.4V18.6c0-1.6 1.2-2.8 2.8-2.8h20.4c2.6 0 4.4 1.8 5 4.4l1.6 6.6v4.6z"/><path d="M13.6 19h5.4v5h-5.4zM21.2 19h5.4v5h-5.4zM28.8 19h5.4l1.2 5h-6.6z" stroke-width="1"/><path d="M10.6 27.2h29.6" opacity=".6"/><path d="M38.6 28.6h1.6" stroke-width="1.6"/><path d="M14 14.2h16" opacity=".5"/></g>` +
+      `<g class="fn-i-wheel"><circle cx="16.4" cy="31.6" r="2.8"/><path d="M16.4 29.2v4.8M14 31.6h4.8" stroke-width=".8"/></g><g class="fn-i-wheel"><circle cx="33" cy="31.6" r="2.8"/><path d="M33 29.2v4.8M30.6 31.6h4.8" stroke-width=".8"/></g>` +
+      `<path class="fn-i-dash" d="M4 36.6c6 0 8 1.6 14 1.6s10-1.6 16-1.6 8 1.4 10 1.4" stroke-dasharray="2 2" opacity=".7"/><path d="M6 41.4c5-1.2 10-1.2 15 0" opacity=".45"/>` +
+      `<g class="fn-i-puff"><circle cx="7.4" cy="29.6" r="1.3"/><circle cx="5" cy="27.6" r=".9"/></g>`, 'fn-i-bus', false),
+    // Choose one day trip: a signpost's arrow spins round and stops on one
+    signpost: g(`<path d="M24 10v31M20 41h8"/><path d="M14 41.6c3-1 6-1 9 .4" opacity=".5"/>` +
+      `<g class="fn-i-sign"><path d="M24 12.6h10.6l3 2.6-3 2.6H24z"/><path d="M26.6 15.2h6" stroke-width=".9" opacity=".6"/></g>` +
+      `<path d="M24 20.6H13.4l-3 2.6 3 2.6H24z"/><path d="M15.4 23.2h6" stroke-width=".9" opacity=".6"/>` +
+      `<path d="M24 28.6h9l2.6 2.4-2.6 2.4h-9z" opacity=".8"/><path d="M24 9c-.8-1.6.2-3 1.6-2.6"/>` +
+      `${star(39.6, 9, 1.8, 'fn-i-sign-pop', 0)}${star(36, 6, 1.1, 'fn-i-sign-pop', .15)}`, 'fn-i-signpost', false),
+    // Centro & Santo Domingo: the church front, with both tower bells ringing
+    church: g(`<path d="M17 40V22.4h14V40M17 22.4c1.8-3.4 4.2-5.2 7-5.2s5.2 1.8 7 5.2"/><path d="M24 17.2v-3M22.8 15.2h2.4" stroke-width="1"/><path d="M21.2 40v-6.2a2.8 2.8 0 0 1 5.6 0V40"/><path d="M20.4 26.6h7.2" opacity=".6"/><circle cx="24" cy="29.6" r="1.2" opacity=".7"/>` +
+      `<path d="M9.6 40V18.6h7.4V40M31 40V18.6h7.4V40"/><path d="M9.6 18.6c0-2.6 1.6-4.4 3.7-4.4s3.7 1.8 3.7 4.4M31 18.6c0-2.6 1.6-4.4 3.7-4.4s3.7 1.8 3.7 4.4"/><path d="M13.3 14.2v-3M12.2 12.2h2.2M34.7 14.2v-3M33.6 12.2h2.2" stroke-width="1"/>` +
+      `<path d="M11.4 26.6v-3.4c0-1.2.8-2 1.9-2s1.9.8 1.9 2v3.4M32.8 26.6v-3.4c0-1.2.8-2 1.9-2s1.9.8 1.9 2v3.4" opacity=".7"/>` +
+      `<g class="fn-i-ring"><path d="M12.1 25.6c0-1.8.5-2.8 1.2-2.8s1.2 1 1.2 2.8z" fill="currentColor" fill-opacity=".35"/></g><g class="fn-i-ring" style="animation-delay:-1.2s"><path d="M33.5 25.6c0-1.8.5-2.8 1.2-2.8s1.2 1 1.2 2.8z" fill="currentColor" fill-opacity=".35"/></g>` +
+      `<path d="M7 40h34"/><path class="fn-i-ding" d="M6.6 20.8c-1.4 1.4-1.4 3.6 0 5M41.4 20.8c1.4 1.4 1.4 3.6 0 5" stroke-width="1"/>`, 'fn-i-church', false),
+    // Markets & Jalatlaco: a basket of chapulines, and one hops out and back in (with a lime wedge)
+    chapulines: g(`<path d="M10 27.4h24"/><path d="M11 27.4c.8 7.4 5.4 11.6 11 11.6s10.2-4.2 11-11.6"/><path d="M12.4 31.4h19.2M14.2 35h15.6" opacity=".5" stroke-width="1"/><path d="M15.4 27.6l1.4 10.6M22 27.6V39M28.6 27.6l-1.4 10.6" opacity=".4" stroke-width=".9"/><path d="M18 41.6h8" opacity=".6"/>` +
+      `<path d="M14 26.6c1-1.4 2.6-1.4 3.4 0M20.6 26.4c1.2-1.2 2.6-1 3.2.2M27 26.6c1-1.2 2.4-1.2 3 0" stroke-width="1" opacity=".75"/>` +
+      `<g class="fn-i-hopper"><path d="M20.6 24.4c1.6-.8 4-.8 5.4 0-1.4.8-3.8.8-5.4 0z"/><path d="M23.4 24.2l-1.8-2.6-1.2 3M26 24.4l1.6-2.4" stroke-width=".9"/><path d="M20.6 24.4l-1.6-1.6M20.6 24.4l-1.8-.4" stroke-width=".7"/></g>` +
+      `<path d="M36 34.4a4.6 4.6 0 0 0 7.4-4.6z"/><path d="M38.2 33.4l1.4-2.2M40.2 33.6l.6-2.4" stroke-width=".8" opacity=".7"/>`, 'fn-i-chapulines', false),
+    // Hierve el Agua: the petrified waterfall, a bubbling pool, and a swimmer bobbing up
+    hierve: g(`<path d="M6 12.6c4-1.6 8-1.4 11.6.4v6"/><path d="M8 13c-.4 5 .8 9.4-.6 14.6M11.4 12.6c.4 6-.6 11.2.6 17.6M14.8 13.2c-.6 4.6.6 8.4-.4 12.8M17.6 19c.4 2.4 0 4.6.6 6.6" stroke-width="1"/><path d="M6 29.6c2.4-.8 4.6.4 7-.6" opacity=".6"/>` +
+      `<path d="M18.6 31.4h24v8.6h-24z"/><path d="M21 35c2-1.2 4-1.2 6 0s4 1.2 6 0 4-1.2 6 0" opacity=".55" stroke-width="1"/>` +
+      `<g class="fn-i-swim"><circle cx="30.6" cy="30" r="1.8"/><path d="M33.2 30.4c1.2-1.2 2-2.8 2.2-4.4M35.4 26l.8-.8" stroke-width="1"/></g>` +
+      [[22.4, 0], [26.6, .7], [38.4, 1.4]].map(([x, d]) => `<circle class="fn-i-bubble" style="--d:${d}s" cx="${x}" cy="31" r=".9" stroke-width=".9"/>`).join('') +
+      `<path d="M5 40h38" opacity=".7"/>${star(38, 12, 1.8, 'fn-i-twinkle', 0)}`, 'fn-i-hierve', false),
+    // Tlacolula & Teotitlán: a loom weaves a Zapotec zigzag rug row by row, shuttle going back and forth
+    loom: g(`<path d="M11 8.4h26M11 39.6h26M12.4 8.4v31.2M35.6 8.4v31.2"/><path d="M9.6 8.4h2.8M35.6 8.4h2.8M9.6 39.6h2.8M35.6 39.6h2.8" stroke-width="1.8"/>` +
+      `<path d="M16 8.4v31.2M19.6 8.4v31.2M23.2 8.4v31.2M26.8 8.4v31.2M30.4 8.4v31.2" opacity=".35" stroke-width=".8"/>` +
+      [37.4, 34.2, 31, 27.8, 24.6, 21.4].map((y, i) => `<path class="fn-i-weave" style="--d:${(i * .55).toFixed(2)}s" d="${i % 2 ? `M14 ${y}l2.4-2 2.4 2 2.4-2 2.4 2 2.4-2 2.4 2 2.4-2 2.4 2` : `M14 ${y - 2}l2.4 2 2.4-2 2.4 2 2.4-2 2.4 2 2.4-2 2.4 2 2.4-2`}" stroke-width="1.1"/>`).join('') +
+      `<g class="fn-i-shuttle"><path d="M13.4 17.6h21.2" opacity=".5" stroke-width=".8"/><path d="M15 17.6c1.4-1.4 4.4-1.4 5.8 0-1.4 1.4-4.4 1.4-5.8 0z" fill="currentColor" fill-opacity=".3"/></g>`, 'fn-i-loom', false),
   };
   const rules = [
     [/rough budget|budget indicativo/i, 'piggy'],
+    [/^(one thing at a time|una cosa alla volta)$/i, 'mummy'],
+    [/^(getting there & back|come arrivare e tornare)$/i, 'bus'],
+    [/^(choose one day trip|una gita a scelta)$/i, 'signpost'],
+    [/santo domingo/i, 'church'],
+    [/jalatlaco/i, 'chapulines'],
+    [/hierve el agua/i, 'hierve'],
+    [/tlacolula/i, 'loom'],
     [/día de muertos/i, 'skeleton'],
     [/phong nha/i, 'cave'],
     [/juárez, roma/i, 'taco'],
