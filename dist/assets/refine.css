@@ -120,7 +120,7 @@ html body.fn-mexico .fn-v-photo figcaption a{color:inherit}
 /* Saturday day-trip headings keep their solid cherry fill with cream text */
 html body.fn-mexico .weekend.fn-split>.outing-heading{background:var(--fn-red);color:#FDEBD8;border-color:var(--fn-red)}
 
-/* Guanajuato and Oaxaca: bigger heading icons (60px) and a little icon after every stop title (Nicky's choice) */
-html body.fn-guanajuato h2 .fn-icon,html body.fn-guanajuato h3 .fn-icon,html body.fn-oaxaca h2 .fn-icon,html body.fn-oaxaca h3 .fn-icon{width:60px;height:60px;margin-top:-30px;left:14px}
+/* Every page: 60px heading icons and a little icon after every stop title (Nicky's choice) */
+html body h1 .fn-icon,html body h2 .fn-icon,html body h3 .fn-icon{width:60px;height:60px;margin-top:-30px;left:14px}
 html body .fn-stop-icon{display:inline-block;vertical-align:middle;margin:-6px 0 -6px 8px;line-height:0}
 html body .fn-stop-icon .fn-icon{position:static;display:block;width:36px;height:36px;margin:0;left:auto}

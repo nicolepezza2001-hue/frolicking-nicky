@@ -331,11 +331,13 @@
     [/^(morning|mattina)$/i, 'sun'], [/^(afternoon|pomeriggio)$/i, 'cup'], [/^(evening|sera)$/i, 'moon']
   ];
   const add = () => document.querySelectorAll('h1, h2, h3').forEach(h => {
-    if (h.querySelector('.fn-icon') || h.closest('.fn-header, dialog, .fn-season')) return;
+    if (h.querySelector('.fn-icon') || h.closest('.fn-header, dialog, .fn-season, .fn-card')) return;
     const text = h.textContent.trim().replace(/\s+/g, ' ');
     if (h.tagName === 'H1' && !/^(my travels|i miei viaggi)$/i.test(text)) return;
     const rule = rules.find(([re]) => re.test(text));
-    if (rule) place(h, I[rule[1]]);
+    if (rule) return place(h, I[rule[1]]);
+    // Nicky wants icons everywhere: any other heading on a page gets one by keyword (small-caps labels stay plain)
+    if (h.closest('main') && text !== text.toUpperCase() && !/^(start fresh|ricominciare)/i.test(text)) place(h, I[guess(text)]);
   });
   // Icons must never move the text: if one would push a heading onto an extra line,
   // it hangs in the space after the text instead, and is hidden if there is no room.
@@ -367,19 +369,49 @@
     alban: 'pyramid', arrazola: 'sparkle', tule: 'tree', mitla: 'pyramid', palenque: 'agave', hierve: 'hierve', tlacolula: 'chapulines',
     barbacoa: 'taco', teotitlan: 'loom', tilcajete: 'sparkle', temazcal: 'springs', tejate: 'cup', chapulines: 'chapulines'
   };
+  // Keyword icons for every other stop and heading on the site (first match wins; a map pin if nothing fits)
+  const GUESS = [
+    [/cemetery|panteón|cimitero/i, 'skeleton'], [/cave|grotta/i, 'cave'], [/lantern|lanterne/i, 'lantern'],
+    [/hot springs|gruta|spa\b|temazcal|onsen|terme/i, 'springs'], [/kimono|yukata|tea ceremony|cerimonia del tè/i, 'blossom'],
+    [/library|biblioteca|bibliothek/i, 'books'], [/frida|casa azul|klimt/i, 'palette'],
+    [/cooking|cucina|sazón|class\b|corso/i, 'whisk'],
+    [/bakery|panader|rosetta|churrer|moro\b|kaiserschmarrn|cake|wagashi|higashiya|bread|pane\b|torta/i, 'bread'],
+    [/coffee|café|cafe\b|caffè|espresso|roast|kayaba|teahouse|matcha|tsujiri|\btea\b|lavanda|ki’bok|kibok|geek/i, 'cup'],
+    [/wine|vino|viñedo|vineyard|bodega|heuriger|sake|pistilo|palomilla|\bbar\b|once mil|la 89|trompería|rooftop|drink|mezcal|pub\b/i, 'wine'],
+    [/market|mercado|mercato|tianguis|nishiki|kuromon|tsukiji|naschmarkt|karmeliter|flea|ben thanh|maguro mart|artesan/i, 'market'],
+    [/shopping|shinsaibashi|mariahilfer|amerikamura|ginza shop/i, 'piggy'],
+    [/ruins|my son|teotihuac|avenue of the dead|cañada|pyramid|piramide|templo mayor/i, 'pyramid'],
+    [/castle|castello|palace|palazzo|palacio|hofburg|schönbrunn|belvedere|himeji|nijo|imperial|independence|reforma/i, 'castle'],
+    [/shrine|temple|tempio|templo|pagoda|-ji\b|dera\b|tenmangu|sanjusangendo|byodo|kurama|kifune|nezu|akagi|sanzen|literature|parroquia|cathedral|cattedrale|church|chiesa|kirche|santuario|atotonilco|stephen/i, 'church'],
+    [/museum|museo|gallery|albertina|secession|leopold|kunst|bellas artes|teamlab|war remnants|quartier/i, 'frame'],
+    [/bamboo|tule|grove/i, 'tree'],
+    [/mount|monte|hike|takao|fuji|atago|kahlenberg|viewpoint|mirador|hang mua|marble mountains|castle terraces/i, 'mountain'],
+    [/sky|tenbou|sunshine|umeda|sunset|tramonto/i, 'sun'],
+    [/river|lake|danube|canal|sumida|boat|kayak|cruise|trajinera|xochimilco|snorkel|island|presa|beach|ha long|an bang|seaside|odaiba|fiume|lago/i, 'boat'],
+    [/park|parco|garden|giardino|jardín|gyoen|bosque|koko-en|alameda|yoyogi|ueno|quetzal|prater|philosopher|centenario|charco|ohara|nara/i, 'flower'],
+    [/puppet|kabuki|opera|concert|theatre|teatro|show/i, 'sparkle'],
+    [/horse|cavall|zipline|aventura|riesenrad|gundam|wagner|hundertwasser|alebrije|statue/i, 'sparkle'],
+    [/transfer|train|station|stazione|travel to|leave|back to|torna|limousine|arrival|arrivo|jeep|tour from|loop/i, 'bus'],
+    [/budget/i, 'piggy'], [/dinner|cena|lunch|pranzo|brunch|breakfast|colazione|food|cibo|ramen|soba|udon|tsukemen|tempura|sushi|wagyu|gyukatsu|izakaya|beisl|buffet|okonomiyaki|takoyaki|snack|seafood|restaurant|ristorante|kitchen|street food|taco|maíz|maize|maizajo|chava|máximo|conchudo|xuna|expendio|migrante|odette|tata|milagros|quince|panina|luna de queso|tostév|izuu|junsei|hikiniku|savoy|nemuro|age\.3|gonpachi|mukai|kisaburo|benizuru|ichinoya|kani\b|karashibi|idaten|dashi|tantan|gyoza/i, 'pasta'],
+    [/walk|stroll|wander|passegg|street|straße|graben|lanes|vicoli|quarter|old town|ancient town|nakamise|dori|cat street|omotesando|kagurazaka|yanaka|nihonbashi|dotonbori|gion|ring\b|district|roma|juárez|condesa|mesón|neighbo|crossing|shibuya|explore|cycle|bici/i, 'shoe'],
+  ];
+  const guess = text => { const hit = GUESS.find(([re]) => re.test(text)); const name = hit ? hit[1] : 'pin';
+    return name === 'market' ? (document.body.matches('.fn-mexico, .fn-guanajuato') ? 'chapulines' : 'piggy') : name; };
   const stopIcons = () => {
-    if (!document.body.matches('.fn-guanajuato, .fn-oaxaca')) return;
-    document.querySelectorAll('input[data-stop], .task input[id]').forEach(box => {
-      const name = STOP[box.dataset.stop || box.id], label = box.closest('label');
-      if (!name || !I[name] || !label) return;
+    document.querySelectorAll('input[type=checkbox]').forEach(box => {
+      const label = box.closest('label'); if (!label) return;
       const title = label.querySelector('.task-title, strong');
-      if (!title || title.querySelector('.fn-stop-icon')) return;
+      if (!title) return;
+      const name = STOP[box.dataset.stop || box.id] || guess(title.textContent);
+      if (!I[name]) return;
+      if (title.querySelector('.fn-stop-icon')) return;
       const tag = document.createElement('span'); tag.className = 'fn-stop-icon'; tag.innerHTML = I[name];
       title.append(tag);
     });
   };
   const run = () => { stopIcons(); add(); document.querySelectorAll('.fn-season h2').forEach(h => { if (!h.querySelector('.fn-icon')) place(h, I.sun); }); };
   document.readyState === 'complete' ? run() : document.addEventListener('DOMContentLoaded', run);
+  addEventListener('load', () => { run(); setTimeout(run, 1200); });
 })();
 
 /* Hero photos: two strips of masking tape hold them down,
@@ -485,8 +517,10 @@
       const wrap = document.createElement('div'); wrap.className = 'fn-pc-wrap';
       fig.before(wrap); wrap.append(fig);
       if (getComputedStyle(fig).position === 'static') fig.style.position = 'relative';
-      fig.classList.add('fn-alive', 'fn-pc-host');
       const tapes = ['fn-tape fn-tape-l', 'fn-tape fn-tape-r'].map(cls => { const el = document.createElement('span'); el.className = cls; el.setAttribute('aria-hidden', 'true'); return el; });
+      // Only the main photo (home page, and Nicky's portrait on About) turns over to the postcard; destination pages keep theirs still
+      if (!fig.matches('.fn-home-portrait, .fn-about-portrait')) { fig.classList.add('fn-alive'); fig.append(...tapes); return; }
+      fig.classList.add('fn-alive', 'fn-pc-host');
       const card = document.createElement('div'); card.className = 'fn-pc-back'; card.setAttribute('aria-hidden', 'true'); card.innerHTML = back();
       const btn = document.createElement('button'); btn.type = 'button'; btn.className = 'fn-pc-turn';
       const label = () => { const on = fig.classList.contains('fn-pc-flipped'); btn.innerHTML = `${on ? '↺' : '↻'} <span>${on ? t.back : t.over}</span>`; btn.setAttribute('aria-pressed', on); };
