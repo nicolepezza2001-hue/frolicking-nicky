@@ -119,3 +119,8 @@ html body.fn-mexico .fn-v-photo figcaption a{color:inherit}
 @media(max-width:760px){html body.fn-mexico .fn-v-row{display:flex;flex-direction:column;gap:0}html body.fn-mexico .fn-v-side{width:100%;box-sizing:border-box;padding:0 6px;gap:12px}html body.fn-mexico .fn-v-photo{padding:6px 6px 16px}html body.fn-mexico .fn-v-photo:only-child{max-width:78%}html body.fn-mexico .fn-v-photo:nth-child(2){margin-top:22px}html body.fn-mexico .fn-v-row>.task-group{width:100%;box-sizing:border-box;margin-top:-10px;position:relative;z-index:1}html body.fn-mexico .fn-split .task-group{padding:20px 18px}}
 /* Saturday day-trip headings keep their solid cherry fill with cream text */
 html body.fn-mexico .weekend.fn-split>.outing-heading{background:var(--fn-red);color:#FDEBD8;border-color:var(--fn-red)}
+
+/* Guanajuato and Oaxaca: bigger heading icons (60px) and a little icon after every stop title (Nicky's choice) */
+html body.fn-guanajuato h2 .fn-icon,html body.fn-guanajuato h3 .fn-icon,html body.fn-oaxaca h2 .fn-icon,html body.fn-oaxaca h3 .fn-icon{width:60px;height:60px;margin-top:-30px;left:14px}
+html body .fn-stop-icon{display:inline-block;vertical-align:middle;margin:-6px 0 -6px 8px;line-height:0}
+html body .fn-stop-icon .fn-icon{position:static;display:block;width:36px;height:36px;margin:0;left:auto}

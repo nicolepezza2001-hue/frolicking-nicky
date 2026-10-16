@@ -284,6 +284,11 @@
       `<path d="M16 8.4v31.2M19.6 8.4v31.2M23.2 8.4v31.2M26.8 8.4v31.2M30.4 8.4v31.2" opacity=".35" stroke-width=".8"/>` +
       [37.4, 34.2, 31, 27.8, 24.6, 21.4].map((y, i) => `<path class="fn-i-weave" style="--d:${(i * .55).toFixed(2)}s" d="${i % 2 ? `M14 ${y}l2.4-2 2.4 2 2.4-2 2.4 2 2.4-2 2.4 2 2.4-2 2.4 2` : `M14 ${y - 2}l2.4 2 2.4-2 2.4 2 2.4-2 2.4 2 2.4-2 2.4 2 2.4-2`}" stroke-width="1.1"/>`).join('') +
       `<g class="fn-i-shuttle"><path d="M13.4 17.6h21.2" opacity=".5" stroke-width=".8"/><path d="M15 17.6c1.4-1.4 4.4-1.4 5.8 0-1.4 1.4-4.4 1.4-5.8 0z" fill="currentColor" fill-opacity=".3"/></g>`, 'fn-i-loom', false),
+    // Small icons for stop cards (Guanajuato and Oaxaca)
+    tunnel: g(`<path d="M6 40V24c0-10 8-16.6 18-16.6S42 14 42 24v16"/><path d="M13 40V25.6c0-6.4 4.8-11 11-11s11 4.6 11 11V40"/><path d="M8.4 20.4l4.6 2M10.6 14.4l4 3.4M15.6 10.2l2.6 4.4M39.6 20.4l-4.6 2M37.4 14.4l-4 3.4M32.4 10.2l-2.6 4.4" opacity=".55" stroke-width="1"/><path d="M4 40h40"/><path class="fn-i-dash" d="M24 40V28" stroke-dasharray="1.6 2.4" opacity=".7"/><g class="fn-i-tunnelcar"><path d="M20.4 34.6h7.2l-1-2.6h-5.2z" stroke-width="1"/><circle cx="21.6" cy="35.4" r=".8" fill="currentColor" stroke="none"/><circle cx="26.4" cy="35.4" r=".8" fill="currentColor" stroke="none"/></g>`, 'fn-i-tunnel', false),
+    agave: g(`<g class="fn-i-sway"><path d="M24 38c-1-8-.4-15 0-24 .4 9 1 16 0 24z"/><path d="M23 38c-4.6-5.4-8-10.8-9.6-18.6 3.6 6 6.6 11.4 9.6 18.6zM25 38c4.6-5.4 8-10.8 9.6-18.6-3.6 6-6.6 11.4-9.6 18.6z"/><path d="M22 38.4c-6.4-2.6-10.8-6.2-14-12.4 4.6 4.2 9 7.6 14 12.4zM26 38.4c6.4-2.6 10.8-6.2 14-12.4-4.6 4.2-9 7.6-14 12.4z"/></g><path d="M10 40.6h28"/><path d="M14 43c3-1 6-1 9 0" opacity=".5"/><g class="fn-i-drip"><path d="M38.6 9.6c-1.4 1.8-1.4 3.2 0 3.6 1.4-.4 1.4-1.8 0-3.6z" fill="currentColor" fill-opacity=".5"/></g>${star(9, 10, 1.6, 'fn-i-twinkle', 0)}`, 'fn-i-agave', false),
+    tree: g(`<g class="fn-i-sway"><path d="M12.6 26c-4-.6-6-4-4.4-7.2 1-2 3.4-2.6 5-2-.6-3.8 2.6-6.6 6-5.8 1.4-3 5.8-3.6 8-1.2 2.6-1.8 6.6-.6 7.4 2.6 3.6.2 5.4 3.6 4.4 6.4 2 1.6 2 5-.6 6.4-1.4 2.6-5 3-7 1.4-2.4 1.6-6 1.4-8-.6-2.6 1.4-6.2 1-7.6-1.4"/><path d="M15.4 19.6c2.4-1.2 4.4-.6 5.4 1M26.4 15.6c2.2-.6 4 .4 4.6 2" opacity=".5" stroke-width="1"/></g><path d="M19.6 40c1.8-3.6 1.6-8.4.4-12.2M28.4 40c-1.8-3.6-1.6-8.4-.4-12.2M20 27.8c1.4 1.2 6.6 1.2 8 0"/><path d="M22.4 40c.6-3 .4-6.4-.2-9.2M25.6 40c-.6-3-.4-6.4.2-9.2" opacity=".55" stroke-width="1"/><path d="M8 40h32"/>${wee(38, 10, .7, 'fn-i-pop', .3)}`, 'fn-i-tree', false),
+    bread: g(`<path d="M10.6 34c-1.6-6.6 5.4-12.6 13.4-12.6S39 27.4 37.4 34c-.4 1.6-1.8 2.6-3.4 2.6H14c-1.6 0-3-1-3.4-2.6z"/><path d="M17.4 25.2c1.4 2.4 1.4 5.2 0 7.6M24 23.4c1.4 2.6 1.4 6 0 8.6M30.6 25.2c1.4 2.4 1.4 5.2 0 7.6" opacity=".7" stroke-width="1"/><path d="M8 40h32" opacity=".6"/>${steam(19)}`, 'fn-i-bread', false),
   };
   const rules = [
     [/rough budget|budget indicativo/i, 'piggy'],
@@ -350,7 +355,30 @@
     tag.remove(); const base = size(h); h.append(tag); fit(h, tag, base); }), 200); });
   // Height and width of the heading and its box: if adding the icon changes any of them, the icon hangs instead.
   function size(h) { const a = h.getBoundingClientRect(), b = h.parentElement.getBoundingClientRect(); return [a.height, a.width, b.height, b.width]; }
-  const run = () => { add(); document.querySelectorAll('.fn-season h2').forEach(h => { if (!h.querySelector('.fn-icon')) place(h, I.sun); }); };
+
+  // Every stop card on the Guanajuato and Oaxaca pages gets its own little icon after its title (Nicky asked for more icons)
+  const STOP = {
+    gtoearly: 'bus', cafeprendido: 'cup', cafedoch: 'cup', cafekaldi: 'cup', teatro: 'castle', pipila: 'mountain', tunnels: 'tunnel',
+    beso: 'heart', hidalgo: 'pasta', inquebrantable: 'pasta', blackrabbit: 'pasta', momias: 'mummy', rivera: 'palette', cuatropuertas: 'cup',
+    alcala: 'shoe', zocalo: 'bell', santodomingo: 'church', culturas: 'frame', jardin: 'cactus', brujula: 'cup', tlayuda: 'taco',
+    mayordomo: 'whisk', mole: 'pasta', abastos: 'flower', altars: 'lantern', comparsas: 'papel', panteon: 'skeleton', xoxo: 'moon',
+    veinte: 'taco', juarezmkt: 'chapulines', jalatlaco: 'palette', mezcaloteca: 'agave', fortin: 'sun', class: 'whisk',
+    boulenc: 'bread', bodaega: 'wine', levadura: 'bread', humo: 'pasta', danzantes: 'pasta', tierrasol: 'sun', copal: 'agave', selva: 'flower',
+    alban: 'pyramid', arrazola: 'sparkle', tule: 'tree', mitla: 'pyramid', palenque: 'agave', hierve: 'hierve', tlacolula: 'chapulines',
+    barbacoa: 'taco', teotitlan: 'loom', tilcajete: 'sparkle', temazcal: 'springs', tejate: 'cup', chapulines: 'chapulines'
+  };
+  const stopIcons = () => {
+    if (!document.body.matches('.fn-guanajuato, .fn-oaxaca')) return;
+    document.querySelectorAll('input[data-stop], .task input[id]').forEach(box => {
+      const name = STOP[box.dataset.stop || box.id], label = box.closest('label');
+      if (!name || !I[name] || !label) return;
+      const title = label.querySelector('.task-title, strong');
+      if (!title || title.querySelector('.fn-stop-icon')) return;
+      const tag = document.createElement('span'); tag.className = 'fn-stop-icon'; tag.innerHTML = I[name];
+      title.append(tag);
+    });
+  };
+  const run = () => { stopIcons(); add(); document.querySelectorAll('.fn-season h2').forEach(h => { if (!h.querySelector('.fn-icon')) place(h, I.sun); }); };
   document.readyState === 'complete' ? run() : document.addEventListener('DOMContentLoaded', run);
 })();
 

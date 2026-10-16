@@ -236,6 +236,9 @@ h3 .fn-icon { width: 2em; height: 2em; margin-top: -1.06em; left: .3em; }
   @keyframes fn-weave { 0% { opacity: 0; } 4%, 60% { opacity: 1; } 68%, 100% { opacity: 0; } }
   @keyframes fn-shuttle { from { translate: 0 0; } to { translate: 0 0; } }
   @keyframes fn-shuttle-go { from { translate: 0 0; } to { translate: 13px 0; } }
+  /* Tunnel: a little car drives out of the tunnel towards you */
+  .fn-i-tunnelcar { transform-origin: 50% 100%; animation: fn-tunnelcar 2.6s ease-in infinite; }
+  @keyframes fn-tunnelcar { 0% { opacity: 0; translate: 0 -6px; scale: .4; } 15% { opacity: 1; } 80% { opacity: 1; translate: 0 2px; scale: 1.5; } 100% { opacity: 0; translate: 0 3px; scale: 1.7; } }
   @keyframes fn-i-chomp { 0%, 20% { scale: 1 .5; } 40% { scale: 1.1 1.4; } 52% { scale: 1 .15; } 60% { scale: 1 .9; } 66% { scale: 1 .15; } 74%, 100% { scale: 1 .5; } }
   @keyframes fn-i-crumbs { 0%, 52% { opacity: 0; translate: 0 0; } 56% { opacity: 1; } 76%, 100% { opacity: 0; translate: -1px 4px; } }
   @keyframes fn-i-yum { 0%, 66% { opacity: 0; translate: 0 2px; scale: .4; } 72% { opacity: 1; scale: 1.1; } 95%, 100% { opacity: 0; translate: 0 -6px; scale: .9; } }

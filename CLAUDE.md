@@ -56,7 +56,10 @@ Italian copies and the best-time-to-visit data.
   a mummy sitting up in its box (Guanajuato day plan), a bus (Getting there & back),
   a spinning signpost (Choose one day trip), Santo Domingo with ringing bells, a
   chapulín hopping out of its basket (Markets & Jalatlaco), a swimmer bobbing at
-  Hierve el Agua and a loom weaving a zigzag rug (Tlacolula & Teotitlán). Day-by-day and
+  Hierve el Agua and a loom weaving a zigzag rug (Tlacolula & Teotitlán).
+  On the Guanajuato and Oaxaca pages only, heading icons are 60px and every stop
+  title has its own 36px icon (`STOP` map in `motion.js`, sizes at the end of
+  `refine.css`); Nicky found the icons too few and too small there. Day-by-day and
   restaurant subheadings stay without icons so pages don't get too busy.
   On wine cards (the Saturday day trips, the home page note) icons take the
   heading's cream colour so they don't vanish wine-on-wine.
