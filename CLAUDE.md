@@ -24,7 +24,8 @@ Italian copies and the best-time-to-visit data.
 - Hero photos are taped down at the top corners with beige masking tape and
   simply appear, then stay still: no Polaroid develop or fade-in, no
   fluttering, floating or hovering up and down (Nicky didn't like those).
-- Turning a hero photo over (hover on desktop, a tap on phones) shows a vintage "Greetings from"
+- Only the main photo turns over (home page, and the About portrait); hero photos on
+  destination pages stay still (Nicky's call). Turning it over (hover on desktop, a tap on phones) shows a vintage "Greetings from"
   postcard back (Nicky picked it from four designs): antique white with a fine outline,
   "GREETINGS FROM" small, the country in big cherry italic letters, a thin rule, then
   "41 countries and counting. / Wish you were here." and "Nicky x" in handwriting. No stamp. The country is
@@ -34,7 +35,7 @@ Italian copies and the best-time-to-visit data.
   old 41-stamp back and the round "a travel journal" badge too busy; don't bring either back.
   When she visits a new country, add it to `order` (with a flag in `F`) and update the "41"
   in both languages.
-- Heading icons are one fixed size (34px, 26px on h3) with a clear gap after the words,
+- Heading icons are one fixed size (60px since Oct 2026; Nicky found 34px too small) with a clear gap after the words,
   whatever the heading size (set in `refine.css`). They are fine-line, Art Nouveau-inspired illustrations (thin ink
   lines, whiplash curves) drawn on a 48×48 grid in the icon block of `motion.js`.
   **No arched frame around them** (Nicky thought it made them look like
@@ -57,10 +58,11 @@ Italian copies and the best-time-to-visit data.
   a spinning signpost (Choose one day trip), Santo Domingo with ringing bells, a
   chapulín hopping out of its basket (Markets & Jalatlaco), a swimmer bobbing at
   Hierve el Agua and a loom weaving a zigzag rug (Tlacolula & Teotitlán).
-  On the Guanajuato and Oaxaca pages only, heading icons are 60px and every stop
-  title has its own 36px icon (`STOP` map in `motion.js`, sizes at the end of
-  `refine.css`); Nicky found the icons too few and too small there. Day-by-day and
-  restaurant subheadings stay without icons so pages don't get too busy.
+  Guanajuato and Oaxaca stops have hand-picked icons (`STOP` map in `motion.js`). Day-by-day and
+  restaurant subheadings now get icons too: Nicky wants as many icons as possible.
+  Any heading without its own rule gets one by keyword (`GUESS` in `motion.js`, a map
+  pin if nothing fits); only the small-caps labels and headings inside destination
+  cards stay plain. Every stop title on every itinerary gets a 36px icon the same way.
   Icons are always cherry. Only on cherry-filled cards (the Saturday day trips, the home page note) do they take the
   heading's cream colour so they don't vanish wine-on-wine.
   The "If we have time" / "Se abbiamo tempo" heading has an hourglass (Nicky's
