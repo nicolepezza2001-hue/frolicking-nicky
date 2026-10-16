@@ -2,7 +2,7 @@
 
 Static multipage travel journal. Serve dist as the website root.
 
-Routes: /, /my-travels, /about, /austria/vienna, /mexico/mexico-city.
+Routes: /, /my-travels, /about, /austria/vienna, /mexico/mexico-city, /mexico/san-miguel-de-allende, /mexico/oaxaca, /slovakia/bratislava, /vietnam, /japan.
 
 Original itinerary content is preserved from Nicole’s existing sites. Shared brand CSS is in dist/assets/shared.css. Browser localStorage uses separate trip keys and never sends checklist progress to a server. Old websites use different origins, so their progress does not migrate automatically.
 
@@ -39,7 +39,7 @@ one season fits every region of a multi-stop itinerary.
 Every page has an Italian copy under `/it/` with Italian slugs
 (`/it/i-miei-viaggi`, `/it/chi-sono`, `/it/austria/vienna`,
 `/it/messico/citta-del-messico`, `/it/messico/san-miguel-de-allende`,
-`/it/slovacchia/bratislava`, `/it/vietnam`, `/it/giappone`).
+`/it/slovacchia/bratislava`, `/it/vietnam`, `/it/giappone`, `/it/messico/oaxaca`).
 The `EN | IT` toggle in the header links each page to its twin, and each
 page lists both versions with `hreflang` links.
 
@@ -76,3 +76,12 @@ itinerary changes.
   offline" button. `dist/manifest.webmanifest` allows adding to the home screen.
 - **One itinerary look**: Vienna and Mexico are restyled to match the other
   itineraries by the "One itinerary look" block in `shared.css`.
+
+
+## Oaxaca
+
+`/mexico/oaxaca` (and `/it/messico/oaxaca`) copies the Japan page structure: chapters
+(`.jp-city`), day cards with up to two photos beside them (`.jp-day-album`), and
+photo-less days grouped in `.jp-day-cards-only`. Ticks use `assets/oaxaca.js`
+(key `frolicking-nicky-oaxaca-v1`). Photos are credited Wikimedia Commons stock
+until Nicky sends her own; swap them in and drop the captions.

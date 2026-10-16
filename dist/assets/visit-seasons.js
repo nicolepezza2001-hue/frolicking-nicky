@@ -36,6 +36,13 @@ export const visitSeasons = {
     reasons: ['Cold; snowy Takayama and New Year closures.','Cold city days; snow in Takayama.','Best for the late-month cherry blossom season; earlier March is cooler. Crowds and higher prices are worth it.','Cherry blossoms make this a top pick despite crowds and higher prices. Bloom timing varies; Golden Week begins late April.','Best after Golden Week, before the main rains.','Rainy season; allow flexible outdoor plans.','Rain gives way to intense heat and humidity.','Very hot and humid; Obon travel adds demand.','Lingering heat and elevated typhoon disruption risk.','More comfortable exploring; cooler Takayama and autumn demand.','Crisp days and foliage; popular Kyoto spots stay busy.','Often dry in the cities; cold mountains and year-end closures.'],
     sources: [['JNTO · May & Golden Week','https://www.japan.travel/en/guide/may/'],['JNTO · summer','https://www.japan.travel/en/guide/summer-guide/'],['JNTO · September','https://www.japan.travel/en/guide/september/'],['JNTO · travel seasons & holidays','https://www.japan.travel/en/gc/tips/']]
   },
+  oaxaca: {
+    scope: "For Oaxaca City and the valley day trips in this itinerary.",
+    ratings: ["Good", "Good", "Good", "Okay", "Okay", "Okay", "Good", "Okay", "Okay", "Best", "Best", "Good"],
+    note: "My pick: late October into November, for Día de Muertos and the start of the dry season. Book stays early for those dates. December to March is dry and sunny with cool nights; April and May are the hottest months. June to September brings afternoon rain, though July has the Guelaguetza festival.",
+    reasons: ["Dry, sunny days and cool nights.", "Dry and pleasant; quieter streets.", "Warm and dry; good market weather.", "Hot afternoons; Semana Santa can be busy.", "The hottest month, before the rains.", "Rainy season begins; afternoon storms.", "Afternoon rain, but the Guelaguetza festival fills the city.", "Rain continues; mornings are best for outings.", "Wet and green; some roads to the villages are slower.", "Rain eases; altars start appearing late in the month.", "Día de Muertos and dry days: book early.", "Dry and cooler; Noche de Rábanos and Christmas fiestas."],
+    sources: [['Mexico Travel & Leisure · Day of the Dead in Oaxaca','https://www.mexicotravelandleisure.com/blog/day-of-the-dead-oaxaca/'],['Mexico Travel & Leisure · Hierve el Agua','https://www.mexicotravelandleisure.com/blog/hierve-el-agua-oaxaca/']]
+  },
   bratislava: {
     scope: 'For this walking day, with café stops and castle views.',
     ratings: ['Okay','Okay','Okay','Good','Best','Best','Good','Good','Best','Good','Okay','Good'],
