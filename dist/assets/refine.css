@@ -128,3 +128,5 @@ html body .fn-stop-icon .fn-icon{position:static;display:block;width:36px;height
 /* My travels: trip length and country drop-downs side by side (Nicky found pills too busy) */
 html body .fn-filters{display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:flex-end}
 @media(max-width:650px){html body .fn-filters{justify-content:flex-start}}
+/* Drop-downs: our own chevron, well inside the box (Safari drew its arrow against the edge) */
+html body .fn-filter select{-webkit-appearance:none;appearance:none;padding:10px 44px 10px 16px;background:#FDEBD8 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1.5l5 5 5-5' fill='none' stroke='%23B30545' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat right 16px center/12px 8px}
