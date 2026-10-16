@@ -51,7 +51,12 @@ Italian copies and the best-time-to-visit data.
   Also: a piggy bank swallowing a coin (Rough budget), bats leaving the Phong Nha
   cave, a ringing bell (Centro Histórico), a blooming cactus with a hummingbird
   (El Charco), papel picado (South of the center), a winking portrait (More museum
-  stops), a whisk (Gerstner) and a trotting dog (Parque México). Day-by-day and
+  stops), a whisk (Gerstner), a trotting dog (Parque México), a Día de Muertos skeleton
+  that falls apart into a bag of bones and pulls itself back together (Nicky's idea),
+  a mummy sitting up in its box (Guanajuato day plan), a bus (Getting there & back),
+  a spinning signpost (Choose one day trip), Santo Domingo with ringing bells, a
+  chapulín hopping out of its basket (Markets & Jalatlaco), a swimmer bobbing at
+  Hierve el Agua and a loom weaving a zigzag rug (Tlacolula & Teotitlán). Day-by-day and
   restaurant subheadings stay without icons so pages don't get too busy.
   On wine cards (the Saturday day trips, the home page note) icons take the
   heading's cream colour so they don't vanish wine-on-wine.
