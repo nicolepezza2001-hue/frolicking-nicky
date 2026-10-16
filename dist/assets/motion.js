@@ -236,9 +236,19 @@
     // Parque México: a dog trots along, tail wagging
     dog: g(`<g class="fn-i-trot"><path d="M16.2 24.6h13.6c2.4 0 4 1.6 4 3.6s-1.6 3.8-4 3.8H16.2c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.8 3.6-3.8z"/><path d="M31.2 24.8c-.2-3 1.8-5.2 4.4-5.2 2 0 3.6 1.4 4 3.4l2.4 1c.4 1.4-.6 2.6-2 2.6h-3.6"/><path d="M34.6 20c-1.6 1-2.2 3.4-1 4.8"/><path d="M37.4 22.4h.1" stroke-width="1.6"/><path d="M41.6 23.8h.1" stroke-width="1.8"/>` +
       `<path class="fn-i-wag" d="M12.8 26.4c-1.8-.8-2.8-2.6-2.6-4.6" /><path class="fn-i-leg" d="M17 31.8v5.4"/><path class="fn-i-leg" d="M29.4 31.8v5.4"/><path class="fn-i-leg2" d="M19.6 31.8v5.4"/><path class="fn-i-leg2" d="M32 31.8v5.4"/></g><path class="fn-i-dash" d="M8 39.6h32" stroke-dasharray="1.4 3" opacity=".6"/>${wee(14, 14, .65, 'fn-i-pop', .4)}`, 'fn-i-dog'),
+    // Día de Muertos: a calavera with a marigold waves, collapses into a heap, a bag of bones pops up over it, then it pulls itself back together
+    skeleton: g(`<g class="fn-i-sk fn-i-sk-skull"><path d="M24 6.4c-2.8 0-4.6 2-4.6 4.4 0 1.6.8 2.8 1.8 3.4v1.6h5.6v-1.6c1-.6 1.8-1.8 1.8-3.4 0-2.4-1.8-4.4-4.6-4.4z"/><circle cx="22.3" cy="10.8" r="1" fill="currentColor" stroke="none"/><circle cx="25.7" cy="10.8" r="1" fill="currentColor" stroke="none"/><path d="M24 12.4l-.5 1h1z" stroke-width=".8"/><path d="M22.6 15.8v-1M24 15.8v-1M25.4 15.8v-1" stroke-width=".7"/><g transform="translate(27.6 6.2)">${petal5(0, 0, 2.2)}</g></g>` +
+      `<g class="fn-i-sk fn-i-sk-ribs"><path d="M24 16.6v12"/><path d="M24 18.6c-2.4-.2-3.6 .6-3.8 1.6M24 18.6c2.4-.2 3.6.6 3.8 1.6M24 21c-2.2-.2-3.4.6-3.6 1.6M24 21c2.2-.2 3.4.6 3.6 1.6M24 23.4c-1.8-.2-2.8.4-3 1.2M24 23.4c1.8-.2 2.8.4 3 1.2"/><path d="M21 28.6c0-1.4 1.4-2 3-2s3 .6 3 2c0 .8-.8 1.2-1.6 1.2h-2.8c-.8 0-1.6-.4-1.6-1.2z"/></g>` +
+      `<g class="fn-i-sk fn-i-sk-arml"><path d="M21 18l-3.8 4.6-1.8 5"/><path d="M15.4 27.6l-.9 1.4M15.4 27.6l.3 1.6" stroke-width=".9"/></g>` +
+      `<g class="fn-i-sk fn-i-sk-armr"><path d="M27 18l4.2-3.4 1.6-5"/><path d="M32.8 9.2l-.4-1.6M32.8 9.2l1.2-1.2M32.8 9.2l1.6-.2" stroke-width=".9"/></g>` +
+      `<g class="fn-i-sk fn-i-sk-legl"><path d="M22.4 29.8l-1 5.2-.8 5.4h-2.4"/></g>` +
+      `<g class="fn-i-sk fn-i-sk-legr"><path d="M25.6 29.8l1 5.2.8 5.4h2.4"/></g>` +
+      `<g class="fn-i-sk-bag"><path d="M20.4 30.6c-4 2-6.2 5.6-5.2 8.6.8 2.2 4.6 2.4 8.8 2.4s8-.2 8.8-2.4c1-3-1.2-6.6-5.2-8.6"/><path d="M20.4 30.6c1.6.9 5.6.9 7.2 0"/><path d="M21.6 30.4c-1.2-1.4-.8-3 .4-3.4M26.4 30.4c1.2-1.4.8-3-.4-3.4"/><path d="M21.2 36.4h5.6M21.2 36.4c-.9-.9-.2-2 .6-1.2M21.2 36.4c-.9.9-.2 2 .6 1.2M26.8 36.4c.9-.9.2-2-.6-1.2M26.8 36.4c.9.9.2 2-.6 1.2" stroke-width=".9"/></g>` +
+      `<path d="M10 42.2h28" opacity=".5"/>${star(12.6, 14, 1.6, 'fn-i-sk-pop', 0)}${star(36, 22, 1.3, 'fn-i-sk-pop', .2)}`, 'fn-i-skeleton'),
   };
   const rules = [
     [/rough budget|budget indicativo/i, 'piggy'],
+    [/día de muertos/i, 'skeleton'],
     [/phong nha/i, 'cave'],
     [/juárez, roma/i, 'taco'],
     [/^centro histórico$/i, 'bell'],
