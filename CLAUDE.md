@@ -61,7 +61,7 @@ Italian copies and the best-time-to-visit data.
   title has its own 36px icon (`STOP` map in `motion.js`, sizes at the end of
   `refine.css`); Nicky found the icons too few and too small there. Day-by-day and
   restaurant subheadings stay without icons so pages don't get too busy.
-  On wine cards (the Saturday day trips, the home page note) icons take the
+  Icons are always cherry. Only on cherry-filled cards (the Saturday day trips, the home page note) do they take the
   heading's cream colour so they don't vanish wine-on-wine.
   The "If we have time" / "Se abbiamo tempo" heading has an hourglass (Nicky's
   idea) with turned posts and curled plates: the sand runs out, a little cat pops
