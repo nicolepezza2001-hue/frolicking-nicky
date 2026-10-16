@@ -84,7 +84,7 @@ h3 .fn-icon { width: 2em; height: 2em; margin-top: -1.06em; left: .3em; }
 .fn-icon * { transform-box: fill-box; transform-origin: center; }
 /* on wine cards (Saturday day trips, the home page note) the icon takes the heading's cream colour, not wine on wine */
 .outing-heading .fn-icon, .fn-note .fn-icon { color: inherit; }
-.fn-i-cat, .fn-i-sand-fall { opacity: 0; } .fn-i-sand-bottom { scale: 1 0; } /* hourglass at rest: full on top, no cat */
+.fn-i-cat, .fn-i-sand-fall, .fn-i-sk-bag, .fn-i-sk-pop { opacity: 0; } .fn-i-sand-bottom { scale: 1 0; } /* hourglass at rest: full on top, no cat */
 @media (prefers-reduced-motion: no-preference) {
   .fn-icon { animation: fn-i-float 3.2s ease-in-out infinite; transition: scale .3s cubic-bezier(.3,1.6,.5,1); }
   .fn-icon-tag:nth-of-type(odd) .fn-icon, h3 .fn-icon { animation-delay: -1.6s; }
@@ -189,6 +189,22 @@ h3 .fn-icon { width: 2em; height: 2em; margin-top: -1.06em; left: .3em; }
   .fn-i-crumbs { opacity: 0; animation: fn-i-crumbs 3.6s ease-out infinite; }
   .fn-i-yum { opacity: 0; animation: fn-i-yum 3.6s ease-out infinite; }
   @keyframes fn-i-tacofly { 0% { opacity: 0; translate: 0 0; scale: 1; rotate: 0deg; } 8%, 20% { opacity: 1; translate: 0 0; } 36% { translate: 12px -5px; rotate: 8deg; } 50% { opacity: 1; translate: 21px -2px; scale: .7; rotate: 14deg; } 56%, 100% { opacity: 0; translate: 23px -1px; scale: .25; } }
+  /* Día de Muertos skeleton: waves, falls apart into a heap, a bag of bones pops over it, then it reassembles (one 7s loop) */
+  .fn-icon.fn-i-skeleton { overflow: visible; }
+  .fn-i-sk { animation: 7s ease-in infinite; }
+  .fn-i-sk-skull { animation-name: fn-sk-skull; } .fn-i-sk-ribs { animation-name: fn-sk-ribs; }
+  .fn-i-sk-arml { animation-name: fn-sk-arml; } .fn-i-sk-legl { animation-name: fn-sk-legl; } .fn-i-sk-legr { animation-name: fn-sk-legr; }
+  .fn-i-sk-armr { transform-origin: 0% 100%; animation-name: fn-sk-armr; }
+  .fn-i-sk-bag { transform-origin: 50% 100%; animation: fn-sk-bag 7s infinite; }
+  .fn-i-sk-pop { opacity: 0; animation: fn-sk-pop 7s infinite; animation-delay: var(--d, 0s); }
+  @keyframes fn-sk-skull { 0%, 38% { translate: 0 0; rotate: 0deg; opacity: 1; } 48% { translate: 1px 25px; rotate: 200deg; opacity: 1; } 55%, 72% { translate: 1px 25px; rotate: 200deg; opacity: 0; } 76% { translate: 1px 25px; rotate: 200deg; opacity: 1; } 86%, 100% { translate: 0 0; rotate: 0deg; opacity: 1; } }
+  @keyframes fn-sk-ribs { 0%, 40% { translate: 0 0; rotate: 0deg; opacity: 1; } 49% { translate: -1px 13px; rotate: 90deg; opacity: 1; } 55%, 72% { translate: -1px 13px; rotate: 90deg; opacity: 0; } 76% { translate: -1px 13px; rotate: 90deg; opacity: 1; } 85%, 100% { translate: 0 0; rotate: 0deg; opacity: 1; } }
+  @keyframes fn-sk-arml { 0%, 41% { translate: 0 0; rotate: 0deg; opacity: 1; } 50% { translate: 4px 13px; rotate: -70deg; opacity: 1; } 55%, 72% { translate: 4px 13px; rotate: -70deg; opacity: 0; } 76% { translate: 4px 13px; rotate: -70deg; opacity: 1; } 84%, 100% { translate: 0 0; rotate: 0deg; opacity: 1; } }
+  @keyframes fn-sk-armr { 0%, 4%, 12%, 20%, 28%, 36% { translate: 0 0; rotate: 0deg; opacity: 1; } 8%, 16%, 24%, 32% { rotate: -16deg; } 42% { translate: 0 0; rotate: 0deg; } 50% { translate: -6px 22px; rotate: 110deg; opacity: 1; } 55%, 72% { translate: -6px 22px; rotate: 110deg; opacity: 0; } 76% { translate: -6px 22px; rotate: 110deg; opacity: 1; } 84%, 100% { translate: 0 0; rotate: 0deg; opacity: 1; } }
+  @keyframes fn-sk-legl { 0%, 42% { translate: 0 0; rotate: 0deg; opacity: 1; } 50% { translate: 3px 3px; rotate: -80deg; opacity: 1; } 55%, 72% { translate: 3px 3px; rotate: -80deg; opacity: 0; } 76% { translate: 3px 3px; rotate: -80deg; opacity: 1; } 83%, 100% { translate: 0 0; rotate: 0deg; opacity: 1; } }
+  @keyframes fn-sk-legr { 0%, 42% { translate: 0 0; rotate: 0deg; opacity: 1; } 50% { translate: -3px 3px; rotate: 80deg; opacity: 1; } 55%, 72% { translate: -3px 3px; rotate: 80deg; opacity: 0; } 76% { translate: -3px 3px; rotate: 80deg; opacity: 1; } 83%, 100% { translate: 0 0; rotate: 0deg; opacity: 1; } }
+  @keyframes fn-sk-bag { 0%, 50% { opacity: 0; scale: .3; rotate: 0deg; } 54% { opacity: 1; scale: 1.08; } 57% { scale: 1; } 60% { rotate: -7deg; } 63% { rotate: 6deg; } 66% { rotate: -4deg; } 69% { rotate: 0deg; scale: 1; opacity: 1; } 74%, 100% { opacity: 0; scale: .3; rotate: 0deg; } }
+  @keyframes fn-sk-pop { 0%, 84% { opacity: 0; scale: .2; } 88% { opacity: 1; scale: 1.2; } 94%, 100% { opacity: 0; scale: .6; } }
   @keyframes fn-i-chomp { 0%, 20% { scale: 1 .5; } 40% { scale: 1.1 1.4; } 52% { scale: 1 .15; } 60% { scale: 1 .9; } 66% { scale: 1 .15; } 74%, 100% { scale: 1 .5; } }
   @keyframes fn-i-crumbs { 0%, 52% { opacity: 0; translate: 0 0; } 56% { opacity: 1; } 76%, 100% { opacity: 0; translate: -1px 4px; } }
   @keyframes fn-i-yum { 0%, 66% { opacity: 0; translate: 0 2px; scale: .4; } 72% { opacity: 1; scale: 1.1; } 95%, 100% { opacity: 0; translate: 0 -6px; scale: .9; } }
