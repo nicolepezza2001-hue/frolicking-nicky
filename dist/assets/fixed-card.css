@@ -2,3 +2,7 @@
 .fn-card-fixed .fn-card-inner{transform:none!important;transition:none}
 .fn-card-fixed .fn-card-front{visibility:visible!important;pointer-events:auto!important}
 .fn-card-fixed .fn-photo::after{display:none!important}
+
+/* Destination cards remain still on entry, hover, focus and touch. */
+.fn-card-fixed.fn-reveal{opacity:1!important;transition:none!important;animation:none!important}
+.fn-card-fixed .fn-photo img,.fn-card-fixed:hover .fn-photo img{scale:1!important;transform:none!important;transition:none!important;animation:none!important}
