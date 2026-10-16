@@ -85,3 +85,8 @@ numbered outing groups, no dates or day numbers, ★ day trips, "If we have time
 "Just a little planning". Data lives in `assets/oaxaca.js` / `oaxaca.it.js` (key
 `frolicking-nicky-oaxaca-v2`); map links in the `oaxacaMapStops` block of `maps.js`.
 Photos are credited Wikimedia Commons stock until Nicky sends her own.
+
+
+## Guanajuato
+
+`/mexico/guanajuato` and `/it/messico/guanajuato` are standalone one-day itineraries using the Bratislava journal layout. San Miguel keeps a short internal day-trip link. The dedicated `assets/guanajuato.js` checklist imports the six original San Miguel ticks on first visit, then stores progress independently under `frolicking-nicky-guanajuato-v1`, shared across languages. Photos by Hugoacostac and Juan Pablo M. Bastida are credited on the pages (CC BY-SA 3.0).
