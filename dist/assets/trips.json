@@ -61,5 +61,14 @@
     "image": "bratislava.jpg",
     "alt": "Bratislava Castle",
     "desc": "Urban House brunch, Old Town wandering, castle views and flexible dinner choices."
+  },
+  {
+    "country": "Mexico",
+    "city": "Guanajuato",
+    "length": "One day",
+    "url": "/mexico/guanajuato",
+    "image": "gto-view.jpeg",
+    "alt": "Guanajuato rooftops viewed from El Pípila",
+    "desc": "Colourful lanes, El Pípila views and market lunch. An unhurried day trip from San Miguel."
   }
 ]
