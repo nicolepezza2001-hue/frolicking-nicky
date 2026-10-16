@@ -124,3 +124,11 @@ html body.fn-mexico .weekend.fn-split>.outing-heading{background:var(--fn-red);c
 html body h1 .fn-icon,html body h2 .fn-icon,html body h3 .fn-icon{width:60px;height:60px;margin-top:-30px;left:14px}
 html body .fn-stop-icon{display:inline-block;vertical-align:middle;margin:-6px 0 -6px 8px;line-height:0}
 html body .fn-stop-icon .fn-icon{position:static;display:block;width:36px;height:36px;margin:0;left:auto}
+
+/* My travels: trip length and country as pill buttons (Nicky picked these over drop-downs) */
+html body .fn-filters{display:flex;flex-direction:column;gap:10px;align-items:flex-end}
+html body .fn-pills{display:flex;flex-wrap:wrap;gap:8px;justify-content:flex-end}
+html body .fn-pills button{font:inherit;font-size:.95rem;padding:8px 16px;border:1px solid #B30545;border-radius:999px;background:transparent;color:#030301;cursor:pointer}
+html body .fn-pills button[aria-pressed=true]{background:#B30545;color:#FDEBD8}
+html body .fn-pills button:focus-visible{outline:2px solid #030301;outline-offset:2px}
+@media(max-width:650px){html body .fn-filters{align-items:stretch}html body .fn-pills{justify-content:flex-start}html body .fn-pills button{font-size:.88rem;padding:7px 13px}}
