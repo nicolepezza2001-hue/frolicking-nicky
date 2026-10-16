@@ -1,281 +1,551 @@
 {
- "hundertwasser-0": {
-  "title": "File:Wien, Hundertwasserhaus -- 2018 -- 3173.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Wien,_Hundertwasserhaus_--_2018_--_3173.jpg",
+ "oax-santo-domingo-0": {
+  "title": "File:Church of Santo Domingo in Oaxaca.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Church_of_Santo_Domingo_in_Oaxaca.jpg",
   "license": "CC BY-SA 4.0",
-  "artist": "Dietmar Rabich",
+  "artist": "This photo was taken by Roman Bonnefoy (  Romanceor [parlons-en]). Feel free to use my pictures, but please credit me as the author (as required by the license).\nAn   email or a message would be welcome.\nMore free-licensed pictures on my french Wikipedia account. \nMy website : www.romanceor.net.",
   "size": [
    1400,
-   933
+   1033
   ]
  },
- "hundertwasser-1": {
-  "title": "File:Wien, Hundertwasserhaus -- 2018 -- 3178.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Wien,_Hundertwasserhaus_--_2018_--_3178.jpg",
-  "license": "CC BY-SA 4.0",
-  "artist": "Dietmar Rabich",
-  "size": [
-   1000,
-   1400
-  ]
- },
- "hundertwasser-2": {
-  "title": "File:Wien, Hundertwasserhaus -- 2018 -- 3180.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Wien,_Hundertwasserhaus_--_2018_--_3180.jpg",
-  "license": "CC BY-SA 4.0",
-  "artist": "Dietmar Rabich",
-  "size": [
-   933,
-   1400
-  ]
- },
- "hundertwasser-3": {
-  "title": "File:Wien, Hundertwasserhaus -- 2018 -- 3176.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Wien,_Hundertwasserhaus_--_2018_--_3176.jpg",
-  "license": "CC BY-SA 4.0",
-  "artist": "Dietmar Rabich",
+ "oax-santo-domingo-1": {
+  "title": "File:Templo de Santo Domingo de Guzmán- 2023.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Templo_de_Santo_Domingo_de_Guzm%C3%A1n-_2023.jpg",
+  "license": "CC BY 2.0",
+  "artist": "nan palmero",
   "size": [
    1400,
-   933
+   1048
   ]
  },
- "riesenrad-0": {
-  "title": "File:Wien, Prater, Riesenrad -- 2018 -- 3163.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Wien,_Prater,_Riesenrad_--_2018_--_3163.jpg",
+ "oax-santo-domingo-2": {
+  "title": "File:Templo de Santo Domingo de Guzmán, Oaxaca-2.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Templo_de_Santo_Domingo_de_Guzm%C3%A1n,_Oaxaca-2.jpg",
   "license": "CC BY-SA 4.0",
-  "artist": "Dietmar Rabich",
+  "artist": "Nanahuatl",
   "size": [
    1400,
-   933
+   1050
   ]
  },
- "riesenrad-1": {
-  "title": "File:Wien, Prater, Riesenrad -- 2018 -- 3161.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Wien,_Prater,_Riesenrad_--_2018_--_3161.jpg",
+ "oax-santo-domingo-3": {
+  "title": "File:Templo de Santo Domingo de Guzmán, Oaxaca.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Templo_de_Santo_Domingo_de_Guzm%C3%A1n,_Oaxaca.jpg",
   "license": "CC BY-SA 4.0",
-  "artist": "Dietmar Rabich",
-  "size": [
-   1400,
-   933
-  ]
- },
- "riesenrad-2": {
-  "title": "File:Wien, Prater, Riesenrad -- 2018 -- 3165.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Wien,_Prater,_Riesenrad_--_2018_--_3165.jpg",
-  "license": "CC BY-SA 4.0",
-  "artist": "Dietmar Rabich",
-  "size": [
-   1400,
-   933
-  ]
- },
- "riesenrad-3": {
-  "title": "File:Riesenrad Wiener Prater 2020-07-12 d.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Riesenrad_Wiener_Prater_2020-07-12_d.jpg",
-  "license": "CC BY-SA 4.0",
-  "artist": "Manfred Werner (Tsui)",
-  "size": [
-   1400,
-   933
-  ]
- },
- "donaukanal-0": {
-  "title": "File:2019 - Urania am Abend am Donaukanal.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:2019_-_Urania_am_Abend_am_Donaukanal.jpg",
-  "license": "CC BY-SA 4.0",
-  "artist": "Moahim",
-  "size": [
-   1400,
-   927
-  ]
- },
- "donaukanal-1": {
-  "title": "File:Schuetzenhaus Donaukanal Wien DSC 9948w.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Schuetzenhaus_Donaukanal_Wien_DSC_9948w.jpg",
-  "license": "CC BY-SA 3.0 at",
-  "artist": "P e z i",
-  "size": [
-   1400,
-   913
-  ]
- },
- "donaukanal-2": {
-  "title": "File:Wien, Leopoldstadt, Donaukanal, 2017-11 CN-01.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Wien,_Leopoldstadt,_Donaukanal,_2017-11_CN-01.jpg",
-  "license": "CC BY-SA 4.0",
-  "artist": "Steffen Schmitz (more photos)",
-  "size": [
-   1400,
-   821
-  ]
- },
- "donaukanal-3": {
-  "title": "File:Wien-Donaukanal-UNIQA Tower-02ASD.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Wien-Donaukanal-UNIQA_Tower-02ASD.jpg",
-  "license": "CC BY-SA 4.0",
-  "artist": "Asurnipal",
+  "artist": "Nanahuatl",
   "size": [
    1050,
    1400
   ]
  },
- "heuriger-0": {
-  "title": "File:Himmelstr7.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Himmelstr7.jpg",
+ "oax-alcala-0": {
+  "title": "File:Macedonio de Alcalá.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Macedonio_de_Alcal%C3%A1.jpg",
   "license": "CC BY-SA 4.0",
-  "artist": "Clemens Mosch",
+  "artist": "Zitenshi",
+  "size": [
+   1400,
+   1400
+  ]
+ },
+ "oax-alcala-1": {
+  "title": "File:Un violador en tu camino, performance Oaxaca 2019.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Un_violador_en_tu_camino,_performance_Oaxaca_2019.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Katmacktruth",
   "size": [
    1400,
    1050
   ]
  },
- "heuriger-1": {
-  "title": "File:Zum guten Grinzing aussen.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Zum_guten_Grinzing_aussen.jpg",
+ "oax-altar-0": {
+  "title": "File:Altar de Día de Muertos en el Tule Oaxaca.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Altar_de_D%C3%ADa_de_Muertos_en_el_Tule_Oaxaca.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Jmillan325",
+  "size": [
+   1400,
+   1050
+  ]
+ },
+ "oax-altar-1": {
+  "title": "File:Altar de muertos Juquila, Oaxaca en San Diego Churubusco.JPG",
+  "page": "https://commons.wikimedia.org/wiki/File:Altar_de_muertos_Juquila,_Oaxaca_en_San_Diego_Churubusco.JPG",
   "license": "CC BY-SA 3.0",
-  "artist": "Vindobohann",
+  "artist": "Daniel.quinonez.1",
   "size": [
    1400,
-   1005
+   1046
   ]
  },
- "heuriger-2": {
-  "title": "File:Grinzing Heuriger Hans Maly Grinzing.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Grinzing_Heuriger_Hans_Maly_Grinzing.jpg",
-  "license": "CC BY-SA 4.0",
-  "artist": "Geolina163",
-  "size": [
-   950,
-   1400
-  ]
- },
- "heuriger-3": {
-  "title": "File:Grinzing Himmelstrasse 7.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Grinzing_Himmelstrasse_7.jpg",
-  "license": "CC BY-SA 4.0",
-  "artist": "Geolina163",
-  "size": [
-   933,
-   1400
-  ]
- },
- "staatsoper-0": {
-  "title": "File:Staatsoper in Wien bei Nacht.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Staatsoper_in_Wien_bei_Nacht.jpg",
-  "license": "CC BY 2.0",
-  "artist": "eastboca.net",
+ "oax-altar-2": {
+  "title": "File:Ofrenda de Día de Muertos 9.JPG",
+  "page": "https://commons.wikimedia.org/wiki/File:Ofrenda_de_D%C3%ADa_de_Muertos_9.JPG",
+  "license": "CC BY-SA 3.0",
+  "artist": "A01335977",
   "size": [
    1400,
-   890
+   1050
   ]
  },
- "staatsoper-1": {
-  "title": "File:Staatsoper wien Lumia 930.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Staatsoper_wien_Lumia_930.jpg",
-  "license": "CC BY-SA 4.0",
-  "artist": "Freakedenough",
+ "oax-altar-3": {
+  "title": "File:Ofrenda de Día de Muertos 7.JPG",
+  "page": "https://commons.wikimedia.org/wiki/File:Ofrenda_de_D%C3%ADa_de_Muertos_7.JPG",
+  "license": "CC BY-SA 3.0",
+  "artist": "A01335977",
   "size": [
    1400,
    788
   ]
  },
- "staatsoper-2": {
-  "title": "File:20171231 Vienna state opera by night D20 5869.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:20171231_Vienna_state_opera_by_night_D20_5869.jpg",
+ "oax-comparsa-0": {
+  "title": "File:Cascabeles.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Cascabeles.jpg",
   "license": "CC BY-SA 4.0",
-  "artist": "Granada",
-  "size": [
-   1400,
-   937
-  ]
- },
- "staatsoper-3": {
-  "title": "File:Vienna State Opera at night 2023.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Vienna_State_Opera_at_night_2023.jpg",
-  "license": "CC BY-SA 4.0",
-  "artist": "Igorkojic97",
-  "size": [
-   1400,
-   1054
-  ]
- },
- "kaiserschmarrn-0": {
-  "title": "File:Kaiserschmarrn und Apfelmus.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Kaiserschmarrn_und_Apfelmus.jpg",
-  "license": "CC BY-SA 4.0",
-  "artist": "Ich",
-  "size": [
-   1400,
-   1050
-  ]
- },
- "kaiserschmarrn-1": {
-  "title": "File:2015 0731 Kaiserschmarrn Apfelsoße Edelweisshütte Sölden.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:2015_0731_Kaiserschmarrn_Apfelso%C3%9Fe_Edelweissh%C3%BCtte_S%C3%B6lden.jpg",
-  "license": "CC BY-SA 4.0",
-  "artist": "Takeaway",
-  "size": [
-   1400,
-   1120
-  ]
- },
- "kaiserschmarrn-2": {
-  "title": "File:Hofzuckerbäcker Demel Kaiserschmarrn 2.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Hofzuckerb%C3%A4cker_Demel_Kaiserschmarrn_2.jpg",
-  "license": "CC BY-SA 4.0",
-  "artist": "Geolina163",
-  "size": [
-   1148,
-   1400
-  ]
- },
- "kaiserschmarrn-3": {
-  "title": "File:Hofzuckerbäcker Demel Kaiserschmarrn 3.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Hofzuckerb%C3%A4cker_Demel_Kaiserschmarrn_3.jpg",
-  "license": "CC BY-SA 4.0",
-  "artist": "Geolina163",
-  "size": [
-   1400,
-   1050
-  ]
- },
- "spittelberg-0": {
-  "title": "File:Wien Spittelberg Gasse 5 Portal.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Wien_Spittelberg_Gasse_5_Portal.jpg",
-  "license": "CC BY-SA 3.0",
-  "artist": "Isiwal",
+  "artist": "David Cabrera",
   "size": [
    933,
    1400
   ]
  },
- "spittelberg-1": {
-  "title": "File:Wien Spittelberg Gasse 11 Fassade.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Wien_Spittelberg_Gasse_11_Fassade.jpg",
-  "license": "CC BY-SA 3.0",
-  "artist": "Isiwal",
-  "size": [
-   933,
-   1400
-  ]
- },
- "spittelberg-2": {
-  "title": "File:Wien Spittelberg Gasse 11 Immaculata.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Wien_Spittelberg_Gasse_11_Immaculata.jpg",
-  "license": "CC BY-SA 3.0",
-  "artist": "Isiwal",
+ "oax-xoxo-0": {
+  "title": "File:Velando en el Panteón de Xoxocotlán.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Velando_en_el_Pante%C3%B3n_de_Xoxocotl%C3%A1n.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Pedro Daniel Godínez Corona",
   "size": [
    1400,
    933
   ]
  },
- "spittelberg-3": {
-  "title": "File:Wien Spittelberg Gasse 18 Tafel.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Wien_Spittelberg_Gasse_18_Tafel.jpg",
+ "oax-panteon-0": {
+  "title": "File:Dia de los Muertos - Oaxaca Cemetery (13617215934).jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Dia_de_los_Muertos_-_Oaxaca_Cemetery_(13617215934).jpg",
+  "license": "CC BY-SA 2.0",
+  "artist": "Gregory \"Slobirdr\" Smith",
+  "size": [
+   1079,
+   1400
+  ]
+ },
+ "oax-mercado-0": {
+  "title": "File:Mercado 20 de Noviembre en Oaxaca, México.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Mercado_20_de_Noviembre_en_Oaxaca,_M%C3%A9xico.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "WeltKonnte",
+  "size": [
+   1280,
+   720
+  ]
+ },
+ "oax-mercado-1": {
+  "title": "File:Mercado 20 de noviembre - Oaxaca de Juárez - 4 - Puesto de pan.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Mercado_20_de_noviembre_-_Oaxaca_de_Ju%C3%A1rez_-_4_-_Puesto_de_pan.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "ProtoplasmaKid",
+  "size": [
+   1400,
+   937
+  ]
+ },
+ "oax-mercado-2": {
+  "title": "File:Mercado 20 de noviembre - Oaxaca de Juárez - 10.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Mercado_20_de_noviembre_-_Oaxaca_de_Ju%C3%A1rez_-_10.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "ProtoplasmaKid",
+  "size": [
+   1400,
+   937
+  ]
+ },
+ "oax-mercado-3": {
+  "title": "File:Mercado 20 de noviembre - Oaxaca de Juárez - 13.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Mercado_20_de_noviembre_-_Oaxaca_de_Ju%C3%A1rez_-_13.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "ProtoplasmaKid",
+  "size": [
+   1400,
+   937
+  ]
+ },
+ "oax-tlayuda-0": {
+  "title": "File:TLAYUDA.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:TLAYUDA.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Gomez.erick",
+  "size": [
+   1400,
+   1050
+  ]
+ },
+ "oax-tlayuda-1": {
+  "title": "File:Tlayuda vendor in Oaxaca City.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Tlayuda_vendor_in_Oaxaca_City.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Alex Haulman",
+  "size": [
+   787,
+   1400
+  ]
+ },
+ "oax-tlayuda-2": {
+  "title": "File:Tlayuda con Quesillo, Oaxaca.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Tlayuda_con_Quesillo,_Oaxaca.jpg",
   "license": "CC BY-SA 3.0",
-  "artist": "Isiwal",
+  "artist": "Nsaum75",
+  "size": [
+   1400,
+   1050
+  ]
+ },
+ "oax-tlayuda-3": {
+  "title": "File:Tlayuda de cecina y chorizo en Coyoacán.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Tlayuda_de_cecina_y_chorizo_en_Coyoac%C3%A1n.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "François Calvaresi",
+  "size": [
+   1400,
+   1399
+  ]
+ },
+ "oax-mole-0": {
+  "title": "File:Mole negro de Oaxaca con arroz.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Mole_negro_de_Oaxaca_con_arroz.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "ProtoplasmaKid",
+  "size": [
+   1400,
+   1050
+  ]
+ },
+ "oax-mole-1": {
+  "title": "File:Mole negro mexicano con arroz.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Mole_negro_mexicano_con_arroz.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Kjkszpj123",
+  "size": [
+   1265,
+   1400
+  ]
+ },
+ "oax-mole-2": {
+  "title": "File:Doña Mari, la Reina del Mole.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Do%C3%B1a_Mari,_la_Reina_del_Mole.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Diego Emiliano Jaramillo Navarro",
+  "size": [
+   1050,
+   1400
+  ]
+ },
+ "oax-mole-3": {
+  "title": "File:Guelaguetza 2014 - 62.JPG",
+  "page": "https://commons.wikimedia.org/wiki/File:Guelaguetza_2014_-_62.JPG",
+  "license": "CC BY-SA 4.0",
+  "artist": "Cristina Zapata Pérez",
+  "size": [
+   1400,
+   1050
+  ]
+ },
+ "oax-jardin-0": {
+  "title": "File:Jardín etnobotánico de Oaxaca1.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Jard%C3%ADn_etnobot%C3%A1nico_de_Oaxaca1.jpg",
+  "license": "Public domain",
+  "artist": "El Ágora",
+  "size": [
+   1400,
+   1050
+  ]
+ },
+ "oax-jardin-1": {
+  "title": "File:Jardín Etnobotánico de Oaxaca 06.JPG",
+  "page": "https://commons.wikimedia.org/wiki/File:Jard%C3%ADn_Etnobot%C3%A1nico_de_Oaxaca_06.JPG",
+  "license": "CC0",
+  "artist": "Kaldari",
+  "size": [
+   1400,
+   1050
+  ]
+ },
+ "oax-jardin-2": {
+  "title": "File:Jardín Etnobotánico de Oaxaca 04.JPG",
+  "page": "https://commons.wikimedia.org/wiki/File:Jard%C3%ADn_Etnobot%C3%A1nico_de_Oaxaca_04.JPG",
+  "license": "CC0",
+  "artist": "Kaldari",
+  "size": [
+   1400,
+   1050
+  ]
+ },
+ "oax-jardin-3": {
+  "title": "File:Jardín Etnobotánico de Oaxaca 10.JPG",
+  "page": "https://commons.wikimedia.org/wiki/File:Jard%C3%ADn_Etnobot%C3%A1nico_de_Oaxaca_10.JPG",
+  "license": "CC0",
+  "artist": "Kaldari",
+  "size": [
+   1400,
+   1050
+  ]
+ },
+ "oax-montealban-0": {
+  "title": "File:Monte Alban Oaxaca 1976 - Oaxaca Valley.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Monte_Alban_Oaxaca_1976_-_Oaxaca_Valley.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Infrogmation",
+  "size": [
+   1202,
+   1400
+  ]
+ },
+ "oax-montealban-1": {
+  "title": "File:Monte Alban Oaxaca - Carving detail - 1976.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Monte_Alban_Oaxaca_-_Carving_detail_-_1976.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Infrogmation",
+  "size": [
+   1090,
+   1400
+  ]
+ },
+ "oax-montealban-2": {
+  "title": "File:Monte Albán Oaxaca 1976 01.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Monte_Alb%C3%A1n_Oaxaca_1976_01.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Infrogmation",
+  "size": [
+   1400,
+   1060
+  ]
+ },
+ "oax-montealban-3": {
+  "title": "File:Monte Albán Oaxaca 1976 02.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Monte_Alb%C3%A1n_Oaxaca_1976_02.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Infrogmation",
+  "size": [
+   1400,
+   1111
+  ]
+ },
+ "oax-hierve-0": {
+  "title": "File:Cascada petrificada de Hierve el Agua en Oaxaca.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Cascada_petrificada_de_Hierve_el_Agua_en_Oaxaca.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Holamanueldiaz2",
+  "size": [
+   1400,
+   933
+  ]
+ },
+ "oax-hierve-1": {
+  "title": "File:Hierve el Agua.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Hierve_el_Agua.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Fvaldezrom",
+  "size": [
+   1400,
+   663
+  ]
+ },
+ "oax-hierve-2": {
+  "title": "File:Hierve el agua.JPG",
+  "page": "https://commons.wikimedia.org/wiki/File:Hierve_el_agua.JPG",
+  "license": "CC BY-SA 3.0",
+  "artist": "Adrián Cerón",
+  "size": [
+   1400,
+   1050
+  ]
+ },
+ "oax-hierve-3": {
+  "title": "File:Paisaje desde Hierve el agua, Oaxaca, México.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Paisaje_desde_Hierve_el_agua,_Oaxaca,_M%C3%A9xico.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Nataly Gómez Gómez",
+  "size": [
+   1400,
+   931
+  ]
+ },
+ "oax-mitla-0": {
+  "title": "File:Mitla signboard-Oaxaca-Mexico.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Mitla_signboard-Oaxaca-Mexico.jpg",
+  "license": "CC BY-SA 3.0",
+  "artist": "User:Gengiskanhg",
+  "size": [
+   1048,
+   1400
+  ]
+ },
+ "oax-mitla-1": {
+  "title": "File:Patio Grupo Norte.JPG",
+  "page": "https://commons.wikimedia.org/wiki/File:Patio_Grupo_Norte.JPG",
+  "license": "CC BY-SA 3.0",
+  "artist": "DavidConFran",
+  "size": [
+   1400,
+   933
+  ]
+ },
+ "oax-mitla-2": {
+  "title": "File:Acceso Tumba 1.JPG",
+  "page": "https://commons.wikimedia.org/wiki/File:Acceso_Tumba_1.JPG",
+  "license": "CC BY-SA 3.0",
+  "artist": "DavidConFran",
+  "size": [
+   1400,
+   933
+  ]
+ },
+ "oax-mitla-3": {
+  "title": "File:Tierra de muertos.JPG",
+  "page": "https://commons.wikimedia.org/wiki/File:Tierra_de_muertos.JPG",
+  "license": "CC BY-SA 3.0",
+  "artist": "Eu.francov",
+  "size": [
+   1400,
+   1050
+  ]
+ },
+ "oax-tule-0": {
+  "title": "File:Árbol-del-Tule-Oaxaca-Mexico.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:%C3%81rbol-del-Tule-Oaxaca-Mexico.jpg",
+  "license": "CC BY-SA 3.0",
+  "artist": "User:Gengiskanhg",
+  "size": [
+   1400,
+   1049
+  ]
+ },
+ "oax-tule-1": {
+  "title": "File:El Árbol del Tule by ovedc 04.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:El_%C3%81rbol_del_Tule_by_ovedc_04.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Ovedc",
+  "size": [
+   1400,
+   788
+  ]
+ },
+ "oax-tule-2": {
+  "title": "File:Poema-Árbol-del-Tule-Oaxaca-Mexico.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Poema-%C3%81rbol-del-Tule-Oaxaca-Mexico.jpg",
+  "license": "CC BY-SA 3.0",
+  "artist": "User:Gengiskanhg",
+  "size": [
+   1400,
+   1049
+  ]
+ },
+ "oax-tule-3": {
+  "title": "File:Árbol Del Tule (46751052).jpeg",
+  "page": "https://commons.wikimedia.org/wiki/File:%C3%81rbol_Del_Tule_(46751052).jpeg",
+  "license": "CC BY 3.0",
+  "artist": "Liliana Saeb",
+  "size": [
+   1400,
+   933
+  ]
+ },
+ "oax-teotitlan-0": {
+  "title": "File:Telar y tapetes-Teotitlán del Valle-Oaxaca-Mexico.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Telar_y_tapetes-Teotitl%C3%A1n_del_Valle-Oaxaca-Mexico.jpg",
+  "license": "CC BY-SA 3.0",
+  "artist": "User:Gengiskanhg",
+  "size": [
+   1400,
+   1049
+  ]
+ },
+ "oax-teotitlan-1": {
+  "title": "File:TapeteEnFabricación-Teotitlán del Valle-Oaxaca-Mexico.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:TapeteEnFabricaci%C3%B3n-Teotitl%C3%A1n_del_Valle-Oaxaca-Mexico.jpg",
+  "license": "CC BY-SA 3.0",
+  "artist": "User:Gengiskanhg",
+  "size": [
+   1048,
+   1400
+  ]
+ },
+ "oax-teotitlan-2": {
+  "title": "File:Tejido de Tapetes Artesanales en Telar. Teotitlán Del Valle, Oaxaca.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Tejido_de_Tapetes_Artesanales_en_Telar._Teotitl%C3%A1n_Del_Valle,_Oaxaca.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Axel Alvarado Chávez",
+  "size": [
+   1280,
+   854
+  ]
+ },
+ "oax-teotitlan-3": {
+  "title": "File:Gabriel Mendoza Gagnier.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Gabriel_Mendoza_Gagnier.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Manomagica1",
   "size": [
    933,
+   1400
+  ]
+ },
+ "oax-tlacolula-0": {
+  "title": "File:Tlacolula Market 230122 62.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Tlacolula_Market_230122_62.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Bluerasberry",
+  "size": [
+   1400,
+   933
+  ]
+ },
+ "oax-tlacolula-1": {
+  "title": "File:Tlacolula Market 230122 1.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Tlacolula_Market_230122_1.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Bluerasberry",
+  "size": [
+   1400,
+   933
+  ]
+ },
+ "oax-tlacolula-2": {
+  "title": "File:Tlacolula Market 230122 9.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Tlacolula_Market_230122_9.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Bluerasberry",
+  "size": [
+   1400,
+   933
+  ]
+ },
+ "oax-tlacolula-3": {
+  "title": "File:Tlacolula Market 230122 3.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Tlacolula_Market_230122_3.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Bluerasberry",
+  "size": [
+   1400,
+   933
+  ]
+ },
+ "oax-chocolate-0": {
+  "title": "File:Oaxaca de Juárez, 22.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Oaxaca_de_Ju%C3%A1rez,_22.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "LBM1948",
+  "size": [
+   955,
+   1400
+  ]
+ },
+ "oax-chocolate-1": {
+  "title": "File:Oaxaca de Juárez, 23.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Oaxaca_de_Ju%C3%A1rez,_23.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "LBM1948",
+  "size": [
+   930,
    1400
   ]
  }
