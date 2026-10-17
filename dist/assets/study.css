@@ -98,10 +98,16 @@ body:not(.fn-study-open){overflow:hidden}
 .fn-candle-halo{animation:fn-candle-shimmer 2.7s ease-in-out infinite}
 .fn-candle-halo-two{animation-duration:3.3s;animation-delay:-1.6s}
 @keyframes fn-candle-shimmer{0%,100%{opacity:.55}33%{opacity:.9}61%{opacity:.4}83%{opacity:.75}}
-.fn-book-breeze{transform-box:view-box;transform-origin:1050px 890px;animation:fn-page-stir 7.5s ease-in-out infinite}
-@keyframes fn-page-stir{0%,100%{transform:none}35%{transform:skewY(.18deg) scaleY(.995)}70%{transform:skewY(-.12deg) scaleY(1.002)}}
-.fn-smoke-breeze{transform-box:view-box;transform-origin:1167px 660px;animation:fn-smoke-drift 11s ease-in-out infinite}
-@keyframes fn-smoke-drift{0%,100%{transform:skewX(-1deg)}50%{transform:skewX(2.5deg)}}
+/* Separate textured leaves pivot at the binding; their outer edges visibly lift. */
+.fn-page-lift{transform-box:view-box;transform-origin:1088px 882px;animation:fn-page-left-lift 7s ease-in-out infinite}
+.fn-page-right{transform-origin:1057px 803px;animation:fn-page-right-lift 8.5s ease-in-out infinite;animation-delay:-2s}
+@keyframes fn-page-left-lift{0%,18%,100%{transform:none}48%{transform:rotate(1.8deg) skewX(-.35deg)}72%{transform:rotate(.5deg)}}
+@keyframes fn-page-right-lift{0%,22%,100%{transform:none}54%{transform:rotate(-2.2deg) skewX(.4deg)}78%{transform:rotate(-.6deg)}}
+/* Wisps rise along the plume rather than reversing direction; upper smoke fades away. */
+.fn-smoke-ribbon{stroke-dasharray:48 32;animation:fn-smoke-rise 5s linear infinite}
+.fn-smoke-ribbon-1{stroke-dasharray:32 48;animation-duration:6s;animation-delay:-2s}
+.fn-smoke-ribbon-2{stroke-dasharray:22 58;animation-duration:7s;animation-delay:-4s}
+@keyframes fn-smoke-rise{from{stroke-dashoffset:0}to{stroke-dashoffset:-80}}
 @media(prefers-reduced-motion:reduce){.fn-room-atmosphere{display:none}.fn-room-atmosphere *{animation:none!important}}
 
 /* Lesson reading pages: quiet, single-column notes. */
