@@ -31,9 +31,11 @@ for (const page of pages) {
   for (const [, url] of html.matchAll(/url\((\/[^)'"]+)\)/g)) if (!resolve(url)) problems.push(`${where}: broken url() → ${url}`);
 
   // 2. Every page names its English and Italian twin, and the twin exists
+  //    (except private noindex pages: the study at /hub/ is English only, Nicky's call)
   const lang = (html.match(/<html lang="([a-z]+)"/) || [])[1];
   if (!lang) problems.push(`${where}: missing <html lang>`);
-  for (const l of ['en', 'it']) {
+  const priv = /<meta name="robots" content="[^"]*noindex/.test(html);
+  for (const l of priv ? [] : ['en', 'it']) {
     const m = html.match(new RegExp(`hreflang="${l}" href="https://frolickingnicky\\.com([^"]*)"`));
     if (!m) problems.push(`${where}: no hreflang="${l}" link`);
     else if (!resolve(m[1] || '/')) problems.push(`${where}: its ${l} twin ${m[1]} does not exist`);

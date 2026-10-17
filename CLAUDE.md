@@ -158,8 +158,10 @@ a separate Europe close-up, the map legend or the trip buttons under the map on 
 
 ## The study (Nicky's private learning hub)
 
-- `/hub/` and `/it/studio/` (both `noindex`), reached only through the hidden link on the first letter of the
-  footer tagline on every page ("A little planning…" / "Un po’ di programmi…"). Never link it anywhere else.
+- `/hub/` (`noindex`), reached only through the hidden link on the first letter of the footer tagline on every
+  page ("A little planning…", and the "U" of "Un po’ di programmi…" on Italian pages). Never link it anywhere else.
+  **English only:** Nicky doesn't want an Italian copy of the study, so the EN/IT twin rule doesn't apply here
+  (`check-site.mjs` skips twins for `noindex` pages).
 - The landing page is **only Nicky's painting** (`assets/study-room.jpg`), filling the whole screen: no header,
   no footer, no title, no labels (Nicky's call). It doesn't load `motion.js`, `shared.css` or `refine.css`.
   On portrait phones the painting fills the height and swipes sideways, opening in the middle.
@@ -171,5 +173,5 @@ a separate Europe close-up, the map legend or the trip buttons under the map on 
 - Topic pages use the study palette Nicky loves: deep purple `#2b1e38` / `#150e1d` and candle-yellow `#f3d995`,
   with cream `#efe0bf` text, all set in Cormorant Garamond, notes on yellow-ruled lines (`assets/study.css`).
   Keep it elegant: no emoji, no labels or tooltips on hover (Nicky disliked them), only the silver outline.
-- Topic content (EN + IT side by side) is in `TOPICS` in `assets/study.js`. Ticks, notes, extra steps and new
-  topics live in the browser only (`fn-study-v1`), shared by both languages.
+- Topic content is in `TOPICS` in `assets/study.js` (old Italian strings sit beside the English; only English
+  shows). Ticks, notes, extra steps and new topics live in the browser only (`fn-study-v1`).

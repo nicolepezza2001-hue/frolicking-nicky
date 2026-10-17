@@ -1,4 +1,4 @@
-/* Frolicking Nicky: the study, Nicky's private learning hub (/hub/ and /it/studio/).
+/* Frolicking Nicky: the study, Nicky's private learning hub (/hub/, English only: Nicky doesn't want an Italian copy).
    Reached only through the secret first letter of the footer tagline on every page; the pages are noindex.
    The landing page is Nicky's painting alone (full screen); each object links to a topic view (#opera, #new…).
    Topics live in TOPICS below (English and Italian side by side). Ticks, notes, extra steps and new topics are kept
@@ -203,7 +203,6 @@
   const root = document.getElementById('fn-study');
   const mine = document.getElementById('fn-study-mine'); // topics Nicky adds, listed on the crystal's page
   if (!root) return;
-  const twin = it ? '/hub/' : '/it/studio/';
 
   const count = (t, out) => {
     const s = steps(t), n = s.filter(x => state.done[x.key]).length;
@@ -239,8 +238,7 @@
     const sec = el('section', 'fn-study-topic fn-study-view'); sec.id = t.id; sec.hidden = true;
     const bar = el('div', 'fn-study-bar');
     const back = el('a', 'fn-study-back', T.back); back.href = '#';
-    const lang = el('a', 'fn-study-lang', it ? 'EN' : 'IT'); lang.href = twin + '#' + t.id; lang.hreflang = it ? 'en' : 'it';
-    bar.append(back, lang); sec.append(bar);
+    bar.append(back); sec.append(bar);
     const head = el('div', 'fn-study-head');
     const h2 = el('h2', null, pick(t.name));
     const counter = el('p', 'fn-study-count group-count');
