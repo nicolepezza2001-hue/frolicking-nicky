@@ -195,6 +195,10 @@
   state.done ||= {}; state.notes ||= {}; state.custom ||= []; state.extra ||= {}; state.vocab ||= {};
   const save = () => { try { localStorage.setItem(KEY, JSON.stringify(state)); } catch (_) {} };
 
+  const LESSONS = [
+    { topic: 'silver-age', name: 'Silver Age poetry', lessons: window.FN_SILVER_AGE_LESSONS || [] },
+    { topic: 'french', name: 'French', lessons: window.FN_FRENCH_LESSONS || [] }
+  ];
   const pick = v => (Array.isArray(v) ? L(v[0], v[1]) : v);
   const topics = () => TOPICS.concat(state.custom.map(c => ({ ...c, custom: true, path: [], shelf: [] })));
   const steps = t => t.path.map((s, i) => ({ key: `${t.id}:${i}`, title: pick(s[0]), note: L(s[1], s[2]), lesson: t.id === 'silver-age' ? window.FN_SILVER_AGE_LESSONS?.[i] : null }))
@@ -244,6 +248,13 @@
   // Vocabulary for the language pages: the word on one side, English on the other. Veil either side to test
   // yourself both ways; a tap on a veiled word lifts the veil. Words live in state.vocab (so backups include them).
   const VOCAB = { russian: ['Russian', 'ru'], french: ['French', 'fr'] };
+  const SEED = { french: window.FN_FRENCH_VOCAB || [] };
+  // Imported words join the list once; a word Nicky removes or edits afterwards stays that way
+  Object.entries(SEED).forEach(([id, seed]) => {
+    const list = (state.vocab[id] ||= []), done = (state.seeded ||= {})[id] || [];
+    seed.forEach(w => { if (!done.includes(w.id) && !list.some(v => v.id === w.id)) list.push({ ...w }); });
+    state.seeded[id] = seed.map(w => w.id); save();
+  });
   const vocab = (id, [lang, code]) => {
     const box = el('div', 'fn-vocab'), words = (state.vocab[id] ||= []);
     const head = el('div', 'fn-vocab-head'), label = el('p', 'fn-study-label', 'Vocabulary');
@@ -331,6 +342,17 @@
       input.value = ''; count(t, counter); input.focus();
     });
     left.append(list, form);
+    // Topics whose lessons aren't path steps (French) list them under the path
+    const own = t.id !== 'silver-age' && LESSONS.find(x => x.topic === t.id);
+    if (own && own.lessons.length) {
+      left.append(el('p', 'fn-study-label fn-study-lessons-label', 'Class notes'));
+      const ol = el('ol', 'fn-study-lessons');
+      own.lessons.forEach(l => {
+        const li = el('li'), a = el('a', 'fn-study-lesson-link', l.title); a.href = '#' + l.id;
+        li.append(a, el('small', null, l.kicker || 'Lesson ' + l.number)); ol.append(li);
+      });
+      left.append(ol);
+    }
 
     const right = el('div');
     if (t.shelf.length) {
@@ -375,17 +397,26 @@
   topics().forEach(t => { if (t.custom && mine) mine.append(pill(t)); root.append(section(t)); });
 
   // Readable lesson views use the same hash navigation as the study topics.
-  (window.FN_SILVER_AGE_LESSONS || []).forEach((lesson, index, lessons) => {
+  // Silver Age poetry and French (imported from Nicky's notes) share one reading layout.
+  LESSONS.forEach(({ topic, name, lessons }) => lessons.forEach((lesson, index) => {
     const sec = el('article', 'fn-study-view fn-lesson'); sec.id = lesson.id; sec.hidden = true;
-    const back = el('a', 'fn-study-back', '← Silver Age poetry'); back.href = '#silver-age';
+    const back = el('a', 'fn-study-back', '← ' + name); back.href = '#' + topic;
     const bar = el('nav', 'fn-study-bar'); bar.setAttribute('aria-label', 'Lesson navigation'); bar.append(back);
     const title = el('h2', null, lesson.title); title.id = lesson.id + '-title';
     sec.setAttribute('aria-labelledby', title.id);
-    sec.append(bar, el('p', 'fn-lesson-number', 'Lesson ' + lesson.number + ' · Silver Age poetry'), title);
+    sec.append(bar, el('p', 'fn-lesson-number', lesson.kicker || 'Lesson ' + lesson.number + ' · ' + name), title);
     const notes = el('div', 'fn-lesson-notes'); let list;
     lesson.blocks.forEach((block, blockIndex) => {
       if (block.type === 'heading') { list = null; const heading = el('h3', null, block.text); heading.dataset.noteBlock = blockIndex; notes.append(heading); }
-      else {
+      else if (block.type === 'table') {
+        list = null; const wrap = el('div', 'fn-lesson-table'), table = el('table'), head = el('tr');
+        block.head.forEach(c => head.append(el('th', null, c))); table.append(head);
+        block.rows.forEach(r => { const tr = el('tr'); r.forEach(c => tr.append(el('td', null, c))); table.append(tr); });
+        wrap.append(table); notes.append(wrap);
+      } else if (block.type === 'link') {
+        list = null; const p = el('p', 'fn-lesson-link'), a = el('a', null, block.text + ' ↗\uFE0E');
+        a.href = block.href; a.target = '_blank'; a.rel = 'noopener noreferrer'; p.append(a); notes.append(p);
+      } else {
         if (!list) { list = el('ul'); notes.append(list); }
         const paragraph = el('li', null, block.text); paragraph.dataset.noteBlock = blockIndex; list.append(paragraph);
       }
@@ -395,10 +426,11 @@
     workspace.append(notes, margin); sec.append(workspace);
     window.fnAnnotateLesson?.(lesson, notes, margin, sec);
     const footer = el('nav', 'fn-lesson-footer'); footer.setAttribute('aria-label', 'Other lessons');
-    const other = lessons[index === 0 ? 1 : 0];
-    if (other) { const link = el('a', 'fn-study-back', index === 0 ? 'Next: ' + other.title + ' →' : '← Previous: ' + other.title); link.href = '#' + other.id; footer.append(link); }
+    const prev = lessons[index - 1], next = lessons[index + 1];
+    if (prev) { const link = el('a', 'fn-study-back', '← Previous: ' + prev.title); link.href = '#' + prev.id; footer.append(link); }
+    if (next) { const link = el('a', 'fn-study-back', 'Next: ' + next.title + ' →'); link.href = '#' + next.id; footer.append(link); }
     sec.append(footer); root.append(sec);
-  });
+  }));
 
   // One room at a time: the study (no hash) or a single topic page (#opera, #new…)
   const scene = document.getElementById('fn-scene'), newBox = document.getElementById('new');
