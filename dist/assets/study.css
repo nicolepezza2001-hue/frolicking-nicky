@@ -125,8 +125,8 @@ body:not(.fn-study-open){overflow:hidden}
 @media(max-width:760px){.fn-lesson{padding:24px 20px 32px}.fn-lesson-notes{font-size:17px;line-height:1.85}.fn-lesson h2{overflow-wrap:anywhere}}
 
 /* Warm paper with purple ink; annotation margin stays outside the reading measure. */
-body.fn-lesson-open{background:var(--st-yellow)}
-.fn-lesson{max-width:1120px;background:var(--st-yellow);color:var(--st-purple);border-color:#2b1e3833;box-shadow:none}
+body.fn-lesson-open{background:#faeac0}
+.fn-lesson{max-width:1120px;background:#faeac0;color:var(--st-purple);border-color:#2b1e3833;box-shadow:none}
 .fn-lesson h2,.fn-lesson .fn-study-back,.fn-lesson-number,.fn-lesson-notes,.fn-lesson-notes li::marker{color:var(--st-purple)}
 .fn-lesson-notes h3{font:800 1.4rem/1.4 'Arnold Boecklin',Georgia,serif;color:var(--st-purple)}
 .fn-lesson-footer{border-color:#2b1e3840}
@@ -148,3 +148,8 @@ body.fn-lesson-open{background:var(--st-yellow)}
 .fn-highlight-toolbar button{border:1px solid #f3d99566;background:transparent;color:var(--st-yellow);padding:8px 10px;border-radius:4px;font:14px Georgia,serif;cursor:pointer}
 .fn-highlight-toolbar button:focus-visible{outline:2px solid var(--st-yellow)}
 @media(max-width:760px){.fn-lesson-workspace{grid-template-columns:minmax(0,1fr);gap:28px}.fn-lesson-margin{min-height:0!important;border-left:0;border-top:1px solid #2b1e3840;padding:20px 0 0}.fn-margin-card{position:relative;left:auto;right:auto;top:auto!important;margin:16px 0}.fn-lesson h2{font-size:clamp(2rem,9vw,3rem)}}
+
+.fn-highlight-mode{font:15px/1.4 Georgia,serif;color:var(--st-purple);background:transparent;border:1px solid #2b1e3855;border-radius:6px;padding:7px 12px;cursor:pointer}
+.fn-highlight-mode[aria-pressed=true]{background:var(--st-purple);color:#faeac0}
+.fn-highlight-mode:focus-visible{outline:2px solid var(--st-purple);outline-offset:3px}
+.fn-highlighter-active .fn-lesson-notes{cursor:crosshair}

@@ -3,12 +3,18 @@
   const KEY = 'fn-study-annotations-v1';
   let saved = {};
   try { saved = JSON.parse(localStorage.getItem(KEY)) || {}; } catch (_) {}
+  let highlightMode = false;
+  const modeButtons = [];
   const make = (tag, cls, text) => { const e = document.createElement(tag); e.className = cls || ''; if (text) e.textContent = text; return e; };
   window.fnAnnotateLesson = (lesson, content, margin, section) => {
     const records = saved[lesson.id] ||= [];
-    const hint = make('p', 'fn-margin-hint', 'Select text to highlight it, or click here to add a note.');
-    const status = make('p', 'fn-annotation-status', 'Notes save in this browser.'); status.setAttribute('aria-live', 'polite');
-    const controls = make('div', 'fn-margin-controls'); controls.append(hint, status); margin.append(controls); let pending = null;
+    const status = make('p', 'fn-annotation-status fn-sr'); status.setAttribute('aria-live', 'polite'); section.append(status);
+    let pending = null, selecting = false, suppressMarkUntil = 0;
+    const mode = make('button', 'fn-highlight-mode', 'Highlight'); mode.type = 'button'; mode.setAttribute('aria-pressed', String(highlightMode));
+    mode.setAttribute('title', 'Turn on to highlight each passage you select. Press Escape to turn off.');
+    modeButtons.push(mode); section.querySelector('.fn-study-bar').append(mode);
+    const setMode = value => { highlightMode = value; modeButtons.forEach(button => button.setAttribute('aria-pressed', String(value))); document.body.classList.toggle('fn-highlighter-active', value); };
+    mode.addEventListener('click', () => setMode(!highlightMode));
     const toolbar = make('div', 'fn-highlight-toolbar'); toolbar.hidden = true; toolbar.setAttribute('role', 'toolbar'); toolbar.setAttribute('aria-label', 'Selected text');
     const highlight = make('button', '', 'Highlight'); const comment = make('button', '', 'Highlight + note');
     highlight.type = comment.type = 'button'; toolbar.append(highlight, comment); section.append(toolbar);
@@ -30,7 +36,7 @@
     };
     const layout = () => {
       if (section.hidden || matchMedia('(max-width:760px)').matches) return;
-      let bottom=controls.offsetHeight+24;
+      let bottom=0;
       [...margin.querySelectorAll('.fn-margin-card')].forEach(card=>{
         const record=records.find(r=>r.id===card.dataset.annotation);
         const anchor=content.querySelector(`[data-note-block="${record.block}"]`);
@@ -56,7 +62,7 @@
         card.append(field,remove);margin.append(card);resize();
       });layout();
     };
-    const capture = () => {
+    const capture = (commit = false) => {
       const selection=getSelection();
       if(!selection || selection.isCollapsed || !selection.rangeCount || section.hidden){toolbar.hidden=true;return;}
       const range=selection.getRangeAt(0);
@@ -73,6 +79,7 @@
       });
       if(!ranges.length){toolbar.hidden=true;return;}
       pending={ranges,quote:selection.toString().trim(),block:ranges[0].block};
+      if(highlightMode){toolbar.hidden=true;if(commit && !selecting){suppressMarkUntil=Date.now()+400;create(false);}return;}
       const rect=range.getBoundingClientRect();toolbar.hidden=false;
       toolbar.style.left=Math.max(8,Math.min(innerWidth-toolbar.offsetWidth-8,rect.left))+'px';
       toolbar.style.top=Math.max(8,Math.min(innerHeight-toolbar.offsetHeight-8,rect.top-toolbar.offsetHeight-8))+'px';
@@ -83,10 +90,12 @@
       records.push(record);pending=null;toolbar.hidden=true;getSelection()?.removeAllRanges();store();renderHighlights();renderCards();if(hasNote)focusRecord(record.id);
     };
     highlight.addEventListener('click',()=>create(false));comment.addEventListener('click',()=>create(true));
-    content.addEventListener('pointerup',()=>setTimeout(capture,0));content.addEventListener('keyup',capture);
-    let selectionTimer; document.addEventListener('selectionchange',()=>{clearTimeout(selectionTimer);selectionTimer=setTimeout(capture,120);});
+    content.addEventListener('pointerdown',()=>{selecting=true;});
+    document.addEventListener('pointerup',()=>{if(selecting){selecting=false;setTimeout(()=>capture(true),0);}});
+    content.addEventListener('keyup',()=>capture(true));
+    let selectionTimer; document.addEventListener('selectionchange',()=>{clearTimeout(selectionTimer);selectionTimer=setTimeout(()=>capture(!selecting),300);});
     const openMark = e => {
-      const mark=e.target.closest('mark');if(!mark || !getSelection()?.isCollapsed)return;
+      const mark=e.target.closest('mark');if(Date.now()<suppressMarkUntil || !mark || !getSelection()?.isCollapsed)return;
       const record=records.find(r=>r.id===mark.dataset.annotation);if(!record)return;
       if(!record.hasNote){record.hasNote=true;store();renderCards();}focusRecord(record.id);
     };
@@ -97,8 +106,7 @@
       const y=e.clientY; const nearest=blocks().reduce((best,block)=>Math.abs(block.getBoundingClientRect().top-y)<Math.abs(best.getBoundingClientRect().top-y)?block:best);
       pending={ranges:[],quote:'',block:Number(nearest.dataset.noteBlock)};create(true);
     });
-    const add=make('button','fn-add-margin-note','+ Add note');add.type='button';
-    add.addEventListener('click',e=>{e.stopPropagation();pending={ranges:[],quote:'',block:0};create(true);});controls.prepend(add);
+    document.addEventListener('keydown',e=>{if(e.key==='Escape'){setMode(false);toolbar.hidden=true;}});
     window.addEventListener('resize',layout);window.addEventListener('hashchange',()=>{toolbar.hidden=true;requestAnimationFrame(layout);});
     window.addEventListener('scroll',()=>{toolbar.hidden=true;},{passive:true});
     new ResizeObserver(layout).observe(content);
