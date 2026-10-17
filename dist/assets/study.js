@@ -93,7 +93,7 @@
     addStep: L('Add a step', 'Aggiungi una tappa'), add: L('Add', 'Aggiungi'), remove: L('Remove', 'Togli'),
     removeTopic: L('Remove this topic', 'Togli questo argomento'),
     confirmTopic: n => L(`Remove “${n}” and its notes from this device?`, `Togliere “${n}” e i suoi appunti da questo dispositivo?`),
-    done: L('done', 'fatte')
+    done: L('done', 'fatte'), back: L('← Back to the study', '← Torna allo studio')
   };
 
   // Device-only storage (wrapped: private windows can refuse it)
@@ -144,7 +144,8 @@
   };
 
   const section = t => {
-    const sec = el('section', 'fn-study-topic'); sec.id = t.id;
+    const sec = el('section', 'fn-study-topic fn-study-view'); sec.id = t.id; sec.hidden = true;
+    const back = el('a', 'fn-study-back', T.back); back.href = '#'; sec.append(back);
     const head = el('div', 'fn-study-head');
     const h2 = el('h2', null, pick(t.name));
     const counter = el('p', 'fn-study-count group-count');
@@ -197,7 +198,7 @@
         state.custom = state.custom.filter(c => c.id !== t.id);
         delete state.notes[t.id]; delete state.extra[t.id];
         Object.keys(state.done).forEach(k => { if (k.startsWith(t.id + ':')) delete state.done[k]; });
-        save(); sec.remove(); jump.querySelector(`a[href="#${t.id}"]`)?.remove();
+        save(); sec.remove(); jump.querySelector(`a[href="#${t.id}"]`)?.remove(); bottles(); location.hash = '';
       });
       right.append(rm);
     }
@@ -209,6 +210,41 @@
   const pill = t => { const a = el('a', null, pick(t.name)); a.href = '#' + t.id; return a; };
   topics().forEach(t => { jump.append(pill(t)); root.append(section(t)); });
 
+  // New topics stand as little bottles on the lower left shelf of the scene (four fit; the rest are in the list below)
+  const SVGNS = 'http://www.w3.org/2000/svg', COLOURS = ['#3f7f7a', '#7a3f6a', '#b0702a', '#4b6fa8'];
+  const svgEl = (tag, attrs) => { const e = document.createElementNS(SVGNS, tag); for (const k in attrs) e.setAttribute(k, attrs[k]); return e; };
+  const bottles = () => {
+    const shelf = document.getElementById('sk-bottles'); if (!shelf) return;
+    shelf.replaceChildren();
+    state.custom.slice(0, 4).forEach((c, i) => {
+      const x = 52 + i * 52, col = COLOURS[i % 4];
+      const a = svgEl('a', { class: 'sk-obj sk-bottle', href: '#' + c.id });
+      const title = svgEl('title', {}); title.textContent = c.name; a.append(title);
+      const g = svgEl('g', { class: 'sk-art' });
+      g.append(svgEl('rect', { x, y: 372, width: 34, height: 48, rx: 10, fill: col, opacity: .9 }),
+        svgEl('rect', { x: x + 11, y: 356, width: 12, height: 18, fill: col, opacity: .9 }),
+        svgEl('rect', { x: x + 9, y: 349, width: 16, height: 8, rx: 2, fill: '#a07848' }),
+        svgEl('rect', { x: x + 4, y: 386, width: 26, height: 18, rx: 2, fill: '#efe0bf' }));
+      const label = svgEl('text', { x: x + 17, y: 399, 'text-anchor': 'middle', class: 'sk-bottle-label' });
+      label.textContent = c.name.length > 5 ? c.name.slice(0, 4) + '…' : c.name;
+      g.append(label); a.append(g); shelf.append(a);
+    });
+  };
+  bottles();
+
+  // One room at a time: the study (no hash) or a single topic page (#opera, #new…)
+  const scene = document.getElementById('fn-scene'), newBox = document.getElementById('new');
+  const show = () => {
+    const id = decodeURIComponent(location.hash.slice(1));
+    const view = id && document.getElementById(id);
+    const isView = view && view.classList.contains('fn-study-view');
+    document.querySelectorAll('.fn-study-view').forEach(v => { v.hidden = v !== view; });
+    if (scene) scene.hidden = !!isView;
+    document.body.classList.toggle('fn-study-open', !!isView);
+    scrollTo(0, 0);
+  };
+  addEventListener('hashchange', show); show();
+
   // A new topic: a name and, optionally, one line on why
   const nf = document.getElementById('fn-study-new');
   if (nf) nf.addEventListener('submit', e => {
@@ -217,7 +253,7 @@
     const t = { id: 'c-' + Date.now().toString(36), name, why };
     state.custom.push(t); save();
     const full = { ...t, custom: true, path: [], shelf: [] };
-    jump.append(pill(full)); const sec = section(full); root.append(sec);
-    nf.reset(); sec.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    jump.append(pill(full)); root.append(section(full)); bottles();
+    nf.reset(); location.hash = '#' + t.id;
   });
 })();
