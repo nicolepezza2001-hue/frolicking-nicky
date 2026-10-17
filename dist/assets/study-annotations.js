@@ -29,7 +29,7 @@
     backup.title='Download all lesson text, highlights, margin notes and study progress';tools.append(backup);
     backup.addEventListener('click',()=>{
       let study={};try{study=JSON.parse(localStorage.getItem('fn-study-v1'))||{};}catch(_){}
-      const data={format:'frolicking-nicky-study-backup',version:1,exportedAt:new Date().toISOString(),lessons:window.FN_SILVER_AGE_LESSONS||[],annotations:saved,study};
+      const data={format:'frolicking-nicky-study-backup',version:1,exportedAt:new Date().toISOString(),lessons:[...(window.FN_SILVER_AGE_LESSONS||[]),...(window.FN_FRENCH_LESSONS||[])],annotations:saved,study};
       const blob=new Blob([JSON.stringify(data,null,2)],{type:'application/json'});const url=URL.createObjectURL(blob);
       const link=make('a');link.href=url;link.download='frolicking-nicky-study-'+new Date().toISOString().slice(0,10)+'.json';link.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
       status.textContent='Backup downloaded. Keep this file somewhere safe.';

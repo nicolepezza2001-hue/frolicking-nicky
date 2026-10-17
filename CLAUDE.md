@@ -179,3 +179,8 @@ a separate Europe close-up, the map legend or the trip buttons under the map on 
 - Russian and French pages have a **Vocabulary** list (`VOCAB` in `study.js`): the word on the left, English on the
   right. "Hide Russian/French" or "Hide English" blurs that column to test both ways (a tap reveals one word), Shuffle
   mixes the order, and shown words can be corrected in place. Words are saved in `fn-study-v1` under `vocab`.
+- French class notes come from Nicky's Notion page "French" (`assets/french-lessons.js`, wording kept exactly):
+  a grammar lesson (her verb and pronoun notes and tables) and one lesson per class date, listed under the French
+  path as "Class notes" and read with the same layout, highlights and margin notes as the Silver Age lessons.
+  `FN_FRENCH_VOCAB` (her "IMPORTANT" table) seeds the French vocab list once (`seeded` in `fn-study-v1`), so words she
+  removes or edits stay that way.
