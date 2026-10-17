@@ -175,4 +175,7 @@ a separate Europe close-up, the map legend or the trip buttons under the map on 
   with cream `#efe0bf` text, all set in Cormorant Garamond, notes on yellow-ruled lines (`assets/study.css`).
   Keep it elegant: no emoji, no tooltips, no outlines; only the glow and the Arnold Böcklin word on hover.
 - Topic content is in `TOPICS` in `assets/study.js` (old Italian strings sit beside the English; only English
-  shows). Ticks, notes, extra steps and new topics live in the browser only (`fn-study-v1`).
+  shows). Ticks, notes, vocabulary, extra steps and new topics live in the browser only (`fn-study-v1`).
+- Russian and French pages have a **Vocabulary** list (`VOCAB` in `study.js`): the word on the left, English on the
+  right. "Hide Russian/French" or "Hide English" blurs that column to test both ways (a tap reveals one word), Shuffle
+  mixes the order, and shown words can be corrected in place. Words are saved in `fn-study-v1` under `vocab`.
