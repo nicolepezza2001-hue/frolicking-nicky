@@ -199,3 +199,25 @@ body.fn-lesson-open{background:#faeac0}
 .fn-highlight-colour[aria-pressed=true]{outline:2px solid var(--st-purple);outline-offset:3px}
 .fn-highlight-colour:focus-visible{outline:3px solid var(--st-purple);outline-offset:3px}
 @media(max-width:760px){.fn-lesson>.fn-study-bar{gap:12px;padding:10px 0}.fn-reading-tools{gap:9px}.fn-highlight-colours{gap:7px}.fn-highlight-colour{width:25px;height:25px}.fn-lesson>.fn-study-bar>.fn-study-back{font-size:1.05rem}}
+
+/* Vocabulary (Russian and French): the word on one side, English on the other. Veil either side to test yourself;
+   a veiled word is a soft candlelit mist until tapped. Shown words can be corrected in place. */
+.fn-vocab{margin-top:44px}
+.fn-vocab-head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:10px 20px;border-bottom:1px solid var(--st-line);margin-bottom:14px;padding-bottom:10px}
+.fn-vocab-head .fn-study-label{border:0;margin:0;padding:0}
+.fn-vocab-modes{display:flex;flex-wrap:wrap;gap:8px}
+.fn-vocab-mode{background:none;border:1px solid #f3d99566;border-radius:99px;color:var(--st-yellow);padding:4px 14px;cursor:pointer;font:italic 500 1rem 'Cormorant Garamond',Georgia,serif}
+.fn-vocab-mode:hover,.fn-vocab-mode[aria-pressed=true]{background:var(--st-yellow);color:var(--st-night)}
+.fn-vocab-mode:focus-visible{outline:2px solid var(--st-yellow);outline-offset:2px}
+.fn-vocab-list{list-style:none;margin:0;padding:0}
+.fn-vocab-row{display:grid;grid-template-columns:1fr 1fr 28px;gap:20px;align-items:center;padding:9px 0;border-top:1px dashed #f3d99526}
+.fn-vocab-cols{border:0;padding:0 0 4px;font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:var(--st-soft)}
+.fn-vocab-cell{display:block;min-width:0;overflow-wrap:anywhere;font:500 1.25rem/1.4 'Cormorant Garamond',Georgia,serif;color:var(--st-cream);border-radius:6px;padding:2px 4px;margin:-2px -4px}
+.fn-vocab-row .fn-vocab-cell:first-child{color:var(--st-yellow);font-weight:600}
+.fn-vocab-cell[contenteditable]:focus{outline:1px solid #f3d99566;background:#1a1224}
+button.fn-vocab-cell{background:none;border:0;text-align:left;cursor:pointer;transition:filter .4s ease,opacity .4s ease}
+button.fn-vocab-cell.is-veiled{filter:blur(7px);opacity:.55;user-select:none}
+button.fn-vocab-cell:focus-visible{outline:1px solid var(--st-yellow)}
+.fn-vocab-add input[type=text]{flex:1 1 160px}
+@media(prefers-reduced-motion:reduce){button.fn-vocab-cell{transition:none}}
+@media(max-width:760px){.fn-vocab-row{gap:12px}.fn-vocab-cell{font-size:1.12rem}}

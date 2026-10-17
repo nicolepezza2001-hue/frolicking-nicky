@@ -1,7 +1,7 @@
 /* Frolicking Nicky: the study, Nicky's private learning hub (/hub/, English only: Nicky doesn't want an Italian copy).
    Reached only through the secret first letter of the footer tagline on every page; the pages are noindex.
    The landing page is Nicky's painting alone (full screen); each object links to a topic view (#opera, #new…).
-   Topics live in TOPICS below (English and Italian side by side). Ticks, notes, extra steps and new topics are kept
+   Topics live in TOPICS below (English and Italian side by side). Ticks, notes, vocabulary, extra steps and new topics are kept
    in this browser only (localStorage key "fn-study-v1", shared by both languages), like the itinerary checklists.
    These pages load neither motion.js nor the site's header and footer: nothing but the painting (Nicky's call). */
 (() => {
@@ -192,7 +192,7 @@
   const KEY = 'fn-study-v1';
   let state = {};
   try { state = JSON.parse(localStorage.getItem(KEY)) || {}; } catch (_) {}
-  state.done ||= {}; state.notes ||= {}; state.custom ||= []; state.extra ||= {};
+  state.done ||= {}; state.notes ||= {}; state.custom ||= []; state.extra ||= {}; state.vocab ||= {};
   const save = () => { try { localStorage.setItem(KEY, JSON.stringify(state)); } catch (_) {} };
 
   const pick = v => (Array.isArray(v) ? L(v[0], v[1]) : v);
@@ -239,6 +239,69 @@
       li.append(x);
     }
     return li;
+  };
+
+  // Vocabulary for the language pages: the word on one side, English on the other. Veil either side to test
+  // yourself both ways; a tap on a veiled word lifts the veil. Words live in state.vocab (so backups include them).
+  const VOCAB = { russian: ['Russian', 'ru'], french: ['French', 'fr'] };
+  const vocab = (id, [lang, code]) => {
+    const box = el('div', 'fn-vocab'), words = (state.vocab[id] ||= []);
+    const head = el('div', 'fn-vocab-head'), label = el('p', 'fn-study-label', 'Vocabulary');
+    const modes = el('div', 'fn-vocab-modes'); modes.setAttribute('role', 'group'); modes.setAttribute('aria-label', 'Test yourself');
+    let mode = 'both', order = null;
+    const btns = [['both', 'Show both'], ['word', 'Hide ' + lang], ['en', 'Hide English']].map(([m, txt]) => {
+      const b = el('button', 'fn-vocab-mode', txt); b.type = 'button'; b.dataset.mode = m;
+      b.addEventListener('click', () => { mode = m; draw(); }); modes.append(b); return b;
+    });
+    const shuffle = el('button', 'fn-vocab-mode', 'Shuffle'); shuffle.type = 'button';
+    shuffle.addEventListener('click', () => { order = words.map(w => w.id).sort(() => Math.random() - .5); draw(); });
+    modes.append(shuffle);
+    head.append(label, modes);
+    const cols = el('div', 'fn-vocab-row fn-vocab-cols'); cols.append(el('span', null, lang), el('span', null, 'English'));
+    const list = el('ul', 'fn-vocab-list'), tally = el('p', 'fn-study-saved');
+    const cell = (w, side, hide) => {
+      const text = side === 'word' ? w.word : w.en;
+      if (!hide) {
+        // Shown words can be corrected in place
+        const c = el('span', 'fn-vocab-cell', text); c.contentEditable = 'true'; c.spellcheck = false;
+        if (side === 'word') c.lang = code;
+        c.setAttribute('aria-label', (side === 'word' ? lang : 'English') + ' word');
+        c.addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); c.blur(); } });
+        c.addEventListener('blur', () => { const v = c.textContent.trim(); if (v && v !== text) { w[side] = v; save(); } else c.textContent = text; });
+        return c;
+      }
+      const c = el('button', 'fn-vocab-cell is-veiled', text); c.type = 'button';
+      if (side === 'word') c.lang = code;
+      c.setAttribute('aria-label', 'Reveal'); c.setAttribute('aria-pressed', 'false');
+      c.addEventListener('click', () => { const on = c.classList.toggle('is-veiled'); c.setAttribute('aria-pressed', String(!on)); c.setAttribute('aria-label', on ? 'Reveal' : text); });
+      return c;
+    };
+    const draw = () => {
+      btns.forEach(b => b.setAttribute('aria-pressed', String(b.dataset.mode === mode)));
+      list.replaceChildren();
+      const shown = order ? order.map(i => words.find(w => w.id === i)).filter(Boolean).concat(words.filter(w => !order.includes(w.id))) : words;
+      shown.forEach(w => {
+        const li = el('li', 'fn-vocab-row');
+        const x = el('button', 'fn-study-x', '×'); x.type = 'button'; x.setAttribute('aria-label', `${T.remove}: ${w.word}`);
+        x.addEventListener('click', () => { words.splice(words.indexOf(w), 1); save(); li.remove(); cols.hidden = !words.length; tell(); });
+        li.append(cell(w, 'word', mode === 'word'), cell(w, 'en', mode === 'en'), x); list.append(li);
+      });
+      cols.hidden = !words.length; tell();
+    };
+    const tell = () => { tally.textContent = words.length ? `${words.length} ${words.length === 1 ? 'word' : 'words'}` : 'No words yet. Add the first one below.'; };
+    const form = el('form', 'fn-study-add fn-vocab-add');
+    const a = el('input'); a.type = 'text'; a.placeholder = lang + '…'; a.lang = code; a.setAttribute('aria-label', lang + ' word');
+    const b = el('input'); b.type = 'text'; b.placeholder = 'English…'; b.setAttribute('aria-label', 'English meaning');
+    const go = el('button', 'fn-study-btn', T.add); go.type = 'submit';
+    form.append(a, b, go);
+    form.addEventListener('submit', e => {
+      e.preventDefault(); const word = a.value.trim(), en = b.value.trim();
+      if (!word || !en) { (word ? b : a).focus(); return; }
+      words.push({ id: Date.now().toString(36) + Math.random().toString(36).slice(2, 5), word, en }); save(); draw();
+      a.value = b.value = ''; a.focus();
+    });
+    box.append(head, cols, list, tally, form); draw();
+    return box;
   };
 
   const section = t => {
@@ -303,6 +366,7 @@
       right.append(rm);
     }
     grid.append(left, right); sec.append(grid);
+    if (VOCAB[t.id]) sec.append(vocab(t.id, VOCAB[t.id]));
     count(t, counter);
     return sec;
   };
