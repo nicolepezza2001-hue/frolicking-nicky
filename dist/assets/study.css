@@ -43,7 +43,7 @@ body:not(.fn-study-open){overflow:hidden}
 .fn-study-lang{color:var(--st-soft);text-decoration:none;font-size:.8rem;letter-spacing:.18em;border:1px solid var(--st-line);border-radius:99px;padding:3px 12px}
 .fn-study-lang:hover{color:var(--st-yellow);border-color:var(--st-yellow)}
 .fn-study-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:6px 20px}
-.fn-study-view h2{font:500 clamp(2.4rem,6vw,3.8rem)/1.05 'Cormorant Garamond',Georgia,serif;letter-spacing:.01em;margin:0;color:var(--st-yellow)}
+.fn-study-view h2{font:800 clamp(2.4rem,6vw,3.8rem)/1.05 'Arnold Boecklin','Arnold Böcklin','Cormorant Garamond',Georgia,serif;letter-spacing:.01em;margin:0;color:var(--st-yellow)}
 .fn-study-count{margin:0;color:var(--st-yellow);font:italic 400 1.2rem 'Cormorant Garamond',Georgia,serif;white-space:nowrap}
 .fn-study-why{color:var(--st-soft);max-width:660px;margin:10px 0 30px;font-style:italic}
 .fn-study-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:46px}
