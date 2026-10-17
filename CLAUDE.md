@@ -162,7 +162,8 @@ a separate Europe close-up, the map legend or the trip buttons under the map on 
   page ("A little planning…", and the "U" of "Un po’ di programmi…" on Italian pages). Never link it anywhere else.
   **English only:** Nicky doesn't want an Italian copy of the study, so the EN/IT twin rule doesn't apply here
   (`check-site.mjs` skips twins for `noindex` pages).
-- The landing page is **only Nicky's painting** (`assets/study-room.jpg`), filling the whole screen: no header,
+- The landing page is **only Nicky's painting** (`assets/study-room.jpg`, kept at its full 1536×1024 because it
+  fills the screen; the 1400px photo rule doesn't apply to it), filling the whole screen: no header,
   no footer, no title, no labels (Nicky's call). It doesn't load `motion.js`, `shared.css` or `refine.css`.
   On portrait phones the painting fills the height and swipes sideways, opening in the middle.
 - Each object is a traced polygon (painting coordinates 1536×1024) linking to a topic view: lute = Opera,
