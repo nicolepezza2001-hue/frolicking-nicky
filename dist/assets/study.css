@@ -159,8 +159,8 @@ body.fn-lesson-open{background:#faeac0}
 .fn-flower-zone{cursor:default}
 .fn-flower-bob{transform-box:view-box;transform-origin:230px 605px;animation:fn-flower-bob 7s ease-in-out infinite}
 .fn-blossoms{transform-origin:795px 602px;animation-duration:8.5s;animation-delay:-3s}
-@keyframes fn-flower-bob{0%,100%{transform:rotate(-.35deg)}50%{transform:rotate(.65deg) translateY(-1px)}}
-.fn-room-art:has(.fn-flower-zone:hover) .fn-lilies,.fn-room-art:has([data-spot="silver-age"]:is(:hover,:focus-visible)) .fn-blossoms{animation-name:fn-flower-sway}
+@keyframes fn-flower-bob{0%,100%{transform:rotate(-.08deg)}50%{transform:rotate(.15deg) translateY(-.25px)}}
+.fn-room-art:has(.fn-flower-zone:hover) .fn-lilies,.fn-room-art:has([data-spot="silver-age"]:is(:hover,:focus-visible)) .fn-blossoms{filter:brightness(1.035)}
 @keyframes fn-flower-sway{0%,100%{transform:rotate(-.7deg)}50%{transform:rotate(1.1deg) translateY(-2px)}}
 .fn-string-vibration,.fn-petals,.fn-embers,.fn-liquid-ripples,.fn-crystal-pulse{opacity:0;transition:opacity .5s ease}
 .fn-room-art:has([data-spot="opera"]:is(:hover,:focus-visible)) .fn-string-vibration{opacity:.45;animation:fn-strings .12s linear infinite}
@@ -221,3 +221,13 @@ button.fn-vocab-cell:focus-visible{outline:1px solid var(--st-yellow)}
 .fn-vocab-add input[type=text]{flex:1 1 160px}
 @media(prefers-reduced-motion:reduce){button.fn-vocab-cell{transition:none}}
 @media(max-width:760px){.fn-vocab-row{gap:12px}.fn-vocab-cell{font-size:1.12rem}}
+/* Match the bronze light to the horse, rather than the surrounding hotspot. */
+.fn-paint-spot[data-spot="tocharian"] polygon{filter:none;clip-path:url(#fn-horse)}
+.fn-paint-spot[data-spot="tocharian"]:is(:hover,:focus-visible) polygon{fill-opacity:.17}
+.fn-flower-bob{transition:filter .6s ease}
+/* This historical font has a very wide space glyph; keep ordinary single spaces. */
+.fn-paint-word,.fn-study-view h2,.fn-lesson-notes h3{word-spacing:-.38em}
+body.fn-study{cursor:url('/assets/quill-cursor.svg') 3 29,auto}
+.fn-study a,.fn-study button,.fn-study .fn-paint-spot,.fn-study .fn-flower-zone{cursor:url('/assets/quill-cursor.svg') 3 29,pointer}
+.fn-study input,.fn-study textarea,.fn-lesson-notes{cursor:text}
+.fn-highlighter-active .fn-lesson-notes{cursor:crosshair}
