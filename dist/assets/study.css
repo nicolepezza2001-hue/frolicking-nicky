@@ -153,3 +153,40 @@ body.fn-lesson-open{background:#faeac0}
 .fn-highlight-mode[aria-pressed=true]{background:var(--st-purple);color:#faeac0}
 .fn-highlight-mode:focus-visible{outline:2px solid var(--st-purple);outline-offset:3px}
 .fn-highlighter-active .fn-lesson-notes{cursor:crosshair}
+
+/* Object details share the painting coordinates and never intercept its links. */
+.fn-object-effects{pointer-events:none}
+.fn-flower-zone{cursor:default}
+.fn-flower-bob{transform-box:view-box;transform-origin:230px 605px;animation:fn-flower-bob 7s ease-in-out infinite}
+.fn-blossoms{transform-origin:795px 602px;animation-duration:8.5s;animation-delay:-3s}
+@keyframes fn-flower-bob{0%,100%{transform:rotate(-.35deg)}50%{transform:rotate(.65deg) translateY(-1px)}}
+.fn-room-art:has(.fn-flower-zone:hover) .fn-lilies,.fn-room-art:has([data-spot="silver-age"]:is(:hover,:focus-visible)) .fn-blossoms{animation-name:fn-flower-sway}
+@keyframes fn-flower-sway{0%,100%{transform:rotate(-.7deg)}50%{transform:rotate(1.1deg) translateY(-2px)}}
+.fn-string-vibration,.fn-petals,.fn-embers,.fn-liquid-ripples,.fn-crystal-pulse{opacity:0;transition:opacity .5s ease}
+.fn-room-art:has([data-spot="opera"]:is(:hover,:focus-visible)) .fn-string-vibration{opacity:.45;animation:fn-strings .12s linear infinite}
+@keyframes fn-strings{0%,100%{transform:translateY(-.7px)}50%{transform:translateY(.7px)}}
+.fn-statue-shimmer,.fn-horse-glint{opacity:0}
+.fn-room-art:has([data-spot="silver-age"]:is(:hover,:focus-visible)) .fn-statue-shimmer{animation:fn-statue-shine 3.8s ease-in-out infinite}
+@keyframes fn-statue-shine{0%{opacity:0;transform:translateX(-50px)}20%,65%{opacity:.35}100%{opacity:0;transform:translateX(190px)}}
+.fn-room-art:has([data-spot="silver-age"]:is(:hover,:focus-visible)) .fn-petals{opacity:.8}
+.fn-petal{opacity:0;animation:fn-petal-fall 5.2s linear infinite;animation-delay:var(--delay);animation-play-state:paused;transform-box:fill-box;transform-origin:center}
+.fn-room-art:has([data-spot="silver-age"]:is(:hover,:focus-visible)) .fn-petal{animation-play-state:running}
+@keyframes fn-petal-fall{0%{opacity:0;transform:translate(0,0) rotate(0deg)}12%{opacity:.8}80%{opacity:.55}100%{opacity:0;transform:translate(var(--drift),145px) rotate(220deg)}}
+.fn-book-hover{transform-box:view-box;transform-origin:301px 755px;transition:transform 1.3s ease}
+.fn-room-art:has([data-spot="russian"]:is(:hover,:focus-visible)) .fn-book-hover{transform:translateY(-4px) rotate(-1deg)}
+.fn-bust-smile{transform-box:view-box;transform-origin:101px 634px;transition:transform 1.4s ease}
+.fn-room-art:has([data-spot="french"]:is(:hover,:focus-visible)) .fn-bust-smile{transform:translateY(-1px) scaleX(1.08) scaleY(.86)}
+.fn-room-art:has([data-spot="tocharian"]:is(:hover,:focus-visible)) .fn-horse-glint{animation:fn-bronze-shine 3s ease-in-out infinite}
+@keyframes fn-bronze-shine{0%{opacity:0;transform:translateX(0)}25%,65%{opacity:.6}100%{opacity:0;transform:translateX(120px)}}
+.fn-room-art:has([data-spot="avestan"]:is(:hover,:focus-visible)) .fn-embers{opacity:.9}
+.fn-ember{animation:fn-ember-rise 3.8s ease-out infinite;animation-delay:var(--delay);animation-play-state:paused}
+.fn-room-art:has([data-spot="avestan"]:is(:hover,:focus-visible)) .fn-ember{animation-play-state:running}
+@keyframes fn-ember-rise{0%{opacity:0;transform:translate(0,0)}15%{opacity:.9}100%{opacity:0;transform:translate(var(--drift),-85px)}}
+.fn-room-art:has([data-spot="pie"]:is(:hover,:focus-visible)) .fn-liquid-ripples{opacity:.5}
+.fn-ripple{transform-box:fill-box;transform-origin:center;animation:fn-ripple 2.8s ease-out infinite;animation-play-state:paused}
+.fn-ripple-two{animation-delay:-1.4s}
+.fn-room-art:has([data-spot="pie"]:is(:hover,:focus-visible)) .fn-ripple{animation-play-state:running}
+@keyframes fn-ripple{0%{transform:scale(.15);opacity:.7}100%{transform:scale(1);opacity:0}}
+.fn-room-art:has([data-spot="new"]:is(:hover,:focus-visible)) .fn-crystal-pulse{animation:fn-facet-light 3.2s ease-in-out infinite}
+@keyframes fn-facet-light{0%,100%{opacity:.06}50%{opacity:.38}}
+@media(prefers-reduced-motion:reduce){.fn-object-effects{display:none}.fn-object-effects *{animation:none!important;transition:none!important}}
