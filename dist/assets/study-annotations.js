@@ -25,12 +25,26 @@
     });
     const addNote = make('button','fn-highlight-mode','Note'); addNote.type='button'; addNote.title='Write a margin note beside the current passage';
     tools.append(mode,colours,addNote); section.querySelector('.fn-study-bar').append(tools);
+    const backup = make('button','fn-highlight-mode','Export backup'); backup.type='button';
+    backup.title='Download all lesson text, highlights, margin notes and study progress';tools.append(backup);
+    backup.addEventListener('click',()=>{
+      let study={};try{study=JSON.parse(localStorage.getItem('fn-study-v1'))||{};}catch(_){}
+      const data={format:'frolicking-nicky-study-backup',version:1,exportedAt:new Date().toISOString(),lessons:window.FN_SILVER_AGE_LESSONS||[],annotations:saved,study};
+      const blob=new Blob([JSON.stringify(data,null,2)],{type:'application/json'});const url=URL.createObjectURL(blob);
+      const link=make('a');link.href=url;link.download='frolicking-nicky-study-'+new Date().toISOString().slice(0,10)+'.json';link.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
+      status.textContent='Backup downloaded. Keep this file somewhere safe.';
+    });
     const setMode = value => { highlightMode = value; modeButtons.forEach(button => button.setAttribute('aria-pressed', String(value))); document.body.classList.toggle('fn-highlighter-active', value); };
     mode.addEventListener('click', () => setMode(!highlightMode));
     const toolbar = make('div', 'fn-highlight-toolbar'); toolbar.hidden = true; toolbar.setAttribute('role', 'toolbar'); toolbar.setAttribute('aria-label', 'Selected text');
     const highlight = make('button', '', 'Highlight'); const comment = make('button', '', 'Highlight + note');
     highlight.type = comment.type = 'button'; toolbar.append(highlight, comment); section.append(toolbar);
     toolbar.addEventListener('pointerdown', e => e.preventDefault());
+    let clickedRecord = null;
+    const eraseToolbar=make('div','fn-highlight-toolbar');eraseToolbar.hidden=true;eraseToolbar.setAttribute('role','toolbar');eraseToolbar.setAttribute('aria-label','Highlight actions');
+    const erase=make('button','','Erase highlight'), openNote=make('button','','Note');erase.type=openNote.type='button';eraseToolbar.append(erase,openNote);section.append(eraseToolbar);
+    eraseToolbar.addEventListener('pointerdown',e=>e.preventDefault());
+    const closeErase=()=>{eraseToolbar.hidden=true;clickedRecord=null;};
     const blocks = () => [...content.querySelectorAll('[data-note-block]')];
     const store = () => { try { localStorage.setItem(KEY, JSON.stringify(saved)); status.textContent = 'Saved in this browser'; } catch (_) { status.textContent = 'Could not save. Keep this page open to retain these notes.'; } };
     const renderHighlights = () => {
@@ -42,7 +56,7 @@
         for (let i=0;i<boundaries.length-1;i++) {
           const start=boundaries[i],end=boundaries[i+1]; const covering=spans.filter(s=>s.start<=start&&s.end>=end);
           if (!covering.length) block.append(document.createTextNode(text.slice(start,end)));
-          else { const mark=make('mark','fn-text-highlight',text.slice(start,end)); mark.dataset.annotation=covering[0].id; mark.style.backgroundColor=palette[covering[0].colour] || palette.lavender; mark.tabIndex=0; mark.setAttribute('role','button'); mark.setAttribute('aria-label','Open note for '+text.slice(start,end)); block.append(mark); }
+          else { const mark=make('mark','fn-text-highlight',text.slice(start,end)); mark.dataset.annotation=covering[0].id; mark.style.backgroundColor=palette[covering[0].colour] || palette.lavender; mark.tabIndex=0; mark.setAttribute('role','button'); mark.setAttribute('aria-label','Highlight actions for '+text.slice(start,end)); block.append(mark); }
         }
       });
     };
@@ -109,8 +123,23 @@
     const openMark = e => {
       const mark=e.target.closest('mark');if(Date.now()<suppressMarkUntil || !mark || !getSelection()?.isCollapsed)return;
       const record=records.find(r=>r.id===mark.dataset.annotation);if(!record)return;
-      if(!record.hasNote){record.hasNote=true;store();renderCards();}focusRecord(record.id);
+      clickedRecord=record;
+      toolbar.hidden=true;const rect=mark.getBoundingClientRect();eraseToolbar.hidden=false;
+      eraseToolbar.style.left=Math.max(8,Math.min(innerWidth-eraseToolbar.offsetWidth-8,rect.left))+'px';
+      eraseToolbar.style.top=Math.max(8,rect.top-eraseToolbar.offsetHeight-8)+'px';
     };
+    erase.addEventListener('click',()=>{
+      if(!clickedRecord)return;
+      const target=clickedRecord;
+      target.ranges=[];
+      if(!target.hasNote)records.splice(records.indexOf(target),1);
+      closeErase();store();renderHighlights();renderCards();
+    });
+    openNote.addEventListener('click',()=>{
+      if(!clickedRecord)return;const record=clickedRecord;
+      if(!record.hasNote){record.hasNote=true;store();renderCards();}closeErase();focusRecord(record.id);
+    });
+    document.addEventListener('pointerdown',e=>{if(!eraseToolbar.contains(e.target)&&!e.target.closest('mark'))closeErase();});
     content.addEventListener('click',openMark);
     content.addEventListener('keydown',e=>{if((e.key==='Enter'||e.key===' ')&&e.target.matches('mark')){e.preventDefault();openMark(e);}});
     margin.addEventListener('click',e=>{
@@ -119,9 +148,9 @@
       pending={ranges:[],quote:'',block:Number(nearest.dataset.noteBlock)};create(true);
     });
     addNote.addEventListener('click',()=>{const nearest=blocks().reduce((best,block)=>Math.abs(block.getBoundingClientRect().top-160)<Math.abs(best.getBoundingClientRect().top-160)?block:best);pending={ranges:[],quote:'',block:Number(nearest.dataset.noteBlock)};create(true);});
-    document.addEventListener('keydown',e=>{if(e.key==='Escape'){setMode(false);toolbar.hidden=true;}});
-    window.addEventListener('resize',layout);window.addEventListener('hashchange',()=>{toolbar.hidden=true;requestAnimationFrame(layout);});
-    window.addEventListener('scroll',()=>{toolbar.hidden=true;},{passive:true});
+    document.addEventListener('keydown',e=>{if(e.key==='Escape'){setMode(false);toolbar.hidden=true;closeErase();}});
+    window.addEventListener('resize',layout);window.addEventListener('hashchange',()=>{toolbar.hidden=true;closeErase();requestAnimationFrame(layout);});
+    window.addEventListener('scroll',()=>{toolbar.hidden=true;closeErase();},{passive:true});
     new ResizeObserver(layout).observe(content);
     renderHighlights();renderCards();
   };
