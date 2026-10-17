@@ -41,8 +41,8 @@
       why: ['Russian poetry from about 1890 to the 1920s: Symbolists, Acmeists, Futurists, and the cafés where they argued.',
             'La poesia russa dal 1890 circa agli anni Venti: simbolisti, acmeisti, futuristi e i caffè dove litigavano.'],
       path: [
-        [['The map of movements', 'La mappa dei movimenti'], 'Symbolism, then Acmeism and Futurism. Who split from whom, and why.', 'Il simbolismo, poi acmeismo e futurismo. Chi si è staccato da chi, e perché.'],
-        ['Aleksandr Blok', '“The Stranger”, then The Twelve.', '“La sconosciuta”, poi I dodici.'],
+        ['Introduction', 'Lesson 1 · The Silver Age, its movements and historical context.', 'Lesson 1 · The Silver Age, its movements and historical context.'],
+        ['Symbolism', 'Lesson 2 · European roots, Russian Symbolists and the invisible world.', 'Lesson 2 · European roots, Russian Symbolists and the invisible world.'],
         ['Andrei Bely & Vyacheslav Ivanov', 'Symbolism at its most mystical, and Ivanov’s Tower salon.', 'Il simbolismo più mistico e il salotto della Torre di Ivanov.'],
         ['Nikolai Gumilev', 'The Poets’ Guild and the Acmeist manifesto: clarity, the thing itself.', 'La Corporazione dei poeti e il manifesto acmeista: chiarezza, la cosa in sé.'],
         ['Anna Akhmatova', 'The early lyrics (Evening, Rosary), then Requiem.', 'Le prime liriche (La sera, Il rosario), poi Requiem.'],
@@ -196,7 +196,7 @@
 
   const pick = v => (Array.isArray(v) ? L(v[0], v[1]) : v);
   const topics = () => TOPICS.concat(state.custom.map(c => ({ ...c, custom: true, path: [], shelf: [] })));
-  const steps = t => t.path.map((s, i) => ({ key: `${t.id}:${i}`, title: pick(s[0]), note: L(s[1], s[2]) }))
+  const steps = t => t.path.map((s, i) => ({ key: `${t.id}:${i}`, title: pick(s[0]), note: L(s[1], s[2]), lesson: t.id === 'silver-age' ? window.FN_SILVER_AGE_LESSONS?.[i] : null }))
     .concat((state.extra[t.id] || []).map(s => ({ key: `${t.id}:x${s.id}`, title: s.text, note: '', extra: s.id })));
   const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; };
 
@@ -211,11 +211,17 @@
 
   const stepRow = (t, s, counter) => {
     const li = el('li');
-    const label = el('label', 'fn-study-step');
+    const label = el(s.lesson ? 'div' : 'label', 'fn-study-step');
     const box = el('input'); box.type = 'checkbox'; box.checked = !!state.done[s.key];
     box.id = 'st-' + s.key.replace(/[^a-z0-9-]/gi, '-');
     const text = el('span', 'fn-study-step-text');
-    text.append(el('strong', null, s.title));
+    const title = el('strong', null, s.title);
+    if (s.lesson) {
+      // Keep reading navigation separate from the completion checkbox.
+      const link = el('a', 'fn-study-lesson-link'); link.href = '#' + s.lesson.id;
+      link.append(title); text.append(link);
+      box.setAttribute('aria-label', 'Mark ' + s.title + ' as complete');
+    } else text.append(title);
     if (s.note) text.append(el('small', null, s.note));
     label.append(box, text); li.append(label);
     li.classList.toggle('is-done', box.checked);
@@ -302,6 +308,29 @@
 
   const pill = t => { const li = el('li'), a = el('a', null, pick(t.name)); a.href = '#' + t.id; li.append(a); return li; };
   topics().forEach(t => { if (t.custom && mine) mine.append(pill(t)); root.append(section(t)); });
+
+  // Readable lesson views use the same hash navigation as the study topics.
+  (window.FN_SILVER_AGE_LESSONS || []).forEach((lesson, index, lessons) => {
+    const sec = el('article', 'fn-study-view fn-lesson'); sec.id = lesson.id; sec.hidden = true;
+    const back = el('a', 'fn-study-back', '← Silver Age poetry'); back.href = '#silver-age';
+    const bar = el('nav', 'fn-study-bar'); bar.setAttribute('aria-label', 'Lesson navigation'); bar.append(back);
+    const title = el('h2', null, lesson.title); title.id = lesson.id + '-title';
+    sec.setAttribute('aria-labelledby', title.id);
+    sec.append(bar, el('p', 'fn-lesson-number', 'Lesson ' + lesson.number + ' · Silver Age poetry'), title);
+    const notes = el('div', 'fn-lesson-notes'); let list;
+    lesson.blocks.forEach(block => {
+      if (block.type === 'heading') { list = null; notes.append(el('h3', null, block.text)); }
+      else {
+        if (!list) { list = el('ul'); notes.append(list); }
+        list.append(el('li', null, block.text));
+      }
+    });
+    sec.append(notes);
+    const footer = el('nav', 'fn-lesson-footer'); footer.setAttribute('aria-label', 'Other lessons');
+    const other = lessons[index === 0 ? 1 : 0];
+    if (other) { const link = el('a', 'fn-study-back', index === 0 ? 'Next: ' + other.title + ' →' : '← Previous: ' + other.title); link.href = '#' + other.id; footer.append(link); }
+    sec.append(footer); root.append(sec);
+  });
 
   // One room at a time: the study (no hash) or a single topic page (#opera, #new…)
   const scene = document.getElementById('fn-scene'), newBox = document.getElementById('new');

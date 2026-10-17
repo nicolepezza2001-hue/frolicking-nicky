@@ -103,3 +103,17 @@ body:not(.fn-study-open){overflow:hidden}
 .fn-smoke-breeze{transform-box:view-box;transform-origin:1167px 660px;animation:fn-smoke-drift 11s ease-in-out infinite}
 @keyframes fn-smoke-drift{0%,100%{transform:skewX(-1deg)}50%{transform:skewX(2.5deg)}}
 @media(prefers-reduced-motion:reduce){.fn-room-atmosphere{display:none}.fn-room-atmosphere *{animation:none!important}}
+
+/* Lesson reading pages: quiet, single-column notes. */
+.fn-study-lesson-link{color:var(--st-yellow);text-decoration:underline;text-decoration-color:#f3d99566;text-underline-offset:5px}
+.fn-study-lesson-link:hover{text-decoration-color:var(--st-yellow)}
+.fn-study-lesson-link:focus-visible{outline:2px solid var(--st-yellow);outline-offset:5px;border-radius:2px}
+.fn-lesson{max-width:820px;margin:0 auto;padding:36px 48px 48px}
+.fn-lesson-number{font:500 .85rem/1.5 Georgia,serif;letter-spacing:.08em;color:var(--st-soft);margin:0 0 10px}
+.fn-lesson-notes{font:400 19px/1.85 Georgia,serif;color:var(--st-cream);overflow-wrap:anywhere;margin-top:36px}
+.fn-lesson-notes ul{padding-left:1.2em;margin:0}
+.fn-lesson-notes li{padding-left:.3em;margin:0 0 1.2em}
+.fn-lesson-notes li::marker{color:var(--st-soft);font-size:.7em}
+.fn-lesson-notes h3{font:600 1.4rem/1.4 'Cormorant Garamond',Georgia,serif;color:var(--st-yellow);margin:2em 0 .8em}
+.fn-lesson-footer{border-top:1px solid var(--st-line);padding-top:24px;margin-top:36px}
+@media(max-width:760px){.fn-lesson{padding:24px 20px 32px}.fn-lesson-notes{font-size:17px;line-height:1.85}.fn-lesson h2{overflow-wrap:anywhere}}
