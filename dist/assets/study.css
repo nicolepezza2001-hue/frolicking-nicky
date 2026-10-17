@@ -1,0 +1,47 @@
+/* Frolicking Nicky: the study (/hub/, /it/studio/). Lighter-journal look: outlined cards, no fill, no white. */
+.fn-study-intro{max-width:780px;padding:60px 0 10px}
+.fn-study-intro .fn-page-title{font-size:clamp(2.8rem,6vw,5rem)}
+.fn-study-intro p:not(.fn-kicker):not(.fn-page-title){font-size:18px;line-height:1.8;max-width:560px}
+.fn-study-jump{display:flex;flex-wrap:wrap;gap:10px;margin:10px 0 40px}
+.fn-study-jump a{padding:8px 16px;border:1px solid var(--fn-red);border-radius:99px;color:var(--fn-red);text-decoration:none;font-size:.9rem}
+.fn-study-jump a:hover{background:var(--fn-red);color:#FDEBD8}
+.fn-study-topic{border:1px solid var(--fn-hair,#03030133);border-radius:var(--fn-r,14px);padding:30px 32px;margin:0 0 34px;scroll-margin-top:20px}
+.fn-study-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:6px 20px}
+.fn-study-head h2{font:600 clamp(1.8rem,4vw,2.4rem)/1.2 'Playfair Display',Georgia,serif;margin:0}
+.fn-study-count{margin:0;color:var(--fn-red);font-weight:500;font-size:.9rem;white-space:nowrap}
+.fn-study-why{color:var(--fn-soft,#4a4245);max-width:640px;margin:8px 0 26px}
+.fn-study-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:40px}
+.fn-study-label{font:600 .75rem 'DM Sans',sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--fn-red);margin:0 0 14px}
+.fn-study-path{list-style:none;margin:0;padding:0}
+.fn-study-path li{display:flex;align-items:flex-start;gap:8px;padding:11px 0;border-top:1px solid var(--fn-hair,#03030133)}
+.fn-study-path li:first-child{border-top:0;padding-top:0}
+.fn-study-step{display:flex;gap:12px;align-items:flex-start;cursor:pointer;flex:1;min-width:0}
+.fn-study-step input{flex:none;width:20px;height:20px;margin:3px 0 0}
+.fn-study-step-text strong{display:block;font-weight:500;overflow-wrap:anywhere}
+.fn-study-step-text small{display:block;color:var(--fn-soft,#4a4245);font-size:.88rem;line-height:1.5}
+.fn-study-path li.is-done strong{text-decoration:line-through;text-decoration-color:var(--fn-red)}
+.fn-study-x{flex:none;background:none;border:0;color:var(--fn-soft,#4a4245);font-size:1.2rem;line-height:1;padding:2px 6px;cursor:pointer}
+.fn-study-x:hover{color:var(--fn-red)}
+.fn-study-add,.fn-study-new{display:flex;gap:10px;margin-top:16px}
+.fn-study textarea,.fn-study input[type=text]{width:100%;min-width:0;background:transparent;color:var(--fn-ink);border:1px solid var(--fn-hair,#03030133);border-radius:10px;padding:10px 12px;font:400 16px/1.5 'DM Sans',sans-serif}
+.fn-study textarea{min-height:150px;resize:vertical}
+.fn-study textarea:focus,.fn-study input[type=text]:focus{outline:2px solid var(--fn-red);outline-offset:1px;border-color:transparent}
+.fn-study-btn{flex:none;background:var(--fn-red);color:#FDEBD8;border:0;border-radius:99px;padding:10px 20px;cursor:pointer;font-weight:500}
+.fn-study-shelf{list-style:none;margin:0 0 30px;padding:0}
+.fn-study-shelf li{padding:10px 0;border-top:1px solid var(--fn-hair,#03030133);font-size:.95rem}
+.fn-study-shelf li:first-child{border-top:0;padding-top:0}
+.fn-study-shelf a{color:var(--fn-red);text-decoration:none;border-bottom:1px solid #b3054540}
+.fn-study-shelf a:hover{border-bottom-color:var(--fn-red)}
+.fn-study-shelf small{display:block;color:var(--fn-soft,#4a4245)}
+.fn-study-kind{display:inline-block;margin-right:8px;font-size:.68rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--fn-red);border:1px solid #b3054555;border-radius:99px;padding:1px 8px;vertical-align:1px}
+.fn-study-saved{min-height:1.4em;margin:4px 0 0;font-size:.8rem;color:var(--fn-soft,#4a4245)}
+.fn-study-remove{margin-top:16px;background:none;border:0;padding:0;color:var(--fn-soft,#4a4245);text-decoration:underline;cursor:pointer;font-size:.85rem}
+.fn-study-newbox{border:1px dashed var(--fn-red);border-radius:var(--fn-r,14px);padding:26px 32px;margin:0 0 20px}
+.fn-study-newbox h2{font:600 1.6rem 'Playfair Display',Georgia,serif;margin:0}
+.fn-study-new{flex-wrap:wrap}
+.fn-study-new input{flex:1 1 220px}
+@media(max-width:760px){
+  .fn-study-intro{padding-top:30px}
+  .fn-study-topic,.fn-study-newbox{padding:22px 18px}
+  .fn-study-grid{grid-template-columns:1fr;gap:28px}
+}
