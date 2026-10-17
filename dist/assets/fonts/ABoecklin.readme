@@ -1,0 +1,14 @@
+SHORT: PS/Compugraphic liberty font
+
+An implementation of the "Arnold Boecklin font", with weight
+"ExtraBold", both in Adobe Type 1 and in Compugraphic format.
+I am not familiar with the compugraphic fonts, and I hope that
+the compugraphic implementation is good; I work primarily with
+PS fonts (with TeX), and ArnoldBoecklin-ExtraBold is complete
+with hints, composite characters and kerning.
+
+The font has been designed with TypeSmith 2.05, and is freely
+distributable.
+
+Maurizio Loreti                  http://mvxpd5.pd.infn.it/wwwcdf/mlo.html
+Un. of Padova, Dept. of Physics - Padova, Italy     loreti@padova.infn.it

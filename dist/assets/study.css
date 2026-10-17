@@ -3,6 +3,7 @@
    Each object in it is traced as a link; hovering gives it a faint glow and writes its subject, a click opens its page.
    Topic pages use the study palette Nicky loves: deep purple and candle-yellow (plus cream for reading),
    all in Cormorant Garamond. No emoji, no hover labels (Nicky wants it elegant). */
+@font-face{font-family:'Arnold Boecklin';src:url('/assets/fonts/arnold-boecklin-extrabold.woff2') format('woff2');font-weight:800;font-style:normal;font-display:swap}
 :root{--st-night:#150e1d;--st-purple:#2b1e38;--st-plum:#3a2a4c;--st-yellow:#f3d995;--st-cream:#efe0bf;--st-soft:#c9b9d6;--st-line:#f3d99540}
 *{box-sizing:border-box}
 html,body{margin:0;background:var(--st-night);color:var(--st-cream);font:400 19px/1.55 'Cormorant Garamond',Georgia,serif}
@@ -17,10 +18,10 @@ body:not(.fn-study-open){overflow:hidden}
 .fn-room-art{display:block;height:100%;min-width:100%;width:auto;aspect-ratio:1536/1024}
 .fn-paint-spot{cursor:pointer;outline:none}
 /* Hover: a faint candle glow over the object, and its subject written in Arnold Böcklin (Nicky's choice).
-   No outline, no emoji, no tooltip. The font file goes in /assets/fonts/; until then an elegant serif stands in. */
+   No outline, no emoji, no tooltip. Uses Maurizio Loreti's freely distributable ExtraBold implementation. */
 .fn-paint-spot polygon{fill:#ffe7a8;fill-opacity:0;stroke:none;filter:url(#fn-glow);transition:fill-opacity .5s ease}
 .fn-paint-spot:hover polygon,.fn-paint-spot:focus-visible polygon{fill-opacity:.34}
-.fn-paint-word{font:500 46px 'Arnold Boecklin','Arnold Böcklin','Cormorant Garamond',Georgia,serif;font-style:normal;letter-spacing:.02em;fill:#f3d995;filter:url(#fn-word-glow);opacity:0;pointer-events:none;transition:opacity .5s ease,transform .5s ease;transform:translateY(8px);transform-box:fill-box}
+.fn-paint-word{font:800 46px 'Arnold Boecklin','Arnold Böcklin','Cormorant Garamond',Georgia,serif;font-style:normal;letter-spacing:.02em;fill:#f3d995;filter:url(#fn-word-glow);opacity:0;pointer-events:none;transition:opacity .5s ease,transform .5s ease;transform:translateY(8px);transform-box:fill-box}
 .fn-paint-spot:hover .fn-paint-word,.fn-paint-spot:focus-visible .fn-paint-word{opacity:1;transform:none}
 /* Touch screens have no hover: each object breathes a faint glow so it's clear what can be tapped */
 @media(hover:none){
