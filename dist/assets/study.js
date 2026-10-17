@@ -1,8 +1,9 @@
 /* Frolicking Nicky: the study, Nicky's private learning hub (/hub/ and /it/studio/).
    Reached only through the secret first letter of the footer tagline on every page; the pages are noindex.
+   The landing page is Nicky's painting alone (full screen); each object links to a topic view (#opera, #new…).
    Topics live in TOPICS below (English and Italian side by side). Ticks, notes, extra steps and new topics are kept
    in this browser only (localStorage key "fn-study-v1", shared by both languages), like the itinerary checklists.
-   Runs as a plain script at the end of <body>, so the page is built before motion.js adds its icons. */
+   These pages load neither motion.js nor the site's header and footer: nothing but the painting (Nicky's call). */
 (() => {
   const it = document.documentElement.lang === 'it';
   const L = (en, itx) => (it ? itx : en);
@@ -200,8 +201,9 @@
   const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; };
 
   const root = document.getElementById('fn-study');
-  const jump = document.getElementById('fn-study-jump');
-  if (!root || !jump) return;
+  const mine = document.getElementById('fn-study-mine'); // topics Nicky adds, listed on the crystal's page
+  if (!root) return;
+  const twin = it ? '/hub/' : '/it/studio/';
 
   const count = (t, out) => {
     const s = steps(t), n = s.filter(x => state.done[x.key]).length;
@@ -235,7 +237,10 @@
 
   const section = t => {
     const sec = el('section', 'fn-study-topic fn-study-view'); sec.id = t.id; sec.hidden = true;
-    const back = el('a', 'fn-study-back', T.back); back.href = '#'; sec.append(back);
+    const bar = el('div', 'fn-study-bar');
+    const back = el('a', 'fn-study-back', T.back); back.href = '#';
+    const lang = el('a', 'fn-study-lang', it ? 'EN' : 'IT'); lang.href = twin + '#' + t.id; lang.hreflang = it ? 'en' : 'it';
+    bar.append(back, lang); sec.append(bar);
     const head = el('div', 'fn-study-head');
     const h2 = el('h2', null, pick(t.name));
     const counter = el('p', 'fn-study-count group-count');
@@ -288,7 +293,7 @@
         state.custom = state.custom.filter(c => c.id !== t.id);
         delete state.notes[t.id]; delete state.extra[t.id];
         Object.keys(state.done).forEach(k => { if (k.startsWith(t.id + ':')) delete state.done[k]; });
-        save(); sec.remove(); jump.querySelector(`a[href="#${t.id}"]`)?.remove(); bottles(); location.hash = '';
+        save(); sec.remove(); mine?.querySelector(`a[href="#${t.id}"]`)?.closest('li')?.remove(); location.hash = 'new';
       });
       right.append(rm);
     }
@@ -297,30 +302,8 @@
     return sec;
   };
 
-  const pill = t => { const a = el('a', null, pick(t.name)); a.href = '#' + t.id; return a; };
-  topics().forEach(t => { jump.append(pill(t)); root.append(section(t)); });
-
-  // New topics stand as little bottles on the lower left shelf of the scene (four fit; the rest are in the list below)
-  const SVGNS = 'http://www.w3.org/2000/svg', COLOURS = ['#3f7f7a', '#7a3f6a', '#b0702a', '#4b6fa8'];
-  const svgEl = (tag, attrs) => { const e = document.createElementNS(SVGNS, tag); for (const k in attrs) e.setAttribute(k, attrs[k]); return e; };
-  const bottles = () => {
-    const shelf = document.getElementById('sk-bottles'); if (!shelf) return;
-    shelf.replaceChildren();
-    state.custom.slice(0, 4).forEach((c, i) => {
-      const x = 52 + i * 52, col = COLOURS[i % 4];
-      const a = svgEl('a', { class: 'sk-obj sk-bottle', href: '#' + c.id });
-      const title = svgEl('title', {}); title.textContent = c.name; a.append(title);
-      const g = svgEl('g', { class: 'sk-art' });
-      g.append(svgEl('rect', { x, y: 372, width: 34, height: 48, rx: 10, fill: col, opacity: .9 }),
-        svgEl('rect', { x: x + 11, y: 356, width: 12, height: 18, fill: col, opacity: .9 }),
-        svgEl('rect', { x: x + 9, y: 349, width: 16, height: 8, rx: 2, fill: '#a07848' }),
-        svgEl('rect', { x: x + 4, y: 386, width: 26, height: 18, rx: 2, fill: '#efe0bf' }));
-      const label = svgEl('text', { x: x + 17, y: 399, 'text-anchor': 'middle', class: 'sk-bottle-label' });
-      label.textContent = c.name.length > 5 ? c.name.slice(0, 4) + '…' : c.name;
-      g.append(label); a.append(g); shelf.append(a);
-    });
-  };
-  bottles();
+  const pill = t => { const li = el('li'), a = el('a', null, pick(t.name)); a.href = '#' + t.id; li.append(a); return li; };
+  topics().forEach(t => { if (t.custom && mine) mine.append(pill(t)); root.append(section(t)); });
 
   // One room at a time: the study (no hash) or a single topic page (#opera, #new…)
   const scene = document.getElementById('fn-scene'), newBox = document.getElementById('new');
@@ -332,16 +315,10 @@
     if (scene) scene.hidden = !!isView;
     document.body.classList.toggle('fn-study-open', !!isView);
     scrollTo(0, 0);
+    // On a narrow (portrait) screen the painting is wider than the screen: start in the middle, swipe for the rest
+    if (scene && !isView) requestAnimationFrame(() => { scene.scrollLeft = (scene.scrollWidth - scene.clientWidth) / 2; });
   };
   addEventListener('hashchange', show); show();
-
-  // The painting: hovering an object (or its label) makes its outline shine faintly silver
-  document.querySelectorAll('.fn-paint [data-spot]').forEach(e => {
-    const all = document.querySelectorAll(`.fn-paint [data-spot="${e.dataset.spot}"]`);
-    const lit = on => all.forEach(x => x.classList.toggle('is-lit', on));
-    e.addEventListener('mouseenter', () => lit(true)); e.addEventListener('mouseleave', () => lit(false));
-    e.addEventListener('focus', () => lit(true)); e.addEventListener('blur', () => lit(false));
-  });
 
   // A new topic: a name and, optionally, one line on why
   const nf = document.getElementById('fn-study-new');
@@ -351,7 +328,7 @@
     const t = { id: 'c-' + Date.now().toString(36), name, why };
     state.custom.push(t); save();
     const full = { ...t, custom: true, path: [], shelf: [] };
-    jump.append(pill(full)); root.append(section(full)); bottles();
+    mine?.append(pill(full)); root.append(section(full));
     nf.reset(); location.hash = '#' + t.id;
   });
 })();

@@ -24,7 +24,7 @@ try {
       await page.waitForTimeout(400);
       const s = await page.evaluate(() => ({
         sideways: (scrollTo(400, scrollY), scrollX),
-        menu: !!document.querySelector('.fn-menu-btn'),
+        menu: !!document.querySelector('.fn-menu-btn') || !!document.querySelector('meta[name=robots][content*=noindex]'), // private pages (the study) have no header
         h1: !!document.querySelector('h1')
       }));
       errors.forEach(e => problems.push(`${label} ${r}: script error: ${e}`));

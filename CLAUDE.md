@@ -155,3 +155,21 @@ a separate Europe close-up, the map legend or the trip buttons under the map on 
   Merging to `main` publishes the site via GitHub Pages.
 - After every change, send Nicky the links: the pull request, the branch and
   the website (https://frolickingnicky.com/).
+
+## The study (Nicky's private learning hub)
+
+- `/hub/` and `/it/studio/` (both `noindex`), reached only through the hidden link on the first letter of the
+  footer tagline on every page ("A little planning…" / "Un po’ di programmi…"). Never link it anywhere else.
+- The landing page is **only Nicky's painting** (`assets/study-room.jpg`), filling the whole screen: no header,
+  no footer, no title, no labels (Nicky's call). It doesn't load `motion.js`, `shared.css` or `refine.css`.
+  On portrait phones the painting fills the height and swipes sideways, opening in the middle.
+- Each object is a traced polygon (painting coordinates 1536×1024) linking to a topic view: lute = Opera,
+  pink branches = Silver Age poetry, three books = Russian, marble bust = French, golden horse = Tocharian,
+  smoking vessel = Avestan, green goblet = Proto-Indo-European, quartz crystal = "What next?" (add a topic;
+  added topics are listed on that page). Hover makes the outline shine faintly silver; on touch screens every
+  object shimmers softly.
+- Topic pages use the study palette Nicky loves: deep purple `#2b1e38` / `#150e1d` and candle-yellow `#f3d995`,
+  with cream `#efe0bf` text, all set in Cormorant Garamond, notes on yellow-ruled lines (`assets/study.css`).
+  Keep it elegant: no emoji, no labels or tooltips on hover (Nicky disliked them), only the silver outline.
+- Topic content (EN + IT side by side) is in `TOPICS` in `assets/study.js`. Ticks, notes, extra steps and new
+  topics live in the browser only (`fn-study-v1`), shared by both languages.
