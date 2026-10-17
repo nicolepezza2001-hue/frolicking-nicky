@@ -174,8 +174,8 @@ body.fn-lesson-open{background:#faeac0}
 @keyframes fn-petal-fall{0%{opacity:0;transform:translate(0,0) rotate(0deg)}12%{opacity:.8}80%{opacity:.55}100%{opacity:0;transform:translate(var(--drift),145px) rotate(220deg)}}
 .fn-book-hover{transform-box:view-box;transform-origin:301px 755px;transition:transform 1.3s ease}
 .fn-room-art:has([data-spot="russian"]:is(:hover,:focus-visible)) .fn-book-hover{transform:translateY(-4px) rotate(-1deg)}
-.fn-bust-smile{transform-box:view-box;transform-origin:101px 634px;transition:transform 1.4s ease}
-.fn-room-art:has([data-spot="french"]:is(:hover,:focus-visible)) .fn-bust-smile{transform:translateY(-1px) scaleX(1.08) scaleY(.86)}
+.fn-bust-smile{opacity:0;transition:opacity 1.2s ease}
+.fn-room-art:has([data-spot="french"]:is(:hover,:focus-visible)) .fn-bust-smile{opacity:1}
 .fn-room-art:has([data-spot="tocharian"]:is(:hover,:focus-visible)) .fn-horse-glint{animation:fn-bronze-shine 3s ease-in-out infinite}
 @keyframes fn-bronze-shine{0%{opacity:0;transform:translateX(0)}25%,65%{opacity:.6}100%{opacity:0;transform:translateX(120px)}}
 .fn-room-art:has([data-spot="avestan"]:is(:hover,:focus-visible)) .fn-embers{opacity:.9}
