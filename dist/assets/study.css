@@ -1,6 +1,6 @@
 /* Frolicking Nicky: the study (/hub/, English only), Nicky's private learning hub.
    The landing page is only Nicky's painting, filling the whole screen: no header, no footer, no words.
-   Each object in it is traced as a link; hovering makes its outline shine faintly silver, a click opens its page.
+   Each object in it is traced as a link; hovering gives it a faint glow and writes its subject, a click opens its page.
    Topic pages use the study palette Nicky loves: deep purple and candle-yellow (plus cream for reading),
    all in Cormorant Garamond. No emoji, no hover labels (Nicky wants it elegant). */
 :root{--st-night:#150e1d;--st-purple:#2b1e38;--st-plum:#3a2a4c;--st-yellow:#f3d995;--st-cream:#efe0bf;--st-soft:#c9b9d6;--st-line:#f3d99540}
@@ -16,16 +16,19 @@ body:not(.fn-study-open){overflow:hidden}
 .fn-room::-webkit-scrollbar{display:none}
 .fn-room-art{display:block;height:100%;min-width:100%;width:auto;aspect-ratio:1536/1024}
 .fn-paint-spot{cursor:pointer;outline:none}
-.fn-paint-spot polygon{fill:#ffffff00;stroke:#eef2f8;stroke-opacity:0;stroke-width:3;stroke-linejoin:round;transition:stroke-opacity .35s,fill .35s}
-.fn-paint-spot:hover polygon,.fn-paint-spot:focus-visible polygon{stroke-opacity:.7;fill:#ffffff08;filter:url(#fn-silver);animation:fn-shine 2.4s ease-in-out infinite}
-@keyframes fn-shine{50%{stroke-opacity:.35}}
-/* Touch screens have no hover: every object keeps a faint silver shimmer so it's clear what can be tapped */
+/* Hover: a faint candle glow over the object, and its subject written in Arnold Böcklin (Nicky's choice).
+   No outline, no emoji, no tooltip. The font file goes in /assets/fonts/; until then an elegant serif stands in. */
+.fn-paint-spot polygon{fill:#ffe7a8;fill-opacity:0;stroke:none;filter:url(#fn-glow);transition:fill-opacity .5s ease}
+.fn-paint-spot:hover polygon,.fn-paint-spot:focus-visible polygon{fill-opacity:.34}
+.fn-paint-word{font:500 46px 'Arnold Boecklin','Arnold Böcklin','Cormorant Garamond',Georgia,serif;font-style:normal;letter-spacing:.02em;fill:#f3d995;filter:url(#fn-word-glow);opacity:0;pointer-events:none;transition:opacity .5s ease,transform .5s ease;transform:translateY(8px);transform-box:fill-box}
+.fn-paint-spot:hover .fn-paint-word,.fn-paint-spot:focus-visible .fn-paint-word{opacity:1;transform:none}
+/* Touch screens have no hover: each object breathes a faint glow so it's clear what can be tapped */
 @media(hover:none){
-  .fn-paint-spot polygon{stroke-opacity:.3;filter:url(#fn-silver);animation:fn-shimmer 3s ease-in-out infinite}
-  .fn-paint-spot:nth-of-type(3n) polygon{animation-delay:-1s}.fn-paint-spot:nth-of-type(3n+1) polygon{animation-delay:-2s}
+  .fn-paint-spot polygon{animation:fn-breathe 3.6s ease-in-out infinite}
+  .fn-paint-spot:nth-of-type(3n) polygon{animation-delay:-1.2s}.fn-paint-spot:nth-of-type(3n+1) polygon{animation-delay:-2.4s}
 }
-@keyframes fn-shimmer{50%{stroke-opacity:.07}}
-@media(prefers-reduced-motion:reduce){.fn-paint-spot polygon{animation:none!important}}
+@keyframes fn-breathe{50%{fill-opacity:.2}}
+@media(prefers-reduced-motion:reduce){.fn-paint-spot polygon{animation:none!important}.fn-paint-word{transition:none;transform:none}}
 
 /* Topic pages: a deep purple sheet with candle-yellow ink */
 .fn-study-main{max-width:1120px;margin:0 auto;padding:max(28px,env(safe-area-inset-top)) 20px 60px}

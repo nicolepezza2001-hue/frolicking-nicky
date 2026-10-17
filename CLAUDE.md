@@ -169,10 +169,10 @@ a separate Europe close-up, the map legend or the trip buttons under the map on 
 - Each object is a traced polygon (painting coordinates 1536×1024) linking to a topic view: lute = Opera,
   pink branches = Silver Age poetry, three books = Russian, marble bust = French, golden horse = Tocharian,
   smoking vessel = Avestan, green goblet = Proto-Indo-European, quartz crystal = "What next?" (add a topic;
-  added topics are listed on that page). Hover makes the outline shine faintly silver; on touch screens every
-  object shimmers softly.
+  added topics are listed on that page). Hover gives the object a faint candle glow and writes its subject
+  in Arnold Böcklin (yellow `#f3d995`); on touch screens every object breathes a faint glow.
 - Topic pages use the study palette Nicky loves: deep purple `#2b1e38` / `#150e1d` and candle-yellow `#f3d995`,
   with cream `#efe0bf` text, all set in Cormorant Garamond, notes on yellow-ruled lines (`assets/study.css`).
-  Keep it elegant: no emoji, no labels or tooltips on hover (Nicky disliked them), only the silver outline.
+  Keep it elegant: no emoji, no tooltips, no outlines; only the glow and the Arnold Böcklin word on hover.
 - Topic content is in `TOPICS` in `assets/study.js` (old Italian strings sit beside the English; only English
   shows). Ticks, notes, extra steps and new topics live in the browser only (`fn-study-v1`).
