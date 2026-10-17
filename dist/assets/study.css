@@ -88,3 +88,18 @@ body:not(.fn-study-open){overflow:hidden}
   .fn-study-view{padding:22px 18px 32px}
   .fn-study-grid{grid-template-columns:1fr;gap:30px}
 }
+
+/* A light room breeze: local copies preserve the painting's own flames, paper and smoke.
+   All layers share its SVG coordinates and stay behind the object links. */
+.fn-room-atmosphere{pointer-events:none}
+.fn-flame{transform-box:view-box;animation:fn-flame-flicker 1.7s ease-in-out infinite;transform-origin:614px 433px}
+.fn-flame-two{transform-origin:648px 461px;animation-duration:2.1s;animation-delay:-.8s}
+@keyframes fn-flame-flicker{0%,100%{transform:skewX(-1deg) scaleY(.98);filter:brightness(1)}22%{transform:skewX(2deg) scaleY(1.05);filter:brightness(1.14)}47%{transform:skewX(-3deg) scaleY(.94);filter:brightness(.91)}71%{transform:skewX(1deg) scaleY(1.03);filter:brightness(1.08)}}
+.fn-candle-halo{animation:fn-candle-shimmer 2.7s ease-in-out infinite}
+.fn-candle-halo-two{animation-duration:3.3s;animation-delay:-1.6s}
+@keyframes fn-candle-shimmer{0%,100%{opacity:.55}33%{opacity:.9}61%{opacity:.4}83%{opacity:.75}}
+.fn-book-breeze{transform-box:view-box;transform-origin:1050px 890px;animation:fn-page-stir 7.5s ease-in-out infinite}
+@keyframes fn-page-stir{0%,100%{transform:none}35%{transform:skewY(.18deg) scaleY(.995)}70%{transform:skewY(-.12deg) scaleY(1.002)}}
+.fn-smoke-breeze{transform-box:view-box;transform-origin:1167px 660px;animation:fn-smoke-drift 11s ease-in-out infinite}
+@keyframes fn-smoke-drift{0%,100%{transform:skewX(-1deg)}50%{transform:skewX(2.5deg)}}
+@media(prefers-reduced-motion:reduce){.fn-room-atmosphere{display:none}.fn-room-atmosphere *{animation:none!important}}
