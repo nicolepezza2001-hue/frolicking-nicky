@@ -54,6 +54,7 @@
         [['One poem in Russian', 'Una poesia in russo'], 'Side by side with a translation, then learn it by heart.', 'Con la traduzione accanto, poi impararla a memoria.']
       ],
       shelf: [
+        ['Slides', 'Slide', 'Silver Age — lecture PowerPoints', 'The course presentation folder on Google Drive.', 'The course presentation folder on Google Drive.', 'https://drive.google.com/drive/folders/10sDBq52kFID5SfPzkNKeHnEyfLD7ZX0I'],
         ['Memoir', 'Memorie', 'Nadezhda Mandelstam, Hope Against Hope', 'The essential memoir of the end of the era.', 'Le memorie essenziali sulla fine di quell’epoca.'],
         ['Memoir', 'Memorie', 'Nina Berberova, The Italics Are Mine', 'The whole generation, seen from emigration.', 'Tutta una generazione, vista dall’emigrazione.'],
         ['Poems', 'Poesie', 'Akhmatova, Complete Poems (tr. Judith Hemschemeyer)', 'Thorough, and easy to read beside the Russian.', 'Completa, e facile da leggere accanto al russo.'],

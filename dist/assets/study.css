@@ -190,3 +190,12 @@ body.fn-lesson-open{background:#faeac0}
 .fn-room-art:has([data-spot="new"]:is(:hover,:focus-visible)) .fn-crystal-pulse{animation:fn-facet-light 3.2s ease-in-out infinite}
 @keyframes fn-facet-light{0%,100%{opacity:.06}50%{opacity:.38}}
 @media(prefers-reduced-motion:reduce){.fn-object-effects{display:none}.fn-object-effects *{animation:none!important;transition:none!important}}
+
+/* Keep reading tools within reach while moving through long lessons. */
+.fn-lesson>.fn-study-bar{position:sticky;top:0;z-index:10;background:#faeac0;padding:12px 0;border-bottom:1px solid #2b1e3826;flex-wrap:wrap}
+.fn-reading-tools{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.fn-highlight-colours{display:flex;gap:8px;align-items:center}
+.fn-highlight-colour{width:24px;height:24px;border:1px solid #2b1e3866;border-radius:50%;cursor:pointer;padding:0}
+.fn-highlight-colour[aria-pressed=true]{outline:2px solid var(--st-purple);outline-offset:3px}
+.fn-highlight-colour:focus-visible{outline:3px solid var(--st-purple);outline-offset:3px}
+@media(max-width:760px){.fn-lesson>.fn-study-bar{gap:12px;padding:10px 0}.fn-reading-tools{gap:9px}.fn-highlight-colours{gap:7px}.fn-highlight-colour{width:25px;height:25px}.fn-lesson>.fn-study-bar>.fn-study-back{font-size:1.05rem}}

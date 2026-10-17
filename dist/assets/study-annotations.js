@@ -5,6 +5,9 @@
   try { saved = JSON.parse(localStorage.getItem(KEY)) || {}; } catch (_) {}
   let highlightMode = false;
   const modeButtons = [];
+  const palette = {lavender:'#c2a3d2',rose:'#e8b4bd',mint:'#b8d4b2',blue:'#accde2',peach:'#edc090'};
+  let activeColor = 'lavender';
+  const colorButtons = [];
   const make = (tag, cls, text) => { const e = document.createElement(tag); e.className = cls || ''; if (text) e.textContent = text; return e; };
   window.fnAnnotateLesson = (lesson, content, margin, section) => {
     const records = saved[lesson.id] ||= [];
@@ -12,7 +15,16 @@
     let pending = null, selecting = false, suppressMarkUntil = 0;
     const mode = make('button', 'fn-highlight-mode', 'Highlight'); mode.type = 'button'; mode.setAttribute('aria-pressed', String(highlightMode));
     mode.setAttribute('title', 'Turn on to highlight each passage you select. Press Escape to turn off.');
-    modeButtons.push(mode); section.querySelector('.fn-study-bar').append(mode);
+    modeButtons.push(mode);
+    const tools = make('div', 'fn-reading-tools'); tools.setAttribute('role', 'group'); tools.setAttribute('aria-label', 'Reading tools');
+    const colours = make('div', 'fn-highlight-colours'); colours.setAttribute('role','group'); colours.setAttribute('aria-label','Highlighter colours');
+    Object.entries(palette).forEach(([name, value]) => {
+      const button = make('button', 'fn-highlight-colour'); button.type='button'; button.dataset.colour=name;
+      button.style.background=value; button.setAttribute('aria-label',name+' highlighter'); button.title=name; button.setAttribute('aria-pressed',String(name===activeColor));
+      colorButtons.push(button); button.addEventListener('click',()=>{activeColor=name;colorButtons.forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.colour===name)));});colours.append(button);
+    });
+    const addNote = make('button','fn-highlight-mode','Note'); addNote.type='button'; addNote.title='Write a margin note beside the current passage';
+    tools.append(mode,colours,addNote); section.querySelector('.fn-study-bar').append(tools);
     const setMode = value => { highlightMode = value; modeButtons.forEach(button => button.setAttribute('aria-pressed', String(value))); document.body.classList.toggle('fn-highlighter-active', value); };
     mode.addEventListener('click', () => setMode(!highlightMode));
     const toolbar = make('div', 'fn-highlight-toolbar'); toolbar.hidden = true; toolbar.setAttribute('role', 'toolbar'); toolbar.setAttribute('aria-label', 'Selected text');
@@ -24,13 +36,13 @@
     const renderHighlights = () => {
       blocks().forEach(block => {
         const index = Number(block.dataset.noteBlock), text = lesson.blocks[index].text;
-        const spans = records.flatMap(r => (r.ranges || []).filter(s => s.block === index).map(s => ({ ...s, id:r.id })));
+        const spans = records.flatMap(r => (r.ranges || []).filter(s => s.block === index).map(s => ({ ...s, id:r.id, colour:r.colour || 'lavender' })));
         const boundaries = [...new Set([0,text.length,...spans.flatMap(s=>[s.start,s.end])])].sort((a,b)=>a-b);
         block.replaceChildren();
         for (let i=0;i<boundaries.length-1;i++) {
           const start=boundaries[i],end=boundaries[i+1]; const covering=spans.filter(s=>s.start<=start&&s.end>=end);
           if (!covering.length) block.append(document.createTextNode(text.slice(start,end)));
-          else { const mark=make('mark','fn-text-highlight',text.slice(start,end)); mark.dataset.annotation=covering[0].id; mark.tabIndex=0; mark.setAttribute('role','button'); mark.setAttribute('aria-label','Open note for '+text.slice(start,end)); block.append(mark); }
+          else { const mark=make('mark','fn-text-highlight',text.slice(start,end)); mark.dataset.annotation=covering[0].id; mark.style.backgroundColor=palette[covering[0].colour] || palette.lavender; mark.tabIndex=0; mark.setAttribute('role','button'); mark.setAttribute('aria-label','Open note for '+text.slice(start,end)); block.append(mark); }
         }
       });
     };
@@ -86,7 +98,7 @@
     };
     const create = hasNote => {
       if(!pending)return;
-      const record={...pending,id:Date.now().toString(36)+Math.random().toString(36).slice(2,7),hasNote,text:''};
+      const record={...pending,id:Date.now().toString(36)+Math.random().toString(36).slice(2,7),hasNote,text:'',colour:activeColor};
       records.push(record);pending=null;toolbar.hidden=true;getSelection()?.removeAllRanges();store();renderHighlights();renderCards();if(hasNote)focusRecord(record.id);
     };
     highlight.addEventListener('click',()=>create(false));comment.addEventListener('click',()=>create(true));
@@ -106,6 +118,7 @@
       const y=e.clientY; const nearest=blocks().reduce((best,block)=>Math.abs(block.getBoundingClientRect().top-y)<Math.abs(best.getBoundingClientRect().top-y)?block:best);
       pending={ranges:[],quote:'',block:Number(nearest.dataset.noteBlock)};create(true);
     });
+    addNote.addEventListener('click',()=>{const nearest=blocks().reduce((best,block)=>Math.abs(block.getBoundingClientRect().top-160)<Math.abs(best.getBoundingClientRect().top-160)?block:best);pending={ranges:[],quote:'',block:Number(nearest.dataset.noteBlock)};create(true);});
     document.addEventListener('keydown',e=>{if(e.key==='Escape'){setMode(false);toolbar.hidden=true;}});
     window.addEventListener('resize',layout);window.addEventListener('hashchange',()=>{toolbar.hidden=true;requestAnimationFrame(layout);});
     window.addEventListener('scroll',()=>{toolbar.hidden=true;},{passive:true});
