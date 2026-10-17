@@ -123,3 +123,28 @@ body:not(.fn-study-open){overflow:hidden}
 .fn-lesson-notes h3{font:600 1.4rem/1.4 'Cormorant Garamond',Georgia,serif;color:var(--st-yellow);margin:2em 0 .8em}
 .fn-lesson-footer{border-top:1px solid var(--st-line);padding-top:24px;margin-top:36px}
 @media(max-width:760px){.fn-lesson{padding:24px 20px 32px}.fn-lesson-notes{font-size:17px;line-height:1.85}.fn-lesson h2{overflow-wrap:anywhere}}
+
+/* Warm paper with purple ink; annotation margin stays outside the reading measure. */
+body.fn-lesson-open{background:var(--st-yellow)}
+.fn-lesson{max-width:1120px;background:var(--st-yellow);color:var(--st-purple);border-color:#2b1e3833;box-shadow:none}
+.fn-lesson h2,.fn-lesson .fn-study-back,.fn-lesson-number,.fn-lesson-notes,.fn-lesson-notes li::marker{color:var(--st-purple)}
+.fn-lesson-notes h3{font:800 1.4rem/1.4 'Arnold Boecklin',Georgia,serif;color:var(--st-purple)}
+.fn-lesson-footer{border-color:#2b1e3840}
+.fn-lesson-workspace{display:grid;grid-template-columns:minmax(0,1fr) 250px;gap:42px;align-items:stretch;margin-top:32px}
+.fn-lesson-notes{margin-top:0}
+.fn-lesson-margin{position:relative;border-left:1px solid #2b1e3833;padding-left:18px;cursor:text;min-height:240px;font:14px/1.5 Georgia,serif}
+.fn-margin-hint,.fn-annotation-status{color:#4d3b59;font:13px/1.5 Georgia,serif;margin:12px 0}
+.fn-margin-card{position:absolute;left:18px;right:0;border:1px solid #2b1e3840;border-radius:8px;background:#fff3ce;padding:12px;cursor:default}
+.fn-margin-card blockquote{margin:0 0 10px;padding-left:8px;border-left:2px solid #826395;color:#594067;font-size:12px;max-height:90px;overflow:auto}
+.fn-lesson .fn-margin-card textarea{display:block;width:100%;resize:vertical;min-height:84px;padding:0;border:0;border-radius:0;background:transparent;color:var(--st-purple);font:15px/1.6 Georgia,serif}
+.fn-lesson .fn-margin-card textarea::placeholder{color:#685874}
+.fn-lesson .fn-margin-card textarea:focus{outline:2px solid #826395;outline-offset:4px}
+.fn-note-remove,.fn-add-margin-note{background:transparent;color:var(--st-purple);border:1px solid #2b1e3855;border-radius:5px;padding:5px 9px;cursor:pointer;font:13px/1.4 Georgia,serif}
+.fn-note-remove{margin-top:8px;font-size:12px}
+.fn-text-highlight{background:#c2a3d2;color:var(--st-purple);border-radius:2px;cursor:pointer}
+.fn-text-highlight:focus-visible{outline:2px solid var(--st-purple)}
+.fn-lesson-notes ::selection{background:#b88bca;color:#21142e}
+.fn-highlight-toolbar{position:fixed;z-index:20;display:flex;gap:6px;padding:6px;background:var(--st-purple);border-radius:7px;box-shadow:0 4px 18px #150e1d44}
+.fn-highlight-toolbar button{border:1px solid #f3d99566;background:transparent;color:var(--st-yellow);padding:8px 10px;border-radius:4px;font:14px Georgia,serif;cursor:pointer}
+.fn-highlight-toolbar button:focus-visible{outline:2px solid var(--st-yellow)}
+@media(max-width:760px){.fn-lesson-workspace{grid-template-columns:minmax(0,1fr);gap:28px}.fn-lesson-margin{min-height:0!important;border-left:0;border-top:1px solid #2b1e3840;padding:20px 0 0}.fn-margin-card{position:relative;left:auto;right:auto;top:auto!important;margin:16px 0}.fn-lesson h2{font-size:clamp(2rem,9vw,3rem)}}

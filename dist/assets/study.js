@@ -318,14 +318,17 @@
     sec.setAttribute('aria-labelledby', title.id);
     sec.append(bar, el('p', 'fn-lesson-number', 'Lesson ' + lesson.number + ' · Silver Age poetry'), title);
     const notes = el('div', 'fn-lesson-notes'); let list;
-    lesson.blocks.forEach(block => {
-      if (block.type === 'heading') { list = null; notes.append(el('h3', null, block.text)); }
+    lesson.blocks.forEach((block, blockIndex) => {
+      if (block.type === 'heading') { list = null; const heading = el('h3', null, block.text); heading.dataset.noteBlock = blockIndex; notes.append(heading); }
       else {
         if (!list) { list = el('ul'); notes.append(list); }
-        list.append(el('li', null, block.text));
+        const paragraph = el('li', null, block.text); paragraph.dataset.noteBlock = blockIndex; list.append(paragraph);
       }
     });
-    sec.append(notes);
+    const workspace = el('div', 'fn-lesson-workspace');
+    const margin = el('aside', 'fn-lesson-margin'); margin.setAttribute('aria-label', 'Your margin notes');
+    workspace.append(notes, margin); sec.append(workspace);
+    window.fnAnnotateLesson?.(lesson, notes, margin, sec);
     const footer = el('nav', 'fn-lesson-footer'); footer.setAttribute('aria-label', 'Other lessons');
     const other = lessons[index === 0 ? 1 : 0];
     if (other) { const link = el('a', 'fn-study-back', index === 0 ? 'Next: ' + other.title + ' →' : '← Previous: ' + other.title); link.href = '#' + other.id; footer.append(link); }
@@ -341,6 +344,7 @@
     document.querySelectorAll('.fn-study-view').forEach(v => { v.hidden = v !== view; });
     if (scene) scene.hidden = !!isView;
     document.body.classList.toggle('fn-study-open', !!isView);
+    document.body.classList.toggle('fn-lesson-open', !!isView && view.classList.contains('fn-lesson'));
     scrollTo(0, 0);
     // On a narrow (portrait) screen the painting is wider than the screen: start in the middle, swipe for the rest
     if (scene && !isView) requestAnimationFrame(() => { scene.scrollLeft = (scene.scrollWidth - scene.clientWidth) / 2; });
