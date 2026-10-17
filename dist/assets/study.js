@@ -35,6 +35,75 @@
       ]
     },
     {
+      id: 'silver-age',
+      name: ['Silver Age poetry', 'La poesia dell’Età d’argento'],
+      why: ['Russian poetry from about 1890 to the 1920s: Symbolists, Acmeists, Futurists, and the cafés where they argued.',
+            'La poesia russa dal 1890 circa agli anni Venti: simbolisti, acmeisti, futuristi e i caffè dove litigavano.'],
+      path: [
+        [['The map of movements', 'La mappa dei movimenti'], 'Symbolism, then Acmeism and Futurism. Who split from whom, and why.', 'Il simbolismo, poi acmeismo e futurismo. Chi si è staccato da chi, e perché.'],
+        ['Aleksandr Blok', '“The Stranger”, then The Twelve.', '“La sconosciuta”, poi I dodici.'],
+        ['Andrei Bely & Vyacheslav Ivanov', 'Symbolism at its most mystical, and Ivanov’s Tower salon.', 'Il simbolismo più mistico e il salotto della Torre di Ivanov.'],
+        ['Nikolai Gumilev', 'The Poets’ Guild and the Acmeist manifesto: clarity, the thing itself.', 'La Corporazione dei poeti e il manifesto acmeista: chiarezza, la cosa in sé.'],
+        ['Anna Akhmatova', 'The early lyrics (Evening, Rosary), then Requiem.', 'Le prime liriche (La sera, Il rosario), poi Requiem.'],
+        ['Osip Mandelstam', 'Stone, then the Voronezh notebooks.', 'La pietra, poi i Quaderni di Voronež.'],
+        ['Marina Tsvetaeva', '“Poems to Akhmatova” and “Poem of the End”.', '“Versi ad Achmatova” e il “Poema della fine”.'],
+        [['The Futurists', 'I futuristi'], 'Mayakovsky’s “A Cloud in Trousers” and Khlebnikov’s zaum.', '“La nuvola in calzoni” di Majakovskij e lo zaum’ di Chlebnikov.'],
+        ['Boris Pasternak', 'My Sister, Life (1917).', 'Mia sorella, la vita (1917).'],
+        [['The Stray Dog cabaret', 'Il cabaret del Cane randagio'], 'The St Petersburg basement where everyone met.', 'Lo scantinato di San Pietroburgo dove si incontravano tutti.'],
+        [['One poem in Russian', 'Una poesia in russo'], 'Side by side with a translation, then learn it by heart.', 'Con la traduzione accanto, poi impararla a memoria.']
+      ],
+      shelf: [
+        ['Memoir', 'Memorie', 'Nadezhda Mandelstam, Hope Against Hope', 'The essential memoir of the end of the era.', 'Le memorie essenziali sulla fine di quell’epoca.'],
+        ['Memoir', 'Memorie', 'Nina Berberova, The Italics Are Mine', 'The whole generation, seen from emigration.', 'Tutta una generazione, vista dall’emigrazione.'],
+        ['Poems', 'Poesie', 'Akhmatova, Complete Poems (tr. Judith Hemschemeyer)', 'Thorough, and easy to read beside the Russian.', 'Completa, e facile da leggere accanto al russo.'],
+        ['Online', 'Online', 'Russian Wikisource', 'The original texts, free.', 'I testi originali, gratis.', 'https://ru.wikisource.org/']
+      ]
+    },
+    {
+      id: 'russian',
+      name: ['Russian', 'Russo'],
+      why: ['The language of the poems on the next page: the alphabet, the cases, the verbs of motion, then real reading.',
+            'La lingua delle poesie della pagina accanto: l’alfabeto, i casi, i verbi di moto, poi la lettura vera.'],
+      path: [
+        [['The Cyrillic alphabet', 'L’alfabeto cirillico'], 'Print and handwriting, including the letters that look familiar but aren’t.', 'Stampatello e corsivo, comprese le lettere che sembrano familiari ma non lo sono.'],
+        [['Stress and vowel reduction', 'Accento e riduzione vocalica'], 'Why молоко sounds like “malakó”, and why stress marks help.', 'Perché молоко si pronuncia “malakó”, e perché gli accenti segnati aiutano.'],
+        [['Gender and the six cases', 'Genere e i sei casi'], 'Nominative to prepositional, one case at a time.', 'Dal nominativo al prepositivo, un caso alla volta.'],
+        [['Aspect', 'L’aspetto'], 'Perfective and imperfective pairs: the heart of the Russian verb.', 'Le coppie perfettivo e imperfettivo: il cuore del verbo russo.'],
+        [['Verbs of motion', 'I verbi di moto'], 'Идти and ходить, ехать and ездить, and all their prefixes.', 'Идти e ходить, ехать e ездить, e tutti i loro prefissi.'],
+        [['A fairy tale', 'Una fiaba'], 'A short skazka read aloud, with the audio.', 'Una breve skazka letta ad alta voce, con l’audio.'],
+        [['Pushkin, side by side', 'Puškin, a fronte'], 'A short lyric with a translation beside it.', 'Una breve lirica con la traduzione accanto.'],
+        [['A first conversation', 'Una prima conversazione'], 'Half an hour with a tutor or a language exchange partner.', 'Mezz’ora con un insegnante o in uno scambio linguistico.']
+      ],
+      shelf: [
+        ['Book', 'Libro', 'Nicholas Brown, The New Penguin Russian Course', 'A thorough grammar course for adults.', 'Un corso di grammatica completo per adulti.'],
+        ['Book', 'Libro', 'Terence Wade, A Comprehensive Russian Grammar', 'The reference to keep on the desk.', 'Il riferimento da tenere sulla scrivania.'],
+        ['Online', 'Online', 'Russian National Corpus', 'See how any word is really used.', 'Per vedere come si usa davvero una parola.', 'https://ruscorpora.ru/'],
+        ['Online', 'Online', 'Forvo', 'Native speakers pronouncing words.', 'Parole pronunciate da madrelingua.', 'https://forvo.com/languages/ru/']
+      ]
+    },
+    {
+      id: 'french',
+      name: ['French', 'Francese'],
+      why: ['French classical culture, art and ideas, and the language to read them in.',
+            'La cultura classica francese, l’arte e le idee, e la lingua per leggerle.'],
+      path: [
+        [['Sounds and liaison', 'Suoni e liaison'], 'Nasal vowels, silent endings and when they wake up.', 'Le vocali nasali, le finali mute e quando si risvegliano.'],
+        [['Passé composé and imparfait', 'Passé composé e imparfait'], 'Telling a story in the past.', 'Raccontare una storia al passato.'],
+        [['The subjunctive', 'Il congiuntivo'], 'Il faut que, bien que, avant que.', 'Il faut que, bien que, avant que.'],
+        [['A film a week', 'Un film a settimana'], 'With French subtitles, not Italian or English ones.', 'Con i sottotitoli in francese, non in italiano o in inglese.'],
+        [['A journal page in French', 'Una pagina di diario in francese'], 'A few lines each day, about anything at all.', 'Qualche riga al giorno, su qualsiasi cosa.'],
+        ['Baudelaire, Les Fleurs du mal', 'A few poems a week, aloud.', 'Qualche poesia a settimana, ad alta voce.'],
+        ['Flaubert, Madame Bovary', 'The first novel in the original.', 'Il primo romanzo in lingua originale.'],
+        [['The Louvre, in French', 'Il Louvre, in francese'], 'An audio guide or museum visit in French only.', 'Un’audioguida o una visita al museo solo in francese.']
+      ],
+      shelf: [
+        ['Book', 'Libro', 'Bescherelle: La conjugaison pour tous', 'Every verb, conjugated.', 'Tutti i verbi, coniugati.'],
+        ['Book', 'Libro', 'Grevisse, Le Bon Usage', 'The great grammar, for settling arguments.', 'La grande grammatica, per risolvere le dispute.'],
+        ['Online', 'Online', 'TV5Monde Apprendre', 'Free lessons built on real news and TV.', 'Lezioni gratuite costruite su notizie e TV vere.', 'https://apprendre.tv5monde.com/'],
+        ['Online', 'Online', 'Le Robert', 'The dictionary, online.', 'Il dizionario, online.', 'https://dictionnaire.lerobert.com/']
+      ]
+    },
+    {
       id: 'tocharian',
       name: ['Tocharian', 'Tocario'],
       why: ['The easternmost Indo-European language: Buddhist manuscripts from the Tarim Basin, in two dialects, A and B.',
@@ -60,28 +129,49 @@
       ]
     },
     {
-      id: 'silver-age',
-      name: ['Silver Age poetry', 'La poesia dell’Età d’argento'],
-      why: ['Russian poetry from about 1890 to the 1920s: Symbolists, Acmeists, Futurists, and the cafés where they argued.',
-            'La poesia russa dal 1890 circa agli anni Venti: simbolisti, acmeisti, futuristi e i caffè dove litigavano.'],
+      id: 'avestan',
+      name: ['Avestan', 'Avestico'],
+      why: ['The language of the Avesta, the Zoroastrian scriptures: ritual fire, the Gathas of Zarathustra, and a close cousin of Vedic Sanskrit.',
+            'La lingua dell’Avesta, le scritture zoroastriane: il fuoco rituale, le Gāthā di Zarathuštra e un cugino stretto del sanscrito vedico.'],
       path: [
-        [['The map of movements', 'La mappa dei movimenti'], 'Symbolism, then Acmeism and Futurism. Who split from whom, and why.', 'Il simbolismo, poi acmeismo e futurismo. Chi si è staccato da chi, e perché.'],
-        ['Aleksandr Blok', '“The Stranger”, then The Twelve.', '“La sconosciuta”, poi I dodici.'],
-        ['Andrei Bely & Vyacheslav Ivanov', 'Symbolism at its most mystical, and Ivanov’s Tower salon.', 'Il simbolismo più mistico e il salotto della Torre di Ivanov.'],
-        ['Nikolai Gumilev', 'The Poets’ Guild and the Acmeist manifesto: clarity, the thing itself.', 'La Corporazione dei poeti e il manifesto acmeista: chiarezza, la cosa in sé.'],
-        ['Anna Akhmatova', 'The early lyrics (Evening, Rosary), then Requiem.', 'Le prime liriche (La sera, Il rosario), poi Requiem.'],
-        ['Osip Mandelstam', 'Stone, then the Voronezh notebooks.', 'La pietra, poi i Quaderni di Voronež.'],
-        ['Marina Tsvetaeva', '“Poems to Akhmatova” and “Poem of the End”.', '“Versi ad Achmatova” e il “Poema della fine”.'],
-        [['The Futurists', 'I futuristi'], 'Mayakovsky’s “A Cloud in Trousers” and Khlebnikov’s zaum.', '“La nuvola in calzoni” di Majakovskij e lo zaum’ di Chlebnikov.'],
-        ['Boris Pasternak', 'My Sister, Life (1917).', 'Mia sorella, la vita (1917).'],
-        [['The Stray Dog cabaret', 'Il cabaret del Cane randagio'], 'The St Petersburg basement where everyone met.', 'Lo scantinato di San Pietroburgo dove si incontravano tutti.'],
-        [['One poem in Russian', 'Una poesia in russo'], 'Side by side with a translation, then learn it by heart.', 'Con la traduzione accanto, poi impararla a memoria.']
+        [['The big picture', 'Il quadro generale'], 'Old Avestan (the Gathas) and Young Avestan, and how the texts survived.', 'L’antico avestico (le Gāthā) e l’avestico recente, e come i testi sono sopravvissuti.'],
+        [['The Avestan script', 'La scrittura avestica'], 'Written right to left, created centuries later to record the recitation exactly.', 'Si scrive da destra a sinistra, creata secoli dopo per fissare esattamente la recitazione.'],
+        [['Sounds', 'I suoni'], 'A rich vowel system and the sound changes from Indo-Iranian.', 'Un sistema vocalico ricchissimo e i cambiamenti fonetici dall’indoiranico.'],
+        [['Avestan beside Vedic', 'L’avestico accanto al vedico'], 'Haoma and soma, asha and ṛta: the same words, a sound shift apart.', 'Haoma e soma, aša e ṛta: le stesse parole, a un cambiamento fonetico di distanza.'],
+        [['Nouns and verbs', 'Nomi e verbi'], 'Eight cases, three numbers, and the verb system.', 'Otto casi, tre numeri e il sistema verbale.'],
+        [['Read the Ahuna Vairya', 'Leggere l’Ahuna Vairya'], 'The most sacred prayer, word by word.', 'La preghiera più sacra, parola per parola.'],
+        [['A stanza of the Gathas', 'Una strofa delle Gāthā'], 'Start with Yasna 28.', 'Cominciare dallo Yasna 28.'],
+        [['A Yasht hymn', 'Un inno Yašt'], 'The hymns to the yazatas, in Young Avestan.', 'Gli inni agli yazata, in avestico recente.']
       ],
       shelf: [
-        ['Memoir', 'Memorie', 'Nadezhda Mandelstam, Hope Against Hope', 'The essential memoir of the end of the era.', 'Le memorie essenziali sulla fine di quell’epoca.'],
-        ['Memoir', 'Memorie', 'Nina Berberova, The Italics Are Mine', 'The whole generation, seen from emigration.', 'Tutta una generazione, vista dall’emigrazione.'],
-        ['Poems', 'Poesie', 'Akhmatova, Complete Poems (tr. Judith Hemschemeyer)', 'Thorough, and easy to read beside the Russian.', 'Completa, e facile da leggere accanto al russo.'],
-        ['Online', 'Online', 'Russian Wikisource', 'The original texts, free.', 'I testi originali, gratis.', 'https://ru.wikisource.org/']
+        ['Book', 'Libro', 'Skjærvø, An Introduction to Old Avestan', 'A full course with texts and glossary.', 'Un corso completo con testi e glossario.'],
+        ['Book', 'Libro', 'Beekes, A Grammar of Gatha-Avestan', 'Compact and clear.', 'Compatta e chiara.'],
+        ['Book', 'Libro', 'Hoffmann & Forssman, Avestische Laut- und Flexionslehre', 'The standard reference, in German.', 'Il riferimento classico, in tedesco.'],
+        ['Online', 'Online', 'Avesta: Zoroastrian Archives', 'Texts and translations.', 'Testi e traduzioni.', 'https://www.avesta.org/'],
+        ['Online', 'Online', 'TITUS', 'The Avestan texts in Frankfurt’s archive.', 'I testi avestici nell’archivio di Francoforte.', 'https://titus.uni-frankfurt.de/']
+      ]
+    },
+    {
+      id: 'pie',
+      name: ['Proto-Indo-European', 'Protoindoeuropeo'],
+      why: ['The reconstructed ancestor of them all, from Tocharian to French, and the poetry and ritual that left traces in its daughters.',
+            'L’antenato ricostruito di tutte, dal tocario al francese, e la poesia e i riti che hanno lasciato tracce nelle lingue figlie.'],
+      path: [
+        [['The comparative method', 'Il metodo comparativo'], 'How you rebuild a language nobody wrote down.', 'Come si ricostruisce una lingua che nessuno ha mai scritto.'],
+        [['The family tree', 'L’albero genealogico'], 'The branches, from Anatolian and Tocharian to Indo-Iranian and Italic.', 'I rami, dall’anatolico e dal tocario all’indoiranico e all’italico.'],
+        [['Grimm’s law and friends', 'La legge di Grimm e le altre'], 'The sound laws that link pater, father and padre.', 'Le leggi fonetiche che collegano pater, father e padre.'],
+        [['Laryngeals', 'Le laringali'], 'Three lost sounds, predicted by Saussure and found in Hittite.', 'Tre suoni perduti, previsti da Saussure e ritrovati nell’ittita.'],
+        [['Ablaut', 'L’apofonia'], 'e, o and zero: sing, sang, sung.', 'e, o e grado zero: sing, sang, sung.'],
+        [['Nouns and verbs', 'Nomi e verbi'], 'Eight cases, thematic and athematic verbs.', 'Otto casi, verbi tematici e atematici.'],
+        [['Poetic formulas', 'Le formule poetiche'], '“Imperishable fame”, kléos áphthiton and śrávas ákṣitam.', '“Fama imperitura”, kléos áphthiton e śrávas ákṣitam.'],
+        [['Soma and haoma', 'Soma e haoma'], 'The sacred drink of the Indo-Iranians, and the goblet on the table.', 'La bevanda sacra degli indoiranici, e il calice sul tavolo.'],
+        [['Schleicher’s fable', 'La favola di Schleicher'], 'The sheep and the horses, in each new reconstruction since 1868.', 'La pecora e i cavalli, in ogni nuova ricostruzione dal 1868.']
+      ],
+      shelf: [
+        ['Book', 'Libro', 'Fortson, Indo-European Language and Culture', 'The best introduction, branch by branch.', 'La migliore introduzione, ramo per ramo.'],
+        ['Book', 'Libro', 'Mallory & Adams, The Oxford Introduction to Proto-Indo-European', 'Words, culture and the world they describe.', 'Le parole, la cultura e il mondo che descrivono.'],
+        ['Book', 'Libro', 'Watkins, How to Kill a Dragon', 'Indo-European poetics, myth and formula.', 'La poetica indoeuropea, il mito e le formule.'],
+        ['Book', 'Libro', 'Clackson, Indo-European Linguistics', 'A clear look at what we know, and how.', 'Uno sguardo chiaro su ciò che sappiamo, e come.']
       ]
     }
   ];
@@ -244,6 +334,14 @@
     scrollTo(0, 0);
   };
   addEventListener('hashchange', show); show();
+
+  // The painting: hovering an object (or its label) makes its outline shine faintly silver
+  document.querySelectorAll('.fn-paint [data-spot]').forEach(e => {
+    const all = document.querySelectorAll(`.fn-paint [data-spot="${e.dataset.spot}"]`);
+    const lit = on => all.forEach(x => x.classList.toggle('is-lit', on));
+    e.addEventListener('mouseenter', () => lit(true)); e.addEventListener('mouseleave', () => lit(false));
+    e.addEventListener('focus', () => lit(true)); e.addEventListener('blur', () => lit(false));
+  });
 
   // A new topic: a name and, optionally, one line on why
   const nf = document.getElementById('fn-study-new');

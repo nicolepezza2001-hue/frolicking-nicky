@@ -102,3 +102,24 @@ html body.fn-study .fn-study-intro .fn-page-title em{color:#f3d995}
 }
 /* The step titles stay plain on parchment (no keyword icons there) */
 html body.fn-study .fn-study-step .fn-stop-icon{display:none}
+
+/* The painted study (since Oct 2026): Nicky's own painting, with each object traced as a link.
+   Hovering an object (or its label) makes its outline shine faintly silver; on touch screens the labels always show. */
+.fn-paint{position:relative}
+.fn-paint img{display:block;width:100%;height:auto}
+.fn-paint-spots{position:absolute;inset:0;width:100%;height:100%}
+.fn-paint-spot{cursor:pointer;outline:none}
+.fn-paint-spot polygon{fill:#ffffff00;stroke:#eef2f8;stroke-opacity:0;stroke-width:3;stroke-linejoin:round;transition:stroke-opacity .35s,fill .35s}
+.fn-paint-spot.is-lit polygon,.fn-paint-spot:hover polygon{stroke-opacity:.7;fill:#ffffff08;filter:url(#fn-silver);animation:fn-shine 2.4s ease-in-out infinite}
+@keyframes fn-shine{50%{stroke-opacity:.35}}
+.fn-paint-tag{position:absolute;transform:translate(-50%,-50%);white-space:nowrap;padding:2px 12px;border-radius:99px;background:#150e1dd9;border:1px solid #eef2f866;color:#eef2f8;text-decoration:none;font:600 1.3rem/1.3 'Caveat',cursive;opacity:0;pointer-events:none;transition:opacity .3s;box-shadow:0 0 12px #00000080}
+.fn-paint-tag-start{transform:translate(0,-50%)}
+.fn-paint-tag.is-lit,.fn-paint-tag:focus-visible{opacity:1;pointer-events:auto}
+.fn-paint-tag:focus-visible{outline:2px solid #eef2f8;outline-offset:2px}
+/* Touch screens have no hover: every object keeps a faint silver shimmer so it's clear what can be tapped,
+   and the topic names are in the list under the painting instead of crowding it */
+@media(hover:none){.fn-paint-spot polygon{stroke-opacity:.32;filter:url(#fn-silver);animation:fn-shimmer 3s ease-in-out infinite}
+  .fn-paint-spot:nth-child(3n) polygon{animation-delay:-1s}.fn-paint-spot:nth-child(3n+1) polygon{animation-delay:-2s}
+  .fn-paint-tag{display:none}}
+@keyframes fn-shimmer{50%{stroke-opacity:.08}}
+@media(prefers-reduced-motion:reduce){.fn-paint-spot polygon{animation:none!important}}
