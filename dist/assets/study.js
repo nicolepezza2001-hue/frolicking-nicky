@@ -29,6 +29,7 @@
         [['See one live', 'Vederne una dal vivo'], 'Palacio de Bellas Artes, or wherever the travels land.', 'Al Palacio de Bellas Artes, o dovunque mi portino i viaggi.']
       ],
       shelf: [
+        ['Notes', 'Appunti', 'HarvardX — First Nights at the Opera', 'Your original course notes on Google Docs.', 'Your original course notes on Google Docs.', 'https://docs.google.com/document/d/1uYMWWloAr8SI9c-R5tkKnQGvnSvEsFLu7tJfS_EISx0/edit'],
         ['Watch', 'Guarda', 'OperaVision', 'Free full productions from European houses.', 'Produzioni complete e gratuite dei teatri europei.', 'https://operavision.eu/'],
         ['Watch', 'Guarda', 'The Met Opera', 'Live in HD screenings and the on-demand archive.', 'Le dirette Live in HD e l’archivio on demand.', 'https://www.metopera.org/'],
         ['Book', 'Libro', 'Kobbé’s Complete Opera Book', 'Plot by plot, for almost everything.', 'Trama per trama, quasi tutto il repertorio.'],
@@ -235,6 +236,7 @@
   const save = () => { try { localStorage.setItem(KEY, JSON.stringify(state)); } catch (_) {} };
 
   const LESSONS = [
+    { topic: 'opera', name: 'Opera', lessons: window.FN_OPERA_LESSONS || [] },
     { topic: 'silver-age', name: 'Silver Age poetry', lessons: window.FN_SILVER_AGE_LESSONS || [] },
     { topic: 'french', name: 'French', lessons: window.FN_FRENCH_LESSONS || [] },
     { topic: 'russian', name: 'Russian', lessons: window.FN_RUSSIAN_LESSONS || [] },
@@ -244,7 +246,7 @@
   const lessonsOf = id => LESSONS.find(x => x.topic === id)?.lessons || [];
   const pick = v => (Array.isArray(v) ? L(v[0], v[1]) : v);
   const topics = () => TOPICS.concat(state.custom.map(c => ({ ...c, custom: true, path: [], shelf: [] })));
-  const steps = t => t.path.map((s, i) => ({ key: `${t.id}:${i}`, title: pick(s[0]), note: s[2] ? L(s[1], s[2]) : s[1], href: t.id !== 'pie' && lessonsOf(t.id)[i] && '#' + lessonsOf(t.id)[i].id }))
+  const steps = t => t.path.map((s, i) => ({ key: `${t.id}:${i}`, title: pick(s[0]), note: s[2] ? L(s[1], s[2]) : s[1], href: !['pie', 'opera'].includes(t.id) && lessonsOf(t.id)[i] && '#' + lessonsOf(t.id)[i].id }))
     .concat(VOCAB[t.id] ? [{ key: `${t.id}:vocab`, title: 'Vocabulary', note: VOCAB[t.id][0] + ' on one side, English on the other.', href: `#${t.id}-vocabulary` }] : [])
     .concat((state.extra[t.id] || []).map(s => ({ key: `${t.id}:x${s.id}`, title: s.text, note: '', extra: s.id })));
   const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; };
@@ -446,16 +448,16 @@
 
     const grid = el('div', 'fn-study-grid');
     const left = el('div');
-    if (t.id === 'pie') {
+    if (['pie', 'opera'].includes(t.id)) {
       left.append(el('h3', 'fn-study-label', 'Your course notes'));
       const notesList = el('ol', 'fn-pie-course-notes');
-      lessonsOf('pie').forEach(lesson => {
+      lessonsOf(t.id).forEach(lesson => {
         const row = el('li'), link = el('a', 'fn-study-lesson-link', lesson.title); link.href = '#' + lesson.id;
         row.append(link, el('small', null, lesson.kicker)); notesList.append(row);
       });
       left.append(notesList);
     }
-    left.append(el('p', 'fn-study-label', t.id === 'pie' ? 'Further study' : T.path));
+    left.append(el('p', 'fn-study-label', ['pie', 'opera'].includes(t.id) ? 'Further study' : T.path));
     const list = el('ol', 'fn-study-path');
     steps(t).forEach(s => list.append(stepRow(t, s, counter)));
     const form = el('form', 'fn-study-add');
@@ -591,6 +593,10 @@
         block.head.forEach(c => head.append(el('th', null, c))); table.append(head);
         block.rows.forEach(r => { const tr = el('tr'); r.forEach(c => tr.append(el('td', null, c))); table.append(tr); });
         wrap.append(table); notes.append(wrap);
+      } else if (block.type === 'image') {
+        list = null; const figure = el('figure', 'fn-lesson-figure fn-course-diagram'), image = el('img');
+        image.src = block.src; image.alt = block.alt || ''; image.loading = 'lazy';
+        figure.append(image); notes.append(figure);
       } else if (block.type === 'link') {
         list = null; const p = el('p', 'fn-lesson-link'), a = el('a', null, block.text + ' ↗\uFE0E');
         a.href = block.href; a.target = '_blank'; a.rel = 'noopener noreferrer'; p.append(a); notes.append(p);
