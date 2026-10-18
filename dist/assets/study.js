@@ -119,6 +119,20 @@
       ]
     },
     {
+      id: 'linguistics',
+      name: ['Linguistics', 'Linguistica'],
+      why: ['How language works: sounds, words, grammar and meaning, and how languages change and branch into families.',
+            'Come funziona il linguaggio: suoni, parole, grammatica e significato, e come le lingue cambiano e si ramificano in famiglie.'],
+      path: [],
+      shelf: [
+        ['Book', 'Libro', 'David Crystal, The Cambridge Encyclopedia of Language', 'The whole field, beautifully illustrated.', 'Tutto il campo, splendidamente illustrato.'],
+        ['Book', 'Libro', 'Fromkin, Rodman & Hyams, An Introduction to Language', 'The classic first textbook.', 'Il manuale introduttivo classico.'],
+        ['Book', 'Libro', 'Lyle Campbell, Historical Linguistics: An Introduction', 'How languages change, and how we know.', 'Come cambiano le lingue, e come lo sappiamo.'],
+        ['Online', 'Online', 'WALS, the World Atlas of Language Structures', 'Maps of grammar across 2,600 languages.', 'Mappe della grammatica in 2.600 lingue.', 'https://wals.info/'],
+        ['Online', 'Online', 'Glottolog', 'Every language family, as a tree.', 'Ogni famiglia linguistica, come un albero.', 'https://glottolog.org/']
+      ]
+    },
+    {
       id: 'tocharian',
       name: ['Tocharian', 'Tocario'],
       why: ['The easternmost Indo-European language: Buddhist manuscripts from the Tarim Basin, in two dialects, A and B.',
