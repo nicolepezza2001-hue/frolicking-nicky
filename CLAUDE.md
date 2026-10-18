@@ -184,7 +184,7 @@ a separate Europe close-up, the map legend or the trip buttons under the map on 
 - Russian and French paths end with **Vocabulary**, its own page (`#french-vocabulary`, `VOCAB` in `study.js`): the
   word on the left, English on the right. "Hide Russian/French" or "Hide English" blurs that column to test both ways
   (a tap reveals one word), Shuffle mixes the order, and shown words can be corrected in place. Words are saved in
-  `fn-study-v1` under `vocab`. "Quiz me" runs up to ten multiple-choice questions (either direction or mixed); misses
+  `fn-study-v1` under `vocab`. "Quiz me" runs up to ten words (either direction or mixed): she types the translation, Check shows the answer (lenient match, plus an "I was right" button); misses
   are counted in `fn-study-v1` under `quiz` and make a word come back more often. `FN_FRENCH_VOCAB` (her Notion "IMPORTANT" table) seeds the French list once
   (`seeded` in `fn-study-v1`), so words she removes or edits stay that way.
 - Russian is pitched at **B2** (Nicky's level; the old beginner path is gone). Its path opens with her Notion notes

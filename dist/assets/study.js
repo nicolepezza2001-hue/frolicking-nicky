@@ -320,7 +320,12 @@
       words.push({ id: Date.now().toString(36) + Math.random().toString(36).slice(2, 5), word, en }); save(); draw();
       a.value = b.value = ''; a.focus();
     });
-    // Quiz: up to ten words, four choices each, either direction; words missed before come up more often
+    // Quiz: up to ten words; Nicky types the translation and checks it. Words missed before come up more often.
+    // An answer counts if it matches the whole answer or any one of its alternatives (split on / , ;), ignoring
+    // case, accents, stress marks, punctuation, anything in brackets and a leading "to".
+    const plain = t => t.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/\(.*?\)/g, ' ')
+      .replace(/[.,!?…;:«»“”"'’‘—–-]/g, ' ').replace(/^\s*to\s+/, '').replace(/\s+/g, ' ').trim();
+    const matches = (typed, answer) => !!plain(typed) && [answer, ...answer.split(/[\/,;]/)].some(a => plain(a) === plain(typed));
     const misses = ((state.quiz ||= {})[id] ||= {});
     const quiz = el('div', 'fn-quiz'); quiz.hidden = true;
     const quizBtn = el('button', 'fn-vocab-mode', 'Quiz me'); quizBtn.type = 'button'; modes.append(quizBtn);
@@ -338,7 +343,6 @@
         button('fn-vocab-mode', 'Both, mixed', () => run('mix'))));
     };
     quizBtn.addEventListener('click', start);
-    const shuffled = a => a.map(v => [Math.random(), v]).sort((x, y) => x[0] - y[0]).map(x => x[1]);
     const run = dir => {
       // Weighted draw without repeats: each miss makes a word three times as likely to come back
       const round = words.map(w => [Math.random() ** (1 / (1 + 2 * (misses[w.id] || 0))), w]).sort((x, y) => y[0] - x[0]).slice(0, 10).map(x => x[1]);
@@ -346,23 +350,36 @@
       const ask = () => {
         if (i === round.length) return finish();
         const w = round[i], from = dir === 'mix' ? (Math.random() < .5 ? 'word' : 'en') : dir, to = from === 'word' ? 'en' : 'word';
-        const seen = new Set([w[to]]), others = shuffled(words).filter(v => !seen.has(v[to]) && seen.add(v[to])).slice(0, 3);
-        const opts = shuffled([...others, w]), choices = el('div', 'fn-quiz-options');
         const q = el('p', 'fn-quiz-q', w[from]); if (from === 'word') q.lang = code;
-        opts.forEach(o => {
-          const b = button('fn-quiz-option', o[to], () => {
-            choices.querySelectorAll('button').forEach(x => { x.disabled = true; });
-            choices.children[opts.indexOf(w)].classList.add('is-right');
-            if (o === w) { score++; if (misses[w.id] > 1) misses[w.id]--; else delete misses[w.id]; }
-            else { b.classList.add('is-wrong'); misses[w.id] = (misses[w.id] || 0) + 1; missed.push(w); }
-            save();
-            const next = button('fn-study-btn', i + 1 === round.length ? 'See my score' : 'Next', () => { i++; ask(); });
-            quiz.append(next); next.focus();
-          });
-          if (to === 'word') b.lang = code;
-          choices.append(b);
+        const form = el('form', 'fn-study-add fn-quiz-answer'), input = el('input');
+        input.type = 'text'; input.autocomplete = 'off'; input.spellcheck = false; input.setAttribute('autocapitalize', 'off');
+        input.placeholder = (to === 'word' ? lang : 'English') + '…'; input.setAttribute('aria-label', 'Your translation');
+        if (to === 'word') input.lang = code;
+        const check = el('button', 'fn-study-btn', 'Check'); check.type = 'submit';
+        form.append(input, check);
+        const result = el('div', 'fn-quiz-result'); result.setAttribute('aria-live', 'polite');
+        const next = () => { i++; ask(); };
+        const tally = right => {
+          if (right) { score++; if (misses[w.id] > 1) misses[w.id]--; else delete misses[w.id]; }
+          else { misses[w.id] = (misses[w.id] || 0) + 1; missed.push(w); }
+          save();
+        };
+        form.addEventListener('submit', e => {
+          e.preventDefault(); if (input.disabled) return;
+          const right = matches(input.value, w[to]);
+          input.disabled = check.disabled = true; tally(right);
+          const answer = el('p', 'fn-quiz-solution', w[to]); if (to === 'word') answer.lang = code;
+          result.replaceChildren(el('p', 'fn-quiz-verdict', right ? 'Right.' : input.value.trim() ? 'Not quite. The answer:' : 'The answer:'), answer);
+          const go = button('fn-study-btn', i + 1 === round.length ? 'See my score' : 'Next', next);
+          const buttons = [go];
+          // Typed answers can be right in other words: one tap counts it
+          if (!right) buttons.push(button('fn-vocab-mode', 'I was right', () => {
+            missed.pop(); if (misses[w.id] > 1) misses[w.id]--; else delete misses[w.id]; score++; save(); next();
+          }));
+          result.append(row(...buttons)); go.focus();
         });
-        quiz.replaceChildren(el('p', 'fn-quiz-progress', `${i + 1} of ${round.length}`), q, choices);
+        quiz.replaceChildren(el('p', 'fn-quiz-progress', `${i + 1} of ${round.length}`), q, form, result);
+        input.focus();
       };
       const finish = () => {
         quiz.replaceChildren(el('p', 'fn-quiz-q', `${score} / ${round.length}`),
