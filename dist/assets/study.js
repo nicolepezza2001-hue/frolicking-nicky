@@ -320,7 +320,63 @@
       words.push({ id: Date.now().toString(36) + Math.random().toString(36).slice(2, 5), word, en }); save(); draw();
       a.value = b.value = ''; a.focus();
     });
-    box.append(head, cols, list, tally, form); draw();
+    // Quiz: up to ten words, four choices each, either direction; words missed before come up more often
+    const misses = ((state.quiz ||= {})[id] ||= {});
+    const quiz = el('div', 'fn-quiz'); quiz.hidden = true;
+    const quizBtn = el('button', 'fn-vocab-mode', 'Quiz me'); quizBtn.type = 'button'; modes.append(quizBtn);
+    const listView = [cols, list, tally, form, shuffle, ...btns];
+    const close = () => { quiz.hidden = true; listView.forEach(e => { e.hidden = false; }); quizBtn.setAttribute('aria-pressed', 'false'); draw(); };
+    const button = (cls, text, on) => { const b = el('button', cls, text); b.type = 'button'; b.addEventListener('click', on); return b; };
+    const row = (...items) => { const r = el('div', 'fn-vocab-modes'); r.append(...items); return r; };
+    const start = () => {
+      if (!quiz.hidden) return close();
+      if (words.length < 4) { tally.textContent = 'Add at least four words to take a quiz.'; return; }
+      listView.forEach(e => { e.hidden = true; }); quiz.hidden = false; quizBtn.setAttribute('aria-pressed', 'true');
+      quiz.replaceChildren(el('p', 'fn-quiz-progress', 'Which way?'), row(
+        button('fn-vocab-mode', lang + ' → English', () => run('word')),
+        button('fn-vocab-mode', 'English → ' + lang, () => run('en')),
+        button('fn-vocab-mode', 'Both, mixed', () => run('mix'))));
+    };
+    quizBtn.addEventListener('click', start);
+    const shuffled = a => a.map(v => [Math.random(), v]).sort((x, y) => x[0] - y[0]).map(x => x[1]);
+    const run = dir => {
+      // Weighted draw without repeats: each miss makes a word three times as likely to come back
+      const round = words.map(w => [Math.random() ** (1 / (1 + 2 * (misses[w.id] || 0))), w]).sort((x, y) => y[0] - x[0]).slice(0, 10).map(x => x[1]);
+      let i = 0, score = 0; const missed = [];
+      const ask = () => {
+        if (i === round.length) return finish();
+        const w = round[i], from = dir === 'mix' ? (Math.random() < .5 ? 'word' : 'en') : dir, to = from === 'word' ? 'en' : 'word';
+        const seen = new Set([w[to]]), others = shuffled(words).filter(v => !seen.has(v[to]) && seen.add(v[to])).slice(0, 3);
+        const opts = shuffled([...others, w]), choices = el('div', 'fn-quiz-options');
+        const q = el('p', 'fn-quiz-q', w[from]); if (from === 'word') q.lang = code;
+        opts.forEach(o => {
+          const b = button('fn-quiz-option', o[to], () => {
+            choices.querySelectorAll('button').forEach(x => { x.disabled = true; });
+            choices.children[opts.indexOf(w)].classList.add('is-right');
+            if (o === w) { score++; if (misses[w.id] > 1) misses[w.id]--; else delete misses[w.id]; }
+            else { b.classList.add('is-wrong'); misses[w.id] = (misses[w.id] || 0) + 1; missed.push(w); }
+            save();
+            const next = button('fn-study-btn', i + 1 === round.length ? 'See my score' : 'Next', () => { i++; ask(); });
+            quiz.append(next); next.focus();
+          });
+          if (to === 'word') b.lang = code;
+          choices.append(b);
+        });
+        quiz.replaceChildren(el('p', 'fn-quiz-progress', `${i + 1} of ${round.length}`), q, choices);
+      };
+      const finish = () => {
+        quiz.replaceChildren(el('p', 'fn-quiz-q', `${score} / ${round.length}`),
+          el('p', 'fn-quiz-progress', missed.length ? 'To look at again:' : 'Every one right.'));
+        if (missed.length) {
+          const ul = el('ul', 'fn-quiz-missed');
+          missed.forEach(w => { const li = el('li'), a = el('span', null, w.word); a.lang = code; li.append(a, el('span', null, w.en)); ul.append(li); });
+          quiz.append(ul);
+        }
+        quiz.append(row(button('fn-vocab-mode', 'Another round', () => run(dir)), button('fn-vocab-mode', 'Back to the list', close)));
+      };
+      ask();
+    };
+    box.append(head, quiz, cols, list, tally, form); draw();
     return box;
   };
 
