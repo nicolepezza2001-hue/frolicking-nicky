@@ -1,4 +1,4 @@
-// Study notes for the Linguistics topic (the open book), one page per path step, in path order.
+// Linguistics (the open book), one page per path step, in path order. Alignment is Nicky’s own notes (her Google Doc, wording kept).
 window.FN_LINGUISTICS_LESSONS = [
   {
     "id": "ling-phonetics",
@@ -430,103 +430,444 @@ window.FN_LINGUISTICS_LESSONS = [
   },
   {
     "id": "ling-alignment",
-    "kicker": "Study notes · Linguistics",
+    "kicker": "Notes · Linguistics",
     "title": "Alignment",
     "blocks": [
       {
+        "type": "note",
+        "text": "1. Harris AC, Campbell L. Alignment. In: Historical Syntax in Cross-Linguistic Perspective. Cambridge Studies in Linguistics. Cambridge University Press; 1995:240-281."
+      },
+      {
+        "type": "note",
+        "text": "ALIGNEMENT = neutral way of referring to ergative, accusative, and other distributional patterns."
+      },
+      {
+        "type": "note",
+        "text": "3 types of ergative, active(-inactive), (nominative-)accusative, double oblique;"
+      },
+      {
+        "type": "note",
+        "text": "ERGATIVE: A is direct object AND subj of intransitive (absolutive), B is subj of transitive (ergative), ie Andi, language of Daghestan); ergative verbal alignment: the verb agrees with the absolutive argument (whether it’s S or O, rather than A - O used to be subject of passive);"
+      },
+      {
+        "type": "note",
+        "text": "ACTIVE: A is direct object AND subject of inactive intransitive, B is subj of active intransitive AND subj of transitive:"
+      },
+      {
+        "type": "note",
+        "text": "Active verbs = volitional (under subj’s control); inactive = stative verbs, changes of state (become), dynamic non-volitional (flow) (ie. Laz, Kartvelian language, narrative = subj of trans/active intrans, other case is direct obj and subj of inactive intrans);"
+      },
+      {
+        "type": "note",
+        "text": "ACCUSATIVE: A is direct obj, B is subj of trans/intrans;"
+      },
+      {
+        "type": "note",
+        "text": "DOUBLE OBLIQUE: A (oblique) is subj and obj of transitives, B (absolute) is subj of intransitive (Rošani, Pamir branch of Indo-Iranian);"
+      },
+      {
+        "type": "note",
+        "text": "S = the sole argument of an intransitive verb, A = the agent of a transitive verb, P (or O) = the patient/object of a transitive verb"
+      },
+      {
+        "type": "note",
+        "text": "The alignment \"template\" a language uses for case marking doesn't have to be the same as the one it uses for verb agreement (Choctaw: accusative case marking (= Latin), active verb agreement (difference between S and A only visible in suffix/prefix/whatever of verb); however, tendency to harmonise;"
+      },
+      {
+        "type": "note",
+        "text": "SPLITS based on: 1) tense/aspect: in this case, ergative is always in past tense or perfect aspect;"
+      },
+      {
+        "type": "note",
+        "text": "2) NP hierarchy (nominal):"
+      },
+      {
+        "type": "note",
+        "text": "Bound morpheme (=verb suffix of 1st person sing): accusative associated with left, ergative with right (Dyirbal: pronouns behave accusatively, common nouns ergatively, because pronouns like “I” are naturally expected to be agents, while ordinary nouns—especially inanimate ones—are less expected as agents);"
+      },
+      {
+        "type": "note",
+        "text": "3) main vs subordinate clause (no rule, depending on language);"
+      },
+      {
+        "type": "note",
+        "text": "Alignment change is especially visible in reanalysis (=Speakers assign a new grammatical structure to a sentence without changing its form);"
+      },
+      {
         "type": "heading",
-        "text": "The three roles"
+        "text": "1) Reanalysis of passives:"
       },
       {
         "type": "note",
-        "text": "S: the single argument of an intransitive verb (She sleeps)."
+        "text": "Iranian languages: perfective passives have passive to ergative (accusative to ergative) reanalysis. Old Persian inscriptions = normal accusative, construction with perfect passive participle (agent = genitive - the battle was fought by THEM, gen);"
       },
       {
         "type": "note",
-        "text": "A: the agent-like argument of a transitive verb (She sees him)."
+        "text": "THEN, speakers forget it’s a passive construction (same construction, active meaning = they fought the battle); in the present, everything stays the same; in the past, nominative becomes absolutive, while genitive becomes ergative;"
       },
       {
         "type": "note",
-        "text": "P (or O): the patient-like argument of a transitive verb (She sees him)."
+        "text": "Reflex (old usage for case) of old nom = nom/absolutive, reflex of genitive = gen/erg (erg = trans subj in past, normal gen in present);"
       },
       {
         "type": "note",
-        "text": "Alignment is about which of these are marked the same way, by case, agreement or word order."
+        "text": "Verb also agrees with ergative (ergative alignment, the battle was fought by them: verb used to agree with battle, and still does);"
+      },
+      {
+        "type": "note",
+        "text": "An old passive/resultative expression became so common that speakers stopped perceiving it as passive and started treating it as the ordinary past tense. Once that happened, the old passive syntax became the new active syntax. Appearance looks ergative."
+      },
+      {
+        "type": "note",
+        "text": "That’s why many languages are ergative only in the perfective/past: deverbal adj (made from verbs ~ broken, killed,...) over time used as past participles (is broken) = perfect tense, which came from trans verbs (to write), passive is the source of ergativity;"
+      },
+      {
+        "type": "note",
+        "text": "Ergative was born to differentiate trans verbs because it developed from old passive constructions, which only existed for transitive verbs."
       },
       {
         "type": "heading",
-        "text": "The main types"
+        "text": "2) Reanalysis of antipassive"
+      },
+      {
+        "type": "note",
+        "text": "(object demotion) → Accusative"
+      },
+      {
+        "type": "note",
+        "text": "(Kartvelian languages, especially Georgian): ergative language (subj of trans = erg), BUT to express ongoing action = they used antipassive;"
+      },
+      {
+        "type": "note",
+        "text": "Antipassive = construction that demotes the object, so obj became dative (ind obj, to detract attention from it, focus is ongoing action not result); once there is no dir obj anymore, verb becomes intrans, and subj becomes absolutive → language looks like accusative language (simple obj/subj division);"
+      },
+      {
+        "type": "note",
+        "text": "Aspect split (imperfective only), historical pathway: perfective → passive → ergative VS imperfective → antipassive → accusative;"
+      },
+      {
+        "type": "note",
+        "text": "English antipassive: I shot the deer VS I shot AT the deer;"
+      },
+      {
+        "type": "heading",
+        "text": "3) Reanalysis of nominalizations"
+      },
+      {
+        "type": "note",
+        "text": "Proto-Cariban languages: normally nom-acc alignment, when nominalizations used instead of finite verbs = ergative pattern (John runs VS John’s running);"
+      },
+      {
+        "type": "note",
+        "text": "Obj trans/Subj intrans treated the same, marked with genitives (I run vs my running, my = gen), whereas trans subj was marked differently;"
+      },
+      {
+        "type": "note",
+        "text": "With nominalization: I went VS my going happened (=biclausal structure), then speakers forgot it was two clauses (=reanalysis) → this became the standard to say ‘I went’;"
+      },
+      {
+        "type": "note",
+        "text": "Gildea proved that ergative markers didn’t appear out of nowhere, they simply were the agreement patterns that nominalizations had always used;"
+      },
+      {
+        "type": "heading",
+        "text": "4) Reanalysis of instrumentals:"
+      },
+      {
+        "type": "note",
+        "text": "Anatolian (Hittite and others) + Gorokan subgroup of Papua Nuova Guinea (null subj transitives → instrum → ergative);"
+      },
+      {
+        "type": "note",
+        "text": "Ablative sometimes used as instrumental (He/she purifies with water - null subj, trans, abl): lack of subj creates ambiguity, so speaker reinterprets it with: water (abl) purifies;"
+      },
+      {
+        "type": "note",
+        "text": "Instrumental becomes subject (but same endings) → so it becomes ergative (subj of trans);"
+      },
+      {
+        "type": "note",
+        "text": "It only happened with neuter nouns, because people are usually agents, not instruments, proving how NP Hierarchy works (ergative prefers the right);"
+      },
+      {
+        "type": "heading",
+        "text": "5) Reanalysis of topic copy pronouns"
+      },
+      {
+        "type": "note",
+        "text": "Proto-Daghestan = ergative alignment, preserved in daughters;"
+      },
+      {
+        "type": "note",
+        "text": "Daughter language Tabassaran is more complicated: erg in nouns, nom-acc on the verb;"
+      },
+      {
+        "type": "note",
+        "text": "Starting point = pre-Tabassaran: topic (= often subj) could be added as enclitic to verbs (ex. John, ate-he the bread) = topic-copying pronouns;"
+      },
+      {
+        "type": "note",
+        "text": "These pronouns kept ergative and became obligatory (not considered enclitic anymore but part of the verb), so another pronoun attached (other topic, subj is obligatory as topic);"
+      },
+      {
+        "type": "note",
+        "text": "Northern Tabassaran starts using one pronoun for both ergative and absolutive marking subj, becoming nom-acc alignment in verbs;"
+      },
+      {
+        "type": "note",
+        "text": "Proving that accusativity can be introduced into bound morphemes;"
+      },
+      {
+        "type": "heading",
+        "text": "6) Other reanalysis:"
+      },
+      {
+        "type": "note",
+        "text": "Only example of ergative to active reanalysis with attested proof is found in Kartvelian language;"
+      },
+      {
+        "type": "note",
+        "text": "Active system = A and Sa behave ergative-like, O and So behave absolutive-like;"
+      },
+      {
+        "type": "note",
+        "text": "Intransitive verbs: if voluntary, subj behaves like subj trans, if not, like object;"
+      },
+      {
+        "type": "note",
+        "text": "Some constructions in Kartvelian language are grammatically transitive but intransitive in meaning (ie I dreamt a dream: subj = ergative → after centuries obj disappears because redundant, verb becomes intrans, but subj remains ergative = intrans verb with ergative subj - but dynamic/eventive verb so Sa);"
+      },
+      {
+        "type": "note",
+        "text": "Expressions that create this: to pity-make, to fast a fast, to raise the eyes = to look up,..."
+      },
+      {
+        "type": "heading",
+        "text": "Alignment change through extension/borrowing:"
+      },
+      {
+        "type": "note",
+        "text": "Alignment changes can happen through extension (= if nouns already use x system, pronouns will then use it too) = Dyrbal, Pamir languages, Kartvelian languages;"
+      },
+      {
+        "type": "note",
+        "text": "Alignment can also be borrowed, as testified by one linguistic areas with different families yet same alignment (like India/Caucasus);"
+      },
+      {
+        "type": "heading",
+        "text": "Alignment originating from discourse:"
+      },
+      {
+        "type": "note",
+        "text": "Du Bois has studied Sacapultec (Mayan, ergative): discourse already happens ergatively;"
+      },
+      {
+        "type": "note",
+        "text": "Most clauses contain one full noun phrases (NP) or zero (people don’t say: The man saw the jaguar. The man approached the jaguar. The man frightened the jaguar…);"
+      },
+      {
+        "type": "note",
+        "text": "Most times, the one NP was absolutive (most likely S or O explicit, not A: A strange man appeared = common, He saw a strange man = common, A strange man saw him = uncommon);"
+      },
+      {
+        "type": "note",
+        "text": "Natural discourse pattern already groups S and O (coincidentally, it’s like an ergative system!);"
+      },
+      {
+        "type": "note",
+        "text": "This natural tendency = Preferred Argument Structure (PAS). Rule = don't introduce lots of new information at once, and especially avoid introducing new participants as transitive agents;"
+      },
+      {
+        "type": "note",
+        "text": "Maybe case alignment might ultimately have roots not just in abstract syntax, but in how people manage information while speaking;"
+      },
+      {
+        "type": "note",
+        "text": "OR, it’s the other way around: PAS arises from ergative system, how is it possible with passive to ergative reanalysis (wouldn’t work: ergative agent which is now trans subject is explicit → the man was killed by a soldier - a soldier killed him. Soldier is explicit even if A); A is explicit AND also can introduce new info vs Du Bois’ argument;"
+      },
+      {
+        "type": "note",
+        "text": "Du Bois studied Sacapultec and found that speakers rarely put new information in A, but Sacapultec grammar itself may prohibit new information in A because of word order (VSO: A must be old information);"
+      },
+      {
+        "type": "heading",
+        "text": "Consistency in alignment"
+      },
+      {
+        "type": "note",
+        "text": "If case marking and agreement have different alignments in a language, will one eventually change to match the other?"
+      },
+      {
+        "type": "note",
+        "text": "The Old Iranian example originally had passive syntax (verb agreed with subject: what - subj, was done -agrees with what, by me), speakers eventually reinterpreted the construction creating ergative (what becomes abs and me erg - done agrees with what, now obj - VERB AGREES WITH O, what I did);"
+      },
+      {
+        "type": "note",
+        "text": "But Old Iranian has inconsistencies (split ergativity conditioned by tense): past trans = erg (agent is oblique), pres trans = acc (obj is oblique), all intrans = S; then Pamir change = even in past, obj is oblique = double oblique (both subj/obj trans = oblique) → proving that alignment changes don't make a language necessarily more consistent;"
+      },
+      {
+        "type": "note",
+        "text": "Pamir: agreement in past (double oblique) became subj oriented (=accusative), 3 sets of markers: non-past =inherited verbal suffixes, intr past = enclitics of ‘to be’, trans past = old genitive pronouns (something my done = something I did);"
+      },
+      {
+        "type": "note",
+        "text": "All 3 sets have accusative verbal agreement; no inter-rule harmony (rules in same tenses, like case marking and verb agreement), BUT there is intra-rule harmony (verbal agreement is similar across different tenses);"
+      },
+      {
+        "type": "heading",
+        "text": "Glossary"
       },
       {
         "type": "table",
         "head": [
-          "Type",
-          "Pattern",
-          "Examples"
+          "Term",
+          "Meaning",
+          "Example"
         ],
         "rows": [
           [
-            "Nominative-accusative",
-            "S = A, P different",
-            "Latin, Russian, Greek, Italian (in pronouns), English (he / him)"
+            "A",
+            "agent of a transitive verb",
+            "She deliberately broke the glass."
           ],
           [
-            "Ergative-absolutive",
-            "S = P, A different",
-            "Basque, Chechen, Dyirbal, Inuit, Hittite (for neuter nouns)"
+            "Sₐ",
+            "subject of an active/agentive intransitive verb",
+            "She ran."
           ],
           [
-            "Tripartite",
-            "S, A and P all different",
-            "Nez Perce, some Iranian languages"
+            "O",
+            "object of a transitive verb",
+            "The dog bit her."
           ],
           [
-            "Active-stative (split-S)",
-            "S marked like A when in control, like P when not",
-            "Lakhota, Guaraní, Georgian"
+            "Sₒ",
+            "subject of a non-active/stative intransitive verb",
+            "She fell / slept / was cold."
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ling-comparative-syntax",
+    "kicker": "Study notes · Linguistics",
+    "title": "Comparative syntax and Universal Grammar",
+    "blocks": [
+      {
+        "type": "heading",
+        "text": "Universal Grammar"
+      },
+      {
+        "type": "note",
+        "text": "Chomsky’s idea: children are born with a language faculty, a set of principles that every human grammar obeys. Universal Grammar (UG) is the theory of that faculty."
+      },
+      {
+        "type": "note",
+        "text": "The main argument is the poverty of the stimulus: children acquire rules they never hear evidence for, and never make certain mistakes. Is the man who is tall happy? Children never say *Is the man who tall is happy?, though nothing in what they hear rules it out. Questions move the auxiliary of the main clause, not the first one: structure, not linear order."
+      },
+      {
+        "type": "heading",
+        "text": "Principles and parameters"
+      },
+      {
+        "type": "note",
+        "text": "In the 1980s model (Government and Binding), UG has fixed principles plus parameters: switches with a few settings. Learning a grammar means setting the switches from the input."
+      },
+      {
+        "type": "table",
+        "head": [
+          "Parameter",
+          "Setting one",
+          "Setting two"
+        ],
+        "rows": [
+          [
+            "Head direction",
+            "head-initial: V O, prepositions (English, Italian)",
+            "head-final: O V, postpositions (Japanese, Turkish)"
           ],
           [
-            "Neutral",
-            "no difference",
-            "Mandarin (by case)"
+            "Null subject (pro-drop)",
+            "subject can be silent: Italian Parla, Russian (in part)",
+            "subject must be said: English He speaks, French Il parle"
+          ],
+          [
+            "Wh-movement",
+            "question words move to the front: What did you buy?",
+            "stay in place (wh in situ): Chinese Nǐ mǎi le shénme? (you bought what?)"
+          ],
+          [
+            "Verb second (V2)",
+            "finite verb second in main clauses: German Gestern habe ich…",
+            "no V2: English Yesterday I have…"
+          ],
+          [
+            "Verb movement",
+            "verb moves above adverbs and negation: French Jean embrasse souvent Marie",
+            "verb stays low: English John often kisses Mary"
           ]
         ]
       },
       {
         "type": "heading",
-        "text": "Accusative languages"
+        "text": "Clusters of properties"
       },
       {
         "type": "note",
-        "text": "The subject (S and A) takes the nominative, the object (P) the accusative."
-      },
-      {
-        "type": "note",
-        "text": "Мальчик спит. Мальчик видит собаку. The boy is nominative both times; собаку is accusative."
+        "text": "A parameter was meant to explain several facts at once. Rizzi’s null subject parameter links silent subjects with free inversion (Ha telefonato Gianni) and with extraction across che (Chi credi che abbia telefonato?), all possible in Italian and impossible in English and French."
       },
       {
         "type": "heading",
-        "text": "Ergative languages"
+        "text": "Comparative syntax"
       },
       {
         "type": "note",
-        "text": "The transitive agent (A) takes the ergative; S and P share the absolutive, often unmarked."
+        "text": "Comparative syntax compares closely related languages to isolate one difference at a time: Italian dialects, Romance, Germanic (Kayne’s microparameters)."
       },
       {
         "type": "note",
-        "text": "Basque: Gizona etorri da (the man came), Gizonak ogia jan du (the man ate the bread). Gizona (absolutive) becomes gizonak (ergative) when he acts on something."
+        "text": "Cartography (Rizzi, Cinque) maps a fine, apparently universal order of functional positions: in the left periphery, Force > Topic > Focus > Topic > Finiteness; in the clause, a fixed order of adverbs (Cinque 1999)."
+      },
+      {
+        "type": "note",
+        "text": "The Borer-Chomsky conjecture: all variation lies in the features of functional words and endings in the lexicon, not in the principles."
       },
       {
         "type": "heading",
-        "text": "Split ergativity"
+        "text": "Minimalism"
       },
       {
         "type": "note",
-        "text": "Many languages are ergative only in part of the grammar: Hindi in the perfective past (Raam-ne roTii khaayii, Ram ate bread), Kurdish and Pashto in the past tenses."
+        "text": "Since the 1990s, the Minimalist Program tries to reduce UG to as little as possible: one operation, Merge, which combines two items into a set. Some (Hauser, Chomsky and Fitch 2002) suggest recursion alone may be specific to language."
+      },
+      {
+        "type": "heading",
+        "text": "Two traditions"
       },
       {
         "type": "note",
-        "text": "Splits also follow the noun hierarchy: in Dyirbal, first- and second-person pronouns work accusatively and nouns ergatively."
+        "text": "Greenbergian typology starts from many languages and looks for statistical tendencies (if VSO, then prepositions). Generative comparative syntax starts from a few languages in depth and looks for the abstract principle behind them."
+      },
+      {
+        "type": "note",
+        "text": "They meet in word order: Greenberg’s harmonies (VO with prepositions, OV with postpositions) are what the head parameter predicts."
+      },
+      {
+        "type": "heading",
+        "text": "Critiques"
+      },
+      {
+        "type": "note",
+        "text": "Evans and Levinson, The Myth of Language Universals (2009): real diversity is deeper than UG allows, and universals are tendencies shaped by history and use."
+      },
+      {
+        "type": "note",
+        "text": "Usage-based and construction grammar (Tomasello, Goldberg) argue children learn grammar from input with general cognitive skills."
+      },
+      {
+        "type": "note",
+        "text": "Everett on Pirahã claimed a language without recursion; the claim is much disputed."
       },
       {
         "type": "heading",
@@ -534,19 +875,11 @@ window.FN_LINGUISTICS_LESSONS = [
       },
       {
         "type": "note",
-        "text": "Hittite neuter nouns take an ergative ending (-anza) when they are the subject of a transitive verb, since neuters were not expected to act."
+        "text": "Comparative syntax also reconstructs: Wackernagel’s law (1892), unstressed clitics in second position in the sentence, found in Hittite, Sanskrit, Greek and Latin, and still alive in Serbo-Croatian."
       },
       {
         "type": "note",
-        "text": "Some reconstruct an earlier active or ergative stage for Pre-Proto-Indo-European, from the nominative -s and the neuter’s lack of a nominative-accusative distinction. It remains debated."
-      },
-      {
-        "type": "heading",
-        "text": "Syntactic ergativity"
-      },
-      {
-        "type": "note",
-        "text": "In a few languages (Dyirbal) the syntax works ergatively too: when two clauses are joined, the shared argument must be S or P, not A."
+        "text": "Proto-Indo-European is usually reconstructed as verb-final (SOV), as in Hittite, Vedic and Latin."
       }
     ]
   },

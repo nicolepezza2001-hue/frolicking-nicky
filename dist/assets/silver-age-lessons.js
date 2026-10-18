@@ -1,4 +1,5 @@
 // Nicole’s class notes, imported from her supplied Google Doc. Preserve the source wording.
+// After lesson 2, one page of study notes per path step (kicker “Study notes”).
 window.FN_SILVER_AGE_LESSONS = [
   {
     "id": "silver-age-lesson-1",
@@ -315,6 +316,662 @@ window.FN_SILVER_AGE_LESSONS = [
       {
         "type": "note",
         "text": "Younger Symbolists: Blok, …"
+      }
+    ]
+  },
+  {
+    "id": "silver-age-bely-ivanov",
+    "kicker": "Study notes · Silver Age poetry",
+    "title": "Andrei Bely & Vyacheslav Ivanov",
+    "blocks": [
+      {
+        "type": "heading",
+        "text": "The younger Symbolists"
+      },
+      {
+        "type": "note",
+        "text": "The first Symbolists (Bryusov, Balmont, Sologub) were close to French Decadence: art for art’s sake, mood and music. The second generation, around 1900–1910, made Symbolism a religious and philosophical calling. Art was theurgy: it could transform life and the world."
+      },
+      {
+        "type": "note",
+        "text": "Their teacher was the philosopher Vladimir Solovyov (1853–1900), with his vision of Sophia, the divine Wisdom, and the Eternal Feminine. Alexander Blok’s Стихи о Прекрасной Даме (Verses on the Beautiful Lady, 1904) belong to the same circle."
+      },
+      {
+        "type": "heading",
+        "text": "Vyacheslav Ivanov (1866–1949)"
+      },
+      {
+        "type": "note",
+        "text": "Poet, classical scholar and theorist; he studied ancient history under Theodor Mommsen in Berlin and wrote on the Greek religion of the suffering god, Dionysus, whom he saw as a forerunner of Christ."
+      },
+      {
+        "type": "note",
+        "text": "From 1905 to 1912 his flat on the top floor of a house on Tavricheskaya Street in Petersburg, the Башня (Tower), held Wednesday gatherings where poets, philosophers and painters talked through the night. Akhmatova, Gumilev, Blok and Bely all came."
+      },
+      {
+        "type": "note",
+        "text": "Books: Кормчие звёзды (Pilot Stars, 1903), Cor ardens (1911). He emigrated to Italy in 1924, converted to Catholicism and died in Rome."
+      },
+      {
+        "type": "note",
+        "text": "His ideal: from the real to the more real, a realibus ad realiora; poetry as a path from things to their hidden meaning."
+      },
+      {
+        "type": "heading",
+        "text": "Andrei Bely (1880–1934)"
+      },
+      {
+        "type": "note",
+        "text": "Pen name of Boris Bugaev, son of a mathematics professor at Moscow University. A poet, novelist and theorist of rhythm."
+      },
+      {
+        "type": "note",
+        "text": "His Симфонии (Symphonies, 1902–1908) are prose written like music, with themes and variations."
+      },
+      {
+        "type": "note",
+        "text": "Петербург (Petersburg, 1913–1914, revised 1922): a senator, his revolutionary son and a bomb in a sardine tin, in a city that is half real, half dream. Nabokov ranked it among the great novels of the century."
+      },
+      {
+        "type": "note",
+        "text": "He became a follower of Rudolf Steiner’s anthroposophy and helped build the Goetheanum in Dornach."
+      },
+      {
+        "type": "note",
+        "text": "Bely studied the rhythm of Russian verse statistically (Символизм, 1910), a forerunner of modern metrics."
+      },
+      {
+        "type": "heading",
+        "text": "What to read"
+      },
+      {
+        "type": "note",
+        "text": "Ivanov, Зимние сонеты (Winter Sonnets, 1919–1920)."
+      },
+      {
+        "type": "note",
+        "text": "Bely, Петербург, especially the prologue: “Ваши превосходительства, высокородия, благородия, граждане!”"
+      }
+    ]
+  },
+  {
+    "id": "silver-age-gumilev",
+    "kicker": "Study notes · Silver Age poetry",
+    "title": "Nikolai Gumilev",
+    "blocks": [
+      {
+        "type": "heading",
+        "text": "Life"
+      },
+      {
+        "type": "note",
+        "text": "Nikolai Gumilev (1886–1921) was born in Kronstadt and grew up in Tsarskoe Selo, where he met Anna Gorenko, later Akhmatova. They married in 1910 and divorced in 1918; their son was the historian Lev Gumilev."
+      },
+      {
+        "type": "note",
+        "text": "He travelled several times to Abyssinia and East Africa, and brought back poems, photographs and objects for the Kunstkamera museum."
+      },
+      {
+        "type": "note",
+        "text": "In the First World War he volunteered for the cavalry and was twice awarded the Cross of St George."
+      },
+      {
+        "type": "note",
+        "text": "In August 1921 he was arrested by the Cheka for alleged involvement in the “Tagantsev conspiracy” and shot. He was officially rehabilitated in 1992."
+      },
+      {
+        "type": "heading",
+        "text": "Acmeism"
+      },
+      {
+        "type": "note",
+        "text": "In 1911 Gumilev and Sergei Gorodetsky founded the Цех поэтов (Guild of Poets). In 1913 the journal Аполлон printed their manifestos."
+      },
+      {
+        "type": "note",
+        "text": "Acmeism (from Greek akmē, the peak) answered Symbolism: the rose is beautiful as a rose, not as a symbol of something beyond. Clarity, craft, the solid world, “the beautiful clarity” (Kuzmin’s phrase from 1910)."
+      },
+      {
+        "type": "note",
+        "text": "The Acmeists: Gumilev, Gorodetsky, Akhmatova, Mandelstam, Zenkevich, Narbut."
+      },
+      {
+        "type": "heading",
+        "text": "Poems"
+      },
+      {
+        "type": "note",
+        "text": "Жираф (The Giraffe, 1907): “Сегодня, я вижу, особенно грустен твой взгляд…”, a far-away giraffe described to a sad woman by Lake Chad."
+      },
+      {
+        "type": "note",
+        "text": "Заблудившийся трамвай (The Lost Tram, 1921): a tram rushing through time and space, one of his last and greatest poems."
+      },
+      {
+        "type": "note",
+        "text": "Books: Романтические цветы (1908), Жемчуга (1910), Колчан (1916), Огненный столп (1921)."
+      }
+    ]
+  },
+  {
+    "id": "silver-age-akhmatova",
+    "kicker": "Study notes · Silver Age poetry",
+    "title": "Anna Akhmatova",
+    "blocks": [
+      {
+        "type": "heading",
+        "text": "Life"
+      },
+      {
+        "type": "note",
+        "text": "Anna Gorenko (1889–1966), born near Odessa, grew up in Tsarskoe Selo. She took her Tatar great-grandmother’s surname, Akhmatova, as a pen name."
+      },
+      {
+        "type": "note",
+        "text": "Married Gumilev in 1910; in Paris in 1911 she was drawn by Modigliani."
+      },
+      {
+        "type": "note",
+        "text": "She stayed in Russia after the Revolution. Her first husband was shot in 1921; her son Lev was arrested several times and spent years in the camps; her third partner, Nikolai Punin, died in a camp in 1953."
+      },
+      {
+        "type": "note",
+        "text": "In 1946 Zhdanov attacked her as “half nun, half harlot” and she was expelled from the Writers’ Union. Late fame came in the 1960s, with a prize in Taormina (1964) and an Oxford doctorate (1965)."
+      },
+      {
+        "type": "heading",
+        "text": "Early poems"
+      },
+      {
+        "type": "note",
+        "text": "Вечер (Evening, 1912) and Чётки (Rosary, 1914): short love poems, like scenes from a novel, where a gesture says everything. “Я на правую руку надела / Перчатку с левой руки” (I put my left-hand glove on my right hand), from Песня последней встречи (1911)."
+      },
+      {
+        "type": "heading",
+        "text": "Requiem"
+      },
+      {
+        "type": "note",
+        "text": "Реквием (written 1935–1940, published in Russia only in 1987): a cycle for the women who queued outside the Leningrad prisons, as she did for seventeen months for her son."
+      },
+      {
+        "type": "note",
+        "text": "The prose preface, “Вместо предисловия”: a woman in the queue asks, “А это вы можете описать?” (Can you describe this?), and Akhmatova answers, “Могу.”"
+      },
+      {
+        "type": "heading",
+        "text": "Poem without a Hero"
+      },
+      {
+        "type": "note",
+        "text": "Поэма без героя (1940–1965): a masquerade of 1913 Petersburg, the year before the war, with ghosts of her friends from the Stray Dog. She rewrote it for twenty-five years."
+      },
+      {
+        "type": "heading",
+        "text": "Her voice"
+      },
+      {
+        "type": "note",
+        "text": "Classical metres, everyday words, few metaphors; feeling shown through objects. Brodsky, Nayman, Rein and Bobyshev, “Akhmatova’s orphans”, gathered around her in the 1960s."
+      }
+    ]
+  },
+  {
+    "id": "silver-age-mandelstam",
+    "kicker": "Study notes · Silver Age poetry",
+    "title": "Osip Mandelstam",
+    "blocks": [
+      {
+        "type": "heading",
+        "text": "Life"
+      },
+      {
+        "type": "note",
+        "text": "Osip Mandelstam (1891–1938), born in Warsaw, grew up in Petersburg in a Jewish merchant family, studied in Heidelberg and Paris."
+      },
+      {
+        "type": "note",
+        "text": "In November 1933 he wrote an epigram on Stalin, “Мы живём, под собою не чуя страны” (We live without feeling the country beneath us), and read it to a few friends. He was arrested in 1934 and exiled to Cherdyn, then Voronezh."
+      },
+      {
+        "type": "note",
+        "text": "Arrested again in 1938, he died in December that year in a transit camp near Vladivostok."
+      },
+      {
+        "type": "note",
+        "text": "His widow, Nadezhda Mandelstam, kept his poems alive by learning them by heart, and later wrote Hope Against Hope (Воспоминания)."
+      },
+      {
+        "type": "heading",
+        "text": "Acmeism"
+      },
+      {
+        "type": "note",
+        "text": "Mandelstam called Acmeism “тоска по мировой культуре” (nostalgia for world culture). His poems are full of Greece, Rome, Italy, architecture and the Bible."
+      },
+      {
+        "type": "note",
+        "text": "Утро акмеизма (The Morning of Acmeism, written 1913): the poet as an architect, words as stones."
+      },
+      {
+        "type": "heading",
+        "text": "Books"
+      },
+      {
+        "type": "note",
+        "text": "Камень (Stone, 1913): poems on Notre-Dame, Hagia Sophia, the Admiralty."
+      },
+      {
+        "type": "note",
+        "text": "Tristia (1922): the title from Ovid in exile; Petersburg, love and history."
+      },
+      {
+        "type": "note",
+        "text": "Воронежские тетради (Voronezh Notebooks, 1935–1937): dense, daring poems from exile."
+      },
+      {
+        "type": "note",
+        "text": "Prose: Разговор о Данте (Conversation about Dante, 1933), Шум времени (The Noise of Time, 1925)."
+      },
+      {
+        "type": "heading",
+        "text": "A famous line"
+      },
+      {
+        "type": "note",
+        "text": "“Бессонница. Гомер. Тугие паруса.” (1915): see the page One poem in Russian."
+      }
+    ]
+  },
+  {
+    "id": "silver-age-tsvetaeva",
+    "kicker": "Study notes · Silver Age poetry",
+    "title": "Marina Tsvetaeva",
+    "blocks": [
+      {
+        "type": "heading",
+        "text": "Life"
+      },
+      {
+        "type": "note",
+        "text": "Marina Tsvetaeva (1892–1941), born in Moscow, daughter of Ivan Tsvetaev, founder of the Pushkin Museum of Fine Arts, and of a pianist mother."
+      },
+      {
+        "type": "note",
+        "text": "First book at eighteen: Вечерний альбом (Evening Album, 1910), praised by Bryusov, Gumilev and Voloshin."
+      },
+      {
+        "type": "note",
+        "text": "She married Sergei Efron in 1912. During the famine after the Revolution her younger daughter Irina died in an orphanage (1920)."
+      },
+      {
+        "type": "note",
+        "text": "She emigrated in 1922: Berlin, Prague, then Paris from 1925. Émigrés distrusted her, the Soviets ignored her."
+      },
+      {
+        "type": "note",
+        "text": "She returned to the USSR in 1939, following Efron; he was shot in 1941 and her daughter Ariadna sent to the camps. Evacuated to Yelabuga in 1941, she took her own life on 31 August."
+      },
+      {
+        "type": "heading",
+        "text": "Style"
+      },
+      {
+        "type": "note",
+        "text": "Short lines, dashes, enjambment, sound and rhythm pushed to the limit; she called her rhythm “breathing”."
+      },
+      {
+        "type": "note",
+        "text": "Poems of passion and argument: to Blok, to Akhmatova, to Pasternak, to Rilke (whom she wrote to in 1926, a correspondence with Pasternak too)."
+      },
+      {
+        "type": "heading",
+        "text": "Works"
+      },
+      {
+        "type": "note",
+        "text": "Версты (Mileposts, 1921–1922), После России (After Russia, 1928)."
+      },
+      {
+        "type": "note",
+        "text": "Поэма горы and Поэма конца (Poem of the Mountain, Poem of the End, 1924)."
+      },
+      {
+        "type": "note",
+        "text": "Мне нравится, что вы больны не мной (1915), the song from the film The Irony of Fate."
+      },
+      {
+        "type": "note",
+        "text": "Prose: Мой Пушкин (My Pushkin, 1937)."
+      }
+    ]
+  },
+  {
+    "id": "silver-age-futurists",
+    "kicker": "Study notes · Silver Age poetry",
+    "title": "The Futurists",
+    "blocks": [
+      {
+        "type": "heading",
+        "text": "Russian Futurism"
+      },
+      {
+        "type": "note",
+        "text": "Unlike Italian Futurism (Marinetti, 1909), Russian Futurism looked as much to the primitive and Slavic past as to machines."
+      },
+      {
+        "type": "note",
+        "text": "Hylaea (Гилея), the Cubo-Futurists: David Burliuk, Velimir Khlebnikov, Alexei Kruchenykh, Vladimir Mayakovsky, Vasily Kamensky."
+      },
+      {
+        "type": "note",
+        "text": "Their manifesto, Пощёчина общественному вкусу (A Slap in the Face of Public Taste, 1912): throw Pushkin, Dostoevsky and Tolstoy “с Парохода современности” (off the steamship of modernity)."
+      },
+      {
+        "type": "note",
+        "text": "Ego-Futurists, led by Igor Severyanin, were more dandyish and decadent."
+      },
+      {
+        "type": "heading",
+        "text": "Zaum"
+      },
+      {
+        "type": "note",
+        "text": "Заумь (beyond-sense language): words made of pure sound. Kruchenykh, 1913: “Дыр бул щыл / убешщур”."
+      },
+      {
+        "type": "note",
+        "text": "Khlebnikov invented words from Slavic roots: Заклятие смехом (Incantation by Laughter, 1908–1909) builds dozens of words on смех: “О, рассмейтесь, смехачи!”"
+      },
+      {
+        "type": "heading",
+        "text": "Mayakovsky (1893–1930)"
+      },
+      {
+        "type": "note",
+        "text": "Loud, huge, tender: Облако в штанах (A Cloud in Trousers, 1915), Флейта-позвоночник (The Backbone Flute, 1915)."
+      },
+      {
+        "type": "note",
+        "text": "After 1917 he put his art at the service of the Revolution: ROSTA posters, LEF, Владимир Ильич Ленин (1924). He shot himself in 1930."
+      },
+      {
+        "type": "note",
+        "text": "His “ladder” lines (лесенка) break verse lines into steps for rhythm and emphasis."
+      },
+      {
+        "type": "heading",
+        "text": "Victory over the Sun"
+      },
+      {
+        "type": "note",
+        "text": "Победа над Солнцем (1913): a Futurist opera, words by Kruchenykh, music by Matyushin, sets by Malevich, whose curtain design held the first black square."
+      }
+    ]
+  },
+  {
+    "id": "silver-age-pasternak",
+    "kicker": "Study notes · Silver Age poetry",
+    "title": "Boris Pasternak",
+    "blocks": [
+      {
+        "type": "heading",
+        "text": "Life"
+      },
+      {
+        "type": "note",
+        "text": "Boris Pasternak (1890–1960), son of the painter Leonid Pasternak and the pianist Rosa Kaufman. He studied music with encouragement from Scriabin, then philosophy in Marburg (1912), before choosing poetry."
+      },
+      {
+        "type": "note",
+        "text": "He began among the Futurists (the Centrifuge group) but belonged to no school."
+      },
+      {
+        "type": "heading",
+        "text": "Poems"
+      },
+      {
+        "type": "note",
+        "text": "Сестра моя — жизнь (My Sister, Life, written in the summer of 1917, published 1922): a book of love, rain, gardens and storms, the summer of the Revolution seen through nature."
+      },
+      {
+        "type": "note",
+        "text": "Темы и вариации (1923), Второе рождение (Second Birth, 1932)."
+      },
+      {
+        "type": "note",
+        "text": "Later, a plainer style: “Во всём мне хочется дойти / До самой сути” (In everything I want to reach the very essence)."
+      },
+      {
+        "type": "heading",
+        "text": "Doctor Zhivago"
+      },
+      {
+        "type": "note",
+        "text": "Доктор Живаго, rejected in the USSR, was first published in Italian by Giangiacomo Feltrinelli in Milan in 1957."
+      },
+      {
+        "type": "note",
+        "text": "Awarded the Nobel Prize in 1958, Pasternak was forced to decline it under official pressure."
+      },
+      {
+        "type": "note",
+        "text": "The novel ends with Yuri Zhivago’s poems, among them Зимняя ночь: “Мело, мело по всей земле / Во все пределы. / Свеча горела на столе, / Свеча горела.”"
+      },
+      {
+        "type": "heading",
+        "text": "Translations"
+      },
+      {
+        "type": "note",
+        "text": "In the 1930s–1950s, when his own work could not be printed, he translated Shakespeare (Hamlet, King Lear), Goethe’s Faust and Georgian poets."
+      }
+    ]
+  },
+  {
+    "id": "silver-age-stray-dog",
+    "kicker": "Study notes · Silver Age poetry",
+    "title": "The Stray Dog cabaret",
+    "blocks": [
+      {
+        "type": "heading",
+        "text": "The cellar"
+      },
+      {
+        "type": "note",
+        "text": "Бродячая собака (The Stray Dog) opened on New Year’s Eve 1911–1912 in a basement on Mikhailovskaya Square (now Arts Square) in Petersburg, run by the actor Boris Pronin."
+      },
+      {
+        "type": "note",
+        "text": "The walls were painted by Sergei Sudeikin and Nikolai Kulbin; on the door, a dog with its paw on a classical mask."
+      },
+      {
+        "type": "note",
+        "text": "A pig-leather book, the Свиная книга, collected guests’ verses and drawings."
+      },
+      {
+        "type": "heading",
+        "text": "Who came"
+      },
+      {
+        "type": "note",
+        "text": "Akhmatova (“Да, я любила их, те сборища ночные”), Mandelstam, Gumilev, Kuzmin (who wrote its hymn), Mayakovsky, Khlebnikov, Severyanin, Tamara Karsavina, Meyerhold."
+      },
+      {
+        "type": "note",
+        "text": "Artists paid little; the rich guests who came to watch them were called фармацевты (pharmacists)."
+      },
+      {
+        "type": "heading",
+        "text": "Events"
+      },
+      {
+        "type": "note",
+        "text": "Readings, lectures, music, dance. Mayakovsky read his provocative Вам! (To You!) there in 1915, insulting the audience; the cellar was closed by the police later that year."
+      },
+      {
+        "type": "heading",
+        "text": "Afterwards"
+      },
+      {
+        "type": "note",
+        "text": "Its successor, Привал комедиантов (The Comedians’ Halt), ran from 1916 to 1919."
+      },
+      {
+        "type": "note",
+        "text": "The Stray Dog reopened in the same basement in 2001."
+      },
+      {
+        "type": "note",
+        "text": "Akhmatova’s Poem without a Hero returns to this world of 1913."
+      }
+    ]
+  },
+  {
+    "id": "silver-age-one-poem",
+    "kicker": "Study notes · Silver Age poetry",
+    "title": "One poem in Russian",
+    "blocks": [
+      {
+        "type": "heading",
+        "text": "The poem"
+      },
+      {
+        "type": "note",
+        "text": "Бессонница. Гомер. Тугие паруса."
+      },
+      {
+        "type": "note",
+        "text": "Я список кораблей прочел до середины:"
+      },
+      {
+        "type": "note",
+        "text": "Сей длинный выводок, сей поезд журавлиный,"
+      },
+      {
+        "type": "note",
+        "text": "Что над Элладою когда-то поднялся."
+      },
+      {
+        "type": "note",
+        "text": "Как журавлиный клин в чужие рубежи —"
+      },
+      {
+        "type": "note",
+        "text": "На головах царей божественная пена —"
+      },
+      {
+        "type": "note",
+        "text": "Куда плывете вы? Когда бы не Елена,"
+      },
+      {
+        "type": "note",
+        "text": "Что Троя вам одна, ахейские мужи?"
+      },
+      {
+        "type": "note",
+        "text": "И море, и Гомер — всё движется любовью."
+      },
+      {
+        "type": "note",
+        "text": "Кого же слушать мне? И вот Гомер молчит,"
+      },
+      {
+        "type": "note",
+        "text": "И море черное, витийствуя, шумит"
+      },
+      {
+        "type": "note",
+        "text": "И с тяжким грохотом подходит к изголовью."
+      },
+      {
+        "type": "heading",
+        "text": "A plain translation"
+      },
+      {
+        "type": "note",
+        "text": "Insomnia. Homer. Taut sails. I have read the catalogue of ships halfway: this long brood, this train of cranes that once rose over Hellas."
+      },
+      {
+        "type": "note",
+        "text": "Like a wedge of cranes into foreign lands, with divine foam on the heads of kings, where are you sailing? If it were not for Helen, what would Troy alone be to you, men of Achaea?"
+      },
+      {
+        "type": "note",
+        "text": "Both the sea and Homer, all is moved by love. To whom should I listen? And now Homer is silent, and the black sea, orating, roars and with a heavy rumble comes up to my pillow."
+      },
+      {
+        "type": "heading",
+        "text": "Words"
+      },
+      {
+        "type": "table",
+        "head": [
+          "Word",
+          "Meaning"
+        ],
+        "rows": [
+          [
+            "бессонница",
+            "insomnia"
+          ],
+          [
+            "тугой",
+            "taut, tight"
+          ],
+          [
+            "список кораблей",
+            "the catalogue of ships (Iliad, book 2)"
+          ],
+          [
+            "выводок",
+            "brood"
+          ],
+          [
+            "журавлиный клин",
+            "a wedge (V) of cranes"
+          ],
+          [
+            "рубеж",
+            "border, frontier"
+          ],
+          [
+            "пена",
+            "foam"
+          ],
+          [
+            "когда бы не",
+            "if it were not for"
+          ],
+          [
+            "витийствовать",
+            "to orate, speak grandly"
+          ],
+          [
+            "изголовье",
+            "the head of a bed"
+          ]
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Reading notes"
+      },
+      {
+        "type": "note",
+        "text": "Iambic hexameter with a caesura, echoing Homer’s long line."
+      },
+      {
+        "type": "note",
+        "text": "The catalogue of ships is the famously “unreadable” list in Iliad 2: the poet falls asleep halfway."
+      },
+      {
+        "type": "note",
+        "text": "“Всё движется любовью” echoes the last line of Dante’s Paradiso, “l’amor che move il sole e l’altre stelle”."
+      },
+      {
+        "type": "note",
+        "text": "Сей, поезд, мужи: deliberately archaic, high-style words."
       }
     ]
   }
