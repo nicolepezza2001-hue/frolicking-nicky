@@ -478,6 +478,398 @@ window.FN_FRENCH_LESSONS = [
     ]
   },
   {
+    "id": "french-passe-compose-imparfait",
+    "kicker": "Study notes · French",
+    "title": "Passé composé or imparfait",
+    "blocks": [
+      {
+        "type": "heading",
+        "text": "The rule of thumb"
+      },
+      {
+        "type": "note",
+        "text": "Passé composé: a finished event, a step in the story. Hier, j’ai vu Marie."
+      },
+      {
+        "type": "note",
+        "text": "Imparfait: the background. Descriptions, states, feelings, habits, something in progress. Il pleuvait et j’étais fatiguée."
+      },
+      {
+        "type": "note",
+        "text": "Together, the imparfait sets the scene and the passé composé interrupts it. Je dormais quand le téléphone a sonné."
+      },
+      {
+        "type": "note",
+        "text": "Habit or one-off: Le dimanche, nous allions chez ma grand-mère. / Dimanche dernier, nous sommes allés chez elle."
+      },
+      {
+        "type": "heading",
+        "text": "Signal words"
+      },
+      {
+        "type": "table",
+        "head": [
+          "Imparfait",
+          "Passé composé"
+        ],
+        "rows": [
+          [
+            "d’habitude, souvent, tous les jours",
+            "hier, un jour, ce matin-là"
+          ],
+          [
+            "autrefois, à l’époque, quand j’étais enfant",
+            "soudain, tout à coup, à ce moment-là"
+          ],
+          [
+            "pendant que, en général",
+            "deux fois, trois ans (a closed period)"
+          ]
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "The plus-que-parfait"
+      },
+      {
+        "type": "note",
+        "text": "Imparfait of avoir or être + past participle: one step further back in the past."
+      },
+      {
+        "type": "note",
+        "text": "Quand je suis arrivée, il était déjà parti."
+      },
+      {
+        "type": "note",
+        "text": "It is the same tense as in your hypothèse notes: Si j’avais su, je serais venue."
+      }
+    ]
+  },
+  {
+    "id": "french-avoir-etre-agreement",
+    "kicker": "Study notes · French",
+    "title": "Avoir or être, and agreement",
+    "blocks": [
+      {
+        "type": "heading",
+        "text": "Être"
+      },
+      {
+        "type": "note",
+        "text": "The verbs of coming and going: aller / venir, arriver / partir, entrer / sortir, monter / descendre, naître / mourir, rester, tomber, retourner, passer, and their compounds (revenir, devenir, rentrer)."
+      },
+      {
+        "type": "note",
+        "text": "Every reflexive verb: Je me suis levée. Ils se sont mariés en Roumanie."
+      },
+      {
+        "type": "note",
+        "text": "Everything else takes avoir."
+      },
+      {
+        "type": "heading",
+        "text": "Agreement"
+      },
+      {
+        "type": "note",
+        "text": "With être, the participle agrees with the subject: Elle est partie. Nous sommes allées à Mostar."
+      },
+      {
+        "type": "note",
+        "text": "With avoir, it does not agree, unless the direct object comes before the verb: Je les ai convaincus. La lettre que j’ai écrite."
+      },
+      {
+        "type": "note",
+        "text": "Reflexive verbs agree when the reflexive pronoun is the direct object: Elle s’est lavée. But: Elle s’est lavé les mains (the object is les mains), Ils se sont parlé (parler à: indirect, no agreement)."
+      },
+      {
+        "type": "heading",
+        "text": "Verbs that take both"
+      },
+      {
+        "type": "note",
+        "text": "Monter, descendre, sortir, passer, rentrer and retourner take avoir when they have a direct object."
+      },
+      {
+        "type": "note",
+        "text": "Je suis sortie. / J’ai sorti la poubelle."
+      },
+      {
+        "type": "note",
+        "text": "Elle est montée. / Elle a monté les valises."
+      }
+    ]
+  },
+  {
+    "id": "french-y-en",
+    "kicker": "Study notes · French",
+    "title": "Y and en",
+    "blocks": [
+      {
+        "type": "heading",
+        "text": "Y"
+      },
+      {
+        "type": "note",
+        "text": "Y replaces à + a thing or a place: Tu penses à ton voyage ? Oui, j’y pense. Je vais à Paris. J’y vais."
+      },
+      {
+        "type": "note",
+        "text": "For people, use lui / leur (Je lui parle), or à lui / à elle after penser: Je pense à elle."
+      },
+      {
+        "type": "note",
+        "text": "Set phrases: il y a, on y va, ça y est, je n’y suis jamais allée."
+      },
+      {
+        "type": "heading",
+        "text": "En"
+      },
+      {
+        "type": "note",
+        "text": "En replaces de + noun: J’ai besoin de ce livre. J’en ai besoin. Tu parles de ton voyage ? J’en parle."
+      },
+      {
+        "type": "note",
+        "text": "With quantities, en takes the noun and the number stays: Tu as des frères ? J’en ai deux. Je veux du café. J’en veux un peu."
+      },
+      {
+        "type": "note",
+        "text": "For people after de, use a stressed pronoun: Je parle de Marie. Je parle d’elle. (The same de that gives dont in your relative pronoun notes.)"
+      },
+      {
+        "type": "note",
+        "text": "Set phrases: je m’en vais, j’en ai marre, ne t’en fais pas, s’en sortir."
+      }
+    ]
+  },
+  {
+    "id": "french-double-pronouns",
+    "kicker": "Study notes · French",
+    "title": "Two pronouns together",
+    "blocks": [
+      {
+        "type": "heading",
+        "text": "Before the verb"
+      },
+      {
+        "type": "note",
+        "text": "me / te / se / nous / vous, then le / la / les, then lui / leur, then y, then en."
+      },
+      {
+        "type": "note",
+        "text": "Il me le donne. Je le lui ai dit. Il y en a. Je vous en prie."
+      },
+      {
+        "type": "note",
+        "text": "In compound tenses, the pronouns go before avoir or être: Je le lui ai donné."
+      },
+      {
+        "type": "heading",
+        "text": "Affirmative imperative"
+      },
+      {
+        "type": "note",
+        "text": "The verb comes first, then the direct object, then the indirect one, joined by hyphens. Me and te become moi and toi."
+      },
+      {
+        "type": "note",
+        "text": "Donne-le-moi. Dis-le-lui. Va-t’en."
+      },
+      {
+        "type": "note",
+        "text": "Before en, moi becomes m’: Donne-m’en."
+      },
+      {
+        "type": "heading",
+        "text": "Negative imperative"
+      },
+      {
+        "type": "note",
+        "text": "Back to the normal order: Ne me le donne pas. Ne le lui dis pas."
+      }
+    ]
+  },
+  {
+    "id": "french-futur-simple",
+    "kicker": "Study notes · French",
+    "title": "Futur simple and futur antérieur",
+    "blocks": [
+      {
+        "type": "heading",
+        "text": "Futur simple"
+      },
+      {
+        "type": "note",
+        "text": "Infinitive (‑re verbs drop the final -e) + -ai, -as, -a, -ons, -ez, -ont: je parlerai, tu finiras, il prendra."
+      },
+      {
+        "type": "note",
+        "text": "The irregular stems are the same as in your conditionnel présent table (ser-, aur-, ir-, fer-, pourr-, voudr-, devr-, viendr-, verr-, saur-), plus il faudra, il pleuvra, j’enverrai, je courrai, je recevrai, je tiendrai."
+      },
+      {
+        "type": "note",
+        "text": "Futur proche or futur simple: the futur proche is near and already decided (Je vais manger), the futur simple is further off, a promise, a prediction or more formal (Un jour, j’habiterai à Paris)."
+      },
+      {
+        "type": "note",
+        "text": "After quand, lorsque, dès que and aussitôt que, French uses the future where English uses the present: Quand tu viendras, on ira au musée."
+      },
+      {
+        "type": "heading",
+        "text": "Futur antérieur"
+      },
+      {
+        "type": "note",
+        "text": "Futur simple of avoir or être + past participle: done before another moment in the future."
+      },
+      {
+        "type": "note",
+        "text": "Quand j’aurai fini, je t’appellerai."
+      },
+      {
+        "type": "note",
+        "text": "Dans deux ans, j’aurai terminé mon doctorat."
+      }
+    ]
+  },
+  {
+    "id": "french-discours-indirect",
+    "kicker": "Study notes · French",
+    "title": "Le discours indirect",
+    "blocks": [
+      {
+        "type": "heading",
+        "text": "The reporting verbs"
+      },
+      {
+        "type": "note",
+        "text": "dire que, expliquer que, répondre que, demander si, demander de + infinitif."
+      },
+      {
+        "type": "heading",
+        "text": "Questions and orders"
+      },
+      {
+        "type": "note",
+        "text": "Est-ce que tu viens ? Il demande si je viens."
+      },
+      {
+        "type": "note",
+        "text": "Qu’est-ce que tu fais ? Il demande ce que je fais."
+      },
+      {
+        "type": "note",
+        "text": "Où vas-tu ? Il demande où je vais."
+      },
+      {
+        "type": "note",
+        "text": "« Viens ! » Il m’a dit de venir."
+      },
+      {
+        "type": "heading",
+        "text": "When the reporting verb is in the past"
+      },
+      {
+        "type": "table",
+        "head": [
+          "Direct speech",
+          "Reported speech"
+        ],
+        "rows": [
+          [
+            "présent",
+            "imparfait"
+          ],
+          [
+            "passé composé",
+            "plus-que-parfait"
+          ],
+          [
+            "futur simple",
+            "conditionnel présent"
+          ],
+          [
+            "futur proche (je vais partir)",
+            "aller à l’imparfait (il allait partir)"
+          ],
+          [
+            "imparfait, plus-que-parfait, conditionnel",
+            "no change"
+          ]
+        ]
+      },
+      {
+        "type": "note",
+        "text": "« Je suis fatiguée. » Elle a dit qu’elle était fatiguée."
+      },
+      {
+        "type": "note",
+        "text": "« Je viendrai. » Il a dit qu’il viendrait."
+      },
+      {
+        "type": "note",
+        "text": "« J’ai perdu mes clés. » Elle a dit qu’elle avait perdu ses clés."
+      },
+      {
+        "type": "heading",
+        "text": "Time words move too"
+      },
+      {
+        "type": "note",
+        "text": "aujourd’hui → ce jour-là, demain → le lendemain, hier → la veille, la semaine prochaine → la semaine suivante, ici → là."
+      }
+    ]
+  },
+  {
+    "id": "french-connecteurs",
+    "kicker": "Study notes · French",
+    "title": "Les connecteurs",
+    "blocks": [
+      {
+        "type": "table",
+        "head": [
+          "To",
+          "Use"
+        ],
+        "rows": [
+          [
+            "add",
+            "de plus, en outre, d’ailleurs, en plus (spoken)"
+          ],
+          [
+            "contrast",
+            "mais, cependant, pourtant, toutefois, par contre, alors que (+ indicatif), bien que (+ subjonctif)"
+          ],
+          [
+            "give a cause",
+            "parce que, car, puisque, comme (at the start of the sentence), grâce à (good), à cause de (bad)"
+          ],
+          [
+            "give a result",
+            "donc, alors, c’est pourquoi, si bien que, du coup (spoken)"
+          ],
+          [
+            "give a purpose",
+            "pour (+ infinitif), pour que and afin que (+ subjonctif)"
+          ],
+          [
+            "conclude",
+            "bref, en somme, finalement, en fin de compte"
+          ]
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Spoken fillers"
+      },
+      {
+        "type": "note",
+        "text": "bon, ben, en fait, du coup, quoi (at the end of a sentence), genre (very informal)."
+      }
+    ]
+  },
+  {
     "id": "french-past-lessons",
     "kicker": "Class notes · French",
     "title": "Past lessons",

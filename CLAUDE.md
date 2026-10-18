@@ -187,6 +187,12 @@ a separate Europe close-up, the map legend or the trip buttons under the map on 
   `fn-study-v1` under `vocab`. "Quiz me" runs up to ten words (either direction or mixed): she types the translation, Check shows the answer (lenient match, plus an "I was right" button); misses
   are counted in `fn-study-v1` under `quiz` and make a word come back more often. `FN_FRENCH_VOCAB` (her Notion "IMPORTANT" table) seeds the French list once
   (`seeded` in `fn-study-v1`), so words she removes or edits stay that way.
-- Russian is pitched at **B2** (Nicky's level; the old beginner path is gone). Its path opens with her Notion notes
+- Russian is pitched at **B2/C1** (French at B1). Its path opens with her Notion notes
   (page "Russian"; `assets/russian-lessons.js`, wording kept exactly: wishes, describing a picture, «ну» и «ведь»),
-  then B2 steps, then Vocabulary, seeded once from her Notion word list (`FN_RUSSIAN_VOCAB`).
+  then study notes Claude wrote for her (kicker "Study notes · Russian": participles, verbal adverbs, figurative motion
+  verbs, aspect, word building, numerals, register), then Vocabulary, seeded once from her Notion word list
+  (`FN_RUSSIAN_VOCAB`). French likewise has "Study notes · French" pages between her Notion subjects and Past lessons.
+  Every path step opens a page (Nicky had the placeholder steps without notes removed). Agree new topics with her first.
+- Every French and Russian lesson ends with a typed quiz (`FN_LESSON_QUIZZES` in `assets/lesson-quizzes.js`,
+  `[question, answer]`, alternatives split by " / "): up to ten questions shuffled, Check shows the answer, "I was right"
+  overrides. New lessons need a quiz entry too.

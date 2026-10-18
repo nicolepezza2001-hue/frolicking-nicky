@@ -117,6 +117,549 @@ window.FN_RUSSIAN_LESSONS = [
         "text": "И древние хетты (Hittites) почти каждое предложение начинают со слова «ну», буквально совпадающего с русским."
       }
     ]
+  },
+  {
+    "id": "russian-participles",
+    "kicker": "Study notes · Russian",
+    "title": "Причастия: participles",
+    "blocks": [
+      {
+        "type": "heading",
+        "text": "The four participles"
+      },
+      {
+        "type": "note",
+        "text": "They are mostly written Russian. In speech, который does the same job."
+      },
+      {
+        "type": "table",
+        "head": [
+          "Type",
+          "How it is made",
+          "Example"
+        ],
+        "rows": [
+          [
+            "Active present",
+            "3rd person plural present, drop -т, add -щий: читают → читающий, говорят → говорящий",
+            "человек, читающий газету"
+          ],
+          [
+            "Active past",
+            "past stem + -вший (-ший after a consonant): читал → читавший, принёс → принёсший",
+            "студент, прочитавший книгу"
+          ],
+          [
+            "Passive present",
+            "1st person plural present + -ый: читаем → читаемый, любим → любимый",
+            "уважаемый коллега"
+          ],
+          [
+            "Passive past",
+            "perfective stem + -нный, -енный or -тый: прочитанный, решённый, открытый",
+            "прочитанная книга"
+          ]
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "How they behave"
+      },
+      {
+        "type": "note",
+        "text": "They decline like adjectives and agree with their noun."
+      },
+      {
+        "type": "note",
+        "text": "Девушка, сидящая у окна = девушка, которая сидит у окна."
+      },
+      {
+        "type": "note",
+        "text": "-ся stays -ся after a vowel too: учащийся, улыбавшаяся."
+      },
+      {
+        "type": "note",
+        "text": "Short passive forms are the everyday ones: Магазин закрыт. Письмо написано. Билеты проданы."
+      },
+      {
+        "type": "note",
+        "text": "One н or two: раненый солдат, but раненный в ногу солдат (a dependent word or a prefix gives two н)."
+      },
+      {
+        "type": "note",
+        "text": "Many became ordinary adjectives and nouns: будущий, бывший, следующий, любимый, учащийся, заведующий."
+      }
+    ]
+  },
+  {
+    "id": "russian-verbal-adverbs",
+    "kicker": "Study notes · Russian",
+    "title": "Деепричастия: verbal adverbs",
+    "blocks": [
+      {
+        "type": "heading",
+        "text": "Imperfective: while doing"
+      },
+      {
+        "type": "note",
+        "text": "Present stem + -я (-а after ж, ш, ч, щ): читают → читая, говорят → говоря, слышат → слыша, учатся → учась."
+      },
+      {
+        "type": "note",
+        "text": "Some verbs have no imperfective form in modern Russian (писать, ждать, пить, петь, бежать): use когда or пока instead."
+      },
+      {
+        "type": "heading",
+        "text": "Perfective: having done"
+      },
+      {
+        "type": "note",
+        "text": "Past stem + -в (-вшись for -ся verbs): прочитал → прочитав, вернулся → вернувшись."
+      },
+      {
+        "type": "note",
+        "text": "Verbs of motion in -йти and a few others take -я: придя, войдя, найдя, принеся."
+      },
+      {
+        "type": "heading",
+        "text": "One subject"
+      },
+      {
+        "type": "note",
+        "text": "The action must belong to the subject of the main clause."
+      },
+      {
+        "type": "note",
+        "text": "Подъезжая к станции, я потерял шляпу."
+      },
+      {
+        "type": "note",
+        "text": "Chekhov’s famous mistake shows why: «Подъезжая к сией станции и глядя на природу в окно, у меня слетела шляпа» (the hat was not looking at nature)."
+      },
+      {
+        "type": "heading",
+        "text": "Set phrases"
+      },
+      {
+        "type": "note",
+        "text": "судя по, благодаря (+ dative), несмотря на, честно говоря, откровенно говоря, сломя голову, спустя рукава, не покладая рук, молча, стоя, лёжа."
+      }
+    ]
+  },
+  {
+    "id": "russian-motion-figurative",
+    "kicker": "Study notes · Russian",
+    "title": "Prefixed verbs of motion, figuratively",
+    "blocks": [
+      {
+        "type": "table",
+        "head": [
+          "Prefix",
+          "In space",
+          "Beyond space"
+        ],
+        "rows": [
+          [
+            "в- / вы-",
+            "in / out",
+            "выйти замуж (за + acc.): to marry, of a woman; выйти из себя: to lose your temper; войти в историю: to go down in history"
+          ],
+          [
+            "при-",
+            "to arrive",
+            "прийти в себя: to come to; Мне пришла в голову идея: an idea occurred to me; Мне пришлось уйти: I had to leave"
+          ],
+          [
+            "у-",
+            "to leave",
+            "уйти на пенсию: to retire; уходить от ответа: to dodge the question"
+          ],
+          [
+            "пере-",
+            "across",
+            "перейти на «ты»: to switch to ты; перейти к делу: to get down to business"
+          ],
+          [
+            "про-",
+            "past, through",
+            "пройти экзамен: to pass; Это пройдёт: it will pass"
+          ],
+          [
+            "от-",
+            "away",
+            "относиться к: to regard, treat; Как ты относишься к…? What do you think of…?"
+          ],
+          [
+            "под-",
+            "up to",
+            "подойти: to suit, fit; Это мне подходит"
+          ],
+          [
+            "за-",
+            "to drop in",
+            "Заходи!: come over!; зайти слишком далеко: to go too far"
+          ],
+          [
+            "до-",
+            "as far as",
+            "До меня дошло: it finally sank in"
+          ],
+          [
+            "раз- …-ся",
+            "apart",
+            "разойтись: to split up, to disperse"
+          ],
+          [
+            "об- …-ся",
+            "around",
+            "обойтись без: to do without"
+          ],
+          [
+            "с- …-ся",
+            "together",
+            "сойтись во мнениях: to agree"
+          ]
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Вести, нести, везти"
+      },
+      {
+        "type": "note",
+        "text": "вести себя: to behave; провести время: to spend time; привести пример: to give an example; произвести впечатление: to make an impression."
+      },
+      {
+        "type": "note",
+        "text": "Мне повезло: I was lucky (везти + dative)."
+      }
+    ]
+  },
+  {
+    "id": "russian-aspect",
+    "kicker": "Study notes · Russian",
+    "title": "Aspect in the finer cases",
+    "blocks": [
+      {
+        "type": "heading",
+        "text": "Imperatives"
+      },
+      {
+        "type": "note",
+        "text": "Perfective for one concrete request: Закрой дверь."
+      },
+      {
+        "type": "note",
+        "text": "Imperfective to invite, offer or allow: Входите! Садитесь! Берите ещё!"
+      },
+      {
+        "type": "note",
+        "text": "Imperfective to urge something already expected: Ну, рассказывай!"
+      },
+      {
+        "type": "note",
+        "text": "Imperfective for habits: Звони мне каждый день."
+      },
+      {
+        "type": "heading",
+        "text": "Negative imperatives"
+      },
+      {
+        "type": "note",
+        "text": "Almost always imperfective: Не закрывай дверь. Не говори ему."
+      },
+      {
+        "type": "note",
+        "text": "Negative perfective is a warning about an accident: Не упади! Не опоздай! Не забудь!"
+      },
+      {
+        "type": "heading",
+        "text": "Нельзя, не надо"
+      },
+      {
+        "type": "note",
+        "text": "нельзя + imperfective: not allowed. Здесь нельзя курить."
+      },
+      {
+        "type": "note",
+        "text": "нельзя + perfective: impossible. Эту дверь нельзя открыть."
+      },
+      {
+        "type": "note",
+        "text": "не надо + imperfective: don’t, there is no need. Не надо звонить."
+      },
+      {
+        "type": "note",
+        "text": "From your notes: Не надо было нам идти: we shouldn’t have gone."
+      },
+      {
+        "type": "heading",
+        "text": "The past"
+      },
+      {
+        "type": "note",
+        "text": "Imperfective for the plain fact: Ты читал «Войну и мир»? Читал."
+      },
+      {
+        "type": "note",
+        "text": "Imperfective for an action undone: Ко мне приходил брат (he came and left). Perfective for a result that holds: Ко мне пришёл брат (he is here now)."
+      },
+      {
+        "type": "heading",
+        "text": "Always imperfective"
+      },
+      {
+        "type": "note",
+        "text": "After начать, кончить, продолжать, перестать, надоесть, привыкнуть: Я перестала курить. Мне надоело ждать."
+      },
+      {
+        "type": "note",
+        "text": "стать + imperfective (from your notes): Он стал читать: he began to read. Я не стану это делать: I’m not going to do it."
+      }
+    ]
+  },
+  {
+    "id": "russian-word-building",
+    "kicker": "Study notes · Russian",
+    "title": "Word building",
+    "blocks": [
+      {
+        "type": "heading",
+        "text": "Verb prefixes"
+      },
+      {
+        "type": "note",
+        "text": "на- …-ся: to do something fully, to your fill (from your notes): напиться, наесться, натанцеваться."
+      },
+      {
+        "type": "note",
+        "text": "за-: to start: заплакать, засмеяться, заговорить."
+      },
+      {
+        "type": "note",
+        "text": "по-: a little, for a while: поспать, погулять, почитать."
+      },
+      {
+        "type": "note",
+        "text": "раз- …-ся: to get carried away: разговориться, раскричаться."
+      },
+      {
+        "type": "note",
+        "text": "пере-: again (переделать, пересчитать from your notes) or too much (переесть, переспать)."
+      },
+      {
+        "type": "note",
+        "text": "до-: to finish: дочитать, доделать."
+      },
+      {
+        "type": "note",
+        "text": "недо-: not enough: недоспать, недооценить."
+      },
+      {
+        "type": "heading",
+        "text": "Noun suffixes"
+      },
+      {
+        "type": "note",
+        "text": "-ость: qualities: скромность, неизбежность."
+      },
+      {
+        "type": "note",
+        "text": "-ство: states and groups: детство, богатство, руководство."
+      },
+      {
+        "type": "note",
+        "text": "-ние, -тие: actions as nouns: удивление, открытие."
+      },
+      {
+        "type": "note",
+        "text": "-тель, -ник, -чик, -щик: people who do something: преподаватель, разработчик, заказчик."
+      },
+      {
+        "type": "heading",
+        "text": "Adjective suffixes"
+      },
+      {
+        "type": "note",
+        "text": "-чив-, -лив-: a tendency: доверчивый (trusting, from доверять), терпеливый."
+      },
+      {
+        "type": "note",
+        "text": "-тельн-: удивительный, стеснительный."
+      },
+      {
+        "type": "heading",
+        "text": "Small and big"
+      },
+      {
+        "type": "note",
+        "text": "-ик, -чик, -очк-, -еньк-: small or affectionate: домик, чашечка, маленький."
+      },
+      {
+        "type": "note",
+        "text": "-ищ-: big, often rough: домище."
+      },
+      {
+        "type": "note",
+        "text": "Diminutives soften a request: Минуточку! Чайку?"
+      }
+    ]
+  },
+  {
+    "id": "russian-numerals",
+    "kicker": "Study notes · Russian",
+    "title": "Numerals and their cases",
+    "blocks": [
+      {
+        "type": "heading",
+        "text": "Which form after a number"
+      },
+      {
+        "type": "table",
+        "head": [
+          "Number",
+          "Noun",
+          "Example"
+        ],
+        "rows": [
+          [
+            "1, 21, 31…",
+            "nominative singular",
+            "один рубль, двадцать одна книга"
+          ],
+          [
+            "2, 3, 4, 22…",
+            "genitive singular",
+            "два рубля, три книги"
+          ],
+          [
+            "5–20, 25…, много, мало, сколько, несколько",
+            "genitive plural",
+            "пять рублей, много людей"
+          ]
+        ]
+      },
+      {
+        "type": "note",
+        "text": "After 2–4, adjectives go into the genitive plural for masculine and neuter (два новых дома); for feminine, nominative or genitive plural (две новые книги, две новых книги)."
+      },
+      {
+        "type": "heading",
+        "text": "In other cases"
+      },
+      {
+        "type": "note",
+        "text": "When the whole phrase is in another case, the number and the noun both decline: с двумя друзьями, о пяти книгах, нет трёх рублей."
+      },
+      {
+        "type": "heading",
+        "text": "Collective numbers"
+      },
+      {
+        "type": "note",
+        "text": "двое, трое, четверо… with men or mixed groups, children, and nouns with no singular: нас было трое, двое детей, трое суток."
+      },
+      {
+        "type": "heading",
+        "text": "Useful details"
+      },
+      {
+        "type": "note",
+        "text": "оба / обе + genitive singular: оба брата, обе сестры."
+      },
+      {
+        "type": "note",
+        "text": "полтора / полторы + genitive singular: полтора года, полторы недели."
+      },
+      {
+        "type": "note",
+        "text": "Years and dates: в две тысячи двадцать шестом году, пятое октября, с 1990 по 1995 год."
+      },
+      {
+        "type": "note",
+        "text": "About: put the number after the noun. лет пять: about five years; часа через два: in about two hours."
+      }
+    ]
+  },
+  {
+    "id": "russian-register",
+    "kicker": "Study notes · Russian",
+    "title": "Bookish and spoken Russian",
+    "blocks": [
+      {
+        "type": "table",
+        "head": [
+          "Written, formal",
+          "Spoken"
+        ],
+        "rows": [
+          [
+            "в связи с тем, что / так как",
+            "потому что, раз"
+          ],
+          [
+            "в настоящее время",
+            "сейчас"
+          ],
+          [
+            "является",
+            "это, or a dash: Москва — столица"
+          ],
+          [
+            "осуществлять, производить",
+            "делать"
+          ],
+          [
+            "данный",
+            "этот"
+          ],
+          [
+            "приобрести",
+            "купить"
+          ],
+          [
+            "проживать",
+            "жить"
+          ],
+          [
+            "трудиться (from your notes)",
+            "работать"
+          ],
+          [
+            "деньги",
+            "бабло (from your notes, slang)"
+          ]
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Particles that add tone"
+      },
+      {
+        "type": "note",
+        "text": "же: emphasis. Я же сказала!"
+      },
+      {
+        "type": "note",
+        "text": "ведь: shared knowledge (see the «ну» и «ведь» page)."
+      },
+      {
+        "type": "note",
+        "text": "-то: “as for”. Я-то знаю."
+      },
+      {
+        "type": "note",
+        "text": "разве, неужели: surprise or doubt. Неужели ты не знал?"
+      },
+      {
+        "type": "heading",
+        "text": "Fillers"
+      },
+      {
+        "type": "note",
+        "text": "ну, вот, типа, как бы, короче, в общем, значит: the слова-паразиты from your «ну» и «ведь» notes."
+      }
+    ]
   }
 ];
 window.FN_RUSSIAN_VOCAB = [

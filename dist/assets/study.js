@@ -64,19 +64,19 @@
     {
       id: 'russian',
       name: ['Russian', 'Russo'],
-      why: ['B2 and climbing: my own notes and words, then the finer points (participles, prefixes, register) and real books.',
-            'B2 e oltre: i miei appunti e le mie parole, poi le finezze (participi, prefissi, registro) e i libri veri.'],
-      path: [ // The first three open Nicky's Notion notes (FN_RUSSIAN_LESSONS in russian-lessons.js), in order
+      why: ['B2 and climbing: my own notes and words, then the finer points (participles, prefixes, register).',
+            'B2 e oltre: i miei appunti e le mie parole, poi le finezze (participi, prefissi, registro).'],
+      path: [ // Each opens its page in FN_RUSSIAN_LESSONS (russian-lessons.js), in order: Nicky's three Notion pages, then study notes
         ['Wishing someone well', 'Хороших выходных! Хорошего дня!'],
         ['Describing a picture', 'На картине изображено…'],
         ['Дискурсивные слова: «ну» и «ведь»', 'Small words that carry a lot of feeling.'],
-        ['Participles and verbal adverbs', 'Читающий, прочитанный, читая, прочитав: the written register.'],
+        ['Причастия: participles', 'Читающий, прочитавший, читаемый, прочитанный.'],
+        ['Деепричастия: verbal adverbs', 'Читая, прочитав: while doing, having done.'],
         ['Prefixed verbs of motion, figuratively', 'Прийти в себя, выйти замуж, перейти на «ты».'],
         ['Aspect in the finer cases', 'Imperatives, negation, and “не надо было”.'],
-        ['Word building', 'Prefixes and suffixes: на-, за-, раз-, -ость, -ство.'],
-        ['A novel, unabridged', 'Bulgakov, Мастер и Маргарита, a chapter at a time.'],
-        ['Podcasts and films without subtitles', 'Arzamas, Radio Svoboda, and Soviet classics.'],
-        ['An essay, corrected', 'A page a week on any subject, checked by a teacher.']
+        ['Word building', 'Prefixes and suffixes that change meaning.'],
+        ['Numerals and their cases', 'Два рубля, пять рублей, с двумя друзьями.'],
+        ['Bookish and spoken Russian', 'Является or это, приобрести or купить.']
       ],
       shelf: [
         ['Book', 'Libro', 'Terence Wade, A Comprehensive Russian Grammar', 'The reference to keep on the desk.', 'Il riferimento da tenere sulla scrivania.'],
@@ -91,7 +91,7 @@
       name: ['French', 'Francese'],
       why: ['French classical culture, art and ideas, and the language to read them in.',
             'La cultura classica francese, l’arte e le idee, e la lingua per leggerle.'],
-      path: [ // Nicky's Notion subjects, in order; each opens its page in FN_FRENCH_LESSONS (french-lessons.js)
+      path: [ // Nicky's Notion subjects, then study notes, then her class notes; each opens its page in FN_FRENCH_LESSONS (french-lessons.js)
         ['Present continuous', 'Être en train de + infinitif.'],
         ['Meaning ‘just did something’', 'Venir de + infinitif.'],
         ['Le futur proche', 'Aller + infinitif.'],
@@ -101,6 +101,13 @@
         ['Conditionnel passé', 'Conditional of avoir or être + past participle.'],
         ['Pronouns (personal/possessive)', 'Every pronoun in one table.'],
         ['Relative pronouns', 'Qui, que, dont, où, lequel.'],
+        ['Passé composé or imparfait', 'Telling a story: the event and its background.'],
+        ['Avoir or être, and agreement', 'Which auxiliary, and when the participle agrees.'],
+        ['Y and en', 'Two little pronouns that replace à and de.'],
+        ['Two pronouns together', 'The order: me le, le lui, y en.'],
+        ['Futur simple and futur antérieur', 'Promises, plans, and “when I’ve finished”.'],
+        ['Le discours indirect', 'Reporting what someone said.'],
+        ['Les connecteurs', 'Linking ideas when you speak and write.'],
         ['Past lessons', 'Class notes, newest first.']
       ],
       shelf: [
@@ -254,6 +261,12 @@
     return li;
   };
 
+  // Typed quiz answers count if they match the whole answer or any one of its alternatives (split on `sep`),
+  // ignoring case, accents, stress marks, punctuation, anything in brackets and a leading "to".
+  const plain = t => t.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/\(.*?\)/g, ' ')
+    .replace(/[.,!?…;:«»“”"'’‘—–-]/g, ' ').replace(/^\s*to\s+/, '').replace(/\s+/g, ' ').trim();
+  const matches = (typed, answer, sep = /[\/,;]/) => !!plain(typed) && [answer, ...answer.split(sep)].some(a => plain(a) === plain(typed));
+
   // Vocabulary for the language pages: the word on one side, English on the other. Veil either side to test
   // yourself both ways; a tap on a veiled word lifts the veil. Words live in state.vocab (so backups include them).
   const VOCAB = { russian: ['Russian', 'ru'], french: ['French', 'fr'] };
@@ -321,11 +334,6 @@
       a.value = b.value = ''; a.focus();
     });
     // Quiz: up to ten words; Nicky types the translation and checks it. Words missed before come up more often.
-    // An answer counts if it matches the whole answer or any one of its alternatives (split on / , ;), ignoring
-    // case, accents, stress marks, punctuation, anything in brackets and a leading "to".
-    const plain = t => t.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/\(.*?\)/g, ' ')
-      .replace(/[.,!?…;:«»“”"'’‘—–-]/g, ' ').replace(/^\s*to\s+/, '').replace(/\s+/g, ' ').trim();
-    const matches = (typed, answer) => !!plain(typed) && [answer, ...answer.split(/[\/,;]/)].some(a => plain(a) === plain(typed));
     const misses = ((state.quiz ||= {})[id] ||= {});
     const quiz = el('div', 'fn-quiz'); quiz.hidden = true;
     const quizBtn = el('button', 'fn-vocab-mode', 'Quiz me'); quizBtn.type = 'button'; modes.append(quizBtn);
@@ -474,6 +482,60 @@
     root.append(sec);
   });
 
+  // A short quiz at the end of a lesson (FN_LESSON_QUIZZES in lesson-quizzes.js): up to ten of its questions in a
+  // random order, typed answers checked like the vocabulary quiz (alternatives separated by " / ").
+  const lessonQuiz = (items, code) => {
+    const box = el('section', 'fn-lesson-quiz'), h = el('h3', null, 'Quiz'), body = el('div', 'fn-quiz');
+    box.setAttribute('aria-label', 'Quiz on this lesson'); box.append(h, body);
+    const button = (cls, text, on) => { const b = el('button', cls, text); b.type = 'button'; b.addEventListener('click', on); return b; };
+    const row = (...items) => { const r = el('div', 'fn-vocab-modes'); r.append(...items); return r; };
+    const n = Math.min(items.length, 10), sep = /\s\/\s/;
+    const intro = () => body.replaceChildren(el('p', 'fn-quiz-progress', `${n} questions on this page. Type the answer, then check it.`),
+      row(button('fn-study-btn', 'Start the quiz', run)));
+    const run = () => {
+      const round = items.map(x => [Math.random(), x]).sort((a, b) => a[0] - b[0]).slice(0, n).map(x => x[1]);
+      let i = 0, score = 0; const missed = [];
+      const ask = () => {
+        if (i === round.length) return finish();
+        const [question, answer] = round[i], [first, ...also] = answer.split(sep);
+        const form = el('form', 'fn-study-add fn-quiz-answer'), input = el('input');
+        input.type = 'text'; input.autocomplete = 'off'; input.spellcheck = false; input.setAttribute('autocapitalize', 'off');
+        input.lang = code; input.placeholder = 'Your answer…'; input.setAttribute('aria-label', 'Your answer');
+        const check = el('button', 'fn-study-btn', 'Check'); check.type = 'submit';
+        form.append(input, check);
+        const result = el('div', 'fn-quiz-result'); result.setAttribute('aria-live', 'polite');
+        const next = () => { i++; ask(); };
+        form.addEventListener('submit', e => {
+          e.preventDefault(); if (input.disabled) return;
+          const right = matches(input.value, answer, sep);
+          input.disabled = check.disabled = true;
+          if (right) score++; else missed.push(round[i]);
+          const sol = el('p', 'fn-quiz-solution', first); sol.lang = code;
+          result.replaceChildren(el('p', 'fn-quiz-verdict', right ? 'Right.' : input.value.trim() ? 'Not quite. The answer:' : 'The answer:'), sol);
+          if (also.length) { const more = el('p', 'fn-quiz-verdict', 'Also right: ' + also.join(' · ')); more.lang = code; result.append(more); }
+          const go = button('fn-study-btn', i + 1 === round.length ? 'See my score' : 'Next', next), buttons = [go];
+          if (!right) buttons.push(button('fn-highlight-mode', 'I was right', () => { missed.pop(); score++; next(); }));
+          result.append(row(...buttons)); go.focus();
+        });
+        body.replaceChildren(el('p', 'fn-quiz-progress', `${i + 1} of ${round.length}`), el('p', 'fn-quiz-q', question), form, result);
+        input.focus({ preventScroll: true }); box.scrollIntoView({ block: 'nearest' });
+      };
+      const finish = () => {
+        body.replaceChildren(el('p', 'fn-quiz-q', `${score} / ${round.length}`),
+          el('p', 'fn-quiz-progress', missed.length ? 'To look at again:' : 'Every one right.'));
+        if (missed.length) {
+          const ul = el('ul', 'fn-quiz-missed');
+          missed.forEach(([q, a]) => { const li = el('li'), s = el('span', null, a.split(sep)[0]); s.lang = code; li.append(el('span', null, q), s); ul.append(li); });
+          body.append(ul);
+        }
+        body.append(row(button('fn-study-btn', 'Another round', run), button('fn-highlight-mode', 'Close the quiz', intro)));
+      };
+      ask();
+    };
+    intro();
+    return box;
+  };
+
   // Readable lesson views use the same hash navigation as the study topics.
   // Silver Age poetry and French (imported from Nicky's notes) share one reading layout.
   LESSONS.forEach(({ topic, name, lessons }) => lessons.forEach((lesson, index) => {
@@ -503,6 +565,8 @@
     const margin = el('aside', 'fn-lesson-margin'); margin.setAttribute('aria-label', 'Your margin notes');
     workspace.append(notes, margin); sec.append(workspace);
     window.fnAnnotateLesson?.(lesson, notes, margin, sec);
+    const quiz = (window.FN_LESSON_QUIZZES || {})[lesson.id];
+    if (quiz?.length) sec.append(lessonQuiz(quiz, VOCAB[topic]?.[1] || 'en'));
     const footer = el('nav', 'fn-lesson-footer'); footer.setAttribute('aria-label', 'Other lessons');
     const prev = lessons[index - 1], next = lessons[index + 1];
     if (prev) { const link = el('a', 'fn-study-back', '← Previous: ' + prev.title); link.href = '#' + prev.id; footer.append(link); }
