@@ -182,11 +182,15 @@ body.fn-lesson-open{background:#faeac0}
 .fn-ember{animation:fn-ember-rise 3.8s ease-out infinite;animation-delay:var(--delay);animation-play-state:paused}
 .fn-room-art:has([data-spot="avestan"]:is(:hover,:focus-visible)) .fn-ember{animation-play-state:running}
 @keyframes fn-ember-rise{0%{opacity:0;transform:translate(0,0)}15%{opacity:.9}100%{opacity:0;transform:translate(var(--drift),-85px)}}
-.fn-room-art:has([data-spot="pie"]:is(:hover,:focus-visible)) .fn-liquid-ripples{opacity:.5}
-.fn-ripple{transform-box:fill-box;transform-origin:center;animation:fn-ripple 2.8s ease-out infinite;animation-play-state:paused}
-.fn-ripple-two{animation-delay:-1.4s}
+.fn-room-art:has([data-spot="pie"]:is(:hover,:focus-visible)) .fn-liquid-ripples{opacity:.95}
+.fn-ripple{transform-box:fill-box;transform-origin:center;animation:fn-ripple 2.4s linear infinite;animation-play-state:paused}
+.fn-ripple-two{animation-delay:-.8s}
+.fn-ripple-three{animation-delay:-1.6s}
 .fn-room-art:has([data-spot="pie"]:is(:hover,:focus-visible)) .fn-ripple{animation-play-state:running}
-@keyframes fn-ripple{0%{transform:scale(.15);opacity:.7}100%{transform:scale(1);opacity:0}}
+@keyframes fn-ripple{0%{transform:scale(.12);opacity:0}18%{opacity:.95}75%{opacity:.75}100%{transform:scale(1.04);opacity:0}}
+.fn-absinthe-glimmer{transform-box:fill-box;transform-origin:center;animation:fn-liquid-glimmer 3s ease-in-out infinite;animation-play-state:paused;opacity:.5}
+.fn-room-art:has([data-spot="pie"]:is(:hover,:focus-visible)) .fn-absinthe-glimmer{animation-play-state:running}
+@keyframes fn-liquid-glimmer{0%,100%{transform:translateY(-1px) scaleX(.9);opacity:.35}50%{transform:translateY(1px) scaleX(1);opacity:.85}}
 .fn-room-art:has([data-spot="new"]:is(:hover,:focus-visible)) .fn-crystal-pulse{animation:fn-facet-light 3.2s ease-in-out infinite}
 @keyframes fn-facet-light{0%,100%{opacity:.06}50%{opacity:.38}}
 @media(prefers-reduced-motion:reduce){.fn-object-effects{display:none}.fn-object-effects *{animation:none!important;transition:none!important}}
