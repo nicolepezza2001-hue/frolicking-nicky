@@ -186,3 +186,6 @@ a separate Europe close-up, the map legend or the trip buttons under the map on 
   (a tap reveals one word), Shuffle mixes the order, and shown words can be corrected in place. Words are saved in
   `fn-study-v1` under `vocab`. `FN_FRENCH_VOCAB` (her Notion "IMPORTANT" table) seeds the French list once
   (`seeded` in `fn-study-v1`), so words she removes or edits stay that way.
+- Russian is pitched at **B2** (Nicky's level; the old beginner path is gone). Its path opens with her Notion notes
+  (page "Russian"; `assets/russian-lessons.js`, wording kept exactly: wishes, describing a picture, «ну» и «ведь»),
+  then B2 steps, then Vocabulary, seeded once from her Notion word list (`FN_RUSSIAN_VOCAB`).
