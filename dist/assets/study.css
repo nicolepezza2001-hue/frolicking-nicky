@@ -247,3 +247,26 @@ body.fn-study{cursor:url('/assets/quill-cursor.svg') 3 29,auto}
 .fn-lesson-table tr:last-child td{border-bottom:0}
 .fn-lesson-link a{color:var(--st-purple);text-underline-offset:4px}
 @media(max-width:760px){.fn-lesson-table table{font-size:14px;width:max-content;min-width:100%}}
+
+/* Personal lesson writing uses the same warm paper as reading. */
+.fn-personal-lessons{margin-top:30px;padding-top:20px;border-top:1px solid var(--st-line)}
+.fn-personal-lessons .fn-editor-actions{justify-content:space-between}
+.fn-personal-lessons .fn-highlight-mode{color:var(--st-yellow);border-color:#f3d99566}
+.fn-personal-lessons .fn-study-label{border:0;margin:0;padding:0}
+.fn-editor-actions{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.fn-personal-lesson-list{list-style:none;padding:0}
+.fn-personal-lesson-list li{display:flex;justify-content:space-between;gap:12px;align-items:center;padding:10px 0}
+.fn-lesson-editor{max-width:960px}
+.fn-editor-form{display:grid;gap:18px;margin-top:24px}
+.fn-editor-label{display:grid;gap:7px;font:15px/1.5 Georgia,serif;color:var(--st-purple)}
+.fn-study .fn-editor-form input,.fn-editor-form select{width:100%;background:#fff7df;color:var(--st-purple);font:18px/1.5 Georgia,serif;border:1px solid #2b1e3855;border-radius:6px;padding:10px 12px}
+.fn-study .fn-editor-form input::placeholder{color:#746078}
+.fn-study .fn-editor-writing{width:100%;min-height:440px;resize:vertical;background:#fff7df;color:var(--st-purple);font:18px/1.8 Georgia,serif;border:1px solid #2b1e3855;border-radius:6px;padding:18px}
+.fn-study .fn-editor-writing::placeholder{color:#746078}
+.fn-editor-status{font:14px/1.6 Georgia,serif;color:#5b4467}
+.fn-editor-form :is(input,select,textarea):focus-visible{outline:2px solid #70547d;outline-offset:3px}
+.fn-editor-form>.fn-editor-actions:last-child{position:sticky;bottom:0;background:#faeac0;padding:12px 0;border-top:1px solid #2b1e3826}
+@media(max-width:760px){.fn-study .fn-editor-writing{padding:12px;font-size:17px;min-height:360px}.fn-personal-lesson-list li{align-items:flex-start}.fn-personal-lesson-list a{overflow-wrap:anywhere}}
+
+body.fn-lesson-open{min-height:100vh}
+html:has(body.fn-lesson-open){background:#faeac0}
