@@ -194,6 +194,8 @@ a separate Europe close-up, the map legend or the trip buttons under the map on 
   verbs, aspect, word building, numerals, register), then Vocabulary, seeded once from her Notion word list
   (`FN_RUSSIAN_VOCAB`). French likewise has "Study notes · French" pages between her Notion subjects and Past lessons.
   Every path step opens a page (Nicky had the placeholder steps without notes removed). Agree new topics with her first.
+- Nicky's own lessons (`assets/lesson-editor.js`) take pictures: paste, drop or "Add image". Each is shrunk to a 1200px
+  JPEG and kept in the lesson's `images`; the notes hold an `[image:id]` line where it goes (delete the line to remove it).
 - Every French, Russian and Linguistics lesson ends with a typed quiz (`FN_LESSON_QUIZZES` in `assets/lesson-quizzes.js`,
   `[question, answer]`, alternatives split by " / "): up to ten questions shuffled, Check shows the answer, "I was right"
   overrides. New lessons need a quiz entry too.

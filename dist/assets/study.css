@@ -316,3 +316,10 @@ html:has(body.fn-lesson-open){background:#faeac0}
 .fn-pie-course-notes li{padding:10px 0;border-top:1px dashed #f3d99526}
 .fn-pie-course-notes li:first-child{border-top:0}
 .fn-pie-course-notes small{display:block;color:var(--st-soft);font-size:.9rem;margin-top:3px}
+
+/* Pictures in Nicky's own lessons */
+.fn-editor-thumbs{display:flex;flex-wrap:wrap;gap:8px;margin:-4px 0 12px}
+.fn-editor-thumbs:empty{display:none}
+.fn-editor-thumbs img{height:64px;width:auto;border-radius:4px;border:1px solid #2b1e3833}
+.fn-lesson-figure{margin:1.4em 0}
+.fn-lesson-figure img{display:block;max-width:100%;height:auto;border-radius:6px;border:1px solid #2b1e3833}
