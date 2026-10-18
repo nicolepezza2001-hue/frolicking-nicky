@@ -749,5 +749,30 @@ window.FN_RUSSIAN_VOCAB = [
   "id": "ru-126",
   "word": "в жизни может быть так",
   "en": "it might happen in life"
+  },
+  {
+  "id": "ru-127",
+  "word": "На сильном/слабом огне",
+  "en": "over high/low heat"
+  },
+  {
+  "id": "ru-128",
+  "word": "подписка",
+  "en": "subscription"
+  },
+  {
+  "id": "ru-129",
+  "word": "Разработчик",
+  "en": "developer"
+  },
+  {
+  "id": "ru-130",
+  "word": "Остров",
+  "en": "island"
+  },
+  {
+  "id": "ru-131",
+  "word": "Маша-растеряша",
+  "en": "scatterbrain (a girl who loses everything, from a children’s poem)"
   }
 ];
