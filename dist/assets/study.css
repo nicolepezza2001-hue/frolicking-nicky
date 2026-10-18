@@ -203,6 +203,7 @@ body.fn-lesson-open{background:#faeac0}
 /* Vocabulary (Russian and French): the word on one side, English on the other. Veil either side to test yourself;
    a veiled word is a soft candlelit mist until tapped. Shown words can be corrected in place. */
 .fn-vocab{margin-top:44px}
+.fn-vocab-page .fn-vocab{margin-top:0}
 .fn-vocab-head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:10px 20px;border-bottom:1px solid var(--st-line);margin-bottom:14px;padding-bottom:10px}
 .fn-vocab-head .fn-study-label{border:0;margin:0;padding:0}
 .fn-vocab-modes{display:flex;flex-wrap:wrap;gap:8px}
@@ -232,13 +233,8 @@ body.fn-study{cursor:url('/assets/quill-cursor.svg') 3 29,auto}
 .fn-study input,.fn-study textarea,.fn-lesson-notes{cursor:text}
 .fn-highlighter-active .fn-lesson-notes{cursor:crosshair}
 
-/* French class notes (imported from Nicky's Notion page): listed under the path, read like the Silver Age lessons.
-   Her grammar tables keep their rows and columns; wide ones scroll sideways inside their own frame on phones. */
-.fn-study-lessons-label{margin-top:36px}
-.fn-study-lessons{list-style:none;margin:0;padding:0;columns:2;column-gap:28px}
-.fn-study-lessons li{break-inside:avoid;padding:6px 0}
-.fn-study-lessons a{font-weight:600;font-size:1.12rem}
-.fn-study-lessons small{display:block;color:var(--st-soft);font-style:italic;font-size:.95rem}
+/* French notes (imported from Nicky's Notion page), read like the Silver Age lessons.
+   Each subject is a page on the French path. Her grammar tables keep their rows and columns; wide ones scroll sideways inside their own frame on phones. */
 .fn-lesson-footer{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 24px}
 .fn-lesson-table{overflow-x:auto;margin:0 0 1.6em;border:1px solid #2b1e3833;border-radius:8px}
 .fn-lesson-table table{border-collapse:collapse;width:100%;font:16px/1.5 Georgia,serif}
@@ -246,4 +242,4 @@ body.fn-study{cursor:url('/assets/quill-cursor.svg') 3 29,auto}
 .fn-lesson-table th{font-weight:600;background:#2b1e380d}
 .fn-lesson-table tr:last-child td{border-bottom:0}
 .fn-lesson-link a{color:var(--st-purple);text-underline-offset:4px}
-@media(max-width:760px){.fn-study-lessons{columns:1}.fn-lesson-table table{font-size:14px;width:max-content;min-width:100%}}
+@media(max-width:760px){.fn-lesson-table table{font-size:14px;width:max-content;min-width:100%}}
