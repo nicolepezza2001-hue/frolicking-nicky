@@ -666,3 +666,202 @@ window.FN_LESSON_QUIZZES = {
     ['“I will worship”', 'yazāi / yazai']
   ]
 };
+
+Object.assign(window.FN_LESSON_QUIZZES, {
+  "tocharian-notes-tarim": [
+    [
+      "Where were the Tarim Basin mummies found?",
+      "Xinjiang / Tarim Basin"
+    ],
+    [
+      "Which culture is associated with an early eastward expansion of Proto-Tocharian speakers in these notes?",
+      "Afanasievo"
+    ],
+    [
+      "Were the earliest Tarim mummies necessarily Tocharian speakers?",
+      "no"
+    ]
+  ],
+  "tocharian-notes-silk-road": [
+    [
+      "Which religion shaped the historical Tocharian kingdoms?",
+      "Buddhism"
+    ],
+    [
+      "Which script was used for literacy?",
+      "Brahmi / Brāhmī"
+    ],
+    [
+      "Name one Tocharian oasis kingdom mentioned here.",
+      "Kucha / Turfan"
+    ]
+  ],
+  "tocharian-notes-prehistory": [
+    [
+      "Which culture is associated here with light chariots with spoked wheels?",
+      "Sintashta"
+    ],
+    [
+      "Does the Rigveda celebrate chariots or cavalry?",
+      "chariots"
+    ],
+    [
+      "Which came later: chariots or mounted cavalry?",
+      "mounted cavalry / cavalry"
+    ]
+  ],
+  "tocharian-notes-origins": [
+    [
+      "Which branch is shown as the earliest split?",
+      "Anatolian"
+    ],
+    [
+      "Which two Tocharian languages appear in the written sources?",
+      "A and B / Tocharian A and B"
+    ],
+    [
+      "Which expansion carries Proto-Tocharian east in the diagram?",
+      "Afanasievo"
+    ]
+  ],
+  "tocharian-notes-reading": [
+    [
+      "Who wrote The Tocharian Languages (2024) in your reading list?",
+      "Michael Peyrot / Peyrot"
+    ],
+    [
+      "Who wrote A Biography of the Tocharian Languages?",
+      "Douglas Q. Adams / Adams"
+    ],
+    [
+      "Which kingdom appears in the title listed under Victor H. Mair?",
+      "Kucha"
+    ]
+  ],
+  "avestan-notes-periods": [
+    [
+      "Which three stages represent the same language in these notes?",
+      "Old Persian, Middle Persian, New Persian / Old Middle New Persian"
+    ],
+    [
+      "Which period follows Middle Iranian?",
+      "New Iranian / Modern Iranian"
+    ],
+    [
+      "Is Avestan classified as Old Iranian?",
+      "yes"
+    ]
+  ],
+  "avestan-notes-old-iranian": [
+    [
+      "What is the name of the religious collection written in Avestan?",
+      "Avesta"
+    ],
+    [
+      "Which empire used Old Persian as a royal language?",
+      "Achaemenid / Achaemenid empire"
+    ],
+    [
+      "What does spaka mean in the Median example?",
+      "female dog"
+    ]
+  ],
+  "avestan-notes-middle-west": [
+    [
+      "Which state used Middle Persian as an official language?",
+      "Sasanian / Sasanian state / Sasanian empire"
+    ],
+    [
+      "Which modern language is linked to Alanic?",
+      "Ossetic"
+    ],
+    [
+      "The Parthian script descended from which script?",
+      "Imperial Aramaic / Aramaic"
+    ]
+  ],
+  "avestan-notes-middle-east": [
+    [
+      "Which language mainly used Greco-Bactrian script?",
+      "Bactrian"
+    ],
+    [
+      "Which language is associated with the Ancient Letters?",
+      "Sogdian"
+    ],
+    [
+      "Which Brāhmī tradition was used for Khotanese?",
+      "Southern Brahmi / Southern Brāhmī"
+    ]
+  ],
+  "avestan-notes-modern-northwest": [
+    [
+      "Is Ossetic linguistically Eastern or Western Iranian?",
+      "Eastern / Eastern Iranian"
+    ],
+    [
+      "Name one of the two main Ossetic varieties.",
+      "Digoron / Iron"
+    ],
+    [
+      "What other name is used for Māzandarāni?",
+      "Tabari"
+    ]
+  ],
+  "avestan-notes-kurdish-central": [
+    [
+      "Name the three main Kurdish groups listed here.",
+      "Northern Central Southern / Northern, Central and Southern"
+    ],
+    [
+      "Which Kurdish group includes Sorāni?",
+      "Central / Central Kurdish"
+    ],
+    [
+      "Lori and Bakhtiāri are closely related to which language?",
+      "Persian"
+    ]
+  ],
+  "avestan-notes-persian": [
+    [
+      "New Persian descends from which language?",
+      "Middle Persian"
+    ],
+    [
+      "Which major Persian variety is associated with Afghanistan?",
+      "Dari / Afghan Dari"
+    ],
+    [
+      "Which alphabet is used for Tajik in these notes?",
+      "Cyrillic"
+    ]
+  ],
+  "avestan-notes-southeast": [
+    [
+      "Which peninsula is associated with Kumzari?",
+      "Musandam / Musandam Peninsula"
+    ],
+    [
+      "Name one country where Balochi is spoken.",
+      "Iran / Pakistan / Afghanistan"
+    ],
+    [
+      "Which script tradition is used for Balochi here?",
+      "Arabo-Persian / Arabo Persian"
+    ]
+  ],
+  "avestan-notes-eastern": [
+    [
+      "Which language belongs to the same subgroup as Sogdian?",
+      "Yaghnobi"
+    ],
+    [
+      "Which language belongs to the same subgroup as Khotanese?",
+      "Wakhi"
+    ],
+    [
+      "Which two places are associated with major standard Pashto varieties?",
+      "Kandahar and Peshawar / Kandahar Peshawar"
+    ]
+  ]
+});

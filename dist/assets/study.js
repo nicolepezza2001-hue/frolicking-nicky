@@ -168,6 +168,7 @@
         [['Browse real manuscripts', 'Sfogliare i manoscritti veri'], 'Fragments with images and translations on CEToM.', 'Frammenti con immagini e traduzioni su CEToM.']
       ],
       shelf: [
+        ['Notes', 'Appunti', 'Tocharian — your source document', 'Your original Google Doc.', 'Your original Google Doc.', 'https://docs.google.com/document/d/1Dbb-s5NyicOzyp6c_fUuomNx3vvULJQTEJYH0D2hV-0/edit'],
         ['Online', 'Online', 'CEToM', 'The Comprehensive Edition of Tocharian Manuscripts: texts, images, glossary.', 'L’edizione completa dei manoscritti tocari: testi, immagini, glossario.', 'https://cetom.univie.ac.at/'],
         ['Online', 'Online', 'TITUS', 'Frankfurt’s Indo-European text archive, Tocharian included.', 'L’archivio di testi indoeuropei di Francoforte, tocario compreso.', 'https://titus.uni-frankfurt.de/'],
         ['Book', 'Libro', 'Krause & Thomas, Tocharisches Elementarbuch', 'The classic grammar and reader, in German.', 'La grammatica e antologia classica, in tedesco.'],
@@ -192,6 +193,7 @@
         [['A Yasht hymn', 'Un inno Yašt'], 'The hymns to the yazatas, in Young Avestan.', 'Gli inni agli yazata, in avestico recente.']
       ],
       shelf: [
+        ['Notes', 'Appunti', 'Avestan — your source document', 'Your original Google Doc.', 'Your original Google Doc.', 'https://docs.google.com/document/d/17DqT6nBK3E5q1y-7QaTUzW5LI-5gP5erfUiB4NF7ab0/edit'],
         ['Book', 'Libro', 'Skjærvø, An Introduction to Old Avestan', 'A full course with texts and glossary.', 'Un corso completo con testi e glossario.'],
         ['Book', 'Libro', 'Beekes, A Grammar of Gatha-Avestan', 'Compact and clear.', 'Compatta e chiara.'],
         ['Book', 'Libro', 'Hoffmann & Forssman, Avestische Laut- und Flexionslehre', 'The standard reference, in German.', 'Il riferimento classico, in tedesco.'],
@@ -448,10 +450,10 @@
 
     const grid = el('div', 'fn-study-grid');
     const left = el('div');
-    if (['pie', 'opera', 'hittite'].includes(t.id)) {
+    if (['pie', 'opera', 'hittite', 'tocharian', 'avestan'].includes(t.id)) {
       left.append(el('h3', 'fn-study-label', 'Your course notes'));
       const notesList = el('ol', 'fn-pie-course-notes');
-      lessonsOf(t.id).forEach(lesson => {
+      lessonsOf(t.id).filter(lesson => !['tocharian', 'avestan'].includes(t.id) || lesson.courseNotes).forEach(lesson => {
         const row = el('li'), link = el('a', 'fn-study-lesson-link', lesson.title); link.href = '#' + lesson.id;
         row.append(link, el('small', null, lesson.kicker)); notesList.append(row);
       });

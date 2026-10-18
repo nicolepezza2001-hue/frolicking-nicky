@@ -693,3 +693,495 @@ window.FN_TOCHARIAN_LESSONS = [
     ]
   }
 ];
+
+// Imported from Nicole’s supplied Google Doc; wording retained.
+window.FN_TOCHARIAN_LESSONS.push(...[
+  {
+    "id": "tocharian-notes-tarim",
+    "title": "The Tarim Basin mummies & Proto-Tocharian",
+    "number": 1,
+    "kicker": "Your notes · Tocharian",
+    "courseNotes": true,
+    "blocks": [
+      {
+        "type": "heading",
+        "text": "The Tarim Basin, Tocharian, and Indo-European Origins: A View from the West",
+        "sourceIndexes": [
+          1
+        ]
+      },
+      {
+        "type": "note",
+        "text": "Colin Renfrew, Cambridge University",
+        "sourceIndexes": [
+          2
+        ]
+      },
+      {
+        "type": "note",
+        "text": "THIS IS OUTDATED - UPDATED VERSION FROM CHATGPT",
+        "sourceIndexes": [
+          3
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "The Tarim Basin mummies",
+        "sourceIndexes": [
+          4
+        ]
+      },
+      {
+        "type": "note",
+        "text": "Exceptionally well-preserved human remains from the Tarim Basin (Xinjiang), dating from c. 2100–1700 BCE, attracted enormous attention because many individuals appeared \"western\" in their physical features.",
+        "sourceIndexes": [
+          5
+        ]
+      },
+      {
+        "type": "note",
+        "text": "Scholars initially hypothesised that they were the ancestors of the later Tocharian speakers, whose Indo-European languages are attested in Buddhist manuscripts from the 6th–8th centuries CE.",
+        "sourceIndexes": [
+          6
+        ]
+      },
+      {
+        "type": "note",
+        "text": "Modern ancient DNA has fundamentally revised this picture:",
+        "sourceIndexes": [
+          7
+        ]
+      },
+      {
+        "type": "note",
+        "text": "the earliest Tarim mummies were not recent migrants from Europe or the Pontic Steppe;",
+        "sourceIndexes": [
+          8
+        ]
+      },
+      {
+        "type": "note",
+        "text": "instead, they descended largely from an ancient, genetically isolated population with deep Ancient North Eurasian (ANE) ancestry;",
+        "sourceIndexes": [
+          9
+        ]
+      },
+      {
+        "type": "note",
+        "text": "despite their \"European-looking\" appearance, they possessed almost no Yamnaya-related ancestry.",
+        "sourceIndexes": [
+          10
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Proto-Tocharian",
+        "sourceIndexes": [
+          11
+        ]
+      },
+      {
+        "type": "note",
+        "text": "Tocharian remains the second earliest branch of the Indo-European family.",
+        "sourceIndexes": [
+          12
+        ]
+      },
+      {
+        "type": "note",
+        "text": "Most linguists think Proto-Tocharian split from Late Proto-Indo-European around 3500–3000 BCE.",
+        "sourceIndexes": [
+          13
+        ]
+      },
+      {
+        "type": "note",
+        "text": "The leading hypothesis associates its speakers with the Afanasievo culture (c. 3300–2500 BCE), an eastern expansion of Yamnaya-derived pastoralists into southern Siberia and Mongolia.",
+        "sourceIndexes": [
+          14
+        ]
+      },
+      {
+        "type": "note",
+        "text": "The precise route into the Tarim Basin remains uncertain, but Proto-Tocharian probably reached eastern Central Asia during the Bronze Age rather than with the first Neolithic farmers.",
+        "sourceIndexes": [
+          15
+        ]
+      },
+      {
+        "type": "note",
+        "text": "Importantly, the earliest Tarim mummies were probably not yet Tocharian speakers.",
+        "sourceIndexes": [
+          16
+        ]
+      },
+      {
+        "type": "note",
+        "text": "Instead, later Bronze Age migrations likely introduced Proto-Tocharian into the region, where it interacted with existing oasis populations.",
+        "sourceIndexes": [
+          17
+        ]
+      },
+      {
+        "type": "note",
+        "text": "By the time Tocharian A and B appear in written sources (6th–8th centuries CE), roughly 2,500–3,000 years of linguistic evolution had passed since Proto-Tocharian.",
+        "sourceIndexes": [
+          18
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tocharian-notes-silk-road",
+    "title": "The Tocharians of the Silk Road",
+    "number": 2,
+    "kicker": "Your notes · Tocharian",
+    "courseNotes": true,
+    "blocks": [
+      {
+        "type": "heading",
+        "text": "The Tocharians of the Silk Road",
+        "sourceIndexes": [
+          19
+        ]
+      },
+      {
+        "type": "note",
+        "text": "The Buddhist kingdoms of Kucha, Turfan and other Tarim oases were culturally very different from the Bronze Age populations represented by the earliest mummies.",
+        "sourceIndexes": [
+          20
+        ]
+      },
+      {
+        "type": "note",
+        "text": "Their society included:",
+        "sourceIndexes": [
+          21
+        ]
+      },
+      {
+        "type": "note",
+        "text": "Buddhism;",
+        "sourceIndexes": [
+          22
+        ]
+      },
+      {
+        "type": "note",
+        "text": "monasteries;",
+        "sourceIndexes": [
+          23
+        ]
+      },
+      {
+        "type": "note",
+        "text": "cities and oasis kingdoms;",
+        "sourceIndexes": [
+          24
+        ]
+      },
+      {
+        "type": "note",
+        "text": "literacy using the Brahmi script;",
+        "sourceIndexes": [
+          25
+        ]
+      },
+      {
+        "type": "note",
+        "text": "translations of Buddhist texts;",
+        "sourceIndexes": [
+          26
+        ]
+      },
+      {
+        "type": "note",
+        "text": "participation in Silk Road trade.",
+        "sourceIndexes": [
+          27
+        ]
+      },
+      {
+        "type": "note",
+        "text": "Over three millennia the Tarim Basin received multiple waves of migration, including peoples with Steppe ancestry, Iranian-speaking Sakas and others.",
+        "sourceIndexes": [
+          28
+        ]
+      },
+      {
+        "type": "note",
+        "text": "The historical Tocharians were therefore a mixed population, probably inheriting some ancestry from the earliest Tarim inhabitants while also incorporating later migrants.",
+        "sourceIndexes": [
+          29
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tocharian-notes-prehistory",
+    "title": "Four stages in Eurasian prehistory",
+    "number": 3,
+    "kicker": "Your notes · Tocharian",
+    "courseNotes": true,
+    "blocks": [
+      {
+        "type": "heading",
+        "text": "Four stages in Eurasian prehistory",
+        "sourceIndexes": [
+          30
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "1. Spread of farming (c. 7000 BCE)",
+        "sourceIndexes": [
+          31
+        ]
+      },
+      {
+        "type": "note",
+        "text": "Agriculture spread from Anatolian farmers into Europe .",
+        "sourceIndexes": [
+          32
+        ]
+      },
+      {
+        "type": "note",
+        "text": "These farmers mixed extensively with local hunter-gatherers rather than completely replacing them.",
+        "sourceIndexes": [
+          33
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "2. Development of steppe pastoralism (c. 4500–3500 BCE)",
+        "sourceIndexes": [
+          34
+        ]
+      },
+      {
+        "type": "note",
+        "text": "Mixed farming on the Pontic-Caspian Steppe gave rise to highly mobile pastoral societies.",
+        "sourceIndexes": [
+          35
+        ]
+      },
+      {
+        "type": "note",
+        "text": "Horses were initially exploited mainly for meat, milk, herd management and transport.",
+        "sourceIndexes": [
+          36
+        ]
+      },
+      {
+        "type": "note",
+        "text": "The Yamnaya culture expanded widely across the Eurasian Steppe during this period. In many regions of Europe, 40–75% of ancestry derives from these Steppe migrants.",
+        "sourceIndexes": [
+          37
+        ]
+      },
+      {
+        "type": "note",
+        "text": "This expansion is now widely regarded as the most likely homeland and dispersal phase of Late Proto-Indo-European.",
+        "sourceIndexes": [
+          38
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "3. Bronze Age chariot societies (c. 2000 BCE)",
+        "sourceIndexes": [
+          39
+        ]
+      },
+      {
+        "type": "note",
+        "text": "Light, horse-drawn chariots with spoked wheels appeared in the Sintashta culture and spread rapidly across Eurasia.",
+        "sourceIndexes": [
+          40
+        ]
+      },
+      {
+        "type": "note",
+        "text": "Chariots became symbols of military prestige and elite status.",
+        "sourceIndexes": [
+          41
+        ]
+      },
+      {
+        "type": "note",
+        "text": "Early Indo-Iranian speakers are closely associated with these chariot traditions.",
+        "sourceIndexes": [
+          42
+        ]
+      },
+      {
+        "type": "note",
+        "text": "The Rigveda celebrates horses and chariots, not cavalry.",
+        "sourceIndexes": [
+          43
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "4. Mounted cavalry (1st millennium BCE)",
+        "sourceIndexes": [
+          44
+        ]
+      },
+      {
+        "type": "note",
+        "text": "True mounted warfare developed significantly later than chariots.",
+        "sourceIndexes": [
+          45
+        ]
+      },
+      {
+        "type": "note",
+        "text": "Scythians, Cimmerians and other Iron Age peoples transformed cavalry into an effective military system.",
+        "sourceIndexes": [
+          46
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tocharian-notes-origins",
+    "title": "Indo-European origins: an overview",
+    "number": 4,
+    "kicker": "Your notes · Tocharian",
+    "courseNotes": true,
+    "blocks": [
+      {
+        "type": "heading",
+        "text": "Indo-European origins",
+        "sourceIndexes": [
+          47
+        ]
+      },
+      {
+        "type": "table",
+        "head": [
+          "Outline from your notes"
+        ],
+        "rows": [
+          [
+            "Late Proto-Indo-European"
+          ],
+          [
+            "(c. 4500–3500 BCE)"
+          ],
+          [
+            "Pontic-Caspian Steppe"
+          ],
+          [
+            "        │"
+          ],
+          [
+            "        ├── Anatolian (earliest split)"
+          ],
+          [
+            "        │"
+          ],
+          [
+            "        ├── Tocharian (c. 3500–3000 BCE)"
+          ],
+          [
+            "        │      ↓"
+          ],
+          [
+            "        │   Afanasievo expansion east (speaking Proto-Tocharian)"
+          ],
+          [
+            "        │      ↓"
+          ],
+          [
+            "        │   Later arrival in the Tarim Basin"
+          ],
+          [
+            "        │      ↓"
+          ],
+          [
+            "        │   Tocharian A & B (6th–8th c. CE)"
+          ],
+          [
+            "        │"
+          ],
+          [
+            "        └── Remaining Indo-European branches"
+          ],
+          [
+            "              ↓"
+          ],
+          [
+            "      Yamnaya expansion (c. 3000 BCE)"
+          ],
+          [
+            "              ↓"
+          ],
+          [
+            "      Most Indo-European languages of Europe"
+          ]
+        ],
+        "sourceIndexes": [
+          48,
+          49,
+          50,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tocharian-notes-reading",
+    "title": "Tocharian reading list",
+    "number": 5,
+    "kicker": "Your notes · Tocharian",
+    "courseNotes": true,
+    "blocks": [
+      {
+        "type": "note",
+        "text": "Michael Peyrot — The Tocharian Languages (2024)",
+        "sourceIndexes": [
+          70
+        ]
+      },
+      {
+        "type": "note",
+        "text": "Douglas Q. Adams - A Biography of the Tocharian Languages (2008)",
+        "sourceIndexes": [
+          71
+        ]
+      },
+      {
+        "type": "note",
+        "text": "Douglas Q. Adams - The Culture of the Tocharians",
+        "sourceIndexes": [
+          72
+        ]
+      },
+      {
+        "type": "note",
+        "text": "Victor H. Mair - The Kingdom of Kucha and the Tocharians",
+        "sourceIndexes": [
+          73
+        ]
+      }
+    ]
+  }
+]);
