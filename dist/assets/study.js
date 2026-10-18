@@ -576,15 +576,49 @@
     return box;
   };
 
+  // Lesson text, shared with the lesson editor so Nicky can edit any lesson: "# heading", "- note", "| a | b" table rows
+  // (the first row is the head), "[text](https://…)" links, "![alt](src)" built-in pictures, "[image:id]" pasted
+  // pictures, anything else a paragraph. An edited copy lives on her device (overrides in fn-study-lessons-v1).
+  const lessonText = {
+    toText: lesson => lesson.blocks.map(b => b.type === 'heading' ? '# ' + b.text
+      : b.type === 'table' ? [b.head, ...b.rows].map(r => '| ' + r.map(c => c.replace(/\|/g, '\\|')).join(' | ')).join('\n')
+      : b.type === 'link' ? `[${b.text}](${b.href})`
+      : b.type === 'image' ? (b.image ? `[image:${b.image}]` : `![${b.alt || ''}](${b.src})`)
+      : b.type === 'paragraph' ? b.text : '- ' + b.text).join('\n\n'),
+    parse: raw => raw.replace(/[ \t]*(\[image:[a-z0-9]+\])[ \t]*/g, '\n\n$1\n\n').split(/\n\s*\n|\n(?=#+\s|[-*]\s)/)
+      .map(v => v.trim()).filter(Boolean).map(v => {
+        let m;
+        if ((m = v.match(/^\[image:([a-z0-9]+)\]$/))) return { type: 'image', image: m[1], text: '' };
+        if ((m = v.match(/^!\[([^\]]*)\]\((\S+)\)$/))) return { type: 'image', src: m[2], alt: m[1], text: '' };
+        if ((m = v.match(/^\[([^\]]+)\]\((https?:\/\/\S+)\)$/))) return { type: 'link', text: m[1], href: m[2] };
+        if (v.split('\n').every(l => l.trim().startsWith('|'))) {
+          const rows = v.split('\n').map(l => l.trim().replace(/^\|\s?/, '').replace(/\s*(?<!\\)\|$/, '').split(/\s*(?<!\\)\|\s*/).map(c => c.replace(/\\\|/g, '|')));
+          return { type: 'table', head: rows[0], rows: rows.slice(1) };
+        }
+        if (/^#+\s/.test(v)) return { type: 'heading', text: v.replace(/^#+\s/, '') };
+        if (/^[-*]\s/.test(v)) return { type: 'note', text: v.replace(/^[-*]\s/, '') };
+        return { type: 'paragraph', text: v };
+      })
+  };
+  window.fnLessonText = lessonText;
+  const edited = id => { try { return JSON.parse(localStorage.getItem('fn-study-lessons-v1'))?.overrides?.[id]; } catch (_) { return null; } };
+
   // Readable lesson views use the same hash navigation as the study topics.
   // Silver Age poetry and French (imported from Nicky's notes) share one reading layout.
-  LESSONS.forEach(({ topic, name, lessons }) => lessons.forEach((lesson, index) => {
+  const renderLesson = (topic, name, lessons, index) => {
+    const original = lessons[index], o = edited(original.id);
+    const lesson = o ? { ...original, title: o.title || original.title, blocks: lessonText.parse(o.text || ''), images: o.images || {} } : original;
     const sec = el('article', 'fn-study-view fn-lesson'); sec.id = lesson.id; sec.hidden = true;
     const back = el('a', 'fn-study-back', '← ' + name); back.href = '#' + topic;
     const bar = el('nav', 'fn-study-bar'); bar.setAttribute('aria-label', 'Lesson navigation'); bar.append(back);
+    const edit = el('button', 'fn-highlight-mode', 'Edit lesson'); edit.type = 'button';
+    edit.addEventListener('click', () => window.fnEditBuiltinLesson?.({ id: original.id, topic, title: original.title, editedTitle: o?.title,
+      text: o ? o.text : lessonText.toText(original), images: o?.images || {}, edited: !!o }));
+    bar.append(edit);
     const title = el('h2', null, lesson.title); title.id = lesson.id + '-title';
     sec.setAttribute('aria-labelledby', title.id);
-    sec.append(bar, el('p', 'fn-lesson-number', lesson.kicker || 'Lesson ' + lesson.number + ' · ' + name), title);
+    const kicker = lesson.kicker || 'Lesson ' + lesson.number + ' · ' + name;
+    sec.append(bar, el('p', 'fn-lesson-number', o ? kicker + ' · Edited on this device' : kicker), title);
     const notes = el('div', 'fn-lesson-notes'); let list;
     lesson.blocks.forEach((block, blockIndex) => {
       if (block.type === 'heading') { list = null; const heading = el('h3', null, block.text); heading.dataset.noteBlock = blockIndex; notes.append(heading); }
@@ -594,12 +628,15 @@
         block.rows.forEach(r => { const tr = el('tr'); r.forEach(c => tr.append(el('td', null, c))); table.append(tr); });
         wrap.append(table); notes.append(wrap);
       } else if (block.type === 'image') {
-        list = null; const figure = el('figure', 'fn-lesson-figure fn-course-diagram'), image = el('img');
-        image.src = block.src; image.alt = block.alt || ''; image.loading = 'lazy';
+        list = null; const src = block.image ? lesson.images?.[block.image] : block.src; if (!src) return;
+        const figure = el('figure', 'fn-lesson-figure' + (block.image ? '' : ' fn-course-diagram')), image = el('img');
+        image.src = src; image.alt = block.alt || ''; image.loading = 'lazy';
         figure.append(image); notes.append(figure);
       } else if (block.type === 'link') {
-        list = null; const p = el('p', 'fn-lesson-link'), a = el('a', null, block.text + ' ↗\uFE0E');
+        list = null; const p = el('p', 'fn-lesson-link'), a = el('a', null, block.text + ' ↗︎');
         a.href = block.href; a.target = '_blank'; a.rel = 'noopener noreferrer'; p.append(a); notes.append(p);
+      } else if (block.type === 'paragraph') {
+        list = null; const paragraph = el('p', null, block.text); paragraph.dataset.noteBlock = blockIndex; notes.append(paragraph);
       } else {
         if (!list) { list = el('ul'); notes.append(list); }
         const paragraph = el('li', null, block.text); paragraph.dataset.noteBlock = blockIndex; list.append(paragraph);
@@ -615,8 +652,20 @@
     const prev = lessons[index - 1], next = lessons[index + 1];
     if (prev) { const link = el('a', 'fn-study-back', '← Previous: ' + prev.title); link.href = '#' + prev.id; footer.append(link); }
     if (next) { const link = el('a', 'fn-study-back', 'Next: ' + next.title + ' →'); link.href = '#' + next.id; footer.append(link); }
-    sec.append(footer); root.append(sec);
-  }));
+    sec.append(footer);
+    return sec;
+  };
+  LESSONS.forEach(({ topic, name, lessons }) => lessons.forEach((lesson, index) => root.append(renderLesson(topic, name, lessons, index))));
+  // The editor calls this after saving or restoring an edited lesson, to redraw it in place
+  window.fnRedrawLesson = id => {
+    for (const { topic, name, lessons } of LESSONS) {
+      const index = lessons.findIndex(l => l.id === id); if (index < 0) continue;
+      const old = document.getElementById(id), sec = renderLesson(topic, name, lessons, index);
+      sec.hidden = old ? old.hidden : true; if (old) old.replaceWith(sec); else root.append(sec);
+      return true;
+    }
+    return false;
+  };
 
   // One room at a time: the study (no hash) or a single topic page (#opera, #new…)
   const scene = document.getElementById('fn-scene'), newBox = document.getElementById('new');
