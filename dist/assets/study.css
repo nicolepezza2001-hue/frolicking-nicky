@@ -270,19 +270,17 @@ body.fn-study{cursor:url('/assets/quill-cursor.svg') 3 29,auto}
 
 body.fn-lesson-open{min-height:100vh}
 html:has(body.fn-lesson-open){background:#faeac0}
-/* Vocab quiz: one word at a time, four choices; the right answer glows candle-yellow, a wrong pick fades. */
+/* Vocab quiz: one word at a time; Nicky types the translation, Check shows the answer in candle-yellow. */
 .fn-quiz{padding:8px 0 4px}
 .fn-quiz-progress{margin:0 0 10px;color:var(--st-soft);font-style:italic}
-.fn-quiz-q{margin:0 0 20px;font:600 clamp(1.7rem,4.5vw,2.4rem)/1.2 'Cormorant Garamond',Georgia,serif;color:var(--st-yellow);overflow-wrap:anywhere}
-.fn-quiz-options{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:20px}
-.fn-quiz-option{background:#1a1224;border:1px solid var(--st-line);border-radius:12px;color:var(--st-cream);padding:14px 16px;text-align:left;cursor:pointer;font:500 1.2rem/1.35 'Cormorant Garamond',Georgia,serif;transition:background .3s,border-color .3s,opacity .3s}
-.fn-quiz-option:hover:not(:disabled){border-color:var(--st-yellow)}
-.fn-quiz-option:focus-visible{outline:2px solid var(--st-yellow);outline-offset:2px}
-.fn-quiz-option:disabled{cursor:default;opacity:.45}
-.fn-quiz-option.is-right{opacity:1;background:var(--st-yellow);border-color:var(--st-yellow);color:var(--st-night)}
-.fn-quiz-option.is-wrong{opacity:.8;text-decoration:line-through;text-decoration-color:var(--st-yellow)}
+.fn-quiz-q{margin:0 0 16px;font:600 clamp(1.7rem,4.5vw,2.4rem)/1.2 'Cormorant Garamond',Georgia,serif;color:var(--st-yellow);overflow-wrap:anywhere}
+.fn-quiz-answer{margin:0 0 18px}
+.fn-quiz-answer input[type=text]{font-size:1.25rem}
+.fn-quiz-answer input:disabled{opacity:.7}
+.fn-quiz-result{min-height:1px}
+.fn-quiz-verdict{margin:0 0 4px;color:var(--st-soft);font-style:italic}
+.fn-quiz-solution{margin:0 0 18px;font:600 1.5rem/1.3 'Cormorant Garamond',Georgia,serif;color:var(--st-cream);overflow-wrap:anywhere}
+.fn-quiz-result .fn-vocab-modes{align-items:center}
 .fn-quiz-missed{list-style:none;margin:0 0 22px;padding:0}
 .fn-quiz-missed li{display:grid;grid-template-columns:1fr 1fr;gap:20px;padding:8px 0;border-top:1px dashed #f3d99526;font-size:1.15rem}
 .fn-quiz-missed li span:first-child{color:var(--st-yellow);font-weight:600}
-@media(prefers-reduced-motion:reduce){.fn-quiz-option{transition:none}}
-@media(max-width:760px){.fn-quiz-options{grid-template-columns:1fr}}
