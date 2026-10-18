@@ -176,7 +176,7 @@ body.fn-lesson-open{background:#faeac0}
 .fn-room-art:has([data-spot="russian"]:is(:hover,:focus-visible)) .fn-book-hover{transform:translateY(-4px) rotate(-1deg)}
 .fn-bust-smile{opacity:0;transition:opacity 1.2s ease}
 .fn-room-art:has([data-spot="french"]:is(:hover,:focus-visible)) .fn-bust-smile{opacity:1}
-.fn-room-art:has([data-spot="tocharian"]:is(:hover,:focus-visible)) .fn-horse-glint{animation:fn-bronze-shine 3s ease-in-out infinite}
+.fn-room-art:has([data-spot="hittite"]:is(:hover,:focus-visible)) .fn-horse-glint{animation:fn-bronze-shine 3s ease-in-out infinite}
 .fn-room-art:has([data-spot="linguistics"]:is(:hover,:focus-visible)) .fn-page-glint{animation:fn-page-shine 3.6s ease-in-out infinite}
 @keyframes fn-page-shine{0%{opacity:0;transform:translateX(0)}25%,65%{opacity:.55}100%{opacity:0;transform:translateX(560px)}}
 @keyframes fn-bronze-shine{0%{opacity:0;transform:translateX(0)}25%,65%{opacity:.6}100%{opacity:0;transform:translateX(120px)}}
@@ -229,8 +229,8 @@ button.fn-vocab-cell:focus-visible{outline:1px solid var(--st-yellow)}
 @media(prefers-reduced-motion:reduce){button.fn-vocab-cell{transition:none}}
 @media(max-width:760px){.fn-vocab-row{gap:12px}.fn-vocab-cell{font-size:1.12rem}}
 /* Match the bronze light to the horse, rather than the surrounding hotspot. */
-.fn-paint-spot[data-spot="tocharian"] polygon{filter:none;clip-path:url(#fn-horse)}
-.fn-paint-spot[data-spot="tocharian"]:is(:hover,:focus-visible) polygon{fill-opacity:.17}
+.fn-paint-spot[data-spot="hittite"] polygon{filter:none;clip-path:url(#fn-horse)}
+.fn-paint-spot[data-spot="hittite"]:is(:hover,:focus-visible) polygon{fill-opacity:.17}
 .fn-flower-bob{transition:filter .6s ease}
 /* This historical font has a very wide space glyph; keep ordinary single spaces. */
 .fn-paint-word,.fn-study-view h2,.fn-lesson-notes h3{word-spacing:-.38em}
@@ -325,3 +325,5 @@ html:has(body.fn-lesson-open){background:#faeac0}
 .fn-lesson-figure img{display:block;max-width:100%;height:auto;border-radius:6px;border:1px solid #2b1e3833}
 
 .fn-course-diagram img{width:100%;max-width:420px}
+
+.fn-paint-spot[data-spot="tocharian"]:is(:hover,:focus-visible) polygon{fill:#f3d995;fill-opacity:.2;filter:drop-shadow(0 0 6px #dfb75c88)}

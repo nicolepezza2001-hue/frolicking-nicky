@@ -145,6 +145,12 @@
       ]
     },
     {
+      id: 'hittite', name: ['Hittite', 'Ittita'],
+      why: ['Your Leiden summer course: Hittite grammar, cuneiform, translation exercises and reading.', 'Your Leiden summer course: Hittite grammar, cuneiform, translation exercises and reading.'],
+      path: [],
+      shelf: [['Notes', 'Appunti', 'Hittite — Leiden Summer Course 2026', 'Your original Google Doc.', 'Your original Google Doc.', 'https://docs.google.com/document/d/1mu5T3T9sjJw9dXamgjeZwOdi7HPemsGta1UVkwWLns4/edit']]
+    },
+    {
       id: 'tocharian',
       name: ['Tocharian', 'Tocario'],
       why: ['The easternmost Indo-European language: Buddhist manuscripts from the Tarim Basin, in two dialects, A and B.',
@@ -236,6 +242,7 @@
   const save = () => { try { localStorage.setItem(KEY, JSON.stringify(state)); } catch (_) {} };
 
   const LESSONS = [
+    { topic: 'hittite', name: 'Hittite', lessons: window.FN_HITTITE_LESSONS || [] },
     { topic: 'opera', name: 'Opera', lessons: window.FN_OPERA_LESSONS || [] },
     { topic: 'silver-age', name: 'Silver Age poetry', lessons: window.FN_SILVER_AGE_LESSONS || [] },
     { topic: 'french', name: 'French', lessons: window.FN_FRENCH_LESSONS || [] },
@@ -246,7 +253,7 @@
   const lessonsOf = id => LESSONS.find(x => x.topic === id)?.lessons || [];
   const pick = v => (Array.isArray(v) ? L(v[0], v[1]) : v);
   const topics = () => TOPICS.concat(state.custom.map(c => ({ ...c, custom: true, path: [], shelf: [] })));
-  const steps = t => t.path.map((s, i) => ({ key: `${t.id}:${i}`, title: pick(s[0]), note: s[2] ? L(s[1], s[2]) : s[1], href: !['pie', 'opera'].includes(t.id) && lessonsOf(t.id)[i] && '#' + lessonsOf(t.id)[i].id }))
+  const steps = t => t.path.map((s, i) => ({ key: `${t.id}:${i}`, title: pick(s[0]), note: s[2] ? L(s[1], s[2]) : s[1], href: !['pie', 'opera', 'hittite'].includes(t.id) && lessonsOf(t.id)[i] && '#' + lessonsOf(t.id)[i].id }))
     .concat(VOCAB[t.id] ? [{ key: `${t.id}:vocab`, title: 'Vocabulary', note: VOCAB[t.id][0] + ' on one side, English on the other.', href: `#${t.id}-vocabulary` }] : [])
     .concat((state.extra[t.id] || []).map(s => ({ key: `${t.id}:x${s.id}`, title: s.text, note: '', extra: s.id })));
   const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; };
@@ -448,7 +455,7 @@
 
     const grid = el('div', 'fn-study-grid');
     const left = el('div');
-    if (['pie', 'opera'].includes(t.id)) {
+    if (['pie', 'opera', 'hittite'].includes(t.id)) {
       left.append(el('h3', 'fn-study-label', 'Your course notes'));
       const notesList = el('ol', 'fn-pie-course-notes');
       lessonsOf(t.id).forEach(lesson => {
@@ -457,7 +464,7 @@
       });
       left.append(notesList);
     }
-    left.append(el('p', 'fn-study-label', ['pie', 'opera'].includes(t.id) ? 'Further study' : T.path));
+    if (t.id !== 'hittite') left.append(el('p', 'fn-study-label', ['pie', 'opera'].includes(t.id) ? 'Further study' : T.path));
     const list = el('ol', 'fn-study-path');
     steps(t).forEach(s => list.append(stepRow(t, s, counter)));
     const form = el('form', 'fn-study-add');
