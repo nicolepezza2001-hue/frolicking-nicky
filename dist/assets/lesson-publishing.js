@@ -62,7 +62,7 @@
       if(!key){setup.open=true;error.textContent='Connect a publishing key first.';return;}
       busy=true;submit.disabled=true;cancel.disabled=true;disconnect.disabled=true;error.textContent='Sending lesson to the website…';
       try{
-        const publicLesson={id:lesson.id,topic:lesson.topic,title:lesson.title,text:lesson.text,date:lesson.date||'',updatedAt:lesson.updatedAt||new Date().toISOString(),publishedAt:new Date().toISOString()};
+        const publicLesson={id:lesson.id,topic:lesson.topic,title:lesson.title,text:lesson.text,...(lesson.images?{images:lesson.images}:{}),date:lesson.date||'',updatedAt:lesson.updatedAt||new Date().toISOString(),publishedAt:new Date().toISOString()};
         let commit;
         for(let attempt=0;attempt<2;attempt++){
           const {sha,data}=await readRepo();const lessons=data.lessons.filter(l=>l.id!==lesson.id);if(!remove)lessons.push(publicLesson);
