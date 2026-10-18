@@ -284,3 +284,19 @@ html:has(body.fn-lesson-open){background:#faeac0}
 .fn-quiz-missed{list-style:none;margin:0 0 22px;padding:0}
 .fn-quiz-missed li{display:grid;grid-template-columns:1fr 1fr;gap:20px;padding:8px 0;border-top:1px dashed #f3d99526;font-size:1.15rem}
 .fn-quiz-missed li span:first-child{color:var(--st-yellow);font-weight:600}
+
+/* The quiz at the end of a lesson, in purple ink on the lesson paper */
+.fn-lesson-quiz{max-width:760px;border-top:1px solid #2b1e3840;margin-top:36px;padding-top:24px}
+.fn-lesson-quiz h3{font:800 1.4rem/1.4 'Arnold Boecklin',Georgia,serif;color:var(--st-purple);margin:0 0 6px;word-spacing:-.38em}
+.fn-lesson-quiz .fn-quiz-progress,.fn-lesson-quiz .fn-quiz-verdict{color:#2b1e38b3}
+.fn-lesson-quiz .fn-quiz-q{font-size:clamp(1.4rem,3.6vw,1.9rem);color:var(--st-purple)}
+.fn-lesson-quiz .fn-quiz-solution{color:var(--st-purple);margin-bottom:8px}
+.fn-lesson-quiz .fn-quiz-result .fn-vocab-modes{margin-top:12px}
+.fn-lesson-quiz input[type=text]{background:transparent;color:var(--st-purple);border-color:#2b1e3855}
+.fn-lesson-quiz input::placeholder{color:#2b1e3880}
+.fn-lesson-quiz input[type=text]:focus{outline-color:var(--st-purple)}
+.fn-lesson-quiz .fn-study-btn{background:var(--st-purple);color:#faeac0}
+.fn-lesson-quiz .fn-study-btn:hover{background:#45325a}
+.fn-lesson-quiz .fn-study-btn:disabled{opacity:.5;cursor:default}
+.fn-lesson-quiz .fn-quiz-missed li{border-color:#2b1e3826}
+.fn-lesson-quiz .fn-quiz-missed li span:first-child{color:var(--st-purple)}
