@@ -4,6 +4,7 @@
   const make=(tag,cls,text)=>{const e=document.createElement(tag);e.className=cls||'';if(text)e.textContent=text;return e;};
   let saved={lessons:[],draft:null};
   try{const data=JSON.parse(localStorage.getItem(KEY));if(data&&Array.isArray(data.lessons))saved=data;}catch(_){}
+  saved.trash ||= [];
   const root=document.getElementById('fn-study');if(!root)return;
   const topics=[...root.querySelectorAll('.fn-study-topic')].map(e=>({id:e.id,title:e.querySelector('h2').textContent}));
   let current=null,dirty=false;
@@ -23,7 +24,14 @@
   const preview=make('button','fn-highlight-mode','Reading view');preview.type='submit';
   const exportButton=button('Export lessons',()=>download());const importButton=button('Import lessons',()=>upload.click());
   const upload=make('input');upload.type='file';upload.accept='.json,application/json';upload.hidden=true;
-  const actions=make('div','fn-editor-actions');actions.append(preview,exportButton,importButton,upload);
+  const remove=button('Delete lesson',()=>{
+    if(!current)return;
+    if(!confirm('Delete “'+(title.value.trim()||'Untitled lesson')+'”? You can undo this from the topic page.'))return;
+    const deleted={...current,title:title.value,text:text.value,date:date.value,topic:topic.value};
+    saved.trash.push(deleted);saved.lessons=saved.lessons.filter(l=>l.id!==deleted.id);if(saved.draft?.id===deleted.id)saved.draft=null;
+    current=null;dirty=false;persist();renderLists();renderViews();location.hash=deleted.topic;
+  });remove.hidden=true;
+  const actions=make('div','fn-editor-actions');actions.append(preview,exportButton,importButton,remove,upload);
   const label=(text,field)=>{const l=make('label','fn-editor-label',text);l.append(field);return l;};
   form.append(label('Topic',topic),label('Title',title),label('Date',date),format,label('Notes',text),actions);
   editor.append(bar,heading,status,form);root.append(editor);
@@ -36,7 +44,7 @@
   const saveDraft=()=>{
     dirty=true;const now=new Date().toISOString();
     current={id:current?.id||'personal-'+Date.now().toString(36)+'-'+Math.random().toString(36).slice(2,7),topic:topic.value,title:title.value,text:text.value,date:date.value,updatedAt:now};
-    saved.draft=current;
+    saved.draft=current;remove.hidden=false;
     if(current.title.trim()||current.text.trim()){
       const index=saved.lessons.findIndex(l=>l.id===current.id);if(index<0)saved.lessons.push({...current});else saved.lessons[index]={...current};
     }
@@ -62,6 +70,7 @@
   const open=(lesson,topicId)=>{
     current=lesson?{...lesson}:null;dirty=false;
     topic.value=lesson?.topic||topicId||'silver-age';title.value=lesson?.title||'';text.value=lesson?.text||'';date.value=lesson?.date||'';
+    remove.hidden=!lesson;
     heading.textContent=lesson?'Edit lesson':'New lesson';back.href='#'+topic.value;status.textContent='Saved on this device only. Export a backup to keep another copy.';
     location.hash='lesson-editor';requestAnimationFrame(()=>title.focus());
   };
@@ -77,6 +86,8 @@
       const row=make('li'),link=make('a','fn-study-lesson-link',l.title.trim()||'Untitled lesson');link.href='#'+l.id;
       row.append(link,button('Edit',()=>open(l)));list.append(row);
     });
+    const deleted=saved.trash.filter(l=>l.topic===id).at(-1);
+    if(deleted)list.append(button('Undo deletion',()=>{saved.trash=saved.trash.filter(l=>l.id!==deleted.id);saved.lessons.push(deleted);persist();renderLists();renderViews();window.dispatchEvent(new Event('hashchange'));}));
     if(saved.draft?.topic===id&&!saved.lessons.some(l=>l.id===saved.draft.id))list.append(button('Resume draft',()=>open(saved.draft)));
   });}
   function renderViews(){
