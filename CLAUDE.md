@@ -199,6 +199,11 @@ a separate Europe close-up, the map legend or the trip buttons under the map on 
 - Every built-in lesson page has **Edit lesson**: it opens the page as text in the same editor (`fnLessonText` in
   `study.js`: # heading, - note, | table rows, [text](url), ![alt](src), [image:id]); the edit is saved on her device
   (`overrides` in `fn-study-lessons-v1`) and shown instead of the original until she presses Restore original.
-- Every French, Russian and Linguistics lesson ends with a typed quiz (`FN_LESSON_QUIZZES` in `assets/lesson-quizzes.js`,
+- Every path step opens a page (Nicky: "add notes for all other topics"). Silver Age: her two lessons, then study
+  notes (`silver-age-lessons.js`); Tocharian (`tocharian-lessons.js`) and Avestan (`avestan-lessons.js`) are study notes,
+  kicker "Study notes · …". Linguistics: **Alignment is Nicky's own notes** (her Google Doc on Harris & Campbell, word
+  for word, plus a glossary), then "Comparative syntax and Universal Grammar". Proto-Indo-European has no path any more
+  (Nicky dropped its "Further study" list): just her course notes and the shelf. Opera still has one.
+- Every French, Russian, Linguistics, Silver Age, Tocharian and Avestan lesson ends with a typed quiz (`FN_LESSON_QUIZZES` in `assets/lesson-quizzes.js`,
   `[question, answer]`, alternatives split by " / "): up to ten questions shuffled, Check shows the answer, "I was right"
   overrides. New lessons need a quiz entry too.

@@ -321,16 +321,34 @@ window.FN_LESSON_QUIZZES = {
     ['A group of words that works as a unit', 'constituent / a constituent / phrase']
   ],
   'ling-alignment': [
-    ['The single argument of an intransitive verb', 'S'],
-    ['The agent of a transitive verb', 'A'],
-    ['S = A, P different', 'nominative-accusative / accusative'],
-    ['S = P, A different', 'ergative-absolutive / ergative'],
-    ['S, A and P all different', 'tripartite'],
-    ['The case of the transitive agent in Basque', 'ergative'],
-    ['The case shared by S and P in an ergative language', 'absolutive'],
-    ['Hindi is ergative only in the perfective past: this is called…', 'split ergativity / split ergative'],
-    ['Which Hittite nouns take an ergative ending as transitive subjects?', 'neuter / neuters / neuter nouns'],
-    ['S marked like A when in control, like P when not', 'active-stative / split-S / active']
+    ['The four alignment types in Harris & Campbell', 'ergative, active, accusative, double oblique / ergative active accusative double oblique'],
+    ['In an ergative language the verb agrees with the … argument', 'absolutive'],
+    ['A split by tense or aspect: the ergative is always in the…', 'past / perfect / past tense or perfect aspect / perfective'],
+    ['Dyirbal: pronouns behave … , common nouns ergatively', 'accusatively / accusative'],
+    ['Assigning a new structure to a sentence without changing its form', 'reanalysis'],
+    ['Iranian ergativity comes from the reanalysis of…', 'passives / the passive / perfective passives'],
+    ['Kartvelian: the imperfective became accusative through the…', 'antipassive'],
+    ['I shot at the deer is an English…', 'antipassive'],
+    ['Proto-Cariban ergativity came from…', 'nominalizations / nominalisations'],
+    ['Hittite ergative neuters came from the reanalysis of…', 'instrumentals / the instrumental / ablative as instrumental'],
+    ['Tabassaran verb accusativity came from…', 'topic-copying pronouns / topic copy pronouns'],
+    ['Du Bois’s tendency to avoid new information in A', 'Preferred Argument Structure / PAS'],
+    ['The Mayan language Du Bois studied', 'Sacapultec'],
+    ['Rošani (Pamir): subject and object of transitives both oblique', 'double oblique'],
+    ['Choctaw: accusative case marking, … verb agreement', 'active'],
+    ['Sₐ is the subject of an … intransitive verb', 'active / agentive / active/agentive']
+  ],
+  'ling-comparative-syntax': [
+    ['The argument that children learn rules they never hear evidence for', 'poverty of the stimulus / the poverty of the stimulus'],
+    ['Fixed principles plus switches with a few settings', 'principles and parameters'],
+    ['Italian Parla, with no subject: the parameter?', 'null subject / pro-drop / null-subject'],
+    ['Chinese leaves question words in place. This is called…', 'wh in situ / wh-in-situ / in situ'],
+    ['German Gestern habe ich…: the verb is…', 'second / V2 / verb second'],
+    ['French Jean embrasse souvent Marie shows the verb has…', 'moved / verb movement / raised'],
+    ['Comparing close dialects one difference at a time (Kayne)', 'microparameters / microparametric syntax'],
+    ['All variation lies in functional features of the lexicon: the … conjecture', 'Borer-Chomsky / Borer Chomsky'],
+    ['The one operation of Minimalism', 'Merge'],
+    ['Unstressed clitics in second position: … law', 'Wackernagel’s / Wackernagel']
   ],
   'ling-semantics-pragmatics': [
     ['Rose is a … of flower', 'hyponym'],
@@ -390,5 +408,261 @@ window.FN_LESSON_QUIZZES = {
     ['Who showed Hittite was Indo-European?', 'Hrozný / Bedřich Hrozný / Hrozny'],
     ['The script behind Devanagari and the Tocharian script', 'Brāhmī / Brahmi'],
     ['Alternating direction, like an ox ploughing', 'boustrophedon']
+  ],
+  // Silver Age poetry: Nicky's lessons
+  'silver-age-lesson-1': [
+    ['Roughly when was the Silver Age?', '1890s–1920s / 1890s to 1920s / 1890-1920s'],
+    ['The age of Pushkin and Gogol', 'the Golden Age / Golden Age'],
+    ['Who made the term Silver Age established, in the 1920s–1930s?', 'émigré critics / emigre criticism / émigré criticism'],
+    ['Acmeism comes from the Greek akmē, meaning…', 'peak / highest point / peak or highest point'],
+    ['The most radical movement, breaking with the past', 'Futurism'],
+    ['The Futurist manifesto of 1912', 'A Slap in the Face of Public Taste'],
+    ['Literacy among people aged ten and over in 1897', '26.5% / 26.5 / about a quarter'],
+    ['Fyodor Sologub’s novel of the darker psyche', 'The Petty Demon'],
+    ['Andreyev’s story inspired by real political executions', 'The Seven Who Were Hanged'],
+    ['The year Bunin emigrated', '1920']
+  ],
+  'silver-age-lesson-2': [
+    ['Symbolism challenged the dominance of…', 'Realism'],
+    ['Four French Symbolists', 'Baudelaire, Verlaine, Rimbaud, Mallarmé / Baudelaire Verlaine Rimbaud Mallarme'],
+    ['Symbolists rejected utilitarian art for…', 'art for the sake of art / pure art / art for art’s sake'],
+    ['Merezhkovsky’s essay of 1893 was On the Causes of the…', 'Decline / Decline and on the New Trends in Contemporary Russian Literature'],
+    ['Who brought French Symbolism over to Russia?', 'Bryusov / Valery Bryusov'],
+    ['Balmont’s collection of 1903', 'Let Us Be Like the Sun'],
+    ['Whom did Balmont introduce in Russia?', 'Edgar Allan Poe / Poe'],
+    ['The theorist of collective memory, with gatherings at the Tower', 'Vyacheslav Ivanov / Ivanov'],
+    ['Westernisers vs …', 'Slavophiles'],
+    ['Decadence is resistance to…', 'bourgeois respectability']
+  ],
+  // Silver Age poetry: study notes
+  'silver-age-bely-ivanov': [
+    ['Ivanov’s salon on Tavricheskaya Street was called…', 'the Tower / Башня / Tower'],
+    ['The philosopher behind the younger Symbolists', 'Vladimir Solovyov / Solovyov'],
+    ['The Greek god Ivanov saw as a forerunner of Christ', 'Dionysus'],
+    ['Andrei Bely’s real name', 'Boris Bugaev / Bugaev'],
+    ['Bely’s novel with a bomb in a sardine tin', 'Petersburg / Петербург'],
+    ['Bely followed Rudolf Steiner’s…', 'anthroposophy'],
+    ['“A realibus ad realiora”: whose motto?', 'Ivanov / Vyacheslav Ivanov']
+  ],
+  'silver-age-gumilev': [
+    ['The movement Gumilev founded', 'Acmeism / акмеизм'],
+    ['The group he founded in 1911', 'Guild of Poets / Цех поэтов / the Guild of Poets'],
+    ['The journal that printed the Acmeist manifestos (1913)', 'Apollon / Аполлон'],
+    ['His poem about an animal by Lake Chad', 'The Giraffe / Жираф / Giraffe'],
+    ['Where he travelled several times', 'Abyssinia / Africa / East Africa / Ethiopia'],
+    ['The year he was shot', '1921'],
+    ['Заблудившийся трамвай in English', 'The Lost Tram / Lost Tram']
+  ],
+  'silver-age-akhmatova': [
+    ['Akhmatova’s real surname', 'Gorenko'],
+    ['Her first book (1912)', 'Evening / Вечер'],
+    ['Her cycle for the women outside the Leningrad prisons', 'Requiem / Реквием'],
+    ['“А это вы можете описать?” Her answer', 'Могу / I can'],
+    ['The party official who called her “half nun, half harlot”', 'Zhdanov / Андрей Жданов / Andrei Zhdanov'],
+    ['The painter who drew her in Paris', 'Modigliani'],
+    ['The long poem she rewrote for twenty-five years', 'Poem without a Hero / Поэма без героя']
+  ],
+  'silver-age-mandelstam': [
+    ['Mandelstam’s definition of Acmeism: nostalgia for…', 'world culture'],
+    ['His first book (1913)', 'Stone / Камень'],
+    ['His second book, titled after Ovid', 'Tristia'],
+    ['The poem that led to his arrest was an epigram on…', 'Stalin'],
+    ['The town of his exile and its notebooks', 'Voronezh'],
+    ['His widow, who kept his poems by heart', 'Nadezhda Mandelstam / Nadezhda'],
+    ['His essay on the Italian poet', 'Conversation about Dante / Разговор о Данте']
+  ],
+  'silver-age-tsvetaeva': [
+    ['Tsvetaeva’s father founded which museum?', 'the Pushkin Museum / Pushkin Museum of Fine Arts / Pushkin Museum'],
+    ['Her first book (1910)', 'Evening Album / Вечерний альбом'],
+    ['Her husband', 'Sergei Efron / Efron'],
+    ['The year she emigrated', '1922'],
+    ['The town where she died in 1941', 'Yelabuga / Елабуга / Elabuga'],
+    ['The punctuation mark her poems are known for', 'the dash / dash / dashes'],
+    ['The German poet she wrote to in 1926', 'Rilke / Rainer Maria Rilke']
+  ],
+  'silver-age-futurists': [
+    ['The 1912 manifesto: A Slap in the Face of…', 'Public Taste'],
+    ['Throw Pushkin off the steamship of…', 'modernity'],
+    ['Beyond-sense language', 'zaum / заумь'],
+    ['“Дыр бул щыл”: whose lines?', 'Kruchenykh / Alexei Kruchenykh'],
+    ['Khlebnikov’s poem built on смех', 'Incantation by Laughter / Заклятие смехом'],
+    ['Mayakovsky’s A Cloud in…', 'Trousers'],
+    ['The 1913 Futurist opera', 'Victory over the Sun / Победа над Солнцем'],
+    ['The leader of the Ego-Futurists', 'Igor Severyanin / Severyanin']
+  ],
+  'silver-age-pasternak': [
+    ['Pasternak’s 1917 book: My Sister…', 'Life / Сестра моя — жизнь'],
+    ['The German university where he studied philosophy', 'Marburg'],
+    ['The composer who encouraged his music', 'Scriabin'],
+    ['The publisher of Doctor Zhivago in Milan', 'Feltrinelli / Giangiacomo Feltrinelli'],
+    ['The year of his Nobel Prize', '1958'],
+    ['“Свеча горела на столе…”: the poem’s title', 'Зимняя ночь / Winter Night'],
+    ['Two works he translated', 'Hamlet / Faust / King Lear / Hamlet and Faust']
+  ],
+  'silver-age-stray-dog': [
+    ['Бродячая собака in English', 'The Stray Dog / Stray Dog'],
+    ['When it opened', 'New Year’s Eve 1911 / 1911 / 1912 / 31 December 1911'],
+    ['The actor who ran it', 'Boris Pronin / Pronin'],
+    ['What artists called the rich guests', 'pharmacists / фармацевты'],
+    ['The book where guests wrote verses', 'the Pig Book / Свиная книга / pig-leather book'],
+    ['Mayakovsky’s insulting poem read there in 1915', 'Вам! / To You!'],
+    ['Its successor (1916–1919)', 'The Comedians’ Halt / Привал комедиантов']
+  ],
+  'silver-age-one-poem': [
+    ['бессонница', 'insomnia'],
+    ['тугие паруса', 'taut sails / tight sails'],
+    ['список кораблей', 'the catalogue of ships / catalogue of ships / list of ships'],
+    ['журавлиный клин', 'a wedge of cranes / wedge of cranes'],
+    ['Когда бы не Елена…', 'if it were not for Helen / if not for Helen'],
+    ['изголовье', 'the head of a bed / head of the bed'],
+    ['“Всё движется любовью” echoes which poet?', 'Dante'],
+    ['The metre of the poem', 'iambic hexameter']
+  ],
+  // Tocharian: study notes
+  'tocharian-big-picture': [
+    ['Who showed in 1908 that Tocharian was Indo-European?', 'Sieg and Siegling / Sieg & Siegling'],
+    ['Centum or satem?', 'centum'],
+    ['“hundred” in Tocharian B', 'kante'],
+    ['Roughly which centuries are the manuscripts from?', '5th to 8th / 5th–8th / fifth to eighth'],
+    ['Another name for Tocharian A', 'Agnean'],
+    ['Another name for Tocharian B', 'Kuchean'],
+    ['The steppe culture often linked with Tocharian', 'Afanasievo']
+  ],
+  'tocharian-brahmi': [
+    ['The script variety', 'North Turkestan Brāhmī / slanting Brāhmī / North Turkestan Brahmi'],
+    ['The extra signs for consonant + ä', 'Fremdzeichen'],
+    ['The vowel every consonant sign carries', 'a'],
+    ['A script where vowels are marks on consonants', 'abugida'],
+    ['ṣ is a … s', 'retroflex'],
+    ['ś is a … s', 'palatal']
+  ],
+  'tocharian-a-b': [
+    ['“father” in A', 'pācar'],
+    ['“father” in B', 'pācer'],
+    ['“horse” in B', 'yakwe'],
+    ['“horse” in A', 'yuk'],
+    ['“two” in B', 'wi'],
+    ['“name” in B', 'ñem'],
+    ['Which one was probably no longer spoken?', 'A / Tocharian A'],
+    ['Whose dictionary covers B?', 'Adams / Douglas Q. Adams']
+  ],
+  'tocharian-sound-changes': [
+    ['PIE *p, *b and *bʰ all give…', 'p'],
+    ['PIE *ḱ in Tocharian becomes…', 'k'],
+    ['t before an old front vowel becomes…', 'c'],
+    ['k before an old front vowel becomes…', 'ś'],
+    ['s before an old front vowel becomes…', 'ṣ'],
+    ['The new central vowel found everywhere', 'ä'],
+    ['Which variety drops more unstressed vowels?', 'A / Tocharian A']
+  ],
+  'tocharian-nouns': [
+    ['The three primary cases', 'nominative, oblique, genitive / nominative oblique genitive'],
+    ['Secondary cases are built on the…', 'oblique'],
+    ['B comitative ending', '-mpa / mpa'],
+    ['B locative ending', '-ne / ne'],
+    ['B perlative ending', '-sa / sa'],
+    ['The case ending put only on the last of joined nouns', 'Gruppenflexion / group inflection'],
+    ['The gender masculine in the singular, feminine in the plural', 'alternating / genus alternans / alternans'],
+    ['B’s number for natural pairs', 'paral']
+  ],
+  'tocharian-verbs': [
+    ['The three main stems to learn', 'present, subjunctive, preterite / present subjunctive preterite'],
+    ['The mediopassive ending of the 3rd person singular', '-tär / tär'],
+    ['The B gerundive suffix', '-lle / lle'],
+    ['The infinitive ending', '-tsi / tsi'],
+    ['“to make someone do”: the … form', 'causative'],
+    ['The standard elementary book (Krause and Thomas)', 'Tocharisches Elementarbuch']
+  ],
+  'tocharian-b-text': [
+    ['The online edition of Tocharian texts', 'CEToM'],
+    ['“daughter” in B', 'tkācer'],
+    ['“teacher” in B', 'käṣṣi'],
+    ['“who” in B', 'kuse'],
+    ['Short secular B documents from Kucha, good for beginners', 'caravan passes / the caravan passes'],
+    ['The B ending for “in”', '-ne / ne']
+  ],
+  'tocharian-punyavanta': [
+    ['Puṇyavant argues that the best quality is…', 'merit / puṇya / punya'],
+    ['Which language is the jātaka in?', 'A / Tocharian A'],
+    ['The brother of skill in the arts', 'Śilpavant / Silpavant'],
+    ['The brother of wisdom', 'Prajñāvant / Prajnavant'],
+    ['Who is Puṇyavant in a past life?', 'the Buddha / Buddha / the future Buddha'],
+    ['Whose dictionary is for A?', 'Carling / Gerd Carling']
+  ],
+  'tocharian-manuscripts': [
+    ['The Berlin collection is called the … collection', 'Turfan'],
+    ['The Paris collection, from Kucha', 'Pelliot / the Pelliot collection'],
+    ['The British Library collections', 'Stein and Hoernle / Stein / Hoernle'],
+    ['The online archive of Silk Road manuscripts', 'IDP / International Dunhuang Programme'],
+    ['The long, narrow Indian page format', 'pothi']
+  ],
+  // Avestan: study notes
+  'avestan-big-picture': [
+    ['The religion of the Avesta', 'Zoroastrianism'],
+    ['The five hymns attributed to Zarathustra', 'the Gāthās / Gathas / Gāthās'],
+    ['Old Avestan or Young Avestan: the Yashts?', 'Young Avestan / Young'],
+    ['Under which dynasty were the texts written down?', 'Sasanian / the Sasanians / Sassanian'],
+    ['Who brought the manuscripts to Paris in 1762?', 'Anquetil-Duperron / Anquetil'],
+    ['The date of the oldest manuscript', '1323'],
+    ['The other attested Old Iranian language', 'Old Persian']
+  ],
+  'avestan-script': [
+    ['Direction of writing', 'right to left'],
+    ['The script it was made from', 'Book Pahlavi / Pahlavi'],
+    ['About how many letters?', '53'],
+    ['What Pahlavi did not write, but Avestan does', 'vowels / every vowel'],
+    ['What separates words', 'a dot / dot / dots']
+  ],
+  'avestan-sounds': [
+    ['Vedic sóma in Avestan', 'haoma'],
+    ['Vedic ásura in Avestan', 'ahura'],
+    ['Vedic hásta in Avestan', 'zasta'],
+    ['Vedic dáśa in Avestan', 'dasa'],
+    ['Vedic mitrá in Avestan', 'miθra / mithra'],
+    ['PII *s before a vowel becomes…', 'h'],
+    ['Vedic bhávati in Avestan', 'bauuaiti / bavaiti']
+  ],
+  'avestan-vedic': [
+    ['Vedic yajñá in Avestan', 'yasna'],
+    ['Vedic ṛtá in Avestan', 'aša / asha'],
+    ['Vedic devá means god; Avestan daēuua means…', 'demon'],
+    ['The Wise Lord', 'Ahura Mazdā / Ahura Mazda'],
+    ['Vedic áśva in Avestan', 'aspa / asp-'],
+    ['Vedic átharvan, the fire priest, in Avestan', 'āθrauuan / athravan'],
+    ['Vedic bhrā́tar in Avestan', 'brātar']
+  ],
+  'avestan-nouns-verbs': [
+    ['How many cases?', '8 / eight'],
+    ['How many numbers?', '3 / three'],
+    ['“I” in Avestan', 'azəm / azem'],
+    ['The tenseless form common in Old Avestan', 'injunctive'],
+    ['The Avestan for Vedic bhárati', 'baraiti'],
+    ['The suffix of the passive', '-ya- / ya']
+  ],
+  'avestan-ahuna-vairya': [
+    ['The first words: yaθā ahū…', 'vairiiō / vairyo'],
+    ['ratu-', 'judge / spiritual leader / time'],
+    ['aša-', 'truth / order'],
+    ['xšaθra-', 'power / rule'],
+    ['vohu- manah-', 'good thought'],
+    ['drigu-', 'poor'],
+    ['How many words, said to match the books of the Avesta?', '21 / twenty-one']
+  ],
+  'avestan-gathas': [
+    ['mainiiu-', 'spirit'],
+    ['yə̄ma-', 'twin'],
+    ['xᵛafna-', 'sleep / dream'],
+    ['The Zoroastrian triad: thought, word and…', 'deed'],
+    ['Good thoughts, good words, good deeds in Avestan', 'humata, hūxta, huuaršta / humata hukhta hvarshta'],
+    ['Syllables per line in the Ahunauuaitī Gāθā', '16 / sixteen']
+  ],
+  'avestan-yasht': [
+    ['How many Yashts?', '21 / twenty-one'],
+    ['Yašt 5 praises the goddess of the waters', 'Anāhitā / Arədvī Sūrā Anāhitā / Anahita'],
+    ['The god of the contract (Yašt 10)', 'Miθra / Mithra'],
+    ['Tištriia is the star…', 'Sirius'],
+    ['The demon of drought', 'Apaoša / Apaosha'],
+    ['The Persian epic that retells the kings of Yašt 19', 'Shāhnāmeh / Shahnameh'],
+    ['“I will worship”', 'yazāi / yazai']
   ]
 };

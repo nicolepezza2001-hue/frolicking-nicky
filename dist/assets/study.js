@@ -129,7 +129,8 @@
         ['Phonology', 'The sound system of a language: which differences count.'],
         ['Morphology', 'How words are built from smaller pieces.'],
         ['Syntax', 'How words combine into sentences.'],
-        ['Alignment', 'How languages mark who does what to whom.'],
+        ['Alignment', 'Your notes on Harris & Campbell: how ergative, active and accusative systems arise and change.'],
+        ['Comparative syntax and Universal Grammar', 'What all grammars share, and the switches that make them differ.'],
         ['Semantics and pragmatics', 'What words mean, and what speakers mean.'],
         ['Historical linguistics and sound change', 'How languages change, and how we can tell.'],
         ['Language families and typology', 'Kinship and resemblance: two ways to group languages.'],
@@ -203,17 +204,7 @@
       name: ['Proto-Indo-European', 'Protoindoeuropeo'],
       why: ['The reconstructed ancestor of them all, from Tocharian to French, and the poetry and ritual that left traces in its daughters.',
             'L’antenato ricostruito di tutte, dal tocario al francese, e la poesia e i riti che hanno lasciato tracce nelle lingue figlie.'],
-      path: [
-        [['The comparative method', 'Il metodo comparativo'], 'How you rebuild a language nobody wrote down.', 'Come si ricostruisce una lingua che nessuno ha mai scritto.'],
-        [['The family tree', 'L’albero genealogico'], 'The branches, from Anatolian and Tocharian to Indo-Iranian and Italic.', 'I rami, dall’anatolico e dal tocario all’indoiranico e all’italico.'],
-        [['Grimm’s law and friends', 'La legge di Grimm e le altre'], 'The sound laws that link pater, father and padre.', 'Le leggi fonetiche che collegano pater, father e padre.'],
-        [['Laryngeals', 'Le laringali'], 'Three lost sounds, predicted by Saussure and found in Hittite.', 'Tre suoni perduti, previsti da Saussure e ritrovati nell’ittita.'],
-        [['Ablaut', 'L’apofonia'], 'e, o and zero: sing, sang, sung.', 'e, o e grado zero: sing, sang, sung.'],
-        [['Nouns and verbs', 'Nomi e verbi'], 'Eight cases, thematic and athematic verbs.', 'Otto casi, verbi tematici e atematici.'],
-        [['Poetic formulas', 'Le formule poetiche'], '“Imperishable fame”, kléos áphthiton and śrávas ákṣitam.', '“Fama imperitura”, kléos áphthiton e śrávas ákṣitam.'],
-        [['Soma and haoma', 'Soma e haoma'], 'The sacred drink of the Indo-Iranians, and the goblet on the table.', 'La bevanda sacra degli indoiranici, e il calice sul tavolo.'],
-        [['Schleicher’s fable', 'La favola di Schleicher'], 'The sheep and the horses, in each new reconstruction since 1868.', 'La pecora e i cavalli, in ogni nuova ricostruzione dal 1868.']
-      ],
+      path: [], // Nicky dropped the further-study list; her course notes are listed above the shelf
       shelf: [
         ['Notes', 'Appunti', 'Indo-European Language and Culture — source document', 'Your original Google Doc.', 'Your original Google Doc.', 'https://docs.google.com/document/d/1MXldDHErDOBBTdOoZGTa6bRrHNsOXaXUIvW5W6_-CG0/edit'],
         ['Book', 'Libro', 'Fortson, Indo-European Language and Culture', 'The best introduction, branch by branch.', 'La migliore introduzione, ramo per ramo.'],
@@ -248,7 +239,9 @@
     { topic: 'french', name: 'French', lessons: window.FN_FRENCH_LESSONS || [] },
     { topic: 'russian', name: 'Russian', lessons: window.FN_RUSSIAN_LESSONS || [] },
     { topic: 'pie', name: 'Proto-Indo-European', lessons: window.FN_PIE_LESSONS || [] },
-    { topic: 'linguistics', name: 'Linguistics', lessons: window.FN_LINGUISTICS_LESSONS || [] }
+    { topic: 'linguistics', name: 'Linguistics', lessons: window.FN_LINGUISTICS_LESSONS || [] },
+    { topic: 'tocharian', name: 'Tocharian', lessons: window.FN_TOCHARIAN_LESSONS || [] },
+    { topic: 'avestan', name: 'Avestan', lessons: window.FN_AVESTAN_LESSONS || [] }
   ];
   const lessonsOf = id => LESSONS.find(x => x.topic === id)?.lessons || [];
   const pick = v => (Array.isArray(v) ? L(v[0], v[1]) : v);
@@ -464,7 +457,8 @@
       });
       left.append(notesList);
     }
-    if (t.id !== 'hittite') left.append(el('p', 'fn-study-label', ['pie', 'opera'].includes(t.id) ? 'Further study' : T.path));
+    const pathless = !t.path.length && !(state.extra[t.id] || []).length; // PIE: course notes only
+    if (!pathless) left.append(el('p', 'fn-study-label', ['pie', 'opera'].includes(t.id) ? 'Further study' : T.path));
     const list = el('ol', 'fn-study-path');
     steps(t).forEach(s => list.append(stepRow(t, s, counter)));
     const form = el('form', 'fn-study-add');
@@ -478,7 +472,7 @@
       list.append(stepRow(t, { key: `${t.id}:x${item.id}`, title: v, note: '', extra: item.id }, counter));
       input.value = ''; count(t, counter); input.focus();
     });
-    left.append(list, form);
+    if (!pathless) left.append(list, form);
 
     const right = el('div');
     if (t.shelf.length) {
