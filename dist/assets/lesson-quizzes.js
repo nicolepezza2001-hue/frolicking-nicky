@@ -273,5 +273,122 @@ window.FN_LESSON_QUIZZES = {
     ['трудиться, in speech', 'работать'],
     ['I did say so! (a woman, with же)', 'Я же сказала!'],
     ['Did you really not know? (surprise)', 'Неужели ты не знал? / Неужели ты не знала? / Разве ты не знал?']
+  ],
+  // Linguistics: study notes
+  'ling-phonetics': [
+    ['[b]: voicing, place and manner', 'voiced bilabial plosive / voiced bilabial stop'],
+    ['[ʃ]: voicing, place and manner', 'voiceless postalveolar fricative'],
+    ['The symbol for a voiced velar nasal (sing)', 'ŋ'],
+    ['Russian ы, in the IPA', 'ɨ'],
+    ['French tu has which vowel symbol?', 'y'],
+    ['What does [ʲ] mark?', 'palatalisation / palatalization'],
+    ['The puff of air in English pin is called…', 'aspiration'],
+    ['Square brackets or slashes for phonemic transcription?', 'slashes'],
+    ['The mid central vowel is called…', 'schwa'],
+    ['The IPA mark for a long sound', 'ː']
+  ],
+  'ling-phonology': [
+    ['Two words that differ in one sound only', 'a minimal pair / minimal pair'],
+    ['Predictable variants of one phoneme are called…', 'allophones'],
+    ['Two sounds that never occur in the same place are in … distribution', 'complementary'],
+    ['Russian город ends in [t]. The process?', 'final devoicing'],
+    ['in + possibile → impossibile. The process?', 'assimilation'],
+    ['Latin hominem → Spanish hombre (b added). The process?', 'epenthesis'],
+    ['The rules for which sound clusters a language allows', 'phonotactics'],
+    ['In cat, [t] is the syllable’s…', 'coda'],
+    ['In Hindi, [p] and [pʰ] are separate…', 'phonemes']
+  ],
+  'ling-morphology': [
+    ['The smallest unit with meaning', 'morpheme / a morpheme'],
+    ['How many morphemes in unbreakable?', '3 / three'],
+    ['A variant of a morpheme, like [s] [z] [ɪz]', 'allomorph / an allomorph'],
+    ['read → reader: inflection or derivation?', 'derivation'],
+    ['go, went: the process?', 'suppletion'],
+    ['sing, sang, sung: the process?', 'ablaut'],
+    ['Latin pe-pul-ī: the process?', 'reduplication'],
+    ['German ge-spiel-t: the process?', 'circumfixation'],
+    ['Turkish ev-ler-im-de: which type of language?', 'agglutinative'],
+    ['One ending, several meanings at once (Russian -ам)', 'fusional']
+  ],
+  'ling-syntax': [
+    ['The word that gives a phrase its type', 'head / the head'],
+    ['The most common word order in the world’s languages', 'SOV'],
+    ['Irish and Welsh word order', 'VSO'],
+    ['Russian без + genitive: agreement or government?', 'government'],
+    ['le case bianche, all feminine plural: agreement or government?', 'agreement'],
+    ['OV languages tend to have prepositions or postpositions?', 'postpositions'],
+    ['Optional detail like quickly in eat quickly', 'adjunct / an adjunct'],
+    ['A group of words that works as a unit', 'constituent / a constituent / phrase']
+  ],
+  'ling-alignment': [
+    ['The single argument of an intransitive verb', 'S'],
+    ['The agent of a transitive verb', 'A'],
+    ['S = A, P different', 'nominative-accusative / accusative'],
+    ['S = P, A different', 'ergative-absolutive / ergative'],
+    ['S, A and P all different', 'tripartite'],
+    ['The case of the transitive agent in Basque', 'ergative'],
+    ['The case shared by S and P in an ergative language', 'absolutive'],
+    ['Hindi is ergative only in the perfective past: this is called…', 'split ergativity / split ergative'],
+    ['Which Hittite nouns take an ergative ending as transitive subjects?', 'neuter / neuters / neuter nouns'],
+    ['S marked like A when in control, like P when not', 'active-stative / split-S / active']
+  ],
+  'ling-semantics-pragmatics': [
+    ['Rose is a … of flower', 'hyponym'],
+    ['Wheel is a … of car', 'meronym'],
+    ['One word, related meanings (the mouth of a river)', 'polysemy'],
+    ['Same reference, different sense: the morning star and…', 'the evening star / evening star'],
+    ['The king of France is bald takes for granted there is a king. This is a…', 'presupposition'],
+    ['Words like I, here, now, whose meaning depends on the situation', 'deixis / deictics'],
+    ['Can you pass the salt? is an … speech act', 'indirect'],
+    ['Grice’s maxim: be relevant', 'relation'],
+    ['Grice’s maxim: say as much as is needed', 'quantity'],
+    ['Some of the students passed suggests not all did. This inference is an…', 'implicature']
+  ],
+  'ling-historical': [
+    ['PIE *p → Germanic …', 'f'],
+    ['The law that explains Gothic fadar beside broþar', 'Verner’s law / Verner'],
+    ['*s → š after r, u, k, i', 'the ruki rule / ruki rule / ruki'],
+    ['Latin vita → Spanish vida [ˈbiða]: the change?', 'lenition'],
+    ['Old English brid → bird: the change?', 'metathesis'],
+    ['helpan, healp → help, helped: sound change or analogy?', 'analogy'],
+    ['Who said sound laws have no exceptions (1870s)?', 'the Neogrammarians / Neogrammarians'],
+    ['Latin cantare habeo → Italian canterò: the process?', 'grammaticalisation / grammaticalization'],
+    ['deer once meant any animal: broadening or narrowing?', 'narrowing'],
+    ['The symbol that marks a reconstructed form', '*']
+  ],
+  'ling-families-typology': [
+    ['The family of Swahili, Yoruba and Zulu', 'Niger-Congo'],
+    ['The family of Finnish and Hungarian', 'Uralic'],
+    ['The family of Malay, Tagalog and Māori', 'Austronesian'],
+    ['A language with no known relatives', 'isolate / an isolate / language isolate'],
+    ['A European isolate', 'Basque'],
+    ['The branch of Hittite', 'Anatolian'],
+    ['Latin centum, Avestan satəm: the two groups', 'centum and satem'],
+    ['Unrelated languages grown alike through contact', 'Sprachbund / a Sprachbund'],
+    ['A pidgin that children learn as a first language becomes a…', 'creole'],
+    ['If a language is VSO, it has…', 'prepositions']
+  ],
+  'ling-sociolinguistics': [
+    ['A variety tied to a region', 'dialect / a dialect'],
+    ['A variety tied to a social group', 'sociolect / a sociolect'],
+    ['A variety tied to a situation (formal, casual)', 'register / a register'],
+    ['Who studied r in New York department stores?', 'Labov / William Labov'],
+    ['Non-standard forms valued for solidarity have … prestige', 'covert'],
+    ['Two varieties with separate jobs, high and low', 'diglossia'],
+    ['Moving between languages in one conversation', 'code-switching / code switching'],
+    ['“A language is a dialect with an army and navy.” Who?', 'Max Weinreich / Weinreich'],
+    ['Pronouns like tu / vous, ты / вы are called…', 'T-V pronouns / TV pronouns / T and V pronouns / T-V / T and V']
+  ],
+  'ling-writing-systems': [
+    ['A script of consonants only, vowels optional', 'abjad / an abjad'],
+    ['A consonant with an inherent vowel, changed by marks (Devanagari)', 'abugida / an abugida'],
+    ['Japanese kana and Linear B are…', 'syllabaries / syllabary / a syllabary'],
+    ['Korean Hangul is a … script', 'featural'],
+    ['Who deciphered Linear B?', 'Michael Ventris / Ventris'],
+    ['Linear B turned out to be…', 'Mycenaean Greek / Greek'],
+    ['Who deciphered Egyptian hieroglyphs?', 'Champollion / Jean-François Champollion'],
+    ['Who showed Hittite was Indo-European?', 'Hrozný / Bedřich Hrozný / Hrozny'],
+    ['The script behind Devanagari and the Tocharian script', 'Brāhmī / Brahmi'],
+    ['Alternating direction, like an ox ploughing', 'boustrophedon']
   ]
 };
