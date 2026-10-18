@@ -311,3 +311,8 @@ html:has(body.fn-lesson-open){background:#faeac0}
 .fn-publish-dialog details{margin:18px 0}
 .fn-publish-dialog summary{cursor:pointer}
 .fn-personal-status{font:12px/1.4 Georgia,serif;color:var(--st-soft);white-space:nowrap}
+
+.fn-pie-course-notes{margin:0 0 32px;padding:0 0 0 1.2em}
+.fn-pie-course-notes li{padding:10px 0;border-top:1px dashed #f3d99526}
+.fn-pie-course-notes li:first-child{border-top:0}
+.fn-pie-course-notes small{display:block;color:var(--st-soft);font-size:.9rem;margin-top:3px}

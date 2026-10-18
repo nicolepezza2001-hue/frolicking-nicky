@@ -197,6 +197,7 @@
         [['Schleicher’s fable', 'La favola di Schleicher'], 'The sheep and the horses, in each new reconstruction since 1868.', 'La pecora e i cavalli, in ogni nuova ricostruzione dal 1868.']
       ],
       shelf: [
+        ['Notes', 'Appunti', 'Indo-European Language and Culture — source document', 'Your original Google Doc.', 'Your original Google Doc.', 'https://docs.google.com/document/d/1MXldDHErDOBBTdOoZGTa6bRrHNsOXaXUIvW5W6_-CG0/edit'],
         ['Book', 'Libro', 'Fortson, Indo-European Language and Culture', 'The best introduction, branch by branch.', 'La migliore introduzione, ramo per ramo.'],
         ['Book', 'Libro', 'Mallory & Adams, The Oxford Introduction to Proto-Indo-European', 'Words, culture and the world they describe.', 'Le parole, la cultura e il mondo che descrivono.'],
         ['Book', 'Libro', 'Watkins, How to Kill a Dragon', 'Indo-European poetics, myth and formula.', 'La poetica indoeuropea, il mito e le formule.'],
@@ -225,12 +226,13 @@
   const LESSONS = [
     { topic: 'silver-age', name: 'Silver Age poetry', lessons: window.FN_SILVER_AGE_LESSONS || [] },
     { topic: 'french', name: 'French', lessons: window.FN_FRENCH_LESSONS || [] },
-    { topic: 'russian', name: 'Russian', lessons: window.FN_RUSSIAN_LESSONS || [] }
+    { topic: 'russian', name: 'Russian', lessons: window.FN_RUSSIAN_LESSONS || [] },
+    { topic: 'pie', name: 'Proto-Indo-European', lessons: window.FN_PIE_LESSONS || [] }
   ];
   const lessonsOf = id => LESSONS.find(x => x.topic === id)?.lessons || [];
   const pick = v => (Array.isArray(v) ? L(v[0], v[1]) : v);
   const topics = () => TOPICS.concat(state.custom.map(c => ({ ...c, custom: true, path: [], shelf: [] })));
-  const steps = t => t.path.map((s, i) => ({ key: `${t.id}:${i}`, title: pick(s[0]), note: s[2] ? L(s[1], s[2]) : s[1], href: lessonsOf(t.id)[i] && '#' + lessonsOf(t.id)[i].id }))
+  const steps = t => t.path.map((s, i) => ({ key: `${t.id}:${i}`, title: pick(s[0]), note: s[2] ? L(s[1], s[2]) : s[1], href: t.id !== 'pie' && lessonsOf(t.id)[i] && '#' + lessonsOf(t.id)[i].id }))
     .concat(VOCAB[t.id] ? [{ key: `${t.id}:vocab`, title: 'Vocabulary', note: VOCAB[t.id][0] + ' on one side, English on the other.', href: `#${t.id}-vocabulary` }] : [])
     .concat((state.extra[t.id] || []).map(s => ({ key: `${t.id}:x${s.id}`, title: s.text, note: '', extra: s.id })));
   const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; };
@@ -431,7 +433,17 @@
     const why = pick(t.why); if (why) sec.append(el('p', 'fn-study-why', why));
 
     const grid = el('div', 'fn-study-grid');
-    const left = el('div'); left.append(el('p', 'fn-study-label', T.path));
+    const left = el('div');
+    if (t.id === 'pie') {
+      left.append(el('h3', 'fn-study-label', 'Your course notes'));
+      const notesList = el('ol', 'fn-pie-course-notes');
+      lessonsOf('pie').forEach(lesson => {
+        const row = el('li'), link = el('a', 'fn-study-lesson-link', lesson.title); link.href = '#' + lesson.id;
+        row.append(link, el('small', null, lesson.kicker)); notesList.append(row);
+      });
+      left.append(notesList);
+    }
+    left.append(el('p', 'fn-study-label', t.id === 'pie' ? 'Further study' : T.path));
     const list = el('ol', 'fn-study-path');
     steps(t).forEach(s => list.append(stepRow(t, s, counter)));
     const form = el('form', 'fn-study-add');
