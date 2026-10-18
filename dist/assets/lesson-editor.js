@@ -7,7 +7,7 @@
   saved.trash ||= [];
   const root=document.getElementById('fn-study');if(!root)return;
   const topics=[...root.querySelectorAll('.fn-study-topic')].map(e=>({id:e.id,title:e.querySelector('h2').textContent}));
-  let current=null,dirty=false,published=[];
+  let current=null,dirty=false,published=[],base=null; // base: the built-in lesson being edited, if any
   const allLessons=()=>{const byId=new Map(published.map(l=>[l.id,l]));saved.lessons.forEach(l=>byId.set(l.id,l));return [...byId.values()];};
   const isOnline=id=>published.some(l=>l.id===id);
   const publicationLabel=lesson=>{const online=published.find(l=>l.id===lesson.id);if(!online)return 'On this device';return ['title','text','topic','date'].some(k=>(online[k]||'')!==(lesson[k]||''))||JSON.stringify(online.images||{})!==JSON.stringify(lesson.images||{})?'Online · local changes':'Online';};
@@ -58,6 +58,10 @@
   const exportButton=button('Export lessons',()=>download());const importButton=button('Import lessons',()=>upload.click());
   const upload=make('input');upload.type='file';upload.accept='.json,application/json';upload.hidden=true;
   const remove=button('Delete lesson',()=>{
+    if(base){
+      if(!confirm('Restore the original “'+base.title+'”? Your changes to it will be lost.'))return;
+      delete saved.overrides?.[base.id];dirty=false;persist();window.fnRedrawLesson?.(base.id);location.hash=base.id;return;
+    }
     if(!current)return;
     if(isOnline(current.id)){status.textContent='This lesson is online. Unpublish it before deleting the device copy.';return;}
     if(!confirm('Delete “'+(title.value.trim()||'Untitled lesson')+'”? You can undo this from the topic page.'))return;
@@ -77,7 +81,8 @@
   });unpublish.hidden=true;
   const actions=make('div','fn-editor-actions');actions.append(preview,publish,exportButton,importButton,unpublish,remove,upload);
   const label=(text,field)=>{const l=make('label','fn-editor-label',text);l.append(field);return l;};
-  form.append(label('Topic',topic),label('Title',title),label('Date',date),format,label('Notes',text),thumbs,picker,actions);
+  const topicLabel=label('Topic',topic),dateLabel=label('Date',date);
+  form.append(topicLabel,label('Title',title),dateLabel,format,label('Notes',text),thumbs,picker,actions);
   editor.append(bar,heading,status,form);root.append(editor);
   const persist=()=>{try{localStorage.setItem(KEY,JSON.stringify(saved));status.textContent='Saved on this device · Export a backup for another copy.';return true;}catch(_){status.textContent='Could not save on this device: it may be full of pictures. Export your lessons, then remove a picture or two.';return false;}};
   const normalise=raw=>{
@@ -89,6 +94,7 @@
   const kept=value=>{const out={};tokens(value).forEach(id=>{if(images[id])out[id]=images[id];});return Object.keys(out).length?out:undefined;};
   const saveDraft=()=>{
     dirty=true;const now=new Date().toISOString();
+    if(base){(saved.overrides||={})[base.id]={title:title.value,text:text.value,images:kept(text.value),updatedAt:now};remove.hidden=false;drawThumbs();persist();return;}
     current={id:current?.id||'personal-'+Date.now().toString(36)+'-'+Math.random().toString(36).slice(2,7),topic:topic.value,title:title.value,text:text.value,date:date.value,updatedAt:now,images:kept(text.value)};drawThumbs();
     saved.draft=current;remove.hidden=false;
     if(current.title.trim()||current.text.trim()){
@@ -98,7 +104,7 @@
   };
   [topic,title,date,text].forEach(field=>field.addEventListener('input',saveDraft));
   const download=()=>{
-    const data={format:'frolicking-nicky-personal-lessons',version:1,exportedAt:new Date().toISOString(),lessons:allLessons(),draft:saved.draft};
+    const data={format:'frolicking-nicky-personal-lessons',version:1,exportedAt:new Date().toISOString(),lessons:allLessons(),draft:saved.draft,overrides:saved.overrides||{}};
     const url=URL.createObjectURL(new Blob([JSON.stringify(data,null,2)],{type:'application/json'}));
     const a=make('a');a.href=url;a.download='frolicking-nicky-lessons-'+new Date().toISOString().slice(0,10)+'.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
   };
@@ -107,13 +113,26 @@
     try{
       const data=JSON.parse(await file.text());const imported=data.personalLessons?.lessons||data.lessons;
       if(!Array.isArray(imported))throw Error('Not a lesson backup');
-      const valid=imported.map(normalise).filter(Boolean);if(!valid.length)throw Error('No personal lessons found');
+      const valid=imported.map(normalise).filter(Boolean);const edits=data.personalLessons?.overrides||data.overrides||{};
+      if(!valid.length&&!Object.keys(edits).length)throw Error('No personal lessons found');
+      // Edited built-in lessons come back too (newer edits on this device win)
+      Object.entries(edits).forEach(([id,o])=>{if(typeof o?.text!=='string')return;const mine=(saved.overrides||={})[id];if(!mine||(o.updatedAt||'')>(mine.updatedAt||''))saved.overrides[id]=o;window.fnRedrawLesson?.(id);});
       // Existing newer edits win when importing an older backup.
       valid.forEach(l=>{const i=saved.lessons.findIndex(v=>v.id===l.id);if(i<0)saved.lessons.push(l);else if(l.updatedAt>saved.lessons[i].updatedAt)saved.lessons[i]=l;});
       if(!persist())return;renderLists();renderViews();status.textContent='Imported '+valid.length+' lessons. Saved on this device.';
     }catch(e){status.textContent='Could not import: '+e.message;}upload.value='';
   });
+  const builtinMode=on=>{topic.disabled=on;topicLabel.hidden=on;dateLabel.hidden=on;publish.hidden=on;exportButton.hidden=importButton.hidden=false;remove.textContent=on?'Restore original':'Delete lesson';};
+  // Edit a built-in lesson (study.js passes it as text): changes save as an edited copy on this device
+  window.fnEditBuiltinLesson=lesson=>{
+    base=lesson;current=null;dirty=false;builtinMode(true);
+    topic.value=lesson.topic;title.value=lesson.editedTitle||lesson.title;text.value=lesson.text;images={...lesson.images};drawThumbs();
+    remove.hidden=!lesson.edited;unpublish.hidden=true;heading.textContent='Edit lesson';back.href='#'+lesson.id;
+    status.textContent='Your changes save on this device as you type. Restore original undoes them.';
+    location.hash='lesson-editor';requestAnimationFrame(()=>text.focus());
+  };
   const open=(lesson,topicId)=>{
+    base=null;builtinMode(false);
     current=lesson?{...lesson}:null;dirty=false;
     topic.value=lesson?.topic||topicId||'silver-age';title.value=lesson?.title||'';text.value=lesson?.text||'';date.value=lesson?.date||'';images={...(lesson?.images||{})};drawThumbs();
     remove.hidden=!lesson;unpublish.hidden=!lesson||!isOnline(lesson.id);
@@ -149,11 +168,11 @@
       if(blocks.length)window.fnAnnotateLesson?.({id:l.id,title:l.title,blocks},notes,margin,view);
     });
   }
-  form.addEventListener('submit',e=>{e.preventDefault();saveDraft();saved.draft=null;persist();renderViews();location.hash=current.id;});
-  back.addEventListener('click',()=>{if(dirty)saveDraft();renderViews();});
+  form.addEventListener('submit',e=>{e.preventDefault();saveDraft();if(base){dirty=false;window.fnRedrawLesson?.(base.id);location.hash=base.id;return;}saved.draft=null;persist();renderViews();location.hash=current.id;});
+  back.addEventListener('click',()=>{if(dirty)saveDraft();if(base){dirty=false;window.fnRedrawLesson?.(base.id);}else renderViews();});
   window.addEventListener('hashchange',()=>{
-    if(location.hash==='#lesson-editor'&&!current&&saved.draft)open(saved.draft);
-    if(location.hash!=='#lesson-editor'&&dirty){saveDraft();dirty=false;renderViews();window.dispatchEvent(new Event('hashchange'));}
+    if(location.hash==='#lesson-editor'&&!current&&!base&&saved.draft)open(saved.draft);
+    if(location.hash!=='#lesson-editor'&&dirty){saveDraft();dirty=false;if(base)window.fnRedrawLesson?.(base.id);else renderViews();window.dispatchEvent(new Event('hashchange'));}
     const view=document.getElementById(decodeURIComponent(location.hash.slice(1)));if(view?.classList.contains('fn-personal-lesson-view')){view.hidden=false;document.getElementById('fn-scene').hidden=true;document.body.classList.add('fn-study-open','fn-lesson-open');}
   });
   const receiveOnline=lessons=>{

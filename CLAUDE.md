@@ -196,6 +196,9 @@ a separate Europe close-up, the map legend or the trip buttons under the map on 
   Every path step opens a page (Nicky had the placeholder steps without notes removed). Agree new topics with her first.
 - Nicky's own lessons (`assets/lesson-editor.js`) take pictures: paste, drop or "Add image". Each is shrunk to a 1200px
   JPEG and kept in the lesson's `images`; the notes hold an `[image:id]` line where it goes (delete the line to remove it).
+- Every built-in lesson page has **Edit lesson**: it opens the page as text in the same editor (`fnLessonText` in
+  `study.js`: # heading, - note, | table rows, [text](url), ![alt](src), [image:id]); the edit is saved on her device
+  (`overrides` in `fn-study-lessons-v1`) and shown instead of the original until she presses Restore original.
 - Every French, Russian and Linguistics lesson ends with a typed quiz (`FN_LESSON_QUIZZES` in `assets/lesson-quizzes.js`,
   `[question, answer]`, alternatives split by " / "): up to ten questions shuffled, Check shows the answer, "I was right"
   overrides. New lessons need a quiz entry too.
