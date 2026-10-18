@@ -104,7 +104,8 @@
         ['Book', 'Libro', 'Bescherelle: La conjugaison pour tous', 'Every verb, conjugated.', 'Tutti i verbi, coniugati.'],
         ['Book', 'Libro', 'Grevisse, Le Bon Usage', 'The great grammar, for settling arguments.', 'La grande grammatica, per risolvere le dispute.'],
         ['Online', 'Online', 'TV5Monde Apprendre', 'Free lessons built on real news and TV.', 'Lezioni gratuite costruite su notizie e TV vere.', 'https://apprendre.tv5monde.com/'],
-        ['Online', 'Online', 'Le Robert', 'The dictionary, online.', 'Il dizionario, online.', 'https://dictionnaire.lerobert.com/']
+        ['Online', 'Online', 'Le Robert', 'The dictionary, online.', 'Il dizionario, online.', 'https://dictionnaire.lerobert.com/'],
+        ['Podcast', 'Podcast', 'Little Talk in Slow French', 'Everyday French, spoken slowly.', 'Francese di tutti i giorni, parlato lentamente.', 'https://www.spreaker.com/podcast/little-talk-in-slow-french--6084166']
       ]
     },
     {
