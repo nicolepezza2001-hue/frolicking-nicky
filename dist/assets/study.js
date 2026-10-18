@@ -123,7 +123,18 @@
       name: ['Linguistics', 'Linguistica'],
       why: ['How language works: sounds, words, grammar and meaning, and how languages change and branch into families.',
             'Come funziona il linguaggio: suoni, parole, grammatica e significato, e come le lingue cambiano e si ramificano in famiglie.'],
-      path: [],
+      path: [ // Each opens its page in FN_LINGUISTICS_LESSONS (linguistics-lessons.js), in order
+        ['Phonetics and the IPA', 'How speech sounds are made, and one alphabet for all of them.'],
+        ['Phonology', 'The sound system of a language: which differences count.'],
+        ['Morphology', 'How words are built from smaller pieces.'],
+        ['Syntax', 'How words combine into sentences.'],
+        ['Alignment', 'How languages mark who does what to whom.'],
+        ['Semantics and pragmatics', 'What words mean, and what speakers mean.'],
+        ['Historical linguistics and sound change', 'How languages change, and how we can tell.'],
+        ['Language families and typology', 'Kinship and resemblance: two ways to group languages.'],
+        ['Sociolinguistics', 'Language in society: who speaks how, and why.'],
+        ['Writing systems', 'How languages are written down.']
+      ],
       shelf: [
         ['Book', 'Libro', 'David Crystal, The Cambridge Encyclopedia of Language', 'The whole field, beautifully illustrated.', 'Tutto il campo, splendidamente illustrato.'],
         ['Book', 'Libro', 'Fromkin, Rodman & Hyams, An Introduction to Language', 'The classic first textbook.', 'Il manuale introduttivo classico.'],
@@ -227,7 +238,8 @@
     { topic: 'silver-age', name: 'Silver Age poetry', lessons: window.FN_SILVER_AGE_LESSONS || [] },
     { topic: 'french', name: 'French', lessons: window.FN_FRENCH_LESSONS || [] },
     { topic: 'russian', name: 'Russian', lessons: window.FN_RUSSIAN_LESSONS || [] },
-    { topic: 'pie', name: 'Proto-Indo-European', lessons: window.FN_PIE_LESSONS || [] }
+    { topic: 'pie', name: 'Proto-Indo-European', lessons: window.FN_PIE_LESSONS || [] },
+    { topic: 'linguistics', name: 'Linguistics', lessons: window.FN_LINGUISTICS_LESSONS || [] }
   ];
   const lessonsOf = id => LESSONS.find(x => x.topic === id)?.lessons || [];
   const pick = v => (Array.isArray(v) ? L(v[0], v[1]) : v);
