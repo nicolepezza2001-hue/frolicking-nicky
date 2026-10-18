@@ -7,7 +7,11 @@
   saved.trash ||= [];
   const root=document.getElementById('fn-study');if(!root)return;
   const topics=[...root.querySelectorAll('.fn-study-topic')].map(e=>({id:e.id,title:e.querySelector('h2').textContent}));
-  let current=null,dirty=false;
+  let current=null,dirty=false,published=[];
+  const allLessons=()=>{const byId=new Map(published.map(l=>[l.id,l]));saved.lessons.forEach(l=>byId.set(l.id,l));return [...byId.values()];};
+  const isOnline=id=>published.some(l=>l.id===id);
+  const publicationLabel=lesson=>{const online=published.find(l=>l.id===lesson.id);if(!online)return 'On this device';return ['title','text','topic','date'].some(k=>(online[k]||'')!==(lesson[k]||''))?'Online · local changes':'Online';};
+
   const editor=make('section','fn-study-view fn-lesson fn-lesson-editor');editor.id='lesson-editor';editor.hidden=true;
   const bar=make('nav','fn-study-bar'),back=make('a','fn-study-back','← Back to topic');back.href='#silver-age';bar.append(back);
   const status=make('p','fn-editor-status','Saved on this device only. Export a backup to keep another copy.');status.setAttribute('role','status');
@@ -26,12 +30,23 @@
   const upload=make('input');upload.type='file';upload.accept='.json,application/json';upload.hidden=true;
   const remove=button('Delete lesson',()=>{
     if(!current)return;
+    if(isOnline(current.id)){status.textContent='This lesson is online. Unpublish it before deleting the device copy.';return;}
     if(!confirm('Delete “'+(title.value.trim()||'Untitled lesson')+'”? You can undo this from the topic page.'))return;
     const deleted={...current,title:title.value,text:text.value,date:date.value,topic:topic.value};
     saved.trash.push(deleted);saved.lessons=saved.lessons.filter(l=>l.id!==deleted.id);if(saved.draft?.id===deleted.id)saved.draft=null;
     current=null;dirty=false;persist();renderLists();renderViews();location.hash=deleted.topic;
   });remove.hidden=true;
-  const actions=make('div','fn-editor-actions');actions.append(preview,exportButton,importButton,remove,upload);
+  const publish=button('Publish',async()=>{
+    if(!form.reportValidity())return;saveDraft();
+    if(!current.text.trim()){status.textContent='Write some lesson notes before publishing.';return;}
+    publish.disabled=true;
+    try{await window.fnPublishLesson(current,message=>{status.textContent=message;});}catch(e){status.textContent=e.message;}finally{publish.disabled=false;}
+  });
+  const unpublish=button('Unpublish',async()=>{
+    if(!current)return;saveDraft();unpublish.disabled=true;
+    try{await window.fnPublishLesson(current,message=>{status.textContent=message;},true);}catch(e){status.textContent=e.message;}finally{unpublish.disabled=false;}
+  });unpublish.hidden=true;
+  const actions=make('div','fn-editor-actions');actions.append(preview,publish,exportButton,importButton,unpublish,remove,upload);
   const label=(text,field)=>{const l=make('label','fn-editor-label',text);l.append(field);return l;};
   form.append(label('Topic',topic),label('Title',title),label('Date',date),format,label('Notes',text),actions);
   editor.append(bar,heading,status,form);root.append(editor);
@@ -52,7 +67,7 @@
   };
   [topic,title,date,text].forEach(field=>field.addEventListener('input',saveDraft));
   const download=()=>{
-    const data={format:'frolicking-nicky-personal-lessons',version:1,exportedAt:new Date().toISOString(),lessons:saved.lessons,draft:saved.draft};
+    const data={format:'frolicking-nicky-personal-lessons',version:1,exportedAt:new Date().toISOString(),lessons:allLessons(),draft:saved.draft};
     const url=URL.createObjectURL(new Blob([JSON.stringify(data,null,2)],{type:'application/json'}));
     const a=make('a');a.href=url;a.download='frolicking-nicky-lessons-'+new Date().toISOString().slice(0,10)+'.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
   };
@@ -70,8 +85,8 @@
   const open=(lesson,topicId)=>{
     current=lesson?{...lesson}:null;dirty=false;
     topic.value=lesson?.topic||topicId||'silver-age';title.value=lesson?.title||'';text.value=lesson?.text||'';date.value=lesson?.date||'';
-    remove.hidden=!lesson;
-    heading.textContent=lesson?'Edit lesson':'New lesson';back.href='#'+topic.value;status.textContent='Saved on this device only. Export a backup to keep another copy.';
+    remove.hidden=!lesson;unpublish.hidden=!lesson||!isOnline(lesson.id);
+    heading.textContent=lesson?'Edit lesson':'New lesson';back.href='#'+topic.value;status.textContent=lesson&&isOnline(lesson.id)?'Published online. Changes stay on this device until you click Publish again.':'Saved on this device only. Click Publish to put this lesson online.';
     location.hash='lesson-editor';requestAnimationFrame(()=>title.focus());
   };
   const lists=new Map();
@@ -82,9 +97,9 @@
     const list=make('ul','fn-personal-lesson-list');box.append(head,list);target.append(box);lists.set(t.id,list);
   });
   function renderLists(){lists.forEach((list,id)=>{
-    list.replaceChildren();saved.lessons.filter(l=>l.topic===id).forEach(l=>{
+    list.replaceChildren();allLessons().filter(l=>l.topic===id).forEach(l=>{
       const row=make('li'),link=make('a','fn-study-lesson-link',l.title.trim()||'Untitled lesson');link.href='#'+l.id;
-      row.append(link,button('Edit',()=>open(l)));list.append(row);
+      row.append(link,make('small','fn-personal-status',publicationLabel(l)),button('Edit',()=>open(l)));list.append(row);
     });
     const deleted=saved.trash.filter(l=>l.topic===id).at(-1);
     if(deleted)list.append(button('Undo deletion',()=>{saved.trash=saved.trash.filter(l=>l.id!==deleted.id);saved.lessons.push(deleted);persist();renderLists();renderViews();window.dispatchEvent(new Event('hashchange'));}));
@@ -92,10 +107,10 @@
   });}
   function renderViews(){
     root.querySelectorAll('.fn-personal-lesson-view').forEach(e=>e.remove());
-    saved.lessons.forEach(l=>{
+    allLessons().forEach(l=>{
       const view=make('article','fn-study-view fn-lesson fn-personal-lesson-view');view.id=l.id;view.hidden=true;
       const nav=make('nav','fn-study-bar'),a=make('a','fn-study-back','← '+topics.find(t=>t.id===l.topic).title);a.href='#'+l.topic;
-      nav.append(a,button('Edit lesson',()=>open(l)));view.append(nav,make('p','fn-lesson-number','Your lesson · Saved on this device'),make('h2',null,l.title||'Untitled lesson'));
+      nav.append(a,button('Edit lesson',()=>open(l)));view.append(nav,make('p','fn-lesson-number',isOnline(l.id)?'Published lesson':'Your lesson · Saved on this device'),make('h2',null,l.title||'Untitled lesson'));
       const blocks=parse(l.text),notes=make('div','fn-lesson-notes');let ul;
       blocks.forEach((block,i)=>{let el;if(block.type==='heading'){ul=null;el=make('h3',null,block.text);notes.append(el);}else if(block.type==='note'){if(!ul){ul=make('ul');notes.append(ul);}el=make('li',null,block.text);ul.append(el);}else{ul=null;el=make('p',null,block.text);notes.append(el);}el.dataset.noteBlock=i;});
       if(!blocks.length)notes.append(make('p',null,'No notes yet. Choose Edit lesson to start writing.'));
@@ -110,6 +125,12 @@
     if(location.hash!=='#lesson-editor'&&dirty){saveDraft();dirty=false;renderViews();window.dispatchEvent(new Event('hashchange'));}
     const view=document.getElementById(decodeURIComponent(location.hash.slice(1)));if(view?.classList.contains('fn-personal-lesson-view')){view.hidden=false;document.getElementById('fn-scene').hidden=true;document.body.classList.add('fn-study-open','fn-lesson-open');}
   });
+  const receiveOnline=lessons=>{
+    published=lessons.map(normalise).filter(Boolean);renderLists();renderViews();
+    unpublish.hidden=!current||!isOnline(current.id);window.dispatchEvent(new Event('hashchange'));
+  };
+  window.addEventListener('fn-lessons-live',event=>receiveOnline(event.detail));
+  fetch('/assets/published-lessons.json',{cache:'no-store'}).then(response=>{if(!response.ok)throw Error();return response.json();}).then(data=>{if(data.version===1&&Array.isArray(data.lessons))receiveOnline(data.lessons);}).catch(()=>{status.textContent='Online lessons could not load. Your device lessons are still available.';});
   saved.lessons=saved.lessons.map(normalise).filter(Boolean);renderLists();renderViews();
   if(location.hash==='#lesson-editor'&&saved.draft)open(saved.draft);
   window.dispatchEvent(new Event('hashchange'));
