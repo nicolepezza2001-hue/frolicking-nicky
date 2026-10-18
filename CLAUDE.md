@@ -203,7 +203,9 @@ a separate Europe close-up, the map legend or the trip buttons under the map on 
   notes (`silver-age-lessons.js`); Tocharian (`tocharian-lessons.js`) and Avestan (`avestan-lessons.js`) are study notes,
   kicker "Study notes · …". Linguistics: **Alignment is Nicky's own notes** (her Google Doc on Harris & Campbell, word
   for word, plus a glossary), then "Comparative syntax and Universal Grammar". Proto-Indo-European has no path any more
-  (Nicky dropped its "Further study" list): just her course notes and the shelf. Opera still has one.
-- Every French, Russian, Linguistics, Silver Age, Tocharian and Avestan lesson ends with a typed quiz (`FN_LESSON_QUIZZES` in `assets/lesson-quizzes.js`,
+  (Nicky dropped its "Further study" list): just her course notes and the shelf. Opera keeps its "Further study" list
+  (Nicky's call): each step opens study notes (`opera-study-lessons.js`) where her First Nights notes don't discuss it,
+  and her own Voices page for voice types (`pages` in its TOPICS entry).
+- Every French, Russian, Linguistics, Silver Age, Tocharian, Avestan and Opera study-notes lesson ends with a typed quiz (`FN_LESSON_QUIZZES` in `assets/lesson-quizzes.js`,
   `[question, answer]`, alternatives split by " / "): up to ten questions shuffled, Check shows the answer, "I was right"
   overrides. New lessons need a quiz entry too.

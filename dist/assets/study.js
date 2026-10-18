@@ -28,6 +28,9 @@
         ['Britten, Peter Grimes', 'Twentieth-century English opera, and the Sea Interludes.', 'Opera inglese del Novecento e i Sea Interludes.'],
         [['See one live', 'Vederne una dal vivo'], 'Palacio de Bellas Artes, or wherever the travels land.', 'Al Palacio de Bellas Artes, o dovunque mi portino i viaggi.']
       ],
+      // The page each step opens: study notes where Nicky's First Nights notes don't cover it, her Voices page for voice types
+      pages: ['opera-study-orfeo', 'opera-study-figaro', 'opera-study-barbiere', 'opera-study-traviata', 'opera-study-carmen', 'opera-study-boheme',
+              'opera-study-tristan', 'opera-notes-voices', 'opera-study-rosenkavalier', 'opera-study-grimes', 'opera-study-live'],
       shelf: [
         ['Notes', 'Appunti', 'HarvardX — First Nights at the Opera', 'Your original course notes on Google Docs.', 'Your original course notes on Google Docs.', 'https://docs.google.com/document/d/1uYMWWloAr8SI9c-R5tkKnQGvnSvEsFLu7tJfS_EISx0/edit'],
         ['Watch', 'Guarda', 'OperaVision', 'Free full productions from European houses.', 'Produzioni complete e gratuite dei teatri europei.', 'https://operavision.eu/'],
@@ -237,6 +240,7 @@
   const LESSONS = [
     { topic: 'hittite', name: 'Hittite', lessons: window.FN_HITTITE_LESSONS || [] },
     { topic: 'opera', name: 'Opera', lessons: window.FN_OPERA_LESSONS || [] },
+    { topic: 'opera', name: 'Opera', lessons: window.FN_OPERA_STUDY_LESSONS || [] }, // path pages; lessonsOf('opera') stays her notes
     { topic: 'silver-age', name: 'Silver Age poetry', lessons: window.FN_SILVER_AGE_LESSONS || [] },
     { topic: 'french', name: 'French', lessons: window.FN_FRENCH_LESSONS || [] },
     { topic: 'russian', name: 'Russian', lessons: window.FN_RUSSIAN_LESSONS || [] },
@@ -248,7 +252,7 @@
   const lessonsOf = id => LESSONS.find(x => x.topic === id)?.lessons || [];
   const pick = v => (Array.isArray(v) ? L(v[0], v[1]) : v);
   const topics = () => TOPICS.concat(state.custom.map(c => ({ ...c, custom: true, path: [], shelf: [] })));
-  const steps = t => t.path.map((s, i) => ({ key: `${t.id}:${i}`, title: pick(s[0]), note: s[2] ? L(s[1], s[2]) : s[1], href: !['pie', 'opera', 'hittite'].includes(t.id) && lessonsOf(t.id)[i] && '#' + lessonsOf(t.id)[i].id }))
+  const steps = t => t.path.map((s, i) => ({ key: `${t.id}:${i}`, title: pick(s[0]), note: s[2] ? L(s[1], s[2]) : s[1], href: t.pages ? t.pages[i] && '#' + t.pages[i] : !['pie', 'opera', 'hittite'].includes(t.id) && lessonsOf(t.id)[i] && '#' + lessonsOf(t.id)[i].id }))
     .concat(VOCAB[t.id] ? [{ key: `${t.id}:vocab`, title: 'Vocabulary', note: VOCAB[t.id][0] + ' on one side, English on the other.', href: `#${t.id}-vocabulary` }] : [])
     .concat((state.extra[t.id] || []).map(s => ({ key: `${t.id}:x${s.id}`, title: s.text, note: '', extra: s.id })));
   const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; };

@@ -664,6 +664,126 @@ window.FN_LESSON_QUIZZES = {
     ['The demon of drought', 'Apaoša / Apaosha'],
     ['The Persian epic that retells the kings of Yašt 19', 'Shāhnāmeh / Shahnameh'],
     ['“I will worship”', 'yazāi / yazai']
+  ],
+  // Opera: study notes
+  'opera-study-orfeo': [
+    ['Where and when was L’Orfeo first performed?', 'Mantua, 1607 / Mantua 1607 / Mantua'],
+    ['Who wrote the libretto?', 'Alessandro Striggio / Striggio'],
+    ['What did Monteverdi call it?', 'favola in musica / a tale in music'],
+    ['Acting in song, the Florentine ideal', 'recitar cantando'],
+    ['The first Florentine opera on the same myth (1600)', 'Peri’s Euridice / Euridice / Peri'],
+    ['Who sings the prologue?', 'La Musica / Music'],
+    ['Orfeo’s showpiece to charm the ferryman', 'Possente spirto'],
+    ['The ferryman of the Underworld', 'Caronte / Charon'],
+    ['The condition Pluto sets', 'not to look back / he must not look back / don’t look back'],
+    ['Who takes Orfeo to heaven?', 'Apollo']
+  ],
+  'opera-study-figaro': [
+    ['Year and city of the premiere', '1786, Vienna / Vienna 1786 / 1786'],
+    ['The librettist', 'Lorenzo Da Ponte / Da Ponte'],
+    ['The playwright of the original', 'Beaumarchais'],
+    ['Which emperor banned the play on stage?', 'Joseph II'],
+    ['The trouser role', 'Cherubino'],
+    ['Cherubino’s aria to the Countess', 'Voi che sapete / Non so più'],
+    ['The Countess’s two arias', 'Porgi, amor and Dove sono / Porgi amor / Dove sono'],
+    ['The letter duet', 'Sull’aria / Sull’aria… che soave zeffiretto'],
+    ['How the Count asks forgiveness at the end', 'Contessa, perdono / Contessa perdono'],
+    ['Which city’s success led to Don Giovanni?', 'Prague']
+  ],
+  'opera-study-barbiere': [
+    ['Year and city of the premiere', '1816, Rome / Rome 1816 / 1816'],
+    ['The librettist', 'Cesare Sterbini / Sterbini'],
+    ['Whose fans are blamed for the fiasco?', 'Paisiello / Paisiello’s'],
+    ['Almaviva’s disguise as a poor student', 'Lindoro'],
+    ['Figaro’s entrance aria', 'Largo al factotum'],
+    ['Rosina’s aria', 'Una voce poco fa'],
+    ['Basilio’s aria about slander', 'La calunnia / La calunnia è un venticello'],
+    ['Fast runs, trills and leaps', 'coloratura'],
+    ['A phrase repeated louder and louder', 'Rossini crescendo / crescendo'],
+    ['The style of Rossini, Donizetti and Bellini', 'bel canto']
+  ],
+  'opera-study-traviata': [
+    ['Year and theatre of the premiere', '1853, La Fenice / La Fenice / 1853'],
+    ['The librettist', 'Piave / Francesco Maria Piave'],
+    ['The play it is based on', 'La Dame aux camélias / The Lady of the Camellias'],
+    ['The real woman behind Violetta', 'Marie Duplessis'],
+    ['The drinking song', 'Libiamo / Libiamo ne’ lieti calici / Brindisi'],
+    ['The cabaletta that ends Act 1', 'Sempre libera'],
+    ['Germont’s aria', 'Di Provenza / Di Provenza il mar, il suol'],
+    ['Violetta’s outburst in Act 2', 'Amami, Alfredo / Amami Alfredo'],
+    ['Violetta’s farewell in Act 3', 'Addio del passato'],
+    ['What does Violetta die of?', 'consumption / tuberculosis']
+  ],
+  'opera-study-carmen': [
+    ['Year and theatre of the premiere', '1875, Opéra-Comique / Opéra-Comique / 1875'],
+    ['The author of the novella', 'Prosper Mérimée / Mérimée'],
+    ['Opéra comique means opera with…', 'spoken dialogue / dialogue'],
+    ['Who set the dialogue as recitative?', 'Ernest Guiraud / Guiraud'],
+    ['Carmen’s voice type', 'mezzo-soprano / mezzo'],
+    ['Carmen’s entrance song', 'Habanera / L’amour est un oiseau rebelle'],
+    ['Escamillo’s song', 'Toreador Song / Votre toast'],
+    ['Don José’s aria', 'Flower Song / La fleur que tu m’avais jetée'],
+    ['The girl from José’s village', 'Micaëla / Micaela'],
+    ['How old was Bizet when he died?', '36']
+  ],
+  'opera-study-boheme': [
+    ['Year and city of the premiere', '1896, Turin / Turin 1896 / 1896'],
+    ['Who conducted it?', 'Toscanini / Arturo Toscanini'],
+    ['The two librettists', 'Illica and Giacosa / Illica & Giacosa'],
+    ['The author of the source', 'Henri Murger / Murger'],
+    ['Opera about ordinary people and real life', 'verismo'],
+    ['Rodolfo’s aria', 'Che gelida manina'],
+    ['Mimì’s aria', 'Sì, mi chiamano Mimì / Mi chiamano Mimì'],
+    ['The duet that ends Act 1', 'O soave fanciulla'],
+    ['The café in Act 2', 'Café Momus / Momus'],
+    ['Colline’s farewell to his coat', 'Vecchia zimarra']
+  ],
+  'opera-study-tristan': [
+    ['Year and city of the premiere', '1865, Munich / Munich 1865 / 1865'],
+    ['Who conducted it?', 'Hans von Bülow / von Bülow / Bulow'],
+    ['The king who paid for it', 'Ludwig II / Ludwig'],
+    ['The philosopher Wagner was reading', 'Schopenhauer'],
+    ['The notes of the Tristan chord', 'F, B, D sharp, G sharp / F B D# G# / F–B–D♯–G♯'],
+    ['A musical idea tied to a person or feeling', 'leitmotif / Leitmotiv'],
+    ['Who swaps the poison for a love potion?', 'Brangäne / Brangane'],
+    ['The love duet', 'O sink hernieder / O sink hernieder, Nacht der Liebe'],
+    ['Isolde’s final song', 'Liebestod / Mild und leise'],
+    ['Tristan’s voice type', 'Heldentenor / heroic tenor']
+  ],
+  'opera-study-rosenkavalier': [
+    ['Year and city of the premiere', '1911, Dresden / Dresden 1911 / 1911'],
+    ['The librettist', 'Hugo von Hofmannsthal / Hofmannsthal'],
+    ['Strauss’s name for it', 'Komödie für Musik / comedy for music'],
+    ['In whose reign is it set?', 'Maria Theresa'],
+    ['The trouser role', 'Octavian'],
+    ['The Marschallin’s cousin', 'Baron Ochs / Ochs'],
+    ['What does the cavalier carry?', 'a silver rose / the silver rose / silver rose'],
+    ['The Act 3 trio', 'Hab mir’s gelobt'],
+    ['The final duet', 'Ist ein Traum'],
+    ['Why are the waltzes an anachronism?', 'Maria Theresa’s Vienna had no waltzes / no waltzes then']
+  ],
+  'opera-study-grimes': [
+    ['Year and theatre of the premiere', '1945, Sadler’s Wells / Sadler’s Wells / 1945'],
+    ['The librettist', 'Montagu Slater / Slater'],
+    ['The poem it comes from', 'The Borough'],
+    ['The poet', 'George Crabbe / Crabbe'],
+    ['Who sang Grimes?', 'Peter Pears / Pears'],
+    ['Whose article led Britten to Crabbe?', 'E. M. Forster / Forster'],
+    ['The schoolmistress who stands by Grimes', 'Ellen Orford / Ellen'],
+    ['The four Sea Interludes', 'Dawn, Sunday Morning, Moonlight, Storm / Dawn Sunday Morning Moonlight Storm'],
+    ['Grimes’s aria in the pub', 'Now the Great Bear and Pleiades'],
+    ['Who tells Grimes to sink his boat?', 'Captain Balstrode / Balstrode']
+  ],
+  'opera-study-live': [
+    ['The opera house in Mexico City', 'Palacio de Bellas Artes / Bellas Artes'],
+    ['What is its curtain made of?', 'Tiffany glass / glass'],
+    ['A cheap way into the Vienna State Opera', 'standing places / standing tickets / standing room'],
+    ['The Met’s cinema broadcasts', 'Live in HD'],
+    ['Free full productions online', 'OperaVision'],
+    ['The translation above the stage', 'surtitles'],
+    ['What do you shout for a woman?', 'Brava'],
+    ['And for everyone?', 'Bravi'],
+    ['Whose operas often run past five hours?', 'Wagner’s / Wagner']
   ]
 };
 
