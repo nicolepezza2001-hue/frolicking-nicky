@@ -88,15 +88,17 @@
       name: ['French', 'Francese'],
       why: ['French classical culture, art and ideas, and the language to read them in.',
             'La cultura classica francese, l’arte e le idee, e la lingua per leggerle.'],
-      path: [
-        [['Sounds and liaison', 'Suoni e liaison'], 'Nasal vowels, silent endings and when they wake up.', 'Le vocali nasali, le finali mute e quando si risvegliano.'],
-        [['Passé composé and imparfait', 'Passé composé e imparfait'], 'Telling a story in the past.', 'Raccontare una storia al passato.'],
-        [['The subjunctive', 'Il congiuntivo'], 'Il faut que, bien que, avant que.', 'Il faut que, bien que, avant que.'],
-        [['A film a week', 'Un film a settimana'], 'With French subtitles, not Italian or English ones.', 'Con i sottotitoli in francese, non in italiano o in inglese.'],
-        [['A journal page in French', 'Una pagina di diario in francese'], 'A few lines each day, about anything at all.', 'Qualche riga al giorno, su qualsiasi cosa.'],
-        ['Baudelaire, Les Fleurs du mal', 'A few poems a week, aloud.', 'Qualche poesia a settimana, ad alta voce.'],
-        ['Flaubert, Madame Bovary', 'The first novel in the original.', 'Il primo romanzo in lingua originale.'],
-        [['The Louvre, in French', 'Il Louvre, in francese'], 'An audio guide or museum visit in French only.', 'Un’audioguida o una visita al museo solo in francese.']
+      path: [ // Nicky's Notion subjects, in order; each opens its page in FN_FRENCH_LESSONS (french-lessons.js)
+        ['Present continuous', 'Être en train de + infinitif.'],
+        ['Meaning ‘just did something’', 'Venir de + infinitif.'],
+        ['Le futur proche', 'Aller + infinitif.'],
+        ['The subjunctive', 'Il faut que, bien que, avant que.'],
+        ['L’expression de l’hypothèse', 'Si + présent, imparfait or plus-que-parfait.'],
+        ['Conditionnel présent', 'Future stem + imperfect endings.'],
+        ['Conditionnel passé', 'Conditional of avoir or être + past participle.'],
+        ['Pronouns (personal/possessive)', 'Every pronoun in one table.'],
+        ['Relative pronouns', 'Qui, que, dont, où, lequel.'],
+        ['Past lessons', 'Class notes, newest first.']
       ],
       shelf: [
         ['Book', 'Libro', 'Bescherelle: La conjugaison pour tous', 'Every verb, conjugated.', 'Tutti i verbi, coniugati.'],
@@ -199,9 +201,11 @@
     { topic: 'silver-age', name: 'Silver Age poetry', lessons: window.FN_SILVER_AGE_LESSONS || [] },
     { topic: 'french', name: 'French', lessons: window.FN_FRENCH_LESSONS || [] }
   ];
+  const lessonsOf = id => LESSONS.find(x => x.topic === id)?.lessons || [];
   const pick = v => (Array.isArray(v) ? L(v[0], v[1]) : v);
   const topics = () => TOPICS.concat(state.custom.map(c => ({ ...c, custom: true, path: [], shelf: [] })));
-  const steps = t => t.path.map((s, i) => ({ key: `${t.id}:${i}`, title: pick(s[0]), note: L(s[1], s[2]), lesson: t.id === 'silver-age' ? window.FN_SILVER_AGE_LESSONS?.[i] : null }))
+  const steps = t => t.path.map((s, i) => ({ key: `${t.id}:${i}`, title: pick(s[0]), note: s[2] ? L(s[1], s[2]) : s[1], href: lessonsOf(t.id)[i] && '#' + lessonsOf(t.id)[i].id }))
+    .concat(VOCAB[t.id] ? [{ key: `${t.id}:vocab`, title: 'Vocabulary', note: VOCAB[t.id][0] + ' on one side, English on the other.', href: `#${t.id}-vocabulary` }] : [])
     .concat((state.extra[t.id] || []).map(s => ({ key: `${t.id}:x${s.id}`, title: s.text, note: '', extra: s.id })));
   const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; };
 
@@ -216,14 +220,14 @@
 
   const stepRow = (t, s, counter) => {
     const li = el('li');
-    const label = el(s.lesson ? 'div' : 'label', 'fn-study-step');
+    const label = el(s.href ? 'div' : 'label', 'fn-study-step');
     const box = el('input'); box.type = 'checkbox'; box.checked = !!state.done[s.key];
     box.id = 'st-' + s.key.replace(/[^a-z0-9-]/gi, '-');
     const text = el('span', 'fn-study-step-text');
     const title = el('strong', null, s.title);
-    if (s.lesson) {
+    if (s.href) {
       // Keep reading navigation separate from the completion checkbox.
-      const link = el('a', 'fn-study-lesson-link'); link.href = '#' + s.lesson.id;
+      const link = el('a', 'fn-study-lesson-link'); link.href = s.href;
       link.append(title); text.append(link);
       box.setAttribute('aria-label', 'Mark ' + s.title + ' as complete');
     } else text.append(title);
@@ -257,7 +261,7 @@
   });
   const vocab = (id, [lang, code]) => {
     const box = el('div', 'fn-vocab'), words = (state.vocab[id] ||= []);
-    const head = el('div', 'fn-vocab-head'), label = el('p', 'fn-study-label', 'Vocabulary');
+    const head = el('div', 'fn-vocab-head'), label = el('p', 'fn-study-label', 'Test yourself');
     const modes = el('div', 'fn-vocab-modes'); modes.setAttribute('role', 'group'); modes.setAttribute('aria-label', 'Test yourself');
     let mode = 'both', order = null;
     const btns = [['both', 'Show both'], ['word', 'Hide ' + lang], ['en', 'Hide English']].map(([m, txt]) => {
@@ -342,17 +346,6 @@
       input.value = ''; count(t, counter); input.focus();
     });
     left.append(list, form);
-    // Topics whose lessons aren't path steps (French) list them under the path
-    const own = t.id !== 'silver-age' && LESSONS.find(x => x.topic === t.id);
-    if (own && own.lessons.length) {
-      left.append(el('p', 'fn-study-label fn-study-lessons-label', 'Class notes'));
-      const ol = el('ol', 'fn-study-lessons');
-      own.lessons.forEach(l => {
-        const li = el('li'), a = el('a', 'fn-study-lesson-link', l.title); a.href = '#' + l.id;
-        li.append(a, el('small', null, l.kicker || 'Lesson ' + l.number)); ol.append(li);
-      });
-      left.append(ol);
-    }
 
     const right = el('div');
     if (t.shelf.length) {
@@ -388,13 +381,20 @@
       right.append(rm);
     }
     grid.append(left, right); sec.append(grid);
-    if (VOCAB[t.id]) sec.append(vocab(t.id, VOCAB[t.id]));
     count(t, counter);
     return sec;
   };
 
   const pill = t => { const li = el('li'), a = el('a', null, pick(t.name)); a.href = '#' + t.id; li.append(a); return li; };
   topics().forEach(t => { if (t.custom && mine) mine.append(pill(t)); root.append(section(t)); });
+
+  // Each language's vocabulary is its own page on the path, like a lesson (but in the dark study colours)
+  Object.entries(VOCAB).forEach(([id, info]) => {
+    const t = TOPICS.find(x => x.id === id), sec = el('section', 'fn-study-topic fn-study-view fn-vocab-page'); sec.id = id + '-vocabulary'; sec.hidden = true;
+    const bar = el('div', 'fn-study-bar'), back = el('a', 'fn-study-back', '← ' + pick(t.name)); back.href = '#' + id;
+    bar.append(back); sec.append(bar, el('h2', null, 'Vocabulary'), el('p', 'fn-study-why', pick(t.name) + ' on one side, English on the other. Hide either side to test yourself.'), vocab(id, info));
+    root.append(sec);
+  });
 
   // Readable lesson views use the same hash navigation as the study topics.
   // Silver Age poetry and French (imported from Nicky's notes) share one reading layout.

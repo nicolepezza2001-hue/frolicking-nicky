@@ -1,15 +1,12 @@
 // Nicky’s French notes, imported from her Notion page “French”. Preserve the source wording.
-// Lessons render like the Silver Age ones; FN_FRENCH_VOCAB seeds the French vocabulary list (her “IMPORTANT” table).
+// Each subject is a page on the French path (like the Silver Age lessons); “Past lessons” holds her class notes by date.
+// FN_FRENCH_VOCAB seeds the French vocabulary page (her “IMPORTANT” table).
 window.FN_FRENCH_LESSONS = [
   {
-    "id": "french-grammar",
+    "id": "french-present-continuous",
     "kicker": "Grammar · French",
-    "title": "Grammar: verbs and pronouns",
+    "title": "Present continuous",
     "blocks": [
-      {
-        "type": "heading",
-        "text": "PRESENT CONTINUOUS"
-      },
       {
         "type": "note",
         "text": "PRONOUN + être (present, imperfect, future simple) en train de + infinitif"
@@ -25,11 +22,14 @@ window.FN_FRENCH_LESSONS = [
       {
         "type": "note",
         "text": "quand tu vas venir, je serai entrain de dormir"
-      },
-      {
-        "type": "heading",
-        "text": "MEANING ‘JUST DID SOMETHING’"
-      },
+      }
+    ]
+  },
+  {
+    "id": "french-just-did",
+    "kicker": "Grammar · French",
+    "title": "Meaning ‘just did something’",
+    "blocks": [
       {
         "type": "note",
         "text": "ex. Je viens d'arriver = i just arrived"
@@ -37,11 +37,14 @@ window.FN_FRENCH_LESSONS = [
       {
         "type": "note",
         "text": "Je viens de terminer = I just finished"
-      },
-      {
-        "type": "heading",
-        "text": "LE FUTURE PROCHE"
-      },
+      }
+    ]
+  },
+  {
+    "id": "french-futur-proche",
+    "kicker": "Grammar · French",
+    "title": "Le futur proche",
+    "blocks": [
       {
         "type": "note",
         "text": "aller + infinitif"
@@ -53,11 +56,14 @@ window.FN_FRENCH_LESSONS = [
       {
         "type": "note",
         "text": "Nous allons partir = We’re going to leave"
-      },
-      {
-        "type": "heading",
-        "text": "SUBJUNCTIF"
-      },
+      }
+    ]
+  },
+  {
+    "id": "french-subjunctive",
+    "kicker": "Grammar · French",
+    "title": "The subjunctive",
+    "blocks": [
       {
         "type": "link",
         "text": "Subjunctive handout (PDF)",
@@ -78,11 +84,14 @@ window.FN_FRENCH_LESSONS = [
       {
         "type": "note",
         "text": "pour que — so that, afin que — in order that, bien que — although, avant que — before, jusqu’à ce que — until, à moins que — unless, à condition que — provided that, pourvu que — provided that / hopefully, de peur que — for fear that, de crainte que — out of fear that, en attendant que — while waiting for / until, quoique — although / even though"
-      },
-      {
-        "type": "heading",
-        "text": "L’EXPRESSION DE L’HYPOTHÈSE"
-      },
+      }
+    ]
+  },
+  {
+    "id": "french-hypothesis",
+    "kicker": "Grammar · French",
+    "title": "L’expression de l’hypothèse",
+    "blocks": [
       {
         "type": "note",
         "text": "1. SI + présent de l’indicatif + présent = S’il fait beau, je vais à la mer"
@@ -122,11 +131,14 @@ window.FN_FRENCH_LESSONS = [
       {
         "type": "note",
         "text": "Locutions: même si (even if), Sauf si (unless), excepté si (except if), comme si (as if)"
-      },
-      {
-        "type": "heading",
-        "text": "CONDITIONNEL PRÉSENT"
-      },
+      }
+    ]
+  },
+  {
+    "id": "french-conditionnel-present",
+    "kicker": "Grammar · French",
+    "title": "Conditionnel présent",
+    "blocks": [
       {
         "type": "note",
         "text": "FUTURE STEM + IMPERFECT ENDINGS"
@@ -198,11 +210,14 @@ window.FN_FRENCH_LESSONS = [
             "je saurais"
           ]
         ]
-      },
-      {
-        "type": "heading",
-        "text": "CONDITIONNEL PASSEÉ"
-      },
+      }
+    ]
+  },
+  {
+    "id": "french-conditionnel-passe",
+    "kicker": "Grammar · French",
+    "title": "Conditionnel passé",
+    "blocks": [
       {
         "type": "note",
         "text": "Conditional of avoir or être + past participle"
@@ -218,11 +233,14 @@ window.FN_FRENCH_LESSONS = [
       {
         "type": "note",
         "text": "Je serais allé (man) / je serais allée (woman) → I would have gone."
-      },
-      {
-        "type": "heading",
-        "text": "PRONOUNS (PERSONAL/POSSESSIVE)"
-      },
+      }
+    ]
+  },
+  {
+    "id": "french-pronouns",
+    "kicker": "Grammar · French",
+    "title": "Pronouns (personal/possessive)",
+    "blocks": [
       {
         "type": "table",
         "head": [
@@ -317,11 +335,14 @@ window.FN_FRENCH_LESSONS = [
             "—"
           ]
         ]
-      },
-      {
-        "type": "heading",
-        "text": "RELATIVE PRONOUNS"
-      },
+      }
+    ]
+  },
+  {
+    "id": "french-relative-pronouns",
+    "kicker": "Grammar · French",
+    "title": "Relative pronouns",
+    "blocks": [
       {
         "type": "table",
         "head": [
@@ -457,190 +478,345 @@ window.FN_FRENCH_LESSONS = [
     ]
   },
   {
-    "id": "french-lesson-1",
-    "number": 1,
-    "kicker": "Lesson 1 · French",
-    "title": "28 April",
+    "id": "french-past-lessons",
+    "kicker": "Class notes · French",
+    "title": "Past lessons",
     "blocks": [
       {
-        "type": "note",
-        "text": "Je voudrais y habiter"
+        "type": "heading",
+        "text": "13 October"
       },
       {
         "type": "note",
-        "text": "vendre = to sell"
+        "text": "interurbain"
       },
       {
         "type": "note",
-        "text": "Je travaille pour une entreprise qui vend des suppléments"
+        "text": "confortable"
       },
       {
         "type": "note",
-        "text": "L'entreprise est néo-zélandaise"
+        "text": "deux sièges"
       },
       {
         "type": "note",
-        "text": "Tu connais UpWork?"
+        "text": "itinéraires"
       },
       {
         "type": "note",
-        "text": "J'aurais voulu habiter à Almaty"
+        "text": "sauvegarder"
       },
       {
         "type": "note",
-        "text": "Personne ne parlait en dialecte"
+        "text": "Tu reçois"
       },
       {
         "type": "note",
-        "text": "avant le Brexit"
+        "text": "lettre de motivation"
       },
       {
         "type": "note",
-        "text": "sauf en Italie"
+        "text": "disputes"
       },
       {
         "type": "note",
-        "text": "Je dois y retourner"
+        "text": "un rapport"
       },
       {
         "type": "note",
-        "text": "J'aimerais y retourner"
+        "text": "J'ai connecté"
       },
       {
         "type": "note",
-        "text": "D'où viens-tu en France?"
+        "text": "un remboursement = a refund"
       },
       {
         "type": "note",
-        "text": "Ta copine vient d'où ?"
+        "text": "Je n'ai encore jamais atteint les limites"
       },
       {
         "type": "note",
-        "text": "C'est ma ville préférée"
+        "text": "Ils se sont enfuis"
       },
       {
         "type": "note",
-        "text": "la linguistique"
+        "text": "arnaque = scams"
+      },
+      {
+        "type": "heading",
+        "text": "7 October"
       },
       {
         "type": "note",
-        "text": "Le russe me vient à l'esprit (it comes to mind)"
+        "text": "Ils sont très chaleureux"
       },
       {
         "type": "note",
-        "text": "Quand j'étais enfant"
-      }
-    ]
-  },
-  {
-    "id": "french-lesson-2",
-    "number": 2,
-    "kicker": "Lesson 2 · French",
-    "title": "5 May",
-    "blocks": [
-      {
-        "type": "note",
-        "text": "Danse traditionnelle"
+        "text": "Je comprends"
       },
       {
         "type": "note",
-        "text": "Quelle langue?"
+        "text": "entendre = sentire"
       },
       {
         "type": "note",
-        "text": "Tu écris en quelle langue?"
+        "text": "Je ne pense pas que ça serait aussi épicé"
       },
       {
         "type": "note",
-        "text": "chapitre"
+        "text": "ADN = DNA"
       },
       {
         "type": "note",
-        "text": "les nouvelles"
+        "text": "en dehors de France"
       },
       {
         "type": "note",
-        "text": "le sens caché"
+        "text": "en périphérie de la ville"
       },
       {
         "type": "note",
-        "text": "livre audio"
+        "text": "Très bourgeois"
       },
       {
         "type": "note",
-        "text": "langue latine"
+        "text": "Les propriétaires"
       },
       {
         "type": "note",
-        "text": "langue slave"
+        "text": "il a été expulsé"
       },
       {
         "type": "note",
-        "text": "Il y a 5000 ans"
+        "text": "Il volait dans les magasins"
       },
       {
         "type": "note",
-        "text": "Il a reconstruit"
+        "text": "2 mois et demi"
       },
       {
         "type": "note",
-        "text": "avant = prima"
+        "text": "midi = mezzogiorno"
       },
       {
         "type": "note",
-        "text": "Elle a tout perdu"
+        "text": "le delta du Sine Saloum"
       },
       {
         "type": "note",
-        "text": "les études"
+        "text": "les deux"
       },
       {
         "type": "note",
-        "text": "En Inde"
+        "text": "faible = weak"
       },
       {
         "type": "note",
-        "text": "Dans les trains"
+        "text": "prendre du poids"
       },
       {
         "type": "note",
-        "text": "C'est pour ça"
+        "text": "Je ne suis pas en surpoids"
       },
       {
         "type": "note",
-        "text": "le triangle d'or"
+        "text": "obèse"
       },
       {
         "type": "note",
-        "text": "Les femmes qui ont survécu aux attaque à l'acide"
+        "text": "régime"
       },
       {
         "type": "note",
-        "text": "les étrangers = foreigners"
+        "text": "effets secondaires = side effects"
       },
       {
         "type": "note",
-        "text": "Quelle est ta cuisine préférée ?"
+        "text": "muscle"
       },
       {
         "type": "note",
-        "text": "Europe"
+        "text": "sur ton ventre"
       },
       {
         "type": "note",
-        "text": "En mai dernier"
+        "text": "Je suis très gênée"
       },
       {
         "type": "note",
-        "text": "Depuis mai"
+        "text": "semi-marathon"
       },
       {
         "type": "note",
-        "text": "Depuis ce moment-là"
+        "text": "Elle est roumaine"
       },
       {
         "type": "note",
-        "text": "Une promesse"
+        "text": "Ils n'avaient pas l'habitude de voir des étrangers"
+      },
+      {
+        "type": "note",
+        "text": "stagiaire"
+      },
+      {
+        "type": "heading",
+        "text": "23 September"
+      },
+      {
+        "type": "note",
+        "text": "Porridge de semoule"
+      },
+      {
+        "type": "note",
+        "text": "Le casque"
+      },
+      {
+        "type": "note",
+        "text": "Je porte mon casque"
+      },
+      {
+        "type": "note",
+        "text": "beurre de cacachuète"
+      },
+      {
+        "type": "note",
+        "text": "graine de chia"
+      },
+      {
+        "type": "note",
+        "text": "escale = layover"
+      },
+      {
+        "type": "note",
+        "text": "On change d'endroit toutes les deux semaines"
+      },
+      {
+        "type": "note",
+        "text": "Quand les portes se referment"
+      },
+      {
+        "type": "note",
+        "text": "Il est tombé"
+      },
+      {
+        "type": "note",
+        "text": "Quand tu as vécu"
+      },
+      {
+        "type": "note",
+        "text": "C'est moins présent en Australie"
+      },
+      {
+        "type": "note",
+        "text": "la pire ville"
+      },
+      {
+        "type": "note",
+        "text": "le désert"
+      },
+      {
+        "type": "note",
+        "text": "Est-ce que tu pourrais aller seule en Inde ?"
+      },
+      {
+        "type": "note",
+        "text": "Il est allé en Colombie"
+      },
+      {
+        "type": "note",
+        "text": "alcoolisé"
+      },
+      {
+        "type": "note",
+        "text": "Tu veux te battre ?"
+      },
+      {
+        "type": "note",
+        "text": "Les gens avec lesquels j'habitais"
+      },
+      {
+        "type": "note",
+        "text": "embouteillages = traffic"
+      },
+      {
+        "type": "note",
+        "text": "Je n'étais pas douée avec le sport"
+      },
+      {
+        "type": "note",
+        "text": "J'ai couru"
+      },
+      {
+        "type": "note",
+        "text": "Je ne sais pas quel fruit"
+      },
+      {
+        "type": "note",
+        "text": "rien de spécial"
+      },
+      {
+        "type": "note",
+        "text": "Un doctorat = PhD"
+      },
+      {
+        "type": "note",
+        "text": "les sous-entendus"
+      },
+      {
+        "type": "note",
+        "text": "Au fil des années, on restera de plus en plus de temps dans chaque pays"
+      },
+      {
+        "type": "note",
+        "text": "Les tortues"
+      },
+      {
+        "type": "note",
+        "text": "Villes moyennes"
+      },
+      {
+        "type": "note",
+        "text": "handicap invisible"
+      },
+      {
+        "type": "heading",
+        "text": "16 September"
+      },
+      {
+        "type": "note",
+        "text": "Ils crient"
+      },
+      {
+        "type": "note",
+        "text": "la Pologne"
+      },
+      {
+        "type": "note",
+        "text": "Je ne me sens pas en sécurité"
+      },
+      {
+        "type": "note",
+        "text": "Ils semblaient triste"
+      },
+      {
+        "type": "note",
+        "text": "échapper = to escape"
+      },
+      {
+        "type": "note",
+        "text": "Les fenêtres"
+      },
+      {
+        "type": "note",
+        "text": "Je ne l'ai pas vu depuis 2 ans"
+      },
+      {
+        "type": "note",
+        "text": "1 an et demi"
+      },
+      {
+        "type": "note",
+        "text": "Tu as bien deviné"
       },
       {
         "type": "note",
@@ -648,76 +824,912 @@ window.FN_FRENCH_LESSONS = [
       },
       {
         "type": "note",
-        "text": "L'Iran a bombardé"
+        "text": "Il neigeait"
       },
       {
         "type": "note",
-        "text": "Journée d'intégration"
+        "text": "Pâques = Easter"
       },
       {
         "type": "note",
-        "text": "J'avais 21 ans"
+        "text": "La Hongrie"
       },
       {
         "type": "note",
-        "text": "presque 4 ans"
+        "text": "S'il était résident en Hongrie"
       },
       {
         "type": "note",
-        "text": "Sciences Environnementales"
+        "text": "Il devrait rester en Europe"
       },
       {
         "type": "note",
-        "text": "J'habitais dans un village"
+        "text": "équipements de triathlon"
       },
       {
         "type": "note",
-        "text": "J'habite dans une petite ville"
+        "text": "Fixe"
       },
       {
         "type": "note",
-        "text": "J'ai commencé a détester"
+        "text": "le prêt immobilier"
       },
       {
         "type": "note",
-        "text": "Ils ne peuvent pas me forcer à rembourser ma dette"
+        "text": "Ils investissent"
       },
       {
         "type": "note",
-        "text": "du plafond"
+        "text": "Conseillers financiers"
       },
       {
         "type": "note",
-        "text": "--> ceiling"
+        "text": "CDI"
       },
       {
         "type": "note",
-        "text": "Je ne suis jamais allée"
+        "text": "CDD"
       },
       {
         "type": "note",
-        "text": "Je pense que c'est un très beau"
+        "text": "Fonctionnaire"
       },
       {
         "type": "note",
-        "text": "Naples"
+        "text": "Licencier"
       },
       {
         "type": "note",
-        "text": "quatrième"
+        "text": "Infirmier / Infirmière"
       },
       {
         "type": "note",
-        "text": "l'île Maurice"
-      }
-    ]
-  },
-  {
-    "id": "french-lesson-3",
-    "number": 3,
-    "kicker": "Lesson 3 · French",
-    "title": "19 May",
-    "blocks": [
+        "text": "impôts"
+      },
+      {
+        "type": "note",
+        "text": "J'étais non-imposable"
+      },
+      {
+        "type": "note",
+        "text": "Les choses pour lesquelles tu dois payer des taxes"
+      },
+      {
+        "type": "note",
+        "text": "Mon rêve"
+      },
+      {
+        "type": "note",
+        "text": "95 = Quatre-vingt quinze"
+      },
+      {
+        "type": "heading",
+        "text": "9 September"
+      },
+      {
+        "type": "note",
+        "text": "Nous nous somme arrêtés"
+      },
+      {
+        "type": "note",
+        "text": "autrichien / autrichienne"
+      },
+      {
+        "type": "note",
+        "text": "buffet a volonté"
+      },
+      {
+        "type": "note",
+        "text": "sushi a volonté"
+      },
+      {
+        "type": "note",
+        "text": "le midi / pour le déjeuner"
+      },
+      {
+        "type": "note",
+        "text": "le soir / le dîner"
+      },
+      {
+        "type": "note",
+        "text": "Une statue"
+      },
+      {
+        "type": "note",
+        "text": "couper = to cut"
+      },
+      {
+        "type": "note",
+        "text": "Au Maroc"
+      },
+      {
+        "type": "note",
+        "text": "cannelle"
+      },
+      {
+        "type": "note",
+        "text": "sa soeur habite en Norvège"
+      },
+      {
+        "type": "note",
+        "text": "école juive"
+      },
+      {
+        "type": "note",
+        "text": "la plupart de la famille = the majority"
+      },
+      {
+        "type": "note",
+        "text": "Elle s'est cachée"
+      },
+      {
+        "type": "note",
+        "text": "les juifs"
+      },
+      {
+        "type": "note",
+        "text": "60 = soixante"
+      },
+      {
+        "type": "note",
+        "text": "% = pourcent"
+      },
+      {
+        "type": "note",
+        "text": "l'année dernière"
+      },
+      {
+        "type": "note",
+        "text": "connaître"
+      },
+      {
+        "type": "note",
+        "text": "parler de quelque chose"
+      },
+      {
+        "type": "note",
+        "text": "avoir besoin de"
+      },
+      {
+        "type": "note",
+        "text": "Je parle plusieurs langues"
+      },
+      {
+        "type": "note",
+        "text": "Les langues que je parle"
+      },
+      {
+        "type": "note",
+        "text": "Je parle de toutes ces personnes qui ne travaillent pas"
+      },
+      {
+        "type": "note",
+        "text": "Les personne dont je parle"
+      },
+      {
+        "type": "heading",
+        "text": "4 September"
+      },
+      {
+        "type": "note",
+        "text": "jusqu'à = until"
+      },
+      {
+        "type": "note",
+        "text": "J'ai vraiment hâte d'y aller"
+      },
+      {
+        "type": "note",
+        "text": "croyances païennes"
+      },
+      {
+        "type": "note",
+        "text": "nager"
+      },
+      {
+        "type": "note",
+        "text": "J'avais besoin de m'améliorer"
+      },
+      {
+        "type": "note",
+        "text": "l'ail = garlic"
+      },
+      {
+        "type": "note",
+        "text": "plats = dishes"
+      },
+      {
+        "type": "note",
+        "text": "Schnitzelwirt"
+      },
+      {
+        "type": "note",
+        "text": "Ils sourient"
+      },
+      {
+        "type": "note",
+        "text": "feux de forêts"
+      },
+      {
+        "type": "note",
+        "text": "le maire"
+      },
+      {
+        "type": "note",
+        "text": "sable = sabbia"
+      },
+      {
+        "type": "note",
+        "text": "Roumaine"
+      },
+      {
+        "type": "note",
+        "text": "l'arabe"
+      },
+      {
+        "type": "note",
+        "text": "un tiers"
+      },
+      {
+        "type": "note",
+        "text": "entre eux"
+      },
+      {
+        "type": "note",
+        "text": "la hierarchie"
+      },
+      {
+        "type": "note",
+        "text": "Tu as tout vu"
+      },
+      {
+        "type": "note",
+        "text": "Nous sommes allées à Mostar"
+      },
+      {
+        "type": "note",
+        "text": "par = by"
+      },
+      {
+        "type": "heading",
+        "text": "30 July"
+      },
+      {
+        "type": "note",
+        "text": "Je pleure"
+      },
+      {
+        "type": "note",
+        "text": "l'activité cérébrale"
+      },
+      {
+        "type": "note",
+        "text": "ça devrait aller mieux"
+      },
+      {
+        "type": "note",
+        "text": "J'ai rêvé"
+      },
+      {
+        "type": "note",
+        "text": "une carte"
+      },
+      {
+        "type": "note",
+        "text": "Ils disent vrai"
+      },
+      {
+        "type": "note",
+        "text": "ça arrive vraiment"
+      },
+      {
+        "type": "note",
+        "text": "une voix"
+      },
+      {
+        "type": "note",
+        "text": "rêve prémonitoire"
+      },
+      {
+        "type": "note",
+        "text": "faire un prêt"
+      },
+      {
+        "type": "note",
+        "text": "mettre en gage ses bijoux"
+      },
+      {
+        "type": "note",
+        "text": "Si je pouvais lui prêter ma bague pour une nuit"
+      },
+      {
+        "type": "note",
+        "text": "enlever = to take off"
+      },
+      {
+        "type": "note",
+        "text": "son doigt"
+      },
+      {
+        "type": "note",
+        "text": "casser = to break"
+      },
+      {
+        "type": "note",
+        "text": "en or"
+      },
+      {
+        "type": "note",
+        "text": "louer / réserver"
+      },
+      {
+        "type": "note",
+        "text": "nager = to swim"
+      },
+      {
+        "type": "note",
+        "text": "chapeau = hat"
+      },
+      {
+        "type": "note",
+        "text": "Elle est allée étudier en Russie"
+      },
+      {
+        "type": "note",
+        "text": "sa SIM fonctionne en Russie"
+      },
+      {
+        "type": "note",
+        "text": "Ils ne permettent pas que les russes aillent aux Pays-Bas"
+      },
+      {
+        "type": "note",
+        "text": "C'est un pays très sûr"
+      },
+      {
+        "type": "note",
+        "text": "Il y a beaucoup de bordel"
+      },
+      {
+        "type": "note",
+        "text": "psychologue"
+      },
+      {
+        "type": "note",
+        "text": "Route de la soie"
+      },
+      {
+        "type": "note",
+        "text": "les lacs"
+      },
+      {
+        "type": "note",
+        "text": "Les gens sont très accueillants"
+      },
+      {
+        "type": "note",
+        "text": "C'est très bon marché"
+      },
+      {
+        "type": "note",
+        "text": "C'est vraiment pas cher"
+      },
+      {
+        "type": "heading",
+        "text": "22 July"
+      },
+      {
+        "type": "note",
+        "text": "prêtres"
+      },
+      {
+        "type": "note",
+        "text": "Il y avait = there was"
+      },
+      {
+        "type": "note",
+        "text": "Il avait 30 ans"
+      },
+      {
+        "type": "note",
+        "text": "Vous étiez combien au total?"
+      },
+      {
+        "type": "note",
+        "text": "Les livres sacrés"
+      },
+      {
+        "type": "note",
+        "text": "Certains ne veulent pas parler russe"
+      },
+      {
+        "type": "note",
+        "text": "esthéticienne"
+      },
+      {
+        "type": "note",
+        "text": "la Russie"
+      },
+      {
+        "type": "note",
+        "text": "Traductrice (F) / Traducteur (M)"
+      },
+      {
+        "type": "note",
+        "text": "C'est son salon"
+      },
+      {
+        "type": "note",
+        "text": "Je n'ai pas vu la différence"
+      },
+      {
+        "type": "note",
+        "text": "économiser et investir"
+      },
+      {
+        "type": "note",
+        "text": "Ils se marient vers quel âge?"
+      },
+      {
+        "type": "note",
+        "text": "Le rêve = the dream"
+      },
+      {
+        "type": "note",
+        "text": "C'était son rêve"
+      },
+      {
+        "type": "note",
+        "text": "sans-abris"
+      },
+      {
+        "type": "note",
+        "text": "bidonville = slums"
+      },
+      {
+        "type": "note",
+        "text": "Mes camarades de l'université"
+      },
+      {
+        "type": "note",
+        "text": "Pour eux"
+      },
+      {
+        "type": "note",
+        "text": "le niveau est plus élevé"
+      },
+      {
+        "type": "note",
+        "text": "humble"
+      },
+      {
+        "type": "note",
+        "text": "Il y a encore de la neige"
+      },
+      {
+        "type": "note",
+        "text": "30 degrés"
+      },
+      {
+        "type": "note",
+        "text": "sa copine = her girlfriend"
+      },
+      {
+        "type": "note",
+        "text": "son copain = his boyfriend"
+      },
+      {
+        "type": "note",
+        "text": "Ukrainienne (F) / Ukrainien (M)"
+      },
+      {
+        "type": "note",
+        "text": "ça ne devrait pas être politique"
+      },
+      {
+        "type": "note",
+        "text": "Ils riaient de moi"
+      },
+      {
+        "type": "note",
+        "text": "Je peux comprendre"
+      },
+      {
+        "type": "note",
+        "text": "Les langues ne l'intéressent pas"
+      },
+      {
+        "type": "note",
+        "text": "Un équilibre entre les deux"
+      },
+      {
+        "type": "note",
+        "text": "Tu ne construits"
+      },
+      {
+        "type": "note",
+        "text": "mots = parole"
+      },
+      {
+        "type": "note",
+        "text": "envoyer = to send"
+      },
+      {
+        "type": "note",
+        "text": "Copier"
+      },
+      {
+        "type": "note",
+        "text": "Coller"
+      },
+      {
+        "type": "note",
+        "text": "surligner = to highlight"
+      },
+      {
+        "type": "note",
+        "text": "shadowing"
+      },
+      {
+        "type": "heading",
+        "text": "16 June"
+      },
+      {
+        "type": "note",
+        "text": "Une semaine plus tôt que prévu"
+      },
+      {
+        "type": "note",
+        "text": "Il a commencé à pleurer"
+      },
+      {
+        "type": "note",
+        "text": "crier = to shout"
+      },
+      {
+        "type": "note",
+        "text": "âne = donkey"
+      },
+      {
+        "type": "note",
+        "text": "Classe moyenne"
+      },
+      {
+        "type": "note",
+        "text": "même si = even if"
+      },
+      {
+        "type": "note",
+        "text": "Ce n'était pas assez"
+      },
+      {
+        "type": "note",
+        "text": "trop = too much"
+      },
+      {
+        "type": "note",
+        "text": "Ils ne soutiennent pas la guerre"
+      },
+      {
+        "type": "note",
+        "text": "très chaleureux"
+      },
+      {
+        "type": "note",
+        "text": "très accueillant = welcoming"
+      },
+      {
+        "type": "note",
+        "text": "trop vite = too fast"
+      },
+      {
+        "type": "note",
+        "text": "J'ai essayé de les convaincre"
+      },
+      {
+        "type": "note",
+        "text": "ça sera la troisième fois"
+      },
+      {
+        "type": "note",
+        "text": "Je les ai convaincus"
+      },
+      {
+        "type": "note",
+        "text": "Je pense qu'ils vont aimer"
+      },
+      {
+        "type": "note",
+        "text": "Je pense qu'ils aimeront"
+      },
+      {
+        "type": "note",
+        "text": "Il doit passer des examens"
+      },
+      {
+        "type": "note",
+        "text": "printemps"
+      },
+      {
+        "type": "note",
+        "text": "les huîtres = oysters"
+      },
+      {
+        "type": "note",
+        "text": "être = future"
+      },
+      {
+        "type": "note",
+        "text": "Je serai, Tu seras, Elle sera, Nous serons, Vous serez, Elles seront"
+      },
+      {
+        "type": "note",
+        "text": "être = conditionnel"
+      },
+      {
+        "type": "note",
+        "text": "Je serais, Tu serais, Elle serait, Nous serions, Vous seriez, Elles seraient"
+      },
+      {
+        "type": "note",
+        "text": "Si j'avais eu plus d'argent, je serais allée en Suisse"
+      },
+      {
+        "type": "heading",
+        "text": "3 June"
+      },
+      {
+        "type": "note",
+        "text": "Après cette leçon"
+      },
+      {
+        "type": "note",
+        "text": "Faire une randonnée"
+      },
+      {
+        "type": "note",
+        "text": "Mon chef / Mon boss"
+      },
+      {
+        "type": "note",
+        "text": "22h00"
+      },
+      {
+        "type": "note",
+        "text": "C'est pas mal = C'est bien"
+      },
+      {
+        "type": "note",
+        "text": "C'est pas terrible = It's not really good"
+      },
+      {
+        "type": "note",
+        "text": "Ce n'est pas terrible"
+      },
+      {
+        "type": "note",
+        "text": "ça aurait pu être pire = It could have been worse"
+      },
+      {
+        "type": "note",
+        "text": "une escale"
+      },
+      {
+        "type": "note",
+        "text": "Je pourrais y manger"
+      },
+      {
+        "type": "note",
+        "text": "Je pense que j'y mangerai"
+      },
+      {
+        "type": "note",
+        "text": "On est chanceux"
+      },
+      {
+        "type": "note",
+        "text": "Ils m'ont envoyé un email"
+      },
+      {
+        "type": "note",
+        "text": "C'est la langue la plus vieille"
+      },
+      {
+        "type": "note",
+        "text": "C'est la langue la plus ancienne"
+      },
+      {
+        "type": "note",
+        "text": "Aux Pays-Bas"
+      },
+      {
+        "type": "note",
+        "text": "C'est le seul"
+      },
+      {
+        "type": "note",
+        "text": "C'est un des seuls"
+      },
+      {
+        "type": "note",
+        "text": "Je n'y suis jamais allée non plus"
+      },
+      {
+        "type": "note",
+        "text": "non plus = neither"
+      },
+      {
+        "type": "note",
+        "text": "J'ai réservé un AirBnB"
+      },
+      {
+        "type": "note",
+        "text": "Je serai seule"
+      },
+      {
+        "type": "note",
+        "text": "porte = door"
+      },
+      {
+        "type": "note",
+        "text": "Rideaux"
+      },
+      {
+        "type": "note",
+        "text": "partager la chambre"
+      },
+      {
+        "type": "note",
+        "text": "72 = Soixante-douze"
+      },
+      {
+        "type": "note",
+        "text": "Elle fait tout pour lui"
+      },
+      {
+        "type": "note",
+        "text": "droit international"
+      },
+      {
+        "type": "note",
+        "text": "bientôt = soon"
+      },
+      {
+        "type": "note",
+        "text": "On se retrouvera en Géorgie"
+      },
+      {
+        "type": "note",
+        "text": "Nous nous retrouverons en Géorgie"
+      },
+      {
+        "type": "note",
+        "text": "Ça ressemble à"
+      },
+      {
+        "type": "note",
+        "text": "retour dans le passé"
+      },
+      {
+        "type": "heading",
+        "text": "29 May"
+      },
+      {
+        "type": "note",
+        "text": "Nager"
+      },
+      {
+        "type": "note",
+        "text": "Ils ne nagent pas"
+      },
+      {
+        "type": "note",
+        "text": "J'ai payé"
+      },
+      {
+        "type": "note",
+        "text": "J'avais payé"
+      },
+      {
+        "type": "note",
+        "text": "Clinique privée"
+      },
+      {
+        "type": "note",
+        "text": "chambre = room"
+      },
+      {
+        "type": "note",
+        "text": "Je ne le referai pas"
+      },
+      {
+        "type": "note",
+        "text": "Elle était un peu folle"
+      },
+      {
+        "type": "note",
+        "text": "Je devais"
+      },
+      {
+        "type": "note",
+        "text": "Tu fais ce que tu veux"
+      },
+      {
+        "type": "note",
+        "text": "préjugés"
+      },
+      {
+        "type": "note",
+        "text": "Tes parents"
+      },
+      {
+        "type": "note",
+        "text": "Les vols = flights"
+      },
+      {
+        "type": "note",
+        "text": "Les vols courts"
+      },
+      {
+        "type": "note",
+        "text": "Les vols longs"
+      },
+      {
+        "type": "note",
+        "text": "Dans deux semaines = in two weeks"
+      },
+      {
+        "type": "note",
+        "text": "la cérémonie de remise des diplômes"
+      },
+      {
+        "type": "note",
+        "text": "Avec une escale"
+      },
+      {
+        "type": "note",
+        "text": "Aller simple = on way"
+      },
+      {
+        "type": "note",
+        "text": "aller-retour"
+      },
+      {
+        "type": "note",
+        "text": "J'ai commencé à apprendre à conduire"
+      },
+      {
+        "type": "note",
+        "text": "le code de la route"
+      },
+      {
+        "type": "note",
+        "text": "Fait attention"
+      },
+      {
+        "type": "note",
+        "text": "Met un casque"
+      },
+      {
+        "type": "note",
+        "text": "Il faut que j'aille au supermarché"
+      },
+      {
+        "type": "note",
+        "text": "Si je partais, est-ce que je te manquerais"
+      },
+      {
+        "type": "note",
+        "text": "Je pense qu'il va venir"
+      },
+      {
+        "type": "note",
+        "text": "Je ne pense pas qu'il vienne"
+      },
+      {
+        "type": "heading",
+        "text": "19 May"
+      },
       {
         "type": "note",
         "text": "bruyant"
@@ -945,902 +1957,114 @@ window.FN_FRENCH_LESSONS = [
       {
         "type": "note",
         "text": "à l'étranger = abroad"
-      }
-    ]
-  },
-  {
-    "id": "french-lesson-4",
-    "number": 4,
-    "kicker": "Lesson 4 · French",
-    "title": "29 May",
-    "blocks": [
-      {
-        "type": "note",
-        "text": "Nager"
-      },
-      {
-        "type": "note",
-        "text": "Ils ne nagent pas"
-      },
-      {
-        "type": "note",
-        "text": "J'ai payé"
-      },
-      {
-        "type": "note",
-        "text": "J'avais payé"
-      },
-      {
-        "type": "note",
-        "text": "Clinique privée"
-      },
-      {
-        "type": "note",
-        "text": "chambre = room"
-      },
-      {
-        "type": "note",
-        "text": "Je ne le referai pas"
-      },
-      {
-        "type": "note",
-        "text": "Elle était un peu folle"
-      },
-      {
-        "type": "note",
-        "text": "Je devais"
-      },
-      {
-        "type": "note",
-        "text": "Tu fais ce que tu veux"
-      },
-      {
-        "type": "note",
-        "text": "préjugés"
-      },
-      {
-        "type": "note",
-        "text": "Tes parents"
-      },
-      {
-        "type": "note",
-        "text": "Les vols = flights"
-      },
-      {
-        "type": "note",
-        "text": "Les vols courts"
-      },
-      {
-        "type": "note",
-        "text": "Les vols longs"
-      },
-      {
-        "type": "note",
-        "text": "Dans deux semaines = in two weeks"
-      },
-      {
-        "type": "note",
-        "text": "la cérémonie de remise des diplômes"
-      },
-      {
-        "type": "note",
-        "text": "Avec une escale"
-      },
-      {
-        "type": "note",
-        "text": "Aller simple = on way"
-      },
-      {
-        "type": "note",
-        "text": "aller-retour"
-      },
-      {
-        "type": "note",
-        "text": "J'ai commencé à apprendre à conduire"
-      },
-      {
-        "type": "note",
-        "text": "le code de la route"
-      },
-      {
-        "type": "note",
-        "text": "Fait attention"
-      },
-      {
-        "type": "note",
-        "text": "Met un casque"
-      },
-      {
-        "type": "note",
-        "text": "Il faut que j'aille au supermarché"
-      },
-      {
-        "type": "note",
-        "text": "Si je partais, est-ce que je te manquerais"
-      },
-      {
-        "type": "note",
-        "text": "Je pense qu'il va venir"
-      },
-      {
-        "type": "note",
-        "text": "Je ne pense pas qu'il vienne"
-      }
-    ]
-  },
-  {
-    "id": "french-lesson-5",
-    "number": 5,
-    "kicker": "Lesson 5 · French",
-    "title": "3 June",
-    "blocks": [
-      {
-        "type": "note",
-        "text": "Après cette leçon"
-      },
-      {
-        "type": "note",
-        "text": "Faire une randonnée"
-      },
-      {
-        "type": "note",
-        "text": "Mon chef / Mon boss"
-      },
-      {
-        "type": "note",
-        "text": "22h00"
-      },
-      {
-        "type": "note",
-        "text": "C'est pas mal = C'est bien"
-      },
-      {
-        "type": "note",
-        "text": "C'est pas terrible = It's not really good"
-      },
-      {
-        "type": "note",
-        "text": "Ce n'est pas terrible"
-      },
-      {
-        "type": "note",
-        "text": "ça aurait pu être pire = It could have been worse"
-      },
-      {
-        "type": "note",
-        "text": "une escale"
-      },
-      {
-        "type": "note",
-        "text": "Je pourrais y manger"
-      },
-      {
-        "type": "note",
-        "text": "Je pense que j'y mangerai"
-      },
-      {
-        "type": "note",
-        "text": "On est chanceux"
-      },
-      {
-        "type": "note",
-        "text": "Ils m'ont envoyé un email"
-      },
-      {
-        "type": "note",
-        "text": "C'est la langue la plus vieille"
-      },
-      {
-        "type": "note",
-        "text": "C'est la langue la plus ancienne"
-      },
-      {
-        "type": "note",
-        "text": "Aux Pays-Bas"
-      },
-      {
-        "type": "note",
-        "text": "C'est le seul"
-      },
-      {
-        "type": "note",
-        "text": "C'est un des seuls"
-      },
-      {
-        "type": "note",
-        "text": "Je n'y suis jamais allée non plus"
-      },
-      {
-        "type": "note",
-        "text": "non plus = neither"
-      },
-      {
-        "type": "note",
-        "text": "J'ai réservé un AirBnB"
-      },
-      {
-        "type": "note",
-        "text": "Je serai seule"
-      },
-      {
-        "type": "note",
-        "text": "porte = door"
-      },
-      {
-        "type": "note",
-        "text": "Rideaux"
-      },
-      {
-        "type": "note",
-        "text": "partager la chambre"
-      },
-      {
-        "type": "note",
-        "text": "72 = Soixante-douze"
-      },
-      {
-        "type": "note",
-        "text": "Elle fait tout pour lui"
-      },
-      {
-        "type": "note",
-        "text": "droit international"
-      },
-      {
-        "type": "note",
-        "text": "bientôt = soon"
-      },
-      {
-        "type": "note",
-        "text": "On se retrouvera en Géorgie"
-      },
-      {
-        "type": "note",
-        "text": "Nous nous retrouverons en Géorgie"
-      },
-      {
-        "type": "note",
-        "text": "Ça ressemble à"
-      },
-      {
-        "type": "note",
-        "text": "retour dans le passé"
-      }
-    ]
-  },
-  {
-    "id": "french-lesson-6",
-    "number": 6,
-    "kicker": "Lesson 6 · French",
-    "title": "16 June",
-    "blocks": [
-      {
-        "type": "note",
-        "text": "Une semaine plus tôt que prévu"
-      },
-      {
-        "type": "note",
-        "text": "Il a commencé à pleurer"
-      },
-      {
-        "type": "note",
-        "text": "crier = to shout"
-      },
-      {
-        "type": "note",
-        "text": "âne = donkey"
-      },
-      {
-        "type": "note",
-        "text": "Classe moyenne"
-      },
-      {
-        "type": "note",
-        "text": "même si = even if"
-      },
-      {
-        "type": "note",
-        "text": "Ce n'était pas assez"
-      },
-      {
-        "type": "note",
-        "text": "trop = too much"
-      },
-      {
-        "type": "note",
-        "text": "Ils ne soutiennent pas la guerre"
-      },
-      {
-        "type": "note",
-        "text": "très chaleureux"
-      },
-      {
-        "type": "note",
-        "text": "très accueillant = welcoming"
-      },
-      {
-        "type": "note",
-        "text": "trop vite = too fast"
-      },
-      {
-        "type": "note",
-        "text": "J'ai essayé de les convaincre"
-      },
-      {
-        "type": "note",
-        "text": "ça sera la troisième fois"
-      },
-      {
-        "type": "note",
-        "text": "Je les ai convaincus"
-      },
-      {
-        "type": "note",
-        "text": "Je pense qu'ils vont aimer"
-      },
-      {
-        "type": "note",
-        "text": "Je pense qu'ils aimeront"
-      },
-      {
-        "type": "note",
-        "text": "Il doit passer des examens"
-      },
-      {
-        "type": "note",
-        "text": "printemps"
-      },
-      {
-        "type": "note",
-        "text": "les huîtres = oysters"
-      },
-      {
-        "type": "note",
-        "text": "être = future"
-      },
-      {
-        "type": "note",
-        "text": "Je serai, Tu seras, Elle sera, Nous serons, Vous serez, Elles seront"
-      },
-      {
-        "type": "note",
-        "text": "être = conditionnel"
-      },
-      {
-        "type": "note",
-        "text": "Je serais, Tu serais, Elle serait, Nous serions, Vous seriez, Elles seraient"
-      },
-      {
-        "type": "note",
-        "text": "Si j'avais eu plus d'argent, je serais allée en Suisse"
-      }
-    ]
-  },
-  {
-    "id": "french-lesson-7",
-    "number": 7,
-    "kicker": "Lesson 7 · French",
-    "title": "22 July",
-    "blocks": [
-      {
-        "type": "note",
-        "text": "prêtres"
-      },
-      {
-        "type": "note",
-        "text": "Il y avait = there was"
-      },
-      {
-        "type": "note",
-        "text": "Il avait 30 ans"
-      },
-      {
-        "type": "note",
-        "text": "Vous étiez combien au total?"
-      },
-      {
-        "type": "note",
-        "text": "Les livres sacrés"
-      },
-      {
-        "type": "note",
-        "text": "Certains ne veulent pas parler russe"
-      },
-      {
-        "type": "note",
-        "text": "esthéticienne"
-      },
-      {
-        "type": "note",
-        "text": "la Russie"
-      },
-      {
-        "type": "note",
-        "text": "Traductrice (F) / Traducteur (M)"
-      },
-      {
-        "type": "note",
-        "text": "C'est son salon"
-      },
-      {
-        "type": "note",
-        "text": "Je n'ai pas vu la différence"
-      },
-      {
-        "type": "note",
-        "text": "économiser et investir"
-      },
-      {
-        "type": "note",
-        "text": "Ils se marient vers quel âge?"
-      },
-      {
-        "type": "note",
-        "text": "Le rêve = the dream"
-      },
-      {
-        "type": "note",
-        "text": "C'était son rêve"
-      },
-      {
-        "type": "note",
-        "text": "sans-abris"
-      },
-      {
-        "type": "note",
-        "text": "bidonville = slums"
-      },
-      {
-        "type": "note",
-        "text": "Mes camarades de l'université"
-      },
-      {
-        "type": "note",
-        "text": "Pour eux"
-      },
-      {
-        "type": "note",
-        "text": "le niveau est plus élevé"
-      },
-      {
-        "type": "note",
-        "text": "humble"
-      },
-      {
-        "type": "note",
-        "text": "Il y a encore de la neige"
-      },
-      {
-        "type": "note",
-        "text": "30 degrés"
-      },
-      {
-        "type": "note",
-        "text": "sa copine = her girlfriend"
-      },
-      {
-        "type": "note",
-        "text": "son copain = his boyfriend"
-      },
-      {
-        "type": "note",
-        "text": "Ukrainienne (F) / Ukrainien (M)"
-      },
-      {
-        "type": "note",
-        "text": "ça ne devrait pas être politique"
-      },
-      {
-        "type": "note",
-        "text": "Ils riaient de moi"
-      },
-      {
-        "type": "note",
-        "text": "Je peux comprendre"
-      },
-      {
-        "type": "note",
-        "text": "Les langues ne l'intéressent pas"
-      },
-      {
-        "type": "note",
-        "text": "Un équilibre entre les deux"
-      },
-      {
-        "type": "note",
-        "text": "Tu ne construits"
-      },
-      {
-        "type": "note",
-        "text": "mots = parole"
-      },
-      {
-        "type": "note",
-        "text": "envoyer = to send"
-      },
-      {
-        "type": "note",
-        "text": "Copier"
-      },
-      {
-        "type": "note",
-        "text": "Coller"
-      },
-      {
-        "type": "note",
-        "text": "surligner = to highlight"
-      },
-      {
-        "type": "note",
-        "text": "shadowing"
-      }
-    ]
-  },
-  {
-    "id": "french-lesson-8",
-    "number": 8,
-    "kicker": "Lesson 8 · French",
-    "title": "30 July",
-    "blocks": [
-      {
-        "type": "note",
-        "text": "Je pleure"
-      },
-      {
-        "type": "note",
-        "text": "l'activité cérébrale"
-      },
-      {
-        "type": "note",
-        "text": "ça devrait aller mieux"
-      },
-      {
-        "type": "note",
-        "text": "J'ai rêvé"
-      },
-      {
-        "type": "note",
-        "text": "une carte"
-      },
-      {
-        "type": "note",
-        "text": "Ils disent vrai"
-      },
-      {
-        "type": "note",
-        "text": "ça arrive vraiment"
-      },
-      {
-        "type": "note",
-        "text": "une voix"
-      },
-      {
-        "type": "note",
-        "text": "rêve prémonitoire"
-      },
-      {
-        "type": "note",
-        "text": "faire un prêt"
-      },
-      {
-        "type": "note",
-        "text": "mettre en gage ses bijoux"
-      },
-      {
-        "type": "note",
-        "text": "Si je pouvais lui prêter ma bague pour une nuit"
-      },
-      {
-        "type": "note",
-        "text": "enlever = to take off"
-      },
-      {
-        "type": "note",
-        "text": "son doigt"
-      },
-      {
-        "type": "note",
-        "text": "casser = to break"
-      },
-      {
-        "type": "note",
-        "text": "en or"
-      },
-      {
-        "type": "note",
-        "text": "louer / réserver"
-      },
-      {
-        "type": "note",
-        "text": "nager = to swim"
-      },
-      {
-        "type": "note",
-        "text": "chapeau = hat"
-      },
-      {
-        "type": "note",
-        "text": "Elle est allée étudier en Russie"
-      },
-      {
-        "type": "note",
-        "text": "sa SIM fonctionne en Russie"
-      },
-      {
-        "type": "note",
-        "text": "Ils ne permettent pas que les russes aillent aux Pays-Bas"
-      },
-      {
-        "type": "note",
-        "text": "C'est un pays très sûr"
-      },
-      {
-        "type": "note",
-        "text": "Il y a beaucoup de bordel"
-      },
-      {
-        "type": "note",
-        "text": "psychologue"
-      },
-      {
-        "type": "note",
-        "text": "Route de la soie"
-      },
-      {
-        "type": "note",
-        "text": "les lacs"
-      },
-      {
-        "type": "note",
-        "text": "Les gens sont très accueillants"
-      },
-      {
-        "type": "note",
-        "text": "C'est très bon marché"
-      },
-      {
-        "type": "note",
-        "text": "C'est vraiment pas cher"
-      }
-    ]
-  },
-  {
-    "id": "french-lesson-9",
-    "number": 9,
-    "kicker": "Lesson 9 · French",
-    "title": "4 September",
-    "blocks": [
-      {
-        "type": "note",
-        "text": "jusqu'à = until"
-      },
-      {
-        "type": "note",
-        "text": "J'ai vraiment hâte d'y aller"
-      },
-      {
-        "type": "note",
-        "text": "croyances païennes"
-      },
-      {
-        "type": "note",
-        "text": "nager"
-      },
-      {
-        "type": "note",
-        "text": "J'avais besoin de m'améliorer"
       },
       {
-        "type": "note",
-        "text": "l'ail = garlic"
-      },
-      {
-        "type": "note",
-        "text": "plats = dishes"
-      },
-      {
-        "type": "note",
-        "text": "Schnitzelwirt"
-      },
-      {
-        "type": "note",
-        "text": "Ils sourient"
-      },
-      {
-        "type": "note",
-        "text": "feux de forêts"
-      },
-      {
-        "type": "note",
-        "text": "le maire"
-      },
-      {
-        "type": "note",
-        "text": "sable = sabbia"
-      },
-      {
-        "type": "note",
-        "text": "Roumaine"
-      },
-      {
-        "type": "note",
-        "text": "l'arabe"
-      },
-      {
-        "type": "note",
-        "text": "un tiers"
-      },
-      {
-        "type": "note",
-        "text": "entre eux"
-      },
-      {
-        "type": "note",
-        "text": "la hierarchie"
-      },
-      {
-        "type": "note",
-        "text": "Tu as tout vu"
-      },
-      {
-        "type": "note",
-        "text": "Nous sommes allées à Mostar"
-      },
-      {
-        "type": "note",
-        "text": "par = by"
-      }
-    ]
-  },
-  {
-    "id": "french-lesson-10",
-    "number": 10,
-    "kicker": "Lesson 10 · French",
-    "title": "9 September",
-    "blocks": [
-      {
-        "type": "note",
-        "text": "Nous nous somme arrêtés"
-      },
-      {
-        "type": "note",
-        "text": "autrichien / autrichienne"
+        "type": "heading",
+        "text": "5 May"
       },
       {
         "type": "note",
-        "text": "buffet a volonté"
+        "text": "Danse traditionnelle"
       },
       {
         "type": "note",
-        "text": "sushi a volonté"
+        "text": "Quelle langue?"
       },
       {
         "type": "note",
-        "text": "le midi / pour le déjeuner"
+        "text": "Tu écris en quelle langue?"
       },
       {
         "type": "note",
-        "text": "le soir / le dîner"
+        "text": "chapitre"
       },
       {
         "type": "note",
-        "text": "Une statue"
+        "text": "les nouvelles"
       },
       {
         "type": "note",
-        "text": "couper = to cut"
+        "text": "le sens caché"
       },
       {
         "type": "note",
-        "text": "Au Maroc"
+        "text": "livre audio"
       },
       {
         "type": "note",
-        "text": "cannelle"
+        "text": "langue latine"
       },
       {
         "type": "note",
-        "text": "sa soeur habite en Norvège"
+        "text": "langue slave"
       },
       {
         "type": "note",
-        "text": "école juive"
+        "text": "Il y a 5000 ans"
       },
       {
         "type": "note",
-        "text": "la plupart de la famille = the majority"
+        "text": "Il a reconstruit"
       },
       {
         "type": "note",
-        "text": "Elle s'est cachée"
+        "text": "avant = prima"
       },
       {
         "type": "note",
-        "text": "les juifs"
+        "text": "Elle a tout perdu"
       },
       {
         "type": "note",
-        "text": "60 = soixante"
+        "text": "les études"
       },
       {
         "type": "note",
-        "text": "% = pourcent"
+        "text": "En Inde"
       },
       {
         "type": "note",
-        "text": "l'année dernière"
+        "text": "Dans les trains"
       },
       {
         "type": "note",
-        "text": "connaître"
+        "text": "C'est pour ça"
       },
-      {
-        "type": "note",
-        "text": "parler de quelque chose"
-      },
-      {
-        "type": "note",
-        "text": "avoir besoin de"
-      },
-      {
-        "type": "note",
-        "text": "Je parle plusieurs langues"
-      },
-      {
-        "type": "note",
-        "text": "Les langues que je parle"
-      },
-      {
-        "type": "note",
-        "text": "Je parle de toutes ces personnes qui ne travaillent pas"
-      },
-      {
-        "type": "note",
-        "text": "Les personne dont je parle"
-      }
-    ]
-  },
-  {
-    "id": "french-lesson-11",
-    "number": 11,
-    "kicker": "Lesson 11 · French",
-    "title": "16 September",
-    "blocks": [
       {
         "type": "note",
-        "text": "Ils crient"
+        "text": "le triangle d'or"
       },
       {
         "type": "note",
-        "text": "la Pologne"
+        "text": "Les femmes qui ont survécu aux attaque à l'acide"
       },
       {
         "type": "note",
-        "text": "Je ne me sens pas en sécurité"
+        "text": "les étrangers = foreigners"
       },
       {
         "type": "note",
-        "text": "Ils semblaient triste"
+        "text": "Quelle est ta cuisine préférée ?"
       },
       {
         "type": "note",
-        "text": "échapper = to escape"
+        "text": "Europe"
       },
       {
         "type": "note",
-        "text": "Les fenêtres"
+        "text": "En mai dernier"
       },
       {
         "type": "note",
-        "text": "Je ne l'ai pas vu depuis 2 ans"
+        "text": "Depuis mai"
       },
       {
         "type": "note",
-        "text": "1 an et demi"
+        "text": "Depuis ce moment-là"
       },
       {
         "type": "note",
-        "text": "Tu as bien deviné"
+        "text": "Une promesse"
       },
       {
         "type": "note",
@@ -1848,391 +2072,139 @@ window.FN_FRENCH_LESSONS = [
       },
       {
         "type": "note",
-        "text": "Il neigeait"
+        "text": "L'Iran a bombardé"
       },
       {
         "type": "note",
-        "text": "Pâques = Easter"
+        "text": "Journée d'intégration"
       },
       {
         "type": "note",
-        "text": "La Hongrie"
+        "text": "J'avais 21 ans"
       },
       {
         "type": "note",
-        "text": "S'il était résident en Hongrie"
+        "text": "presque 4 ans"
       },
       {
         "type": "note",
-        "text": "Il devrait rester en Europe"
+        "text": "Sciences Environnementales"
       },
       {
         "type": "note",
-        "text": "équipements de triathlon"
+        "text": "J'habitais dans un village"
       },
       {
         "type": "note",
-        "text": "Fixe"
+        "text": "J'habite dans une petite ville"
       },
       {
         "type": "note",
-        "text": "le prêt immobilier"
+        "text": "J'ai commencé a détester"
       },
       {
         "type": "note",
-        "text": "Ils investissent"
+        "text": "Ils ne peuvent pas me forcer à rembourser ma dette"
       },
       {
         "type": "note",
-        "text": "Conseillers financiers"
+        "text": "du plafond"
       },
       {
         "type": "note",
-        "text": "CDI"
+        "text": "--> ceiling"
       },
       {
         "type": "note",
-        "text": "CDD"
+        "text": "Je ne suis jamais allée"
       },
       {
         "type": "note",
-        "text": "Fonctionnaire"
+        "text": "Je pense que c'est un très beau"
       },
       {
         "type": "note",
-        "text": "Licencier"
+        "text": "Naples"
       },
       {
         "type": "note",
-        "text": "Infirmier / Infirmière"
+        "text": "quatrième"
       },
       {
         "type": "note",
-        "text": "impôts"
+        "text": "l'île Maurice"
       },
       {
-        "type": "note",
-        "text": "J'étais non-imposable"
-      },
-      {
-        "type": "note",
-        "text": "Les choses pour lesquelles tu dois payer des taxes"
-      },
-      {
-        "type": "note",
-        "text": "Mon rêve"
-      },
-      {
-        "type": "note",
-        "text": "95 = Quatre-vingt quinze"
-      }
-    ]
-  },
-  {
-    "id": "french-lesson-12",
-    "number": 12,
-    "kicker": "Lesson 12 · French",
-    "title": "23 September",
-    "blocks": [
-      {
-        "type": "note",
-        "text": "Porridge de semoule"
-      },
-      {
-        "type": "note",
-        "text": "Le casque"
-      },
-      {
-        "type": "note",
-        "text": "Je porte mon casque"
-      },
-      {
-        "type": "note",
-        "text": "beurre de cacachuète"
-      },
-      {
-        "type": "note",
-        "text": "graine de chia"
-      },
-      {
-        "type": "note",
-        "text": "escale = layover"
-      },
-      {
-        "type": "note",
-        "text": "On change d'endroit toutes les deux semaines"
-      },
-      {
-        "type": "note",
-        "text": "Quand les portes se referment"
-      },
-      {
-        "type": "note",
-        "text": "Il est tombé"
-      },
-      {
-        "type": "note",
-        "text": "Quand tu as vécu"
-      },
-      {
-        "type": "note",
-        "text": "C'est moins présent en Australie"
-      },
-      {
-        "type": "note",
-        "text": "la pire ville"
-      },
-      {
-        "type": "note",
-        "text": "le désert"
-      },
-      {
-        "type": "note",
-        "text": "Est-ce que tu pourrais aller seule en Inde ?"
-      },
-      {
-        "type": "note",
-        "text": "Il est allé en Colombie"
-      },
-      {
-        "type": "note",
-        "text": "alcoolisé"
-      },
-      {
-        "type": "note",
-        "text": "Tu veux te battre ?"
-      },
-      {
-        "type": "note",
-        "text": "Les gens avec lesquels j'habitais"
-      },
-      {
-        "type": "note",
-        "text": "embouteillages = traffic"
-      },
-      {
-        "type": "note",
-        "text": "Je n'étais pas douée avec le sport"
-      },
-      {
-        "type": "note",
-        "text": "J'ai couru"
-      },
-      {
-        "type": "note",
-        "text": "Je ne sais pas quel fruit"
-      },
-      {
-        "type": "note",
-        "text": "rien de spécial"
-      },
-      {
-        "type": "note",
-        "text": "Un doctorat = PhD"
-      },
-      {
-        "type": "note",
-        "text": "les sous-entendus"
+        "type": "heading",
+        "text": "28 April"
       },
       {
         "type": "note",
-        "text": "Au fil des années, on restera de plus en plus de temps dans chaque pays"
+        "text": "Je voudrais y habiter"
       },
       {
         "type": "note",
-        "text": "Les tortues"
+        "text": "vendre = to sell"
       },
       {
         "type": "note",
-        "text": "Villes moyennes"
+        "text": "Je travaille pour une entreprise qui vend des suppléments"
       },
-      {
-        "type": "note",
-        "text": "handicap invisible"
-      }
-    ]
-  },
-  {
-    "id": "french-lesson-13",
-    "number": 13,
-    "kicker": "Lesson 13 · French",
-    "title": "7 October",
-    "blocks": [
-      {
-        "type": "note",
-        "text": "Ils sont très chaleureux"
-      },
-      {
-        "type": "note",
-        "text": "Je comprends"
-      },
-      {
-        "type": "note",
-        "text": "entendre = sentire"
-      },
-      {
-        "type": "note",
-        "text": "Je ne pense pas que ça serait aussi épicé"
-      },
-      {
-        "type": "note",
-        "text": "ADN = DNA"
-      },
-      {
-        "type": "note",
-        "text": "en dehors de France"
-      },
-      {
-        "type": "note",
-        "text": "en périphérie de la ville"
-      },
-      {
-        "type": "note",
-        "text": "Très bourgeois"
-      },
-      {
-        "type": "note",
-        "text": "Les propriétaires"
-      },
-      {
-        "type": "note",
-        "text": "il a été expulsé"
-      },
-      {
-        "type": "note",
-        "text": "Il volait dans les magasins"
-      },
-      {
-        "type": "note",
-        "text": "2 mois et demi"
-      },
-      {
-        "type": "note",
-        "text": "midi = mezzogiorno"
-      },
-      {
-        "type": "note",
-        "text": "le delta du Sine Saloum"
-      },
-      {
-        "type": "note",
-        "text": "les deux"
-      },
-      {
-        "type": "note",
-        "text": "faible = weak"
-      },
-      {
-        "type": "note",
-        "text": "prendre du poids"
-      },
-      {
-        "type": "note",
-        "text": "Je ne suis pas en surpoids"
-      },
-      {
-        "type": "note",
-        "text": "obèse"
-      },
-      {
-        "type": "note",
-        "text": "régime"
-      },
-      {
-        "type": "note",
-        "text": "effets secondaires = side effects"
-      },
-      {
-        "type": "note",
-        "text": "muscle"
-      },
-      {
-        "type": "note",
-        "text": "sur ton ventre"
-      },
-      {
-        "type": "note",
-        "text": "Je suis très gênée"
-      },
-      {
-        "type": "note",
-        "text": "semi-marathon"
-      },
-      {
-        "type": "note",
-        "text": "Elle est roumaine"
-      },
-      {
-        "type": "note",
-        "text": "Ils n'avaient pas l'habitude de voir des étrangers"
-      },
-      {
-        "type": "note",
-        "text": "stagiaire"
-      }
-    ]
-  },
-  {
-    "id": "french-lesson-14",
-    "number": 14,
-    "kicker": "Lesson 14 · French",
-    "title": "13 October",
-    "blocks": [
       {
         "type": "note",
-        "text": "interurbain"
+        "text": "L'entreprise est néo-zélandaise"
       },
       {
         "type": "note",
-        "text": "confortable"
+        "text": "Tu connais UpWork?"
       },
       {
         "type": "note",
-        "text": "deux sièges"
+        "text": "J'aurais voulu habiter à Almaty"
       },
       {
         "type": "note",
-        "text": "itinéraires"
+        "text": "Personne ne parlait en dialecte"
       },
       {
         "type": "note",
-        "text": "sauvegarder"
+        "text": "avant le Brexit"
       },
       {
         "type": "note",
-        "text": "Tu reçois"
+        "text": "sauf en Italie"
       },
       {
         "type": "note",
-        "text": "lettre de motivation"
+        "text": "Je dois y retourner"
       },
       {
         "type": "note",
-        "text": "disputes"
+        "text": "J'aimerais y retourner"
       },
       {
         "type": "note",
-        "text": "un rapport"
+        "text": "D'où viens-tu en France?"
       },
       {
         "type": "note",
-        "text": "J'ai connecté"
+        "text": "Ta copine vient d'où ?"
       },
       {
         "type": "note",
-        "text": "un remboursement = a refund"
+        "text": "C'est ma ville préférée"
       },
       {
         "type": "note",
-        "text": "Je n'ai encore jamais atteint les limites"
+        "text": "la linguistique"
       },
       {
         "type": "note",
-        "text": "Ils se sont enfuis"
+        "text": "Le russe me vient à l'esprit (it comes to mind)"
       },
       {
         "type": "note",
-        "text": "arnaque = scams"
+        "text": "Quand j'étais enfant"
       }
     ]
   }

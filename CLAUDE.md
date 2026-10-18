@@ -176,11 +176,13 @@ a separate Europe close-up, the map legend or the trip buttons under the map on 
   Keep it elegant: no emoji, no tooltips, no outlines; only the glow and the Arnold Böcklin word on hover.
 - Topic content is in `TOPICS` in `assets/study.js` (old Italian strings sit beside the English; only English
   shows). Ticks, notes, vocabulary, extra steps and new topics live in the browser only (`fn-study-v1`).
-- Russian and French pages have a **Vocabulary** list (`VOCAB` in `study.js`): the word on the left, English on the
-  right. "Hide Russian/French" or "Hide English" blurs that column to test both ways (a tap reveals one word), Shuffle
-  mixes the order, and shown words can be corrected in place. Words are saved in `fn-study-v1` under `vocab`.
-- French class notes come from Nicky's Notion page "French" (`assets/french-lessons.js`, wording kept exactly):
-  a grammar lesson (her verb and pronoun notes and tables) and one lesson per class date, listed under the French
-  path as "Class notes" and read with the same layout, highlights and margin notes as the Silver Age lessons.
-  `FN_FRENCH_VOCAB` (her "IMPORTANT" table) seeds the French vocab list once (`seeded` in `fn-study-v1`), so words she
-  removes or edits stay that way.
+- Paths work like Silver Age poetry: a step with a page links to it (`lessonsOf()` maps path steps to lessons by index).
+- French path = Nicky's Notion subjects (her Notion page "French"; `assets/french-lessons.js`, wording kept exactly):
+  one page per grammar subject (present continuous … relative pronouns), then "Past lessons" (her class notes by
+  date, newest first), each read like the Silver Age lessons with highlights and margin notes. Nicky rejected a
+  separate "Class notes" list beside the path: notes are reached by clicking through the path.
+- Russian and French paths end with **Vocabulary**, its own page (`#french-vocabulary`, `VOCAB` in `study.js`): the
+  word on the left, English on the right. "Hide Russian/French" or "Hide English" blurs that column to test both ways
+  (a tap reveals one word), Shuffle mixes the order, and shown words can be corrected in place. Words are saved in
+  `fn-study-v1` under `vocab`. `FN_FRENCH_VOCAB` (her Notion "IMPORTANT" table) seeds the French list once
+  (`seeded` in `fn-study-v1`), so words she removes or edits stay that way.
