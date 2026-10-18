@@ -165,7 +165,7 @@ body.fn-lesson-open{background:#faeac0}
 .fn-string-vibration,.fn-petals,.fn-embers,.fn-liquid-ripples,.fn-crystal-pulse{opacity:0;transition:opacity .5s ease}
 .fn-room-art:has([data-spot="opera"]:is(:hover,:focus-visible)) .fn-string-vibration{opacity:.45;animation:fn-strings .12s linear infinite}
 @keyframes fn-strings{0%,100%{transform:translateY(-.7px)}50%{transform:translateY(.7px)}}
-.fn-statue-shimmer,.fn-horse-glint{opacity:0}
+.fn-statue-shimmer,.fn-horse-glint,.fn-page-glint{opacity:0}
 .fn-room-art:has([data-spot="silver-age"]:is(:hover,:focus-visible)) .fn-statue-shimmer{animation:fn-statue-shine 3.8s ease-in-out infinite}
 @keyframes fn-statue-shine{0%{opacity:0;transform:translateX(-50px)}20%,65%{opacity:.35}100%{opacity:0;transform:translateX(190px)}}
 .fn-room-art:has([data-spot="silver-age"]:is(:hover,:focus-visible)) .fn-petals{opacity:.8}
@@ -177,6 +177,8 @@ body.fn-lesson-open{background:#faeac0}
 .fn-bust-smile{opacity:0;transition:opacity 1.2s ease}
 .fn-room-art:has([data-spot="french"]:is(:hover,:focus-visible)) .fn-bust-smile{opacity:1}
 .fn-room-art:has([data-spot="tocharian"]:is(:hover,:focus-visible)) .fn-horse-glint{animation:fn-bronze-shine 3s ease-in-out infinite}
+.fn-room-art:has([data-spot="linguistics"]:is(:hover,:focus-visible)) .fn-page-glint{animation:fn-page-shine 3.6s ease-in-out infinite}
+@keyframes fn-page-shine{0%{opacity:0;transform:translateX(0)}25%,65%{opacity:.55}100%{opacity:0;transform:translateX(560px)}}
 @keyframes fn-bronze-shine{0%{opacity:0;transform:translateX(0)}25%,65%{opacity:.6}100%{opacity:0;transform:translateX(120px)}}
 .fn-room-art:has([data-spot="avestan"]:is(:hover,:focus-visible)) .fn-embers{opacity:.9}
 .fn-ember{animation:fn-ember-rise 3.8s ease-out infinite;animation-delay:var(--delay);animation-play-state:paused}

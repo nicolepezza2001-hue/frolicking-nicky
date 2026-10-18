@@ -168,7 +168,8 @@ a separate Europe close-up, the map legend or the trip buttons under the map on 
   On portrait phones the painting fills the height and swipes sideways, opening in the middle.
 - Each object is a traced polygon (painting coordinates 1536×1024) linking to a topic view: lute = Opera,
   pink branches = Silver Age poetry, three books = Russian, marble bust = French, golden horse = Tocharian,
-  smoking vessel = Avestan, green goblet = Proto-Indo-European, quartz crystal = "What next?" (add a topic;
+  smoking vessel = Avestan, green goblet = Proto-Indo-European, big open book at the bottom right = Linguistics (Nicky's pick; its path is
+  empty until she agrees the topics), quartz crystal = "What next?" (add a topic;
   added topics are listed on that page). Hover gives the object a faint candle glow and writes its subject
   in Arnold Böcklin (yellow `#f3d995`); on touch screens every object breathes a faint glow.
 - Topic pages use the study palette Nicky loves: deep purple `#2b1e38` / `#150e1d` and candle-yellow `#f3d995`,
