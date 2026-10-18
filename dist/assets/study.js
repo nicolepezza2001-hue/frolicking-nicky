@@ -64,21 +64,24 @@
     {
       id: 'russian',
       name: ['Russian', 'Russo'],
-      why: ['The language of the poems on the next page: the alphabet, the cases, the verbs of motion, then real reading.',
-            'La lingua delle poesie della pagina accanto: l’alfabeto, i casi, i verbi di moto, poi la lettura vera.'],
-      path: [
-        [['The Cyrillic alphabet', 'L’alfabeto cirillico'], 'Print and handwriting, including the letters that look familiar but aren’t.', 'Stampatello e corsivo, comprese le lettere che sembrano familiari ma non lo sono.'],
-        [['Stress and vowel reduction', 'Accento e riduzione vocalica'], 'Why молоко sounds like “malakó”, and why stress marks help.', 'Perché молоко si pronuncia “malakó”, e perché gli accenti segnati aiutano.'],
-        [['Gender and the six cases', 'Genere e i sei casi'], 'Nominative to prepositional, one case at a time.', 'Dal nominativo al prepositivo, un caso alla volta.'],
-        [['Aspect', 'L’aspetto'], 'Perfective and imperfective pairs: the heart of the Russian verb.', 'Le coppie perfettivo e imperfettivo: il cuore del verbo russo.'],
-        [['Verbs of motion', 'I verbi di moto'], 'Идти and ходить, ехать and ездить, and all their prefixes.', 'Идти e ходить, ехать e ездить, e tutti i loro prefissi.'],
-        [['A fairy tale', 'Una fiaba'], 'A short skazka read aloud, with the audio.', 'Una breve skazka letta ad alta voce, con l’audio.'],
-        [['Pushkin, side by side', 'Puškin, a fronte'], 'A short lyric with a translation beside it.', 'Una breve lirica con la traduzione accanto.'],
-        [['A first conversation', 'Una prima conversazione'], 'Half an hour with a tutor or a language exchange partner.', 'Mezz’ora con un insegnante o in uno scambio linguistico.']
+      why: ['B2 and climbing: my own notes and words, then the finer points (participles, prefixes, register) and real books.',
+            'B2 e oltre: i miei appunti e le mie parole, poi le finezze (participi, prefissi, registro) e i libri veri.'],
+      path: [ // The first three open Nicky's Notion notes (FN_RUSSIAN_LESSONS in russian-lessons.js), in order
+        ['Wishing someone well', 'Хороших выходных! Хорошего дня!'],
+        ['Describing a picture', 'На картине изображено…'],
+        ['Дискурсивные слова: «ну» и «ведь»', 'Small words that carry a lot of feeling.'],
+        ['Participles and verbal adverbs', 'Читающий, прочитанный, читая, прочитав: the written register.'],
+        ['Prefixed verbs of motion, figuratively', 'Прийти в себя, выйти замуж, перейти на «ты».'],
+        ['Aspect in the finer cases', 'Imperatives, negation, and “не надо было”.'],
+        ['Word building', 'Prefixes and suffixes: на-, за-, раз-, -ость, -ство.'],
+        ['A novel, unabridged', 'Bulgakov, Мастер и Маргарита, a chapter at a time.'],
+        ['Podcasts and films without subtitles', 'Arzamas, Radio Svoboda, and Soviet classics.'],
+        ['An essay, corrected', 'A page a week on any subject, checked by a teacher.']
       ],
       shelf: [
-        ['Book', 'Libro', 'Nicholas Brown, The New Penguin Russian Course', 'A thorough grammar course for adults.', 'Un corso di grammatica completo per adulti.'],
         ['Book', 'Libro', 'Terence Wade, A Comprehensive Russian Grammar', 'The reference to keep on the desk.', 'Il riferimento da tenere sulla scrivania.'],
+        ['Book', 'Libro', 'Wade & Gilbert, Russian in Use', 'Exercises for upper-intermediate and advanced learners.', 'Esercizi per livello intermedio-avanzato e avanzato.'],
+        ['Online', 'Online', 'Arzamas', 'Courses on Russian language, literature and history, in Russian.', 'Corsi di lingua, letteratura e storia russa, in russo.', 'https://arzamas.academy/'],
         ['Online', 'Online', 'Russian National Corpus', 'See how any word is really used.', 'Per vedere come si usa davvero una parola.', 'https://ruscorpora.ru/'],
         ['Online', 'Online', 'Forvo', 'Native speakers pronouncing words.', 'Parole pronunciate da madrelingua.', 'https://forvo.com/languages/ru/']
       ]
@@ -200,7 +203,8 @@
 
   const LESSONS = [
     { topic: 'silver-age', name: 'Silver Age poetry', lessons: window.FN_SILVER_AGE_LESSONS || [] },
-    { topic: 'french', name: 'French', lessons: window.FN_FRENCH_LESSONS || [] }
+    { topic: 'french', name: 'French', lessons: window.FN_FRENCH_LESSONS || [] },
+    { topic: 'russian', name: 'Russian', lessons: window.FN_RUSSIAN_LESSONS || [] }
   ];
   const lessonsOf = id => LESSONS.find(x => x.topic === id)?.lessons || [];
   const pick = v => (Array.isArray(v) ? L(v[0], v[1]) : v);
@@ -253,7 +257,7 @@
   // Vocabulary for the language pages: the word on one side, English on the other. Veil either side to test
   // yourself both ways; a tap on a veiled word lifts the veil. Words live in state.vocab (so backups include them).
   const VOCAB = { russian: ['Russian', 'ru'], french: ['French', 'fr'] };
-  const SEED = { french: window.FN_FRENCH_VOCAB || [] };
+  const SEED = { french: window.FN_FRENCH_VOCAB || [], russian: window.FN_RUSSIAN_VOCAB || [] };
   // Imported words join the list once; a word Nicky removes or edits afterwards stays that way
   Object.entries(SEED).forEach(([id, seed]) => {
     const list = (state.vocab[id] ||= []), done = (state.seeded ||= {})[id] || [];
