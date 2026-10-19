@@ -175,6 +175,8 @@ a separate Europe close-up, the map legend or the trip buttons under the map on 
 - Topic pages use the study palette Nicky loves: deep purple `#2b1e38` / `#150e1d` and candle-yellow `#f3d995`,
   with cream `#efe0bf` text, all set in Cormorant Garamond, notes on yellow-ruled lines (`assets/study.css`).
   Keep it elegant: no emoji, no tooltips, no outlines; only the glow and the Arnold Böcklin word on hover.
+  The pointer everywhere in the study is Nicky's golden quill (`quill-cursor-48.png` / `-96.png`, cut from her picture;
+  hotspot on the nib, set in `study.css`).
 - Topic content is in `TOPICS` in `assets/study.js` (old Italian strings sit beside the English; only English
   shows). Ticks, notes, vocabulary, extra steps and new topics live in the browser only (`fn-study-v1`).
 - Paths work like Silver Age poetry: a step with a page links to it (`lessonsOf()` maps path steps to lessons by index).
