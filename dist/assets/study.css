@@ -177,8 +177,6 @@ body.fn-lesson-open{background:#faeac0}
 .fn-bust-smile{opacity:0;transition:opacity 1.2s ease}
 .fn-room-art:has([data-spot="french"]:is(:hover,:focus-visible)) .fn-bust-smile{opacity:1}
 .fn-room-art:has([data-spot="hittite"]:is(:hover,:focus-visible)) .fn-horse-glint{animation:fn-bronze-shine 3s ease-in-out infinite}
-.fn-room-art:has([data-spot="linguistics"]:is(:hover,:focus-visible)) .fn-page-glint{animation:fn-page-shine 3.6s ease-in-out infinite}
-@keyframes fn-page-shine{0%{opacity:0;transform:translateX(0)}25%,65%{opacity:.55}100%{opacity:0;transform:translateX(560px)}}
 @keyframes fn-bronze-shine{0%{opacity:0;transform:translateX(0)}25%,65%{opacity:.6}100%{opacity:0;transform:translateX(120px)}}
 .fn-room-art:has([data-spot="avestan"]:is(:hover,:focus-visible)) .fn-embers{opacity:.9}
 .fn-ember{animation:fn-ember-rise 3.8s ease-out infinite;animation-delay:var(--delay);animation-play-state:paused}
@@ -333,3 +331,7 @@ html:has(body.fn-lesson-open){background:#faeac0}
 .fn-room-art:has([data-spot="tocharian"]:is(:hover,:focus-visible)) .fn-tocharian-halo{animation:fn-tocharian-rise 3.2s ease-out infinite}
 @keyframes fn-tocharian-rise{0%{opacity:0;transform:translateY(0) scale(1)}15%{opacity:.85}70%{opacity:.35}100%{opacity:0;transform:translateY(-55px) scale(1.18)}}
 @media(prefers-reduced-motion:reduce){.fn-tocharian-light{transition:none}.fn-tocharian-halo{animation:none!important;opacity:.55}}
+
+.fn-linguistics-page{transform-origin:1080px 890px;transition:transform 1s ease-in-out}
+.fn-room-art:has([data-spot="linguistics"]:is(:hover,:focus-visible)) .fn-linguistics-page{transform:translateY(-3px) rotate(-.45deg)}
+@media(prefers-reduced-motion:reduce){.fn-linguistics-page{transition:none;transform:none!important}}
