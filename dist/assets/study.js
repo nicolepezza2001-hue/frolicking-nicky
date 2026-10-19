@@ -470,11 +470,10 @@
     const left = el('div');
     if (['pie', 'opera', 'hittite', 'tocharian', 'avestan'].includes(t.id)) {
       left.append(el('h3', 'fn-study-label', 'Your course notes'));
-      const notesList = el('ol', 'fn-pie-course-notes');
-      lessonsOf(t.id).filter(lesson => !['tocharian', 'avestan'].includes(t.id) || lesson.courseNotes).forEach(lesson => {
-        const row = el('li'), link = el('a', 'fn-study-lesson-link', lesson.title); link.href = '#' + lesson.id;
-        row.append(link, el('small', null, lesson.kicker)); notesList.append(row);
-      });
+      // Same rows as the path below (tick circle, title, italic note), as Nicky asked
+      const notesList = el('ol', 'fn-study-path fn-pie-course-notes');
+      lessonsOf(t.id).filter(lesson => !['tocharian', 'avestan'].includes(t.id) || lesson.courseNotes).forEach(lesson =>
+        notesList.append(stepRow(t, { key: `${t.id}:notes:${lesson.id}`, title: lesson.title, note: lesson.kicker, href: '#' + lesson.id }, counter)));
       left.append(notesList);
     }
     const pathless = !t.path.length && !(state.extra[t.id] || []).length; // PIE: course notes only
