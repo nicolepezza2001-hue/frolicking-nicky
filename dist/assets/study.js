@@ -209,7 +209,20 @@
       name: ['Proto-Indo-European', 'Protoindoeuropeo'],
       why: ['The reconstructed ancestor of them all, from Tocharian to French, and the poetry and ritual that left traces in its daughters.',
             'L’antenato ricostruito di tutte, dal tocario al francese, e la poesia e i riti che hanno lasciato tracce nelle lingue figlie.'],
-      path: [], // Nicky dropped the further-study list; her course notes are listed above the shelf
+      path: [ // Nicky's own notes are listed above; these study notes cover what they don't (pie-study-lessons.js)
+        ['Pronouns, numerals and adjectives', 'The small words that survive almost everywhere.'],
+        ['Syntax', 'Word order, clitics in second place, and relative clauses.'],
+        ['Grimm’s and Verner’s laws', 'How pater became father, and why father has a d.'],
+        ['Indo-Iranian', 'Satem, the ruki rule and Brugmann’s law.'],
+        ['Greek', 'From Linear B to Homer.'],
+        ['Italic', 'Latin and the Sabellic languages.'],
+        ['Celtic', 'From Gaulish to Old Irish and Welsh.'],
+        ['Germanic', 'Gothic, Old Norse, Old English and their kin.'],
+        ['Balto-Slavic', 'Lithuanian, Old Church Slavonic, Russian and their cousins.'],
+        ['Armenian and Albanian', 'Two one-language branches.'],
+        ['Schleicher’s fable', 'The sheep and the horses, then and now.']
+      ],
+      pages: ['pie-study-pronouns', 'pie-study-syntax', 'pie-study-grimm', 'pie-study-indo-iranian', 'pie-study-greek', 'pie-study-italic', 'pie-study-celtic', 'pie-study-germanic', 'pie-study-balto-slavic', 'pie-study-armenian-albanian', 'pie-study-schleicher'],
       shelf: [
         ['Notes', 'Appunti', 'Indo-European Language and Culture — source document', 'Your original Google Doc.', 'Your original Google Doc.', 'https://docs.google.com/document/d/1MXldDHErDOBBTdOoZGTa6bRrHNsOXaXUIvW5W6_-CG0/edit'],
         ['Book', 'Libro', 'Fortson, Indo-European Language and Culture', 'The best introduction, branch by branch.', 'La migliore introduzione, ramo per ramo.'],
@@ -245,6 +258,7 @@
     { topic: 'french', name: 'French', lessons: window.FN_FRENCH_LESSONS || [] },
     { topic: 'russian', name: 'Russian', lessons: window.FN_RUSSIAN_LESSONS || [] },
     { topic: 'pie', name: 'Proto-Indo-European', lessons: window.FN_PIE_LESSONS || [] },
+    { topic: 'pie', name: 'Proto-Indo-European', lessons: window.FN_PIE_STUDY_LESSONS || [] }, // path pages; lessonsOf('pie') stays her notes
     { topic: 'linguistics', name: 'Linguistics', lessons: window.FN_LINGUISTICS_LESSONS || [] },
     { topic: 'tocharian', name: 'Tocharian', lessons: window.FN_TOCHARIAN_LESSONS || [] },
     { topic: 'avestan', name: 'Avestan', lessons: window.FN_AVESTAN_LESSONS || [] }

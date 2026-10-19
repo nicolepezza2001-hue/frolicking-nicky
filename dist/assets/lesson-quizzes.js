@@ -784,6 +784,139 @@ window.FN_LESSON_QUIZZES = {
     ['What do you shout for a woman?', 'Brava'],
     ['And for everyone?', 'Bravi'],
     ['Whose operas often run past five hours?', 'Wagner’s / Wagner']
+  ],
+  // Proto-Indo-European: study notes
+  'pie-study-pronouns': [
+    ['PIE “I”', '*h₁eǵ(h₂) / h1eg / *h₁eǵ / h₁eǵh₂'],
+    ['PIE “you” (singular)', '*tú / tu / *tuH'],
+    ['The interrogative stem behind quis, tís and who', '*kʷi- / kwi / *kʷo- / kʷi'],
+    ['The demonstrative behind Sanskrit sá, sā́, tád', '*so, *seh₂, *tod / so seh2 tod / *so'],
+    ['PIE “three”', '*tréyes / treyes'],
+    ['PIE “five”', '*pénkʷe / penkwe / pénkʷe'],
+    ['PIE “ten”', '*déḱm̥(t) / dekm / *déḱm̥'],
+    ['PIE “hundred”', '*ḱm̥tóm / kmtom'],
+    ['The superlative suffix behind -est', '*-isto- / isto'],
+    ['Different roots in one paradigm (good, better)', 'suppletion']
+  ],
+  'pie-study-syntax': [
+    ['The neutral PIE word order', 'SOV / subject object verb'],
+    ['Clitics in second position: whose law?', 'Wackernagel’s / Wackernagel'],
+    ['When did Wackernagel publish it?', '1892'],
+    ['A preverb standing apart from its verb', 'tmesis'],
+    ['Heavier information comes later: whose law?', 'Behaghel’s / Behaghel'],
+    ['A relative clause picked up by a demonstrative', 'correlative / a correlative'],
+    ['Neuter plural subjects take a … verb', 'singular'],
+    ['Why? The neuter plural began as a…', 'collective / collective noun'],
+    ['The PIE prohibitive particle', '*meh₁ / meh1 / mē'],
+    ['A modern language that still obeys Wackernagel’s law', 'Serbo-Croatian / Czech']
+  ],
+  'pie-study-grimm': [
+    ['Who first noticed the shift (1818)?', 'Rasmus Rask / Rask'],
+    ['PIE *p becomes in Germanic…', 'f'],
+    ['PIE *t becomes…', 'θ / th / þ'],
+    ['PIE *k becomes…', 'h'],
+    ['PIE *d becomes…', 't'],
+    ['PIE *bʰ becomes…', 'b'],
+    ['Latin centum, English…', 'hundred'],
+    ['Why does father have d but brother þ?', 'the accent / Verner’s law / where the PIE accent fell'],
+    ['When did Verner publish?', '1875'],
+    ['was / were is an example of…', 'Grammatischer Wechsel / Verner’s law']
+  ],
+  'pie-study-indo-iranian': [
+    ['The three Indo-Iranian groups', 'Indic, Iranian, Nuristani / Indic Iranian Nuristani'],
+    ['The kingdom whose treaty names Mitra and Varuṇa', 'Mitanni'],
+    ['Whose horse-training manual has Indic numerals?', 'Kikkuli'],
+    ['PIE e, o, a all become…', 'a'],
+    ['Avestan “hundred”, the name of the group', 'satəm / satem'],
+    ['*s becomes ṣ after r, u, k, i', 'the ruki rule / ruki'],
+    ['*o in an open syllable becomes ā', 'Brugmann’s law / Brugmann'],
+    ['*ǵónu “knee” in Sanskrit', 'jā́nu / janu'],
+    ['A laryngeal between consonants gives … in Indic', 'i'],
+    ['Two aspirates in a root, the first loses it', 'Grassmann’s law / Grassmann']
+  ],
+  'pie-study-greek': [
+    ['The script of Mycenaean Greek', 'Linear B'],
+    ['Who deciphered it, and when?', 'Michael Ventris, 1952 / Ventris 1952 / Ventris'],
+    ['wa-na-ka', 'wánax / wanax / king'],
+    ['PIE *septḿ̥ in Greek', 'heptá / hepta'],
+    ['PIE *bʰérō in Greek', 'phérō / phero'],
+    ['*h₂ before a consonant gives Greek…', 'a'],
+    ['*h₃ before a consonant gives Greek…', 'o'],
+    ['*kʷis “who” in Greek', 'tís / tis'],
+    ['The lost letter that shows in Homer’s metre', 'digamma / w'],
+    ['kléos áphthiton', 'imperishable fame']
+  ],
+  'pie-study-italic': [
+    ['The two groups of Italic', 'Latino-Faliscan and Sabellic / Latino-Faliscan and Osco-Umbrian'],
+    ['The Umbrian bronze tablets', 'the Iguvine Tables / Iguvine Tables'],
+    ['Where were they found?', 'Gubbio'],
+    ['Oscan “who”', 'pis'],
+    ['*bʰréh₂tēr in Latin', 'frāter / frater'],
+    ['Intervocalic s becomes r in Latin', 'rhotacism'],
+    ['Valesius became…', 'Valerius'],
+    ['Why cōnficiō beside faciō?', 'early first-syllable stress / vowel weakening'],
+    ['Latin merged the aorist and the…', 'perfect'],
+    ['The Latin passive ending, shared with Celtic and Hittite', '-r / r']
+  ],
+  'pie-study-celtic': [
+    ['The script of notches on standing stones', 'Ogham'],
+    ['Which PIE consonant disappeared in all Celtic?', 'p / *p'],
+    ['Latin pater in Old Irish', 'athir'],
+    ['“Five” in Welsh', 'pump'],
+    ['“Five” in Old Irish', 'cóic / coic'],
+    ['The Gaulish for “king”, as in Vercingetorix', '-rīx / rix'],
+    ['First consonants changing after certain words', 'initial mutations / mutations'],
+    ['The usual Insular Celtic word order', 'VSO / verb subject object'],
+    ['Irish agam', 'at me'],
+    ['The Gaulish bronze calendar', 'Coligny / the Coligny calendar']
+  ],
+  'pie-study-germanic': [
+    ['Who translated the Bible into Gothic?', 'Wulfila / Ulfilas'],
+    ['The silver manuscript of it, at Uppsala', 'Codex Argenteus'],
+    ['The oldest runic alphabet', 'Elder Futhark / Futhark'],
+    ['Where is Germanic stress fixed?', 'on the first syllable / first syllable'],
+    ['sing, sang, sung: which kind of verb?', 'strong'],
+    ['love, loved: the past is made with a … suffix', 'dental'],
+    ['can, may, shall: old perfects with present meaning', 'preterite-presents'],
+    ['foot / feet, mouse / mice', 'umlaut'],
+    ['water / Wasser shows the … sound shift', 'second / Second (High German)'],
+    ['Finnish kuningas', 'king']
+  ],
+  'pie-study-balto-slavic': [
+    ['The Baltic language that died out in the 18th century', 'Old Prussian'],
+    ['The first Slavic literary language', 'Old Church Slavonic'],
+    ['Its two alphabets', 'Glagolitic and Cyrillic / Glagolitic, Cyrillic'],
+    ['*ḱm̥tóm in Lithuanian', 'šim̃tas / simtas / šimtas'],
+    ['In Slavic, the ruki *s goes on to…', 'x / kh'],
+    ['Lithuanian ẽsti beside Sanskrit…', 'ásti / asti'],
+    ['Every syllable comes to end in a vowel', 'the law of open syllables / open syllables'],
+    ['Perfective and imperfective pairs', 'aspect / verbal aspect'],
+    ['Lithuanian galvà, Russian…', 'голова / golova'],
+    ['A vowel lengthened before an old voiced stop: whose law?', 'Winter’s / Winter']
+  ],
+  'pie-study-armenian-albanian': [
+    ['Who created the Armenian alphabet?', 'Mesrop Mashtots / Mashtots'],
+    ['Classical Armenian', 'Grabar'],
+    ['Who showed Armenian is its own branch (1875)?', 'Hübschmann / Heinrich Hübschmann'],
+    ['Armenian “two”', 'erku'],
+    ['Armenian “father”', 'hayr'],
+    ['The first full Albanian text (1555)', 'Buzuku’s Meshari / Meshari / Gjon Buzuku'],
+    ['The two Albanian dialects', 'Gheg and Tosk / Gheg, Tosk'],
+    ['Albanian natë', 'night'],
+    ['Albanian motër comes from PIE “mother” but means…', 'sister'],
+    ['A shared feature of a language area, not of descent', 'Sprachbund / Balkan Sprachbund']
+  ],
+  'pie-study-schleicher': [
+    ['When did Schleicher write the fable?', '1868'],
+    ['Avis akvāsas ka', 'The sheep and the horses'],
+    ['PIE “sheep” today', 'h₂óu̯is / h2owis'],
+    ['PIE “horse” today', 'h₁éḱu̯os / h1ekwos'],
+    ['PIE “wool” today', 'h₂u̯l̥h₁náh₂ / h2wlh1neh2'],
+    ['Who wrote the 2013 version?', 'Andrew Byrd / Byrd'],
+    ['Which language did Schleicher model PIE on?', 'Sanskrit'],
+    ['Who predicted the laryngeals in 1879?', 'Saussure / Ferdinand de Saussure'],
+    ['Byrd’s tense for “saw”', 'aorist'],
+    ['Where does the sheep flee?', 'into the plain / the plain']
   ]
 };
 
