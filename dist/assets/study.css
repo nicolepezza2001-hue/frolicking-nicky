@@ -335,3 +335,8 @@ html:has(body.fn-lesson-open){background:#faeac0}
 .fn-linguistics-page{transform-origin:1080px 890px;transition:transform 1s ease-in-out}
 .fn-room-art:has([data-spot="linguistics"]:is(:hover,:focus-visible)) .fn-linguistics-page{transform:translateY(-3px) rotate(-.45deg)}
 @media(prefers-reduced-motion:reduce){.fn-linguistics-page{transition:none;transform:none!important}}
+/* Nicky's own lessons: same look as the path rows (cream semi-bold title, italic note, dashed rule) */
+.fn-personal-lesson-list li{border-top:1px dashed #f3d99526;padding:12px 0}
+.fn-personal-lesson-list li:first-child{border-top:0}
+.fn-personal-lesson-list .fn-study-lesson-link{font-weight:600;font-size:1.12rem;color:var(--st-cream)}
+.fn-personal-lesson-list .fn-personal-status{font:italic 1rem/1.45 'Cormorant Garamond',Georgia,serif}
