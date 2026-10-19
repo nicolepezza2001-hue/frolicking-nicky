@@ -328,3 +328,13 @@ html:has(body.fn-lesson-open){background:#faeac0}
 .fn-course-diagram img{width:100%;max-width:420px}
 
 .fn-paint-spot[data-spot="tocharian"]:is(:hover,:focus-visible) polygon{fill:#f3d995;fill-opacity:.2;filter:drop-shadow(0 0 6px #dfb75c88)}
+
+/* A breathing halo and travelling light on the Tocharian alcove figure. */
+.fn-tocharian-light{opacity:0;transition:opacity .45s ease;pointer-events:none}
+.fn-tocharian-halo{transform-origin:1038px 155px}
+.fn-room-art:has([data-spot="tocharian"]:is(:hover,:focus-visible)) .fn-tocharian-light{opacity:1}
+.fn-room-art:has([data-spot="tocharian"]:is(:hover,:focus-visible)) .fn-tocharian-halo{animation:fn-tocharian-breathe 3.2s ease-in-out infinite}
+.fn-room-art:has([data-spot="tocharian"]:is(:hover,:focus-visible)) .fn-tocharian-shimmer{animation:fn-tocharian-shine 3.8s ease-in-out infinite}
+@keyframes fn-tocharian-breathe{0%,100%{opacity:.15;transform:scale(.96)}50%{opacity:.65;transform:scale(1.06)}}
+@keyframes fn-tocharian-shine{0%{opacity:0;transform:translateX(0)}25%,65%{opacity:.55}100%{opacity:0;transform:translateX(115px)}}
+@media(prefers-reduced-motion:reduce){.fn-tocharian-light{transition:none}.fn-tocharian-halo,.fn-tocharian-shimmer{animation:none!important}.fn-tocharian-halo{opacity:.35}.fn-tocharian-shimmer{opacity:0}}
