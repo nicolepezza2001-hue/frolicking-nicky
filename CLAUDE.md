@@ -167,7 +167,7 @@ a separate Europe close-up, the map legend or the trip buttons under the map on 
   no footer, no title, no labels (Nicky's call). It doesn't load `motion.js`, `shared.css` or `refine.css`.
   On portrait phones the painting fills the height and swipes sideways, opening in the middle.
 - Each object is a traced polygon (painting coordinates 1536×1024) linking to a topic view: lute = Opera,
-  pink branches = Silver Age poetry, three books = Russian, marble bust = French, golden horse = Tocharian,
+  pink branches = Silver Age poetry, three books = Russian, marble bust = French, golden horse = Hittite, alcove figure at the top = Tocharian,
   smoking vessel = Avestan, green goblet = Proto-Indo-European, big open book at the bottom right = Linguistics (Nicky's pick; ten study-notes
   pages she agreed, `assets/linguistics-lessons.js`, each with a quiz), quartz crystal = "What next?" (add a topic;
   added topics are listed on that page). Hover gives the object a faint candle glow and writes its subject
@@ -212,3 +212,13 @@ a separate Europe close-up, the map legend or the trip buttons under the map on 
 - Every French, Russian, Linguistics, Silver Age, Tocharian, Avestan, Opera and PIE study-notes lesson ends with a typed quiz (`FN_LESSON_QUIZZES` in `assets/lesson-quizzes.js`,
   `[question, answer]`, alternatives split by " / "): up to ten questions shuffled, Check shows the answer, "I was right"
   overrides. New lessons need a quiz entry too.
+- **Sync between devices** (`assets/study-sync.js`, loaded before `study-annotations.js`): the box "On all your devices" on the
+  crystal's page. Nicky pastes a fine-grained GitHub token with only Gists read/write (remembered on that device, in
+  `fn-study-sync-v1`); `fn-study-v1`, `fn-study-lessons-v1` and `fn-study-annotations-v1` are copied to a secret gist
+  described "Frolicking Nicky study (private sync)" (found by that description, so every device uses the same token).
+  Newest copy wins: every save calls `window.fnStudyChanged()` (only real changes count, by fingerprint) and pushes after 3s;
+  opening the page, returning to the tab or moving between topics pulls, and a newer copy reloads the page with it.
+  New things saved in the browser must call `fnStudyChanged()` too, and add their key to `KEYS`.
+- Russian and French vocabulary rows and vocabulary quizzes have a quiet italic **listen** link (the browser's own voice,
+  hidden while the word itself is veiled). Russian answer boxes get a row of **Cyrillic letters** on computers
+  (`pointer: fine`; phones have their own keyboards), and Russian answers may also be typed in Latin letters (`sameWord`).

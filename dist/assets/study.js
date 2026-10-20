@@ -248,7 +248,7 @@
   let state = {};
   try { state = JSON.parse(localStorage.getItem(KEY)) || {}; } catch (_) {}
   state.done ||= {}; state.notes ||= {}; state.custom ||= []; state.extra ||= {}; state.vocab ||= {};
-  const save = () => { try { localStorage.setItem(KEY, JSON.stringify(state)); } catch (_) {} };
+  const save = () => { try { localStorage.setItem(KEY, JSON.stringify(state)); window.fnStudyChanged?.(); } catch (_) {} };
 
   const LESSONS = [
     { topic: 'hittite', name: 'Hittite', lessons: window.FN_HITTITE_LESSONS || [] },
@@ -315,7 +315,48 @@
   // ignoring case, accents, stress marks, punctuation, anything in brackets and a leading "to".
   const plain = t => t.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/\(.*?\)/g, ' ')
     .replace(/[.,!?…;:«»“”"'’‘—–-]/g, ' ').replace(/^\s*to\s+/, '').replace(/\s+/g, ' ').trim();
-  const matches = (typed, answer, sep = /[\/,;]/) => !!plain(typed) && [answer, ...answer.split(sep)].some(a => plain(a) === plain(typed));
+  // Russian answers may also be typed in Latin letters: both sides are folded so zh/ž, kh/h/x, y/j/i and so on agree.
+  const LATIN = { а: 'a', б: 'b', в: 'v', г: 'g', д: 'd', е: 'e', ж: 'zh', з: 'z', и: 'i', к: 'k', л: 'l', м: 'm', н: 'n', о: 'o', п: 'p', р: 'r', с: 's', т: 't', у: 'u', ф: 'f', х: 'h', ц: 'ts', ч: 'ch', ш: 'sh', щ: 'sch', ъ: '', ы: 'y', ь: '', э: 'e', ю: 'yu', я: 'ya' };
+  const fold = t => t.replace(/shch/g, 'sch').replace(/kh|x/g, 'h').replace(/tz/g, 'ts').replace(/[yj]/g, 'i').replace(/\s/g, '');
+  const sameWord = (a, t) => a === t || (/[а-я]/.test(a) && /[a-z]/.test(t) && fold([...a].map(c => LATIN[c] ?? c).join('')) === fold(t));
+  const matches = (typed, answer, sep = /[\/,;]/) => !!plain(typed) && [answer, ...answer.split(sep)].some(a => sameWord(plain(a), plain(typed)));
+
+  // A row of Cyrillic letters under Russian answer boxes, for keyboards without a Russian layout (not on phones,
+  // which have their own). A letter goes in where the cursor is; the box keeps focus.
+  const CYRILLIC = ['йцукенгшщзхъ', 'фывапролджэ', 'ячсмитьбюё'];
+  const cyrillicKeys = input => {
+    if (input.lang !== 'ru' || !matchMedia('(pointer: fine)').matches) return null;
+    const keys = el('div', 'fn-cyr-keys'); keys.setAttribute('role', 'group'); keys.setAttribute('aria-label', 'Cyrillic letters');
+    CYRILLIC.forEach(line => {
+      const r = el('div', 'fn-cyr-row');
+      [...line].forEach(ch => {
+        const k = el('button', 'fn-cyr-key', ch); k.type = 'button'; k.tabIndex = -1;
+        k.addEventListener('pointerdown', e => e.preventDefault());
+        k.addEventListener('click', () => {
+          if (input.disabled) return;
+          input.setRangeText(ch, input.selectionStart ?? input.value.length, input.selectionEnd ?? input.value.length, 'end');
+          input.dispatchEvent(new Event('input', { bubbles: true })); input.focus();
+        });
+        r.append(k);
+      });
+      keys.append(r);
+    });
+    return keys;
+  };
+
+  // Hear a Russian or French word in the browser's own voice
+  const VOICE = { ru: 'ru-RU', fr: 'fr-FR' };
+  const speak = (text, code) => {
+    const u = new SpeechSynthesisUtterance(text); u.lang = VOICE[code]; u.rate = .9;
+    const v = speechSynthesis.getVoices().find(x => x.lang.toLowerCase().startsWith(code)); if (v) u.voice = v;
+    speechSynthesis.cancel(); speechSynthesis.speak(u);
+  };
+  const listen = (text, code) => {
+    if (!VOICE[code] || !('speechSynthesis' in window)) return null;
+    const b = el('button', 'fn-listen', 'listen'); b.type = 'button'; b.setAttribute('aria-label', 'Listen: ' + text);
+    b.addEventListener('click', () => speak(typeof text === 'function' ? text() : text, code));
+    return b;
+  };
 
   // Vocabulary for the language pages: the word on one side, English on the other. Veil either side to test
   // yourself both ways; a tap on a veiled word lifts the veil. Words live in state.vocab (so backups include them).
@@ -340,7 +381,7 @@
     shuffle.addEventListener('click', () => { order = words.map(w => w.id).sort(() => Math.random() - .5); draw(); });
     modes.append(shuffle);
     head.append(label, modes);
-    const cols = el('div', 'fn-vocab-row fn-vocab-cols'); cols.append(el('span', null, lang), el('span', null, 'English'));
+    const cols = el('div', 'fn-vocab-row fn-vocab-cols'); cols.append(el('span', null, lang), el('span'), el('span', null, 'English'));
     const list = el('ul', 'fn-vocab-list'), tally = el('p', 'fn-study-saved');
     const cell = (w, side, hide) => {
       const text = side === 'word' ? w.word : w.en;
@@ -367,7 +408,9 @@
         const li = el('li', 'fn-vocab-row');
         const x = el('button', 'fn-study-x', '×'); x.type = 'button'; x.setAttribute('aria-label', `${T.remove}: ${w.word}`);
         x.addEventListener('click', () => { words.splice(words.indexOf(w), 1); save(); li.remove(); cols.hidden = !words.length; tell(); });
-        li.append(cell(w, 'word', mode === 'word'), cell(w, 'en', mode === 'en'), x); list.append(li);
+        // No listening while the word itself is hidden: it would give the answer away
+        const ear = mode === 'word' ? el('span') : listen(() => w.word, code) || el('span');
+        li.append(cell(w, 'word', mode === 'word'), ear, cell(w, 'en', mode === 'en'), x); list.append(li);
       });
       cols.hidden = !words.length; tell();
     };
@@ -377,6 +420,7 @@
     const b = el('input'); b.type = 'text'; b.placeholder = 'English…'; b.setAttribute('aria-label', 'English meaning');
     const go = el('button', 'fn-study-btn', T.add); go.type = 'submit';
     form.append(a, b, go);
+    const addKeys = cyrillicKeys(a); if (addKeys) form.append(addKeys);
     form.addEventListener('submit', e => {
       e.preventDefault(); const word = a.value.trim(), en = b.value.trim();
       if (!word || !en) { (word ? b : a).focus(); return; }
@@ -408,13 +452,14 @@
       const ask = () => {
         if (i === round.length) return finish();
         const w = round[i], from = dir === 'mix' ? (Math.random() < .5 ? 'word' : 'en') : dir, to = from === 'word' ? 'en' : 'word';
-        const q = el('p', 'fn-quiz-q', w[from]); if (from === 'word') q.lang = code;
+        const q = el('p', 'fn-quiz-q', w[from]); if (from === 'word') { q.lang = code; const ear = listen(w.word, code); if (ear) q.append(' ', ear); }
         const form = el('form', 'fn-study-add fn-quiz-answer'), input = el('input');
         input.type = 'text'; input.autocomplete = 'off'; input.spellcheck = false; input.setAttribute('autocapitalize', 'off');
         input.placeholder = (to === 'word' ? lang : 'English') + '…'; input.setAttribute('aria-label', 'Your translation');
         if (to === 'word') input.lang = code;
         const check = el('button', 'fn-study-btn', 'Check'); check.type = 'submit';
         form.append(input, check);
+        const keys = cyrillicKeys(input); if (keys) form.append(keys);
         const result = el('div', 'fn-quiz-result'); result.setAttribute('aria-live', 'polite');
         const next = () => { i++; ask(); };
         const tally = right => {
@@ -426,7 +471,7 @@
           e.preventDefault(); if (input.disabled) return;
           const right = matches(input.value, w[to]);
           input.disabled = check.disabled = true; tally(right);
-          const answer = el('p', 'fn-quiz-solution', w[to]); if (to === 'word') answer.lang = code;
+          const answer = el('p', 'fn-quiz-solution', w[to]); if (to === 'word') { answer.lang = code; const ear = listen(w.word, code); if (ear) answer.append(' ', ear); }
           result.replaceChildren(el('p', 'fn-quiz-verdict', right ? 'Right.' : input.value.trim() ? 'Not quite. The answer:' : 'The answer:'), answer);
           const go = button('fn-study-btn', i + 1 === round.length ? 'See my score' : 'Next', next);
           const buttons = [go];
@@ -563,6 +608,7 @@
         input.lang = code; input.placeholder = 'Your answer…'; input.setAttribute('aria-label', 'Your answer');
         const check = el('button', 'fn-study-btn', 'Check'); check.type = 'submit';
         form.append(input, check);
+        const keys = cyrillicKeys(input); if (keys) form.append(keys);
         const result = el('div', 'fn-quiz-result'); result.setAttribute('aria-live', 'polite');
         const next = () => { i++; ask(); };
         form.addEventListener('submit', e => {
