@@ -322,7 +322,6 @@ html:has(body.fn-lesson-open){background:#faeac0}
 
 .fn-course-diagram img{width:100%;max-width:420px}
 
-.fn-paint-spot[data-spot="tocharian"]:is(:hover,:focus-visible) polygon{fill-opacity:0;filter:none}
 
 /* A horizontal halo lifts above the Tocharian figure and dissolves. */
 .fn-tocharian-light{opacity:0;transition:opacity .3s ease;pointer-events:none}
