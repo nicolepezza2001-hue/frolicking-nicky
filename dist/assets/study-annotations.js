@@ -47,7 +47,7 @@
     eraseToolbar.addEventListener('pointerdown',e=>e.preventDefault());
     const closeErase=()=>{eraseToolbar.hidden=true;clickedRecord=null;};
     const blocks = () => [...content.querySelectorAll('[data-note-block]')];
-    const store = () => { try { localStorage.setItem(KEY, JSON.stringify(saved)); status.textContent = 'Saved in this browser'; } catch (_) { status.textContent = 'Could not save. Keep this page open to retain these notes.'; } };
+    const store = () => { try { localStorage.setItem(KEY, JSON.stringify(saved)); window.fnStudyChanged?.(); status.textContent = 'Saved in this browser'; } catch (_) { status.textContent = 'Could not save. Keep this page open to retain these notes.'; } };
     const renderHighlights = () => {
       blocks().forEach(block => {
         const index = Number(block.dataset.noteBlock), text = lesson.blocks[index].text;

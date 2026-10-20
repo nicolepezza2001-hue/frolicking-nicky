@@ -84,7 +84,7 @@
   const topicLabel=label('Topic',topic),dateLabel=label('Date',date);
   form.append(topicLabel,label('Title',title),dateLabel,format,label('Notes',text),thumbs,picker,actions);
   editor.append(bar,heading,status,form);root.append(editor);
-  const persist=()=>{try{localStorage.setItem(KEY,JSON.stringify(saved));status.textContent='Saved on this device · Export a backup for another copy.';return true;}catch(_){status.textContent='Could not save on this device: it may be full of pictures. Export your lessons, then remove a picture or two.';return false;}};
+  const persist=()=>{try{localStorage.setItem(KEY,JSON.stringify(saved));window.fnStudyChanged?.();status.textContent='Saved on this device · Export a backup for another copy.';return true;}catch(_){status.textContent='Could not save on this device: it may be full of pictures. Export your lessons, then remove a picture or two.';return false;}};
   const normalise=raw=>{
     if(!raw||typeof raw.id!=='string'||!/^personal-[a-z0-9-]+$/.test(raw.id)||!topics.some(t=>t.id===raw.topic)||typeof raw.title!=='string'||typeof raw.text!=='string')return null;
     const images={};if(raw.images&&typeof raw.images==='object')Object.entries(raw.images).forEach(([k,v])=>{if(/^[a-z0-9]+$/.test(k)&&typeof v==='string'&&v.startsWith('data:image/'))images[k]=v;});
