@@ -16,7 +16,8 @@ permissions:
 
 jobs:
   check:
-    runs-on: ubuntu-latest
+    # Pinned: Playwright's browser install doesn't support Ubuntu 26 (ubuntu-latest from Oct 2026) yet.
+    runs-on: ubuntu-24.04
     steps:
       - name: Check out the site
         uses: actions/checkout@v4
