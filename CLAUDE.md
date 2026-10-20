@@ -219,6 +219,6 @@ a separate Europe close-up, the map legend or the trip buttons under the map on 
   Newest copy wins: every save calls `window.fnStudyChanged()` (only real changes count, by fingerprint) and pushes after 3s;
   opening the page, returning to the tab or moving between topics pulls, and a newer copy reloads the page with it.
   New things saved in the browser must call `fnStudyChanged()` too, and add their key to `KEYS`.
-- Russian and French vocabulary rows and vocabulary quizzes have a quiet italic **listen** link (the browser's own voice,
+- Russian and French vocabulary rows and vocabulary quizzes have a small fine-line **speaker** button (Nicky preferred it to the word "listen"; the browser's own voice,
   hidden while the word itself is veiled). Russian answer boxes get a row of **Cyrillic letters** on computers
   (`pointer: fine`; phones have their own keyboards), and Russian answers may also be typed in Latin letters (`sameWord`).

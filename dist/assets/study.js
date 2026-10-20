@@ -353,8 +353,11 @@
   };
   const listen = (text, code) => {
     if (!VOICE[code] || !('speechSynthesis' in window)) return null;
-    const b = el('button', 'fn-listen', 'listen'); b.type = 'button'; b.setAttribute('aria-label', 'Listen: ' + text);
-    b.addEventListener('click', () => speak(typeof text === 'function' ? text() : text, code));
+    const word = typeof text === 'function' ? text : () => text;
+    const b = el('button', 'fn-listen'); b.type = 'button'; b.setAttribute('aria-label', 'Listen: ' + word());
+    // A small speaker in fine candle-yellow lines (Nicky preferred it to the word "listen")
+    b.innerHTML = '<svg viewBox="0 0 24 24" width="1.15em" height="1.15em" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9.5h3.2L12 5.5v13l-4.8-4H4z"/><path d="M15.2 9.2a4 4 0 0 1 0 5.6"/><path d="M17.6 6.8a7.4 7.4 0 0 1 0 10.4"/></svg>';
+    b.addEventListener('click', () => speak(word(), code));
     return b;
   };
 
