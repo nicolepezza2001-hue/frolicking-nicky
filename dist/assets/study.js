@@ -693,8 +693,10 @@
       if (block.type === 'heading') { list = null; const heading = el('h3', null, block.text); heading.dataset.noteBlock = blockIndex; notes.append(heading); }
       else if (block.type === 'table') {
         list = null; const wrap = el('div', 'fn-lesson-table'), table = el('table'), head = el('tr');
-        block.head.forEach(c => head.append(el('th', null, c))); table.append(head);
-        block.rows.forEach(r => { const tr = el('tr'); r.forEach(c => tr.append(el('td', null, c))); table.append(tr); });
+        // Each cell is its own highlightable block, keyed "table.row.column" (row "h" is the head)
+        const cell = (tag, text, key) => { const c = el(tag, null, text); c.dataset.noteBlock = blockIndex + '.' + key; return c; };
+        block.head.forEach((c, i) => head.append(cell('th', c, 'h.' + i))); table.append(head);
+        block.rows.forEach((r, ri) => { const tr = el('tr'); r.forEach((c, i) => tr.append(cell('td', c, ri + '.' + i))); table.append(tr); });
         wrap.append(table); notes.append(wrap);
       } else if (block.type === 'image') {
         list = null; const src = block.image ? lesson.images?.[block.image] : block.src; if (!src) return;
