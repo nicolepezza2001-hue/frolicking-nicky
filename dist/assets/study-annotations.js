@@ -48,10 +48,13 @@
     eraseToolbar.addEventListener('pointerdown',e=>e.preventDefault());
     const closeErase=()=>{eraseToolbar.hidden=true;clickedRecord=null;};
     const blocks = () => [...content.querySelectorAll('[data-note-block]')];
+    // A block is its index, or "table.row.column" for a table cell (row "h" is the head)
+    const blockKey = node => /^\d+$/.test(node.dataset.noteBlock) ? Number(node.dataset.noteBlock) : node.dataset.noteBlock;
+    const textOf = key => { if (typeof key === 'number') return lesson.blocks[key].text; const [b, r, c] = key.split('.'), t = lesson.blocks[b]; return (r === 'h' ? t.head : t.rows[r])[c]; };
     const store = () => { try { localStorage.setItem(KEY, JSON.stringify(saved)); window.fnStudyChanged?.(); status.textContent = 'Saved in this browser'; } catch (_) { status.textContent = 'Could not save. Keep this page open to retain these notes.'; } };
     const renderHighlights = () => {
       blocks().forEach(block => {
-        const index = Number(block.dataset.noteBlock), text = lesson.blocks[index].text;
+        const index = blockKey(block), text = textOf(index);
         const spans = records.flatMap(r => (r.ranges || []).filter(s => s.block === index).map(s => ({ ...s, id:r.id, colour:r.colour || 'lavender' })));
         const boundaries = [...new Set([0,text.length,...spans.flatMap(s=>[s.start,s.end])])].sort((a,b)=>a-b);
         block.replaceChildren();
@@ -79,7 +82,7 @@
     };
     const renderCards = () => {
       margin.querySelectorAll('.fn-margin-card').forEach(e=>e.remove());
-      records.filter(r=>r.hasNote).sort((a,b)=>a.block-b.block).forEach(record=>{
+      records.filter(r=>r.hasNote).sort((a,b)=>parseFloat(a.block)-parseFloat(b.block)).forEach(record=>{
         const card=make('div','fn-margin-card'); card.dataset.annotation=record.id;
         if(record.quote) card.append(make('blockquote','',record.quote));
         const field=make('textarea'); field.value=record.text || ''; field.placeholder='Write your note…'; field.setAttribute('aria-label',record.quote?'Note on '+record.quote:'Margin note');
@@ -103,7 +106,7 @@
         if(!block.contains(range.endContainer))local.setEnd(block,block.childNodes.length);
         const before=document.createRange();before.selectNodeContents(block);before.setEnd(local.startContainer,local.startOffset);
         const start=before.toString().length,end=start+local.toString().length;
-        if(end>start)ranges.push({block:Number(block.dataset.noteBlock),start,end});
+        if(end>start)ranges.push({block:blockKey(block),start,end});
       });
       if(!ranges.length){toolbar.hidden=true;return;}
       pending={ranges,quote:selection.toString().trim(),block:ranges[0].block};
@@ -151,9 +154,9 @@
     margin.addEventListener('click',e=>{
       if(e.target.closest('.fn-margin-card'))return;
       const y=e.clientY; const nearest=blocks().reduce((best,block)=>Math.abs(block.getBoundingClientRect().top-y)<Math.abs(best.getBoundingClientRect().top-y)?block:best);
-      pending={ranges:[],quote:'',block:Number(nearest.dataset.noteBlock)};create(true);
+      pending={ranges:[],quote:'',block:blockKey(nearest)};create(true);
     });
-    addNote.addEventListener('click',()=>{const nearest=blocks().reduce((best,block)=>Math.abs(block.getBoundingClientRect().top-160)<Math.abs(best.getBoundingClientRect().top-160)?block:best);pending={ranges:[],quote:'',block:Number(nearest.dataset.noteBlock)};create(true);});
+    addNote.addEventListener('click',()=>{const nearest=blocks().reduce((best,block)=>Math.abs(block.getBoundingClientRect().top-160)<Math.abs(best.getBoundingClientRect().top-160)?block:best);pending={ranges:[],quote:'',block:blockKey(nearest)};create(true);});
     document.addEventListener('keydown',e=>{if(e.key==='Escape'){setMode(false);toolbar.hidden=true;closeErase();}});
     window.addEventListener('resize',layout);window.addEventListener('hashchange',()=>{toolbar.hidden=true;closeErase();requestAnimationFrame(layout);});
     window.addEventListener('scroll',()=>{toolbar.hidden=true;closeErase();},{passive:true});
