@@ -42,7 +42,7 @@
     const highlight = make('button', '', 'Highlight'); const comment = make('button', '', 'Highlight + note');
     highlight.type = comment.type = 'button'; toolbar.append(highlight, comment); document.body.append(toolbar);
     toolbar.addEventListener('pointerdown', e => e.preventDefault());
-    let clickedRecord = null;
+    let clickedRecord = null, clickedSpot = null;
     const eraseToolbar=make('div','fn-highlight-toolbar');eraseToolbar.hidden=true;eraseToolbar.setAttribute('role','toolbar');eraseToolbar.setAttribute('aria-label','Highlight actions');
     const erase=make('button','','Erase highlight'), openNote=make('button','','Note');erase.type=openNote.type='button';eraseToolbar.append(erase,openNote);document.body.append(eraseToolbar);
     eraseToolbar.addEventListener('pointerdown',e=>e.preventDefault());
@@ -133,15 +133,17 @@
       const mark=e.target.closest('mark');if(Date.now()<suppressMarkUntil || !mark || !getSelection()?.isCollapsed)return;
       const record=records.find(r=>r.id===mark.dataset.annotation);if(!record)return;
       clickedRecord=record;
+      // Where the clicked piece sits in its block, so Erase can clear every highlight laid over it
+      const block=mark.closest('[data-note-block]'),before=document.createRange();before.selectNodeContents(block);before.setEndBefore(mark);
+      clickedSpot={block:blockKey(block),start:before.toString().length,end:before.toString().length+mark.textContent.length};
       toolbar.hidden=true;const rect=mark.getBoundingClientRect();eraseToolbar.hidden=false;
       eraseToolbar.style.left=Math.max(8,Math.min(innerWidth-eraseToolbar.offsetWidth-8,rect.left))+'px';
       eraseToolbar.style.top=Math.max(8,rect.top-eraseToolbar.offsetHeight-8)+'px';
     };
     erase.addEventListener('click',()=>{
       if(!clickedRecord)return;
-      const target=clickedRecord;
-      target.ranges=[];
-      if(!target.hasNote)records.splice(records.indexOf(target),1);
+      const spot=clickedSpot,over=r=>(r.ranges||[]).some(s=>s.block===spot.block&&s.start<spot.end&&s.end>spot.start);
+      records.filter(over).forEach(target=>{target.ranges=[];if(!target.hasNote)records.splice(records.indexOf(target),1);});
       closeErase();store();renderHighlights();renderCards();
     });
     openNote.addEventListener('click',()=>{
