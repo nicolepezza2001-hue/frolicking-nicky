@@ -37,13 +37,14 @@
     });
     const setMode = value => { highlightMode = value; modeButtons.forEach(button => button.setAttribute('aria-pressed', String(value))); document.body.classList.toggle('fn-highlighter-active', value); };
     mode.addEventListener('click', () => setMode(!highlightMode));
+    // The toolbars sit on <body>: the lesson article keeps a transform from its entrance, which would pin a fixed bar to it.
     const toolbar = make('div', 'fn-highlight-toolbar'); toolbar.hidden = true; toolbar.setAttribute('role', 'toolbar'); toolbar.setAttribute('aria-label', 'Selected text');
     const highlight = make('button', '', 'Highlight'); const comment = make('button', '', 'Highlight + note');
-    highlight.type = comment.type = 'button'; toolbar.append(highlight, comment); section.append(toolbar);
+    highlight.type = comment.type = 'button'; toolbar.append(highlight, comment); document.body.append(toolbar);
     toolbar.addEventListener('pointerdown', e => e.preventDefault());
     let clickedRecord = null;
     const eraseToolbar=make('div','fn-highlight-toolbar');eraseToolbar.hidden=true;eraseToolbar.setAttribute('role','toolbar');eraseToolbar.setAttribute('aria-label','Highlight actions');
-    const erase=make('button','','Erase highlight'), openNote=make('button','','Note');erase.type=openNote.type='button';eraseToolbar.append(erase,openNote);section.append(eraseToolbar);
+    const erase=make('button','','Erase highlight'), openNote=make('button','','Note');erase.type=openNote.type='button';eraseToolbar.append(erase,openNote);document.body.append(eraseToolbar);
     eraseToolbar.addEventListener('pointerdown',e=>e.preventDefault());
     const closeErase=()=>{eraseToolbar.hidden=true;clickedRecord=null;};
     const blocks = () => [...content.querySelectorAll('[data-note-block]')];
@@ -117,10 +118,14 @@
       records.push(record);pending=null;toolbar.hidden=true;getSelection()?.removeAllRanges();store();renderHighlights();renderCards();if(hasNote)focusRecord(record.id);
     };
     highlight.addEventListener('click',()=>create(false));comment.addEventListener('click',()=>create(true));
-    content.addEventListener('pointerdown',()=>{selecting=true;});
+    // A touch selection (long press, then the handles) often ends in pointercancel, not pointerup, so on touch the
+    // highlight lands once the selection has been still for a moment.
+    let touch=false;
+    content.addEventListener('pointerdown',e=>{touch=e.pointerType!=='mouse';selecting=!touch;});
     document.addEventListener('pointerup',()=>{if(selecting){selecting=false;setTimeout(()=>capture(true),0);}});
+    document.addEventListener('pointercancel',()=>{selecting=false;});
     content.addEventListener('keyup',()=>capture(true));
-    let selectionTimer; document.addEventListener('selectionchange',()=>{clearTimeout(selectionTimer);selectionTimer=setTimeout(()=>capture(!selecting),300);});
+    let selectionTimer; document.addEventListener('selectionchange',()=>{clearTimeout(selectionTimer);selectionTimer=setTimeout(()=>capture(!selecting),touch?700:300);});
     const openMark = e => {
       const mark=e.target.closest('mark');if(Date.now()<suppressMarkUntil || !mark || !getSelection()?.isCollapsed)return;
       const record=records.find(r=>r.id===mark.dataset.annotation);if(!record)return;
