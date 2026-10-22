@@ -401,6 +401,12 @@ window.FN_FRENCH_LESSONS = [
             "L’amie avec qui je voyage. → L’amica con cui viaggio."
           ],
           [
+            "à qui",
+            "Verbi costruiti con à, riferito a persone (per le cose: auquel / à laquelle…)",
+            "a cui / al quale",
+            "L’ami à qui j’ai écrit. → L’amico a cui ho scritto."
+          ],
+          [
             "preposizione + lequel",
             "Si riferisce soprattutto a cose; concorda con il nome",
             "con/a… il quale",
