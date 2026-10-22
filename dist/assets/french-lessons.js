@@ -487,19 +487,19 @@ window.FN_FRENCH_LESSONS = [
       },
       {
         "type": "note",
-        "text": "After a preposition (sur, dans, avec, pour, sans, parmi, entre…), use lequel for things: le dossier sur lequel je travaille. For people qui is possible (l’ami avec qui je voyage), but after parmi and entre lequel is preferred: des candidats, parmi lesquels deux étrangers."
+        "text": "Preposition + lequel for things: le dossier sur lequel je travaille. People: qui, but lequel after parmi / entre: parmi lesquels."
       },
       {
         "type": "note",
-        "text": "Verbs built with à (s’opposer à, avoir recours à, renoncer à, s’attendre à…): auquel / à laquelle / auxquels / auxquelles for things, à qui for people: la décision à laquelle personne ne s’attendait."
+        "text": "Verb + à: auquel for things, à qui for people: la décision à laquelle personne ne s’attendait."
       },
       {
         "type": "note",
-        "text": "Prepositional phrases ending in de (à côté de, au cours de, au sein de, autour de, au bout de, à proximité de, en fonction de…): duquel / de laquelle / desquels / desquelles: un pont au bout duquel se dresse une tour."
+        "text": "Phrase ending in de (au sein de, au bout de…): duquel: un pont au bout duquel se dresse une tour."
       },
       {
         "type": "note",
-        "text": "The trap, dont: it replaces de + noun when the complement depends on a verb, a noun or an adjective (le film dont je parle, l’auteur dont j’ai oublié le nom). It is impossible after a preposition or a prepositional phrase: not au sein dont but au sein duquel."
+        "text": "Dont = de + noun after a verb, noun or adjective (le film dont je parle). Never after a preposition: au sein duquel, not au sein dont."
       }
     ]
   },
@@ -2982,5 +2982,15 @@ window.FN_FRENCH_VOCAB = [
   "id": "fr-71",
   "word": "Je n’étais pas douée en sport",
   "en": "I wasn’t good at sports"
+  },
+  {
+  "id": "fr-72",
+  "word": "au sein de",
+  "en": "within, inside (a group or organisation)"
+  },
+  {
+  "id": "fr-73",
+  "word": "parmi",
+  "en": "among"
   }
 ];
