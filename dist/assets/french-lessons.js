@@ -474,6 +474,26 @@ window.FN_FRENCH_LESSONS = [
       {
         "type": "note",
         "text": "After à côté de, use duquel / de laquelle…: la maison à côté de laquelle j’habite."
+      },
+      {
+        "type": "heading",
+        "text": "Which compound form?"
+      },
+      {
+        "type": "note",
+        "text": "After a preposition (sur, dans, avec, pour, sans, parmi, entre…), use lequel for things: le dossier sur lequel je travaille. For people qui is possible (l’ami avec qui je voyage), but after parmi and entre lequel is preferred: des candidats, parmi lesquels deux étrangers."
+      },
+      {
+        "type": "note",
+        "text": "Verbs built with à (s’opposer à, avoir recours à, renoncer à, s’attendre à…): auquel / à laquelle / auxquels / auxquelles for things, à qui for people: la décision à laquelle personne ne s’attendait."
+      },
+      {
+        "type": "note",
+        "text": "Prepositional phrases ending in de (à côté de, au cours de, au sein de, autour de, au bout de, à proximité de, en fonction de…): duquel / de laquelle / desquels / desquelles: un pont au bout duquel se dresse une tour."
+      },
+      {
+        "type": "note",
+        "text": "The trap, dont: it replaces de + noun when the complement depends on a verb, a noun or an adjective (le film dont je parle, l’auteur dont j’ai oublié le nom). It is impossible after a preposition or a prepositional phrase: not au sein dont but au sein duquel."
       }
     ]
   },

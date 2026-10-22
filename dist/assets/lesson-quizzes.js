@@ -86,7 +86,11 @@ window.FN_LESSON_QUIZZES = {
     ['Le stylo avec … j’écris.', 'lequel'],
     ['La maison à côté de … j’habite.', 'laquelle'],
     ['à + lesquels = …', 'auxquels'],
-    ['L’amie avec … je voyage.', 'qui / laquelle']
+    ['L’amie avec … je voyage.', 'qui / laquelle'],
+    ['La décision … personne ne s’attendait.', 'à laquelle'],
+    ['Le quartier au sein … se trouve le bureau.', 'duquel'],
+    ['L’auteur … j’ai oublié le nom.', 'dont'],
+    ['Des candidats, parmi … deux étrangers.', 'lesquels']
   ],
   // French: study notes
   'french-passe-compose-imparfait': [
