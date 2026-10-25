@@ -2995,7 +2995,11 @@ window.FN_FRENCH_VOCAB = [
   },
   {
   "id": "fr-74",
-  "word": "le nord, le sud, l’est, l’ouest · le nord-est, le nord-ouest, le sud-est, le sud-ouest",
-  "en": "north, south, east, west · north-east, north-west, south-east, south-west"
+  "word": "le nord, le sud, l’est, l’ouest",
+  "en": "north, south, east, west",
+  "was": {
+    "word": "le nord, le sud, l’est, l’ouest · le nord-est, le nord-ouest, le sud-est, le sud-ouest",
+    "en": "north, south, east, west · north-east, north-west, south-east, south-west"
+  }
   }
 ];
