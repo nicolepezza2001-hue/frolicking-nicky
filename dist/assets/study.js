@@ -368,7 +368,9 @@
   // Imported words join the list once; a word Nicky removes or edits afterwards stays that way
   Object.entries(SEED).forEach(([id, seed]) => {
     const list = (state.vocab[id] ||= []), done = (state.seeded ||= {})[id] || [];
-    seed.forEach(w => { if (!done.includes(w.id) && !list.some(v => v.id === w.id)) list.push({ ...w }); });
+    seed.forEach(w => { if (!done.includes(w.id) && !list.some(v => v.id === w.id)) list.push({ id: w.id, word: w.word, en: w.en }); });
+    // A seed word corrected later (its old wording kept in `was`) is updated too, unless Nicky changed it herself
+    seed.forEach(w => list.forEach(v => { if (w.was && v.id === w.id && v.word === w.was.word && v.en === w.was.en) { v.word = w.word; v.en = w.en; } }));
     state.seeded[id] = seed.map(w => w.id); save();
   });
   const vocab = (id, [lang, code]) => {
