@@ -1,4 +1,4 @@
-/* Local, text-offset annotations. Notes never leave this browser. */
+/* Highlights and margin notes, kept on this device and copied to Nicky's other devices by study-sync.js. */
 (() => {
   const KEY = 'fn-study-annotations-v1';
   let saved = {};
@@ -50,12 +50,59 @@
     const blocks = () => [...content.querySelectorAll('[data-note-block]')];
     // A block is its index, or "table.row.column" for a table cell (row "h" is the head)
     const blockKey = node => /^\d+$/.test(node.dataset.noteBlock) ? Number(node.dataset.noteBlock) : node.dataset.noteBlock;
-    const textOf = key => { if (typeof key === 'number') return lesson.blocks[key].text; const [b, r, c] = key.split('.'), t = lesson.blocks[b]; return (r === 'h' ? t.head : t.rows[r])[c]; };
+    const textIn = (list, key) => { try { const [b, r, c] = String(key).split('.'), t = list[b]; const v = r === undefined ? t.text : (r === 'h' ? t.head : t.rows[r])[c]; return typeof v === 'string' ? v : undefined; } catch (_) { return undefined; } };
+    const textOf = key => textIn(lesson.blocks, key) ?? '';
+    // Each highlight keeps its words and a little of the text either side, so when the lesson is edited it finds its
+    // words again wherever they moved; a highlight whose words were deleted stays saved but hidden.
+    const CONTEXT = 24, squash = v => (v || '').replace(/\s+/g, ' ').trim();
+    const surround = (s, text) => { s.text = text.slice(s.start, s.end); s.prefix = text.slice(Math.max(0, s.start - CONTEXT), s.start); s.suffix = text.slice(s.end, s.end + CONTEXT); };
+    const shows = s => s.text === undefined || textOf(s.block).slice(s.start, s.end) === s.text;
+    const reanchor = () => {
+      const here = blocks().map(b => ({ key: blockKey(b), text: textOf(blockKey(b)) }));
+      const position = key => { const i = here.findIndex(b => String(b.key) === String(key)); return i < 0 ? parseFloat(key) || 0 : i; };
+      // Highlights made before the lesson was edited point into the original text
+      const before = lesson.originalBlocks || lesson.blocks;
+      const shared = (a, b, fromEnd) => { let n = 0; while (n < a.length && n < b.length && (fromEnd ? a[a.length - 1 - n] === b[b.length - 1 - n] : a[n] === b[n])) n++; return n; };
+      let changed = false;
+      records.forEach(record => {
+        const ranges = record.ranges || [];
+        ranges.forEach(s => {
+          if (s.text === undefined) {
+            // Saved before highlights kept their words: work them out from the quote, here or in the original lesson
+            const quote = squash(record.quote), fits = v => !!squash(v) && (ranges.length === 1 ? squash(v) === quote : quote.includes(squash(v)));
+            const source = [textIn(lesson.blocks, s.block), textIn(before, s.block)].find(t => t !== undefined && fits(t.slice(s.start, s.end)));
+            if (source === undefined) return;
+            surround(s, source); changed = true;
+          }
+          if (!s.text) return;
+          const was = position(s.block); let best = null;
+          here.forEach((b, i) => {
+            for (let at = b.text.indexOf(s.text); at >= 0; at = b.text.indexOf(s.text, at + 1)) {
+              const score = (shared(b.text.slice(0, at), s.prefix || '', true) + shared(b.text.slice(at + s.text.length), s.suffix || '', false)) * 1e6
+                - Math.abs(i - was) * 1e3 - Math.min(999, Math.abs(at - s.start));
+              if (!best || score > best.score) best = { score, key: b.key, at, text: b.text };
+            }
+          });
+          if (!best) return;
+          const moved = { block: best.key, start: best.at, end: best.at + s.text.length }; surround(moved, best.text);
+          if (['block', 'start', 'end', 'prefix', 'suffix'].some(k => moved[k] !== s[k])) { Object.assign(s, moved); changed = true; }
+        });
+        // A margin note follows its passage, or the paragraph it was written beside
+        const first = ranges.find(s => s.text && shows(s));
+        if (first) { if (record.block !== first.block) { record.block = first.block; changed = true; } return; }
+        if (record.blockText === undefined) { const t = textIn(record.hasNote && !ranges.length ? before : lesson.blocks, record.block); if (t === undefined) return; record.blockText = squash(t).slice(0, 80); changed = true; }
+        if (!record.blockText) return;
+        const was = position(record.block), found = here.map((b, i) => ({ ...b, i })).filter(b => squash(b.text).startsWith(record.blockText))
+          .sort((a, b) => Math.abs(a.i - was) - Math.abs(b.i - was))[0];
+        if (found && String(found.key) !== String(record.block)) { record.block = found.key; changed = true; }
+      });
+      if (changed) try { localStorage.setItem(KEY, JSON.stringify(saved)); window.fnStudyChanged?.(); } catch (_) {}
+    };
     const store = () => { try { localStorage.setItem(KEY, JSON.stringify(saved)); window.fnStudyChanged?.(); status.textContent = 'Saved in this browser'; } catch (_) { status.textContent = 'Could not save. Keep this page open to retain these notes.'; } };
     const renderHighlights = () => {
       blocks().forEach(block => {
         const index = blockKey(block), text = textOf(index);
-        const spans = records.flatMap(r => (r.ranges || []).filter(s => s.block === index).map(s => ({ ...s, id:r.id, colour:r.colour || 'lavender' })));
+        const spans = records.flatMap(r => (r.ranges || []).filter(s => s.block === index && shows(s)).map(s => ({ ...s, id:r.id, colour:r.colour || 'lavender' })));
         const boundaries = [...new Set([0,text.length,...spans.flatMap(s=>[s.start,s.end])])].sort((a,b)=>a-b);
         block.replaceChildren();
         for (let i=0;i<boundaries.length-1;i++) {
@@ -106,7 +153,7 @@
         if(!block.contains(range.endContainer))local.setEnd(block,block.childNodes.length);
         const before=document.createRange();before.selectNodeContents(block);before.setEnd(local.startContainer,local.startOffset);
         const start=before.toString().length,end=start+local.toString().length;
-        if(end>start)ranges.push({block:blockKey(block),start,end});
+        if(end>start){const s={block:blockKey(block),start,end};surround(s,textOf(s.block));ranges.push(s);}
       });
       if(!ranges.length){toolbar.hidden=true;return;}
       pending={ranges,quote:selection.toString().trim(),block:ranges[0].block};
@@ -142,7 +189,7 @@
     };
     erase.addEventListener('click',()=>{
       if(!clickedRecord)return;
-      const spot=clickedSpot,over=r=>(r.ranges||[]).some(s=>s.block===spot.block&&s.start<spot.end&&s.end>spot.start);
+      const spot=clickedSpot,over=r=>(r.ranges||[]).some(s=>s.block===spot.block&&shows(s)&&s.start<spot.end&&s.end>spot.start);
       records.filter(over).forEach(target=>{target.ranges=[];if(!target.hasNote)records.splice(records.indexOf(target),1);});
       closeErase();store();renderHighlights();renderCards();
     });
@@ -156,13 +203,13 @@
     margin.addEventListener('click',e=>{
       if(e.target.closest('.fn-margin-card'))return;
       const y=e.clientY; const nearest=blocks().reduce((best,block)=>Math.abs(block.getBoundingClientRect().top-y)<Math.abs(best.getBoundingClientRect().top-y)?block:best);
-      pending={ranges:[],quote:'',block:blockKey(nearest)};create(true);
+      pending={ranges:[],quote:'',block:blockKey(nearest),blockText:squash(textOf(blockKey(nearest))).slice(0,80)};create(true);
     });
-    addNote.addEventListener('click',()=>{const nearest=blocks().reduce((best,block)=>Math.abs(block.getBoundingClientRect().top-160)<Math.abs(best.getBoundingClientRect().top-160)?block:best);pending={ranges:[],quote:'',block:blockKey(nearest)};create(true);});
+    addNote.addEventListener('click',()=>{const nearest=blocks().reduce((best,block)=>Math.abs(block.getBoundingClientRect().top-160)<Math.abs(best.getBoundingClientRect().top-160)?block:best);pending={ranges:[],quote:'',block:blockKey(nearest),blockText:squash(textOf(blockKey(nearest))).slice(0,80)};create(true);});
     document.addEventListener('keydown',e=>{if(e.key==='Escape'){setMode(false);toolbar.hidden=true;closeErase();}});
     window.addEventListener('resize',layout);window.addEventListener('hashchange',()=>{toolbar.hidden=true;closeErase();requestAnimationFrame(layout);});
     window.addEventListener('scroll',()=>{toolbar.hidden=true;closeErase();},{passive:true});
     new ResizeObserver(layout).observe(content);
-    renderHighlights();renderCards();
+    reanchor();renderHighlights();renderCards();
   };
 })();

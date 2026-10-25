@@ -676,7 +676,7 @@
   // Silver Age poetry and French (imported from Nicky's notes) share one reading layout.
   const renderLesson = (topic, name, lessons, index) => {
     const original = lessons[index], o = edited(original.id);
-    const lesson = o ? { ...original, title: o.title || original.title, blocks: lessonText.parse(o.text || ''), images: o.images || {} } : original;
+    const lesson = o ? { ...original, title: o.title || original.title, blocks: lessonText.parse(o.text || ''), images: o.images || {}, originalBlocks: original.blocks } : original;
     const sec = el('article', 'fn-study-view fn-lesson'); sec.id = lesson.id; sec.hidden = true;
     const back = el('a', 'fn-study-back', '← ' + name); back.href = '#' + topic;
     const bar = el('nav', 'fn-study-bar'); bar.setAttribute('aria-label', 'Lesson navigation'); bar.append(back);
