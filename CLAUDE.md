@@ -201,6 +201,10 @@ a separate Europe close-up, the map legend or the trip buttons under the map on 
 - Every built-in lesson page has **Edit lesson**: it opens the page as text in the same editor (`fnLessonText` in
   `study.js`: # heading, - note, | table rows, [text](url), ![alt](src), [image:id]); the edit is saved on her device
   (`overrides` in `fn-study-lessons-v1`) and shown instead of the original until she presses Restore original.
+- Highlights follow their words, not their position (`study-annotations.js`): each range keeps its `text` plus a little
+  `prefix`/`suffix`, and on every render it is found again in the current text (best context match, then nearest), so
+  editing a lesson never shifts them. Words that were deleted keep their highlight saved but hidden. Older highlights
+  (position only) are recovered from their quote, looking in the original lesson (`originalBlocks`) when it was edited.
 - Every path step opens a page (Nicky: "add notes for all other topics"). Silver Age: her two lessons, then study
   notes (`silver-age-lessons.js`); Tocharian (`tocharian-lessons.js`) and Avestan (`avestan-lessons.js`) are study notes,
   kicker "Study notes · …". Linguistics: **Alignment is Nicky's own notes** (her Google Doc on Harris & Campbell, word
