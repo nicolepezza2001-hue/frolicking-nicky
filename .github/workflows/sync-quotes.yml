@@ -1,4 +1,4 @@
-# Every morning, copies Nicky's Goodreads and Notion quotes into dist/assets/quotes.json (tools/sync-quotes.mjs)
+# Every morning, copies Nicky's Goodreads and Notion quotes into tools/quotes.json and rebuilds the study's Quotes shelf (tools/sync-quotes.mjs)
 # for the Quotes page of the study. If anything changed it commits the file to main and starts the site deploy
 # (pushes made by this workflow don't start other workflows by themselves).
 # Notion needs the NOTION_TOKEN repository secret; it is never stored in the repo.
@@ -36,10 +36,10 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          git diff --quiet -- dist/assets/quotes.json && { echo "Quotes unchanged"; exit 0; }
+          git diff --quiet -- tools/quotes.json dist && { echo "Quotes unchanged"; exit 0; }
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add dist/assets/quotes.json
+          git add tools/quotes.json dist
           git commit -m "Sync quotes from Goodreads and Notion"
           git push
           gh workflow run deploy-pages.yml --ref main

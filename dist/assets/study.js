@@ -261,7 +261,8 @@
     { topic: 'pie', name: 'Proto-Indo-European', lessons: window.FN_PIE_STUDY_LESSONS || [] }, // path pages; lessonsOf('pie') stays her notes
     { topic: 'linguistics', name: 'Linguistics', lessons: window.FN_LINGUISTICS_LESSONS || [] },
     { topic: 'tocharian', name: 'Tocharian', lessons: window.FN_TOCHARIAN_LESSONS || [] },
-    { topic: 'avestan', name: 'Avestan', lessons: window.FN_AVESTAN_LESSONS || [] }
+    { topic: 'avestan', name: 'Avestan', lessons: window.FN_AVESTAN_LESSONS || [] },
+    { topic: 'quotes', name: 'Quotes', lessons: window.FN_QUOTE_BOOKS || [] } // one page per book (quote-books.js, built by tools/sync-quotes.mjs)
   ];
   const lessonsOf = id => LESSONS.find(x => x.topic === id)?.lessons || [];
   const pick = v => (Array.isArray(v) ? L(v[0], v[1]) : v);
