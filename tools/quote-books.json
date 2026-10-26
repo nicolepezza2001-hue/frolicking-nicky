@@ -1,5 +1,5 @@
 {
- "_about": "Which book each Notion quote belongs to, for the Quotes page of the study. tools/sync-quotes.mjs reads it. 'blocks' maps the start of a quote (lower case, punctuation removed, 60 characters) to a book key; 'labels' are Nicky's own source lines in Notion, left off the book page because the page title already says it. Quotes not listed here are placed by their bold source line or the quote before them; unknown books go under 'Newly added' until they are given a genre here.",
+ "_about": "Which book each Notion quote belongs to, for the Quotes page of the study. tools/sync-quotes.mjs reads it. 'blocks' maps the start of a quote (lower case, punctuation removed, 60 characters) to a book key; 'labels' are Nicky's own source lines in Notion, left off the book page because the page title already says it. Quotes not listed here are placed by their bold source line or the quote before them; unknown books go under 'Newly added' until they are given a genre here. Books marked hidden are left off the page (Nicky's call). Every book with a single quote, plus 'sayings' and 'unnamed', is gathered on one Miscellaneous page.",
  "genres": [
   "Novels & stories",
   "Fantasy & science fiction",
@@ -9,7 +9,7 @@
   "Essays, letters & lives",
   "Film & TV",
   "Friends & family",
-  "Lines & sayings"
+  "Miscellaneous"
  ],
  "books": {
   "weil": {
@@ -42,19 +42,22 @@
    "title": "Kara",
    "author": "",
    "genre": "Friends & family",
-   "labels": []
+   "labels": [],
+   "hidden": true
   },
   "dania": {
    "title": "Dania",
    "author": "",
    "genre": "Friends & family",
-   "labels": []
+   "labels": [],
+   "hidden": true
   },
   "alessandra": {
    "title": "Alessandra",
    "author": "",
    "genre": "Friends & family",
-   "labels": []
+   "labels": [],
+   "hidden": true
   },
   "rumi": {
    "title": "Rumi",
@@ -69,7 +72,8 @@
    "labels": [
     "LU",
     "Lu"
-   ]
+   ],
+   "hidden": true
   },
   "agamemnon": {
    "title": "Agamemnon",
@@ -91,7 +95,7 @@
   "sayings": {
    "title": "Sayings and single lines",
    "author": "",
-   "genre": "Lines & sayings",
+   "genre": "Miscellaneous",
    "labels": []
   },
   "girard": {
@@ -328,7 +332,8 @@
    "genre": "Friends & family",
    "labels": [
     "Men said"
-   ]
+   ],
+   "hidden": true
   },
   "foucault": {
    "title": "Michel Foucault",
@@ -464,7 +469,8 @@
    "genre": "Friends & family",
    "labels": [
     "Елена"
-   ]
+   ],
+   "hidden": true
   },
   "giorgi": {
    "title": "Gaia Ginevra Giorgi",
@@ -499,7 +505,7 @@
   "unnamed": {
    "title": "Lines without a name",
    "author": "",
-   "genre": "Lines & sayings",
+   "genre": "Miscellaneous",
    "labels": []
   },
   "orlando": {
@@ -524,7 +530,8 @@
    "genre": "Friends & family",
    "labels": [
     "2024"
-   ]
+   ],
+   "hidden": true
   },
   "said-2023": {
    "title": "Said in 2023",

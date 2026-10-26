@@ -68,19 +68,6 @@ window.FN_QUOTE_BOOKS = [
   ]
  },
  {
-  "id": "quote-beautiful-and-damned",
-  "title": "The Beautiful and Damned",
-  "author": "F. Scott Fitzgerald",
-  "genre": "Novels & stories",
-  "kicker": "F. Scott Fitzgerald · Novels & stories",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "text": "Il vincitore è schiavo del bottino\nAnthony Patch"
-   }
-  ]
- },
- {
   "id": "quote-bellezza-e-tristezza",
   "title": "Bellezza e tristezza",
   "author": "Yasunari Kawabata",
@@ -106,19 +93,6 @@ window.FN_QUOTE_BOOKS = [
    {
     "type": "paragraph",
     "text": "- Non voglio che tocchi il seno destro. Non va bene.\n- Che hai detto? - Taichiro non aveva capito subito il significato delle parole di Keiko, e scostò appena la mano che premeva il seno destro.\n- Questo di destra, - disse Keiko con gli occhi tuttora socchiusi -mi rende triste.\n- Triste?\n- Sì.\n- Come mai?\n- Chi lo sa. Probabilmente perchè il cuore si trova a sinistra."
-   }
-  ]
- },
- {
-  "id": "quote-call-me",
-  "title": "Call Me by Your Name",
-  "author": "André Aciman",
-  "genre": "Novels & stories",
-  "kicker": "André Aciman · Novels & stories",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "text": "We rip out so much of ourselves to be cured of things faster than we should that we go bankrupt by the age of thirty and have less to offer each time we start with someone new. But to make yourself feel nothing so as not to feel anything - what a waste!"
    }
   ]
  },
@@ -198,19 +172,6 @@ window.FN_QUOTE_BOOKS = [
   ]
  },
  {
-  "id": "quote-zhivago",
-  "title": "Il dottor Živago",
-  "author": "Boris Pasternak",
-  "genre": "Novels & stories",
-  "kicker": "Boris Pasternak · Novels & stories",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "text": "E questa lontananza è la Russia, la sua incomparabile, celebre madre la cui fama risuona oltre i mari, la Russia martire, ostinata, strampalata, folle, venerata, con colpi di testa eternamente grandiosi e funesti, che mai è possibile prevedere! Oh, com'è dolce esistere! Com'è dolce vivere al mondo e amare la vita! Oh, che voglia di dire grazie alla vita stessa, alla stessa esistenza, dirglielo così, direttamente. Ecco, questo è Lara. Con quelle cose non è possibile comunicare, e lei è la loro rappresentante, la loro espressione, il dono dell'udito e della parola concesso ai princìpi muti dell'esistenza.\n— Dr. Zhivago"
-   }
-  ]
- },
- {
   "id": "quote-dubliners",
   "title": "Dubliners",
   "author": "James Joyce",
@@ -228,19 +189,6 @@ window.FN_QUOTE_BOOKS = [
    {
     "type": "paragraph",
     "text": "Love between man and man is impossible because there must not be sexual intercourse and friendship between man and woman is impossible because there must be sexual intercourse."
-   }
-  ]
- },
- {
-  "id": "quote-educazione",
-  "title": "L’educazione sentimentale",
-  "author": "Gustave Flaubert",
-  "genre": "Novels & stories",
-  "kicker": "Gustave Flaubert · Novels & stories",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "text": "Aveva adorato il potere con tale passione che avrebbe pagato per vendersi"
    }
   ]
  },
@@ -282,71 +230,6 @@ window.FN_QUOTE_BOOKS = [
    {
     "type": "paragraph",
     "text": "<<< La libertà? Vivendo il proprio squallore, cia- scuno può essere felice o infelice. La libertà consiste appunto in questa scelta. Ciascuno è libero di dissolvere la propria individualità nel pentolone della moltitudine provando o un senso di sconfitta o un senso di euforia. Quanto a noi, mia cara signora, abbiamo scelto l'euforia»."
-   }
-  ]
- },
- {
-  "id": "quote-fantasma-opera",
-  "title": "Il fantasma dell’opera",
-  "author": "Gaston Leroux",
-  "genre": "Novels & stories",
-  "kicker": "Gaston Leroux · Novels & stories",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "text": "Ma il cuore non è il muso di un cane."
-   }
-  ]
- },
- {
-  "id": "quote-foresta",
-  "title": "La foresta della notte",
-  "author": "Djuna Barnes",
-  "genre": "Novels & stories",
-  "kicker": "Djuna Barnes · Novels & stories",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "text": "Era per destino una di quelle persone che vengono al mondo sprovviste di tutto, tranne che della provvisione di sè."
-   }
-  ]
- },
- {
-  "id": "quote-karamazov",
-  "title": "I fratelli Karamazov",
-  "author": "Fëdor Dostoevskij",
-  "genre": "Novels & stories",
-  "kicker": "Fëdor Dostoevskij · Novels & stories",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "text": "Amare la vita più che il senso di essa."
-   }
-  ]
- },
- {
-  "id": "quote-germinal",
-  "title": "Germinal",
-  "author": "Émile Zola",
-  "genre": "Novels & stories",
-  "kicker": "Émile Zola · Novels & stories",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "text": "Non sarete mai degni della felicità fintanto che avrete qualcosa tutta per voi, finchè il vostro odio nei confronti dei borghesi nascerà unicamente dal rabbioso desiderio di essere borghesi al posto loro.\n— Germinal, Zola"
-   }
-  ]
- },
- {
-  "id": "quote-gatsby",
-  "title": "The Great Gatsby",
-  "author": "F. Scott Fitzgerald",
-  "genre": "Novels & stories",
-  "kicker": "F. Scott Fitzgerald · Novels & stories",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "text": "Reserving judgment is a matter of infinite hope."
    }
   ]
  },
@@ -489,45 +372,6 @@ window.FN_QUOTE_BOOKS = [
   ]
  },
  {
-  "id": "quote-andric",
-  "title": "Ivo Andrić",
-  "author": "",
-  "genre": "Novels & stories",
-  "kicker": "Novels & stories",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "text": "L'oblio cura tutto e il canto è la sua forma più bella, perchè in una canzone l'uomo non ricorda quel che ama ricordare"
-   }
-  ]
- },
- {
-  "id": "quote-yourcenar",
-  "title": "Marguerite Yourcenar",
-  "author": "",
-  "genre": "Novels & stories",
-  "kicker": "Novels & stories",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "text": "Quasi tutto quel che gli uomini han detto di meglio è stato detto in greco."
-   }
-  ]
- },
- {
-  "id": "quote-narciso",
-  "title": "Narciso e Boccadoro",
-  "author": "Hermann Hesse",
-  "genre": "Novels & stories",
-  "kicker": "Hermann Hesse · Novels & stories",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "text": "Tu sei un artista, io un pensatore. Tu dormi sul petto della madre, io veglio nel deserto.\nNarciso e Boccadoro"
-   }
-  ]
- },
- {
   "id": "quote-orlando",
   "title": "Orlando",
   "author": "Virginia Woolf",
@@ -565,45 +409,6 @@ window.FN_QUOTE_BOOKS = [
    {
     "type": "paragraph",
     "text": "But she would put it to the test"
-   }
-  ]
- },
- {
-  "id": "quote-palazzo-dei-sogni",
-  "title": "Il palazzo dei sogni",
-  "author": "Ismail Kadare",
-  "genre": "Novels & stories",
-  "kicker": "Ismail Kadare · Novels & stories",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "text": "Laggiù aveva visto evocare sguardi di ogni sorta da far rabbrividire, e ora immaginava che quegli occhi, nel loro maestoso orrore, non si aprissero da fronti umane, ma al margine del cielo o nel cuore delle montagne, bagnati talvolta da un singhiozzo di luna che si cristallizzava sulle ciglia in stalattiti di cera."
-   }
-  ]
- },
- {
-  "id": "quote-rosso-e-nero",
-  "title": "Il rosso e il nero",
-  "author": "Stendhal",
-  "genre": "Novels & stories",
-  "kicker": "Stendhal · Novels & stories",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "text": "Sento per te quello che dovrei sentire soltanto per Dio."
-   }
-  ]
- },
- {
-  "id": "quote-seni-e-uova",
-  "title": "Seni e uova",
-  "author": "Mieko Kawakami",
-  "genre": "Novels & stories",
-  "kicker": "Mieko Kawakami · Novels & stories",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "text": "Il fatto in sè di venire al mondo ed esistere è quanto più complicato possa esserci. Non ce ne rendiamo conto, ma tutti noi, nell'arco della vita, è come se fossimo costantemente in cura, sotto terapia."
    }
   ]
  },
@@ -801,45 +606,6 @@ window.FN_QUOTE_BOOKS = [
    {
     "type": "paragraph",
     "text": "Qualche punto debole in testa lei ce l'ha, ma non sono mai riuscito a entrarci dentro, neanche in uno; magari ci starà il diavolo!"
-   }
-  ]
- },
- {
-  "id": "quote-wings",
-  "title": "Wings",
-  "author": "Mikhail Kuzmin",
-  "genre": "Novels & stories",
-  "kicker": "Mikhail Kuzmin · Novels & stories",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "text": "People walk around like blind men, like dead men, when they could create the most ardent life, where all enjoyment would be so heightened, it would be as if you had only just been born and would die at any moment. It is with precisely such greed that every- thing must be appreciated. There are wonders all around us at every step.\n— Wings, Kuzmin"
-   }
-  ]
- },
- {
-  "id": "quote-den-bez-vranya",
-  "title": "День без вранья",
-  "author": "Viktoria Tokareva",
-  "genre": "Novels & stories",
-  "kicker": "Viktoria Tokareva · Novels & stories",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "text": "У меня такое чувство, будто сам Господин Бог поручил мне заботу о ней. И я не знаю, то ли жить без этого не могу, то ли мне это ни к чему. Я до сих пор не знаю, поэтому мы ссоримся."
-   }
-  ]
- },
- {
-  "id": "quote-ember",
-  "title": "An Ember in the Ashes",
-  "author": "Sabaa Tahir",
-  "genre": "Fantasy & science fiction",
-  "kicker": "Sabaa Tahir · Fantasy & science fiction",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "text": "There is success, and there is failure. The land in between is for those to weak to live."
    }
   ]
  },
@@ -1175,19 +941,6 @@ window.FN_QUOTE_BOOKS = [
    {
     "type": "paragraph",
     "text": "I will wear your body through the streets until it burns."
-   }
-  ]
- },
- {
-  "id": "quote-silvered-serpents",
-  "title": "The Silvered Serpents",
-  "author": "Roshani Chokshi",
-  "genre": "Fantasy & science fiction",
-  "kicker": "Roshani Chokshi · Fantasy & science fiction",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "text": "May our means justify our ends"
    }
   ]
  },
@@ -1915,19 +1668,6 @@ window.FN_QUOTE_BOOKS = [
   ]
  },
  {
-  "id": "quote-giorgi",
-  "title": "Gaia Ginevra Giorgi",
-  "author": "",
-  "genre": "Poetry",
-  "kicker": "Poetry",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "text": "Io sono un albero di fine estate\nDi tutti i voli\nPreferisco la caduta"
-   }
-  ]
- },
- {
   "id": "quote-ungaretti",
   "title": "Giuseppe Ungaretti",
   "author": "",
@@ -1945,32 +1685,6 @@ window.FN_QUOTE_BOOKS = [
    {
     "type": "paragraph",
     "text": "La morte\nSi sconta\nVivendo.\nSono una creatura"
-   }
-  ]
- },
- {
-  "id": "quote-laus-veneris",
-  "title": "Laus Veneris",
-  "author": "Algernon Swinburne",
-  "genre": "Poetry",
-  "kicker": "Algernon Swinburne · Poetry",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "text": "PERCHÈ QUANDO TUONERANNO LE TROMBE\nLE ANIME POTRANNO DIVIDERSI DAI CORPI\nMA NON NOI L'UNO DALL'ALTRO.\nSwinburne, Laus Veneris"
-   }
-  ]
- },
- {
-  "id": "quote-labe",
-  "title": "Louise Labé",
-  "author": "",
-  "genre": "Poetry",
-  "kicker": "Poetry",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "text": "The colder I feel the hotter I burn.\n— Labé"
    }
   ]
  },
@@ -2167,19 +1881,6 @@ window.FN_QUOTE_BOOKS = [
   ]
  },
  {
-  "id": "quote-plath",
-  "title": "Sylvia Plath",
-  "author": "",
-  "genre": "Poetry",
-  "kicker": "Poetry",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "text": "I act and react, and suddenly I wonder, ‘Where is the girl that I was last year? Two years ago? What would she think of me now?"
-   }
-  ]
- },
- {
   "id": "quote-larkin",
   "title": "This Be The Verse",
   "author": "Philip Larkin",
@@ -2233,19 +1934,6 @@ window.FN_QUOTE_BOOKS = [
    {
     "type": "paragraph",
     "text": "    And don’t have any kids yourself."
-   }
-  ]
- },
- {
-  "id": "quote-ulysses",
-  "title": "Ulysses",
-  "author": "Alfred, Lord Tennyson",
-  "genre": "Poetry",
-  "kicker": "Alfred, Lord Tennyson · Poetry",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "text": "To strive, to seek, to find and not to yield.\n— Lord Tennyson"
    }
   ]
  },
@@ -2330,45 +2018,6 @@ window.FN_QUOTE_BOOKS = [
    {
     "type": "paragraph",
     "text": "No one has ever dared\nTo go so far before\nAs you have dared to go"
-   }
-  ]
- },
- {
-  "id": "quote-for-black-boys",
-  "title": "For Black Boys",
-  "author": "",
-  "genre": "Plays",
-  "kicker": "Plays",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "text": "The Child who is not embraced by the Village will burn it down to feel its warmth"
-   }
-  ]
- },
- {
-  "id": "quote-henry-v",
-  "title": "Henry V",
-  "author": "William Shakespeare",
-  "genre": "Plays",
-  "kicker": "William Shakespeare · Plays",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "text": "Thus may we gather honey from the weed."
-   }
-  ]
- },
- {
-  "id": "quote-les-mouches",
-  "title": "Les Mouches",
-  "author": "Jean-Paul Sartre",
-  "genre": "Plays",
-  "kicker": "Jean-Paul Sartre · Plays",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "text": "Ah, the soul-destroying boredom - of long days of mild content.\n— Les mouches, Sartre"
    }
   ]
  },
@@ -2476,19 +2125,6 @@ window.FN_QUOTE_BOOKS = [
   ]
  },
  {
-  "id": "quote-zarathustra",
-  "title": "Così parlò Zarathustra",
-  "author": "Friedrich Nietzsche",
-  "genre": "Philosophy & faith",
-  "kicker": "Friedrich Nietzsche · Philosophy & faith",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "text": "Che me ne importa della mia giustizia? Non vedo ancora ch'io sia diventato fiamma ardente e carbone! Ma il giusto è fiamma e carbone!\nAlso Sprach Zarathustra"
-   }
-  ]
- },
- {
   "id": "quote-foucault",
   "title": "Michel Foucault",
   "author": "",
@@ -2501,7 +2137,7 @@ window.FN_QUOTE_BOOKS = [
    },
    {
     "type": "paragraph",
-    "text": "This is the paradox of its effectiveness: it is incapable of doing anything, except to render what it dominates incapable of doing anything either, except for what this power allows it to do.\nMichel Foucault"
+    "text": "This is the paradox of its effectiveness: it is incapable of doing anything, except to render what it dominates incapable of doing anything either, except for what this power allows it to do."
    }
   ]
  },
@@ -2828,19 +2464,6 @@ window.FN_QUOTE_BOOKS = [
   ]
  },
  {
-  "id": "quote-donna-e-altro",
-  "title": "Donna e Altro",
-  "author": "",
-  "genre": "Essays, letters & lives",
-  "kicker": "Essays, letters & lives",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "text": "Bambino nasce e si sente Alterità rispetto al Tutto. Per recuperarsi, induvidua la propria individualità negli oggetti (alter ego) che possiede, come il fallo. L'oggetto lo aiuta a sentirsi soggetto.\nLa Donna non ha alter ego simile, quindi rimane oggetto e, rispetto al Soggetto-Uomo, diventa l'Altro. Da qui, la sottomissione femminile.\nMa si tratta di una risposta parziale: la donna pottebbe trovare altri oggetti esterni/non esterni (alter ego) per soggettivizzarsi, come la prole, che potrebbe diventare più preziosa del fallo.\nIl perchè dell'Alterità della donna va ricercato anche nel contesto socio-economico."
-   }
-  ]
- },
- {
   "id": "quote-ethical-slut",
   "title": "The Ethical Slut",
   "author": "Dossie Easton and Janet W. Hardy",
@@ -2985,19 +2608,6 @@ window.FN_QUOTE_BOOKS = [
   ]
  },
  {
-  "id": "quote-this-is-water",
-  "title": "This Is Water",
-  "author": "David Foster Wallace",
-  "genre": "Essays, letters & lives",
-  "kicker": "David Foster Wallace · Essays, letters & lives",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "text": "Everybody worships. The only choice we get is what to worship."
-   }
-  ]
- },
- {
   "id": "quote-carnival-row",
   "title": "Carnival Row",
   "author": "",
@@ -3006,11 +2616,11 @@ window.FN_QUOTE_BOOKS = [
   "blocks": [
    {
     "type": "paragraph",
-    "text": "At the end of the day a man's no better than the pain he's caused the people he loves and what he's welling to do to set it right.\nCarnival Row"
+    "text": "At the end of the day a man's no better than the pain he's caused the people he loves and what he's welling to do to set it right."
    },
    {
     "type": "paragraph",
-    "text": "At the end of the day a man's no better than the pain he's caused the people he loves and what he's willing to do to set it right.\nCarnival Row"
+    "text": "At the end of the day a man's no better than the pain he's caused the people he loves and what he's willing to do to set it right."
    }
   ]
  },
@@ -3045,236 +2655,6 @@ window.FN_QUOTE_BOOKS = [
    {
     "type": "paragraph",
     "text": "Role models and morals are for the comfortably middle-class. Rich people don't have 'em, and working guys like us can't afford 'em."
-   }
-  ]
- },
- {
-  "id": "quote-alessandra",
-  "title": "Alessandra",
-  "author": "",
-  "genre": "Friends & family",
-  "kicker": "Friends & family",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "text": "Intollerante alla tristezza (Alessandra)"
-   }
-  ]
- },
- {
-  "id": "quote-dania",
-  "title": "Dania",
-  "author": "",
-  "genre": "Friends & family",
-  "kicker": "Friends & family",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "text": "“That could get me into drinking coffee” (07/03/36, about the coconut iced coffee at Kapi, Verkala)"
-   },
-   {
-    "type": "paragraph",
-    "text": "È così difficile perché ci stai mettendo così tanto impegno.\n\nYou're a strong, successful, and smart woman, who is lifting up everyone around her to be the best versions of themselves and nobody can take that away from you on your journey to change the world for the better."
-   }
-  ]
- },
- {
-  "id": "quote-elena",
-  "title": "Elena",
-  "author": "",
-  "genre": "Friends & family",
-  "kicker": "Friends & family",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "text": "Shit's gotta be tasty, millions of flies can't be wrong.\n48:40"
-   }
-  ]
- },
- {
-  "id": "quote-kara",
-  "title": "Kara",
-  "author": "",
-  "genre": "Friends & family",
-  "kicker": "Friends & family",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "text": "Feeling is healing"
-   },
-   {
-    "type": "paragraph",
-    "text": "We are made of 4 parts:\nThe mind is a monkey (always active)\nThe heart is a child (always asking for more)\nThe souls is an old man (contemplating and drawing conclusions)\nThe body is"
-   },
-   {
-    "type": "paragraph",
-    "text": "Yantra, mantra, tantra"
-   },
-   {
-    "type": "paragraph",
-    "text": "It’s very easy to be complicated, and very complicated to be easy"
-   },
-   {
-    "type": "paragraph",
-    "text": "Eating too much and loving too much are both a waste"
-   },
-   {
-    "type": "paragraph",
-    "text": "You need to learn how to take instead of always giving"
-   },
-   {
-    "type": "paragraph",
-    "text": "You need to keep something for yourself so if things go right and left you still are centered"
-   },
-   {
-    "type": "paragraph",
-    "text": "If you have two portions of food and you give two of them away you will not eat"
-   },
-   {
-    "type": "paragraph",
-    "text": "You need to reign your emotions because you are a sentimental person"
-   },
-   {
-    "type": "paragraph",
-    "text": "Intuition and manifestation"
-   },
-   {
-    "type": "paragraph",
-    "text": "Through conversation with one self, to empty the ego"
-   },
-   {
-    "type": "paragraph",
-    "text": "You have to learn to accept what’s given to you, not to say it’s nothing, it’s okay"
-   }
-  ]
- },
- {
-  "id": "quote-lu",
-  "title": "Lu",
-  "author": "",
-  "genre": "Friends & family",
-  "kicker": "Friends & family",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "text": "Stai finalmente vivendo la tua vita. Il mondo è qui per farsi prendere per le palle da te"
-   },
-   {
-    "type": "paragraph",
-    "text": "La tua vera essenza è quella di una bad bitch che non si fa mettere sotto da nessuno"
-   },
-   {
-    "type": "paragraph",
-    "text": "Io per te ci sarò SEMPRE, in qualsiasi momento, anche durante un appuntamento col primo ragazzo decente della mia vita"
-   },
-   {
-    "type": "paragraph",
-    "text": "Sei una cazzo di stella che brilla di luce propria, non hai bisogno di niente e nessuno per risplendere (tranne me <3)"
-   },
-   {
-    "type": "paragraph",
-    "text": "Fai fiorire la tua arte. Non importa se fa freddo, piove, sei stufa di vedere facce coi denti gialli. La tua arte è là fuori, devi solo afferrarla"
-   },
-   {
-    "type": "paragraph",
-    "text": "Tu ami i bambini. Sono bellissimi. Lavorare con loro è il tuo sogno da sempre :)"
-   },
-   {
-    "type": "paragraph",
-    "text": "Lunga vita alla regina per quel che le resta, tanto tra un po' tutto il mondo sarà governato da delle diarche (noi)"
-   },
-   {
-    "type": "paragraph",
-    "text": "Esci! Respira! Ispirati! Sei parte dei movimenti del mondo e tutto l'universo batte all'unisono col tuo cuore"
-   },
-   {
-    "type": "paragraph",
-    "text": "Pensa a Will Herondale. Alla fine è l'unica soluzione nei momenti di sconforto."
-   },
-   {
-    "type": "paragraph",
-    "text": "Ti voglio bene"
-   },
-   {
-    "type": "paragraph",
-    "text": "Solo vivendo si guarisce"
-   },
-   {
-    "type": "paragraph",
-    "text": "Alla persona che mi ricorda che la vita è scontare i propri cento anni di solitudine, ma che allo stesso tempo, esistendo, non mi lascia mai sola.\nBuon compleanno,\nLucia"
-   },
-   {
-    "type": "paragraph",
-    "text": "10 settembre 2022"
-   }
-  ]
- },
- {
-  "id": "quote-men-said",
-  "title": "Men said",
-  "author": "",
-  "genre": "Friends & family",
-  "kicker": "Friends & family",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "text": "Se vuoi possiamo provare a capirci insieme visto che anch'io sto cercando di capire un po' il mio stesso"
-   },
-   {
-    "type": "paragraph",
-    "text": "Luigi cleaner"
-   },
-   {
-    "type": "paragraph",
-    "text": "You are a lovely beautiful lady"
-   },
-   {
-    "type": "paragraph",
-    "text": "Baran"
-   },
-   {
-    "type": "paragraph",
-    "text": "Well there's the you who's a self proclaimed strong independent woman and there's the you who, albeit drunkenly, admitted to getting too emotionally invested in people sometimes."
-   },
-   {
-    "type": "paragraph",
-    "text": "[03/01/2022, 14:17] Luke: You make me realise by the way that I am not well read at all\n[03/01/2022, 14:19] Luke: This might sound stuck up but it’s very unusual that someone my age makes me feel intellectually challenged. It’s really nice. Where I come from people aren’t like that so I never really get that kind of stimulation"
-   },
-   {
-    "type": "paragraph",
-    "text": "Luke"
-   },
-   {
-    "type": "paragraph",
-    "text": "Yes insomnia is not fun"
-   },
-   {
-    "type": "paragraph",
-    "text": "Liam (he ditched me at the date because he didn't have enough sleep)"
-   },
-   {
-    "type": "paragraph",
-    "text": "What would u do if i hooked up with ur mum"
-   },
-   {
-    "type": "paragraph",
-    "text": "Iggy"
-   },
-   {
-    "type": "paragraph",
-    "text": "High pain tolerance tho which is hot\nShe's tough\nThanks for making my trip x\nMy veneziana\nI'm gonna stand here till you train leaves\nGotta soak uo my time looking at you"
-   },
-   {
-    "type": "paragraph",
-    "text": "Alex on ig talking about me asleep while tattoed"
-   },
-   {
-    "type": "paragraph",
-    "text": "Tell me more about your trauma so I can understand how damaged you are"
-   },
-   {
-    "type": "paragraph",
-    "text": "Chris"
    }
   ]
  },
@@ -4472,529 +3852,176 @@ window.FN_QUOTE_BOOKS = [
   ]
  },
  {
-  "id": "quote-said-2024",
-  "title": "Said in 2024",
+  "id": "quote-miscellaneous",
+  "title": "Miscellaneous",
   "author": "",
-  "genre": "Friends & family",
-  "kicker": "Friends & family",
+  "genre": "Miscellaneous",
+  "kicker": "Single quotes from many books",
   "blocks": [
    {
     "type": "paragraph",
-    "text": "2024\nJan 1\n'Per fortuna non siamo ricchi'\nLu dopo aver guardato Saltburn a Capodanno"
+    "text": "Il vincitore è schiavo del bottino\nAnthony Patch\n— The Beautiful and Damned, F. Scott Fitzgerald"
    },
    {
     "type": "paragraph",
-    "text": "Jan 2\n'Bella ragazza'\nCatcallers a Roma (i terzi in una camminata di 10 minuti)"
+    "text": "We rip out so much of ourselves to be cured of things faster than we should that we go bankrupt by the age of thirty and have less to offer each time we start with someone new. But to make yourself feel nothing so as not to feel anything - what a waste!\n— Call Me by Your Name, André Aciman"
    },
    {
     "type": "paragraph",
-    "text": "Jan 3\n'I cannot believe you came all the way to Australia'\nDania"
+    "text": "Che me ne importa della mia giustizia? Non vedo ancora ch'io sia diventato fiamma ardente e carbone! Ma il giusto è fiamma e carbone!\n— Così parlò Zarathustra, Friedrich Nietzsche"
    },
    {
     "type": "paragraph",
-    "text": "Jan 4\n'Varda che il rene è un attimo che ti parta eh! E non torna più dopo'\nJulius (via Whatsapp)"
+    "text": "Bambino nasce e si sente Alterità rispetto al Tutto. Per recuperarsi, induvidua la propria individualità negli oggetti (alter ego) che possiede, come il fallo. L'oggetto lo aiuta a sentirsi soggetto.\nLa Donna non ha alter ego simile, quindi rimane oggetto e, rispetto al Soggetto-Uomo, diventa l'Altro. Da qui, la sottomissione femminile.\nMa si tratta di una risposta parziale: la donna pottebbe trovare altri oggetti esterni/non esterni (alter ego) per soggettivizzarsi, come la prole, che potrebbe diventare più preziosa del fallo.\nIl perchè dell'Alterità della donna va ricercato anche nel contesto socio-economico.\n— Donna e Altro"
    },
    {
     "type": "paragraph",
-    "text": "Jan 5\n'Tutto il mondo è San Fiorrr'\nLu (via Whatsapp)"
+    "text": "E questa lontananza è la Russia, la sua incomparabile, celebre madre la cui fama risuona oltre i mari, la Russia martire, ostinata, strampalata, folle, venerata, con colpi di testa eternamente grandiosi e funesti, che mai è possibile prevedere! Oh, com'è dolce esistere! Com'è dolce vivere al mondo e amare la vita! Oh, che voglia di dire grazie alla vita stessa, alla stessa esistenza, dirglielo così, direttamente. Ecco, questo è Lara. Con quelle cose non è possibile comunicare, e lei è la loro rappresentante, la loro espressione, il dono dell'udito e della parola concesso ai princìpi muti dell'esistenza.\n— Il dottor Živago, Boris Pasternak"
    },
    {
     "type": "paragraph",
-    "text": "Jan 6\n'Let's have kangaroo meat'\nDania"
+    "text": "Aveva adorato il potere con tale passione che avrebbe pagato per vendersi\n— L’educazione sentimentale, Gustave Flaubert"
    },
    {
     "type": "paragraph",
-    "text": "Jan 7\n'She's my kind of girl'\nDania's mum"
+    "text": "There is success, and there is failure. The land in between is for those to weak to live.\n— An Ember in the Ashes, Sabaa Tahir"
    },
    {
     "type": "paragraph",
-    "text": "Jan 8\n'Only sovereign powers like Russia can guarantee democracy'\nDania's dad"
+    "text": "Ma il cuore non è il muso di un cane.\n— Il fantasma dell’opera, Gaston Leroux"
    },
    {
     "type": "paragraph",
-    "text": "Jan 9\n'- I feel I have a connection with this parrot.\n- When you stop connecting with our parrot could you put him away in the cage?'\nMe and Dania's mum"
+    "text": "The Child who is not embraced by the Village will burn it down to feel its warmth\n— For Black Boys"
    },
    {
     "type": "paragraph",
-    "text": "Jan 10\n'That's how spastic people kick a ball'\nDania at St Kilda"
+    "text": "Era per destino una di quelle persone che vengono al mondo sprovviste di tutto, tranne che della provvisione di sè.\n— La foresta della notte, Djuna Barnes"
    },
    {
     "type": "paragraph",
-    "text": "Jan 11\n'At that time I started losing hearing...'\n'Sorry what did you say??'\nMary & me (Daniel's friend)"
+    "text": "Amare la vita più che il senso di essa.\n— I fratelli Karamazov, Fëdor Dostoevskij"
    },
    {
     "type": "paragraph",
-    "text": "Jan 12\n'The holidays were good. The best thing was the girls moving their mattresses to the floor for two weeks and chatting for ages every night. It's always so rare for Emilie to get such positive interactions from the person she loves maybe the most in the world.'\nMark (via Whatsapp)"
+    "text": "Io sono un albero di fine estate\nDi tutti i voli\nPreferisco la caduta\n— Gaia Ginevra Giorgi"
    },
    {
     "type": "paragraph",
-    "text": "Jan 13\n'This might be the best pizza of my life'\nDania (at Capitano, talking about Salsiccia and Broccoli pizza...he was kinda right)"
+    "text": "Non sarete mai degni della felicità fintanto che avrete qualcosa tutta per voi, finchè il vostro odio nei confronti dei borghesi nascerà unicamente dal rabbioso desiderio di essere borghesi al posto loro.\n— Germinal, Émile Zola"
    },
    {
     "type": "paragraph",
-    "text": "Jan 14\n'I broke up with him and then chose him again'\nMichelle (talking about Avi)"
+    "text": "Reserving judgment is a matter of infinite hope.\n— The Great Gatsby, F. Scott Fitzgerald"
    },
    {
     "type": "paragraph",
-    "text": "Jan 15\n'I love Tassy!'\nRichie (Tassy = Tasmania)"
+    "text": "Thus may we gather honey from the weed.\n— Henry V, William Shakespeare"
    },
    {
     "type": "paragraph",
-    "text": "Jan 16\n'I never heard of WhatsApp'\nPenny (owner of a bookshop, friend of Dania)"
+    "text": "L'oblio cura tutto e il canto è la sua forma più bella, perchè in una canzone l'uomo non ricorda quel che ama ricordare\n— Ivo Andrić"
    },
    {
     "type": "paragraph",
-    "text": "Jan 17\n'- Dad can you show mum my tooth on the phone? I am Dracula.\n- Now you're Gapula.'\nDad and kid on the bus in Harbart (kid lost the tooth)"
+    "text": "PERCHÈ QUANDO TUONERANNO LE TROMBE\nLE ANIME POTRANNO DIVIDERSI DAI CORPI\nMA NON NOI L'UNO DALL'ALTRO.\n— Laus Veneris, Algernon Swinburne"
    },
    {
     "type": "paragraph",
-    "text": "Jan 18\n'Nicole will succeed for real'\nDania (part of a really beautiful speech)"
+    "text": "The colder I feel the hotter I burn.\n— Louise Labé"
    },
    {
     "type": "paragraph",
-    "text": "'- They look like a cult.\n-Ehy guys are you a cult?\n*Awkward silence*'\nMichelle&Me at the hike to cult members (we became friends after and I said sorry)"
+    "text": "Quasi tutto quel che gli uomini han detto di meglio è stato detto in greco.\n— Marguerite Yourcenar"
    },
    {
     "type": "paragraph",
-    "text": "Jan 19\n'- Tell me a secret.\n- My husband has a fresh hickey on his neck that we covered with a bandaid'\nRandom woman with husband and daughter at Mona"
+    "text": "Ah, the soul-destroying boredom - of long days of mild content.\n— Les Mouches, Jean-Paul Sartre"
    },
    {
     "type": "paragraph",
-    "text": "Jan 20\n'Let's seat on that random rocking chair'\nDania (we had sex on it)"
+    "text": "Tu sei un artista, io un pensatore. Tu dormi sul petto della madre, io veglio nel deserto.\n— Narciso e Boccadoro, Hermann Hesse"
    },
    {
     "type": "paragraph",
-    "text": "Jan 21\n'Can I join you in opening a cafè in Maria's Island? '\nBecky"
+    "text": "Laggiù aveva visto evocare sguardi di ogni sorta da far rabbrividire, e ora immaginava che quegli occhi, nel loro maestoso orrore, non si aprissero da fronti umane, ma al margine del cielo o nel cuore delle montagne, bagnati talvolta da un singhiozzo di luna che si cristallizzava sulle ciglia in stalattiti di cera.\n— Il palazzo dei sogni, Ismail Kadare"
    },
    {
     "type": "paragraph",
-    "text": "Jan 22\n'I dare you to wear that unicorn headband'\nDania (we took turns)"
+    "text": "Sento per te quello che dovrei sentire soltanto per Dio.\n— Il rosso e il nero, Stendhal"
    },
    {
     "type": "paragraph",
-    "text": "Jan 23\n'Antology of what? Ahah...Antology of Spoonriver...oh wow, it's actually a book'\nBitchy worker at book shop in the City"
+    "text": "Il fatto in sè di venire al mondo ed esistere è quanto più complicato possa esserci. Non ce ne rendiamo conto, ma tutti noi, nell'arco della vita, è come se fossimo costantemente in cura, sotto terapia.\n— Seni e uova, Mieko Kawakami"
    },
    {
     "type": "paragraph",
-    "text": "Jan 24\n'Surprise!'\nDania (took me to the rooftop cinema to watch All of Us Strangers)"
+    "text": "May our means justify our ends\n— The Silvered Serpents, Roshani Chokshi"
    },
    {
     "type": "paragraph",
-    "text": "Jan 25\n'I love Italy! Buongiorno! Come stai?'\nStrict lady at the post office(I was warned she was conservative and I had a revealing outfit but she lived me)"
+    "text": "I act and react, and suddenly I wonder, ‘Where is the girl that I was last year? Two years ago? What would she think of me now?\n— Sylvia Plath"
    },
    {
     "type": "paragraph",
-    "text": "Jan 26\n'- Can you see our flight on the board? I can't.\n- What's Avalon?\n- The other airport...'\nDania&Me (we went to Tullamarine instead)"
+    "text": "Everybody worships. The only choice we get is what to worship.\n— This Is Water, David Foster Wallace"
    },
    {
     "type": "paragraph",
-    "text": "Jan 27\n'We'll just wait until we take the train and get out of this city'\nDania (talking about Sydney)"
+    "text": "To strive, to seek, to find and not to yield.\n— Ulysses, Alfred, Lord Tennyson"
    },
    {
     "type": "paragraph",
-    "text": "Jan 28\n'Wait...so you would like to be in a throuple with another woman too?'\nDania (the day of my best orgasm yet)"
+    "text": "People walk around like blind men, like dead men, when they could create the most ardent life, where all enjoyment would be so heightened, it would be as if you had only just been born and would die at any moment. It is with precisely such greed that every- thing must be appreciated. There are wonders all around us at every step.\n— Wings, Mikhail Kuzmin"
    },
    {
     "type": "paragraph",
-    "text": "Jan 29\n'Ti prego dimmi che è questo con go Daddyyyyy'\nLu (parlando del mio website)"
+    "text": "У меня такое чувство, будто сам Господин Бог поручил мне заботу о ней. И я не знаю, то ли жить без этого не могу, то ли мне это ни к чему. Я до сих пор не знаю, поэтому мы ссоримся.\n— День без вранья, Viktoria Tokareva"
    },
    {
     "type": "paragraph",
-    "text": "Jan 30\n'- Please tell me I'll be great.\n- You'll be more than great.'\nMe&Dania (while I was sleeptalking)"
+    "text": "Volli, e volli sempre, e fortissimamente volli.\n— Alfieri"
    },
    {
     "type": "paragraph",
-    "text": "'I thought you wanted a real workshop, I was ready to teach you all the frothing styles'\nMY BELOVED RICHIE AT BEST COFFEE SHOP IN THE WORLD 28 SECONDS"
+    "text": "Nobis cum semel occidit brevis lux, nox est perpetua una dormienda. Catullo\n\nLove of fatherland makes heroes, but love of truth makes wise men.\n— Chaadaev"
    },
    {
     "type": "paragraph",
-    "text": "Jan 31\n'- You should talk to David, he has been travelling through South America.\n- AND CENTRAL America!'\nDaniel & his friend (at Trivia)"
+    "text": "Non c'è cosa peggiore di amare qualcuno che non ama se stesso, non ama la vita, ma ama solo te.\n— Elsa Morante"
    },
    {
     "type": "paragraph",
-    "text": "Feb 1\n'We want to lay you to do nothing'\nUpwork guy on a meeting (he did pay me for nothing)"
+    "text": "Vorrei poterti far amare i libri più di tua madre.\n\nProverbio egiziano"
    },
    {
     "type": "paragraph",
-    "text": "Feb 2\n'You're on of us now'\nAvi talking about Jews to me"
+    "text": "If they sky falls down on you,\nThere's always a hole that you can squeeze through.\nKorean proverb"
    },
    {
     "type": "paragraph",
-    "text": "'Let's play fight'\nDania (if you know you know)"
+    "text": "Nostrum istud vivere triste\nPersio"
    },
    {
     "type": "paragraph",
-    "text": "Feb 3\n'I have a camera pointing at the bed...'\nDania"
+    "text": "Siamo conduttori, Em. Lo scopo è lasciarsi attraversare.\nEm&Eric"
    },
    {
     "type": "paragraph",
-    "text": "'Israel will be remembered as a Nazi state'\nOld man on the street at CBD"
+    "text": "Sit tibi terra levis\n\nSia per te leggera la terra\n\nIscrizione sepolcrale latina"
    },
    {
     "type": "paragraph",
-    "text": "Feb 4\n'I've never seen him so mesmerised by someone...it's like he forgot everything and everyone else'\nDaniel's mum (talking about him)"
+    "text": "May it be my will that my compassion will overcome my anger.\n\nTalmud"
    },
    {
     "type": "paragraph",
-    "text": "'I feel love for you all the time'\nDania"
+    "text": "'For the vices that make social institutions necessary are the same ones that make their abuses inevitable'\n— Rousseau"
    },
    {
     "type": "paragraph",
-    "text": "'Nicole, beautiful inside and out, you are a welcome guest here always. I might just do that! See u in Europe sister ♥️'\nBecky (via Whatsapp)"
+    "text": "To make yourself rich, make your needs few.\n— Thoreau"
    },
-   {
-    "type": "paragraph",
-    "text": "Feb 5\n'Potremmo esserci lasciati'\nLu"
-   },
-   {
-    "type": "paragraph",
-    "text": "Feb 6\n'Con lo Spirito Santo Broccolo, il Padre Colesterolo parla'\nAli(in chiesa)"
-   },
-   {
-    "type": "paragraph",
-    "text": "Feb 7\n'We would like to just hire you now'\nUpwork diamond woman"
-   },
-   {
-    "type": "paragraph",
-    "text": "Feb 8\n'È molto particolare, molto intenso'\nMamma (parlando della Vegemite)"
-   },
-   {
-    "type": "paragraph",
-    "text": "Feb 9\n'Non azzardarti ad aggiungere acqua al tè, che lo annacqui'\nMamma"
-   },
-   {
-    "type": "paragraph",
-    "text": "'Hai avuto una notte di fuoco con un kazako, eh?'\nGinecologo"
-   },
-   {
-    "type": "paragraph",
-    "text": "Feb 10-Feb 23\nX"
-   },
-   {
-    "type": "paragraph",
-    "text": "Feb 24\n'What class are you? Wait, so you're like more clever than me?'\nClassmate Zayd"
-   },
-   {
-    "type": "paragraph",
-    "text": "Feb 25\n'You need to be writing. Humanity needs it'\nDania"
-   },
-   {
-    "type": "paragraph",
-    "text": "Feb 26\n'Bro forever'\nJulius"
-   },
-   {
-    "type": "paragraph",
-    "text": "Feb 27\n'Ma che businesswoman, sei la Maria Draghi'\nJulius"
-   },
-   {
-    "type": "paragraph",
-    "text": "Feb 28\n'- This is such an existence of longing.\n- It's the longing that tells you how much you love and are loved. It would be quite a sad existence without it'.\nMe&Mark"
-   },
-   {
-    "type": "paragraph",
-    "text": "Feb 29\n'Arriviamo il 29 [mar] e ripartiamo il 6 [apr]'\nMami (più di una settimana 🙃)"
-   },
-   {
-    "type": "paragraph",
-    "text": "March 1\n'Wow, you said you wanted to experiment with make up, and now you really did'\nChanel (looking disgusted - we barely talk)"
-   },
-   {
-    "type": "paragraph",
-    "text": "March 2\n'It looked like it would hurt!'\nClassmate James (while I was getting my brow pierced)"
-   },
-   {
-    "type": "paragraph",
-    "text": "March 3\n'He looks like my grandpa'\nRandom guy at Kiek the Kök (commenting on picture of an Orthodox patriarch)"
-   },
-   {
-    "type": "paragraph",
-    "text": "March 4\n'Continuo a masturbarmi con questa canzone in sottofondo, e ho pensato a te. Non mentre mi masturbavo. Insomma, ascoltala'\nAli (la canzone è Daphni et Chloe: Part III: Lever du Jour di Ravel e mi ci sono masturbata su)"
-   },
-   {
-    "type": "paragraph",
-    "text": "March 5\n'Si scrive vivendo. Tu sei uno scrittore ottocentesco'\nLu"
-   },
-   {
-    "type": "paragraph",
-    "text": "March 6\n'We'll come with you to check those cheao frozen cherries'\nClassmate Leah"
-   },
-   {
-    "type": "paragraph",
-    "text": "March 7\n'- Can I pay with cash?\n- No'\nRude server at next door supermarket"
-   },
-   {
-    "type": "paragraph",
-    "text": "Mar 8\n'I can wash this plate...it's Women's Day after all'\nClassmate Ilya"
-   },
-   {
-    "type": "paragraph",
-    "text": "Mar 9\n'We just get fucked to then fuck people to feel less lonely...just a Tallinn vibe'\nClassmate Joanna"
-   },
-   {
-    "type": "paragraph",
-    "text": "Mar 10\n'Are we in Greece?'\nGen (talking about Pirita beach)"
-   },
-   {
-    "type": "paragraph",
-    "text": "Mar 11\n'-Ci sarà Zucchero a Tallinn!\n-Qualcuno ci va?\n-Te pare?'\nItaliani&io (2nd) sul gruppo Erasmus su Whatsapp"
-   },
-   {
-    "type": "paragraph",
-    "text": "'I'd ask you not to refer to this relationship as disgusting and humiliating anymore please'\nDania (upsy)"
-   },
-   {
-    "type": "paragraph",
-    "text": "March 12\n'Mare ghiacciato, cagozzo assicurato'\nGiuli (parlando del mar Baltico)"
-   },
-   {
-    "type": "paragraph",
-    "text": "March 13\n'You're so naughty!'\nOxford girl after I told her I have a nipple piercing (I think she was flirting with me)"
-   },
-   {
-    "type": "paragraph",
-    "text": "'Anche se avrei preferito consegnarlo direttamente a te🤣'\nCorriere romano (riferendosi al mio pacco (contenente un sex toy lol). Ha poi cancellato il messaggio)"
-   },
-   {
-    "type": "paragraph",
-    "text": "March 14\n'Was the churning butter Polish song your sexual awakening?'\nClassmate Joanna"
-   },
-   {
-    "type": "paragraph",
-    "text": "'- Nightwalks in freezing rain >>\n- Wish I was there with you, saying let's go home now\n-I'd say just one more lap around the park\n- and i'd begrudgingly agree'\nMe&Dania"
-   },
-   {
-    "type": "paragraph",
-    "text": "March 15\n'I'll send this picture to my mum so she'll think I have friends'\nClassmate Goran"
-   },
-   {
-    "type": "paragraph",
-    "text": "March 16\n'Can we leave?'\nGen (tired of Tartu)"
-   },
-   {
-    "type": "paragraph",
-    "text": "March 17-March 29\nX"
-   },
-   {
-    "type": "paragraph",
-    "text": "March 30\n'Chiama l'ambulamza, ha un'insufficienza respiratoria!'\nAle (ero priva di sensi dopo aver vomitato ubriaca)"
-   },
-   {
-    "type": "paragraph",
-    "text": "March 31\n'Chiama quelli del ristorante russo e annulla la prenotazione. Non ce la faccio più di sto cibo russo'\nMamma (dopo letteralmente 1 borsch)"
-   },
-   {
-    "type": "paragraph",
-    "text": "April 1\n'Mi sa che abbiamo perso il traghetto'\nPapà"
-   },
-   {
-    "type": "paragraph",
-    "text": "April 2\n'Dai mangia una polpetta di renna su che ti fa bene'\nPapà"
-   },
-   {
-    "type": "paragraph",
-    "text": "April 3\n'You're so smart and insightful'\nMark"
-   },
-   {
-    "type": "paragraph",
-    "text": "April 4\n'Yes the war might mean the end of your relationship'\nClassmate Leah (talking about me&Dania arguing about Israel and Palestine - I agreed w her)"
-   },
-   {
-    "type": "paragraph",
-    "text": "April 5\n'Americana dall'Arizona. Non aggiungo altro'\nLu via whatsapp (adducendo questo come giustificazione delle idee stupide di una tipa)"
-   },
-   {
-    "type": "paragraph",
-    "text": "April 6\n'Don't tell me you're a horse girlie! Horse girlies are the female equivalent of rugby boys'\nClassmate Ilya"
-   },
-   {
-    "type": "paragraph",
-    "text": "April 7\n' тебе остались навыки'\nDasha, russian girl talking about my horse riding skills"
-   },
-   {
-    "type": "paragraph",
-    "text": "April 8\n'Magnanimity for Ineptitude is usually reserved for children in my eyes'\nDania"
-   },
-   {
-    "type": "paragraph",
-    "text": "'ZIAAAAA MAAAAAA richiamate il Bro Freud dalla tomba e fategli mettere qualche dito su per il culo della gente per vedere se hanno passato la fase anale…. Perchè qua siamo rimasti alla fase orale'\nJulius"
-   },
-   {
-    "type": "paragraph",
-    "text": "April 9\n'If I had to drop the friends who go out with people I don't like I wouldn't have many friends'\nClassmate Joanna (via whatsapp)"
-   },
-   {
-    "type": "paragraph",
-    "text": "April 10\n'This girl asked me out and I'm going out with her tonight...do you wanna join?'\nMaya, the girl I thought I was on a date on (neither me nor the other girl were)"
-   },
-   {
-    "type": "paragraph",
-    "text": "Apr 11\n'Capisci un sacco delle persone dal loro rapporto con sesso, soldi e potere'\nJulius"
-   },
-   {
-    "type": "paragraph",
-    "text": "Julius 12\n'You're the third person today who told me they want to off themselves'\nJoanna"
-   },
-   {
-    "type": "paragraph",
-    "text": "April 13\n'Nudity is community'\nLu"
-   },
-   {
-    "type": "paragraph",
-    "text": "April 14\n'- I tedeschi sono sporchi.\n- Eh a loro piace un'altra pulizia...quella etnica'\nMe&Julius"
-   },
-   {
-    "type": "paragraph",
-    "text": "April 15\n'- E quindi questo tipo che mangia 1 pollo e mezzo al giorno vuole diventare poliamoroso.\n- Polliamoroso?'\nIo&Lu"
-   },
-   {
-    "type": "paragraph",
-    "text": "Apr 16\n'That's why the left will always lose, because they use soft power against people who use the guns'\nClassmate Richard"
-   },
-   {
-    "type": "paragraph",
-    "text": "April 17\n'L'idea del body count è un'idea capitalistica'\nJulius (via Whatsapp)"
-   },
-   {
-    "type": "paragraph",
-    "text": "April 18\n'There's always fourth year, Nicole, of you'll ever change your mind'\nClassmate Ilya"
-   },
-   {
-    "type": "paragraph",
-    "text": "April 19\n'Io supporto tutti, ama chi vuoi...ma non i brutti'\nJulius"
-   },
-   {
-    "type": "paragraph",
-    "text": "April 20\n'I mean Nazists are the price to pay if you want to pay if you want to live in a democracy'\nАлися from Q-space"
-   },
-   {
-    "type": "paragraph",
-    "text": "Apr 21\n'You have to stop put yourself in dangerous situations'\nDania"
-   },
-   {
-    "type": "paragraph",
-    "text": "Apr 22\n'Social anxiety is scared of you'\nJoanna"
-   },
-   {
-    "type": "paragraph",
-    "text": "Apr 23\n'No ma cosa c'entra il patriarcato? Depilarsi fa parte della bellezza di essere donne. A me piace curarmi e anche a te perchè sei mia figlia'\nMamma"
-   },
-   {
-    "type": "paragraph",
-    "text": "Apr 24\n'If it gets up, I'll get down'\nJoanna (on older men' dicks)"
-   },
-   {
-    "type": "paragraph",
-    "text": "Apr 23\n'Y вас есть светлые глаза'\nВладимир the street musician"
-   },
-   {
-    "type": "paragraph",
-    "text": "Apr 24\n'- I feel like I can't do anything.\n- Well, it could have been worse. You could've not been able to do anything AND be ugly'\nMe&Iggy"
-   },
-   {
-    "type": "paragraph",
-    "text": "Apr 28\n'“Museum” and “Club” sounds totally opposite but I understand this is exactly Nicole vibes 😎😎😎'\nAlex, the Japanese guy"
-   },
-   {
-    "type": "paragraph",
-    "text": "Apr 29\n'- I have a pussy's heart.\n(Laughs) - I have a pussy's heart too. Maybe that's what the world needs'\nGustav, the Swedish guy"
-   },
-   {
-    "type": "paragraph",
-    "text": "Apr 30-May 17\nX"
-   },
-   {
-    "type": "paragraph",
-    "text": "May 18\nI didn't really know what missing someone truly was until this year.\nMark"
-   },
-   {
-    "type": "paragraph",
-    "text": "May 19-21\nX"
-   },
-   {
-    "type": "paragraph",
-    "text": "May 22\n'No allo stoicismo, sì all'industria farmaceutica'\nLu"
-   },
-   {
-    "type": "paragraph",
-    "text": "May 23-June 4\nX"
-   },
-   {
-    "type": "paragraph",
-    "text": "June 5\n'As long as you have that glorious mind as a sanctuary you'll be okay'\nDania"
-   },
-   {
-    "type": "paragraph",
-    "text": "June 6-18\nX"
-   },
-   {
-    "type": "paragraph",
-    "text": "June 19\n'Strambi si è in generale contro il sistema, non solo sotto le coperte'\nLu"
-   },
-   {
-    "type": "paragraph",
-    "text": "June 20-Jul 4\nX"
-   },
-   {
-    "type": "paragraph",
-    "text": "Jul 5\n'Give me a chance to make you fat'\nStrillone del ristorante vicino a Sorbillo"
-   },
-   {
-    "type": "paragraph",
-    "text": "Jul 9\n- How much is it (pointing at a restaurant)?\n- Me?\nDani&boat tour guide"
-   },
-   {
-    "type": "paragraph",
-    "text": "Jul 10-30\nX"
-   },
-   {
-    "type": "paragraph",
-    "text": "Jul 31\n' You are a really good person\nYeah but that's analogous to the definition of bravery - bravery isn't being fearless, it's facing the fear and pushing through anyway'\nMark"
-   },
-   {
-    "type": "paragraph",
-    "text": "Aug 1-18\nX"
-   },
-   {
-    "type": "paragraph",
-    "text": "Aug 19\n'Tu sei una cornacchia solitaria'\nAle"
-   },
-   {
-    "type": "paragraph",
-    "text": "Aug 20\n'- Possiamo parlare del tuo argomento preferito?\n-Aspetta sono confusa...droghe o bambini?'\nSarida&Giovanna attraverso Lu (via whatsapp)"
-   },
-   {
-    "type": "paragraph",
-    "text": "Aug 21\n'Se scegliamo il male è perchè abbiamo paura che gli altri ci facciano male'\nLu"
-   },
-   {
-    "type": "paragraph",
-    "text": "Aug 22\n'Papà continuava a urlare, moriremo! moriremo!'\nAlex (alle saline di Turda)"
-   },
-   {
-    "type": "paragraph",
-    "text": "Aug 23\n'You're very beautiful you know that'\nDania"
-   },
-   {
-    "type": "paragraph",
-    "text": "Aug 25\n'- Facciamo che Giulio è gli obesi.\n- Non è facile trovare un posto a sedersi per loro.\n-Sono Rosa Park?'\nJulius al gioco indovina chi delle minoranze"
-   },
-   {
-    "type": "paragraph",
-    "text": "'-Hanno una visione del mondo diversa dagli altri.\n-Sono i daltonici?'\nLu (erano i terrapiattisti)"
-   },
-   {
-    "type": "paragraph",
-    "text": "Aug 26\n'-I feel like a little pebble on the ground. Cute and stagnant lol.'\nSof (via WA)"
-   }
-  ]
- },
- {
-  "id": "quote-unnamed",
-  "title": "Lines without a name",
-  "author": "",
-  "genre": "Lines & sayings",
-  "kicker": "Lines & sayings",
-  "blocks": [
    {
     "type": "paragraph",
     "text": "Take my robe, take my crown,\nAll my power, all my pride,\nTake my whole empire"
@@ -5025,88 +4052,11 @@ window.FN_QUOTE_BOOKS = [
    },
    {
     "type": "paragraph",
-    "text": "It's not my fault that love is the only thought and pain is the only feeling\nIf you ask me, that doesn't sound like such a bad situation"
-   },
-   {
-    "type": "paragraph",
-    "text": "Existence is innocent"
-   },
-   {
-    "type": "paragraph",
-    "text": "The enemy is yourself posed as a question"
+    "text": "It's not my fault that love is the only thought and pain is the only feeling\nIf you ask me, that doesn't sound like such a bad situation\n\nExistence is innocent\n\nThe enemy is yourself posed as a question"
    },
    {
     "type": "paragraph",
     "text": "He who feeds you, controls you"
-   }
-  ]
- },
- {
-  "id": "quote-sayings",
-  "title": "Sayings and single lines",
-  "author": "",
-  "genre": "Lines & sayings",
-  "kicker": "Lines & sayings",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "text": "Volli, e volli sempre, e fortissimamente volli.\n— Alfieri"
-   },
-   {
-    "type": "paragraph",
-    "text": "Nobis cum semel occidit brevis lux, nox est perpetua una dormienda. Catullo\n\nLove of fatherland makes heroes, but love of truth makes wise men.\n— Chaadaev"
-   },
-   {
-    "type": "paragraph",
-    "text": "Non c'è cosa peggiore di amare qualcuno che non ama se stesso, non ama la vita, ma ama solo te.\n— Elsa Morante"
-   },
-   {
-    "type": "paragraph",
-    "text": "Vorrei poterti far amare i libri più di tua madre."
-   },
-   {
-    "type": "paragraph",
-    "text": "Proverbio egiziano"
-   },
-   {
-    "type": "paragraph",
-    "text": "If they sky falls down on you,\nThere's always a hole that you can squeeze through.\nKorean proverb"
-   },
-   {
-    "type": "paragraph",
-    "text": "Nostrum istud vivere triste\nPersio"
-   },
-   {
-    "type": "paragraph",
-    "text": "Siamo conduttori, Em. Lo scopo è lasciarsi attraversare.\nEm&Eric"
-   },
-   {
-    "type": "paragraph",
-    "text": "Sit tibi terra levis"
-   },
-   {
-    "type": "paragraph",
-    "text": "Sia per te leggera la terra"
-   },
-   {
-    "type": "paragraph",
-    "text": "Iscrizione sepolcrale latina"
-   },
-   {
-    "type": "paragraph",
-    "text": "May it be my will that my compassion will overcome my anger."
-   },
-   {
-    "type": "paragraph",
-    "text": "Talmud"
-   },
-   {
-    "type": "paragraph",
-    "text": "'For the vices that make social institutions necessary are the same ones that make their abuses inevitable'\n— Rousseau"
-   },
-   {
-    "type": "paragraph",
-    "text": "To make yourself rich, make your needs few.\n— Thoreau"
    }
   ]
  }

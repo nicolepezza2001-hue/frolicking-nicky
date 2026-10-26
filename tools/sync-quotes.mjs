@@ -130,6 +130,7 @@ const bookFor = (label, author = '') => {
 const isSource = s => s && !s.includes('\n') && s.length <= 60 && !/[.!?»"”…:;,]$/.test(s);
 const paras = text => text.split(/\n\s*\n/).map(s => s.replace(/^\n+|\s+$/g, '')).filter(s => s.trim());
 
+const LOOSE = ['sayings', 'unnamed']; // her sayings and lines without a name, shown on the Miscellaneous page
 let current = books.unnamed, heading = null;
 for (const b of out.notion) {
   if (b.t === 'gap') continue;
@@ -145,8 +146,12 @@ for (const b of out.notion) {
     book.blocks.push({ type: 'paragraph', text: own ? b.text : b.text + '\n— ' + b.cite });
   } else {
     const drop = book.labels.concat(book.title).map(norm);
-    paras(b.text).filter(p => !drop.includes(norm(p))).forEach(p =>
-      book.blocks.push(/^\d{4}$/.test(p.trim()) ? { type: 'heading', text: p.trim() } : { type: 'paragraph', text: p }));
+    // Her source line is left off, whether it stands alone or closes the quote's last line
+    const parts = paras(b.text).map(p => { const lines = p.split('\n'); return lines.length > 1 && drop.includes(norm(lines.at(-1))) ? lines.slice(0, -1).join('\n') : p; })
+      .filter(p => !drop.includes(norm(p)));
+    // On the Miscellaneous page each saying stays whole, with the line naming it
+    if (LOOSE.includes(book.key)) book.blocks.push({ type: 'paragraph', text: parts.join('\n\n') });
+    else parts.forEach(p => book.blocks.push(/^\d{4}$/.test(p.trim()) ? { type: 'heading', text: p.trim() } : { type: 'paragraph', text: p }));
   }
 }
 for (const q of out.goodreads) {
@@ -154,11 +159,21 @@ for (const q of out.goodreads) {
   book.blocks.push({ type: 'paragraph', text: q.book || !q.author ? q.text : q.text + '\n— ' + q.author });
 }
 
-const genres = [NEW, ...catalog.genres];
 const sortTitle = t => t.replace(/^(?:(?:the|an?|il|lo|la|le|les|gli|i)\s+|l[’'])/i, ''); // "The Prophet" under P, "L’ombra" under O
-const shelf = Object.values(books).filter(b => b.blocks.length)
+// Nicky's call: some people stay off the page, and every book with a single quote shares one Miscellaneous page,
+// each quote signed with its book (A to Z), then her sayings and the lines without a name
+const MISC = 'Miscellaneous', misc = { key: 'miscellaneous', title: MISC, author: '', genre: MISC, labels: [], blocks: [] };
+const visible = Object.values(books).filter(b => b.blocks.length && !b.hidden);
+const loose = visible.filter(b => b.blocks.length === 1 && !LOOSE.includes(b.key));
+const sign = b => b.title + (b.author ? ', ' + b.author : '');
+
+loose.slice().sort((a, b) => sortTitle(a.title).localeCompare(sortTitle(b.title), 'it', { sensitivity: 'base' }))
+  .forEach(b => misc.blocks.push({ type: 'paragraph', text: b.blocks[0].text.replace(/\n— [^\n]*$/, '') + '\n— ' + sign(b) }));
+LOOSE.forEach(k => misc.blocks.push(...(books[k]?.blocks || [])));
+const genres = [NEW, ...catalog.genres];
+const shelf = visible.filter(b => !loose.includes(b) && b.genre !== MISC).concat(misc.blocks.length ? [misc] : [])
   .sort((a, b) => genres.indexOf(a.genre) - genres.indexOf(b.genre) || sortTitle(a.title).localeCompare(sortTitle(b.title), 'it', { sensitivity: 'base' }))
-  .map(b => ({ id: 'quote-' + b.key, title: b.title, author: b.author, genre: b.genre, kicker: b.author ? b.author + ' · ' + b.genre : b.genre, blocks: b.blocks }));
+  .map(b => ({ id: 'quote-' + b.key, title: b.title, author: b.author, genre: b.genre, kicker: b.author ? b.author + ' · ' + b.genre : b.genre === MISC ? 'Single quotes from many books' : b.genre, blocks: b.blocks }));
 const js = '// Built by tools/sync-quotes.mjs from Nicky\'s Notion and Goodreads quotes (word for word): one page per book, by genre, A to Z.\n'
   + '// Don\'t edit by hand: change tools/quote-books.json and run node tools/sync-quotes.mjs.\n'
   + 'window.FN_QUOTE_BOOKS = ' + JSON.stringify(shelf, null, 1) + ';\n';

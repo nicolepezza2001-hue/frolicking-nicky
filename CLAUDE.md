@@ -178,7 +178,9 @@ a separate Europe close-up, the map legend or the trip buttons under the map on 
   `.github/workflows/sync-quotes.yml` runs `tools/sync-quotes.mjs` every morning, which copies her Notion page "Quotes"
   (repository secret `NOTION_TOKEN`) and her Goodreads quotes (`GOODREADS_USER`) into `tools/quotes.json`, sorts them into
   books with `tools/quote-books.json` (book, author and genre per quote; her source lines in `labels` are left off the page),
-  bumps the shelf's `?v=` and redeploys. New quotes find their book by their bold source line; unknown books land under
+  bumps the shelf's `?v=` and redeploys. Nicky's calls: books marked `hidden` in `quote-books.json` stay off the page (Lu, Dania, Kara, Alessandra, Elena,
+  Men said, Said in 2024), and every book with a single quote is gathered, signed, on one **Miscellaneous** page with her
+  sayings and unnamed lines. New quotes find their book by their bold source line; unknown books land under
   "Newly added" until they get a genre in `quote-books.json`. A source that can't be reached keeps its last copy.
 - Topic pages use the study palette Nicky loves: deep purple `#2b1e38` / `#150e1d` and candle-yellow `#f3d995`,
   with cream `#efe0bf` text, all set in Cormorant Garamond, notes on yellow-ruled lines (`assets/study.css`).
