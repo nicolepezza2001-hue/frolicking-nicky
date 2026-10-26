@@ -105,7 +105,9 @@
    "title": "An Ember in the Ashes",
    "author": "Sabaa Tahir",
    "genre": "Fantasy & science fiction",
-   "labels": []
+   "labels": [
+    "An Ember in the Ashes (An Ember in the Ashes, #1)"
+   ]
   },
   "apocalisse": {
    "title": "Apocalisse",
@@ -120,7 +122,8 @@
    "author": "Marina Abramović",
    "genre": "Essays, letters & lives",
    "labels": [
-    "Attraversare i muri"
+    "Attraversare i muri",
+    "Attraversare i muri: Un’autobiografia"
    ]
   },
   "bellezza-e-tristezza": {
@@ -520,7 +523,8 @@
    "author": "Dara Horn",
    "genre": "Essays, letters & lives",
    "labels": [
-    "PEOPLE LOVE DEAD JEWS"
+    "PEOPLE LOVE DEAD JEWS",
+    "People Love Dead Jews: Reports from a Haunted Present"
    ]
   },
   "said-2024": {
@@ -602,7 +606,8 @@
    "author": "Dossie Easton and Janet W. Hardy",
    "genre": "Essays, letters & lives",
    "labels": [
-    "The ethical slut"
+    "The ethical slut",
+    "The Ethical Slut: A Practical Guide to Polyamory, Open Relationships, and Other Freedoms in Sex and Love"
    ]
   },
   "gatsby": {
@@ -624,7 +629,8 @@
    "author": "Tasha Suri",
    "genre": "Fantasy & science fiction",
    "labels": [
-    "The Oleander Sword"
+    "The Oleander Sword",
+    "The Oleander Sword (The Burning Kingdoms, #2)"
    ]
   },
   "prophet": {
@@ -718,6 +724,350 @@
    "genre": "Fantasy & science fiction",
    "labels": [
     "The Empress: S.J. Kincaid (Diabolic 2)"
+   ]
+  },
+  "torch-against-the-night": {
+   "title": "A Torch Against the Night",
+   "author": "Sabaa Tahir",
+   "genre": "Fantasy & science fiction",
+   "labels": [
+    "A Torch Against the Night (An Ember in the Ashes, #2)"
+   ]
+  },
+  "reaper-at-the-gates": {
+   "title": "A Reaper at the Gates",
+   "author": "Sabaa Tahir",
+   "genre": "Fantasy & science fiction",
+   "labels": [
+    "A Reaper at the Gates (An Ember in the Ashes, #3)"
+   ]
+  },
+  "sky-beyond-the-storm": {
+   "title": "A Sky Beyond the Storm",
+   "author": "Sabaa Tahir",
+   "genre": "Fantasy & science fiction",
+   "labels": [
+    "A ​Sky Beyond the Storm (An Ember in the Ashes, #4)"
+   ]
+  },
+  "affinita": {
+   "title": "Affinità",
+   "author": "Sarah Waters",
+   "genre": "Novels & stories",
+   "labels": [
+    "Affinità"
+   ]
+  },
+  "as-i-lay-dying": {
+   "title": "As I Lay Dying",
+   "author": "William Faulkner",
+   "genre": "Novels & stories",
+   "labels": [
+    "As I Lay Dying"
+   ]
+  },
+  "chain-of-thorns": {
+   "title": "Chain of Thorns",
+   "author": "Cassandra Clare",
+   "genre": "Fantasy & science fiction",
+   "labels": [
+    "Chain of Thorns (The Last Hours, #3)"
+   ]
+  },
+  "oprichnik": {
+   "title": "Day of the Oprichnik",
+   "author": "Vladimir Sorokin",
+   "genre": "Fantasy & science fiction",
+   "labels": [
+    "Day of the Oprichnik (Penguin Modern Classics)"
+   ]
+  },
+  "discipline-and-punish": {
+   "title": "Discipline and Punish",
+   "author": "Michel Foucault",
+   "genre": "Philosophy & faith",
+   "labels": [
+    "Discipline and Punish: The Birth of the Prison"
+   ]
+  },
+  "drive-your-plow": {
+   "title": "Drive Your Plow Over the Bones of the Dead",
+   "author": "Olga Tokarczuk",
+   "genre": "Novels & stories",
+   "labels": [
+    "Drive Your Plow Over the Bones of the Dead"
+   ]
+  },
+  "dune": {
+   "title": "Dune",
+   "author": "Frank Herbert",
+   "genre": "Fantasy & science fiction",
+   "labels": [
+    "Dune (Il Ciclo di Dune, #1)"
+   ]
+  },
+  "messia-di-dune": {
+   "title": "Messia di Dune",
+   "author": "Frank Herbert",
+   "genre": "Fantasy & science fiction",
+   "labels": [
+    "Messia di Dune"
+   ]
+  },
+  "guerra-e-pace": {
+   "title": "Guerra e pace",
+   "author": "Lev Tolstoj",
+   "genre": "Novels & stories",
+   "labels": [
+    "Guerra e pace"
+   ]
+  },
+  "hell-bent": {
+   "title": "Hell Bent",
+   "author": "Leigh Bardugo",
+   "genre": "Fantasy & science fiction",
+   "labels": [
+    "Hell Bent: Portale per l'inferno (Alex Stern, #2)"
+   ]
+  },
+  "buddenbrook": {
+   "title": "I Buddenbrook",
+   "author": "Thomas Mann",
+   "genre": "Novels & stories",
+   "labels": [
+    "I Buddenbrook"
+   ]
+  },
+  "mago-del-cremlino": {
+   "title": "Il mago del Cremlino",
+   "author": "Giuliano da Empoli",
+   "genre": "Novels & stories",
+   "labels": [
+    "Il mago del Cremlino"
+   ]
+  },
+  "viaggio-di-halla": {
+   "title": "Il viaggio di Halla",
+   "author": "Naomi Mitchison",
+   "genre": "Fantasy & science fiction",
+   "labels": [
+    "Il viaggio di Halla"
+   ]
+  },
+  "infinite-jest": {
+   "title": "Infinite Jest",
+   "author": "David Foster Wallace",
+   "genre": "Novels & stories",
+   "labels": [
+    "Infinite Jest"
+   ]
+  },
+  "iron-flame": {
+   "title": "Iron Flame",
+   "author": "Rebecca Yarros",
+   "genre": "Fantasy & science fiction",
+   "labels": [
+    "Iron Flame (The Empyrean, #2)"
+   ]
+  },
+  "katabasis": {
+   "title": "Katabasis",
+   "author": "R.F. Kuang",
+   "genre": "Fantasy & science fiction",
+   "labels": [
+    "Katabasis"
+   ]
+  },
+  "arte-della-gioia": {
+   "title": "L’arte della gioia",
+   "author": "Goliarda Sapienza",
+   "genre": "Novels & stories",
+   "labels": [
+    "L'arte della gioia"
+   ]
+  },
+  "ragazza-dello-sputnik": {
+   "title": "La ragazza dello Sputnik",
+   "author": "Haruki Murakami",
+   "genre": "Novels & stories",
+   "labels": [
+    "La ragazza dello Sputnik"
+   ]
+  },
+  "schiuma-dei-giorni": {
+   "title": "La schiuma dei giorni",
+   "author": "Boris Vian",
+   "genre": "Novels & stories",
+   "labels": [
+    "La schiuma dei giorni"
+   ]
+  },
+  "land-is-a-big-deal": {
+   "title": "Land Is a Big Deal",
+   "author": "Lars A. Doucet",
+   "genre": "Essays, letters & lives",
+   "labels": [
+    "Land is a Big Deal: Why rent is too high, wages too low, and what we can do about it"
+   ]
+  },
+  "lessico-famigliare": {
+   "title": "Lessico famigliare",
+   "author": "Natalia Ginzburg",
+   "genre": "Novels & stories",
+   "labels": [
+    "Lessico famigliare"
+   ]
+  },
+  "nevernight-1": {
+   "title": "Nevernight. Mai dimenticare",
+   "author": "Jay Kristoff",
+   "genre": "Fantasy & science fiction",
+   "labels": [
+    "Nevernight. Mai dimenticare (Libro primo degli accadimenti di Illuminotte)"
+   ]
+  },
+  "nevernight-2": {
+   "title": "Nevernight. I grandi giochi",
+   "author": "Jay Kristoff",
+   "genre": "Fantasy & science fiction",
+   "labels": [
+    "Nevernight. I grandi giochi (Libro secondo degli accadimenti di Illuminotte)"
+   ]
+  },
+  "nevernight-3": {
+   "title": "Nevernight. Alba oscura",
+   "author": "Jay Kristoff",
+   "genre": "Fantasy & science fiction",
+   "labels": [
+    "Nevernight. Alba oscura (Libro terzo degli accadimenti di Illuminotte)"
+   ]
+  },
+  "realm-breaker": {
+   "title": "Realm Breaker",
+   "author": "Victoria Aveyard",
+   "genre": "Fantasy & science fiction",
+   "labels": [
+    "Realm Breaker (Realm Breaker, #1)"
+   ]
+  },
+  "marianne-north": {
+   "title": "Recollections of a Happy Life",
+   "author": "Marianne North",
+   "genre": "Essays, letters & lives",
+   "labels": [
+    "Recollections of a Happy Life, Vol. 1 of 2: Being the Autobiography of Marianne North (Classic Reprint)"
+   ]
+  },
+  "seasparrow": {
+   "title": "Seasparrow",
+   "author": "Kristin Cashore",
+   "genre": "Fantasy & science fiction",
+   "labels": [
+    "Seasparrow (Graceling Realm, #5)"
+   ]
+  },
+  "winterkeep": {
+   "title": "Winterkeep",
+   "author": "Kristin Cashore",
+   "genre": "Fantasy & science fiction",
+   "labels": [
+    "Winterkeep (Graceling Realm, #4)"
+   ]
+  },
+  "diabolic": {
+   "title": "The Diabolic",
+   "author": "S.J. Kincaid",
+   "genre": "Fantasy & science fiction",
+   "labels": [
+    "The Diabolic (The Diabolic #1)"
+   ]
+  },
+  "nemesis": {
+   "title": "The Nemesis",
+   "author": "S.J. Kincaid",
+   "genre": "Fantasy & science fiction",
+   "labels": [
+    "The Nemesis (Diabolic #3)"
+   ]
+  },
+  "everlasting": {
+   "title": "The Everlasting",
+   "author": "Alix E. Harrow",
+   "genre": "Fantasy & science fiction",
+   "labels": [
+    "The Everlasting"
+   ]
+  },
+  "the-familiar": {
+   "title": "The Familiar",
+   "author": "Leigh Bardugo",
+   "genre": "Fantasy & science fiction",
+   "labels": [
+    "The Familiar"
+   ]
+  },
+  "jasmine-throne": {
+   "title": "The Jasmine Throne",
+   "author": "Tasha Suri",
+   "genre": "Fantasy & science fiction",
+   "labels": [
+    "The Jasmine Throne (Burning Kingdoms, #1)"
+   ]
+  },
+  "river-has-roots": {
+   "title": "The River Has Roots",
+   "author": "Amal El-Mohtar",
+   "genre": "Fantasy & science fiction",
+   "labels": [
+    "The River Has Roots"
+   ]
+  },
+  "rose-field": {
+   "title": "The Rose Field",
+   "author": "Philip Pullman",
+   "genre": "Fantasy & science fiction",
+   "labels": [
+    "The Rose Field (The Book of Dust #3)"
+   ]
+  },
+  "wise-mans-fear": {
+   "title": "The Wise Man’s Fear",
+   "author": "Patrick Rothfuss",
+   "genre": "Fantasy & science fiction",
+   "labels": [
+    "The Wise Man's Fear (The Kingkiller Chronicle, #2)"
+   ]
+  },
+  "gentiluomo-a-mosca": {
+   "title": "Un gentiluomo a Mosca",
+   "author": "Amor Towles",
+   "genre": "Novels & stories",
+   "labels": [
+    "Un gentiluomo a Mosca"
+   ]
+  },
+  "castle": {
+   "title": "We Have Always Lived in the Castle",
+   "author": "Shirley Jackson",
+   "genre": "Novels & stories",
+   "labels": [
+    "We Have Always Lived in the Castle"
+   ]
+  },
+  "weak-in-comparison": {
+   "title": "Weak in Comparison to Dreams",
+   "author": "James Elkins",
+   "genre": "Essays, letters & lives",
+   "labels": [
+    "Weak in Comparison to Dreams (Five Strange Languages)"
+   ]
+  },
+  "malenkiy-prints": {
+   "title": "Маленький принц",
+   "author": "Antoine de Saint-Exupéry",
+   "genre": "Novels & stories",
+   "labels": [
+    "Маленький принц (Russian Edition)"
    ]
   }
  },
@@ -893,7 +1243,5 @@
   "people walk around like blind men like dead men when they co": "wings",
   "у меня такое чувство будто сам господин бог поручил мне забо": "den-bez-vranya"
  },
- "goodreadsNotes": [
-  "44321121-gods-of-jade-and-shadow/197324729-nicole-p"
- ]
+ "goodreadsNotes": []
 }
