@@ -160,6 +160,11 @@ for (const q of out.goodreads) {
   const book = bookFor(q.book || q.author || 'Goodreads', q.book ? q.author : '');
   book.blocks.push({ type: 'paragraph', text: q.book || !q.author ? q.text : q.text + '\n— ' + q.author });
 }
+// Nicky's call: a quote she saved twice is shown once (the first copy stays; a copy with a typo fixed counts as the same,
+// so quotes are matched on their first 80 letters). Short lines are left alone: a poem's refrain repeats on purpose.
+const said = new Set(), start = s => s.replace(/\n— [^\n]*$/, '').toLowerCase().replace(/[^\p{L}\p{N}_]+/gu, ' ').trim();
+const twice = x => { const k = start(x.text); if (x.type !== 'paragraph' || k.length < 40) return false; return said.has(k.slice(0, 80)) || !said.add(k.slice(0, 80)); };
+for (const b of Object.values(books)) b.blocks = b.blocks.filter(x => !twice(x));
 
 const sortTitle = t => t.replace(/^(?:(?:the|an?|il|lo|la|le|les|gli|i)\s+|l[’'])/i, ''); // "The Prophet" under P, "L’ombra" under O
 // Nicky's call: some people stay off the page, and every book with a single quote shares one Miscellaneous page,
