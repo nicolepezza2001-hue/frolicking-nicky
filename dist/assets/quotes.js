@@ -16,7 +16,8 @@
     }
     const li = el('li'), a = el('a', 'fn-quotes-book'); a.href = '#' + book.id;
     a.append(el('span', 'fn-quotes-title', book.title));
-    if (book.author) a.append(el('span', 'fn-quotes-author', book.author));
+    const sub = book.author || (book.id === 'quote-miscellaneous' ? book.blocks.length + ' single quotes, each with its book' : '');
+    if (sub) a.append(el('span', 'fn-quotes-author', sub));
     li.append(a); list.append(li);
   });
   if (count) count.textContent = books.length + ' books';
