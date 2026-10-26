@@ -1069,6 +1069,12 @@
    "labels": [
     "Маленький принц (Russian Edition)"
    ]
+  },
+  "paradise-lost": {
+   "title": "Paradise Lost",
+   "author": "John Milton",
+   "genre": "Poetry",
+   "labels": []
   }
  },
  "blocks": {

@@ -315,6 +315,43 @@
      ]
     }
    ]
+  },
+  "paradise-lost-2": {
+   "book": "paradise-lost",
+   "title": "Paradise Lost, Book II",
+   "author": "John Milton",
+   "heading": "Book II · Passages to learn by heart",
+   "note": "Eight passages from Book II (lines 1–10, 146–151, 430–437, 557–561, 562–569, 666–673, 910–920, 1045–1055): Satan on his throne, Belial, the long way out of Hell, the fallen angels reasoning on a hill, Death, the wild Abyss and the pendant world. Milton’s own text and spelling (1674 edition); Italian by Lazzaro Papi (1811), from Wikisource.",
+   "versions": [
+    {
+     "lang": "en",
+     "label": "English",
+     "stanzas": [
+      "High on a Throne of Royal State, which far\nOutshon the wealth of Ormus and of Ind,\nOr where the gorgeous East with richest hand\nShowrs on her Kings Barbaric Pearl & Gold,\nSatan exalted sat, by merit rais’d\nTo that bad eminence; and from despair\nThus high uplifted beyond hope, aspires\nBeyond thus high, insatiate to pursue\nVain Warr with Heav’n, and by success untaught\nHis proud imaginations thus displaid.",
+      "To be no more; sad cure; for who would loose,\nThough full of pain, this intellectual being,\nThose thoughts that wander through Eternity,\nTo perish rather, swallowd up and lost\nIn the wide womb of uncreated night,\nDevoid of sense and motion?",
+      "O Progeny of Heav’n, Empyreal Thrones,\nWith reason hath deep silence and demurr\nSeis’d us, though undismaid: long is the way\nAnd hard, that out of Hell leads up to Light;\nOur prison strong, this huge convex of Fire,\nOutrageous to devour, immures us round\nNinefold, and gates of burning Adamant\nBarr’d over us prohibit all egress.",
+      "Others apart sat on a Hill retir’d,\nIn thoughts more elevate, and reason’d high\nOf Providence, Foreknowledge, Will, and Fate,\nFixt Fate, free will, foreknowledge absolute,\nAnd found no end, in wandring mazes lost.",
+      "Of good and evil much they argu’d then,\nOf happiness and final misery,\nPassion and Apathie, and glory and shame,\nVain wisdom all, and false Philosophie:\nYet with a pleasing sorcerie could charm\nPain for a while or anguish, and excite\nFallacious hope, or arm th’ obdured brest\nWith stubborn patience as with triple steel.",
+      "The other shape,\nIf shape it might be call’d that shape had none\nDistinguishable in member, joynt, or limb,\nOr substance might be call’d that shadow seem’d,\nFor each seem’d either; black it stood as Night,\nFierce as ten Furies, terrible as Hell,\nAnd shook a dreadful Dart; what seem’d his head\nThe likeness of a Kingly Crown had on.",
+      "Into this wilde Abyss,\nThe Womb of nature and perhaps her Grave,\nOf neither Sea, nor Shore, nor Air, nor Fire,\nBut all these in thir pregnant causes mixt\nConfus’dly, and which thus must ever fight,\nUnless th’ Almighty Maker them ordain\nHis dark materials to create more Worlds,\nInto this wilde Abyss the warie fiend\nStood on the brink of Hell and look’d a while,\nPondering his Voyage; for no narrow frith\nHe had to cross.",
+      "Or in the emptier waste, resembling Air,\nWeighs his spread wings, at leasure to behold\nFarr off th’ Empyreal Heav’n, extended wide\nIn circuit, undetermind square or round,\nWith Opal Towrs and Battlements adorn’d\nOf living Saphire, once his native Seat;\nAnd fast by hanging in a golden Chain\nThis pendant world, in bigness as a Starr\nOf smallest Magnitude close by the Moon.\nThither full fraught with mischievous revenge,\nAccurst, and in a cursed hour he hies."
+     ]
+    },
+    {
+     "lang": "it",
+     "label": "Italiano",
+     "stanzas": [
+      "In trono eccelso che più ricco assai\nSplende d’Ormus, dell’Indo e del pomposo\nOrïente colà dove più spande\nSu i barbarici Re l’oro e le gemme,\nPortato da’ suoi merti, e dallo stesso\nDisperar sollevato oltre ogni speme\nPiù alto aspira ognor: la vana e stolta\nGuerra col cielo a proseguir lo spinge\nUna superba irrequïeta brama,\nE dagli eventi non istrutto ancora\nCosì dispiega i suoi disegni alteri:",
+      "Non esser più. Tristo disegno e cura!\nE chi vorrà, benchè d’affanni colma,\nQuesta che intende e vuol, sublime essenza,\nQuesti d’eternità nel giro immenso\nSpazïanti pensier lasciar per sempre,\nE giuso d’ogni moto e senso privo\nPiombar perduto, inabissato dentro\nAll’ampio sen dell’increata notte?",
+      "O empirei Troni,\nO progenie del ciel, ben a ragione,\nAncorchè in noi l’usato ardir non manchi,\nProfondamente taciti e sospesi\nStemmo finor: lungo è il cammino e duro\nDall’Erebo alla luce, e saldo invero\nÈ questo nostro carcere: di foco\nOrribil vallo nove volte intorno\nN’accerchia e serra, e contro noi sbarrate\nRoventi porte d’adamante stanno.",
+      "Altri, d’un ermo colle in vetta assisi,\nIn sublimi colloquj assai più dolci\nD’ogni armonìa (chè questa i sensi alletta,\nQuelli scendono nel cor) consuman l’ore;\nE con alto pensar le arcane vie\nCercan scoprir di Dio, l’ordine eterno,\nLa prescïenza sua, l’immobil fato,\nIl libero voler: per ciechi errando\nLaberinti così, tentano invano\nDi sempre nuovi dubbj il groppo sciorre.",
+      "Di lungo argomentar scabro subietto\nLor porgon quindi la cagione oscura\nDel ben, del mal, la misera, e beata\nEternità, dell’alma i ciechi moti,\nLa piena requie lor, la gloria, e l’onta;\nInutile saper, fumosa e vana\nFilosofia delle superbe menti!\nPur tessere a lor pene un dolce inganno\nCosì potean, o in sen destar fallace\nSpeme, o di dura sofferenza armarlo\nQual di triplice smalto.",
+      "Quell’altra forma, se tal nome darsi\nPur puote a ciò che non ha forma alcuna\nDistinta in membro od in giuntura, un cieco\nTorbo Fantasma che sustanza ed ombra\nA un tempo stesso rassomiglia, stava\nNera qual densa notte, a par di dieci\nFurie crudel, come l’inferno orrenda,\nE un fier dardo brandía: quel ch’esser fronte\nIn lei pareva, di regal corona\nAvea sopra un’imago.",
+      "Tal era il tetro\nSconvolto abisso, onde Natura emerse\nE dove un dì fors’anco avrà la tomba.\nIvi terra non è, non mar, non foco,\nNon aere, ma confusi insieme e misti\nIn lor pregnanti cause i germi oscuri\nCombatton sempre, e fie la guerra eterna,\nSe la Man creatrice un dì non svolge\nLa massa informe e nuovi mondi ordisce.\nColà sull’orlo dell’inferno alquanto\nSatán ristassi, e gira intorno il guardo,\nPonderando il cammin; chè ancor non breve\nVarco gli resta a superar.",
+      "Là di quel Vano tra i vapor men densi\nChe d’aere hanno sembianza, egli si libra\nSulle robuste ali distese e ’l vasto\nGiro de’ cieli di lontan rimira\nA suo grand’agio; ma confusa, incerta\nLa lor figura e nell’ampiezza assorta\nSfugge gli sguardi suoi: l’eccelse rocche\nD’Opalo fulgidissimo e di vivo\nZaffiro ornati gli alti merli ei vede,\nGià sua natìa dimora, e non più grande\nDi stella piccolissima, dappresso\nA lei che della notte il vel dirada,\nDalla catena d’ôr che al ciel lo lega\nPender questo Universo. Ivi spirante\nVendetta e rabbia, in maledetto punto\nAffretta quel maligno i passi e ’l volo."
+     ]
+    }
+   ]
   }
  }
 }
