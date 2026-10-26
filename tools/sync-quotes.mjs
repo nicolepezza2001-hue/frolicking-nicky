@@ -81,26 +81,38 @@ const decode = s => s.replace(/&(#x?[0-9a-f]+|\w+);/gi, (m, e) =>
   e[0] === '#' ? String.fromCodePoint(parseInt(e.slice(1).replace(/^x/i, ''), /^#x/i.test(e) ? 16 : 10)) : entities[e.toLowerCase()] ?? m);
 const strip = s => decode(s.replace(/<br\s*\/?>/gi, '\n').replace(/<[^>]+>/g, '')).replace(/[ \t]+/g, ' ').replace(/ *\n */g, '\n').trim();
 
-// Her Kindle highlights: every book whose notes she has made public. They're found on her profile and her notes list
-// (plus any page listed under "goodreadsNotes" in quote-books.json), then each book's notes page is read highlight by highlight.
+// Her Kindle highlights: every book whose notes she has made public. Her notes list is drawn by Goodreads' own script from
+// notes/<id>/load_more (a page of books at a time, with a token for the next), so the sync reads that directly; her profile and
+// any page listed under "goodreadsNotes" in quote-books.json are added too. Each book's notes page is then read highlight by highlight.
 try {
   const get = async path => {
     const res = await fetch('https://www.goodreads.com/' + path, {
-      headers: { 'User-Agent': 'Mozilla/5.0 (Frolicking Nicky quotes sync)', 'Accept-Language': 'en' },
+      headers: { 'User-Agent': 'Mozilla/5.0 (Frolicking Nicky quotes sync)', 'Accept-Language': 'en', 'X-Requested-With': 'XMLHttpRequest' },
     });
     if (!res.ok) throw new Error(`Goodreads ${res.status} for ${path}`);
     return res.text();
   };
-  const pages = new Set(JSON.parse(await readFile(CATALOG, 'utf8')).goodreadsNotes || []);
-  for (const path of [`user/show/${GOODREADS_USER}`, `notes/${GOODREADS_USER}`])
-    for (const [, page] of (await get(path)).matchAll(new RegExp(`/notes/(\\d+[\\w-]*/${GOODREADS_USER})(?=[?"])`, 'g'))) pages.add(page);
+  const pages = new Map((JSON.parse(await readFile(CATALOG, 'utf8')).goodreadsNotes || []).map(p => [p, 0]));
+  const page = url => (url.match(new RegExp(`/notes/(\\d+[\\w-]*/${GOODREADS_USER})`)) || [])[1];
+  for (let token = '', n = 0; n < 50; n++) {
+    const list = JSON.parse(await get(`notes/${GOODREADS_USER.split('-')[0]}/load_more` + (token ? '?start_token=' + encodeURIComponent(token) : '')));
+    for (const b of list.annotated_books_collection || []) if (b.sharedCount && page(b.readingNotesUrl)) pages.set(page(b.readingNotesUrl), b.sharedCount);
+    if (!(token = list.next_token)) break;
+  }
+  for (const [, p] of (await get(`user/show/${GOODREADS_USER}`)).matchAll(new RegExp(`/notes/(\\d+[\\w-]*/${GOODREADS_USER})(?=[?"])`, 'g')))
+    if (!pages.has(p)) pages.set(p, 0);
   const quotes = [];
-  for (const page of pages) {
-    const html = await get('notes/' + page);
-    const book = strip((html.match(/class='readingNotesBookDetailsContainer'>[\s\S]*?<a [^>]*href="\/book\/show\/[^"]*">([\s\S]*?)<\/a>/) || [])[1] || '');
-    const author = strip((html.match(/by\s*<a [^>]*href="\/author\/show\/[^"]*">([\s\S]*?)<\/a>/) || [])[1] || '');
-    for (const [, text] of html.matchAll(/class='noteHighlightTextContainer__highlightText'>\s*<span[^>]*>([\s\S]*?)<\/span>/g))
-      if (strip(text)) quotes.push({ text: strip(text), author, book });
+  for (const [path, shared] of pages) {
+    const seen = new Set();
+    for (let n = 1; n <= 30; n++) {
+      const html = await get('notes/' + path + (n > 1 ? '?page=' + n : ''));
+      const book = strip((html.match(/class='readingNotesBookDetailsContainer'>[\s\S]*?<a [^>]*href="\/book\/show\/[^"]*">([\s\S]*?)<\/a>/) || [])[1] || '');
+      const author = strip((html.match(/by\s*<a [^>]*href="\/author\/show\/[^"]*">([\s\S]*?)<\/a>/) || [])[1] || '');
+      const found = [...html.matchAll(/class='noteHighlightTextContainer__highlightText'>\s*<span[^>]*>([\s\S]*?)<\/span>/g)].map(m => strip(m[1])).filter(t => t && !seen.has(t));
+      found.forEach(text => { seen.add(text); quotes.push({ text, author, book }); });
+      if (!found.length || seen.size >= shared) break; // a long book's highlights can run over several pages
+    }
+    console.log(`  ${path}: ${seen.size}${shared ? ' of ' + shared : ''} highlights`);
   }
   if (quotes.length) out.goodreads = quotes;
   console.log(`Goodreads: ${quotes.length} highlights from ${pages.size} books`);
@@ -154,8 +166,19 @@ for (const b of out.notion) {
     else parts.forEach(p => book.blocks.push(/^\d{4}$/.test(p.trim()) ? { type: 'heading', text: p.trim() } : { type: 'paragraph', text: p }));
   }
 }
+// A Kindle highlight often catches a word or two of the sentences around it ("nostre amare lezioni. Soffrire è un solo
+// lunghissimo momento. Perché io sono"): Nicky's call is to cut those slips, so a highlight starting with a few words that
+// end a sentence loses them, and one trailing off into the next sentence ends where its last full sentence ends.
+const whole = t => {
+  const ends = [...t.matchAll(/[.!?…]+["”»’)]*\s+(?=["“«]?\p{Lu})/gu)], words = s => s.trim().split(/\s+/).length;
+  let a = 0, b = t.length;
+  if (ends.length && /^\p{Ll}/u.test(t) && words(t.slice(0, ends[0].index)) <= 6) a = ends[0].index + ends[0][0].length;
+  if (ends.length && !/[.!?…;:]["”»’)]*$/.test(t.trim()) && ends.at(-1).index + ends.at(-1)[0].length > a) b = ends.at(-1).index + ends.at(-1)[0].length;
+  return t.slice(a, b).trim().replace(/([;:])\s+[^\s.!?…;:,]+(?:\s+[^\s.!?…;:,]+){0,2}$/u, '$1') || t;
+};
 const kept = new Set(Object.values(books).flatMap(b => b.blocks.map(x => fp(x.text))));
-for (const q of out.goodreads) {
+for (const raw of out.goodreads) {
+  const q = { ...raw, text: whole(raw.text) };
   if (kept.has(fp(q.text))) continue; // already copied into Notion
   const book = bookFor(q.book || q.author || 'Goodreads', q.book ? q.author : '');
   book.blocks.push({ type: 'paragraph', text: q.book || !q.author ? q.text : q.text + '\n— ' + q.author });
