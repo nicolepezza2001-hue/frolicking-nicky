@@ -610,6 +610,39 @@ window.FN_QUOTE_BOOKS = [
   ]
  },
  {
+  "id": "quote-gods-of-jade-and-shadow",
+  "title": "Gods of Jade and Shadow",
+  "author": "Silvia Moreno-Garcia",
+  "genre": "Fantasy & science fiction",
+  "kicker": "Silvia Moreno-Garcia · Fantasy & science fiction",
+  "blocks": [
+   {
+    "type": "paragraph",
+    "text": "The pull of the familiar was strong, but stronger was curiosity and the blind optimism of youth that demanded go now, go quickly."
+   },
+   {
+    "type": "paragraph",
+    "text": "Like many young people, ultimately she saw herself as a completely new creature, a creation that had sprung from no ancient soils."
+   },
+   {
+    "type": "paragraph",
+    "text": "“That means you don’t dream,” she said. “Dreams are for mortals.” “Why?” “Because they must die.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "“Words are seeds, Casiopea. With words you embroider narratives, and the narratives breed myths, and there’s power in the myth. Yes, the things you name have power,” he said."
+   },
+   {
+    "type": "paragraph",
+    "text": "“You’ll wish to return to this moment of perfection when you were the embodiment of all promises.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "The nature of hate is mysterious. It can gnaw at the heart for an eon, then depart when one expected it to remain as immobile as a mountain. But even mountains erode."
+   }
+  ]
+ },
+ {
   "id": "quote-grishaverse",
   "title": "Grishaverse",
   "author": "Leigh Bardugo",
