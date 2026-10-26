@@ -190,17 +190,15 @@ const twice = x => { const k = start(x.text); if (x.type !== 'paragraph' || k.le
 for (const b of Object.values(books)) b.blocks = b.blocks.filter(x => !twice(x));
 
 // Whole poems Nicky asked for (tools/quote-poems.json) follow her quotes on their book's page, one stanza per row with a
-// column per version (the pinyin sits under the Chinese, line by line), so the book gets its own page even when she kept
+// column for the English and one for the Italian, so the book gets its own page even when she kept
 // a single quote from it
 const poems = Object.entries(JSON.parse(await readFile(new URL('quote-poems.json', import.meta.url), 'utf8').catch(() => '{}')).poems || {});
-const PINYIN = 'zh-Latn';
+// Nicky's call: the page shows the English and Italian only; the Chinese and its pinyin are there to learn by heart
+const ON_PAGE = ['en', 'it'];
 for (const [, poem] of poems) {
-  const shown = poem.versions.filter(v => v.lang !== PINYIN), pinyin = poem.versions.find(v => v.lang === PINYIN);
-  const cell = (v, i) => v.lang === 'zh' && pinyin
-    ? v.stanzas[i].split('\n').map((line, n) => line + '\n' + (pinyin.stanzas[i].split('\n')[n] || '')).join('\n')
-    : v.stanzas[i];
+  const shown = poem.versions.filter(v => ON_PAGE.includes(v.lang));
   books[poem.book]?.blocks.push({ type: 'heading', text: poem.heading }, { type: 'note', text: poem.note },
-    { type: 'table', head: shown.map(v => v.label), rows: shown[0].stanzas.map((_, i) => shown.map(v => cell(v, i))) });
+    { type: 'table', head: shown.map(v => v.label), rows: shown[0].stanzas.map((_, i) => shown.map(v => v.stanzas[i])) });
 }
 
 const sortTitle = t => t.replace(/^(?:(?:the|an?|il|lo|la|le|les|gli|i)\s+|l[’'])/i, ''); // "The Prophet" under P, "L’ombra" under O

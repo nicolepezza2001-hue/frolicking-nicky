@@ -377,13 +377,18 @@ html:has(body.fn-lesson-open){background:#faeac0}
 article.fn-lesson[id^="quote-"] .fn-lesson-notes p{white-space:pre-line;font-style:italic}
 article.fn-lesson[id^="quote-"] .fn-lesson-notes p+p{margin-top:1.1em}
 /* Whole poems on a book page (tools/quote-poems.json): original beside the Italian, one stanza per row; stacked on phones */
-article.fn-lesson[id^="quote-"] .fn-lesson-table td{white-space:pre-line;font-style:italic;width:50%}
-@media(max-width:760px){article.fn-lesson[id^="quote-"] .fn-lesson-table table{width:100%;font-size:15px}
+article.fn-lesson[id^="quote-"] .fn-lesson-table table{table-layout:fixed}
+article.fn-lesson[id^="quote-"] .fn-lesson-table td{white-space:pre-line;font-style:italic}
+@media(max-width:760px){article.fn-lesson[id^="quote-"] .fn-lesson-table table{width:100%;min-width:0;font-size:15px}
 article.fn-lesson[id^="quote-"] .fn-lesson-table tr:first-child{display:none}
 article.fn-lesson[id^="quote-"] .fn-lesson-table td{display:block;width:auto;border-bottom:0}
 article.fn-lesson[id^="quote-"] .fn-lesson-table td+td{padding-top:0;opacity:.78;border-bottom:1px solid #2b1e3822}}
 /* By heart (assets/by-heart.js): a poem's room, one stanza at a time; read, fade to first letters, recite */
 .fn-heart-open{margin:-4px 0 20px}
+/* Every quote can be learned by heart too: a small quiet link under it */
+article.fn-lesson[id^="quote-"] .fn-lesson-notes p.fn-heart-quote{margin:.15em 0 0;font-style:normal;font-size:.82em;letter-spacing:.04em}
+.fn-heart-quote a{color:inherit;opacity:.55;text-decoration:none;border-bottom:1px solid currentColor}
+.fn-heart-quote a:hover,.fn-heart-quote a:focus-visible{opacity:1}
 .fn-heart-open a{display:inline-block;text-decoration:none}
 .fn-heart-langs{margin:0 0 16px;align-items:center}
 .fn-heart-langs-label{color:var(--st-soft);font-style:italic;margin-right:4px}
@@ -412,5 +417,6 @@ article.fn-lesson[id^="quote-"] .fn-lesson-table td+td{padding-top:0;opacity:.78
 .fn-heart-dot[data-step="4"],.fn-heart-dot[data-step="5"]{background:var(--st-yellow);color:var(--st-night)}
 .fn-heart-dot[data-due]{box-shadow:0 0 0 2px var(--st-night),0 0 0 3px #e8a0a0}
 .fn-heart-shelf{margin:0 0 34px}
+.fn-heart-hint{margin:-4px 0 12px;font-style:italic;color:var(--st-soft)}
 .fn-quotes-book[data-due] .fn-quotes-author{color:var(--st-yellow)}
 @media(max-width:760px){.fn-heart-stage{padding:16px 14px}}
