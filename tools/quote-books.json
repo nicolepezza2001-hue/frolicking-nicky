@@ -701,6 +701,14 @@
    "author": "Viktoria Tokareva",
    "genre": "Novels & stories",
    "labels": []
+  },
+  "gods-of-jade-and-shadow": {
+   "title": "Gods of Jade and Shadow",
+   "author": "Silvia Moreno-Garcia",
+   "genre": "Fantasy & science fiction",
+   "labels": [
+    "Gods of Jade and Shadow"
+   ]
   }
  },
  "blocks": {
@@ -874,5 +882,8 @@
   "wild nights emily dickinson wild nights wild nights were i w": "wild-nights",
   "people walk around like blind men like dead men when they co": "wings",
   "у меня такое чувство будто сам господин бог поручил мне забо": "den-bez-vranya"
- }
+ },
+ "goodreadsNotes": [
+  "44321121-gods-of-jade-and-shadow/197324729-nicole-p"
+ ]
 }

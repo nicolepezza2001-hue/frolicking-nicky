@@ -176,7 +176,8 @@ a separate Europe close-up, the map legend or the trip buttons under the map on 
   ignored); each opens its own notes page (`#quote-…`, rendered by `study.js` like the lessons, so highlights, margin notes and
   Edit lesson work). Her quotes stay word for word. `assets/quote-books.js` is **built**, never edited by hand:
   `.github/workflows/sync-quotes.yml` runs `tools/sync-quotes.mjs` every morning, which copies her Notion page "Quotes"
-  (repository secret `NOTION_TOKEN`) and her Goodreads quotes (`GOODREADS_USER`) into `tools/quotes.json`, sorts them into
+  (repository secret `NOTION_TOKEN`) and the Kindle highlights she has made public on Goodreads (profile `197324729-nicole-p`; each book's notes page is
+  found on her profile or notes list, or listed in `goodreadsNotes`; highlights already in Notion are skipped) into `tools/quotes.json`, sorts them into
   books with `tools/quote-books.json` (book, author and genre per quote; her source lines in `labels` are left off the page),
   bumps the shelf's `?v=` and redeploys. Nicky's calls: books marked `hidden` in `quote-books.json` stay off the page (Alessandra, Elena, Men said), and every book with a single quote is gathered, signed, on one **Miscellaneous** page with her
   sayings and unnamed lines. New quotes find their book by their bold source line; unknown books land under
