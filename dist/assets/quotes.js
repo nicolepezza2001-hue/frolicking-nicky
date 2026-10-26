@@ -21,4 +21,14 @@
     li.append(a); list.append(li);
   });
   if (count) count.textContent = books.length + ' books';
+
+  // Coming back from a book (its ← Quotes link, or the browser's back) lands on that book in the list, not at the top
+  let last = null;
+  addEventListener('hashchange', () => {
+    const id = decodeURIComponent(location.hash.slice(1));
+    if (id.startsWith('quote-')) { last = id; return; }
+    if (id !== 'quotes' || !last) return;
+    const link = root.querySelector(`a[href="#${CSS.escape(last)}"]`);
+    if (link) requestAnimationFrame(() => { link.scrollIntoView({ block: 'center' }); });
+  });
 })();

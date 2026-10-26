@@ -42,15 +42,13 @@
    "title": "Kara",
    "author": "",
    "genre": "Friends & family",
-   "labels": [],
-   "hidden": true
+   "labels": []
   },
   "dania": {
    "title": "Dania",
    "author": "",
    "genre": "Friends & family",
-   "labels": [],
-   "hidden": true
+   "labels": []
   },
   "alessandra": {
    "title": "Alessandra",
@@ -72,8 +70,7 @@
    "labels": [
     "LU",
     "Lu"
-   ],
-   "hidden": true
+   ]
   },
   "agamemnon": {
    "title": "Agamemnon",
@@ -530,8 +527,7 @@
    "genre": "Friends & family",
    "labels": [
     "2024"
-   ],
-   "hidden": true
+   ]
   },
   "said-2023": {
    "title": "Said in 2023",
