@@ -2,84 +2,6 @@
 // Don't edit by hand: change tools/quote-books.json and run node tools/sync-quotes.mjs.
 window.FN_QUOTE_BOOKS = [
  {
-  "id": "quote-the-empress-s-j-kincaid-diabolic-2",
-  "title": "The Empress: S.J. Kincaid (Diabolic 2)",
-  "author": "S.J. Kincaid",
-  "genre": "Newly added",
-  "kicker": "S.J. Kincaid · Newly added",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "text": "I couldn’t say I knew for certain whether I believed in the Living Cosmos, but I knew that the Cosmos didn’t believe in me. Every vicar had told me as much."
-   },
-   {
-    "type": "paragraph",
-    "text": "But that planet showed me what it really meant to be a Domitrian: I wasn’t ever going to be a victim of circumstance. I was going to shape the circumstances, if I just survived long enough to do so."
-   },
-   {
-    "type": "paragraph",
-    "text": "“I love you to the very depths of my soul,” Tyrus noted quietly, “and sometimes I truly hate you for that.”"
-   }
-  ]
- },
- {
-  "id": "quote-germinale",
-  "title": "Germinale",
-  "author": "Émile Zola",
-  "genre": "Newly added",
-  "kicker": "Émile Zola · Newly added",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "text": "buio accecante delle tenebre."
-   },
-   {
-    "type": "paragraph",
-    "text": "la morte del lavoro, una carestia che avrebbe ucciso molti uomini."
-   },
-   {
-    "type": "paragraph",
-    "text": "E il Voreux, in fondo alla sua tana, rannicchiato come una bestia feroce, restava acquattato, il respiro sempre più affannoso e lungo, quasi soffrisse a causa della laboriosa digestione di tanta carne umana."
-   },
-   {
-    "type": "paragraph",
-    "text": "Pensava con rabbia alla gente di cui gli aveva parlato Bonnemort, a quel dio sazio e accovacciato al quale diecimila affamati, senza conoscerlo, offrivano la propria carne."
-   },
-   {
-    "type": "paragraph",
-    "text": "In fondo alla loro fedeltà c’era un terrore superstizioso, la paura che il milione, il prodotto di un singolo denaro, scomparisse d’improvviso se fosse stato incassato e messo in un cassetto. Lo ritenevano più al sicuro nella terra, dove un popolo di minatori, generazioni di morti di fame, lo estraeva per loro, un po’ al giorno, secondo il bisogno."
-   },
-   {
-    "type": "paragraph",
-    "text": "figli... Se scende troppo, gli operai crepano e la domanda di nuove braccia lo fa risalire. Se sale troppo, l’offerta troppo alta lo fa abbassare. È l’equilibrio delle pance vuote, la perpetua condanna all’inferno della fame”."
-   },
-   {
-    "type": "paragraph",
-    "text": "Era questo in fondo a radicalizzare i sistemi, costringendo gli uni all’esagerazione rivoluzionaria, gli altri a un’ostentazione di prudenza, trascinandoli loro malgrado al di là delle loro vere idee a identificarsi in ruoli che non avevano scelto."
-   },
-   {
-    "type": "paragraph",
-    "text": "Era la campana a morto delle piccole imprese, l’annuncio della prossima scomparsa dei piccoli proprietari, divorati uno a uno dall’orco del capitale perennemente affamato, sommersi dalla marea montante delle grandi compagnie. Era l’unico ad aver pagato le conseguenze"
-   },
-   {
-    "type": "paragraph",
-    "text": "Disprezzava quelli che parlano molto"
-   },
-   {
-    "type": "paragraph",
-    "text": "bene, gente che entra in politica come si entra nella carriera forense, facendosi pagare belle frasi con bei soldi."
-   },
-   {
-    "type": "paragraph",
-    "text": "Darwin aveva dunque ragione, il mondo era una lotta perenne in cui i forti mangiano i deboli per la bellezza e la continuità della specie? Quella"
-   },
-   {
-    "type": "paragraph",
-    "text": "Germogliavano uomini, un esercito nero, vendicatore, che cresceva lentamente nei solchi, pronto per le raccolte del prossimo secolo, e la sua germinazione avrebbe ben presto fatto esplodere la terra."
-   }
-  ]
- },
- {
   "id": "quote-affinita-elettive",
   "title": "Le affinità elettive",
   "author": "Johann Wolfgang von Goethe",
@@ -308,6 +230,67 @@ window.FN_QUOTE_BOOKS = [
    {
     "type": "paragraph",
     "text": "<<< La libertà? Vivendo il proprio squallore, cia- scuno può essere felice o infelice. La libertà consiste appunto in questa scelta. Ciascuno è libero di dissolvere la propria individualità nel pentolone della moltitudine provando o un senso di sconfitta o un senso di euforia. Quanto a noi, mia cara signora, abbiamo scelto l'euforia»."
+   }
+  ]
+ },
+ {
+  "id": "quote-germinal",
+  "title": "Germinal",
+  "author": "Émile Zola",
+  "genre": "Novels & stories",
+  "kicker": "Émile Zola · Novels & stories",
+  "blocks": [
+   {
+    "type": "paragraph",
+    "text": "Non sarete mai degni della felicità fintanto che avrete qualcosa tutta per voi, finchè il vostro odio nei confronti dei borghesi nascerà unicamente dal rabbioso desiderio di essere borghesi al posto loro.\n— Germinal, Zola"
+   },
+   {
+    "type": "paragraph",
+    "text": "buio accecante delle tenebre."
+   },
+   {
+    "type": "paragraph",
+    "text": "la morte del lavoro, una carestia che avrebbe ucciso molti uomini."
+   },
+   {
+    "type": "paragraph",
+    "text": "E il Voreux, in fondo alla sua tana, rannicchiato come una bestia feroce, restava acquattato, il respiro sempre più affannoso e lungo, quasi soffrisse a causa della laboriosa digestione di tanta carne umana."
+   },
+   {
+    "type": "paragraph",
+    "text": "Pensava con rabbia alla gente di cui gli aveva parlato Bonnemort, a quel dio sazio e accovacciato al quale diecimila affamati, senza conoscerlo, offrivano la propria carne."
+   },
+   {
+    "type": "paragraph",
+    "text": "In fondo alla loro fedeltà c’era un terrore superstizioso, la paura che il milione, il prodotto di un singolo denaro, scomparisse d’improvviso se fosse stato incassato e messo in un cassetto. Lo ritenevano più al sicuro nella terra, dove un popolo di minatori, generazioni di morti di fame, lo estraeva per loro, un po’ al giorno, secondo il bisogno."
+   },
+   {
+    "type": "paragraph",
+    "text": "Se scende troppo, gli operai crepano e la domanda di nuove braccia lo fa risalire. Se sale troppo, l’offerta troppo alta lo fa abbassare. È l’equilibrio delle pance vuote, la perpetua condanna all’inferno della fame”."
+   },
+   {
+    "type": "paragraph",
+    "text": "Era questo in fondo a radicalizzare i sistemi, costringendo gli uni all’esagerazione rivoluzionaria, gli altri a un’ostentazione di prudenza, trascinandoli loro malgrado al di là delle loro vere idee a identificarsi in ruoli che non avevano scelto."
+   },
+   {
+    "type": "paragraph",
+    "text": "Era la campana a morto delle piccole imprese, l’annuncio della prossima scomparsa dei piccoli proprietari, divorati uno a uno dall’orco del capitale perennemente affamato, sommersi dalla marea montante delle grandi compagnie."
+   },
+   {
+    "type": "paragraph",
+    "text": "Disprezzava quelli che parlano molto"
+   },
+   {
+    "type": "paragraph",
+    "text": "bene, gente che entra in politica come si entra nella carriera forense, facendosi pagare belle frasi con bei soldi."
+   },
+   {
+    "type": "paragraph",
+    "text": "Darwin aveva dunque ragione, il mondo era una lotta perenne in cui i forti mangiano i deboli per la bellezza e la continuità della specie?"
+   },
+   {
+    "type": "paragraph",
+    "text": "Germogliavano uomini, un esercito nero, vendicatore, che cresceva lentamente nei solchi, pronto per le raccolte del prossimo secolo, e la sua germinazione avrebbe ben presto fatto esplodere la terra."
    }
   ]
  },
@@ -684,6 +667,27 @@ window.FN_QUOTE_BOOKS = [
    {
     "type": "paragraph",
     "text": "Qualche punto debole in testa lei ce l'ha, ma non sono mai riuscito a entrarci dentro, neanche in uno; magari ci starà il diavolo!"
+   }
+  ]
+ },
+ {
+  "id": "quote-the-empress",
+  "title": "The Empress",
+  "author": "S.J. Kincaid",
+  "genre": "Fantasy & science fiction",
+  "kicker": "S.J. Kincaid · Fantasy & science fiction",
+  "blocks": [
+   {
+    "type": "paragraph",
+    "text": "I couldn’t say I knew for certain whether I believed in the Living Cosmos, but I knew that the Cosmos didn’t believe in me. Every vicar had told me as much."
+   },
+   {
+    "type": "paragraph",
+    "text": "But that planet showed me what it really meant to be a Domitrian: I wasn’t ever going to be a victim of circumstance. I was going to shape the circumstances, if I just survived long enough to do so."
+   },
+   {
+    "type": "paragraph",
+    "text": "“I love you to the very depths of my soul,” Tyrus noted quietly, “and sometimes I truly hate you for that.”"
    }
   ]
  },
@@ -2562,7 +2566,7 @@ window.FN_QUOTE_BOOKS = [
    },
    {
     "type": "paragraph",
-    "text": "nostre amare lezioni. Soffrire è un solo lunghissimo momento. Perché io sono"
+    "text": "Soffrire è un solo lunghissimo momento."
    },
    {
     "type": "paragraph",
@@ -2578,7 +2582,7 @@ window.FN_QUOTE_BOOKS = [
    },
    {
     "type": "paragraph",
-    "text": "Anch'io avevo le mie illusioni. Pensavo che la vita sarebbe stata una commedia brillante, e tu uno dei suoi molti affascinanti personaggi. Scopersi che era una tragedia repellente e"
+    "text": "Anch'io avevo le mie illusioni. Pensavo che la vita sarebbe stata una commedia brillante, e tu uno dei suoi molti affascinanti personaggi."
    },
    {
     "type": "paragraph",
@@ -2590,31 +2594,27 @@ window.FN_QUOTE_BOOKS = [
    },
    {
     "type": "paragraph",
-    "text": "l'amore al cui confronto tutti gli altri amori erano come acqua di palude paragonata a vino rosso, o il fuoco fatuo della palude al magico specchio della luna. Non"
+    "text": "l'amore al cui confronto tutti gli altri amori erano come acqua di palude paragonata a vino rosso, o il fuoco fatuo della palude al magico specchio della luna."
    },
    {
     "type": "paragraph",
-    "text": "Dal punto di vista delle emozioni è una forma di Atrofia e uccide tutto fuorché se stesso. Scrivere ai giornali di odiare qualcuno è"
+    "text": "Dal punto di vista delle emozioni è una forma di Atrofia e uccide tutto fuorché se stesso."
    },
    {
     "type": "paragraph",
-    "text": "Ma l'Amore non fa baratti da mercato, né usa la bilancia del merdaiolo. La sua gioia, come la gioia dell'intelletto, è di sentirsi vivo. Il fine dell'Amore è amare; niente di piú e niente di meno. Tu eri il nemico; nemico peggiore nessuno l'ha avuto mai. Ti avevo dato la mia vita, e tu per soddisfare la piú bassa e spregevole di tutte le passioni umane, Odio e Vanità e Cupidigia, l'avevi gettata via. In meno di tre anni mi avevi completamente rovinato sotto ogni punto di vista. Per il mio bene proprio non potevo far altro che amarti. Sapevo che se mi fossi lasciato andare a odiarti, nell'arido"
+    "text": "Ma l'Amore non fa baratti da mercato, né usa la bilancia del merdaiolo. La sua gioia, come la gioia dell'intelletto, è di sentirsi vivo. Il fine dell'Amore è amare; niente di piú e niente di meno. Tu eri il nemico; nemico peggiore nessuno l'ha avuto mai. Ti avevo dato la mia vita, e tu per soddisfare la piú bassa e spregevole di tutte le passioni umane, Odio e Vanità e Cupidigia, l'avevi gettata via. In meno di tre anni mi avevi completamente rovinato sotto ogni punto di vista. Per il mio bene proprio non potevo far altro che amarti."
    },
    {
     "type": "paragraph",
-    "text": "\"Bisogna che oggi l'Amore rimanga nel mio cuore; come farò altrimenti a vivere fino a stasera?\" Mi"
+    "text": "\"Bisogna che oggi l'Amore rimanga nel mio cuore; come farò altrimenti a vivere fino a stasera?\""
    },
    {
     "type": "paragraph",
-    "text": "La sofferenza è un solo lunghissimo momento. Non"
+    "text": "In un intero universo di pensiero o di movimento, nulla si muove senza che il Dolore vibri in corrispondenza con palpito terribile benché squisito."
    },
    {
     "type": "paragraph",
-    "text": "In un intero universo di pensiero o di movimento, nulla si muove senza che il Dolore vibri in corrispondenza con palpito terribile benché squisito. È"
-   },
-   {
-    "type": "paragraph",
-    "text": "io ti avrei scritto, a tempo e fuori tempo, nella speranza che una frase, una parola isolata, anche solo un'eco confusa d'amore, potessero raggiungerti. Se ti fossi rifiutato di ricevere le mie lettere,"
+    "text": "io ti avrei scritto, a tempo e fuori tempo, nella speranza che una frase, una parola isolata, anche solo un'eco confusa d'amore, potessero raggiungerti."
    },
    {
     "type": "paragraph",
@@ -2626,11 +2626,11 @@ window.FN_QUOTE_BOOKS = [
    },
    {
     "type": "paragraph",
-    "text": "epoca. Di questo mi ero reso conto per me stesso all'alba della mia giovinezza, e in seguito avevo costretto la mia epoca a rendersene conto."
+    "text": "Di questo mi ero reso conto per me stesso all'alba della mia giovinezza, e in seguito avevo costretto la mia epoca a rendersene conto."
    },
    {
     "type": "paragraph",
-    "text": "facevo dell'arte una filosofia e della filosofia un'arte; mutavo"
+    "text": "facevo dell'arte una filosofia e della filosofia un'arte;"
    },
    {
     "type": "paragraph",
@@ -2730,7 +2730,7 @@ window.FN_QUOTE_BOOKS = [
    },
    {
     "type": "paragraph",
-    "text": "poesia. Vi è tuttavia per me qualche cosa di quasi incredibile nell'idea che un giovane contadino di Galilea abbia immaginato di poter reggere sulle spalle il fardello dell'umanità intera; ciò"
+    "text": "Vi è tuttavia per me qualche cosa di quasi incredibile nell'idea che un giovane contadino di Galilea abbia immaginato di poter reggere sulle spalle il fardello dell'umanità intera;"
    },
    {
     "type": "paragraph",
@@ -4831,10 +4831,6 @@ window.FN_QUOTE_BOOKS = [
    {
     "type": "paragraph",
     "text": "Io sono un albero di fine estate\nDi tutti i voli\nPreferisco la caduta\n— Gaia Ginevra Giorgi"
-   },
-   {
-    "type": "paragraph",
-    "text": "Non sarete mai degni della felicità fintanto che avrete qualcosa tutta per voi, finchè il vostro odio nei confronti dei borghesi nascerà unicamente dal rabbioso desiderio di essere borghesi al posto loro.\n— Germinal, Émile Zola"
    },
    {
     "type": "paragraph",

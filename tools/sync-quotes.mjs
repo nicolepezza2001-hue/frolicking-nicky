@@ -154,8 +154,19 @@ for (const b of out.notion) {
     else parts.forEach(p => book.blocks.push(/^\d{4}$/.test(p.trim()) ? { type: 'heading', text: p.trim() } : { type: 'paragraph', text: p }));
   }
 }
+// A Kindle highlight often catches a word or two of the sentences around it ("nostre amare lezioni. Soffrire è un solo
+// lunghissimo momento. Perché io sono"): Nicky's call is to cut those slips, so a highlight starting with a few words that
+// end a sentence loses them, and one trailing off into the next sentence ends where its last full sentence ends.
+const whole = t => {
+  const ends = [...t.matchAll(/[.!?…]+["”»’)]*\s+(?=["“«]?\p{Lu})/gu)], words = s => s.trim().split(/\s+/).length;
+  let a = 0, b = t.length;
+  if (ends.length && /^\p{Ll}/u.test(t) && words(t.slice(0, ends[0].index)) <= 6) a = ends[0].index + ends[0][0].length;
+  if (ends.length && !/[.!?…;:]["”»’)]*$/.test(t.trim()) && ends.at(-1).index + ends.at(-1)[0].length > a) b = ends.at(-1).index + ends.at(-1)[0].length;
+  return t.slice(a, b).trim().replace(/([;:])\s+[^\s.!?…;:,]+(?:\s+[^\s.!?…;:,]+){0,2}$/u, '$1') || t;
+};
 const kept = new Set(Object.values(books).flatMap(b => b.blocks.map(x => fp(x.text))));
-for (const q of out.goodreads) {
+for (const raw of out.goodreads) {
+  const q = { ...raw, text: whole(raw.text) };
   if (kept.has(fp(q.text))) continue; // already copied into Notion
   const book = bookFor(q.book || q.author || 'Goodreads', q.book ? q.author : '');
   book.blocks.push({ type: 'paragraph', text: q.book || !q.author ? q.text : q.text + '\n— ' + q.author });

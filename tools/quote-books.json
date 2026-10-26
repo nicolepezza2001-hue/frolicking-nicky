@@ -207,7 +207,9 @@
    "title": "Germinal",
    "author": "Émile Zola",
    "genre": "Novels & stories",
-   "labels": []
+   "labels": [
+    "Germinale"
+   ]
   },
   "grishaverse": {
    "title": "Grishaverse",
@@ -708,6 +710,14 @@
    "genre": "Fantasy & science fiction",
    "labels": [
     "Gods of Jade and Shadow"
+   ]
+  },
+  "the-empress": {
+   "title": "The Empress",
+   "author": "S.J. Kincaid",
+   "genre": "Fantasy & science fiction",
+   "labels": [
+    "The Empress: S.J. Kincaid (Diabolic 2)"
    ]
   }
  },
