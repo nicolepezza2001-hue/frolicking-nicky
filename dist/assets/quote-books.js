@@ -2,2956 +2,6 @@
 // Don't edit by hand: change tools/quote-books.json and run node tools/sync-quotes.mjs.
 window.FN_QUOTE_BOOKS = [
  {
-  "id": "quote-babel-or-the-necessity-of-violence-an-arcane-history-of-the-oxford-translators-revolution",
-  "title": "Babel, or The Necessity of Violence: An Arcane History of the Oxford Translators' Revolution",
-  "author": "R.F. Kuang",
-  "genre": "Newly added",
-  "kicker": "R.F. Kuang · Newly added",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "text": "London was voracious, was growing fat on its spoils and still, somehow, starved."
-   },
-   {
-    "type": "paragraph",
-    "text": "After all, we’re here to make the unknown known, to make the other familiar."
-   },
-   {
-    "type": "paragraph",
-    "text": "You fly no one’s flag. You’re free to seek your own harbour. And you can do so much more than tread water.’"
-   },
-   {
-    "type": "paragraph",
-    "text": "‘Survival’s not that difficult, Birdie.’ Ramy’s eyes were very hard. ‘But you’ve got to maintain some dignity while you’re at it.’"
-   },
-   {
-    "type": "paragraph",
-    "text": "‘But that’s the great contradiction of colonialism.’ Cathy uttered this like a simple matter of fact. ‘It’s built to destroy that which it prizes most.’"
-   },
-   {
-    "type": "paragraph",
-    "text": "‘That’s just what translation is, I think. That’s all speaking is. Listening to the other and trying to see past your own biases to glimpse what they’re trying to say. Showing yourself to the world, and hoping someone else understands.’"
-   }
-  ]
- },
- {
-  "id": "quote-blood-honey-serpent-dove-2",
-  "title": "Blood & Honey (Serpent & Dove, #2)",
-  "author": "Shelby Mahurin",
-  "genre": "Newly added",
-  "kicker": "Shelby Mahurin · Newly added",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "text": "“Ask me no questions, mon amour, and I shall tell you no lies.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "“You’re impossible.” “I’m impractical, improbable, but never impossible.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "“And when everything is a matter of life and death for us, the stakes are higher. The more we gain, the more we lose.”"
-   }
-  ]
- },
- {
-  "id": "quote-the-bronzed-beasts-the-gilded-wolves-3",
-  "title": "The Bronzed Beasts (The Gilded Wolves #3)",
-  "author": "Roshani Chokshi",
-  "genre": "Newly added",
-  "kicker": "Roshani Chokshi · Newly added",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "text": "There was power in knowing not just how to move through the world, but how to make the world move around you."
-   },
-   {
-    "type": "paragraph",
-    "text": "Venice seemed like a place half-sculpted from a child’s daydream. It was a floating city knitted all over with marble bridges, full of sunken doors wearing the faces of grinning gods."
-   },
-   {
-    "type": "paragraph",
-    "text": "Holding on to him would be like trying to wrestle down the moon."
-   },
-   {
-    "type": "paragraph",
-    "text": "Hope was an exercise in delusion."
-   }
-  ]
- },
- {
-  "id": "quote-the-burning-god-the-poppy-war-3",
-  "title": "The Burning God (The Poppy War, #3)",
-  "author": "R.F. Kuang",
-  "genre": "Newly added",
-  "kicker": "R.F. Kuang · Newly added",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "text": "Hate was a funny thing. It gnawed at her insides like poison. It made every muscle in her body tense, made her veins boil so hot she thought her head might split in half, and yet it fueled everything she did. Hate was its own kind of fire and if you had nothing else, it kept you warm."
-   },
-   {
-    "type": "paragraph",
-    "text": "Maybe no one was truly a beast. Maybe that was just how murder became possible. You took away someone’s humanity, and then you killed them."
-   },
-   {
-    "type": "paragraph",
-    "text": "“You’re my bitch now, Souji."
-   },
-   {
-    "type": "paragraph",
-    "text": "The best plans were a secret until their execution. The hidden knife cut the deepest."
-   },
-   {
-    "type": "paragraph",
-    "text": "They would drown them in their blood."
-   },
-   {
-    "type": "paragraph",
-    "text": "“You don’t fix hurts by pretending they never happened. You treat them like infected wounds. You dig deep with a burning knife and gouge out the rotten flesh and then, maybe, you have a chance to heal.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "“They’re skinning people alive,” Venka said. “Because they traded little girls for food rations.” “Oh. Fair enough.” Venka flicked an invisible speck of dust from her wrist. “I hope they castrated them, too.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "“It doesn’t go away. It never will. But when it hurts, lean into it. It’s so much harder to stay alive. That doesn’t mean you don’t deserve to live. It means you’re brave.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "Here we are, they said. Watch us thrive. We’ve escaped the past, and we own the future."
-   },
-   {
-    "type": "paragraph",
-    "text": "This wasn’t about lust, this was about power. This was about possession. He wanted to dominate her just so that later he could crow that he had."
-   },
-   {
-    "type": "paragraph",
-    "text": "“People are attracted to power, darling. They can’t help themselves. Power seduces. Exert it, make a show of it, and they’ll follow you.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "Kill your rivals on sight.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "The Hesperians understand culture as a straight line.” Daji dragged her finger through the air. “One starting point, and one destination. They are at the end of the line. They loved the Mugenese because they came close. But any culture or state that diverges is necessarily inferior. We are inferior, until we speak, dress, act, and worship just like them.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "Jiang whistled. “Well, that’s not a prison.” “It’s worse,” Rin said. “That’s a church.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "It wasn’t about the violence. It was about the power."
-   },
-   {
-    "type": "paragraph",
-    "text": "“He got plucky,” Daji said. “I turned him to mincemeat and sent him back to Vaisra in a dumpling basket.” Jiang arched an eyebrow. “Darling, fucking what?”"
-   },
-   {
-    "type": "paragraph",
-    "text": "She understood now what she needed to do to cling to power: submerge the world in chaos, and forge her authority from the broken pieces."
-   },
-   {
-    "type": "paragraph",
-    "text": "The point of revenge wasn’t to heal. The point was that the exhilaration, however temporary, drowned out the hurt."
-   },
-   {
-    "type": "paragraph",
-    "text": "You were only ever fighting to survive, Gurubai. I was fighting to win. And history doesn’t favor stability, it favors initiative.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "“You cunt,” Souji gasped. “I love the way you talk to me,” she cooed."
-   },
-   {
-    "type": "paragraph",
-    "text": "Through love or hate, adoration or fear, she would have them one way or another."
-   },
-   {
-    "type": "paragraph",
-    "text": "I’m not crawling into oblivion with a whimper,"
-   },
-   {
-    "type": "paragraph",
-    "text": "he didn’t know whether he dreamed of transforming into a butterfly at night, or whether he was always living in a butterfly’s dream. This world is a butterfly’s dream. This world is the gods’ dream. And when we dream of the gods, that just means we’ve woken up. Does that make sense?”"
-   },
-   {
-    "type": "paragraph",
-    "text": "Small wonder Nezha had chosen his Republic over her. She’d have done the same in a heartbeat. Enjoy your Republic, she thought, fingers curling against the cold armrest. Enjoy it while it lasts, Young Marshal. Take a good look at your splendor, and remember well how it feels. Because I am coming to burn it all down beneath you."
-   },
-   {
-    "type": "paragraph",
-    "text": "Yet, Rin supposed, lovers could still inflict that kind of violence on each other. Hadn’t Riga loved Daji? Hadn’t Jiang loved Tseveri? Hadn’t Nezha once loved her?"
-   },
-   {
-    "type": "paragraph",
-    "text": "that the universe was a waking dream, a fragile and mutable thing, a blur of colors shaped by the unpredictable whims of divinity."
-   },
-   {
-    "type": "paragraph",
-    "text": "“You can still love your weapons,” Altan said. “You can beat them into shape and then watch them destroy themselves and know that it was all fully necessary, but that doesn’t mean you can’t love them, too.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "He always looked so different in the moonlight."
-   },
-   {
-    "type": "paragraph",
-    "text": "Overnight, she had become as close to a god as a mortal could be. I’ve reached behind the canvas, she thought. And now I hold the brush."
-   },
-   {
-    "type": "paragraph",
-    "text": "Take what you want, it said. I’ll hate you for it. But I’ll love you forever. I can’t help but love you. Ruin me, ruin us, and I’ll let you."
-   },
-   {
-    "type": "paragraph",
-    "text": "He knew exactly what choice she’d made and what she’d intended. And that made everything—hating her, loving her, surviving her—so much harder. Fix this."
-   },
-   {
-    "type": "paragraph",
-    "text": "Fix this? Fix this? What did he have left to work with? She’d broken everything."
-   },
-   {
-    "type": "paragraph",
-    "text": "She was a goddess. She was a monster. She’d nearly destroyed this country. And then she’d given it one last, gasping chance to live."
-   }
-  ]
- },
- {
-  "id": "quote-chain-of-iron-the-last-hours-2",
-  "title": "Chain of Iron (The Last Hours, #2)",
-  "author": "Cassandra Clare",
-  "genre": "Newly added",
-  "kicker": "Cassandra Clare · Newly added",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "text": "“Why,” he said, “are you not even wearing a hat?” “And cover up this hair?” Matthew indicated his golden locks with a flourish. “Would you blot out the sun?”"
-   },
-   {
-    "type": "paragraph",
-    "text": "“I forget sometimes that mortals joke—it is a sort of lie, isn’t it, yet meant to be funny?"
-   },
-   {
-    "type": "paragraph",
-    "text": "“Matthew has a habit of getting his heart broken. He seems to prefer a hopeless love.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "To not be the martyred slave of Time, be intoxicated; be unceasingly intoxicated! With wine, with poetry, with virtue, as you wish."
-   },
-   {
-    "type": "paragraph",
-    "text": "“When Matthew plans a special something, it’s usually either terribly delightful or delightfully terrible,”"
-   },
-   {
-    "type": "paragraph",
-    "text": "“Water,” Christopher said. “Do we have any water?”"
-   },
-   {
-    "type": "paragraph",
-    "text": "“Have you wished me gone?” he said teasingly. “No."
-   },
-   {
-    "type": "paragraph",
-    "text": "“She seemed—well, quite puffy and golden, from what I could see.” “You make her sound like a Yorkshire pudding,” said James darkly."
-   },
-   {
-    "type": "paragraph",
-    "text": "The Herondales are made to love, her mother had said. They give all they have and keep back nothing."
-   },
-   {
-    "type": "paragraph",
-    "text": "that just as it was a torment to love, it might be a torment to be loved. To be loved, and to know it was not real."
-   },
-   {
-    "type": "paragraph",
-    "text": "the restless dissatisfaction that seemed to drive him, the way he had of being very sad, or very happy, with little in between."
-   },
-   {
-    "type": "paragraph",
-    "text": "The wound is the place where the Light enters you."
-   },
-   {
-    "type": "paragraph",
-    "text": "“Each man kills the thing he loves.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "Sometimes Cordelia wondered if her unrequited love was a sort of third member of their household, present even when she was not—haunting James’s steps, wrapping ghostly arms about him as he tied his tie before the mirror, curling up insubstantially beside him as he slept."
-   },
-   {
-    "type": "paragraph",
-    "text": "“Only a coward needs to be rescued by his little sister.” Alastair’s expressive eyebrows flickered. “And only an ass puts other people into situations in which they need to be rescued at all.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "How do I live in this moment forever, and not let it go?"
-   },
-   {
-    "type": "paragraph",
-    "text": "“WHAT?” said Thomas, so loudly they all jumped. “Sorry,” he said. “I was all prepared to shout and I hadn’t got a chance yet.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "Contrary to what your beloved poets say, unrequited love doesn’t last forever. And being treated badly by someone doesn’t make you love them more.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "“The point is,” Tatiana said, “we must take all power that is available to us, for we are so far below others. We must take it just to have a chance to survive at all.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "“All I want for you, Math, is that you love yourself as much as I love you.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "I sought not fire, yet is my heart all flame. Layla, this love is not of earth."
-   },
-   {
-    "type": "paragraph",
-    "text": "“when you want something very much, you are willing to accept the shadow of that thing. Even if it is just a shadow.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "“That love is complicated,” said Cordelia. “That it lies beside anger and hatred, because only those we truly love can truly disappoint us.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "Hope is a prison, truth the key that unlocks it."
-   },
-   {
-    "type": "paragraph",
-    "text": "Stop pretending you are only upset on behalf of Matthew. Hate me on your own behalf, Thomas.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "“Turn again, O my sweetest,—turn again, false and fleetest: This beaten way thou beatest I fear is hell’s own track.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "And its vapor and storm of its steam as the sighing of spirits to be; And its noise as the noise in a dream; and its depths as the roots of the sea:"
-   },
-   {
-    "type": "paragraph",
-    "text": "We become what we are afraid we will be, Layla.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "“I could have managed with you not loving me, but you do not even want me to love you."
-   },
-   {
-    "type": "paragraph",
-    "text": "And that I cannot bear.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "I thought in Paris I might forget. In Paris, one forgets everything.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "“In Paris, will you be able to forgive yourself?”"
-   },
-   {
-    "type": "paragraph",
-    "text": "“In Paris,” he said, “I shall be able to forgive all the world.”"
-   }
-  ]
- },
- {
-  "id": "quote-the-city-of-brass-the-daevabad-trilogy-1",
-  "title": "The City of Brass (The Daevabad Trilogy, #1)",
-  "author": "S.A. Chakraborty",
-  "genre": "Newly added",
-  "kicker": "S.A. Chakraborty · Newly added",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "text": "“You’re some kind of thief, then?” “That’s a very narrow-minded way of looking at it. I prefer to think of myself as a merchant of delicate tasks.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "“I’m not sleeping alongside you in some temple dedicated to fish orgies.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "but she also knew the best time to negotiate was when your mark was desperate."
-   },
-   {
-    "type": "paragraph",
-    "text": "“Can I swim?” he snapped, as if the very idea offended him. “Can you burn?”"
-   },
-   {
-    "type": "paragraph",
-    "text": "“It’s not haunted,” Wajed countered. “It simply … misses its founding family.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "stairs vanished under me the last time I was there, uncle,” Ali pointed out. “The water in the fountains turns to blood so often that people don’t drink it.” “So it misses them a lot.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "“Someone steals from me, I steal from others, and I’m sure the people I stole from will eventually take something that doesn’t belong to them."
-   },
-   {
-    "type": "paragraph",
-    "text": "he was eager to escape for a cup of tea so strong it could hold a spoon upright."
-   },
-   {
-    "type": "paragraph",
-    "text": "There was something about the silence and lonely beauty of the fresh snowfall that made the solitude more intense."
-   },
-   {
-    "type": "paragraph",
-    "text": "He’s the literal enemy of the people you’re about to ask for sanctuary, and you want to add this to the ties already binding you? Only a fool would do such a thing. She kissed him."
-   },
-   {
-    "type": "paragraph",
-    "text": "But it is said that when a man and woman are alone in a closed room, their third companion is the devil.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "Ali drew up, looking indignant. “You should not be here, Afshin."
-   },
-   {
-    "type": "paragraph",
-    "text": "Nahida’s time is precious. Only those who are ill or injured—” Dara abruptly raised a fist and then smashed it through the heavy, sandblasted glass table. The top shattered, sparkling shards of hazy glass cascading over the Afshin and the floor. He didn’t even flinch; instead, he raised his hand and looked at the jagged pieces of glass embedded in his skin with mock surprise. “There,” he deadpanned. “I’m injured.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "“Don’t worry about my reputation,” she said lightly. “I do enough damage on my own.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "“Greatness takes time, Banu Nahida. Often the mightiest things have the humblest beginnings.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "for once could you speak like someone with a heart instead of someone peddling stolen goods at the bazaar?”"
-   },
-   {
-    "type": "paragraph",
-    "text": "“In what world do men and women pay the same price for passion? You’ll be the one blamed."
-   },
-   {
-    "type": "paragraph",
-    "text": "Nahri always smiled at her marks."
-   }
-  ]
- },
- {
-  "id": "quote-defy-me-shatter-me-5",
-  "title": "Defy Me (Shatter Me, #5)",
-  "author": "Tahereh Mafi",
-  "genre": "Newly added",
-  "kicker": "Tahereh Mafi · Newly added",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "text": "and I’m thinking this is it, this is how I die, she’s going to pull out a knife and cut me open, rearrange my organs, put on a puppet show with my intestines. What a way to go."
-   },
-   {
-    "type": "paragraph",
-    "text": "Thank you for appreciating my face. I’ve always thought I had an underappreciated face.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "“It always breaks my heart to break beautiful things.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "“Yeah,” I say. “Today is the worst.” “Fuck today,” Winston says. “Don’t forget about tomorrow,” I say. “Tomorrow’s going to suck, too.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "“I did not hook up with Nazeera,” I lie. Ian takes a bite of pizza. “Whatever, bro. No judgment. The world’s on fire. Have some fun.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "She looks stunning, tall and strong and steady. I love watching that girl move. Talk. Breathe. Whatever."
-   },
-   {
-    "type": "paragraph",
-    "text": "You don’t know that Aaron has been in love with Ella for the better part of his entire life. They’ve known each other since childhood.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "The reason he had to keep wiping their memories was because it didn’t matter how many times he reset the story or remade the introductions— Aaron always fell in love with her. Every time."
-   },
-   {
-    "type": "paragraph",
-    "text": "I gave up everything—for nothing."
-   },
-   {
-    "type": "paragraph",
-    "text": "Aaron Warner Anderson is the only emotional through line in my life that ever made sense. He’s the only constant. The only steady, reliable heartbeat I’ve ever had."
-   },
-   {
-    "type": "paragraph",
-    "text": "Hungry and cold is at least better than drugged and delirious."
-   },
-   {
-    "type": "paragraph",
-    "text": "Despite my every effort to break you apart—to remove this cancer from our lives—you’ve insisted, over and over again, on falling in love with her.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "I want him to know that it’s going to be me. I want him to know that he finally got what he wanted. That he finally broke me."
-   },
-   {
-    "type": "paragraph",
-    "text": "There are no lines I won’t cross. No illusions of mercy. I wanted to be better for her. For her happiness. For her future. But if she’s gone, what good is goodness?"
-   },
-   {
-    "type": "paragraph",
-    "text": "And I realize then, in a moment that terrifies me, that I want this, forever. I want to spend the rest of my life with her. I want to build a future with her. I want to grow old with her. I want to marry her."
-   },
-   {
-    "type": "paragraph",
-    "text": "Yes, I’m perfect.” I manage a small smile. “I’m glad you finally agree with me.” He frowns, confused, and then, as realization hits— He blushes."
-   },
-   {
-    "type": "paragraph",
-    "text": "“Tangled is not a cartoon. Tangled is one of the greatest movies of all time. It’s about fighting for freedom and true love.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "Today is not forever. Happiness does not happen."
-   },
-   {
-    "type": "paragraph",
-    "text": "be uncovered, separated from the skin of pain. It must be claimed. Kept close. Protected."
-   },
-   {
-    "type": "paragraph",
-    "text": "It seems like tempting fate to even hope for a happiness like that."
-   },
-   {
-    "type": "paragraph",
-    "text": "to take everything I can in this transitory world—and grieve nothing."
-   },
-   {
-    "type": "paragraph",
-    "text": "“Yes,” I cry, slightly hysterical. “Yes. Yes to everything with you. Yes to forever with you. Yes.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "“It’s very, very easy to love you.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "“I love you, Ella,” I whisper. “I will love you for the rest of my life. My heart is yours. Please don’t ever give it back to me.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "“Bro, you really need to, like, eat a pizza or something,” he says, slapping me on the shoulder as he leaves. “You have too many abs.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "Because how can we stand against tyranny if we ourselves are filled with hate? Or worse— Nothing?"
-   },
-   {
-    "type": "paragraph",
-    "text": "I want to remember to celebrate more. I want to remember to experience more joy. I want to allow myself to be happy more frequently. I want to remember, forever, this look on Aaron’s face, as he’s bullied into blowing out his birthday candles for the very first time. This is, after all, what we’re fighting for, isn’t it? A second chance at joy."
-   }
-  ]
- },
- {
-  "id": "quote-the-dragon-republic-the-poppy-war-2",
-  "title": "The Dragon Republic (The Poppy War, #2)",
-  "author": "R.F. Kuang",
-  "genre": "Newly added",
-  "kicker": "R.F. Kuang · Newly added",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "text": "But she also didn’t want to make it stop. The anger was a shield. The anger helped her to keep from remembering what she’d done. Because as long as she was angry, then it was okay—she’d acted within reason. She was afraid that if she stopped being angry, she might crack apart."
-   },
-   {
-    "type": "paragraph",
-    "text": "How could the Empress be alive? The sheer contradiction infuriated her, the fact that Altan and Master Irjah and so many others were dead and Daji looked like she’d never even been wounded. She was the head of a nation that had bled millions to a senseless invasion—an invasion she’d invited—and she looked like she’d just arrived for a banquet."
-   },
-   {
-    "type": "paragraph",
-    "text": "it never mattered because wordless agony didn’t have a language."
-   },
-   {
-    "type": "paragraph",
-    "text": "I want you to hurt. I want you to die. I want you to burn."
-   },
-   {
-    "type": "paragraph",
-    "text": "“I mean, if that ship were a person, I would fuck that ship,” said Baji."
-   },
-   {
-    "type": "paragraph",
-    "text": "She’d stopped wanting to be great, to carve out her place in history, a long time ago. She’d since learned the cost."
-   },
-   {
-    "type": "paragraph",
-    "text": "You asked how large my sorrow is,’” Nezha recited. Rin recognized the line—it was from a poem she’d studied a lifetime ago, a lament by an Emperor whose last words became exam material for future generations. “‘And I answered, like a river in spring flowing east.’”"
-   },
-   {
-    "type": "paragraph",
-    "text": "“Why did they drown? Why did the moon kill them? Because they weren’t climbing to the sky to find her, they were diving into the water toward her reflection. But it was a fucking illusion they were grasping, not the real thing.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "“You spend your whole life chasing after some illusion you think is real, only to realize you’re a damned fool, and that if you reach any further, you’ll drown.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "“It only hurts if you fight.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "“People will seek to use you or destroy you. If you want to live, you must pick a side. So do not shirk from war, child. Do not flinch from suffering. When you hear screaming, run toward it.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "“It’s not about who you are, it’s about how they see you. And once you’re mud in this country, you’re always mud.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "She didn’t owe him her guilt. She didn’t owe him anything. “I still love you,” she said, because she had to be honest."
-   },
-   {
-    "type": "paragraph",
-    "text": "“He’s dead, he’s gone, do you understand? He’s gone, and he’s never going to touch me again.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "And when nations start to believe that other beliefs lead to damnation, violence becomes inevitable.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "“And you’re afraid for him?” She whispered without thinking. “I’m always afraid for him.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "Fuck Altan, fuck his legacy, and fuck his trident. It was time she started using a weapon that would keep her alive."
-   },
-   {
-    "type": "paragraph",
-    "text": "“What’s this?” “A present.” Venka’s lip curled. “Is it someone’s head?”"
-   },
-   {
-    "type": "paragraph",
-    "text": "You were so still. I saw you drown, and I couldn’t save you.” He started to cry. “What the fuck,” she muttered. Was he drunk? High?"
-   },
-   {
-    "type": "paragraph",
-    "text": "She loved him or she hated him, but she didn’t know how to do both."
-   },
-   {
-    "type": "paragraph",
-    "text": "Yes, I know he’s a prick. But I also know that he’d throw himself off a cliff for you. Please stop trying to break him.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "Fire and water looked so lovely together. It was a pity they destroyed each other by nature."
-   },
-   {
-    "type": "paragraph",
-    "text": "“They’re not the strongest force in the world,”"
-   },
-   {
-    "type": "paragraph",
-    "text": "Together, spoke the Phoenix, we will burn down this world. She slammed her fist against the table. “I am.”"
-   }
-  ]
- },
- {
-  "id": "quote-the-empire-of-gold-the-daevabad-trilogy-3",
-  "title": "The Empire of Gold (The Daevabad Trilogy, #3)",
-  "author": "S.A. Chakraborty",
-  "genre": "Newly added",
-  "kicker": "S.A. Chakraborty · Newly added",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "text": "do not believe ambitious men who say the only route to peace and prosperity lies in giving them more power—particularly when they do it with lands and people who are not theirs. And those Europeans will be back. People do not cross a sea to fight without expecting some return on their investment.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "“If you rule by violence, you should expect to be removed by violence.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "“She told me to keep myself whole. That there wasn’t any shame in taking care of yourself in order to help those who needed you.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "“Not wanting to be destroyed by despair doesn’t make you a coward, Ali. It makes you a survivor.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "I am who I always wanted to be."
-   },
-   {
-    "type": "paragraph",
-    "text": "Maybe it had been the rush of adventure and sweeping excitement, the almost embarrassingly inevitable and clearly doomed romance that resulted between dashing warriors and wide-eyed young women. Had Muntadhir not accused her of living in a fairy tale, unable to tell the difference between its hero and its monster?"
-   },
-   {
-    "type": "paragraph",
-    "text": "“Not everything has to be a transaction, Nahri.” “It should be. It’s easier.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "stolen pastries and handed one to him. “Trust me, the illicitness makes them taste sweeter.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "this tangle of tenderness and longing, of sheer terror and unexpected light,"
-   },
-   {
-    "type": "paragraph",
-    "text": "Creator damn all that sparring. She didn’t miss Ali shiver at her touch, his pulse picking up, but Nahri dismissed it. Well-formed or not, Alizayd al Qahtani had probably never allowed himself an impure thought. A shame. Now Nahri did flush, fighting the urge to slap some sense into herself. No more journeying with attractive warriors on dangerous quests after this. She clearly had a problem."
-   },
-   {
-    "type": "paragraph",
-    "text": "I love the Nahids enough not to burden them with expectations of perfection."
-   },
-   {
-    "type": "paragraph",
-    "text": "Sit with this burden, Dara. You may find doing so is easier than holding it over your head and waiting for it to crush you.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "Her descendants might have gone astray—that seemed to happen to all revolutionaries"
-   },
-   {
-    "type": "paragraph",
-    "text": "Risking his life using marid magic to provoke an insurrection among pirates was one thing. Flirting was another."
-   },
-   {
-    "type": "paragraph",
-    "text": "“Luck is a fairy tale we use to make people feel better about the world being unfair as shit."
-   },
-   {
-    "type": "paragraph",
-    "text": "“Poets don’t write songs about that kind of love. Tragedy makes for a better tale.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "“We common women are wise enough to enjoy a taste of heat without staying to be burned.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "“It’s supposed to be the mark of a wise leader, right? The willingness to make sacrifices for a greater good? But nobody ever asks those ‘sacrifices’ if they’re willing—they get no say in whether or not their kids die for some supposed greater good."
-   },
-   {
-    "type": "paragraph",
-    "text": "That made it worse, this passing of a barbed baton between women who, no matter how clever, how powerful, would always be known by the men to whom they were attached."
-   },
-   {
-    "type": "paragraph",
-    "text": "“You don’t need to look so shocked. Criminals occasionally need God too—we’ve got more things that require forgiving.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "Nothing quite as vicious as vengeance from those who almost lost power.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "“Do you have to do that?” she asked. “Sound all reasonable and kind?” “I have a lot of experience in loving frustrating people. I can outpatience you any day, little sister.” “If you make me cry, I’m going to stab you.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "“Nahri,” Dara murmured, “I think we have done this dying thing before.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "“Find your happiness, little thief. Steal it and do not ever let it go.”"
-   }
-  ]
- },
- {
-  "id": "quote-franz-kafka-the-complete-novels-the-trial-the-castle-amerika",
-  "title": "Franz Kafka: The Complete Novels (The Trial, The Castle, Amerika)",
-  "author": "Franz Kafka",
-  "genre": "Newly added",
-  "kicker": "Franz Kafka · Newly added",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "text": "It’s only because of their stupidity that they’re able to be so sure of themselves."
-   },
-   {
-    "type": "paragraph",
-    "text": "“I expect you’ll say,” K. began, “that the matter really isn’t all that urgent and we don’t need to talk about it right now, but... “ “I never listen to introductions,” said Miss Bürstner."
-   },
-   {
-    "type": "paragraph",
-    "text": "in, I only fear danger where I want to fear it."
-   },
-   {
-    "type": "paragraph",
-    "text": "Big, strong girls like that often don’t know how to be anything but gentle and friendly."
-   },
-   {
-    "type": "paragraph",
-    "text": "K. felt slightly abandoned as, probably observed by the priest, he walked by himself between the empty pews, and the size of the cathedral seemed to be just at the limit of what a man could bear."
-   }
-  ]
- },
- {
-  "id": "quote-the-gilded-wolves-the-gilded-wolves-1",
-  "title": "The Gilded Wolves (The Gilded Wolves, #1)",
-  "author": "Roshani Chokshi",
-  "genre": "Newly added",
-  "kicker": "Roshani Chokshi · Newly added",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "text": "There were so many wants inside him that he doubted there was room for blood in his body."
-   },
-   {
-    "type": "paragraph",
-    "text": "“Wait. I was bait?” demanded Enrique. “You’re flattered.” Maybe a little."
-   },
-   {
-    "type": "paragraph",
-    "text": "As if he had once known how to fly, but the skies had shaken him loose and left him with nothing but the memory of wings."
-   },
-   {
-    "type": "paragraph",
-    "text": "Enrique rolled his eyes. “Most women kill to be alone with me.” “I have learned that something does not have to be animate in order to use the word ‘kill,’” said Zofia. “Like how some people say ‘kill time.’ Perhaps these women you are referencing are killing their expectations?”"
-   },
-   {
-    "type": "paragraph",
-    "text": "That boy looks like every dark corner of a fairy tale. The wolf in bed. The apple in a witch’s palm.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "“Tristan, my love,” said Laila with dangerous calm. “If you get in the way of a woman’s battle, you’ll get in the way of her sword.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "“Fashion, my love, just like the universe, owes you neither explanation nor rationale.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "“Half of winning, my dear wallet, is simply looking victorious.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "“Take what the world owes you by any means necessary,” Pride had said. “The world has a shit memory. It will never pay its debts unless you force its hand.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "“It’s your grave, Laila.” “As long as it’s my choice.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "Wolves were everywhere. In politics, on thrones, in beds. They cut their teeth on history and grew fat on war."
-   },
-   {
-    "type": "paragraph",
-    "text": "was just that, like other wolves, he wanted his share."
-   },
-   {
-    "type": "paragraph",
-    "text": "History is a myth shaped by the tongues of conquerors."
-   }
-  ]
- },
- {
-  "id": "quote-girls-made-of-snow-and-glass",
-  "title": "Girls Made of Snow and Glass",
-  "author": "Melissa Bashardoust",
-  "genre": "Newly added",
-  "kicker": "Melissa Bashardoust · Newly added",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "text": "If you’re delicate, it means no one has tried to break you.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "Your heart was shaped to survive, not to love,"
-   },
-   {
-    "type": "paragraph",
-    "text": "and your mother was selfish: she was incapable of loving someone who could never love her back.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "No one will ever love me anyway, so what’s the point in playing nice?"
-   },
-   {
-    "type": "paragraph",
-    "text": "It was a fair trade: she gave them something pleasing to stare at, and they gave her approval, acceptance, even affection. If they love you for anything, it will be for your beauty."
-   },
-   {
-    "type": "paragraph",
-    "text": "With her beauty, she had made people pay attention to her, to notice her without mocking her. But a queen— A queen had the power to make people love her."
-   },
-   {
-    "type": "paragraph",
-    "text": "What am I doing this for? she wondered now, and as always, a voice in her head answered, To feel alive. But this time there was another voice, one she had never heard before, and it offered a different answer: To die."
-   },
-   {
-    "type": "paragraph",
-    "text": "what she didn’t have, she would create."
-   },
-   {
-    "type": "paragraph",
-    "text": "“I need you to teach me what it means to be in love—what it looks like, how it feels. Love me, as best as you can, and I will learn from you.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "she understood now why gods were always said to be jealous."
-   },
-   {
-    "type": "paragraph",
-    "text": "If she shone brightly enough on the outside, could she blind everyone to what lay underneath?"
-   },
-   {
-    "type": "paragraph",
-    "text": "Because I made him and I can destroy him."
-   },
-   {
-    "type": "paragraph",
-    "text": "That was one of the tricks she’d learned from their walks together, to speak bold words in a demure manner. Pointing your chin downward encouraged a man to lift it up again. Stumbling while walking invited him to give you his arm. Faltering over words made him listen more closely, his eyes drawn to your lips. Weakness was more enticing than any seduction."
-   }
-  ]
- },
- {
-  "id": "quote-heart-of-a-dog",
-  "title": "Heart of a Dog",
-  "author": "Mikhail Bulgakov",
-  "genre": "Newly added",
-  "kicker": "Mikhail Bulgakov · Newly added",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "text": "You can't serve two gods! You can't sweep the dirt out of the tram tracks and settle the fate of the Spanish beggars at the same time!"
-   },
-   {
-    "type": "paragraph",
-    "text": "'One can find time for everything if one is never in a hurry,'"
-   },
-   {
-    "type": "paragraph",
-    "text": "A collar's just like a briefcase, the dog smiled to himself. Wagging his tail, he climbed up to the mezzanine like a gentleman."
-   }
-  ]
- },
- {
-  "id": "quote-imagine-me-shatter-me-6",
-  "title": "Imagine Me (Shatter Me, #6)",
-  "author": "Tahereh Mafi",
-  "genre": "Newly added",
-  "kicker": "Tahereh Mafi · Newly added",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "text": "Warner smelled like sugar, like decadence. I felt drunk on joy. I don’t want to wait, he said, taking my hand. Squeezing it. Let’s not wait."
-   },
-   {
-    "type": "paragraph",
-    "text": "“It’s hard to describe. It’s a pleasure so close to pain I sometimes can’t tell the two apart.” “That sounds awful.” “No,” he says. “It’s exquisite.” “I love you.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "I have eyes, two, feel them, rolling back and forth, around and around in my skull I have lips, two, feel them, wet and and heavy, pry them open have teeth, many, tongue, one and fingers, ten, count them onetwothreefourfive, again on the other side strange, ssstrange to have a tongue, sstrange it’s a sssstrange ssort of thing, a strange ssssssssssortofthing loneliness         it creeps up on you"
-   },
-   {
-    "type": "paragraph",
-    "text": "quiet         and still, sits by your side in the dark, strokes your hair as you sleep wrapssitself around your bones squeezing sotightyoualmostcan’t breathe almost can’t hear the pulse racing in your blood as it rush, rushes up your skin touches its lips to the soft hairs at the back of your neck loneliness is a strangesortof thinga sstrangesortofthing an old friend standing beside you in the mirror screaming you’re notenoughneverenough never ever enough sssssometimes it just won’t"
-   },
-   {
-    "type": "paragraph",
-    "text": "let     ..."
-   },
-   {
-    "type": "paragraph",
-    "text": "But       buried in the din is a single scream so steady it goes every day unheard. We see, but do not understand the way it stutters hearts, clenches jaws, curls fingers into fists. It’s a surprise, always a surprise, when it finally stops screaming long enough to speak. Fingers tremble. Flowers die. The sun flinches, the stars expire."
-   },
-   {
-    "type": "paragraph",
-    "text": "Kill me"
-   },
-   {
-    "type": "paragraph",
-    "text": "We are flies—gathering, swarming—bulging eyes and fragile bones flittering nervously toward imagined destinies. We hurl our bodies at the panes of tantalizing windows, aching for the world promised on the other side. Day after day we drag injured wings and eyes and organs around the same four walls; open or closed, the exits elude us. We hope to be rescued by a breeze, hoping for a chance to see the sun. Decades pass. Centuries stack together."
-   },
-   {
-    "type": "paragraph",
-    "text": "Our bruised bodies still careen through the air. We continue to hurl ourselves at promises."
-   },
-   {
-    "type": "paragraph",
-    "text": "repetition, in the repetition that underscores our lives. It is only in the desperate seconds before death that we realize the windows against which we bro..."
-   },
-   {
-    "type": "paragraph",
-    "text": "Come back to life, love I’ll be here when you wake up"
-   },
-   {
-    "type": "paragraph",
-    "text": "A spare. That’s all I ever was, I realize. A spare part kept in captivity. A backup weapon in the case that all else failed. Shatter me. Break glass in case of emergency."
-   },
-   {
-    "type": "paragraph",
-    "text": "“You don’t want to hear me say congratulations?” “No, I don’t want to hear you say I told you so.” “Yes, but I did fucking tell you so, didn’t I?”"
-   },
-   {
-    "type": "paragraph",
-    "text": "Not just the regular kind of hungry, either, but that desperate hunger that’s so hungry it doesn’t even feel like hunger anymore."
-   },
-   {
-    "type": "paragraph",
-    "text": "“Besides, if I paid attention to every single person who found me attractive I’d never have time for anything else.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "“Wow,” I say. “Your humility is a fucking inspiration.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "Do you maybe want to, like, wash a little bit of the blood off your face before we eat?” Warner glares at me in response. I hold up my hands. “Okay. Cool. That’s fine.” I point at him. “Actually, I heard that blood’s good for you. You know—organic. Antioxidants and shit. Very popular with vampires.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "“Do you still remember how to do this? Or did you need me to feed you?” I stab a piece of tofu and point it in his direction. “Say ah. The tofu choo choo is coming.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "“Amelia was a psycho, Castle wants to be BFFs"
-   },
-   {
-    "type": "paragraph",
-    "text": "with Anderson, Warner has midnight fantasies about killing people, and Castle made Amelia think that Warner is a lost little bunny trying to find his way home.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "But sometimes I think—sometimes I wonder—if I were a monster—surely, I would feel it by now? I would feel angry and vicious and vengeful. I’d know blind rage and bloodlust and a need for vindication. Instead I feel an abyss within me that’s so deep, so dark I can’t see within it; I can’t see what it holds. I do not know what I am or what might happen to me. I do not know what I might do again."
-   },
-   {
-    "type": "paragraph",
-    "text": "“Besides, we don’t love him for his jokes, do we, Nazeera?” The two of them lock eyes for a moment. “We love him for his heart.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "I imagine Me extraordinary, unbroken the girl who shocked herself by surviving, the girl who loved herself through learning, the girl who respected her skin, understood her worth, found her strength s t r o n g         s t r o n g e r strongest"
-   },
-   {
-    "type": "paragraph",
-    "text": "Imagine me master of my own universe I am everything I ever dreamed of"
-   },
-   {
-    "type": "paragraph",
-    "text": "“Hey,” Nazeera says, her voice suddenly close."
-   },
-   {
-    "type": "paragraph",
-    "text": "so please don’t get yourself killed, okay?”"
-   },
-   {
-    "type": "paragraph",
-    "text": "I’ll be fine.” “You’re not going to be fine,” I hiss. “She’s going to kill you.” “That’s fine, too.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "Run, Juliette run faster, run until your bones break and your shins split and your muscles atrophy Run run run until you can’t hear their feet behind you Run until you drop dead. Make sure your heart stops before they ever reach you. Before they ever touch you. Run, I said."
-   },
-   {
-    "type": "paragraph",
-    "text": "“You know my name,” he says softly. “You’ve always known me, love. I’ve always known you."
-   },
-   {
-    "type": "paragraph",
-    "text": "To the world, she is formidable. To me? She is the world."
-   }
-  ]
- },
- {
-  "id": "quote-le-intermittenze-della-morte",
-  "title": "Le intermittenze della morte",
-  "author": "José Saramago",
-  "genre": "Newly added",
-  "kicker": "José Saramago · Newly added",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "text": "Purtroppo, quando si avanza alla cieca nei pantanosi terreni della realpolitik, quando il pragmatismo s’impossessa della bacchetta e dirige il concerto senza badare a cosa c’è scritto nello spartito, è più che sicuro che la logica imperativa del degrado finisca per dimostrare che, in definitiva, c’era ancora qualche gradino da scendere."
-   },
-   {
-    "type": "paragraph",
-    "text": "la loro è solo invidia che nella nostra patria non si muore,"
-   },
-   {
-    "type": "paragraph",
-    "text": "attraversavano la frontiera, coi piedi in avanti perché la testa potesse rendersi conto di cosa stava capitando al resto del corpo, che gli infelici trapassavano, esalavano l’ultimo respiro."
-   },
-   {
-    "type": "paragraph",
-    "text": "Ma la maphia non sarebbe quello che è se non avesse trovato la soluzione del problema."
-   },
-   {
-    "type": "paragraph",
-    "text": "una società divisa fra la speranza di vivere sempre e il timore di non morire mai"
-   },
-   {
-    "type": "paragraph",
-    "text": "sembra che tu non veda che le parole sono etichette che si appiccicano alle cose, non sono le cose, tu non saprai mai come sono le cose, e neppure quali sono i loro nomi nella realtà, perché i nomi che tu hai dato loro non sono altro che questo, i nomi che tu gli hai dato, Chi"
-   },
-   {
-    "type": "paragraph",
-    "text": "Perché ciascuno di voi ha una propria morte, la porta con sé in un luogo segreto sin da quando nasce, lei appartiene a te, tu appartieni a lei,"
-   },
-   {
-    "type": "paragraph",
-    "text": "ma nelle malattie c’è qualcosa di curioso, gli esseri umani sperano sempre di cavarsela,"
-   },
-   {
-    "type": "paragraph",
-    "text": "le parole, se non lo sa, si muovono molto, cambiano da un giorno all’altro, sono instabili come le ombre, ombre di se stesse, che tanto ci sono quanto non ci sono più, bolle di sapone, conchiglie di cui a stento si sente il respiro,"
-   },
-   {
-    "type": "paragraph",
-    "text": "Qualche orgetta di sesso, droga e alcol, come aveva sentito dire che si organizzavano, lo avrebbe aiutato a passare all’altro mondo, sia pur correndo il rischio che poi, laggiù nell’eterea dimora cui sei asceso, ti si venga a rincarare la nostalgia di questo."
-   },
-   {
-    "type": "paragraph",
-    "text": "Se è vero che non sorride mai, è solo perché le mancano le labbra, e questa lezione di anatomia ci dice che, al contrario di ciò che ritengono i vivi, il sorriso non è una questione di denti."
-   },
-   {
-    "type": "paragraph",
-    "text": "un pianto non dev’essere, non si può chiedere tanto a chi lascia sempre una scia di lacrime dovunque passa, ma mai nessuna che sia sua."
-   },
-   {
-    "type": "paragraph",
-    "text": "Dei momenti di debolezza nella vita chiunque potrà averli, e, se oggi ce l’abbiamo fatta senza, ce li avremo assicurati domani."
-   },
-   {
-    "type": "paragraph",
-    "text": "con la tua licenza di uccidere zero zero sette priva di validità in questa casa,"
-   },
-   {
-    "type": "paragraph",
-    "text": "la vita è un’orchestra che suona sempre, intonata, stonata, un piroscafo titanic che affonda sempre e sempre torna in superficie, ed è allora"
-   },
-   {
-    "type": "paragraph",
-    "text": "La prudenza serve unicamente a rinviare l’inevitabile,"
-   }
-  ]
- },
- {
-  "id": "quote-the-invisible-life-of-addie-larue",
-  "title": "The Invisible Life of Addie LaRue",
-  "author": "V.E. Schwab",
-  "genre": "Newly added",
-  "kicker": "V.E. Schwab · Newly added",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "text": "Don’t you remember, she told him then, when you were nothing but shadow and smoke? Darling, he’d said in his soft, rich way, I was the night itself."
-   },
-   {
-    "type": "paragraph",
-    "text": "March is such a fickle month. It is the seam between winter and spring—though seam suggests an even hem, and March is more like a rough line of stitches sewn by an unsteady hand, swinging wildly between January gusts and June greens."
-   },
-   {
-    "type": "paragraph",
-    "text": "Adeline is sixteen now, and everyone speaks of her as if she is a summer bloom, something to be plucked, and propped within a vase, intended only to flower and then to rot."
-   },
-   {
-    "type": "paragraph",
-    "text": "“A dreamer,” scorns her mother. “A dreamer,” mourns her father. “A dreamer,” warns Estele. Still, it does not seem such a bad word."
-   },
-   {
-    "type": "paragraph",
-    "text": "Until Adeline wakes up."
-   },
-   {
-    "type": "paragraph",
-    "text": "He knew how to reduce a thing, sliver by sliver, piece by piece, until he found its essence; knew, too, when he’d gone too far. One stroke too many, and the wood went from delicate to brittle in his hands. Addie has had three hundred years to practice her father’s art, to whittle herself down to a few essential truths, to learn the things she cannot do without."
-   },
-   {
-    "type": "paragraph",
-    "text": "I am stronger than your god and older than your devil. I am the darkness between stars, and the roots beneath the earth. I am promise, and potential, and when it comes to playing games, I divine the rules, I set the pieces, and I choose when to play. And tonight, I say no.”"
-   }
-  ]
- },
- {
-  "id": "quote-the-kingdom-of-copper-the-daevabad-trilogy-2",
-  "title": "The Kingdom of Copper (The Daevabad Trilogy, #2)",
-  "author": "S.A. Chakraborty",
-  "genre": "Newly added",
-  "kicker": "S.A. Chakraborty · Newly added",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "text": "“You’d be amazed by the things a person can do to survive.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "This was so dangerous. So unnecessary and foolish, it was almost selfish."
-   },
-   {
-    "type": "paragraph",
-    "text": "“It’s hard to watch the way this city ruins the ones we love.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "“This is the best thing I’ve ever tasted.” “It is likely poisoned,” Aqisa said. “It is worth death.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "“You don’t stop fighting a war just because you’re losing battles, Alizayd. You change tactics."
-   },
-   {
-    "type": "paragraph",
-    "text": "“People do not thrive under tyrants, Alizayd; they do not come up with innovations when they’re busy trying to stay alive, or offer creative ideas when error is punished by the hooves of a karkadann.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "He will reign as Ghassan does: so afraid of his people that he crushes them.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "Fear and hate ruled the city—built up by centuries of spilled blood and the resulting grievances. It was a place where everyone was so busy trying to survive and ensure their loved ones survived that there was no room to build new trust."
-   },
-   {
-    "type": "paragraph",
-    "text": "“I’ve had enough of men hurting me because they were upset.” Her voice was hard, so much so that Muntadhir looked startled. But Nahri didn’t care. She rose to her feet, placing her chador over her head. “I won’t have it from the man I call my husband. Not anymore.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "You fix what you can and keep yourself whole enough to move on to the next patient.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "That woman is the kind of ally you keep at knife’s length.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "And always cunning men and women around who find a way to take advantage of that duty and harness it into power."
-   },
-   {
-    "type": "paragraph",
-    "text": "“Do you know that when you speak, you sound like a fruit peddler trying to sell me overripe produce?” “One person’s overripe is another person’s sweet,” Nahri said dryly."
-   }
-  ]
- },
- {
-  "id": "quote-il-libro-dell-inquietudine",
-  "title": "Il libro dell'inquietudine",
-  "author": "Fernando Pessoa",
-  "genre": "Newly added",
-  "kicker": "Fernando Pessoa · Newly added",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "text": "«Paludi dallo sfiorare ansie per la mia anima in oro»."
-   },
-   {
-    "type": "paragraph",
-    "text": "Ogni mio sogno, appena lo comincio a sognare, è immediatamente incarnato in un’altra persona che inizia a sognarlo, e io non più."
-   },
-   {
-    "type": "paragraph",
-    "text": "Per creare, mi sono distrutto: mi sono esteriorizzato talmente dentro di me che dentro di me non esisto se non esteriormente."
-   },
-   {
-    "type": "paragraph",
-    "text": "«Do I contradict myself?"
-   },
-   {
-    "type": "paragraph",
-    "text": "Sentir tudo em todas as maneiras» (“sentire tutto in tutte le maniere”)"
-   },
-   {
-    "type": "paragraph",
-    "text": "Per scriverlo, ho raccolto l’anima di tutti i fiori e con i momenti effimeri di tutti i canti di tutti gli uccelli ho tessuto eternità e stasi."
-   },
-   {
-    "type": "paragraph",
-    "text": "E ti offro questo libro perché so che è bello e inutile."
-   },
-   {
-    "type": "paragraph",
-    "text": "vi ho messo tutta l’anima a farlo, ma non ho mai pensato a esso mentre lo facevo, solo a me che sono triste e a te che non sei nessuno."
-   },
-   {
-    "type": "paragraph",
-    "text": "né le Notti ti venissero a riporre la luna nelle mani per farla sembrare un giglio."
-   },
-   {
-    "type": "paragraph",
-    "text": "ha condotto l’arte di sognare attraverso la casualità dell’esistenza."
-   },
-   {
-    "type": "paragraph",
-    "text": "Tu non esisti, lo so bene, ma so io con la massima sicurezza se esisto?"
-   },
-   {
-    "type": "paragraph",
-    "text": "Creiamo, oh Solo-Mia, tu perché esisti, io perché ti vedo esistere, un’arte diversa da ogni arte mai esistita."
-   },
-   {
-    "type": "paragraph",
-    "text": "madre vergine e sterile degli dèi che non esisteranno mai."
-   },
-   {
-    "type": "paragraph",
-    "text": "La mia anima è un’orchestra occulta; non so quali strumenti suonano e stridono dentro di me, corde, arpe, timpani e tamburi. Mi conosco solo come sinfonia."
-   },
-   {
-    "type": "paragraph",
-    "text": "Le tue mani sono colombe prigioniere. Le tue labbra sono tortore mute (che i miei occhi vedono tubare). Tutti i tuoi gesti sono uccelli. Sei rondine nel chinarti, condor nel guardarmi, aquila nelle tue estasi d’orgoglio indifferente."
-   },
-   {
-    "type": "paragraph",
-    "text": "Ogni piacere è un vizio, perché cercar piacere è ciò che tutti fanno nella vita, e l’unico vizio oscuro è fare tutto ciò che tutti gli altri fanno."
-   },
-   {
-    "type": "paragraph",
-    "text": "Possedere un corpo è essere banale. Sognare di possedere un corpo è forse peggio, per quanto difficile: è sognarsi banale – il massimo dell’orrore."
-   },
-   {
-    "type": "paragraph",
-    "text": "E noi rimarremo sempre le stesse vetrate, ora a colori quando il sole batterà su di noi, ora meri contorni quando cadrà la notte... I secoli non altereranno il nostro silenzio vitreo..."
-   },
-   {
-    "type": "paragraph",
-    "text": "Fuori, si susseguiranno civiltà, scoppieranno rivolte, vorticheranno feste, sfileranno mansueti popoli giorno dopo giorno... E noi, amore mio irreale, avremo sempre lo stesso gesto inutile, la stessa esistenza falsa, e la stessa < > finché un giorno, al termine di vari secoli di impero, la Chiesa finalmente crollerà e tutto avrà fine..."
-   },
-   {
-    "type": "paragraph",
-    "text": "Solo la sterilità è nobile e degna. Solo l’uccidere ciò che non è mai stato è stravagante e sublime e assurdo."
-   },
-   {
-    "type": "paragraph",
-    "text": "E saprò mai se non sono io il sogno e tu la realtà, io un sogno tuo e non tu un Sogno che io sogni?"
-   },
-   {
-    "type": "paragraph",
-    "text": "Sei la donna precedente alla Caduta, scultura di quell’argilla che < > paradiso."
-   },
-   {
-    "type": "paragraph",
-    "text": "Chi può rispettare la Sposa senza dover pensare che è pur sempre una donna in una diversa posizione, quella della copula?"
-   },
-   {
-    "type": "paragraph",
-    "text": "Chissà se sognandoti non ti creo reale in un’altra realtà; chissà se non sarai mia in quel luogo, in un altro mondo e puro, dove ci ameremo senza corpo tangibile, con un altro genere d’abbracci e altre forme essenziali di possesso?"
-   },
-   {
-    "type": "paragraph",
-    "text": "Chissà se il mio sognare non è stato semplicemente incontrarti,"
-   },
-   {
-    "type": "paragraph",
-    "text": "Sei già andata via e sei già stata e ti ho già amato: il sentirti presente è sentire tutto questo."
-   },
-   {
-    "type": "paragraph",
-    "text": "Rendiamo la vita assurda, da est a ovest."
-   },
-   {
-    "type": "paragraph",
-    "text": "Essere puri, non per essere nobili o per essere forti, ma per essere se stessi. Chi dà amore, perde amore."
-   },
-   {
-    "type": "paragraph",
-    "text": "Abdicare alla vita per non abdicare a se stessi."
-   },
-   {
-    "type": "paragraph",
-    "text": "Sono un pozzo"
-   },
-   {
-    "type": "paragraph",
-    "text": "di sogni che ho dimenticato di sognare fino in fondo."
-   },
-   {
-    "type": "paragraph",
-    "text": "Tra me e la vita c’è un vetro sottile. Per quanto nitidamente veda e comprenda la vita, non la posso toccare. Razionalizzare la nostra tristezza?"
-   },
-   {
-    "type": "paragraph",
-    "text": "come quello di chi disprezza la vita e la vive solo per doverla disprezzare. E il nostro disprezzo sia rivolto a chi lavora e lotta, e il nostro odio a chi spera e ha fiducia."
-   },
-   {
-    "type": "paragraph",
-    "text": "Non so se il mondo è triste o cattivo e non mi importa neppure, perché la sofferenza altrui mi è noiosa e indifferente."
-   },
-   {
-    "type": "paragraph",
-    "text": "Ciò che uccide il sognatore è non vivere quando sogna; ciò che ferisce chi agisce è non sognare quando vive."
-   },
-   {
-    "type": "paragraph",
-    "text": "Come la nostra ombra, la vita mi insegue. E non c’è ombra solo quando tutto è ombra. La vita non ci insegue solo quando ci consegniamo a essa."
-   },
-   {
-    "type": "paragraph",
-    "text": "Sono qualcosa che sono stato. Non mi trovo dove mi sento e, se mi cerco, non so chi mi sta cercando. Un tedio verso tutto mi spossa. Mi sento espulso dalla mia stessa anima."
-   },
-   {
-    "type": "paragraph",
-    "text": "Non posso giurarvi di essere stato proprio io a partire e non il paesaggio, di essere stato proprio io a visitare altre terre e non esse a visitare me."
-   },
-   {
-    "type": "paragraph",
-    "text": "Ho scolpito la mia vita come una statua di materia estranea al mio essere."
-   },
-   {
-    "type": "paragraph",
-    "text": "A che pro esprimersi? Il poco che si dice sarebbe meglio rimanesse non detto."
-   },
-   {
-    "type": "paragraph",
-    "text": "Perché è bella l’arte? Perché è inutile. Perché è brutta la vita? Perché è tutta finalità e propositi e intenzioni."
-   },
-   {
-    "type": "paragraph",
-    "text": "La bellezza delle rovine? Non servire più a nulla. La dolcezza del passato? Ricordarlo, perché ricordarlo è renderlo presente, ed esso non lo è, né può esserlo – l’assurdo, amore mio, l’assurdo."
-   },
-   {
-    "type": "paragraph",
-    "text": "Io non sono pessimista, sono triste."
-   },
-   {
-    "type": "paragraph",
-    "text": "Niente vale la pena, oh mio amore lontano, fuorché sapere com’è dolce sapere che niente vale la pena..."
-   },
-   {
-    "type": "paragraph",
-    "text": "E in questo modo morimmo la nostra vita, così attenti a morirla separatamente che non ci avvedemmo che eravamo solo uno, che ciascuno di noi era un’illusione dell’altro e ciascuno dentro di sé era il mero eco del suo proprio essere..."
-   },
-   {
-    "type": "paragraph",
-    "text": "Disinganniamoci sulla speranza, perché tradisce; sull’amore, perché stanca; sulla vita, perché riempie ma non sazia; e anche sulla morte, perché porta più di ciò che si vuole e meno di ciò che ci si aspetta."
-   },
-   {
-    "type": "paragraph",
-    "text": "Tutto così superfluo! Noi e il mondo e il mistero di entrambi."
-   },
-   {
-    "type": "paragraph",
-    "text": "Chiuditi dentro la tua torre d’avorio ma senza sbattere la porta."
-   },
-   {
-    "type": "paragraph",
-    "text": "E se qualcuno ti dice che tutto questo è falso e assurdo, non gli credere. Ma non credere neppure a quello che ti dico io, perché non si deve credere in niente."
-   },
-   {
-    "type": "paragraph",
-    "text": "Nulla si può penetrare, né atomi, né anime. Perciò nulla possiede nulla. Dalla verità fino a un fazzoletto – tutto è impossedibile. (La proprietà non è un furto: non è nulla.)"
-   },
-   {
-    "type": "paragraph",
-    "text": "Ma ho l’impressione che il mio racconto confermi che ho viaggiato ma che non ho vissuto. Ho portato in giro da una parte all’altra, da nord a sud e da est a ovest, la stanchezza di aver avuto un passato, l’inquietudine di star vivendo un presente e il tedio di dover avere un futuro."
-   },
-   {
-    "type": "paragraph",
-    "text": "Di quale cosa essenzialmente divina sono fatti i castelli che non sono di sabbia?"
-   },
-   {
-    "type": "paragraph",
-    "text": "Dio sarà forse un bambino molto cresciuto? L’intero universo non sembra forse uno scherzo, una beffa da bambino monello?"
-   },
-   {
-    "type": "paragraph",
-    "text": "Non mi dica che è una notte di chiaro di luna. Non sopporto le notti di chiaro di luna... C’è chi, in effetti, ha l’abitudine di suonare musica nelle notti di chiaro di luna..."
-   },
-   {
-    "type": "paragraph",
-    "text": "Credo che l’unica cosa degna di una donna contemporanea sia l’ideale di essere disegno. Quando ero bambina volevo essere una regina di un seme qualsiasi di un mazzo di carte antico che c’era a casa mia..."
-   },
-   {
-    "type": "paragraph",
-    "text": "In fondo, mi creda, ciò che siamo di più doloroso è ciò che non siamo realmente, e le nostre tragedie più grandi accadono nell’idea che ci facciamo di noi stessi."
-   },
-   {
-    "type": "paragraph",
-    "text": "Ogni buona conversazione deve essere un monologo a due..."
-   },
-   {
-    "type": "paragraph",
-    "text": "Le mie uniche simpatie, nei libri di grammatica, le riservavo alle eccezioni e ai pleonasmi... Sfuggire alle regole e dire cose inutili riassumono bene un atteggiamento essenzialmente moderno."
-   },
-   {
-    "type": "paragraph",
-    "text": "Un amico mio che si è suicidato – ogni volta che converso a lungo con qualcuno faccio suicidare un amico – aveva intenzione di dedicare la propria vita a distruggere i verbi... = (Perché si è suicidato?)"
-   },
-   {
-    "type": "paragraph",
-    "text": "Sono un ponte tra due misteri, senza sapere come mi hanno costruito..."
-   },
-   {
-    "type": "paragraph",
-    "text": "Questo è l’unico ascetismo possibile. Non prevede fede né Dio. Dio sono io."
-   },
-   {
-    "type": "paragraph",
-    "text": "Amare è stancarsi di star soli: è pertanto una codardia e un tradimento di noi stessi. (È estremamente importante non amare.)"
-   },
-   {
-    "type": "paragraph",
-    "text": "Nel mito di Gesù, c’è scritto questo: Dio, nel diventare uomo, non può avere altra fine che il martirio. Il sognatore supremo ha per figlio il martirio supremo."
-   },
-   {
-    "type": "paragraph",
-    "text": "Non sono stato destinato alla realtà e la vita ha voluto venire a trovarmi."
-   },
-   {
-    "type": "paragraph",
-    "text": "Dio ha fatto della mia anima qualcosa di decorativo."
-   },
-   {
-    "type": "paragraph",
-    "text": "Liberatevi soprattutto dal coltivare sentimenti umanitari. L’umanitarismo è una volgarità."
-   },
-   {
-    "type": "paragraph",
-    "text": "Oggi possiedo solo la realtà, con cui non posso giocare... Povero bambino esiliato nella sua virilità! Perché sono dovuto crescere?"
-   },
-   {
-    "type": "paragraph",
-    "text": "È morto in me qualcosa in più che il mio passato."
-   },
-   {
-    "type": "paragraph",
-    "text": "Non ho mai considerato il suicidio come una soluzione, perché odio la vita per l’amore che provo per essa."
-   },
-   {
-    "type": "paragraph",
-    "text": "Sopra ogni altra cosa, vorrei che lo scopo della mia vita fosse educare gli altri a sentire sempre più per se stessi e sempre meno secondo la legge dinamica della collettività. Educare a formare quello stato spirituale antisettico che eviti il contagio della volgarità, mi sembra il destino più radioso del pedagogo interiore che vorrei essere."
-   },
-   {
-    "type": "paragraph",
-    "text": "Quando li evoco, l’anima tutta mi si raggela e mi sento esiliato dai cuori, solo nella notte di me stesso, piangendo come un mendicante il silenzio chiuso di tutte le porte."
-   },
-   {
-    "type": "paragraph",
-    "text": "per"
-   },
-   {
-    "type": "paragraph",
-    "text": "l’esteta, le tragedie sono cose interessanti da osservare, ma fastidiose da soffrire."
-   },
-   {
-    "type": "paragraph",
-    "text": "Giacché non possiamo ottenere bellezza dalla vita, cerchiamo almeno di ottenere bellezza dal non poter ottenere bellezza dalla vita."
-   },
-   {
-    "type": "paragraph",
-    "text": "Io sono la grande disfatta dell’esercito che sosteneva l’ultimo impero."
-   },
-   {
-    "type": "paragraph",
-    "text": "In me c’è il sapore della fine di una civiltà antica e dominatrice."
-   },
-   {
-    "type": "paragraph",
-    "text": "perché finanche nel sogno mi sono riconosciuto incompatibile con la vita,"
-   },
-   {
-    "type": "paragraph",
-    "text": "Che questa anima sia il mio sepolcro per sempre, e che < > diventi assoluto in Tenebra e io giammai possa vivere senza sentire o desiderare..."
-   },
-   {
-    "type": "paragraph",
-    "text": "la lussuria giapponese di avere evidentemente"
-   },
-   {
-    "type": "paragraph",
-    "text": "soltanto due dimensioni."
-   },
-   {
-    "type": "paragraph",
-    "text": "Gli uomini sono facili da allontanare: basta non avvicinarsi."
-   },
-   {
-    "type": "paragraph",
-    "text": "è abituarsi a incarnare il dolore in una determinata figura ideale. Creare un altro Io che si incarichi di soffrire in noi, di soffrire ciò che soffriamo. Creare, poi, un sadismo interiore, del tutto masochista, che goda della propria sofferenza come se fosse di un altro."
-   },
-   {
-    "type": "paragraph",
-    "text": "Delle persone invidio il loro non essere me."
-   },
-   {
-    "type": "paragraph",
-    "text": "per quanto riguarda la pietà, io non la ispiro, perché non esiste pietà per gli storpi di spirito."
-   },
-   {
-    "type": "paragraph",
-    "text": "Ho sofferto l’umiliazione di conoscermi."
-   },
-   {
-    "type": "paragraph",
-    "text": "“Il tuo focolare” disse “non ha lume: perché mai vuoi un focolare?”, “La tua tavola” disse “non ha pane: con cosa ti rallegra la tua tavola?”, “La tua vita” disse “non ha chi la accompagni: con cosa ti seduce la vita?”. “Io sono” disse lei “il fuoco dei focolari spenti, il pane delle tavole vuote, la sollecita compagnia dei solitari e degli isolati."
-   },
-   {
-    "type": "paragraph",
-    "text": "tu stesso ti perderai nella mia sostanza mistica, nella mia esistenza negata, nel mio petto ove le cose si inabissano, nel mio petto ove le anime si spengono, nel mio petto, ove gli dèi svaniscono."
-   },
-   {
-    "type": "paragraph",
-    "text": "La morte è il trionfo della Vita!"
-   },
-   {
-    "type": "paragraph",
-    "text": "Tutto è degli altri, salvo il dolore di non averlo."
-   },
-   {
-    "type": "paragraph",
-    "text": "Ogni civiltà segue la linea intima di una religione che la rappresenta:"
-   },
-   {
-    "type": "paragraph",
-    "text": "Una nave sembra un oggetto il cui fine è navigare; ma il suo fine non è navigare, bensì arrivare in porto. Noi ci siamo ritrovati a navigare senza l’idea del porto a cui avremmo dovuto attraccare."
-   },
-   {
-    "type": "paragraph",
-    "text": "Orfano della Fortuna, sento il bisogno, come tutti gli orfani, di essere l’oggetto dell’affetto di qualcuno. Ho sempre avuto fame di realizzare questa necessità. Mi sono talmente abituato a questa fame inevitabile che a volte non so più se sento il bisogno di mangiare."
-   },
-   {
-    "type": "paragraph",
-    "text": "Pensando, mi sono creato eco e abisso."
-   },
-   {
-    "type": "paragraph",
-    "text": "Parlare significa nutrire troppa considerazione per gli altri. A bocca aperta muore il pesce e Oscar Wilde."
-   },
-   {
-    "type": "paragraph",
-    "text": "L’uomo perfetto per i pagani era la perfezione dell’uomo che esiste; l’uomo perfetto per i cristiani, la perfezione dell’uomo che non esiste; l’uomo perfetto per i buddisti, la perfezione che l’uomo non esiste."
-   },
-   {
-    "type": "paragraph",
-    "text": "Nacque allora nelle anime recenti quella malattia che chiamarono romanticismo, quel cristianesimo senza illusioni, quel cristianesimo senza miti, che costituisce l’aridità stessa della sua essenza malata. Il male del romanticismo è la confusione tra ciò di cui abbiamo bisogno e ciò che desideriamo."
-   },
-   {
-    "type": "paragraph",
-    "text": "Tuttavia è sintomo di malattia desiderare con eguale intensità ciò di cui si ha bisogno e ciò che è desiderabile, e soffrire di non essere perfetto come si soffre per la mancanza di cibo. Il male romantico è questo: volere la luna come se esistesse un modo di ottenerla."
-   },
-   {
-    "type": "paragraph",
-    "text": "“Non si può mangiare un pasticcino senza perderlo.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "Soffri ritmicamente."
-   },
-   {
-    "type": "paragraph",
-    "text": "Ma tutta la vita è una metafisica al buio, con un brusio di dèi e l’ignoranza della via come unica via."
-   },
-   {
-    "type": "paragraph",
-    "text": "L’amore romantico è il prodotto estremo di secoli e secoli di influenza cristiana;"
-   },
-   {
-    "type": "paragraph",
-    "text": "Di giorno, io sono nulla, e di notte, io sono io."
-   },
-   {
-    "type": "paragraph",
-    "text": "Mi alzo dalla sedia con uno sforzo mostruoso, ma ho l’impressione di portarmi dietro la sedia e che la sedia sia più pesante, perché è la sedia del soggettivismo."
-   },
-   {
-    "type": "paragraph",
-    "text": "Agire, ecco la vera intelligenza. Sarò quello che vorrò. Ma devo volere quello che sarò."
-   },
-   {
-    "type": "paragraph",
-    "text": "Il successo risiede nell’aver successo e non nell’avere le condizioni per il successo."
-   },
-   {
-    "type": "paragraph",
-    "text": "Vince la lotteria della vita solo chi ne ha comprato i biglietti a casaccio."
-   },
-   {
-    "type": "paragraph",
-    "text": "Dormiamo la vita, eterni bambini del Destino."
-   },
-   {
-    "type": "paragraph",
-    "text": "Sapere che sarà scadente l’opera che non si comporrà mai. Peggio, tuttavia, sarà quella che non si cercherà mai di comporre."
-   },
-   {
-    "type": "paragraph",
-    "text": "e le risate della vita che passa mi feriscono come una capocchia di fiammifero sfregata sulle rughe sensibili del mio cuore."
-   },
-   {
-    "type": "paragraph",
-    "text": "Così come laviamo il nostro corpo, dovremmo lavare pure il destino, cambiare l’esistenza come cambiamo la biancheria: non per sostentare la vita, come mangiando e dormendo, ma per quel rispetto estraneo di noi stessi che appropriatamente chiamiamo igiene."
-   },
-   {
-    "type": "paragraph",
-    "text": "Siamo tutti abituati a considerare noi stessi essenzialmente come realtà mentali, mentre vediamo gli altri immediatamente come realtà fisiche; consideriamo noi stessi vagamente come persone fisiche solo in virtù dell’effetto dello sguardo degli altri; consideriamo vagamente gli altri come realtà mentali, ma solo nell’amore o nei conflitti prendiamo davvero coscienza che gli altri hanno soprattutto un’anima, come noi per noi stessi."
-   },
-   {
-    "type": "paragraph",
-    "text": "Non so se ho la febbre, giacché sento, oppure se ho smesso di avere la febbre che mi fa dormire la vita."
-   },
-   {
-    "type": "paragraph",
-    "text": "Non c’è pace – e, ahimè, non c’è neppure il desiderio di averla..."
-   },
-   {
-    "type": "paragraph",
-    "text": "“perché io sono della dimensione di ciò che vedo e non della dimensione della mia altezza.”15"
-   },
-   {
-    "type": "paragraph",
-    "text": "Sono nato in un’epoca in cui la maggioranza dei giovani aveva perduto la fede in Dio per la stessa ragione per la quale i loro padri l’avevano posseduta – senza sapere perché."
-   },
-   {
-    "type": "paragraph",
-    "text": "E dunque, poiché lo spirito umano tende naturalmente a criticare perché sente e non perché pensa, la maggioranza di questi giovani ha scelto l’Umanità come succedaneo di Dio."
-   },
-   {
-    "type": "paragraph",
-    "text": "Ho sempre considerato che Dio, essendo improbabile, potesse esistere e che potesse perciò essere adorato; ma che l’Umanità, essendo una mera idea biologica e non designando altro che la specie animale Umana, non fosse degna di adorazione più di un’altra qualsiasi specie animale. Questo culto dell’Umanità, con i suoi rituali di Libertà e Uguaglianza, mi è sempre parso una reviviscenza di antichi culti, in cui gli animali erano come dèi o gli dèi avevano la testa di animali."
-   },
-   {
-    "type": "paragraph",
-    "text": "Della scienza, accolgo solo quel suo precetto essenziale secondo cui tutto è soggetto a leggi fatali, contro le quali non si può reagire in modo autonomo, poiché reagire significa che esse hanno fatto in modo che reagissimo;"
-   },
-   {
-    "type": "paragraph",
-    "text": "Per tutti noi calerà la notte e arriverà la diligenza. Mi godo la brezza che mi è data e l’anima che mi hanno dato per goderne, e non interrogo né ricerco. Se quello che lascerò scritto nel libro dei viaggiatori potrà, una volta riletto da altri un giorno, anche divertirli durante la traversata, sarà un bene. Se non lo leggeranno e non si saranno divertiti, sarà un bene lo stesso."
-   }
-  ]
- },
- {
-  "id": "quote-milk-fed",
-  "title": "Milk Fed",
-  "author": "Melissa Broder",
-  "genre": "Newly added",
-  "kicker": "Melissa Broder · Newly added",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "text": "They say the perfect is the enemy of the good, that if you strive for perfection you will overlook the good. But I did not agree. I didn’t like the good. The good was just mediocre. I wanted to go beyond mediocre. I wanted to be exceptional."
-   },
-   {
-    "type": "paragraph",
-    "text": "I decided that love is when you have food in your mouth that you know is not going to make you fat. Lust is when you have food in your mouth that is going to make you fat."
-   },
-   {
-    "type": "paragraph",
-    "text": "People in LA were always recommending things that were more about themselves than the recipient."
-   },
-   {
-    "type": "paragraph",
-    "text": "But in my desire to curate Miriam, I’d become just another version of an obsessive recommender. I wanted to show the world how beautiful she was, to present a different type of beauty, and in doing so, to own part of her. I felt that if the world embraced Miriam, I’d be healing something in me—making amends with young Rachel. But I didn’t entirely trust the world to grasp her beauty. So I sweetened the pot with little aesthetic upgrades."
-   },
-   {
-    "type": "paragraph",
-    "text": "I had thought that I was the sculptor and she was the golem. But now I considered that she might be the sculptor, the maestro, the creatrix, expanding and improving me, giving life to my dead parts, laughter to my breath. Maybe she was remaking me in her image. Maybe we were remaking each other."
-   },
-   {
-    "type": "paragraph",
-    "text": "“Just because it feels good doesn’t mean it’s wrong,” said the rabbi."
-   },
-   {
-    "type": "paragraph",
-    "text": "If a person had a monstrous soul, should she still follow it?"
-   },
-   {
-    "type": "paragraph",
-    "text": "I was a woman of impulse, a woman of instinct. I was a woman of pleasure and a woman of confidence. I was a woman of appetites, a growling beast. I was a person."
-   },
-   {
-    "type": "paragraph",
-    "text": "I imagined googling, How to make a golem fall in love with you. Maybe that’s all that prayer was anyway—a cosmic google. In that case, any iPhone could be a synagogue. I wished I could FaceTime with Rabbi Judah."
-   },
-   {
-    "type": "paragraph",
-    "text": "I looked at her face in the glow of the movie screen, swaths of light and shadow flickering on and off her pale skin. She was like a moon cycling through all its phases in rapid-fire."
-   },
-   {
-    "type": "paragraph",
-    "text": "If I did not love Miriam, if it was purely attraction, then I felt that I would never know what love was—and I did not care to know. And when she left, I got down on my knees and touched my face to the ground. “Thank you, thank you, thank you,” I said to who knew what."
-   },
-   {
-    "type": "paragraph",
-    "text": "I should have been prepared. Love goes. But what I hadn’t known was how good the love would feel when it was there, like a hymn moving through me all the time. Or if Jews didn’t have hymns, then a rhythm. I’d moved my body in time to it the best I could. But I hadn’t been able to hold on."
-   }
-  ]
- },
- {
-  "id": "quote-the-name-of-the-wind-the-kingkiller-chronicle-1",
-  "title": "The Name of the Wind (The Kingkiller Chronicle, #1)",
-  "author": "Patrick Rothfuss",
-  "genre": "Newly added",
-  "kicker": "Patrick Rothfuss · Newly added",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "text": "“Call a jack a jack. Call a spade a spade. But always call a whore a lady. Their lives are hard enough, and it never hurts to be polite.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "A poet is a musician who can’t sing."
-   },
-   {
-    "type": "paragraph",
-    "text": "“I hope this place is as good as everyone seems to think it is,” I said earnestly. “I need a place to burn.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "“No matter where she stood, she was in the center of the room.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "“It’s like everyone tells a story about themselves inside their own head. Always. All the time. That story makes you what you are. We build ourselves out of that story.”"
-   }
-  ]
- },
- {
-  "id": "quote-oltre-i-confini-del-tempo-odyssea-3",
-  "title": "Oltre i confini del tempo (Odyssea #3)",
-  "author": "Amabile Giusti",
-  "genre": "Newly added",
-  "kicker": "Amabile Giusti · Newly added",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "text": "Non c’è nulla di più imbarazzante dell’idea di essere derise per chi è abituato a deridere."
-   },
-   {
-    "type": "paragraph",
-    "text": "«C’è sempre un ma, in tutte le cose che ci uniscono e ci separano.»"
-   },
-   {
-    "type": "paragraph",
-    "text": "Poiché chi ha conosciuto il dolore non può certo ridere di chi soffre."
-   },
-   {
-    "type": "paragraph",
-    "text": "Aveva capito che non si può rimanere legati per sempre a un ricordo, che l’amore ha bisogno di nutrimento, che i sogni non resistono all’imperiosa luce dell’alba e che le promesse pronunciate da un bugiardo sanno di sangue e di sale."
-   },
-   {
-    "type": "paragraph",
-    "text": "«Mai scherzare con l’orgoglio di un uomo. Credo che molti presunti eroi del passato fossero solo miti personaggi offesi da una donna imprudente.»"
-   },
-   {
-    "type": "paragraph",
-    "text": "«A mio modo ti amo, Ody.» In un altro tempo, in un altro momento, l’altra Ody, con quelle parole, avrebbe imparato a volare. Si sarebbe fatta confondere e annebbiare, sarebbe morta e risorta e morta ancora. Col cuore aperto, palpitante come un orologio meccanico. Questa Ody aveva perso il disincanto. Questa Ody voleva di più, voleva l’Amore, non una specie di amore."
-   },
-   {
-    "type": "paragraph",
-    "text": "Era bello come qualcuno che è sempre stato bello, ma poi è partito, e quando torna ti pare più bello di prima. Era bello come ogni primo, e ultimo amore."
-   },
-   {
-    "type": "paragraph",
-    "text": "più piangeva più si sentiva viva, e più si sentiva viva più desiderava essere morta."
-   },
-   {
-    "type": "paragraph",
-    "text": "Le Megere erano un incrocio tra Sirene e Arpie. Per natura avevano un aspetto rivoltante, ma quando incontravano un incauto cavaliere, abbastanza sciocco da smarrirsi da quelle parti, erano abili a tramutarsi in donne bellissime, con l’intento di accoppiarsi per perpetuare la specie, e poi divorarlo. Non nascevano mai maschi, tra le Megere, ed era necessario per loro costringere i viandanti a contatti che quelli avrebbero volentieri evitato."
-   },
-   {
-    "type": "paragraph",
-    "text": "poiché, fondamentalmente, non erano di indole crudele e agivano in tal modo solo per garantirsi la sopravvivenza, al termine del loro pasto umano scoppiavano in lacrime di pentimento, e quelle lacrime, accumulatesi nei secoli dentro una conca, avevano originato l’omonimo acquitrino."
-   },
-   {
-    "type": "paragraph",
-    "text": "«Lascia perdere il cuore! È la testa che bisogna assecondare! Il ragionamento! Il cuore porta alla sconfitta, all’umiliazione, alla solitudine. Occorre riflettere sulle cose, far vincere l’orgoglio e la dignità!"
-   },
-   {
-    "type": "paragraph",
-    "text": "Non farlo rimanere, non farlo rimanere. Se glielo permetterai, non tornerai mai più indietro. Lo amerai fino alla fine dei tuoi giorni."
-   },
-   {
-    "type": "paragraph",
-    "text": "Lo amo già fino alla fine dei miei giorni."
-   },
-   {
-    "type": "paragraph",
-    "text": "«Ti amo. Senza finzioni. Senza dannati misteri. Ti amo e basta»."
-   },
-   {
-    "type": "paragraph",
-    "text": "E io cosa farò? Non ne aveva idea, sentiva solo il cuore pesante come un blocco di marmo. Anche il suo corpo si rifiutava di collaborare. Non aveva fame e non aveva sete. Il suo corpo voleva morire. Si girò ancora su se stessa, chiuse gli occhi, e aspettò che il destino dei vinti facesse il suo corso."
-   },
-   {
-    "type": "paragraph",
-    "text": "Era questo, crescere?"
-   },
-   {
-    "type": "paragraph",
-    "text": "per il passato, aggrapparsi disperatamente al presente per paura che il futuro, con le sue incognite, irrompesse troppo in fretta? Era questo?"
-   }
-  ]
- },
- {
-  "id": "quote-oltre-il-coraggio-del-sacrificio",
-  "title": "Oltre il coraggio del sacrificio",
-  "author": "Amabile Giusti",
-  "genre": "Newly added",
-  "kicker": "Amabile Giusti · Newly added",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "text": "Non ci sono posti meravigliosi o orridi in assoluto, ma dipende da quello che accade, dalla gente, dai ricordi che mettiamo insieme."
-   },
-   {
-    "type": "paragraph",
-    "text": "Sono vigliacca, ma, quando si ha una ferita che non guarisce, occorre evitare i coltelli."
-   },
-   {
-    "type": "paragraph",
-    "text": "La vera se stessa voleva risponderle un fulmineo sì, lo amo, e non soltanto ancora, lo amo sempre, lo amerò sempre, fino a quando sarò viva su questa terra di lacrime e sogni assassinati. Lo amo e mi manca e ho paura per lui, e anche se respiro e faccio cose e sembro imparentata col sorriso, sono soltanto una che sa fingere bene, benino, male, ma ci prova."
-   },
-   {
-    "type": "paragraph",
-    "text": "Un affetto senza altruismo è un falso affetto"
-   },
-   {
-    "type": "paragraph",
-    "text": "Le parve di diventare fluida e flessuosa, creta calda, vetro plasmato a forma di calice che desidera traboccare, cuore diviso a metà che cerca la sua parte mancante, inverno senza la neve, estate senza la luce."
-   },
-   {
-    "type": "paragraph",
-    "text": "In fondo l’amore non esiste. È un’idiozia per ubriaconi che guardano la luna e per dementi che perdono la bussola."
-   },
-   {
-    "type": "paragraph",
-    "text": "Le menzogne sulle labbra delle ragazzine erano bugie mezze bianche. Facevano parte della libertà. Nessuna delle due mentiva per svago. Era solo un modo per crescere lasciando alle madri l’illusione di non crescere affatto. Un giorno o l’altro l’arcano sarebbe stato svelato, e le madri avrebbero avuto paura."
-   },
-   {
-    "type": "paragraph",
-    "text": "Lei stessa si sentiva persa in uno spazio infinito, come una stella vecchia implosa, abbandonata in mezzo a una galassia piena di un infinito niente."
-   },
-   {
-    "type": "paragraph",
-    "text": "La solitudine era parte di lei, carne e sangue del medesimo cuore. La solitudine era una cellula, nel suo corpo di ragazzina contusa."
-   },
-   {
-    "type": "paragraph",
-    "text": "Durante il viaggio pensò a se stessa, alla bambina imbranata di quattro anni prima, e ringraziò e maledì il destino, la vita, amò e odiò ciò che l’aveva resa più matura, più sicura, più grande, tutto il bene e il male che l’avevano costretta a trovare le parole, a non incespicare con le emozioni, a non lasciarsi seppellire dalle piene, ad accantonare il guscio, per diventare quasi donna."
-   },
-   {
-    "type": "paragraph",
-    "text": "quando rideva smettere di amarlo era un’impresa eroica."
-   },
-   {
-    "type": "paragraph",
-    "text": "Hai un cuore troppo grande per metterci dei paletti,"
-   },
-   {
-    "type": "paragraph",
-    "text": "quando si sta male si tende a leggere con difficoltà nel proprio cuore, a pensare al passato e idealizzarlo. È facile quando il presente pesa: ieri diventa magico quando oggi è difficile."
-   },
-   {
-    "type": "paragraph",
-    "text": "Si abbracciò a Jacko come se fosse la sua vita, la sua zattera, ancora e per sempre il suo Nord, il suo Sud, il suo Est e il suo Ovest."
-   }
-  ]
- },
- {
-  "id": "quote-oltre-le-catene-dell-orgoglio-odyssea-2",
-  "title": "Oltre le catene dell'orgoglio (Odyssea #2)",
-  "author": "Amabile Giusti",
-  "genre": "Newly added",
-  "kicker": "Amabile Giusti · Newly added",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "text": "Mia madre dice sempre che una brava ragazza non fa morbose domande, ma una ragazza ancora più brava non si mette nelle condizioni che le vengano fatte."
-   },
-   {
-    "type": "paragraph",
-    "text": "Ciò che non seppe, fu che lui attese fuori dalla sua finestra per quasi un’ora. Udì il suo pianto e le frasi consolanti di sua madre. Immobile, col freddo della notte che gli artigliava il viso, le spalle appoggiate alla facciata della casa, furioso con se stesso, andò via solo quando la pioggia cominciò ad abbattersi sugli alberi, solo dopo che i suoi capelli furono completamente bagnati, e solo dopo aver avuto la sconcertante certezza di avere commesso uno degli errori più gravi di tutta la sua vita."
-   },
-   {
-    "type": "paragraph",
-    "text": "Ma i vivi sono spesso egoisti e banali, credono che quando muore una persona malata, brutta o solitaria debba essersi uccisa, perché per voler vivere si deve essere per forza sani, attraenti e simpatici!"
-   },
-   {
-    "type": "paragraph",
-    "text": "rivelargli che l’amore che provava era troppo forte per permettere a una timida rabbia o una parvenza di odio di durare più di un tramonto."
-   },
-   {
-    "type": "paragraph",
-    "text": "Era come dover rinunciare alla cioccolata quando tutto il mondo profumava di cacao."
-   },
-   {
-    "type": "paragraph",
-    "text": "«Ti piace?» Cosa avrebbe potuto risponderle? Sì, è un discreto fusto, e mi fa il filo come un tessitore, ma io sono così scema da sbavare per quel cafone di tuo fratello?"
-   },
-   {
-    "type": "paragraph",
-    "text": "scorda chi potrai amare scorda adesso chi già ami."
-   },
-   {
-    "type": "paragraph",
-    "text": "per poter usare il suo petto come giaciglio, il suo braccio come recinto e il suo profumo come cuscino."
-   },
-   {
-    "type": "paragraph",
-    "text": "«L’amore, perché è questo, anche se ho provato a chiamarlo con altri nomi, è questo. L’amore, questo mostro affamato, mi sta indebolendo, mi sta uccidendo."
-   },
-   {
-    "type": "paragraph",
-    "text": "Cosa pensi di fare? Chiuderti in una scatola e attendere che la vita passi? Poi potrai dire d’essere stato un uomo tutto d’un pezzo, forte, formidabile ma senza sentimenti."
-   },
-   {
-    "type": "paragraph",
-    "text": "finché potrò scapperò, ma dalla morte, non dalla vita!»"
-   },
-   {
-    "type": "paragraph",
-    "text": "Di sicuro aveva capito male, per colpa di quel maledetto mal di testa. Chissà cosa aveva detto davvero. Certamente non ciò che credeva di aver sentito. Certamente non le aveva sussurrato: «Morirei per te»."
-   },
-   {
-    "type": "paragraph",
-    "text": "La facilità ad innamorarsi, che è propria delle donne, non può significare che voi sapete amare di più. Voi siete prede di molti piccoli fuochi, mentre un uomo si innamora veramente con maggiore difficoltà, ma quando è preso, nessun sentimento femminile potrà eguagliarlo.»"
-   },
-   {
-    "type": "paragraph",
-    "text": "Ogni volta, quando si ripeteva la storia, lei era destinata a morire e c’era sempre una pagina in cui avrebbe supplicato un pugnale di riposare nel suo petto."
-   },
-   {
-    "type": "paragraph",
-    "text": "viene per tutti un momento in cui la vita si spacca, e le scelte possono essere giuste o sbagliate ma provocare comunque un male indicibile."
-   },
-   {
-    "type": "paragraph",
-    "text": "Emily Dickinson. Declamando: L’altro giorno ho perso un mondo, qualcuno lo ha trovato? Lo si riconosce dal diadema di stelle che gli incornicia la fronte..."
-   },
-   {
-    "type": "paragraph",
-    "text": "La loro amicizia era morta, e non è d’uso che i morti muoiano più di una volta."
-   },
-   {
-    "type": "paragraph",
-    "text": "Avrebbe voluto che qualcuno le giurasse che esistevano cose buone e durevoli, sentimenti ispirati e sinceri, capaci di andare oltre le sue debolezze e la sua incapacità evidente di suscitarli."
-   },
-   {
-    "type": "paragraph",
-    "text": "Avrebbe voluto crescere presto, subito, imparare un milione di cose a velocità accelerata, smetterla di essere inerme per colpa di quella disperata e inconcludente giovinezza."
-   },
-   {
-    "type": "paragraph",
-    "text": "E allo stesso tempo tornare bambina, un’altra bambina, non più una cosina piccola e magra che correva nel temporale aggrappata a sua madre, ma una bambina serena sotto il sole, i..."
-   },
-   {
-    "type": "paragraph",
-    "text": "Era come stare sul ciglio di un pozzo, dentro il quale poteva esserci di tutto, fiori e fiamme, erba e spine, cuscini di seta e un tappeto di lame, era come avere paura e allo stesso tempo volersi tuffare in quel buio, per capire, per scoprire."
-   },
-   {
-    "type": "paragraph",
-    "text": "Vorrei che mi amassi, ma se non puoi, almeno trattami come se fossi una donna e non una reliquia. Smettila di crocifiggerti ogni volta che mi baci e ti piace baciarmi."
-   },
-   {
-    "type": "paragraph",
-    "text": "Sei una ragazzina, la tua innocenza mi abbaglia e mi spaventa, non voglio contaminarla, non voglio distruggerla. Mi attrai, come negarlo? Mi piaci, mi sorprendi, mi sconvolgi. Ero dannatamente geloso quando stavi con Jordy e lo sono anche adesso, al pensiero che starai con qualcun altro, qualcuno che non sono io. Vorrei farlo a pezzi questo qualcuno e, allo stesso tempo, spero che arrivi, che ti porti via, che ti salvi da me."
-   },
-   {
-    "type": "paragraph",
-    "text": "L’amore la invadeva come un nemico, scavava trincee nel suo petto, accendeva falò nel suo grembo, faceva esplodere ordigni tra i suoi pensieri."
-   },
-   {
-    "type": "paragraph",
-    "text": "«Stai attenta. Ma non crescere troppo, ti prego.»"
-   },
-   {
-    "type": "paragraph",
-    "text": "Piango perché so che ce la farò."
-   },
-   {
-    "type": "paragraph",
-    "text": "Perché io, pur sapendo che il tuo è l’atteggiamento giusto, voglio che mi aspetti e che ti comporti bene e che non guardi nessuno e che non ami nessuno e che pensi a me in ogni istante senza trovare sollievo. Voglio rivelarti ciò che non sai sul mio conto, e voglio che mi accetti senza battere ciglio, voglio che tu mi dica che non ti importa, che non sono un mostro. Voglio tutto questo."
-   }
-  ]
- },
- {
-  "id": "quote-il-paese-delle-nevi",
-  "title": "Il paese delle nevi",
-  "author": "Yasunari Kawabata",
-  "genre": "Newly added",
-  "kicker": "Yasunari Kawabata · Newly added",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "text": "Era come amare una donna che non avesse mai visto."
-   },
-   {
-    "type": "paragraph",
-    "text": "Soli nella quiete essi avevano poco da dirsi."
-   },
-   {
-    "type": "paragraph",
-    "text": "Era come se parlasse di una lontanissima letteratura straniera. C’era qualcosa di smarrito, di triste, in ciò, qualcosa che suggeriva l’idea di un mendicante che abbia perso ogni desiderio."
-   },
-   {
-    "type": "paragraph",
-    "text": "crepitio della neve che gelava sulla terra pareva rimbombare nelle sue profondità."
-   },
-   {
-    "type": "paragraph",
-    "text": "Non c’era luna. Le stelle, troppe per sembrare vere, si affacciavano in cielo con uno scintillio cosí vivo che parevano precipitare nel vuoto. E piú le stelle si avvicinavano, piú il cielo pareva sprofondare nel colore della notte. Le vette della catena montuosa confondendosi l’una con l’altra, si levavano massicce sull’orlo del cielo stellato in un’oscurità cosí greve e fosca che pareva partecipare del loro peso. L’insieme della scena notturna si fondava in una pura, serena armonia."
-   },
-   {
-    "type": "paragraph",
-    "text": "Chissà se tutti i ciechi sembrano piú giovani di quanto siano in realtà? si chiese Shimamura."
-   },
-   {
-    "type": "paragraph",
-    "text": "Le prime note aprirono nelle sue viscere un vuoto immenso, trasparente, e in quel vuoto echeggiò il suono del samisen."
-   },
-   {
-    "type": "paragraph",
-    "text": "Basta che nevichi due giorni e ne avremo quasi due metri. Poi nevica di nuovo e fra non molto le luci su quei pali non si vedranno piú. Io camminerò pensando a voi e mi ritroverò strangolata da un filo. – È cosí alta la neve?"
-   },
-   {
-    "type": "paragraph",
-    "text": "Ma io non voglio. Non voglio vedere un uomo morire."
-   },
-   {
-    "type": "paragraph",
-    "text": "Dal finestrino del treno dava l’idea di uno strano frutto dimenticato dentro uno sporco vaso di vetro in una povera drogheria di paese."
-   },
-   {
-    "type": "paragraph",
-    "text": "Fuori della finestra il rosso luminoso dei kaki maturi era bagnato dal sole morente."
-   },
-   {
-    "type": "paragraph",
-    "text": "Insetti piú piccoli delle tarme si raccolsero sulla spessa cipria bianca che le copriva il collo. Alcuni di essi vi morirono mentre Shimamura li guardava."
-   },
-   {
-    "type": "paragraph",
-    "text": "La gente è delicata, vero? – aveva detto Komako quella mattina. – Ridotta in poltiglia, si dice, cranio, ossa e tutto. Un orso potrebbe cadere dalla roccia piú alta e non ferirsi minimamente –. C’era stato un altro incidente su fra le rocce, e ella aveva indicato la montagna sulla quale era accaduto. Se l’uomo avesse una pelle ruvida e pelosa come l’orso, senz’altro la sua vita sarebbe diversa, pensò Shimamura. Era attraverso una pelle sottile e liscia che l’uomo amava."
-   },
-   {
-    "type": "paragraph",
-    "text": "Quando era lontano pensava incessantemente a Komako; ma ora che le era vicino questo desiderio della pelle umana assumeva l’indeterminatezza di un sogno, simile al fascino delle montagne."
-   },
-   {
-    "type": "paragraph",
-    "text": "Io non riesco mai ad essere completamente leale con i vivi, e desidero almeno essere onesta con lui ora che è morto. Uscirono dal bosco di cedri dove la pace pareva cadere in gelide gocce."
-   },
-   {
-    "type": "paragraph",
-    "text": "una voce cosí bella e quasi triste che pareva invocare qualcuno che non potesse udire, su una nave lontana."
-   },
-   {
-    "type": "paragraph",
-    "text": "Una donna sola può sempre tirare avanti"
-   },
-   {
-    "type": "paragraph",
-    "text": "C’erano lacrime agli angoli degli occhi di Yoko. Tirò su col naso mentre colpiva una piccola tarma sul tappeto. – Komako dice che diventerò pazza –. Dopo di che scivolò via dalla stanza."
-   },
-   {
-    "type": "paragraph",
-    "text": "– Siete sola come la femmina della volpe di notte, non è vero? – Proprio cosí."
-   },
-   {
-    "type": "paragraph",
-    "text": "Però non c’è gusto a bere al buio."
-   },
-   {
-    "type": "paragraph",
-    "text": "Le operaie ignote, cosí diligenti nella loro vita, erano morte, ormai, e restava solamente il Chijimi, fresco e morbido sulla pelle in estate, delizia di uomini come Shimamura. Questo insignificante pensiero lo colpí come fosse carico di significato. Il lavoro in cui un cuore ha riversato tutto il suo affetto – dove sarà destinato a suscitare emozione e pensiero, e quando?"
-   },
-   {
-    "type": "paragraph",
-    "text": "La Via Lattea s’inarcava su di essi nella direzione in cui correvano e sembrava bagnare con la sua luce i capelli di Komako."
-   },
-   {
-    "type": "paragraph",
-    "text": "Eppure una sorta di pace incombeva su quella scena terrificante, come se tutti fossero senza voce davanti alle fiamme, come se a tutti fosse stato strappato il cuore."
-   },
-   {
-    "type": "paragraph",
-    "text": "Con la passività di una bambola, e la libertà di un oggetto senza vita, pareva tenere a bada contemporaneamente la vita e la morte."
-   }
-  ]
- },
- {
-  "id": "quote-poison-s-kiss-poison-s-kiss-1",
-  "title": "Poison's Kiss (Poison's Kiss, #1)",
-  "author": "Breeana Shields",
-  "genre": "Newly added",
-  "kicker": "Breeana Shields · Newly added",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "text": "I press my thumb against the fruit and it yields slightly."
-   },
-   {
-    "type": "paragraph",
-    "text": "know something is ready to be devoured, when it gives just a little under pressure. It’s the same with people."
-   }
-  ]
- },
- {
-  "id": "quote-the-queen-of-nothing-the-folk-of-the-air-3",
-  "title": "The Queen of Nothing (The Folk of the Air, #3)",
-  "author": "Holly Black",
-  "genre": "Newly added",
-  "kicker": "Holly Black · Newly added",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "text": "Better not to make the attempt than to fail.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "“All power is cursed,”"
-   },
-   {
-    "type": "paragraph",
-    "text": "“The most terrible among us will do anything to get it, and those who’d wield power best don’t want it thrust upon them. But that doesn’t mean they can avoid their responsibilities forever.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "Leaves don’t grow back onto a vine, cracked walnuts don’t fit back into their shells, and girlfriends who’ve been enchanted don’t just wake up and decide to let things slide with their terrifying exes."
-   },
-   {
-    "type": "paragraph",
-    "text": "There’s no room for regrets when you’re busy trying to win. Or at least not to die."
-   }
-  ]
- },
- {
-  "id": "quote-il-re-malvagio-the-folk-of-the-air-vol-2",
-  "title": "Il re malvagio (The Folk of the Air Vol. 2)",
-  "author": "Holly Black",
-  "genre": "Newly added",
-  "kicker": "Holly Black · Newly added",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "text": "Sono belli e terribili e, per quanto possano disprezzare la mia mortalità o sbeffeggiarla, io sono quassù e loro invece no."
-   },
-   {
-    "type": "paragraph",
-    "text": "«Ho sentito dire che per i mortali la sensazione di innamorarsi è molto simile alla sensazione che si prova davanti alla paura."
-   },
-   {
-    "type": "paragraph",
-    "text": "Il cuore batte forte, i sensi sono allertati, ti prende"
-   },
-   {
-    "type": "paragraph",
-    "text": "uno stordimento, ti vengono le..."
-   },
-   {
-    "type": "paragraph",
-    "text": "«Chi mi guarda le spalle può sempre infilzarmi con un coltello» gli ricordo."
-   },
-   {
-    "type": "paragraph",
-    "text": "Osservare la sua paura mi riempie di una soddisfazione quasi voluttuosa. Io, che ho avuto poco potere nella vita, devo guardarmi da quella sensazione. Il potere mi dà alla testa troppo in fretta, come il vino del mondo magico."
-   },
-   {
-    "type": "paragraph",
-    "text": "Il potere è di chi se lo prende."
-   },
-   {
-    "type": "paragraph",
-    "text": "«Ti stai srotolando come un rocchetto. Che succede quando non c’è più filo?» «Ne filerò dell’altro» replico io restando sulla sua metafora."
-   },
-   {
-    "type": "paragraph",
-    "text": "Appena se n’è andata, prendo i miei animali di peluche e me li metto vicino, sul tappeto."
-   },
-   {
-    "type": "paragraph",
-    "text": "Lancio loro un’ultima, lunga occhiata e poi, uno dopo l’altro, li getto nel fuoco. Non sono più una bambina e non ho più bisogno di conforto."
-   },
-   {
-    "type": "paragraph",
-    "text": "Il mio corpo si è abituato e adesso reclama quello che dovrebbe rigettare."
-   },
-   {
-    "type": "paragraph",
-    "text": "«Per un attimo» dice «mi sono chiesto se non fossi stata tu a tirarmi quelle frecce.» Io lo guardo male. «E cosa ti ha fatto pensare che non fossi stata io?» «Il fatto che non mi abbiano colpito» replica guardandomi."
-   },
-   {
-    "type": "paragraph",
-    "text": "«Baciami ancora» dice ubriaco e folle. «Baciami finché non ne potrò più.»"
-   },
-   {
-    "type": "paragraph",
-    "text": "Lui ti odia. Anche se ti desidera, lui ti odia. Forse ti odia proprio per quello."
-   },
-   {
-    "type": "paragraph",
-    "text": "«Se sei la malattia, immagino che tu non possa essere anche la cura.»"
-   },
-   {
-    "type": "paragraph",
-    "text": "«Vuoi sapere cosa ho fatto per diventare il suo braccio destro?» le chiedo piegandomi verso di lei, così vicino da farle sentire il calore del mio alito. «L’ho baciato sulla bocca e poi l’ho minacciato di baciarlo di nuovo se non avesse fatto esattamente quello che volevo.»"
-   },
-   {
-    "type": "paragraph",
-    "text": "Il potere è contagioso. Il potere divora."
-   },
-   {
-    "type": "paragraph",
-    "text": "«Non c’è niente di più dolce» dice baciandola sul dorso «di quel che manca.»"
-   },
-   {
-    "type": "paragraph",
-    "text": "di tutto ciò che mi ha fatto, farmi innamorare così di lui è in assoluto la peggiore."
-   },
-   {
-    "type": "paragraph",
-    "text": "«La tua ridicola famiglia potrebbe stupirsi di scoprire che non tutto si risolve uccidendo» mi grida Locke. «Ne saremmo stupiti anche noi» gli grido andandomene."
-   },
-   {
-    "type": "paragraph",
-    "text": "Penso che forse non bisognerebbe esagerare con il desiderio. Forse è come il mitridatismo. Forse ho assunto una dose letale quando avrei dovuto avvelenarmi lentamente, un bacio alla volta."
-   },
-   {
-    "type": "paragraph",
-    "text": "“Uccidilo” mi dice una parte di me, una parte che mi ricordo dalla sera in cui l’ho fatto prigioniero. “Uccidilo prima che ti faccia innamorare di lui.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "«È quello l’amore?» gli chiedo. «Se non è amore» mi dice «è qualcosa di molto simile.»"
-   },
-   {
-    "type": "paragraph",
-    "text": "Se non potevo avere la sua benevolenza, avrei avuto la sua collera."
-   },
-   {
-    "type": "paragraph",
-    "text": "Non sapevo se ti desideravo o se volevo che sparissi dalla mia vista per smettere di sentirmi come mi sentivo, e questo mi rendeva ancora più odioso. Ma quando sei sparita, sparita veramente sotto le onde, mi sono detestato come mai prima.»"
-   },
-   {
-    "type": "paragraph",
-    "text": "Lei pensa che io sia giovane e incapace e vuole prendermi le misure.»"
-   },
-   {
-    "type": "paragraph",
-    "text": "«Facciamole vedere che non sono un Sommo Re incapace.» «E come?» «Bella domanda» mi risponde. «Perché temo che abbia ragione.»"
-   },
-   {
-    "type": "paragraph",
-    "text": "In un duello il punto non è combattere bene, ma vincere."
-   },
-   {
-    "type": "paragraph",
-    "text": "Dalla sua arteria parte uno schizzo di sangue che finisce sul mio braccio e sull’erba. Brilla sul pugnale. Balekin si accascia a terra scomposto. Accade tutto così in fretta. Troppo in fretta. Voglio avere qualche reazione. Voglio tremare o sentirmi nauseata. Voglio essere il tipo di persona che comincia a piangere. Voglio essere chiunque tranne la persona che sono, che si guarda in giro per essere sicura che nessuna la veda, che pulisce il pugnale nella terra, che si pulisce le mani sui vestiti e scappa prima che accorrano le guardie."
-   },
-   {
-    "type": "paragraph",
-    "text": "Devi essere abbastanza forte da colpire e colpire e colpire ancora senza stancarti. La prima lezione è acquisire quella forza."
-   }
-  ]
- },
- {
-  "id": "quote-il-regno-corrotto-grishaverse-six-of-crows-2",
-  "title": "Il regno corrotto. GrishaVerse (Six of Crows, #2)",
-  "author": "Leigh Bardugo",
-  "genre": "Newly added",
-  "kicker": "Leigh Bardugo · Newly added",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "text": "“Noi affrontiamo la paura” le aveva detto. “Noi salutiamo la visitatrice inaspettata e ascoltiamo quello che ha da dirci."
-   },
-   {
-    "type": "paragraph",
-    "text": "arriva, qualcosa sta per succedere.”"
-   }
-  ]
- },
- {
-  "id": "quote-rule-of-wolves-king-of-scars-2",
-  "title": "Rule of Wolves (King of Scars, #2)",
-  "author": "Leigh Bardugo",
-  "genre": "Newly added",
-  "kicker": "Leigh Bardugo · Newly added",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "text": "“Men who see too much have a way of losing their eyes.” “And queens who trust too little have a way of losing their thrones.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "His groom had suggested it wasn’t appropriate for a king to ride out on a horse named Punchline,"
-   },
-   {
-    "type": "paragraph",
-    "text": "But kings did what they wished; bastards did what they must."
-   },
-   {
-    "type": "paragraph",
-    "text": "“You will invite me to a fine dinner. We’ll both drink too much wine. You’ll get me to talk about myself, the pressures of my position, the sadness of my past. Perhaps I’ll shed a tear or two. You’ll listen sensitively and astutely and somehow discover my secret self. Something like that?” “Well, not precisely. But … yes!” He leaned forward. “I want to know the true you, Zoya.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "If Ravka needed her to be gracious, she would damn well be gracious."
-   },
-   {
-    "type": "paragraph",
-    "text": "“People only say that when they know it won’t last.” “Of course it won’t last,” said Zoya. “What does?” “True love?” suggested Tamar. “Great art?” said Tolya. “A proper grudge,” replied Zoya."
-   },
-   {
-    "type": "paragraph",
-    "text": "The dragon knows how small human lives are, how wearying. They are fireflies. Sparks that dwindle in the night, while we burn on and on.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "Death is my gift, Nina thought, and I do not fear the lost."
-   },
-   {
-    "type": "paragraph",
-    "text": "“I can keep hope in my heart and a blade in my hand.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "No one takes care to guard against a dull blade."
-   },
-   {
-    "type": "paragraph",
-    "text": "I will forever be the weapon in your hand, the fighter at your side, the friend who awaits your return.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "“I have no queen, no king, and no country,” said Tolya. “I have only ever had what I believe.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "Let the hounds give chase. I do not fear death, because I command it.’”"
-   },
-   {
-    "type": "paragraph",
-    "text": "Not my brave girl. There are some hearts that beat stronger than others."
-   },
-   {
-    "type": "paragraph",
-    "text": "We are the dragon. We do not lie down to die."
-   },
-   {
-    "type": "paragraph",
-    "text": "When the larder was bare, when her husband couldn’t find work, when her hands cracked from taking in the neighbors’ washing. This is what love does."
-   },
-   {
-    "type": "paragraph",
-    "text": "Grief was the shadow love left when it was gone."
-   },
-   {
-    "type": "paragraph",
-    "text": "Real power frightens them.” She’d waved at the painted altarpiece. “They want the illusion of it. An image on a wall, silent and safe.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "He would teach the world awe."
-   },
-   {
-    "type": "paragraph",
-    "text": "Because I find I don’t want to fight for a future if I can’t find a way to make a future with you."
-   },
-   {
-    "type": "paragraph",
-    "text": "You chose your path. You walked it. You hoped to find a way home again."
-   },
-   {
-    "type": "paragraph",
-    "text": "I will give you a conflagration. I will give you a new name for fire."
-   },
-   {
-    "type": "paragraph",
-    "text": "“Why does it matter?” asked Nikolai. “Because unlike Kaz, I have a conscience.” “I have a conscience,” said Kaz. “It just knows when to keep its mouth shut.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "“You take your time or you take your chances,”"
-   },
-   {
-    "type": "paragraph",
-    "text": "“I’m not susceptible to flattery, only stacks of cash."
-   },
-   {
-    "type": "paragraph",
-    "text": "“A word of advice, from one bastard to another: Sometimes it’s best to let the demon have its day.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "“Ask me to be brave, not safe,”"
-   },
-   {
-    "type": "paragraph",
-    "text": "Love was on the other side and it was terrifying. Open the door."
-   },
-   {
-    "type": "paragraph",
-    "text": "“Everyone mourns the first blossom,” Mayu said softly. “Who will weep for the rest that fall?” “I will remain to sing for you,” Tamar continued the poem. Tolya placed a hand to his heart. “Long after the spring has gone.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "Why think of the next world when she was in this one?"
-   },
-   {
-    "type": "paragraph",
-    "text": "“My name is Aleksander Morozova,” he said, his voice echoing through the clearing. “But I have had a hundred names and I have committed a thousand crimes.” The monks placed their hands upon the roots of the tree, the trunk, the hanging boughs. The Darkling spread his arms wide, his lean body pale in the winter light. “I am not sorry.” The great tree’s bark began to move and shift. They’re Fabrikators, Nikolai realized, watching the monks concentrate. All of them. “I do not repent!” said the Darkling."
-   }
-  ]
- },
- {
-  "id": "quote-the-school-for-good-and-evil-the-school-for-good-and-evil-1",
-  "title": "The School for Good and Evil (The School for Good and Evil, #1)",
-  "author": "Soman Chainani",
-  "genre": "Newly added",
-  "kicker": "Soman Chainani · Newly added",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "text": "1. The Evil attack. The Good defend. 2. The Evil punish. The Good forgive. 3. The Evil hurt. The Good help. 4. The Evil take. The Good give. 5. The Evil hate. The Good love."
-   },
-   {
-    "type": "paragraph",
-    "text": "“Then I’ll be whatever you want me to be.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "“You see, it doesn’t matter what we are, Sophie.” Lady Lesso leaned so close she just had to whisper. “It’s what we do.”"
-   }
-  ]
- },
- {
-  "id": "quote-serpent-dove-serpent-dove-1",
-  "title": "Serpent & Dove (Serpent & Dove, #1)",
-  "author": "Shelby Mahurin",
-  "genre": "Newly added",
-  "kicker": "Shelby Mahurin · Newly added",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "text": "“My mistress hired them as security.” “Security?” Coco scoffed, reaching into her coat for her own knife. Andre bared his teeth. “Since when is voyeurism considered security?”"
-   },
-   {
-    "type": "paragraph",
-    "text": "Death is the kindest of their torments—a gift bestowed only to those who have earned it."
-   },
-   {
-    "type": "paragraph",
-    "text": "“Why are you dressed like a man?” “Have you ever worn a corset?” I spun around to face him, reattaching my mustache with as much dignity as I could muster. “I doubt you’d ask such a question if you had. Trousers are infinitely more freeing.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "Ah. Chasseurs were holy men. He probably thought me the devil. He wouldn’t have been wrong."
-   },
-   {
-    "type": "paragraph",
-    "text": "“Are you a courtesan, then?”"
-   },
-   {
-    "type": "paragraph",
-    "text": "“Alas, no, and hearts all over Cesarine are breaking for it.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "“As if God could be a woman.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "for it is better to marry than to burn with passion.’"
-   }
-  ]
- },
- {
-  "id": "quote-the-shadows-between-us",
-  "title": "The Shadows Between Us",
-  "author": "Tricia Levenseller",
-  "genre": "Newly added",
-  "kicker": "Tricia Levenseller · Newly added",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "text": "When a man sees something that several other men want, he can’t help but want it, too."
-   },
-   {
-    "type": "paragraph",
-    "text": "I can neither give him exactly what he wants nor be too predictable."
-   },
-   {
-    "type": "paragraph",
-    "text": "I handled Hektor as I have handled everything else in my life: alone and with the utmost thoroughness."
-   },
-   {
-    "type": "paragraph",
-    "text": "The poets can say whatever they damned like. A woman’s worth is not decided by what’s between her legs but by what is in her mind."
-   },
-   {
-    "type": "paragraph",
-    "text": "“I think that when you care enough for someone, you reach a point where it’s far more painful not to have him at all than to have him and risk losing him."
-   },
-   {
-    "type": "paragraph",
-    "text": "Waiting. Not waiting. One lover. A hundred lovers. There should be no judgment either way. A woman is not defined by what she does or doesn’t do in the bedroom."
-   },
-   {
-    "type": "paragraph",
-    "text": "“I’m not a trollop,” I announce to the empty room. “I’m a sexually empowered woman, and there is nothing wrong with that.”"
-   }
-  ]
- },
- {
-  "id": "quote-the-silvered-serpents-the-gilded-wolves-2",
-  "title": "The Silvered Serpents (The Gilded Wolves, #2)",
-  "author": "Roshani Chokshi",
-  "genre": "Newly added",
-  "kicker": "Roshani Chokshi · Newly added",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "text": "“We need to separate Vasiliev from his bodyguards,” said Séverin. “Something that can pull men apart—” “Money?” asked Enrique. “Love!” said Hypnos. “Magnets,” said Zofia."
-   },
-   {
-    "type": "paragraph",
-    "text": "“The difference between a diamond necklace and a diamond dog collar depends on the bitch. And they both have teeth, Monsieur.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "He wanted someone who would enter a room and look for him first, to behold him as though the secrets of the world lay somewhere in his gaze, to finish his sentences. Someone to share cake with."
-   },
-   {
-    "type": "paragraph",
-    "text": "Before you are born, you know all the secrets of the world. But an angel locked them up by pressing his thumb right above your lips. That’s why everyone has a dent right above their mouth.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "“May our ends justify our means,”"
-   },
-   {
-    "type": "paragraph",
-    "text": "Maybe for girls made of snow, love was worth the melt. But she was made of stolen bones and sleek fur, grave dirt and strange blood—her heart wasn’t even hers to give. Her soul was all she had, and no love was worth losing it."
-   },
-   {
-    "type": "paragraph",
-    "text": "“Madame Delphine, depending on who you ask, sometimes ghost stories are all that is left of history,” he said. “History is full of ghosts because it’s full of myth, all of it woven together depending on who survived to do the telling.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "She understood how the world cultivated malice between girls, teaching them to bare their teeth when they might have bared their souls."
-   },
-   {
-    "type": "paragraph",
-    "text": "When a man cannot see a person as a person, then the devil has slipped into him and is peering out of his eyes.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "My life, and whatever is left of it, will not be what his soul gnaws on to regain its strength. My death is not in service to his character, and I will not be a sacrifice simply for him to find peace of mind. He is not my responsibility to save.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "Zofia nodded and had the irrational desire to wish that some words could be solid and picked up off the ground and held close, so that she could reach for them whenever she needed. “I will.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "Sometimes she needed help, but that did not make her helpless."
-   },
-   {
-    "type": "paragraph",
-    "text": "It was power, she realized, and she quite liked it."
-   },
-   {
-    "type": "paragraph",
-    "text": "“You make the choice that you can live with. You do not have to like it.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "When the devil waged war in the heavens, even angels had to fall.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "he understood that perhaps monsters were misunderstood gods; deities with plans too grand for humans; a phantom of evil that drank from the roots of good."
-   },
-   {
-    "type": "paragraph",
-    "text": "“Love does not always wear the face we wish,” she said. “I wish my love had been more beautiful. I wish … I wish we had more time.”"
-   }
-  ]
- },
- {
-  "id": "quote-the-stolen-heir-the-stolen-heir-duology-1",
-  "title": "The Stolen Heir (The Stolen Heir Duology, #1)",
-  "author": "Holly Black",
-  "genre": "Newly added",
-  "kicker": "Holly Black · Newly added",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "text": "netting, and which is hung with gold beads."
-   },
-   {
-    "type": "paragraph",
-    "text": "Cursing him for addling"
-   },
-   {
-    "type": "paragraph",
-    "text": "“Daughter of the sun,” I read. “Yet made for night, fire causes her to weep, and if she dies before her time, cut off her head and she may be reborn.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "sacrificing that which they cared most about."
-   },
-   {
-    "type": "paragraph",
-    "text": "“That you never stopped being angry,” he tells me. “It can be brave to hate. Sometimes it’s like hope.”"
-   }
-  ]
- },
- {
-  "id": "quote-these-violent-delights-these-violent-delights-1",
-  "title": "These Violent Delights (These Violent Delights, #1)",
-  "author": "Chloe Gong",
-  "genre": "Newly added",
-  "kicker": "Chloe Gong · Newly added",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "text": "Fear was a concept for the men without guns."
-   },
-   {
-    "type": "paragraph",
-    "text": "Now it may be ugly, but it is glorious."
-   },
-   {
-    "type": "paragraph",
-    "text": "“These days, Juliette,” he said, low and warily, “the most dangerous people are the powerful white men who feel as if they have been slighted.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "But Juliette still needed to keep herself in line, force herself to follow them if people were to look up to her. Without her looks, this city would turn on her. It would claim that she didn’t deserve to be as competent as she was. The men, meanwhile, could be as tan, as fat, and as old as they wished. It would have no bearing on what people thought of them."
-   },
-   {
-    "type": "paragraph",
-    "text": "“She’s too kindhearted for her own good,” Rosalind remarked. “Let her be,” Juliette replied. “Too many kind hearts turn cold every day.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "She wished she could fill herself up like this. She wished she could press mounds of rich soil into the gaps of her heart, occupying the space until flowers could take root and grow roses."
-   },
-   {
-    "type": "paragraph",
-    "text": "I suppose I am sorry that I am not more sorry."
-   },
-   {
-    "type": "paragraph",
-    "text": "and what could endure alongside others with such teeth if it didn’t have ghastly claws of its own?"
-   },
-   {
-    "type": "paragraph",
-    "text": "Juliette pushed past her nerves. She had conquered much fiercer opponents than a loud heartbeat. Now or never."
-   },
-   {
-    "type": "paragraph",
-    "text": "I made my choice to believe in you—now you make yours. Will you keep fighting, or will you crumble?” She had spent a lifetime doing both."
-   },
-   {
-    "type": "paragraph",
-    "text": "Even the land of dreams needs to wake up sometimes."
-   },
-   {
-    "type": "paragraph",
-    "text": "Those who remain alive do not remain loyal.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "Paul Dexter went into death with three eyes open—the third eye a weeping bullet wound."
-   }
-  ]
- },
- {
-  "id": "quote-this-savage-song-monsters-of-verity-1",
-  "title": "This Savage Song (Monsters of Verity, #1)",
-  "author": "Victoria Schwab",
-  "genre": "Newly added",
-  "kicker": "Victoria Schwab · Newly added",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "text": "It began with a bang. The words reminded him of a T. S. Eliot poem, “The Hollow Men.” Not with a bang but a whimper. Of course, one was talking about the beginning of life and the other about the end, but it still got August thinking: about the universe, about time, about himself."
-   },
-   {
-    "type": "paragraph",
-    "text": "Henry Flynn had kind eyes and a sad mouth, or sad eyes and a kind mouth; he could never keep them straight."
-   },
-   {
-    "type": "paragraph",
-    "text": "too often touching was a part of taking"
-   }
-  ]
- },
- {
-  "id": "quote-vengeful-villains-2",
-  "title": "Vengeful (Villains, #2)",
-  "author": "V.E. Schwab",
-  "genre": "Newly added",
-  "kicker": "V.E. Schwab · Newly added",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "text": "While seeking revenge, dig two graves—one for yourself."
-   },
-   {
-    "type": "paragraph",
-    "text": "Perhaps she was glass. But glass is only brittle until it breaks. Then it’s sharp."
-   },
-   {
-    "type": "paragraph",
-    "text": "Even back when he wanted to become one, it had never been in the interest of saving patients. He’d been drawn to the field of medicine for the knowledge, the authority, the control. He’d wanted to be the hand holding the scalpel, not the flesh parting beneath it."
-   },
-   {
-    "type": "paragraph",
-    "text": "He had craved a lot of things—power, revenge, control—but sex was never one of them. Even with Angie . . . he’d wanted her, of course, wanted her attention, her devotion, even her love. He’d cared about her, would have found ways to please her—and perhaps found his own pleasure in that—but for him, it had never been about sex."
-   },
-   {
-    "type": "paragraph",
-    "text": "“I don’t want you to save me,” said Sydney. “I want to save myself.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "Serena didn’t bend to the world. She made the world bend to her."
-   },
-   {
-    "type": "paragraph",
-    "text": "But beggars couldn’t be choosers."
-   },
-   {
-    "type": "paragraph",
-    "text": "She was bored by being called beautiful, and then a bitch. Stunning, and then stuck up. A ten, and then a tease."
-   },
-   {
-    "type": "paragraph",
-    "text": "Marcella had always been pretty. The kind of pretty people couldn’t ignore. Bright blue eyes and pitch-black hair, a heart-shaped face atop the lean, clean lines of a model. Her father told her she’d never have to work. Her mother said she’d have to work twice as hard. In a way, both of them were right."
-   },
-   {
-    "type": "paragraph",
-    "text": "What do you want to be?” Marcella twirled her beer. “In charge.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "“I’m not a fucking coat, Marcus. You don’t get to check me at the door.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "Better to be friendly, without being friends."
-   },
-   {
-    "type": "paragraph",
-    "text": "the table falling to easy conversation—so much spoken, so little said"
-   },
-   {
-    "type": "paragraph",
-    "text": "Men ahead of their time were always, by definition, outside of it."
-   },
-   {
-    "type": "paragraph",
-    "text": "How many men would she have to turn to dust before one took her seriously?"
-   },
-   {
-    "type": "paragraph",
-    "text": "Ask nice. Play nice. Marcella was so fucking tired of nice."
-   },
-   {
-    "type": "paragraph",
-    "text": "But heroin was a hell of a high. Not the roller coaster peaks of cocaine, or the mellow que sera sera of good weed, but a dreamy wave, a blissful way out of your own life, and your own head, a summer midnight swim in the ocean bare-assed kind of freedom—at first."
-   },
-   {
-    "type": "paragraph",
-    "text": "Claire didn’t deserve it, didn’t deserve this, to become a past tense,"
-   },
-   {
-    "type": "paragraph",
-    "text": "“Why sit around sulking,” she said, “when you could hurt the people who hurt you?”"
-   },
-   {
-    "type": "paragraph",
-    "text": "“Is it a kindness,” asked Victor, his voice breaking the stillness, “to loose prey back into the world, simply to be shot again?”"
-   },
-   {
-    "type": "paragraph",
-    "text": "“But I don’t want to survive,” sneered Marcella. “I want to thrive."
-   },
-   {
-    "type": "paragraph",
-    "text": "You do what you can. You fight, and you win, until you don’t.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "“LAST call for second thoughts,” murmured June. “Or second call for last ones.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "Run, thought Victor, and he could see the response in Eli’s coiled frame. Chase me."
-   }
-  ]
- },
- {
-  "id": "quote-vicious-villains-1",
-  "title": "Vicious (Villains, #1)",
-  "author": "V.E. Schwab",
-  "genre": "Newly added",
-  "kicker": "V.E. Schwab · Newly added",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "text": "Be lost And then you will not care if you are ever found."
-   },
-   {
-    "type": "paragraph",
-    "text": "But what fascinated Victor most was the fact that something about Eli was decidedly wrong. He was like one of those pictures full of small errors, the kind you could only pick out by searching the image from every angle, and even then, a few always slipped by."
-   },
-   {
-    "type": "paragraph",
-    "text": "“I know,” said Victor. “But I want to see Eli.” “Why?” she asked. “You can’t kill him.” “That may be.” His fingers curled around the shovel. “But half the fun is trying.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "But Victor didn’t want to run while Eli was busy trying to fly."
-   },
-   {
-    "type": "paragraph",
-    "text": "Hell, we could be heroes.” “We could be dead,” said Eli. “That’s a risk everyone takes by living.”"
-   },
-   {
-    "type": "paragraph",
-    "text": "It perplexed him, how someone about to play God could pray to Him,"
-   },
-   {
-    "type": "paragraph",
-    "text": "If Eli really was a hero, and Victor meant to stop him, did that make him a villain?"
-   },
-   {
-    "type": "paragraph",
-    "text": "He took a long sip of his drink, tipped his head back against the couch, and decided he could live with that."
-   },
-   {
-    "type": "paragraph",
-    "text": "Victor’s mind had always been drawn to those solutions, but he had been impeded by an understanding of right and wrong, or at least what he knew others saw as right and wrong. But now, this... this was simple. Elegant."
-   },
-   {
-    "type": "paragraph",
-    "text": "He cut deeper, through to bone, over and over, until the floor was red. Until he’d given his life to God a hundred times, and a hundred times had it given back."
-   },
-   {
-    "type": "paragraph",
-    "text": "And those who ally themselves with monsters are little better than monsters themselves."
-   },
-   {
-    "type": "paragraph",
-    "text": "“Who taught you to sing so loud? The little Sydney I knew could barely chirp.”"
-   }
-  ]
- },
- {
   "id": "quote-affinita",
   "title": "Affinità",
   "author": "Sarah Waters",
@@ -3561,6 +611,35 @@ window.FN_QUOTE_BOOKS = [
    {
     "type": "paragraph",
     "text": "My young heart thumped out dryly, deep inside my chest. My feelings became a sharp-edged wedge driven with a mallet unfailingly into the right gap."
+   }
+  ]
+ },
+ {
+  "id": "quote-the-complete-novels-the-trial-the-castle-amerika",
+  "title": "The Complete Novels (The Trial, The Castle, Amerika)",
+  "author": "Franz Kafka",
+  "genre": "Novels & stories",
+  "kicker": "Franz Kafka · Novels & stories",
+  "blocks": [
+   {
+    "type": "paragraph",
+    "text": "It’s only because of their stupidity that they’re able to be so sure of themselves."
+   },
+   {
+    "type": "paragraph",
+    "text": "“I expect you’ll say,” K. began, “that the matter really isn’t all that urgent and we don’t need to talk about it right now, but... “ “I never listen to introductions,” said Miss Bürstner."
+   },
+   {
+    "type": "paragraph",
+    "text": "in, I only fear danger where I want to fear it."
+   },
+   {
+    "type": "paragraph",
+    "text": "Big, strong girls like that often don’t know how to be anything but gentle and friendly."
+   },
+   {
+    "type": "paragraph",
+    "text": "K. felt slightly abandoned as, probably observed by the priest, he walked by himself between the empty pews, and the size of the cathedral seemed to be just at the limit of what a man could bear."
    }
   ]
  },
@@ -4440,6 +1519,27 @@ window.FN_QUOTE_BOOKS = [
   ]
  },
  {
+  "id": "quote-heart-of-a-dog",
+  "title": "Heart of a Dog",
+  "author": "Mikhail Bulgakov",
+  "genre": "Novels & stories",
+  "kicker": "Mikhail Bulgakov · Novels & stories",
+  "blocks": [
+   {
+    "type": "paragraph",
+    "text": "You can't serve two gods! You can't sweep the dirt out of the tram tracks and settle the fate of the Spanish beggars at the same time!"
+   },
+   {
+    "type": "paragraph",
+    "text": "'One can find time for everything if one is never in a hurry,'"
+   },
+   {
+    "type": "paragraph",
+    "text": "A collar's just like a briefcase, the dog smiled to himself. Wagging his tail, he climbed up to the mezzanine like a gentleman."
+   }
+  ]
+ },
+ {
   "id": "quote-house-of-mirth",
   "title": "The House of Mirth",
   "author": "Edith Wharton",
@@ -4855,6 +1955,79 @@ window.FN_QUOTE_BOOKS = [
   ]
  },
  {
+  "id": "quote-le-intermittenze-della-morte",
+  "title": "Le intermittenze della morte",
+  "author": "José Saramago",
+  "genre": "Novels & stories",
+  "kicker": "José Saramago · Novels & stories",
+  "blocks": [
+   {
+    "type": "paragraph",
+    "text": "Purtroppo, quando si avanza alla cieca nei pantanosi terreni della realpolitik, quando il pragmatismo s’impossessa della bacchetta e dirige il concerto senza badare a cosa c’è scritto nello spartito, è più che sicuro che la logica imperativa del degrado finisca per dimostrare che, in definitiva, c’era ancora qualche gradino da scendere."
+   },
+   {
+    "type": "paragraph",
+    "text": "la loro è solo invidia che nella nostra patria non si muore,"
+   },
+   {
+    "type": "paragraph",
+    "text": "attraversavano la frontiera, coi piedi in avanti perché la testa potesse rendersi conto di cosa stava capitando al resto del corpo, che gli infelici trapassavano, esalavano l’ultimo respiro."
+   },
+   {
+    "type": "paragraph",
+    "text": "Ma la maphia non sarebbe quello che è se non avesse trovato la soluzione del problema."
+   },
+   {
+    "type": "paragraph",
+    "text": "una società divisa fra la speranza di vivere sempre e il timore di non morire mai"
+   },
+   {
+    "type": "paragraph",
+    "text": "sembra che tu non veda che le parole sono etichette che si appiccicano alle cose, non sono le cose, tu non saprai mai come sono le cose, e neppure quali sono i loro nomi nella realtà, perché i nomi che tu hai dato loro non sono altro che questo, i nomi che tu gli hai dato, Chi"
+   },
+   {
+    "type": "paragraph",
+    "text": "Perché ciascuno di voi ha una propria morte, la porta con sé in un luogo segreto sin da quando nasce, lei appartiene a te, tu appartieni a lei,"
+   },
+   {
+    "type": "paragraph",
+    "text": "ma nelle malattie c’è qualcosa di curioso, gli esseri umani sperano sempre di cavarsela,"
+   },
+   {
+    "type": "paragraph",
+    "text": "le parole, se non lo sa, si muovono molto, cambiano da un giorno all’altro, sono instabili come le ombre, ombre di se stesse, che tanto ci sono quanto non ci sono più, bolle di sapone, conchiglie di cui a stento si sente il respiro,"
+   },
+   {
+    "type": "paragraph",
+    "text": "Qualche orgetta di sesso, droga e alcol, come aveva sentito dire che si organizzavano, lo avrebbe aiutato a passare all’altro mondo, sia pur correndo il rischio che poi, laggiù nell’eterea dimora cui sei asceso, ti si venga a rincarare la nostalgia di questo."
+   },
+   {
+    "type": "paragraph",
+    "text": "Se è vero che non sorride mai, è solo perché le mancano le labbra, e questa lezione di anatomia ci dice che, al contrario di ciò che ritengono i vivi, il sorriso non è una questione di denti."
+   },
+   {
+    "type": "paragraph",
+    "text": "un pianto non dev’essere, non si può chiedere tanto a chi lascia sempre una scia di lacrime dovunque passa, ma mai nessuna che sia sua."
+   },
+   {
+    "type": "paragraph",
+    "text": "Dei momenti di debolezza nella vita chiunque potrà averli, e, se oggi ce l’abbiamo fatta senza, ce li avremo assicurati domani."
+   },
+   {
+    "type": "paragraph",
+    "text": "con la tua licenza di uccidere zero zero sette priva di validità in questa casa,"
+   },
+   {
+    "type": "paragraph",
+    "text": "la vita è un’orchestra che suona sempre, intonata, stonata, un piroscafo titanic che affonda sempre e sempre torna in superficie, ed è allora"
+   },
+   {
+    "type": "paragraph",
+    "text": "La prudenza serve unicamente a rinviare l’inevitabile,"
+   }
+  ]
+ },
+ {
   "id": "quote-lessico-famigliare",
   "title": "Lessico famigliare",
   "author": "Natalia Ginzburg",
@@ -5149,6 +2322,63 @@ window.FN_QUOTE_BOOKS = [
   ]
  },
  {
+  "id": "quote-milk-fed",
+  "title": "Milk Fed",
+  "author": "Melissa Broder",
+  "genre": "Novels & stories",
+  "kicker": "Melissa Broder · Novels & stories",
+  "blocks": [
+   {
+    "type": "paragraph",
+    "text": "They say the perfect is the enemy of the good, that if you strive for perfection you will overlook the good. But I did not agree. I didn’t like the good. The good was just mediocre. I wanted to go beyond mediocre. I wanted to be exceptional."
+   },
+   {
+    "type": "paragraph",
+    "text": "I decided that love is when you have food in your mouth that you know is not going to make you fat. Lust is when you have food in your mouth that is going to make you fat."
+   },
+   {
+    "type": "paragraph",
+    "text": "People in LA were always recommending things that were more about themselves than the recipient."
+   },
+   {
+    "type": "paragraph",
+    "text": "But in my desire to curate Miriam, I’d become just another version of an obsessive recommender. I wanted to show the world how beautiful she was, to present a different type of beauty, and in doing so, to own part of her. I felt that if the world embraced Miriam, I’d be healing something in me—making amends with young Rachel. But I didn’t entirely trust the world to grasp her beauty. So I sweetened the pot with little aesthetic upgrades."
+   },
+   {
+    "type": "paragraph",
+    "text": "I had thought that I was the sculptor and she was the golem. But now I considered that she might be the sculptor, the maestro, the creatrix, expanding and improving me, giving life to my dead parts, laughter to my breath. Maybe she was remaking me in her image. Maybe we were remaking each other."
+   },
+   {
+    "type": "paragraph",
+    "text": "“Just because it feels good doesn’t mean it’s wrong,” said the rabbi."
+   },
+   {
+    "type": "paragraph",
+    "text": "If a person had a monstrous soul, should she still follow it?"
+   },
+   {
+    "type": "paragraph",
+    "text": "I was a woman of impulse, a woman of instinct. I was a woman of pleasure and a woman of confidence. I was a woman of appetites, a growling beast. I was a person."
+   },
+   {
+    "type": "paragraph",
+    "text": "I imagined googling, How to make a golem fall in love with you. Maybe that’s all that prayer was anyway—a cosmic google. In that case, any iPhone could be a synagogue. I wished I could FaceTime with Rabbi Judah."
+   },
+   {
+    "type": "paragraph",
+    "text": "I looked at her face in the glow of the movie screen, swaths of light and shadow flickering on and off her pale skin. She was like a moon cycling through all its phases in rapid-fire."
+   },
+   {
+    "type": "paragraph",
+    "text": "If I did not love Miriam, if it was purely attraction, then I felt that I would never know what love was—and I did not care to know. And when she left, I got down on my knees and touched my face to the ground. “Thank you, thank you, thank you,” I said to who knew what."
+   },
+   {
+    "type": "paragraph",
+    "text": "I should have been prepared. Love goes. But what I hadn’t known was how good the love would feel when it was there, like a hymn moving through me all the time. Or if Jews didn’t have hymns, then a rhythm. I’d moved my body in time to it the best I could. But I hadn’t been able to hold on."
+   }
+  ]
+ },
+ {
   "id": "quote-orlando",
   "title": "Orlando",
   "author": "Virginia Woolf",
@@ -5186,6 +2416,111 @@ window.FN_QUOTE_BOOKS = [
    {
     "type": "paragraph",
     "text": "But she would put it to the test"
+   }
+  ]
+ },
+ {
+  "id": "quote-il-paese-delle-nevi",
+  "title": "Il paese delle nevi",
+  "author": "Yasunari Kawabata",
+  "genre": "Novels & stories",
+  "kicker": "Yasunari Kawabata · Novels & stories",
+  "blocks": [
+   {
+    "type": "paragraph",
+    "text": "Era come amare una donna che non avesse mai visto."
+   },
+   {
+    "type": "paragraph",
+    "text": "Soli nella quiete essi avevano poco da dirsi."
+   },
+   {
+    "type": "paragraph",
+    "text": "Era come se parlasse di una lontanissima letteratura straniera. C’era qualcosa di smarrito, di triste, in ciò, qualcosa che suggeriva l’idea di un mendicante che abbia perso ogni desiderio."
+   },
+   {
+    "type": "paragraph",
+    "text": "crepitio della neve che gelava sulla terra pareva rimbombare nelle sue profondità."
+   },
+   {
+    "type": "paragraph",
+    "text": "Non c’era luna. Le stelle, troppe per sembrare vere, si affacciavano in cielo con uno scintillio cosí vivo che parevano precipitare nel vuoto. E piú le stelle si avvicinavano, piú il cielo pareva sprofondare nel colore della notte. Le vette della catena montuosa confondendosi l’una con l’altra, si levavano massicce sull’orlo del cielo stellato in un’oscurità cosí greve e fosca che pareva partecipare del loro peso. L’insieme della scena notturna si fondava in una pura, serena armonia."
+   },
+   {
+    "type": "paragraph",
+    "text": "Chissà se tutti i ciechi sembrano piú giovani di quanto siano in realtà? si chiese Shimamura."
+   },
+   {
+    "type": "paragraph",
+    "text": "Le prime note aprirono nelle sue viscere un vuoto immenso, trasparente, e in quel vuoto echeggiò il suono del samisen."
+   },
+   {
+    "type": "paragraph",
+    "text": "Basta che nevichi due giorni e ne avremo quasi due metri. Poi nevica di nuovo e fra non molto le luci su quei pali non si vedranno piú. Io camminerò pensando a voi e mi ritroverò strangolata da un filo. – È cosí alta la neve?"
+   },
+   {
+    "type": "paragraph",
+    "text": "Ma io non voglio. Non voglio vedere un uomo morire."
+   },
+   {
+    "type": "paragraph",
+    "text": "Dal finestrino del treno dava l’idea di uno strano frutto dimenticato dentro uno sporco vaso di vetro in una povera drogheria di paese."
+   },
+   {
+    "type": "paragraph",
+    "text": "Fuori della finestra il rosso luminoso dei kaki maturi era bagnato dal sole morente."
+   },
+   {
+    "type": "paragraph",
+    "text": "Insetti piú piccoli delle tarme si raccolsero sulla spessa cipria bianca che le copriva il collo. Alcuni di essi vi morirono mentre Shimamura li guardava."
+   },
+   {
+    "type": "paragraph",
+    "text": "La gente è delicata, vero? – aveva detto Komako quella mattina. – Ridotta in poltiglia, si dice, cranio, ossa e tutto. Un orso potrebbe cadere dalla roccia piú alta e non ferirsi minimamente –. C’era stato un altro incidente su fra le rocce, e ella aveva indicato la montagna sulla quale era accaduto. Se l’uomo avesse una pelle ruvida e pelosa come l’orso, senz’altro la sua vita sarebbe diversa, pensò Shimamura. Era attraverso una pelle sottile e liscia che l’uomo amava."
+   },
+   {
+    "type": "paragraph",
+    "text": "Quando era lontano pensava incessantemente a Komako; ma ora che le era vicino questo desiderio della pelle umana assumeva l’indeterminatezza di un sogno, simile al fascino delle montagne."
+   },
+   {
+    "type": "paragraph",
+    "text": "Io non riesco mai ad essere completamente leale con i vivi, e desidero almeno essere onesta con lui ora che è morto. Uscirono dal bosco di cedri dove la pace pareva cadere in gelide gocce."
+   },
+   {
+    "type": "paragraph",
+    "text": "una voce cosí bella e quasi triste che pareva invocare qualcuno che non potesse udire, su una nave lontana."
+   },
+   {
+    "type": "paragraph",
+    "text": "Una donna sola può sempre tirare avanti"
+   },
+   {
+    "type": "paragraph",
+    "text": "C’erano lacrime agli angoli degli occhi di Yoko. Tirò su col naso mentre colpiva una piccola tarma sul tappeto. – Komako dice che diventerò pazza –. Dopo di che scivolò via dalla stanza."
+   },
+   {
+    "type": "paragraph",
+    "text": "– Siete sola come la femmina della volpe di notte, non è vero? – Proprio cosí."
+   },
+   {
+    "type": "paragraph",
+    "text": "Però non c’è gusto a bere al buio."
+   },
+   {
+    "type": "paragraph",
+    "text": "Le operaie ignote, cosí diligenti nella loro vita, erano morte, ormai, e restava solamente il Chijimi, fresco e morbido sulla pelle in estate, delizia di uomini come Shimamura. Questo insignificante pensiero lo colpí come fosse carico di significato. Il lavoro in cui un cuore ha riversato tutto il suo affetto – dove sarà destinato a suscitare emozione e pensiero, e quando?"
+   },
+   {
+    "type": "paragraph",
+    "text": "La Via Lattea s’inarcava su di essi nella direzione in cui correvano e sembrava bagnare con la sua luce i capelli di Komako."
+   },
+   {
+    "type": "paragraph",
+    "text": "Eppure una sorta di pace incombeva su quella scena terrificante, come se tutti fossero senza voce davanti alle fiamme, come se a tutti fosse stato strappato il cuore."
+   },
+   {
+    "type": "paragraph",
+    "text": "Con la passività di una bambola, e la libertà di un oggetto senza vita, pareva tenere a bada contemporaneamente la vita e la morte."
    }
   ]
  },
@@ -5628,6 +2963,367 @@ window.FN_QUOTE_BOOKS = [
   ]
  },
  {
+  "id": "quote-babel-or-the-necessity-of-violence",
+  "title": "Babel, or The Necessity of Violence",
+  "author": "R.F. Kuang",
+  "genre": "Fantasy & science fiction",
+  "kicker": "R.F. Kuang · Fantasy & science fiction",
+  "blocks": [
+   {
+    "type": "paragraph",
+    "text": "London was voracious, was growing fat on its spoils and still, somehow, starved."
+   },
+   {
+    "type": "paragraph",
+    "text": "After all, we’re here to make the unknown known, to make the other familiar."
+   },
+   {
+    "type": "paragraph",
+    "text": "You fly no one’s flag. You’re free to seek your own harbour. And you can do so much more than tread water.’"
+   },
+   {
+    "type": "paragraph",
+    "text": "‘Survival’s not that difficult, Birdie.’ Ramy’s eyes were very hard. ‘But you’ve got to maintain some dignity while you’re at it.’"
+   },
+   {
+    "type": "paragraph",
+    "text": "‘But that’s the great contradiction of colonialism.’ Cathy uttered this like a simple matter of fact. ‘It’s built to destroy that which it prizes most.’"
+   },
+   {
+    "type": "paragraph",
+    "text": "‘That’s just what translation is, I think. That’s all speaking is. Listening to the other and trying to see past your own biases to glimpse what they’re trying to say. Showing yourself to the world, and hoping someone else understands.’"
+   }
+  ]
+ },
+ {
+  "id": "quote-blood-honey",
+  "title": "Blood & Honey",
+  "author": "Shelby Mahurin",
+  "genre": "Fantasy & science fiction",
+  "kicker": "Shelby Mahurin · Fantasy & science fiction",
+  "blocks": [
+   {
+    "type": "paragraph",
+    "text": "“Ask me no questions, mon amour, and I shall tell you no lies.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "“You’re impossible.” “I’m impractical, improbable, but never impossible.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "“And when everything is a matter of life and death for us, the stakes are higher. The more we gain, the more we lose.”"
+   }
+  ]
+ },
+ {
+  "id": "quote-the-bronzed-beasts",
+  "title": "The Bronzed Beasts",
+  "author": "Roshani Chokshi",
+  "genre": "Fantasy & science fiction",
+  "kicker": "Roshani Chokshi · Fantasy & science fiction",
+  "blocks": [
+   {
+    "type": "paragraph",
+    "text": "There was power in knowing not just how to move through the world, but how to make the world move around you."
+   },
+   {
+    "type": "paragraph",
+    "text": "Venice seemed like a place half-sculpted from a child’s daydream. It was a floating city knitted all over with marble bridges, full of sunken doors wearing the faces of grinning gods."
+   },
+   {
+    "type": "paragraph",
+    "text": "Holding on to him would be like trying to wrestle down the moon."
+   },
+   {
+    "type": "paragraph",
+    "text": "Hope was an exercise in delusion."
+   }
+  ]
+ },
+ {
+  "id": "quote-the-burning-god",
+  "title": "The Burning God",
+  "author": "R.F. Kuang",
+  "genre": "Fantasy & science fiction",
+  "kicker": "R.F. Kuang · Fantasy & science fiction",
+  "blocks": [
+   {
+    "type": "paragraph",
+    "text": "Hate was a funny thing. It gnawed at her insides like poison. It made every muscle in her body tense, made her veins boil so hot she thought her head might split in half, and yet it fueled everything she did. Hate was its own kind of fire and if you had nothing else, it kept you warm."
+   },
+   {
+    "type": "paragraph",
+    "text": "Maybe no one was truly a beast. Maybe that was just how murder became possible. You took away someone’s humanity, and then you killed them."
+   },
+   {
+    "type": "paragraph",
+    "text": "“You’re my bitch now, Souji."
+   },
+   {
+    "type": "paragraph",
+    "text": "The best plans were a secret until their execution. The hidden knife cut the deepest."
+   },
+   {
+    "type": "paragraph",
+    "text": "They would drown them in their blood."
+   },
+   {
+    "type": "paragraph",
+    "text": "“You don’t fix hurts by pretending they never happened. You treat them like infected wounds. You dig deep with a burning knife and gouge out the rotten flesh and then, maybe, you have a chance to heal.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "“They’re skinning people alive,” Venka said. “Because they traded little girls for food rations.” “Oh. Fair enough.” Venka flicked an invisible speck of dust from her wrist. “I hope they castrated them, too.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "“It doesn’t go away. It never will. But when it hurts, lean into it. It’s so much harder to stay alive. That doesn’t mean you don’t deserve to live. It means you’re brave.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "Here we are, they said. Watch us thrive. We’ve escaped the past, and we own the future."
+   },
+   {
+    "type": "paragraph",
+    "text": "This wasn’t about lust, this was about power. This was about possession. He wanted to dominate her just so that later he could crow that he had."
+   },
+   {
+    "type": "paragraph",
+    "text": "“People are attracted to power, darling. They can’t help themselves. Power seduces. Exert it, make a show of it, and they’ll follow you.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "Kill your rivals on sight.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "The Hesperians understand culture as a straight line.” Daji dragged her finger through the air. “One starting point, and one destination. They are at the end of the line. They loved the Mugenese because they came close. But any culture or state that diverges is necessarily inferior. We are inferior, until we speak, dress, act, and worship just like them.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "Jiang whistled. “Well, that’s not a prison.” “It’s worse,” Rin said. “That’s a church.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "It wasn’t about the violence. It was about the power."
+   },
+   {
+    "type": "paragraph",
+    "text": "“He got plucky,” Daji said. “I turned him to mincemeat and sent him back to Vaisra in a dumpling basket.” Jiang arched an eyebrow. “Darling, fucking what?”"
+   },
+   {
+    "type": "paragraph",
+    "text": "She understood now what she needed to do to cling to power: submerge the world in chaos, and forge her authority from the broken pieces."
+   },
+   {
+    "type": "paragraph",
+    "text": "The point of revenge wasn’t to heal. The point was that the exhilaration, however temporary, drowned out the hurt."
+   },
+   {
+    "type": "paragraph",
+    "text": "You were only ever fighting to survive, Gurubai. I was fighting to win. And history doesn’t favor stability, it favors initiative.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "“You cunt,” Souji gasped. “I love the way you talk to me,” she cooed."
+   },
+   {
+    "type": "paragraph",
+    "text": "Through love or hate, adoration or fear, she would have them one way or another."
+   },
+   {
+    "type": "paragraph",
+    "text": "I’m not crawling into oblivion with a whimper,"
+   },
+   {
+    "type": "paragraph",
+    "text": "he didn’t know whether he dreamed of transforming into a butterfly at night, or whether he was always living in a butterfly’s dream. This world is a butterfly’s dream. This world is the gods’ dream. And when we dream of the gods, that just means we’ve woken up. Does that make sense?”"
+   },
+   {
+    "type": "paragraph",
+    "text": "Small wonder Nezha had chosen his Republic over her. She’d have done the same in a heartbeat. Enjoy your Republic, she thought, fingers curling against the cold armrest. Enjoy it while it lasts, Young Marshal. Take a good look at your splendor, and remember well how it feels. Because I am coming to burn it all down beneath you."
+   },
+   {
+    "type": "paragraph",
+    "text": "Yet, Rin supposed, lovers could still inflict that kind of violence on each other. Hadn’t Riga loved Daji? Hadn’t Jiang loved Tseveri? Hadn’t Nezha once loved her?"
+   },
+   {
+    "type": "paragraph",
+    "text": "that the universe was a waking dream, a fragile and mutable thing, a blur of colors shaped by the unpredictable whims of divinity."
+   },
+   {
+    "type": "paragraph",
+    "text": "“You can still love your weapons,” Altan said. “You can beat them into shape and then watch them destroy themselves and know that it was all fully necessary, but that doesn’t mean you can’t love them, too.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "He always looked so different in the moonlight."
+   },
+   {
+    "type": "paragraph",
+    "text": "Overnight, she had become as close to a god as a mortal could be. I’ve reached behind the canvas, she thought. And now I hold the brush."
+   },
+   {
+    "type": "paragraph",
+    "text": "Take what you want, it said. I’ll hate you for it. But I’ll love you forever. I can’t help but love you. Ruin me, ruin us, and I’ll let you."
+   },
+   {
+    "type": "paragraph",
+    "text": "He knew exactly what choice she’d made and what she’d intended. And that made everything—hating her, loving her, surviving her—so much harder. Fix this."
+   },
+   {
+    "type": "paragraph",
+    "text": "Fix this? Fix this? What did he have left to work with? She’d broken everything."
+   },
+   {
+    "type": "paragraph",
+    "text": "She was a goddess. She was a monster. She’d nearly destroyed this country. And then she’d given it one last, gasping chance to live."
+   }
+  ]
+ },
+ {
+  "id": "quote-chain-of-iron",
+  "title": "Chain of Iron",
+  "author": "Cassandra Clare",
+  "genre": "Fantasy & science fiction",
+  "kicker": "Cassandra Clare · Fantasy & science fiction",
+  "blocks": [
+   {
+    "type": "paragraph",
+    "text": "“Why,” he said, “are you not even wearing a hat?” “And cover up this hair?” Matthew indicated his golden locks with a flourish. “Would you blot out the sun?”"
+   },
+   {
+    "type": "paragraph",
+    "text": "“I forget sometimes that mortals joke—it is a sort of lie, isn’t it, yet meant to be funny?"
+   },
+   {
+    "type": "paragraph",
+    "text": "“Matthew has a habit of getting his heart broken. He seems to prefer a hopeless love.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "To not be the martyred slave of Time, be intoxicated; be unceasingly intoxicated! With wine, with poetry, with virtue, as you wish."
+   },
+   {
+    "type": "paragraph",
+    "text": "“When Matthew plans a special something, it’s usually either terribly delightful or delightfully terrible,”"
+   },
+   {
+    "type": "paragraph",
+    "text": "“Water,” Christopher said. “Do we have any water?”"
+   },
+   {
+    "type": "paragraph",
+    "text": "“Have you wished me gone?” he said teasingly. “No."
+   },
+   {
+    "type": "paragraph",
+    "text": "“She seemed—well, quite puffy and golden, from what I could see.” “You make her sound like a Yorkshire pudding,” said James darkly."
+   },
+   {
+    "type": "paragraph",
+    "text": "The Herondales are made to love, her mother had said. They give all they have and keep back nothing."
+   },
+   {
+    "type": "paragraph",
+    "text": "that just as it was a torment to love, it might be a torment to be loved. To be loved, and to know it was not real."
+   },
+   {
+    "type": "paragraph",
+    "text": "the restless dissatisfaction that seemed to drive him, the way he had of being very sad, or very happy, with little in between."
+   },
+   {
+    "type": "paragraph",
+    "text": "The wound is the place where the Light enters you."
+   },
+   {
+    "type": "paragraph",
+    "text": "“Each man kills the thing he loves.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "Sometimes Cordelia wondered if her unrequited love was a sort of third member of their household, present even when she was not—haunting James’s steps, wrapping ghostly arms about him as he tied his tie before the mirror, curling up insubstantially beside him as he slept."
+   },
+   {
+    "type": "paragraph",
+    "text": "“Only a coward needs to be rescued by his little sister.” Alastair’s expressive eyebrows flickered. “And only an ass puts other people into situations in which they need to be rescued at all.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "How do I live in this moment forever, and not let it go?"
+   },
+   {
+    "type": "paragraph",
+    "text": "“WHAT?” said Thomas, so loudly they all jumped. “Sorry,” he said. “I was all prepared to shout and I hadn’t got a chance yet.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "Contrary to what your beloved poets say, unrequited love doesn’t last forever. And being treated badly by someone doesn’t make you love them more.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "“The point is,” Tatiana said, “we must take all power that is available to us, for we are so far below others. We must take it just to have a chance to survive at all.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "“All I want for you, Math, is that you love yourself as much as I love you.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "I sought not fire, yet is my heart all flame. Layla, this love is not of earth."
+   },
+   {
+    "type": "paragraph",
+    "text": "“when you want something very much, you are willing to accept the shadow of that thing. Even if it is just a shadow.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "“That love is complicated,” said Cordelia. “That it lies beside anger and hatred, because only those we truly love can truly disappoint us.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "Hope is a prison, truth the key that unlocks it."
+   },
+   {
+    "type": "paragraph",
+    "text": "Stop pretending you are only upset on behalf of Matthew. Hate me on your own behalf, Thomas.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "“Turn again, O my sweetest,—turn again, false and fleetest: This beaten way thou beatest I fear is hell’s own track.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "And its vapor and storm of its steam as the sighing of spirits to be; And its noise as the noise in a dream; and its depths as the roots of the sea:"
+   },
+   {
+    "type": "paragraph",
+    "text": "We become what we are afraid we will be, Layla.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "“I could have managed with you not loving me, but you do not even want me to love you."
+   },
+   {
+    "type": "paragraph",
+    "text": "And that I cannot bear.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "I thought in Paris I might forget. In Paris, one forgets everything.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "“In Paris, will you be able to forgive yourself?”"
+   },
+   {
+    "type": "paragraph",
+    "text": "“In Paris,” he said, “I shall be able to forgive all the world.”"
+   }
+  ]
+ },
+ {
   "id": "quote-chain-of-thorns",
   "title": "Chain of Thorns",
   "author": "Cassandra Clare",
@@ -5641,6 +3337,87 @@ window.FN_QUOTE_BOOKS = [
    {
     "type": "paragraph",
     "text": "“How much love people have denied themselves through the ages because they believed they did not deserve it. As if the waste of love is not the greater tragedy.”"
+   }
+  ]
+ },
+ {
+  "id": "quote-the-city-of-brass",
+  "title": "The City of Brass",
+  "author": "S.A. Chakraborty",
+  "genre": "Fantasy & science fiction",
+  "kicker": "S.A. Chakraborty · Fantasy & science fiction",
+  "blocks": [
+   {
+    "type": "paragraph",
+    "text": "“You’re some kind of thief, then?” “That’s a very narrow-minded way of looking at it. I prefer to think of myself as a merchant of delicate tasks.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "“I’m not sleeping alongside you in some temple dedicated to fish orgies.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "but she also knew the best time to negotiate was when your mark was desperate."
+   },
+   {
+    "type": "paragraph",
+    "text": "“Can I swim?” he snapped, as if the very idea offended him. “Can you burn?”"
+   },
+   {
+    "type": "paragraph",
+    "text": "“It’s not haunted,” Wajed countered. “It simply … misses its founding family.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "stairs vanished under me the last time I was there, uncle,” Ali pointed out. “The water in the fountains turns to blood so often that people don’t drink it.” “So it misses them a lot.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "“Someone steals from me, I steal from others, and I’m sure the people I stole from will eventually take something that doesn’t belong to them."
+   },
+   {
+    "type": "paragraph",
+    "text": "he was eager to escape for a cup of tea so strong it could hold a spoon upright."
+   },
+   {
+    "type": "paragraph",
+    "text": "There was something about the silence and lonely beauty of the fresh snowfall that made the solitude more intense."
+   },
+   {
+    "type": "paragraph",
+    "text": "He’s the literal enemy of the people you’re about to ask for sanctuary, and you want to add this to the ties already binding you? Only a fool would do such a thing. She kissed him."
+   },
+   {
+    "type": "paragraph",
+    "text": "But it is said that when a man and woman are alone in a closed room, their third companion is the devil.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "Ali drew up, looking indignant. “You should not be here, Afshin."
+   },
+   {
+    "type": "paragraph",
+    "text": "Nahida’s time is precious. Only those who are ill or injured—” Dara abruptly raised a fist and then smashed it through the heavy, sandblasted glass table. The top shattered, sparkling shards of hazy glass cascading over the Afshin and the floor. He didn’t even flinch; instead, he raised his hand and looked at the jagged pieces of glass embedded in his skin with mock surprise. “There,” he deadpanned. “I’m injured.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "“Don’t worry about my reputation,” she said lightly. “I do enough damage on my own.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "“Greatness takes time, Banu Nahida. Often the mightiest things have the humblest beginnings.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "for once could you speak like someone with a heart instead of someone peddling stolen goods at the bazaar?”"
+   },
+   {
+    "type": "paragraph",
+    "text": "“In what world do men and women pay the same price for passion? You’ll be the one blamed."
+   },
+   {
+    "type": "paragraph",
+    "text": "Nahri always smiled at her marks."
    }
   ]
  },
@@ -5766,6 +3543,123 @@ window.FN_QUOTE_BOOKS = [
   ]
  },
  {
+  "id": "quote-defy-me",
+  "title": "Defy Me",
+  "author": "Tahereh Mafi",
+  "genre": "Fantasy & science fiction",
+  "kicker": "Tahereh Mafi · Fantasy & science fiction",
+  "blocks": [
+   {
+    "type": "paragraph",
+    "text": "and I’m thinking this is it, this is how I die, she’s going to pull out a knife and cut me open, rearrange my organs, put on a puppet show with my intestines. What a way to go."
+   },
+   {
+    "type": "paragraph",
+    "text": "Thank you for appreciating my face. I’ve always thought I had an underappreciated face.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "“It always breaks my heart to break beautiful things.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "“Yeah,” I say. “Today is the worst.” “Fuck today,” Winston says. “Don’t forget about tomorrow,” I say. “Tomorrow’s going to suck, too.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "“I did not hook up with Nazeera,” I lie. Ian takes a bite of pizza. “Whatever, bro. No judgment. The world’s on fire. Have some fun.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "She looks stunning, tall and strong and steady. I love watching that girl move. Talk. Breathe. Whatever."
+   },
+   {
+    "type": "paragraph",
+    "text": "You don’t know that Aaron has been in love with Ella for the better part of his entire life. They’ve known each other since childhood.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "The reason he had to keep wiping their memories was because it didn’t matter how many times he reset the story or remade the introductions— Aaron always fell in love with her. Every time."
+   },
+   {
+    "type": "paragraph",
+    "text": "I gave up everything—for nothing."
+   },
+   {
+    "type": "paragraph",
+    "text": "Aaron Warner Anderson is the only emotional through line in my life that ever made sense. He’s the only constant. The only steady, reliable heartbeat I’ve ever had."
+   },
+   {
+    "type": "paragraph",
+    "text": "Hungry and cold is at least better than drugged and delirious."
+   },
+   {
+    "type": "paragraph",
+    "text": "Despite my every effort to break you apart—to remove this cancer from our lives—you’ve insisted, over and over again, on falling in love with her.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "I want him to know that it’s going to be me. I want him to know that he finally got what he wanted. That he finally broke me."
+   },
+   {
+    "type": "paragraph",
+    "text": "There are no lines I won’t cross. No illusions of mercy. I wanted to be better for her. For her happiness. For her future. But if she’s gone, what good is goodness?"
+   },
+   {
+    "type": "paragraph",
+    "text": "And I realize then, in a moment that terrifies me, that I want this, forever. I want to spend the rest of my life with her. I want to build a future with her. I want to grow old with her. I want to marry her."
+   },
+   {
+    "type": "paragraph",
+    "text": "Yes, I’m perfect.” I manage a small smile. “I’m glad you finally agree with me.” He frowns, confused, and then, as realization hits— He blushes."
+   },
+   {
+    "type": "paragraph",
+    "text": "“Tangled is not a cartoon. Tangled is one of the greatest movies of all time. It’s about fighting for freedom and true love.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "Today is not forever. Happiness does not happen."
+   },
+   {
+    "type": "paragraph",
+    "text": "be uncovered, separated from the skin of pain. It must be claimed. Kept close. Protected."
+   },
+   {
+    "type": "paragraph",
+    "text": "It seems like tempting fate to even hope for a happiness like that."
+   },
+   {
+    "type": "paragraph",
+    "text": "to take everything I can in this transitory world—and grieve nothing."
+   },
+   {
+    "type": "paragraph",
+    "text": "“Yes,” I cry, slightly hysterical. “Yes. Yes to everything with you. Yes to forever with you. Yes.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "“It’s very, very easy to love you.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "“I love you, Ella,” I whisper. “I will love you for the rest of my life. My heart is yours. Please don’t ever give it back to me.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "“Bro, you really need to, like, eat a pizza or something,” he says, slapping me on the shoulder as he leaves. “You have too many abs.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "Because how can we stand against tyranny if we ourselves are filled with hate? Or worse— Nothing?"
+   },
+   {
+    "type": "paragraph",
+    "text": "I want to remember to celebrate more. I want to remember to experience more joy. I want to allow myself to be happy more frequently. I want to remember, forever, this look on Aaron’s face, as he’s bullied into blowing out his birthday candles for the very first time. This is, after all, what we’re fighting for, isn’t it? A second chance at joy."
+   }
+  ]
+ },
+ {
   "id": "quote-diabolic",
   "title": "The Diabolic",
   "author": "S.J. Kincaid",
@@ -5779,6 +3673,111 @@ window.FN_QUOTE_BOOKS = [
    {
     "type": "paragraph",
     "text": "I often think power is the most noxious substance in the universe. Both want and possession of it warp one’s character beyond redemption.”"
+   }
+  ]
+ },
+ {
+  "id": "quote-the-dragon-republic",
+  "title": "The Dragon Republic",
+  "author": "R.F. Kuang",
+  "genre": "Fantasy & science fiction",
+  "kicker": "R.F. Kuang · Fantasy & science fiction",
+  "blocks": [
+   {
+    "type": "paragraph",
+    "text": "But she also didn’t want to make it stop. The anger was a shield. The anger helped her to keep from remembering what she’d done. Because as long as she was angry, then it was okay—she’d acted within reason. She was afraid that if she stopped being angry, she might crack apart."
+   },
+   {
+    "type": "paragraph",
+    "text": "How could the Empress be alive? The sheer contradiction infuriated her, the fact that Altan and Master Irjah and so many others were dead and Daji looked like she’d never even been wounded. She was the head of a nation that had bled millions to a senseless invasion—an invasion she’d invited—and she looked like she’d just arrived for a banquet."
+   },
+   {
+    "type": "paragraph",
+    "text": "it never mattered because wordless agony didn’t have a language."
+   },
+   {
+    "type": "paragraph",
+    "text": "I want you to hurt. I want you to die. I want you to burn."
+   },
+   {
+    "type": "paragraph",
+    "text": "“I mean, if that ship were a person, I would fuck that ship,” said Baji."
+   },
+   {
+    "type": "paragraph",
+    "text": "She’d stopped wanting to be great, to carve out her place in history, a long time ago. She’d since learned the cost."
+   },
+   {
+    "type": "paragraph",
+    "text": "You asked how large my sorrow is,’” Nezha recited. Rin recognized the line—it was from a poem she’d studied a lifetime ago, a lament by an Emperor whose last words became exam material for future generations. “‘And I answered, like a river in spring flowing east.’”"
+   },
+   {
+    "type": "paragraph",
+    "text": "“Why did they drown? Why did the moon kill them? Because they weren’t climbing to the sky to find her, they were diving into the water toward her reflection. But it was a fucking illusion they were grasping, not the real thing.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "“You spend your whole life chasing after some illusion you think is real, only to realize you’re a damned fool, and that if you reach any further, you’ll drown.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "“It only hurts if you fight.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "“People will seek to use you or destroy you. If you want to live, you must pick a side. So do not shirk from war, child. Do not flinch from suffering. When you hear screaming, run toward it.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "“It’s not about who you are, it’s about how they see you. And once you’re mud in this country, you’re always mud.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "She didn’t owe him her guilt. She didn’t owe him anything. “I still love you,” she said, because she had to be honest."
+   },
+   {
+    "type": "paragraph",
+    "text": "“He’s dead, he’s gone, do you understand? He’s gone, and he’s never going to touch me again.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "And when nations start to believe that other beliefs lead to damnation, violence becomes inevitable.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "“And you’re afraid for him?” She whispered without thinking. “I’m always afraid for him.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "Fuck Altan, fuck his legacy, and fuck his trident. It was time she started using a weapon that would keep her alive."
+   },
+   {
+    "type": "paragraph",
+    "text": "“What’s this?” “A present.” Venka’s lip curled. “Is it someone’s head?”"
+   },
+   {
+    "type": "paragraph",
+    "text": "You were so still. I saw you drown, and I couldn’t save you.” He started to cry. “What the fuck,” she muttered. Was he drunk? High?"
+   },
+   {
+    "type": "paragraph",
+    "text": "She loved him or she hated him, but she didn’t know how to do both."
+   },
+   {
+    "type": "paragraph",
+    "text": "Yes, I know he’s a prick. But I also know that he’d throw himself off a cliff for you. Please stop trying to break him.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "Fire and water looked so lovely together. It was a pity they destroyed each other by nature."
+   },
+   {
+    "type": "paragraph",
+    "text": "“They’re not the strongest force in the world,”"
+   },
+   {
+    "type": "paragraph",
+    "text": "Together, spoke the Phoenix, we will burn down this world. She slammed her fist against the table. “I am.”"
    }
   ]
  },
@@ -5845,6 +3844,111 @@ window.FN_QUOTE_BOOKS = [
    {
     "type": "paragraph",
     "text": "Life is hard enough without having to avoid entire rooms in my own head."
+   }
+  ]
+ },
+ {
+  "id": "quote-the-empire-of-gold",
+  "title": "The Empire of Gold",
+  "author": "S.A. Chakraborty",
+  "genre": "Fantasy & science fiction",
+  "kicker": "S.A. Chakraborty · Fantasy & science fiction",
+  "blocks": [
+   {
+    "type": "paragraph",
+    "text": "do not believe ambitious men who say the only route to peace and prosperity lies in giving them more power—particularly when they do it with lands and people who are not theirs. And those Europeans will be back. People do not cross a sea to fight without expecting some return on their investment.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "“If you rule by violence, you should expect to be removed by violence.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "“She told me to keep myself whole. That there wasn’t any shame in taking care of yourself in order to help those who needed you.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "“Not wanting to be destroyed by despair doesn’t make you a coward, Ali. It makes you a survivor.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "I am who I always wanted to be."
+   },
+   {
+    "type": "paragraph",
+    "text": "Maybe it had been the rush of adventure and sweeping excitement, the almost embarrassingly inevitable and clearly doomed romance that resulted between dashing warriors and wide-eyed young women. Had Muntadhir not accused her of living in a fairy tale, unable to tell the difference between its hero and its monster?"
+   },
+   {
+    "type": "paragraph",
+    "text": "“Not everything has to be a transaction, Nahri.” “It should be. It’s easier.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "stolen pastries and handed one to him. “Trust me, the illicitness makes them taste sweeter.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "this tangle of tenderness and longing, of sheer terror and unexpected light,"
+   },
+   {
+    "type": "paragraph",
+    "text": "Creator damn all that sparring. She didn’t miss Ali shiver at her touch, his pulse picking up, but Nahri dismissed it. Well-formed or not, Alizayd al Qahtani had probably never allowed himself an impure thought. A shame. Now Nahri did flush, fighting the urge to slap some sense into herself. No more journeying with attractive warriors on dangerous quests after this. She clearly had a problem."
+   },
+   {
+    "type": "paragraph",
+    "text": "I love the Nahids enough not to burden them with expectations of perfection."
+   },
+   {
+    "type": "paragraph",
+    "text": "Sit with this burden, Dara. You may find doing so is easier than holding it over your head and waiting for it to crush you.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "Her descendants might have gone astray—that seemed to happen to all revolutionaries"
+   },
+   {
+    "type": "paragraph",
+    "text": "Risking his life using marid magic to provoke an insurrection among pirates was one thing. Flirting was another."
+   },
+   {
+    "type": "paragraph",
+    "text": "“Luck is a fairy tale we use to make people feel better about the world being unfair as shit."
+   },
+   {
+    "type": "paragraph",
+    "text": "“Poets don’t write songs about that kind of love. Tragedy makes for a better tale.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "“We common women are wise enough to enjoy a taste of heat without staying to be burned.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "“It’s supposed to be the mark of a wise leader, right? The willingness to make sacrifices for a greater good? But nobody ever asks those ‘sacrifices’ if they’re willing—they get no say in whether or not their kids die for some supposed greater good."
+   },
+   {
+    "type": "paragraph",
+    "text": "That made it worse, this passing of a barbed baton between women who, no matter how clever, how powerful, would always be known by the men to whom they were attached."
+   },
+   {
+    "type": "paragraph",
+    "text": "“You don’t need to look so shocked. Criminals occasionally need God too—we’ve got more things that require forgiving.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "Nothing quite as vicious as vengeance from those who almost lost power.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "“Do you have to do that?” she asked. “Sound all reasonable and kind?” “I have a lot of experience in loving frustrating people. I can outpatience you any day, little sister.” “If you make me cry, I’m going to stab you.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "“Nahri,” Dara murmured, “I think we have done this dying thing before.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "“Find your happiness, little thief. Steal it and do not ever let it go.”"
    }
   ]
  },
@@ -5975,6 +4079,128 @@ window.FN_QUOTE_BOOKS = [
    {
     "type": "paragraph",
     "text": "“I’m sorry for all the things you will never see.” Luzia had laughed. “I feel sorry for all the people who will never get to meet me.”"
+   }
+  ]
+ },
+ {
+  "id": "quote-the-gilded-wolves",
+  "title": "The Gilded Wolves",
+  "author": "Roshani Chokshi",
+  "genre": "Fantasy & science fiction",
+  "kicker": "Roshani Chokshi · Fantasy & science fiction",
+  "blocks": [
+   {
+    "type": "paragraph",
+    "text": "There were so many wants inside him that he doubted there was room for blood in his body."
+   },
+   {
+    "type": "paragraph",
+    "text": "“Wait. I was bait?” demanded Enrique. “You’re flattered.” Maybe a little."
+   },
+   {
+    "type": "paragraph",
+    "text": "As if he had once known how to fly, but the skies had shaken him loose and left him with nothing but the memory of wings."
+   },
+   {
+    "type": "paragraph",
+    "text": "Enrique rolled his eyes. “Most women kill to be alone with me.” “I have learned that something does not have to be animate in order to use the word ‘kill,’” said Zofia. “Like how some people say ‘kill time.’ Perhaps these women you are referencing are killing their expectations?”"
+   },
+   {
+    "type": "paragraph",
+    "text": "That boy looks like every dark corner of a fairy tale. The wolf in bed. The apple in a witch’s palm.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "“Tristan, my love,” said Laila with dangerous calm. “If you get in the way of a woman’s battle, you’ll get in the way of her sword.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "“Fashion, my love, just like the universe, owes you neither explanation nor rationale.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "“Half of winning, my dear wallet, is simply looking victorious.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "“Take what the world owes you by any means necessary,” Pride had said. “The world has a shit memory. It will never pay its debts unless you force its hand.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "“It’s your grave, Laila.” “As long as it’s my choice.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "Wolves were everywhere. In politics, on thrones, in beds. They cut their teeth on history and grew fat on war."
+   },
+   {
+    "type": "paragraph",
+    "text": "was just that, like other wolves, he wanted his share."
+   },
+   {
+    "type": "paragraph",
+    "text": "History is a myth shaped by the tongues of conquerors."
+   }
+  ]
+ },
+ {
+  "id": "quote-girls-made-of-snow-and-glass",
+  "title": "Girls Made of Snow and Glass",
+  "author": "Melissa Bashardoust",
+  "genre": "Fantasy & science fiction",
+  "kicker": "Melissa Bashardoust · Fantasy & science fiction",
+  "blocks": [
+   {
+    "type": "paragraph",
+    "text": "If you’re delicate, it means no one has tried to break you.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "Your heart was shaped to survive, not to love,"
+   },
+   {
+    "type": "paragraph",
+    "text": "and your mother was selfish: she was incapable of loving someone who could never love her back.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "No one will ever love me anyway, so what’s the point in playing nice?"
+   },
+   {
+    "type": "paragraph",
+    "text": "It was a fair trade: she gave them something pleasing to stare at, and they gave her approval, acceptance, even affection. If they love you for anything, it will be for your beauty."
+   },
+   {
+    "type": "paragraph",
+    "text": "With her beauty, she had made people pay attention to her, to notice her without mocking her. But a queen— A queen had the power to make people love her."
+   },
+   {
+    "type": "paragraph",
+    "text": "What am I doing this for? she wondered now, and as always, a voice in her head answered, To feel alive. But this time there was another voice, one she had never heard before, and it offered a different answer: To die."
+   },
+   {
+    "type": "paragraph",
+    "text": "what she didn’t have, she would create."
+   },
+   {
+    "type": "paragraph",
+    "text": "“I need you to teach me what it means to be in love—what it looks like, how it feels. Love me, as best as you can, and I will learn from you.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "she understood now why gods were always said to be jealous."
+   },
+   {
+    "type": "paragraph",
+    "text": "If she shone brightly enough on the outside, could she blind everyone to what lay underneath?"
+   },
+   {
+    "type": "paragraph",
+    "text": "Because I made him and I can destroy him."
+   },
+   {
+    "type": "paragraph",
+    "text": "That was one of the tricks she’d learned from their walks together, to speak bold words in a demure manner. Pointing your chin downward encouraged a man to lift it up again. Stumbling while walking invited him to give you his arm. Faltering over words made him listen more closely, his eyes drawn to your lips. Weakness was more enticing than any seduction."
    }
   ]
  },
@@ -6110,6 +4336,172 @@ window.FN_QUOTE_BOOKS = [
   ]
  },
  {
+  "id": "quote-imagine-me",
+  "title": "Imagine Me",
+  "author": "Tahereh Mafi",
+  "genre": "Fantasy & science fiction",
+  "kicker": "Tahereh Mafi · Fantasy & science fiction",
+  "blocks": [
+   {
+    "type": "paragraph",
+    "text": "Warner smelled like sugar, like decadence. I felt drunk on joy. I don’t want to wait, he said, taking my hand. Squeezing it. Let’s not wait."
+   },
+   {
+    "type": "paragraph",
+    "text": "“It’s hard to describe. It’s a pleasure so close to pain I sometimes can’t tell the two apart.” “That sounds awful.” “No,” he says. “It’s exquisite.” “I love you.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "I have eyes, two, feel them, rolling back and forth, around and around in my skull I have lips, two, feel them, wet and and heavy, pry them open have teeth, many, tongue, one and fingers, ten, count them onetwothreefourfive, again on the other side strange, ssstrange to have a tongue, sstrange it’s a sssstrange ssort of thing, a strange ssssssssssortofthing loneliness         it creeps up on you"
+   },
+   {
+    "type": "paragraph",
+    "text": "quiet         and still, sits by your side in the dark, strokes your hair as you sleep wrapssitself around your bones squeezing sotightyoualmostcan’t breathe almost can’t hear the pulse racing in your blood as it rush, rushes up your skin touches its lips to the soft hairs at the back of your neck loneliness is a strangesortof thinga sstrangesortofthing an old friend standing beside you in the mirror screaming you’re notenoughneverenough never ever enough sssssometimes it just won’t"
+   },
+   {
+    "type": "paragraph",
+    "text": "let     ..."
+   },
+   {
+    "type": "paragraph",
+    "text": "But       buried in the din is a single scream so steady it goes every day unheard. We see, but do not understand the way it stutters hearts, clenches jaws, curls fingers into fists. It’s a surprise, always a surprise, when it finally stops screaming long enough to speak. Fingers tremble. Flowers die. The sun flinches, the stars expire."
+   },
+   {
+    "type": "paragraph",
+    "text": "Kill me"
+   },
+   {
+    "type": "paragraph",
+    "text": "We are flies—gathering, swarming—bulging eyes and fragile bones flittering nervously toward imagined destinies. We hurl our bodies at the panes of tantalizing windows, aching for the world promised on the other side. Day after day we drag injured wings and eyes and organs around the same four walls; open or closed, the exits elude us. We hope to be rescued by a breeze, hoping for a chance to see the sun. Decades pass. Centuries stack together."
+   },
+   {
+    "type": "paragraph",
+    "text": "Our bruised bodies still careen through the air. We continue to hurl ourselves at promises."
+   },
+   {
+    "type": "paragraph",
+    "text": "repetition, in the repetition that underscores our lives. It is only in the desperate seconds before death that we realize the windows against which we bro..."
+   },
+   {
+    "type": "paragraph",
+    "text": "Come back to life, love I’ll be here when you wake up"
+   },
+   {
+    "type": "paragraph",
+    "text": "A spare. That’s all I ever was, I realize. A spare part kept in captivity. A backup weapon in the case that all else failed. Shatter me. Break glass in case of emergency."
+   },
+   {
+    "type": "paragraph",
+    "text": "“You don’t want to hear me say congratulations?” “No, I don’t want to hear you say I told you so.” “Yes, but I did fucking tell you so, didn’t I?”"
+   },
+   {
+    "type": "paragraph",
+    "text": "Not just the regular kind of hungry, either, but that desperate hunger that’s so hungry it doesn’t even feel like hunger anymore."
+   },
+   {
+    "type": "paragraph",
+    "text": "“Besides, if I paid attention to every single person who found me attractive I’d never have time for anything else.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "“Wow,” I say. “Your humility is a fucking inspiration.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "Do you maybe want to, like, wash a little bit of the blood off your face before we eat?” Warner glares at me in response. I hold up my hands. “Okay. Cool. That’s fine.” I point at him. “Actually, I heard that blood’s good for you. You know—organic. Antioxidants and shit. Very popular with vampires.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "“Do you still remember how to do this? Or did you need me to feed you?” I stab a piece of tofu and point it in his direction. “Say ah. The tofu choo choo is coming.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "“Amelia was a psycho, Castle wants to be BFFs"
+   },
+   {
+    "type": "paragraph",
+    "text": "with Anderson, Warner has midnight fantasies about killing people, and Castle made Amelia think that Warner is a lost little bunny trying to find his way home.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "But sometimes I think—sometimes I wonder—if I were a monster—surely, I would feel it by now? I would feel angry and vicious and vengeful. I’d know blind rage and bloodlust and a need for vindication. Instead I feel an abyss within me that’s so deep, so dark I can’t see within it; I can’t see what it holds. I do not know what I am or what might happen to me. I do not know what I might do again."
+   },
+   {
+    "type": "paragraph",
+    "text": "“Besides, we don’t love him for his jokes, do we, Nazeera?” The two of them lock eyes for a moment. “We love him for his heart.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "I imagine Me extraordinary, unbroken the girl who shocked herself by surviving, the girl who loved herself through learning, the girl who respected her skin, understood her worth, found her strength s t r o n g         s t r o n g e r strongest"
+   },
+   {
+    "type": "paragraph",
+    "text": "Imagine me master of my own universe I am everything I ever dreamed of"
+   },
+   {
+    "type": "paragraph",
+    "text": "“Hey,” Nazeera says, her voice suddenly close."
+   },
+   {
+    "type": "paragraph",
+    "text": "so please don’t get yourself killed, okay?”"
+   },
+   {
+    "type": "paragraph",
+    "text": "I’ll be fine.” “You’re not going to be fine,” I hiss. “She’s going to kill you.” “That’s fine, too.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "Run, Juliette run faster, run until your bones break and your shins split and your muscles atrophy Run run run until you can’t hear their feet behind you Run until you drop dead. Make sure your heart stops before they ever reach you. Before they ever touch you. Run, I said."
+   },
+   {
+    "type": "paragraph",
+    "text": "“You know my name,” he says softly. “You’ve always known me, love. I’ve always known you."
+   },
+   {
+    "type": "paragraph",
+    "text": "To the world, she is formidable. To me? She is the world."
+   }
+  ]
+ },
+ {
+  "id": "quote-the-invisible-life-of-addie-larue",
+  "title": "The Invisible Life of Addie LaRue",
+  "author": "V.E. Schwab",
+  "genre": "Fantasy & science fiction",
+  "kicker": "V.E. Schwab · Fantasy & science fiction",
+  "blocks": [
+   {
+    "type": "paragraph",
+    "text": "Don’t you remember, she told him then, when you were nothing but shadow and smoke? Darling, he’d said in his soft, rich way, I was the night itself."
+   },
+   {
+    "type": "paragraph",
+    "text": "March is such a fickle month. It is the seam between winter and spring—though seam suggests an even hem, and March is more like a rough line of stitches sewn by an unsteady hand, swinging wildly between January gusts and June greens."
+   },
+   {
+    "type": "paragraph",
+    "text": "Adeline is sixteen now, and everyone speaks of her as if she is a summer bloom, something to be plucked, and propped within a vase, intended only to flower and then to rot."
+   },
+   {
+    "type": "paragraph",
+    "text": "“A dreamer,” scorns her mother. “A dreamer,” mourns her father. “A dreamer,” warns Estele. Still, it does not seem such a bad word."
+   },
+   {
+    "type": "paragraph",
+    "text": "Until Adeline wakes up."
+   },
+   {
+    "type": "paragraph",
+    "text": "He knew how to reduce a thing, sliver by sliver, piece by piece, until he found its essence; knew, too, when he’d gone too far. One stroke too many, and the wood went from delicate to brittle in his hands. Addie has had three hundred years to practice her father’s art, to whittle herself down to a few essential truths, to learn the things she cannot do without."
+   },
+   {
+    "type": "paragraph",
+    "text": "I am stronger than your god and older than your devil. I am the darkness between stars, and the roots beneath the earth. I am promise, and potential, and when it comes to playing games, I divine the rules, I set the pieces, and I choose when to play. And tonight, I say no.”"
+   }
+  ]
+ },
+ {
   "id": "quote-iron-flame",
   "title": "Iron Flame",
   "author": "Rebecca Yarros",
@@ -6177,6 +4569,67 @@ window.FN_QUOTE_BOOKS = [
   ]
  },
  {
+  "id": "quote-the-kingdom-of-copper",
+  "title": "The Kingdom of Copper",
+  "author": "S.A. Chakraborty",
+  "genre": "Fantasy & science fiction",
+  "kicker": "S.A. Chakraborty · Fantasy & science fiction",
+  "blocks": [
+   {
+    "type": "paragraph",
+    "text": "“You’d be amazed by the things a person can do to survive.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "This was so dangerous. So unnecessary and foolish, it was almost selfish."
+   },
+   {
+    "type": "paragraph",
+    "text": "“It’s hard to watch the way this city ruins the ones we love.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "“This is the best thing I’ve ever tasted.” “It is likely poisoned,” Aqisa said. “It is worth death.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "“You don’t stop fighting a war just because you’re losing battles, Alizayd. You change tactics."
+   },
+   {
+    "type": "paragraph",
+    "text": "“People do not thrive under tyrants, Alizayd; they do not come up with innovations when they’re busy trying to stay alive, or offer creative ideas when error is punished by the hooves of a karkadann.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "He will reign as Ghassan does: so afraid of his people that he crushes them.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "Fear and hate ruled the city—built up by centuries of spilled blood and the resulting grievances. It was a place where everyone was so busy trying to survive and ensure their loved ones survived that there was no room to build new trust."
+   },
+   {
+    "type": "paragraph",
+    "text": "“I’ve had enough of men hurting me because they were upset.” Her voice was hard, so much so that Muntadhir looked startled. But Nahri didn’t care. She rose to her feet, placing her chador over her head. “I won’t have it from the man I call my husband. Not anymore.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "You fix what you can and keep yourself whole enough to move on to the next patient.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "That woman is the kind of ally you keep at knife’s length.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "And always cunning men and women around who find a way to take advantage of that duty and harness it into power."
+   },
+   {
+    "type": "paragraph",
+    "text": "“Do you know that when you speak, you sound like a fruit peddler trying to sell me overripe produce?” “One person’s overripe is another person’s sweet,” Nahri said dryly."
+   }
+  ]
+ },
+ {
   "id": "quote-messia-di-dune",
   "title": "Messia di Dune",
   "author": "Frank Herbert",
@@ -6223,6 +4676,35 @@ window.FN_QUOTE_BOOKS = [
    {
     "type": "paragraph",
     "text": "'I hope you're as good as you seem to think you are. I could use someone else around here with Illien's fire'.\n'I hope this place is as good as everyone seems to think it is. I need a place to burn'."
+   }
+  ]
+ },
+ {
+  "id": "quote-the-name-of-the-wind",
+  "title": "The Name of the Wind",
+  "author": "Patrick Rothfuss",
+  "genre": "Fantasy & science fiction",
+  "kicker": "Patrick Rothfuss · Fantasy & science fiction",
+  "blocks": [
+   {
+    "type": "paragraph",
+    "text": "“Call a jack a jack. Call a spade a spade. But always call a whore a lady. Their lives are hard enough, and it never hurts to be polite.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "A poet is a musician who can’t sing."
+   },
+   {
+    "type": "paragraph",
+    "text": "“I hope this place is as good as everyone seems to think it is,” I said earnestly. “I need a place to burn.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "“No matter where she stood, she was in the center of the room.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "“It’s like everyone tells a story about themselves inside their own head. Always. All the time. That story makes you what you are. We build ourselves out of that story.”"
    }
   ]
  },
@@ -6547,6 +5029,282 @@ window.FN_QUOTE_BOOKS = [
   ]
  },
  {
+  "id": "quote-oltre-i-confini-del-tempo",
+  "title": "Oltre i confini del tempo",
+  "author": "Amabile Giusti",
+  "genre": "Fantasy & science fiction",
+  "kicker": "Amabile Giusti · Fantasy & science fiction",
+  "blocks": [
+   {
+    "type": "paragraph",
+    "text": "Non c’è nulla di più imbarazzante dell’idea di essere derise per chi è abituato a deridere."
+   },
+   {
+    "type": "paragraph",
+    "text": "«C’è sempre un ma, in tutte le cose che ci uniscono e ci separano.»"
+   },
+   {
+    "type": "paragraph",
+    "text": "Poiché chi ha conosciuto il dolore non può certo ridere di chi soffre."
+   },
+   {
+    "type": "paragraph",
+    "text": "Aveva capito che non si può rimanere legati per sempre a un ricordo, che l’amore ha bisogno di nutrimento, che i sogni non resistono all’imperiosa luce dell’alba e che le promesse pronunciate da un bugiardo sanno di sangue e di sale."
+   },
+   {
+    "type": "paragraph",
+    "text": "«Mai scherzare con l’orgoglio di un uomo. Credo che molti presunti eroi del passato fossero solo miti personaggi offesi da una donna imprudente.»"
+   },
+   {
+    "type": "paragraph",
+    "text": "«A mio modo ti amo, Ody.» In un altro tempo, in un altro momento, l’altra Ody, con quelle parole, avrebbe imparato a volare. Si sarebbe fatta confondere e annebbiare, sarebbe morta e risorta e morta ancora. Col cuore aperto, palpitante come un orologio meccanico. Questa Ody aveva perso il disincanto. Questa Ody voleva di più, voleva l’Amore, non una specie di amore."
+   },
+   {
+    "type": "paragraph",
+    "text": "Era bello come qualcuno che è sempre stato bello, ma poi è partito, e quando torna ti pare più bello di prima. Era bello come ogni primo, e ultimo amore."
+   },
+   {
+    "type": "paragraph",
+    "text": "più piangeva più si sentiva viva, e più si sentiva viva più desiderava essere morta."
+   },
+   {
+    "type": "paragraph",
+    "text": "Le Megere erano un incrocio tra Sirene e Arpie. Per natura avevano un aspetto rivoltante, ma quando incontravano un incauto cavaliere, abbastanza sciocco da smarrirsi da quelle parti, erano abili a tramutarsi in donne bellissime, con l’intento di accoppiarsi per perpetuare la specie, e poi divorarlo. Non nascevano mai maschi, tra le Megere, ed era necessario per loro costringere i viandanti a contatti che quelli avrebbero volentieri evitato."
+   },
+   {
+    "type": "paragraph",
+    "text": "poiché, fondamentalmente, non erano di indole crudele e agivano in tal modo solo per garantirsi la sopravvivenza, al termine del loro pasto umano scoppiavano in lacrime di pentimento, e quelle lacrime, accumulatesi nei secoli dentro una conca, avevano originato l’omonimo acquitrino."
+   },
+   {
+    "type": "paragraph",
+    "text": "«Lascia perdere il cuore! È la testa che bisogna assecondare! Il ragionamento! Il cuore porta alla sconfitta, all’umiliazione, alla solitudine. Occorre riflettere sulle cose, far vincere l’orgoglio e la dignità!"
+   },
+   {
+    "type": "paragraph",
+    "text": "Non farlo rimanere, non farlo rimanere. Se glielo permetterai, non tornerai mai più indietro. Lo amerai fino alla fine dei tuoi giorni."
+   },
+   {
+    "type": "paragraph",
+    "text": "Lo amo già fino alla fine dei miei giorni."
+   },
+   {
+    "type": "paragraph",
+    "text": "«Ti amo. Senza finzioni. Senza dannati misteri. Ti amo e basta»."
+   },
+   {
+    "type": "paragraph",
+    "text": "E io cosa farò? Non ne aveva idea, sentiva solo il cuore pesante come un blocco di marmo. Anche il suo corpo si rifiutava di collaborare. Non aveva fame e non aveva sete. Il suo corpo voleva morire. Si girò ancora su se stessa, chiuse gli occhi, e aspettò che il destino dei vinti facesse il suo corso."
+   },
+   {
+    "type": "paragraph",
+    "text": "Era questo, crescere?"
+   },
+   {
+    "type": "paragraph",
+    "text": "per il passato, aggrapparsi disperatamente al presente per paura che il futuro, con le sue incognite, irrompesse troppo in fretta? Era questo?"
+   }
+  ]
+ },
+ {
+  "id": "quote-oltre-il-coraggio-del-sacrificio",
+  "title": "Oltre il coraggio del sacrificio",
+  "author": "Amabile Giusti",
+  "genre": "Fantasy & science fiction",
+  "kicker": "Amabile Giusti · Fantasy & science fiction",
+  "blocks": [
+   {
+    "type": "paragraph",
+    "text": "Non ci sono posti meravigliosi o orridi in assoluto, ma dipende da quello che accade, dalla gente, dai ricordi che mettiamo insieme."
+   },
+   {
+    "type": "paragraph",
+    "text": "Sono vigliacca, ma, quando si ha una ferita che non guarisce, occorre evitare i coltelli."
+   },
+   {
+    "type": "paragraph",
+    "text": "La vera se stessa voleva risponderle un fulmineo sì, lo amo, e non soltanto ancora, lo amo sempre, lo amerò sempre, fino a quando sarò viva su questa terra di lacrime e sogni assassinati. Lo amo e mi manca e ho paura per lui, e anche se respiro e faccio cose e sembro imparentata col sorriso, sono soltanto una che sa fingere bene, benino, male, ma ci prova."
+   },
+   {
+    "type": "paragraph",
+    "text": "Un affetto senza altruismo è un falso affetto"
+   },
+   {
+    "type": "paragraph",
+    "text": "Le parve di diventare fluida e flessuosa, creta calda, vetro plasmato a forma di calice che desidera traboccare, cuore diviso a metà che cerca la sua parte mancante, inverno senza la neve, estate senza la luce."
+   },
+   {
+    "type": "paragraph",
+    "text": "In fondo l’amore non esiste. È un’idiozia per ubriaconi che guardano la luna e per dementi che perdono la bussola."
+   },
+   {
+    "type": "paragraph",
+    "text": "Le menzogne sulle labbra delle ragazzine erano bugie mezze bianche. Facevano parte della libertà. Nessuna delle due mentiva per svago. Era solo un modo per crescere lasciando alle madri l’illusione di non crescere affatto. Un giorno o l’altro l’arcano sarebbe stato svelato, e le madri avrebbero avuto paura."
+   },
+   {
+    "type": "paragraph",
+    "text": "Lei stessa si sentiva persa in uno spazio infinito, come una stella vecchia implosa, abbandonata in mezzo a una galassia piena di un infinito niente."
+   },
+   {
+    "type": "paragraph",
+    "text": "La solitudine era parte di lei, carne e sangue del medesimo cuore. La solitudine era una cellula, nel suo corpo di ragazzina contusa."
+   },
+   {
+    "type": "paragraph",
+    "text": "Durante il viaggio pensò a se stessa, alla bambina imbranata di quattro anni prima, e ringraziò e maledì il destino, la vita, amò e odiò ciò che l’aveva resa più matura, più sicura, più grande, tutto il bene e il male che l’avevano costretta a trovare le parole, a non incespicare con le emozioni, a non lasciarsi seppellire dalle piene, ad accantonare il guscio, per diventare quasi donna."
+   },
+   {
+    "type": "paragraph",
+    "text": "quando rideva smettere di amarlo era un’impresa eroica."
+   },
+   {
+    "type": "paragraph",
+    "text": "Hai un cuore troppo grande per metterci dei paletti,"
+   },
+   {
+    "type": "paragraph",
+    "text": "quando si sta male si tende a leggere con difficoltà nel proprio cuore, a pensare al passato e idealizzarlo. È facile quando il presente pesa: ieri diventa magico quando oggi è difficile."
+   },
+   {
+    "type": "paragraph",
+    "text": "Si abbracciò a Jacko come se fosse la sua vita, la sua zattera, ancora e per sempre il suo Nord, il suo Sud, il suo Est e il suo Ovest."
+   }
+  ]
+ },
+ {
+  "id": "quote-oltre-le-catene-dell-orgoglio",
+  "title": "Oltre le catene dell'orgoglio",
+  "author": "Amabile Giusti",
+  "genre": "Fantasy & science fiction",
+  "kicker": "Amabile Giusti · Fantasy & science fiction",
+  "blocks": [
+   {
+    "type": "paragraph",
+    "text": "Mia madre dice sempre che una brava ragazza non fa morbose domande, ma una ragazza ancora più brava non si mette nelle condizioni che le vengano fatte."
+   },
+   {
+    "type": "paragraph",
+    "text": "Ciò che non seppe, fu che lui attese fuori dalla sua finestra per quasi un’ora. Udì il suo pianto e le frasi consolanti di sua madre. Immobile, col freddo della notte che gli artigliava il viso, le spalle appoggiate alla facciata della casa, furioso con se stesso, andò via solo quando la pioggia cominciò ad abbattersi sugli alberi, solo dopo che i suoi capelli furono completamente bagnati, e solo dopo aver avuto la sconcertante certezza di avere commesso uno degli errori più gravi di tutta la sua vita."
+   },
+   {
+    "type": "paragraph",
+    "text": "Ma i vivi sono spesso egoisti e banali, credono che quando muore una persona malata, brutta o solitaria debba essersi uccisa, perché per voler vivere si deve essere per forza sani, attraenti e simpatici!"
+   },
+   {
+    "type": "paragraph",
+    "text": "rivelargli che l’amore che provava era troppo forte per permettere a una timida rabbia o una parvenza di odio di durare più di un tramonto."
+   },
+   {
+    "type": "paragraph",
+    "text": "Era come dover rinunciare alla cioccolata quando tutto il mondo profumava di cacao."
+   },
+   {
+    "type": "paragraph",
+    "text": "«Ti piace?» Cosa avrebbe potuto risponderle? Sì, è un discreto fusto, e mi fa il filo come un tessitore, ma io sono così scema da sbavare per quel cafone di tuo fratello?"
+   },
+   {
+    "type": "paragraph",
+    "text": "scorda chi potrai amare scorda adesso chi già ami."
+   },
+   {
+    "type": "paragraph",
+    "text": "per poter usare il suo petto come giaciglio, il suo braccio come recinto e il suo profumo come cuscino."
+   },
+   {
+    "type": "paragraph",
+    "text": "«L’amore, perché è questo, anche se ho provato a chiamarlo con altri nomi, è questo. L’amore, questo mostro affamato, mi sta indebolendo, mi sta uccidendo."
+   },
+   {
+    "type": "paragraph",
+    "text": "Cosa pensi di fare? Chiuderti in una scatola e attendere che la vita passi? Poi potrai dire d’essere stato un uomo tutto d’un pezzo, forte, formidabile ma senza sentimenti."
+   },
+   {
+    "type": "paragraph",
+    "text": "finché potrò scapperò, ma dalla morte, non dalla vita!»"
+   },
+   {
+    "type": "paragraph",
+    "text": "Di sicuro aveva capito male, per colpa di quel maledetto mal di testa. Chissà cosa aveva detto davvero. Certamente non ciò che credeva di aver sentito. Certamente non le aveva sussurrato: «Morirei per te»."
+   },
+   {
+    "type": "paragraph",
+    "text": "La facilità ad innamorarsi, che è propria delle donne, non può significare che voi sapete amare di più. Voi siete prede di molti piccoli fuochi, mentre un uomo si innamora veramente con maggiore difficoltà, ma quando è preso, nessun sentimento femminile potrà eguagliarlo.»"
+   },
+   {
+    "type": "paragraph",
+    "text": "Ogni volta, quando si ripeteva la storia, lei era destinata a morire e c’era sempre una pagina in cui avrebbe supplicato un pugnale di riposare nel suo petto."
+   },
+   {
+    "type": "paragraph",
+    "text": "viene per tutti un momento in cui la vita si spacca, e le scelte possono essere giuste o sbagliate ma provocare comunque un male indicibile."
+   },
+   {
+    "type": "paragraph",
+    "text": "Emily Dickinson. Declamando: L’altro giorno ho perso un mondo, qualcuno lo ha trovato? Lo si riconosce dal diadema di stelle che gli incornicia la fronte..."
+   },
+   {
+    "type": "paragraph",
+    "text": "La loro amicizia era morta, e non è d’uso che i morti muoiano più di una volta."
+   },
+   {
+    "type": "paragraph",
+    "text": "Avrebbe voluto che qualcuno le giurasse che esistevano cose buone e durevoli, sentimenti ispirati e sinceri, capaci di andare oltre le sue debolezze e la sua incapacità evidente di suscitarli."
+   },
+   {
+    "type": "paragraph",
+    "text": "Avrebbe voluto crescere presto, subito, imparare un milione di cose a velocità accelerata, smetterla di essere inerme per colpa di quella disperata e inconcludente giovinezza."
+   },
+   {
+    "type": "paragraph",
+    "text": "E allo stesso tempo tornare bambina, un’altra bambina, non più una cosina piccola e magra che correva nel temporale aggrappata a sua madre, ma una bambina serena sotto il sole, i..."
+   },
+   {
+    "type": "paragraph",
+    "text": "Era come stare sul ciglio di un pozzo, dentro il quale poteva esserci di tutto, fiori e fiamme, erba e spine, cuscini di seta e un tappeto di lame, era come avere paura e allo stesso tempo volersi tuffare in quel buio, per capire, per scoprire."
+   },
+   {
+    "type": "paragraph",
+    "text": "Vorrei che mi amassi, ma se non puoi, almeno trattami come se fossi una donna e non una reliquia. Smettila di crocifiggerti ogni volta che mi baci e ti piace baciarmi."
+   },
+   {
+    "type": "paragraph",
+    "text": "Sei una ragazzina, la tua innocenza mi abbaglia e mi spaventa, non voglio contaminarla, non voglio distruggerla. Mi attrai, come negarlo? Mi piaci, mi sorprendi, mi sconvolgi. Ero dannatamente geloso quando stavi con Jordy e lo sono anche adesso, al pensiero che starai con qualcun altro, qualcuno che non sono io. Vorrei farlo a pezzi questo qualcuno e, allo stesso tempo, spero che arrivi, che ti porti via, che ti salvi da me."
+   },
+   {
+    "type": "paragraph",
+    "text": "L’amore la invadeva come un nemico, scavava trincee nel suo petto, accendeva falò nel suo grembo, faceva esplodere ordigni tra i suoi pensieri."
+   },
+   {
+    "type": "paragraph",
+    "text": "«Stai attenta. Ma non crescere troppo, ti prego.»"
+   },
+   {
+    "type": "paragraph",
+    "text": "Piango perché so che ce la farò."
+   },
+   {
+    "type": "paragraph",
+    "text": "Perché io, pur sapendo che il tuo è l’atteggiamento giusto, voglio che mi aspetti e che ti comporti bene e che non guardi nessuno e che non ami nessuno e che pensi a me in ogni istante senza trovare sollievo. Voglio rivelarti ciò che non sai sul mio conto, e voglio che mi accetti senza battere ciglio, voglio che tu mi dica che non ti importa, che non sono un mostro. Voglio tutto questo."
+   }
+  ]
+ },
+ {
+  "id": "quote-poison-s-kiss",
+  "title": "Poison's Kiss",
+  "author": "Breeana Shields",
+  "genre": "Fantasy & science fiction",
+  "kicker": "Breeana Shields · Fantasy & science fiction",
+  "blocks": [
+   {
+    "type": "paragraph",
+    "text": "I press my thumb against the fruit and it yields slightly."
+   },
+   {
+    "type": "paragraph",
+    "text": "know something is ready to be devoured, when it gives just a little under pressure. It’s the same with people."
+   }
+  ]
+ },
+ {
   "id": "quote-principe-crudele",
   "title": "Il principe crudele",
   "author": "Holly Black",
@@ -6677,6 +5435,164 @@ window.FN_QUOTE_BOOKS = [
   ]
  },
  {
+  "id": "quote-the-queen-of-nothing",
+  "title": "The Queen of Nothing",
+  "author": "Holly Black",
+  "genre": "Fantasy & science fiction",
+  "kicker": "Holly Black · Fantasy & science fiction",
+  "blocks": [
+   {
+    "type": "paragraph",
+    "text": "Better not to make the attempt than to fail.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "“All power is cursed,”"
+   },
+   {
+    "type": "paragraph",
+    "text": "“The most terrible among us will do anything to get it, and those who’d wield power best don’t want it thrust upon them. But that doesn’t mean they can avoid their responsibilities forever.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "Leaves don’t grow back onto a vine, cracked walnuts don’t fit back into their shells, and girlfriends who’ve been enchanted don’t just wake up and decide to let things slide with their terrifying exes."
+   },
+   {
+    "type": "paragraph",
+    "text": "There’s no room for regrets when you’re busy trying to win. Or at least not to die."
+   }
+  ]
+ },
+ {
+  "id": "quote-il-re-malvagio",
+  "title": "Il re malvagio",
+  "author": "Holly Black",
+  "genre": "Fantasy & science fiction",
+  "kicker": "Holly Black · Fantasy & science fiction",
+  "blocks": [
+   {
+    "type": "paragraph",
+    "text": "Sono belli e terribili e, per quanto possano disprezzare la mia mortalità o sbeffeggiarla, io sono quassù e loro invece no."
+   },
+   {
+    "type": "paragraph",
+    "text": "«Ho sentito dire che per i mortali la sensazione di innamorarsi è molto simile alla sensazione che si prova davanti alla paura."
+   },
+   {
+    "type": "paragraph",
+    "text": "Il cuore batte forte, i sensi sono allertati, ti prende"
+   },
+   {
+    "type": "paragraph",
+    "text": "uno stordimento, ti vengono le..."
+   },
+   {
+    "type": "paragraph",
+    "text": "«Chi mi guarda le spalle può sempre infilzarmi con un coltello» gli ricordo."
+   },
+   {
+    "type": "paragraph",
+    "text": "Osservare la sua paura mi riempie di una soddisfazione quasi voluttuosa. Io, che ho avuto poco potere nella vita, devo guardarmi da quella sensazione. Il potere mi dà alla testa troppo in fretta, come il vino del mondo magico."
+   },
+   {
+    "type": "paragraph",
+    "text": "Il potere è di chi se lo prende."
+   },
+   {
+    "type": "paragraph",
+    "text": "«Ti stai srotolando come un rocchetto. Che succede quando non c’è più filo?» «Ne filerò dell’altro» replico io restando sulla sua metafora."
+   },
+   {
+    "type": "paragraph",
+    "text": "Appena se n’è andata, prendo i miei animali di peluche e me li metto vicino, sul tappeto."
+   },
+   {
+    "type": "paragraph",
+    "text": "Lancio loro un’ultima, lunga occhiata e poi, uno dopo l’altro, li getto nel fuoco. Non sono più una bambina e non ho più bisogno di conforto."
+   },
+   {
+    "type": "paragraph",
+    "text": "Il mio corpo si è abituato e adesso reclama quello che dovrebbe rigettare."
+   },
+   {
+    "type": "paragraph",
+    "text": "«Per un attimo» dice «mi sono chiesto se non fossi stata tu a tirarmi quelle frecce.» Io lo guardo male. «E cosa ti ha fatto pensare che non fossi stata io?» «Il fatto che non mi abbiano colpito» replica guardandomi."
+   },
+   {
+    "type": "paragraph",
+    "text": "«Baciami ancora» dice ubriaco e folle. «Baciami finché non ne potrò più.»"
+   },
+   {
+    "type": "paragraph",
+    "text": "Lui ti odia. Anche se ti desidera, lui ti odia. Forse ti odia proprio per quello."
+   },
+   {
+    "type": "paragraph",
+    "text": "«Se sei la malattia, immagino che tu non possa essere anche la cura.»"
+   },
+   {
+    "type": "paragraph",
+    "text": "«Vuoi sapere cosa ho fatto per diventare il suo braccio destro?» le chiedo piegandomi verso di lei, così vicino da farle sentire il calore del mio alito. «L’ho baciato sulla bocca e poi l’ho minacciato di baciarlo di nuovo se non avesse fatto esattamente quello che volevo.»"
+   },
+   {
+    "type": "paragraph",
+    "text": "Il potere è contagioso. Il potere divora."
+   },
+   {
+    "type": "paragraph",
+    "text": "«Non c’è niente di più dolce» dice baciandola sul dorso «di quel che manca.»"
+   },
+   {
+    "type": "paragraph",
+    "text": "di tutto ciò che mi ha fatto, farmi innamorare così di lui è in assoluto la peggiore."
+   },
+   {
+    "type": "paragraph",
+    "text": "«La tua ridicola famiglia potrebbe stupirsi di scoprire che non tutto si risolve uccidendo» mi grida Locke. «Ne saremmo stupiti anche noi» gli grido andandomene."
+   },
+   {
+    "type": "paragraph",
+    "text": "Penso che forse non bisognerebbe esagerare con il desiderio. Forse è come il mitridatismo. Forse ho assunto una dose letale quando avrei dovuto avvelenarmi lentamente, un bacio alla volta."
+   },
+   {
+    "type": "paragraph",
+    "text": "“Uccidilo” mi dice una parte di me, una parte che mi ricordo dalla sera in cui l’ho fatto prigioniero. “Uccidilo prima che ti faccia innamorare di lui.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "«È quello l’amore?» gli chiedo. «Se non è amore» mi dice «è qualcosa di molto simile.»"
+   },
+   {
+    "type": "paragraph",
+    "text": "Se non potevo avere la sua benevolenza, avrei avuto la sua collera."
+   },
+   {
+    "type": "paragraph",
+    "text": "Non sapevo se ti desideravo o se volevo che sparissi dalla mia vista per smettere di sentirmi come mi sentivo, e questo mi rendeva ancora più odioso. Ma quando sei sparita, sparita veramente sotto le onde, mi sono detestato come mai prima.»"
+   },
+   {
+    "type": "paragraph",
+    "text": "Lei pensa che io sia giovane e incapace e vuole prendermi le misure.»"
+   },
+   {
+    "type": "paragraph",
+    "text": "«Facciamole vedere che non sono un Sommo Re incapace.» «E come?» «Bella domanda» mi risponde. «Perché temo che abbia ragione.»"
+   },
+   {
+    "type": "paragraph",
+    "text": "In un duello il punto non è combattere bene, ma vincere."
+   },
+   {
+    "type": "paragraph",
+    "text": "Dalla sua arteria parte uno schizzo di sangue che finisce sul mio braccio e sull’erba. Brilla sul pugnale. Balekin si accascia a terra scomposto. Accade tutto così in fretta. Troppo in fretta. Voglio avere qualche reazione. Voglio tremare o sentirmi nauseata. Voglio essere il tipo di persona che comincia a piangere. Voglio essere chiunque tranne la persona che sono, che si guarda in giro per essere sicura che nessuna la veda, che pulisce il pugnale nella terra, che si pulisce le mani sui vestiti e scappa prima che accorrano le guardie."
+   },
+   {
+    "type": "paragraph",
+    "text": "Devi essere abbastanza forte da colpire e colpire e colpire ancora senza stancarti. La prima lezione è acquisire quella forza."
+   }
+  ]
+ },
+ {
   "id": "quote-realm-breaker",
   "title": "Realm Breaker",
   "author": "Victoria Aveyard",
@@ -6735,6 +5651,23 @@ window.FN_QUOTE_BOOKS = [
    {
     "type": "paragraph",
     "text": "“There is success,” I say. “And there is failure. The land in between is for those too weak to live."
+   }
+  ]
+ },
+ {
+  "id": "quote-il-regno-corrotto",
+  "title": "Il regno corrotto",
+  "author": "Leigh Bardugo",
+  "genre": "Fantasy & science fiction",
+  "kicker": "Leigh Bardugo · Fantasy & science fiction",
+  "blocks": [
+   {
+    "type": "paragraph",
+    "text": "“Noi affrontiamo la paura” le aveva detto. “Noi salutiamo la visitatrice inaspettata e ascoltiamo quello che ha da dirci."
+   },
+   {
+    "type": "paragraph",
+    "text": "arriva, qualcosa sta per succedere.”"
    }
   ]
  },
@@ -6821,6 +5754,201 @@ window.FN_QUOTE_BOOKS = [
   ]
  },
  {
+  "id": "quote-rule-of-wolves",
+  "title": "Rule of Wolves",
+  "author": "Leigh Bardugo",
+  "genre": "Fantasy & science fiction",
+  "kicker": "Leigh Bardugo · Fantasy & science fiction",
+  "blocks": [
+   {
+    "type": "paragraph",
+    "text": "“Men who see too much have a way of losing their eyes.” “And queens who trust too little have a way of losing their thrones.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "His groom had suggested it wasn’t appropriate for a king to ride out on a horse named Punchline,"
+   },
+   {
+    "type": "paragraph",
+    "text": "But kings did what they wished; bastards did what they must."
+   },
+   {
+    "type": "paragraph",
+    "text": "“You will invite me to a fine dinner. We’ll both drink too much wine. You’ll get me to talk about myself, the pressures of my position, the sadness of my past. Perhaps I’ll shed a tear or two. You’ll listen sensitively and astutely and somehow discover my secret self. Something like that?” “Well, not precisely. But … yes!” He leaned forward. “I want to know the true you, Zoya.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "If Ravka needed her to be gracious, she would damn well be gracious."
+   },
+   {
+    "type": "paragraph",
+    "text": "“People only say that when they know it won’t last.” “Of course it won’t last,” said Zoya. “What does?” “True love?” suggested Tamar. “Great art?” said Tolya. “A proper grudge,” replied Zoya."
+   },
+   {
+    "type": "paragraph",
+    "text": "The dragon knows how small human lives are, how wearying. They are fireflies. Sparks that dwindle in the night, while we burn on and on.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "Death is my gift, Nina thought, and I do not fear the lost."
+   },
+   {
+    "type": "paragraph",
+    "text": "“I can keep hope in my heart and a blade in my hand.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "No one takes care to guard against a dull blade."
+   },
+   {
+    "type": "paragraph",
+    "text": "I will forever be the weapon in your hand, the fighter at your side, the friend who awaits your return.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "“I have no queen, no king, and no country,” said Tolya. “I have only ever had what I believe.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "Let the hounds give chase. I do not fear death, because I command it.’”"
+   },
+   {
+    "type": "paragraph",
+    "text": "Not my brave girl. There are some hearts that beat stronger than others."
+   },
+   {
+    "type": "paragraph",
+    "text": "We are the dragon. We do not lie down to die."
+   },
+   {
+    "type": "paragraph",
+    "text": "When the larder was bare, when her husband couldn’t find work, when her hands cracked from taking in the neighbors’ washing. This is what love does."
+   },
+   {
+    "type": "paragraph",
+    "text": "Grief was the shadow love left when it was gone."
+   },
+   {
+    "type": "paragraph",
+    "text": "Real power frightens them.” She’d waved at the painted altarpiece. “They want the illusion of it. An image on a wall, silent and safe.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "He would teach the world awe."
+   },
+   {
+    "type": "paragraph",
+    "text": "Because I find I don’t want to fight for a future if I can’t find a way to make a future with you."
+   },
+   {
+    "type": "paragraph",
+    "text": "You chose your path. You walked it. You hoped to find a way home again."
+   },
+   {
+    "type": "paragraph",
+    "text": "I will give you a conflagration. I will give you a new name for fire."
+   },
+   {
+    "type": "paragraph",
+    "text": "“Why does it matter?” asked Nikolai. “Because unlike Kaz, I have a conscience.” “I have a conscience,” said Kaz. “It just knows when to keep its mouth shut.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "“You take your time or you take your chances,”"
+   },
+   {
+    "type": "paragraph",
+    "text": "“I’m not susceptible to flattery, only stacks of cash."
+   },
+   {
+    "type": "paragraph",
+    "text": "“A word of advice, from one bastard to another: Sometimes it’s best to let the demon have its day.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "“Ask me to be brave, not safe,”"
+   },
+   {
+    "type": "paragraph",
+    "text": "Love was on the other side and it was terrifying. Open the door."
+   },
+   {
+    "type": "paragraph",
+    "text": "“Everyone mourns the first blossom,” Mayu said softly. “Who will weep for the rest that fall?” “I will remain to sing for you,” Tamar continued the poem. Tolya placed a hand to his heart. “Long after the spring has gone.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "Why think of the next world when she was in this one?"
+   },
+   {
+    "type": "paragraph",
+    "text": "“My name is Aleksander Morozova,” he said, his voice echoing through the clearing. “But I have had a hundred names and I have committed a thousand crimes.” The monks placed their hands upon the roots of the tree, the trunk, the hanging boughs. The Darkling spread his arms wide, his lean body pale in the winter light. “I am not sorry.” The great tree’s bark began to move and shift. They’re Fabrikators, Nikolai realized, watching the monks concentrate. All of them. “I do not repent!” said the Darkling."
+   }
+  ]
+ },
+ {
+  "id": "quote-the-school-for-good-and-evil",
+  "title": "The School for Good and Evil",
+  "author": "Soman Chainani",
+  "genre": "Fantasy & science fiction",
+  "kicker": "Soman Chainani · Fantasy & science fiction",
+  "blocks": [
+   {
+    "type": "paragraph",
+    "text": "1. The Evil attack. The Good defend. 2. The Evil punish. The Good forgive. 3. The Evil hurt. The Good help. 4. The Evil take. The Good give. 5. The Evil hate. The Good love."
+   },
+   {
+    "type": "paragraph",
+    "text": "“Then I’ll be whatever you want me to be.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "“You see, it doesn’t matter what we are, Sophie.” Lady Lesso leaned so close she just had to whisper. “It’s what we do.”"
+   }
+  ]
+ },
+ {
+  "id": "quote-serpent-dove",
+  "title": "Serpent & Dove",
+  "author": "Shelby Mahurin",
+  "genre": "Fantasy & science fiction",
+  "kicker": "Shelby Mahurin · Fantasy & science fiction",
+  "blocks": [
+   {
+    "type": "paragraph",
+    "text": "“My mistress hired them as security.” “Security?” Coco scoffed, reaching into her coat for her own knife. Andre bared his teeth. “Since when is voyeurism considered security?”"
+   },
+   {
+    "type": "paragraph",
+    "text": "Death is the kindest of their torments—a gift bestowed only to those who have earned it."
+   },
+   {
+    "type": "paragraph",
+    "text": "“Why are you dressed like a man?” “Have you ever worn a corset?” I spun around to face him, reattaching my mustache with as much dignity as I could muster. “I doubt you’d ask such a question if you had. Trousers are infinitely more freeing.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "Ah. Chasseurs were holy men. He probably thought me the devil. He wouldn’t have been wrong."
+   },
+   {
+    "type": "paragraph",
+    "text": "“Are you a courtesan, then?”"
+   },
+   {
+    "type": "paragraph",
+    "text": "“Alas, no, and hearts all over Cesarine are breaking for it.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "“As if God could be a woman.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "for it is better to marry than to burn with passion.’"
+   }
+  ]
+ },
+ {
   "id": "quote-shades-of-magic",
   "title": "Shades of Magic",
   "author": "V. E. Schwab",
@@ -6874,6 +6002,120 @@ window.FN_QUOTE_BOOKS = [
   ]
  },
  {
+  "id": "quote-the-shadows-between-us",
+  "title": "The Shadows Between Us",
+  "author": "Tricia Levenseller",
+  "genre": "Fantasy & science fiction",
+  "kicker": "Tricia Levenseller · Fantasy & science fiction",
+  "blocks": [
+   {
+    "type": "paragraph",
+    "text": "When a man sees something that several other men want, he can’t help but want it, too."
+   },
+   {
+    "type": "paragraph",
+    "text": "I can neither give him exactly what he wants nor be too predictable."
+   },
+   {
+    "type": "paragraph",
+    "text": "I handled Hektor as I have handled everything else in my life: alone and with the utmost thoroughness."
+   },
+   {
+    "type": "paragraph",
+    "text": "The poets can say whatever they damned like. A woman’s worth is not decided by what’s between her legs but by what is in her mind."
+   },
+   {
+    "type": "paragraph",
+    "text": "“I think that when you care enough for someone, you reach a point where it’s far more painful not to have him at all than to have him and risk losing him."
+   },
+   {
+    "type": "paragraph",
+    "text": "Waiting. Not waiting. One lover. A hundred lovers. There should be no judgment either way. A woman is not defined by what she does or doesn’t do in the bedroom."
+   },
+   {
+    "type": "paragraph",
+    "text": "“I’m not a trollop,” I announce to the empty room. “I’m a sexually empowered woman, and there is nothing wrong with that.”"
+   }
+  ]
+ },
+ {
+  "id": "quote-the-silvered-serpents",
+  "title": "The Silvered Serpents",
+  "author": "Roshani Chokshi",
+  "genre": "Fantasy & science fiction",
+  "kicker": "Roshani Chokshi · Fantasy & science fiction",
+  "blocks": [
+   {
+    "type": "paragraph",
+    "text": "“We need to separate Vasiliev from his bodyguards,” said Séverin. “Something that can pull men apart—” “Money?” asked Enrique. “Love!” said Hypnos. “Magnets,” said Zofia."
+   },
+   {
+    "type": "paragraph",
+    "text": "“The difference between a diamond necklace and a diamond dog collar depends on the bitch. And they both have teeth, Monsieur.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "He wanted someone who would enter a room and look for him first, to behold him as though the secrets of the world lay somewhere in his gaze, to finish his sentences. Someone to share cake with."
+   },
+   {
+    "type": "paragraph",
+    "text": "Before you are born, you know all the secrets of the world. But an angel locked them up by pressing his thumb right above your lips. That’s why everyone has a dent right above their mouth.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "“May our ends justify our means,”"
+   },
+   {
+    "type": "paragraph",
+    "text": "Maybe for girls made of snow, love was worth the melt. But she was made of stolen bones and sleek fur, grave dirt and strange blood—her heart wasn’t even hers to give. Her soul was all she had, and no love was worth losing it."
+   },
+   {
+    "type": "paragraph",
+    "text": "“Madame Delphine, depending on who you ask, sometimes ghost stories are all that is left of history,” he said. “History is full of ghosts because it’s full of myth, all of it woven together depending on who survived to do the telling.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "She understood how the world cultivated malice between girls, teaching them to bare their teeth when they might have bared their souls."
+   },
+   {
+    "type": "paragraph",
+    "text": "When a man cannot see a person as a person, then the devil has slipped into him and is peering out of his eyes.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "My life, and whatever is left of it, will not be what his soul gnaws on to regain its strength. My death is not in service to his character, and I will not be a sacrifice simply for him to find peace of mind. He is not my responsibility to save.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "Zofia nodded and had the irrational desire to wish that some words could be solid and picked up off the ground and held close, so that she could reach for them whenever she needed. “I will.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "Sometimes she needed help, but that did not make her helpless."
+   },
+   {
+    "type": "paragraph",
+    "text": "It was power, she realized, and she quite liked it."
+   },
+   {
+    "type": "paragraph",
+    "text": "“You make the choice that you can live with. You do not have to like it.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "When the devil waged war in the heavens, even angels had to fall.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "he understood that perhaps monsters were misunderstood gods; deities with plans too grand for humans; a phantom of evil that drank from the roots of good."
+   },
+   {
+    "type": "paragraph",
+    "text": "“Love does not always wear the face we wish,” she said. “I wish my love had been more beautiful. I wish … I wish we had more time.”"
+   }
+  ]
+ },
+ {
   "id": "quote-sky-beyond-the-storm",
   "title": "A Sky Beyond the Storm",
   "author": "Sabaa Tahir",
@@ -6919,6 +6161,96 @@ window.FN_QUOTE_BOOKS = [
    {
     "type": "paragraph",
     "text": "“I wish I could live a thousand lives so I could fall in love with you a thousand times,” he says."
+   }
+  ]
+ },
+ {
+  "id": "quote-the-stolen-heir",
+  "title": "The Stolen Heir",
+  "author": "Holly Black",
+  "genre": "Fantasy & science fiction",
+  "kicker": "Holly Black · Fantasy & science fiction",
+  "blocks": [
+   {
+    "type": "paragraph",
+    "text": "netting, and which is hung with gold beads."
+   },
+   {
+    "type": "paragraph",
+    "text": "Cursing him for addling"
+   },
+   {
+    "type": "paragraph",
+    "text": "“Daughter of the sun,” I read. “Yet made for night, fire causes her to weep, and if she dies before her time, cut off her head and she may be reborn.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "sacrificing that which they cared most about."
+   },
+   {
+    "type": "paragraph",
+    "text": "“That you never stopped being angry,” he tells me. “It can be brave to hate. Sometimes it’s like hope.”"
+   }
+  ]
+ },
+ {
+  "id": "quote-these-violent-delights",
+  "title": "These Violent Delights",
+  "author": "Chloe Gong",
+  "genre": "Fantasy & science fiction",
+  "kicker": "Chloe Gong · Fantasy & science fiction",
+  "blocks": [
+   {
+    "type": "paragraph",
+    "text": "Fear was a concept for the men without guns."
+   },
+   {
+    "type": "paragraph",
+    "text": "Now it may be ugly, but it is glorious."
+   },
+   {
+    "type": "paragraph",
+    "text": "“These days, Juliette,” he said, low and warily, “the most dangerous people are the powerful white men who feel as if they have been slighted.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "But Juliette still needed to keep herself in line, force herself to follow them if people were to look up to her. Without her looks, this city would turn on her. It would claim that she didn’t deserve to be as competent as she was. The men, meanwhile, could be as tan, as fat, and as old as they wished. It would have no bearing on what people thought of them."
+   },
+   {
+    "type": "paragraph",
+    "text": "“She’s too kindhearted for her own good,” Rosalind remarked. “Let her be,” Juliette replied. “Too many kind hearts turn cold every day.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "She wished she could fill herself up like this. She wished she could press mounds of rich soil into the gaps of her heart, occupying the space until flowers could take root and grow roses."
+   },
+   {
+    "type": "paragraph",
+    "text": "I suppose I am sorry that I am not more sorry."
+   },
+   {
+    "type": "paragraph",
+    "text": "and what could endure alongside others with such teeth if it didn’t have ghastly claws of its own?"
+   },
+   {
+    "type": "paragraph",
+    "text": "Juliette pushed past her nerves. She had conquered much fiercer opponents than a loud heartbeat. Now or never."
+   },
+   {
+    "type": "paragraph",
+    "text": "I made my choice to believe in you—now you make yours. Will you keep fighting, or will you crumble?” She had spent a lifetime doing both."
+   },
+   {
+    "type": "paragraph",
+    "text": "Even the land of dreams needs to wake up sometimes."
+   },
+   {
+    "type": "paragraph",
+    "text": "Those who remain alive do not remain loyal.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "Paul Dexter went into death with three eyes open—the third eye a weeping bullet wound."
    }
   ]
  },
@@ -7132,6 +6464,132 @@ window.FN_QUOTE_BOOKS = [
   ]
  },
  {
+  "id": "quote-this-savage-song",
+  "title": "This Savage Song",
+  "author": "Victoria Schwab",
+  "genre": "Fantasy & science fiction",
+  "kicker": "Victoria Schwab · Fantasy & science fiction",
+  "blocks": [
+   {
+    "type": "paragraph",
+    "text": "It began with a bang. The words reminded him of a T. S. Eliot poem, “The Hollow Men.” Not with a bang but a whimper. Of course, one was talking about the beginning of life and the other about the end, but it still got August thinking: about the universe, about time, about himself."
+   },
+   {
+    "type": "paragraph",
+    "text": "Henry Flynn had kind eyes and a sad mouth, or sad eyes and a kind mouth; he could never keep them straight."
+   },
+   {
+    "type": "paragraph",
+    "text": "too often touching was a part of taking"
+   }
+  ]
+ },
+ {
+  "id": "quote-vengeful",
+  "title": "Vengeful",
+  "author": "V.E. Schwab",
+  "genre": "Fantasy & science fiction",
+  "kicker": "V.E. Schwab · Fantasy & science fiction",
+  "blocks": [
+   {
+    "type": "paragraph",
+    "text": "While seeking revenge, dig two graves—one for yourself."
+   },
+   {
+    "type": "paragraph",
+    "text": "Perhaps she was glass. But glass is only brittle until it breaks. Then it’s sharp."
+   },
+   {
+    "type": "paragraph",
+    "text": "Even back when he wanted to become one, it had never been in the interest of saving patients. He’d been drawn to the field of medicine for the knowledge, the authority, the control. He’d wanted to be the hand holding the scalpel, not the flesh parting beneath it."
+   },
+   {
+    "type": "paragraph",
+    "text": "He had craved a lot of things—power, revenge, control—but sex was never one of them. Even with Angie . . . he’d wanted her, of course, wanted her attention, her devotion, even her love. He’d cared about her, would have found ways to please her—and perhaps found his own pleasure in that—but for him, it had never been about sex."
+   },
+   {
+    "type": "paragraph",
+    "text": "“I don’t want you to save me,” said Sydney. “I want to save myself.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "Serena didn’t bend to the world. She made the world bend to her."
+   },
+   {
+    "type": "paragraph",
+    "text": "But beggars couldn’t be choosers."
+   },
+   {
+    "type": "paragraph",
+    "text": "She was bored by being called beautiful, and then a bitch. Stunning, and then stuck up. A ten, and then a tease."
+   },
+   {
+    "type": "paragraph",
+    "text": "Marcella had always been pretty. The kind of pretty people couldn’t ignore. Bright blue eyes and pitch-black hair, a heart-shaped face atop the lean, clean lines of a model. Her father told her she’d never have to work. Her mother said she’d have to work twice as hard. In a way, both of them were right."
+   },
+   {
+    "type": "paragraph",
+    "text": "What do you want to be?” Marcella twirled her beer. “In charge.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "“I’m not a fucking coat, Marcus. You don’t get to check me at the door.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "Better to be friendly, without being friends."
+   },
+   {
+    "type": "paragraph",
+    "text": "the table falling to easy conversation—so much spoken, so little said"
+   },
+   {
+    "type": "paragraph",
+    "text": "Men ahead of their time were always, by definition, outside of it."
+   },
+   {
+    "type": "paragraph",
+    "text": "How many men would she have to turn to dust before one took her seriously?"
+   },
+   {
+    "type": "paragraph",
+    "text": "Ask nice. Play nice. Marcella was so fucking tired of nice."
+   },
+   {
+    "type": "paragraph",
+    "text": "But heroin was a hell of a high. Not the roller coaster peaks of cocaine, or the mellow que sera sera of good weed, but a dreamy wave, a blissful way out of your own life, and your own head, a summer midnight swim in the ocean bare-assed kind of freedom—at first."
+   },
+   {
+    "type": "paragraph",
+    "text": "Claire didn’t deserve it, didn’t deserve this, to become a past tense,"
+   },
+   {
+    "type": "paragraph",
+    "text": "“Why sit around sulking,” she said, “when you could hurt the people who hurt you?”"
+   },
+   {
+    "type": "paragraph",
+    "text": "“Is it a kindness,” asked Victor, his voice breaking the stillness, “to loose prey back into the world, simply to be shot again?”"
+   },
+   {
+    "type": "paragraph",
+    "text": "“But I don’t want to survive,” sneered Marcella. “I want to thrive."
+   },
+   {
+    "type": "paragraph",
+    "text": "You do what you can. You fight, and you win, until you don’t.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "“LAST call for second thoughts,” murmured June. “Or second call for last ones.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "Run, thought Victor, and he could see the response in Eli’s coiled frame. Chase me."
+   }
+  ]
+ },
+ {
   "id": "quote-viaggio-di-halla",
   "title": "Il viaggio di Halla",
   "author": "Naomi Mitchison",
@@ -7173,6 +6631,63 @@ window.FN_QUOTE_BOOKS = [
    {
     "type": "paragraph",
     "text": "Nessuno può viaggiare leggero con una casa sulle spalle, nemmeno una chiocciola."
+   }
+  ]
+ },
+ {
+  "id": "quote-vicious",
+  "title": "Vicious",
+  "author": "V.E. Schwab",
+  "genre": "Fantasy & science fiction",
+  "kicker": "V.E. Schwab · Fantasy & science fiction",
+  "blocks": [
+   {
+    "type": "paragraph",
+    "text": "Be lost And then you will not care if you are ever found."
+   },
+   {
+    "type": "paragraph",
+    "text": "But what fascinated Victor most was the fact that something about Eli was decidedly wrong. He was like one of those pictures full of small errors, the kind you could only pick out by searching the image from every angle, and even then, a few always slipped by."
+   },
+   {
+    "type": "paragraph",
+    "text": "“I know,” said Victor. “But I want to see Eli.” “Why?” she asked. “You can’t kill him.” “That may be.” His fingers curled around the shovel. “But half the fun is trying.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "But Victor didn’t want to run while Eli was busy trying to fly."
+   },
+   {
+    "type": "paragraph",
+    "text": "Hell, we could be heroes.” “We could be dead,” said Eli. “That’s a risk everyone takes by living.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "It perplexed him, how someone about to play God could pray to Him,"
+   },
+   {
+    "type": "paragraph",
+    "text": "If Eli really was a hero, and Victor meant to stop him, did that make him a villain?"
+   },
+   {
+    "type": "paragraph",
+    "text": "He took a long sip of his drink, tipped his head back against the couch, and decided he could live with that."
+   },
+   {
+    "type": "paragraph",
+    "text": "Victor’s mind had always been drawn to those solutions, but he had been impeded by an understanding of right and wrong, or at least what he knew others saw as right and wrong. But now, this... this was simple. Elegant."
+   },
+   {
+    "type": "paragraph",
+    "text": "He cut deeper, through to bone, over and over, until the floor was red. Until he’d given his life to God a hundred times, and a hundred times had it given back."
+   },
+   {
+    "type": "paragraph",
+    "text": "And those who ally themselves with monsters are little better than monsters themselves."
+   },
+   {
+    "type": "paragraph",
+    "text": "“Who taught you to sing so loud? The little Sydney I knew could barely chirp.”"
    }
   ]
  },
@@ -10261,6 +9776,491 @@ window.FN_QUOTE_BOOKS = [
    {
     "type": "paragraph",
     "text": "“Fully capitalized” is a fancy way of saying that the price of land goes down proportionately to how much land income is taxed away."
+   }
+  ]
+ },
+ {
+  "id": "quote-il-libro-dell-inquietudine",
+  "title": "Il libro dell'inquietudine",
+  "author": "Fernando Pessoa",
+  "genre": "Essays, letters & lives",
+  "kicker": "Fernando Pessoa · Essays, letters & lives",
+  "blocks": [
+   {
+    "type": "paragraph",
+    "text": "«Paludi dallo sfiorare ansie per la mia anima in oro»."
+   },
+   {
+    "type": "paragraph",
+    "text": "Ogni mio sogno, appena lo comincio a sognare, è immediatamente incarnato in un’altra persona che inizia a sognarlo, e io non più."
+   },
+   {
+    "type": "paragraph",
+    "text": "Per creare, mi sono distrutto: mi sono esteriorizzato talmente dentro di me che dentro di me non esisto se non esteriormente."
+   },
+   {
+    "type": "paragraph",
+    "text": "«Do I contradict myself?"
+   },
+   {
+    "type": "paragraph",
+    "text": "Sentir tudo em todas as maneiras» (“sentire tutto in tutte le maniere”)"
+   },
+   {
+    "type": "paragraph",
+    "text": "Per scriverlo, ho raccolto l’anima di tutti i fiori e con i momenti effimeri di tutti i canti di tutti gli uccelli ho tessuto eternità e stasi."
+   },
+   {
+    "type": "paragraph",
+    "text": "E ti offro questo libro perché so che è bello e inutile."
+   },
+   {
+    "type": "paragraph",
+    "text": "vi ho messo tutta l’anima a farlo, ma non ho mai pensato a esso mentre lo facevo, solo a me che sono triste e a te che non sei nessuno."
+   },
+   {
+    "type": "paragraph",
+    "text": "né le Notti ti venissero a riporre la luna nelle mani per farla sembrare un giglio."
+   },
+   {
+    "type": "paragraph",
+    "text": "ha condotto l’arte di sognare attraverso la casualità dell’esistenza."
+   },
+   {
+    "type": "paragraph",
+    "text": "Tu non esisti, lo so bene, ma so io con la massima sicurezza se esisto?"
+   },
+   {
+    "type": "paragraph",
+    "text": "Creiamo, oh Solo-Mia, tu perché esisti, io perché ti vedo esistere, un’arte diversa da ogni arte mai esistita."
+   },
+   {
+    "type": "paragraph",
+    "text": "madre vergine e sterile degli dèi che non esisteranno mai."
+   },
+   {
+    "type": "paragraph",
+    "text": "La mia anima è un’orchestra occulta; non so quali strumenti suonano e stridono dentro di me, corde, arpe, timpani e tamburi. Mi conosco solo come sinfonia."
+   },
+   {
+    "type": "paragraph",
+    "text": "Le tue mani sono colombe prigioniere. Le tue labbra sono tortore mute (che i miei occhi vedono tubare). Tutti i tuoi gesti sono uccelli. Sei rondine nel chinarti, condor nel guardarmi, aquila nelle tue estasi d’orgoglio indifferente."
+   },
+   {
+    "type": "paragraph",
+    "text": "Ogni piacere è un vizio, perché cercar piacere è ciò che tutti fanno nella vita, e l’unico vizio oscuro è fare tutto ciò che tutti gli altri fanno."
+   },
+   {
+    "type": "paragraph",
+    "text": "Possedere un corpo è essere banale. Sognare di possedere un corpo è forse peggio, per quanto difficile: è sognarsi banale – il massimo dell’orrore."
+   },
+   {
+    "type": "paragraph",
+    "text": "E noi rimarremo sempre le stesse vetrate, ora a colori quando il sole batterà su di noi, ora meri contorni quando cadrà la notte... I secoli non altereranno il nostro silenzio vitreo..."
+   },
+   {
+    "type": "paragraph",
+    "text": "Fuori, si susseguiranno civiltà, scoppieranno rivolte, vorticheranno feste, sfileranno mansueti popoli giorno dopo giorno... E noi, amore mio irreale, avremo sempre lo stesso gesto inutile, la stessa esistenza falsa, e la stessa < > finché un giorno, al termine di vari secoli di impero, la Chiesa finalmente crollerà e tutto avrà fine..."
+   },
+   {
+    "type": "paragraph",
+    "text": "Solo la sterilità è nobile e degna. Solo l’uccidere ciò che non è mai stato è stravagante e sublime e assurdo."
+   },
+   {
+    "type": "paragraph",
+    "text": "E saprò mai se non sono io il sogno e tu la realtà, io un sogno tuo e non tu un Sogno che io sogni?"
+   },
+   {
+    "type": "paragraph",
+    "text": "Sei la donna precedente alla Caduta, scultura di quell’argilla che < > paradiso."
+   },
+   {
+    "type": "paragraph",
+    "text": "Chi può rispettare la Sposa senza dover pensare che è pur sempre una donna in una diversa posizione, quella della copula?"
+   },
+   {
+    "type": "paragraph",
+    "text": "Chissà se sognandoti non ti creo reale in un’altra realtà; chissà se non sarai mia in quel luogo, in un altro mondo e puro, dove ci ameremo senza corpo tangibile, con un altro genere d’abbracci e altre forme essenziali di possesso?"
+   },
+   {
+    "type": "paragraph",
+    "text": "Chissà se il mio sognare non è stato semplicemente incontrarti,"
+   },
+   {
+    "type": "paragraph",
+    "text": "Sei già andata via e sei già stata e ti ho già amato: il sentirti presente è sentire tutto questo."
+   },
+   {
+    "type": "paragraph",
+    "text": "Rendiamo la vita assurda, da est a ovest."
+   },
+   {
+    "type": "paragraph",
+    "text": "Essere puri, non per essere nobili o per essere forti, ma per essere se stessi. Chi dà amore, perde amore."
+   },
+   {
+    "type": "paragraph",
+    "text": "Abdicare alla vita per non abdicare a se stessi."
+   },
+   {
+    "type": "paragraph",
+    "text": "Sono un pozzo"
+   },
+   {
+    "type": "paragraph",
+    "text": "di sogni che ho dimenticato di sognare fino in fondo."
+   },
+   {
+    "type": "paragraph",
+    "text": "Tra me e la vita c’è un vetro sottile. Per quanto nitidamente veda e comprenda la vita, non la posso toccare. Razionalizzare la nostra tristezza?"
+   },
+   {
+    "type": "paragraph",
+    "text": "come quello di chi disprezza la vita e la vive solo per doverla disprezzare. E il nostro disprezzo sia rivolto a chi lavora e lotta, e il nostro odio a chi spera e ha fiducia."
+   },
+   {
+    "type": "paragraph",
+    "text": "Non so se il mondo è triste o cattivo e non mi importa neppure, perché la sofferenza altrui mi è noiosa e indifferente."
+   },
+   {
+    "type": "paragraph",
+    "text": "Ciò che uccide il sognatore è non vivere quando sogna; ciò che ferisce chi agisce è non sognare quando vive."
+   },
+   {
+    "type": "paragraph",
+    "text": "Come la nostra ombra, la vita mi insegue. E non c’è ombra solo quando tutto è ombra. La vita non ci insegue solo quando ci consegniamo a essa."
+   },
+   {
+    "type": "paragraph",
+    "text": "Sono qualcosa che sono stato. Non mi trovo dove mi sento e, se mi cerco, non so chi mi sta cercando. Un tedio verso tutto mi spossa. Mi sento espulso dalla mia stessa anima."
+   },
+   {
+    "type": "paragraph",
+    "text": "Non posso giurarvi di essere stato proprio io a partire e non il paesaggio, di essere stato proprio io a visitare altre terre e non esse a visitare me."
+   },
+   {
+    "type": "paragraph",
+    "text": "Ho scolpito la mia vita come una statua di materia estranea al mio essere."
+   },
+   {
+    "type": "paragraph",
+    "text": "A che pro esprimersi? Il poco che si dice sarebbe meglio rimanesse non detto."
+   },
+   {
+    "type": "paragraph",
+    "text": "Perché è bella l’arte? Perché è inutile. Perché è brutta la vita? Perché è tutta finalità e propositi e intenzioni."
+   },
+   {
+    "type": "paragraph",
+    "text": "La bellezza delle rovine? Non servire più a nulla. La dolcezza del passato? Ricordarlo, perché ricordarlo è renderlo presente, ed esso non lo è, né può esserlo – l’assurdo, amore mio, l’assurdo."
+   },
+   {
+    "type": "paragraph",
+    "text": "Io non sono pessimista, sono triste."
+   },
+   {
+    "type": "paragraph",
+    "text": "Niente vale la pena, oh mio amore lontano, fuorché sapere com’è dolce sapere che niente vale la pena..."
+   },
+   {
+    "type": "paragraph",
+    "text": "E in questo modo morimmo la nostra vita, così attenti a morirla separatamente che non ci avvedemmo che eravamo solo uno, che ciascuno di noi era un’illusione dell’altro e ciascuno dentro di sé era il mero eco del suo proprio essere..."
+   },
+   {
+    "type": "paragraph",
+    "text": "Disinganniamoci sulla speranza, perché tradisce; sull’amore, perché stanca; sulla vita, perché riempie ma non sazia; e anche sulla morte, perché porta più di ciò che si vuole e meno di ciò che ci si aspetta."
+   },
+   {
+    "type": "paragraph",
+    "text": "Tutto così superfluo! Noi e il mondo e il mistero di entrambi."
+   },
+   {
+    "type": "paragraph",
+    "text": "Chiuditi dentro la tua torre d’avorio ma senza sbattere la porta."
+   },
+   {
+    "type": "paragraph",
+    "text": "E se qualcuno ti dice che tutto questo è falso e assurdo, non gli credere. Ma non credere neppure a quello che ti dico io, perché non si deve credere in niente."
+   },
+   {
+    "type": "paragraph",
+    "text": "Nulla si può penetrare, né atomi, né anime. Perciò nulla possiede nulla. Dalla verità fino a un fazzoletto – tutto è impossedibile. (La proprietà non è un furto: non è nulla.)"
+   },
+   {
+    "type": "paragraph",
+    "text": "Ma ho l’impressione che il mio racconto confermi che ho viaggiato ma che non ho vissuto. Ho portato in giro da una parte all’altra, da nord a sud e da est a ovest, la stanchezza di aver avuto un passato, l’inquietudine di star vivendo un presente e il tedio di dover avere un futuro."
+   },
+   {
+    "type": "paragraph",
+    "text": "Di quale cosa essenzialmente divina sono fatti i castelli che non sono di sabbia?"
+   },
+   {
+    "type": "paragraph",
+    "text": "Dio sarà forse un bambino molto cresciuto? L’intero universo non sembra forse uno scherzo, una beffa da bambino monello?"
+   },
+   {
+    "type": "paragraph",
+    "text": "Non mi dica che è una notte di chiaro di luna. Non sopporto le notti di chiaro di luna... C’è chi, in effetti, ha l’abitudine di suonare musica nelle notti di chiaro di luna..."
+   },
+   {
+    "type": "paragraph",
+    "text": "Credo che l’unica cosa degna di una donna contemporanea sia l’ideale di essere disegno. Quando ero bambina volevo essere una regina di un seme qualsiasi di un mazzo di carte antico che c’era a casa mia..."
+   },
+   {
+    "type": "paragraph",
+    "text": "In fondo, mi creda, ciò che siamo di più doloroso è ciò che non siamo realmente, e le nostre tragedie più grandi accadono nell’idea che ci facciamo di noi stessi."
+   },
+   {
+    "type": "paragraph",
+    "text": "Ogni buona conversazione deve essere un monologo a due..."
+   },
+   {
+    "type": "paragraph",
+    "text": "Le mie uniche simpatie, nei libri di grammatica, le riservavo alle eccezioni e ai pleonasmi... Sfuggire alle regole e dire cose inutili riassumono bene un atteggiamento essenzialmente moderno."
+   },
+   {
+    "type": "paragraph",
+    "text": "Un amico mio che si è suicidato – ogni volta che converso a lungo con qualcuno faccio suicidare un amico – aveva intenzione di dedicare la propria vita a distruggere i verbi... = (Perché si è suicidato?)"
+   },
+   {
+    "type": "paragraph",
+    "text": "Sono un ponte tra due misteri, senza sapere come mi hanno costruito..."
+   },
+   {
+    "type": "paragraph",
+    "text": "Questo è l’unico ascetismo possibile. Non prevede fede né Dio. Dio sono io."
+   },
+   {
+    "type": "paragraph",
+    "text": "Amare è stancarsi di star soli: è pertanto una codardia e un tradimento di noi stessi. (È estremamente importante non amare.)"
+   },
+   {
+    "type": "paragraph",
+    "text": "Nel mito di Gesù, c’è scritto questo: Dio, nel diventare uomo, non può avere altra fine che il martirio. Il sognatore supremo ha per figlio il martirio supremo."
+   },
+   {
+    "type": "paragraph",
+    "text": "Non sono stato destinato alla realtà e la vita ha voluto venire a trovarmi."
+   },
+   {
+    "type": "paragraph",
+    "text": "Dio ha fatto della mia anima qualcosa di decorativo."
+   },
+   {
+    "type": "paragraph",
+    "text": "Liberatevi soprattutto dal coltivare sentimenti umanitari. L’umanitarismo è una volgarità."
+   },
+   {
+    "type": "paragraph",
+    "text": "Oggi possiedo solo la realtà, con cui non posso giocare... Povero bambino esiliato nella sua virilità! Perché sono dovuto crescere?"
+   },
+   {
+    "type": "paragraph",
+    "text": "È morto in me qualcosa in più che il mio passato."
+   },
+   {
+    "type": "paragraph",
+    "text": "Non ho mai considerato il suicidio come una soluzione, perché odio la vita per l’amore che provo per essa."
+   },
+   {
+    "type": "paragraph",
+    "text": "Sopra ogni altra cosa, vorrei che lo scopo della mia vita fosse educare gli altri a sentire sempre più per se stessi e sempre meno secondo la legge dinamica della collettività. Educare a formare quello stato spirituale antisettico che eviti il contagio della volgarità, mi sembra il destino più radioso del pedagogo interiore che vorrei essere."
+   },
+   {
+    "type": "paragraph",
+    "text": "Quando li evoco, l’anima tutta mi si raggela e mi sento esiliato dai cuori, solo nella notte di me stesso, piangendo come un mendicante il silenzio chiuso di tutte le porte."
+   },
+   {
+    "type": "paragraph",
+    "text": "per"
+   },
+   {
+    "type": "paragraph",
+    "text": "l’esteta, le tragedie sono cose interessanti da osservare, ma fastidiose da soffrire."
+   },
+   {
+    "type": "paragraph",
+    "text": "Giacché non possiamo ottenere bellezza dalla vita, cerchiamo almeno di ottenere bellezza dal non poter ottenere bellezza dalla vita."
+   },
+   {
+    "type": "paragraph",
+    "text": "Io sono la grande disfatta dell’esercito che sosteneva l’ultimo impero."
+   },
+   {
+    "type": "paragraph",
+    "text": "In me c’è il sapore della fine di una civiltà antica e dominatrice."
+   },
+   {
+    "type": "paragraph",
+    "text": "perché finanche nel sogno mi sono riconosciuto incompatibile con la vita,"
+   },
+   {
+    "type": "paragraph",
+    "text": "Che questa anima sia il mio sepolcro per sempre, e che < > diventi assoluto in Tenebra e io giammai possa vivere senza sentire o desiderare..."
+   },
+   {
+    "type": "paragraph",
+    "text": "la lussuria giapponese di avere evidentemente"
+   },
+   {
+    "type": "paragraph",
+    "text": "soltanto due dimensioni."
+   },
+   {
+    "type": "paragraph",
+    "text": "Gli uomini sono facili da allontanare: basta non avvicinarsi."
+   },
+   {
+    "type": "paragraph",
+    "text": "è abituarsi a incarnare il dolore in una determinata figura ideale. Creare un altro Io che si incarichi di soffrire in noi, di soffrire ciò che soffriamo. Creare, poi, un sadismo interiore, del tutto masochista, che goda della propria sofferenza come se fosse di un altro."
+   },
+   {
+    "type": "paragraph",
+    "text": "Delle persone invidio il loro non essere me."
+   },
+   {
+    "type": "paragraph",
+    "text": "per quanto riguarda la pietà, io non la ispiro, perché non esiste pietà per gli storpi di spirito."
+   },
+   {
+    "type": "paragraph",
+    "text": "Ho sofferto l’umiliazione di conoscermi."
+   },
+   {
+    "type": "paragraph",
+    "text": "“Il tuo focolare” disse “non ha lume: perché mai vuoi un focolare?”, “La tua tavola” disse “non ha pane: con cosa ti rallegra la tua tavola?”, “La tua vita” disse “non ha chi la accompagni: con cosa ti seduce la vita?”. “Io sono” disse lei “il fuoco dei focolari spenti, il pane delle tavole vuote, la sollecita compagnia dei solitari e degli isolati."
+   },
+   {
+    "type": "paragraph",
+    "text": "tu stesso ti perderai nella mia sostanza mistica, nella mia esistenza negata, nel mio petto ove le cose si inabissano, nel mio petto ove le anime si spengono, nel mio petto, ove gli dèi svaniscono."
+   },
+   {
+    "type": "paragraph",
+    "text": "La morte è il trionfo della Vita!"
+   },
+   {
+    "type": "paragraph",
+    "text": "Tutto è degli altri, salvo il dolore di non averlo."
+   },
+   {
+    "type": "paragraph",
+    "text": "Ogni civiltà segue la linea intima di una religione che la rappresenta:"
+   },
+   {
+    "type": "paragraph",
+    "text": "Una nave sembra un oggetto il cui fine è navigare; ma il suo fine non è navigare, bensì arrivare in porto. Noi ci siamo ritrovati a navigare senza l’idea del porto a cui avremmo dovuto attraccare."
+   },
+   {
+    "type": "paragraph",
+    "text": "Orfano della Fortuna, sento il bisogno, come tutti gli orfani, di essere l’oggetto dell’affetto di qualcuno. Ho sempre avuto fame di realizzare questa necessità. Mi sono talmente abituato a questa fame inevitabile che a volte non so più se sento il bisogno di mangiare."
+   },
+   {
+    "type": "paragraph",
+    "text": "Pensando, mi sono creato eco e abisso."
+   },
+   {
+    "type": "paragraph",
+    "text": "Parlare significa nutrire troppa considerazione per gli altri. A bocca aperta muore il pesce e Oscar Wilde."
+   },
+   {
+    "type": "paragraph",
+    "text": "L’uomo perfetto per i pagani era la perfezione dell’uomo che esiste; l’uomo perfetto per i cristiani, la perfezione dell’uomo che non esiste; l’uomo perfetto per i buddisti, la perfezione che l’uomo non esiste."
+   },
+   {
+    "type": "paragraph",
+    "text": "Nacque allora nelle anime recenti quella malattia che chiamarono romanticismo, quel cristianesimo senza illusioni, quel cristianesimo senza miti, che costituisce l’aridità stessa della sua essenza malata. Il male del romanticismo è la confusione tra ciò di cui abbiamo bisogno e ciò che desideriamo."
+   },
+   {
+    "type": "paragraph",
+    "text": "Tuttavia è sintomo di malattia desiderare con eguale intensità ciò di cui si ha bisogno e ciò che è desiderabile, e soffrire di non essere perfetto come si soffre per la mancanza di cibo. Il male romantico è questo: volere la luna come se esistesse un modo di ottenerla."
+   },
+   {
+    "type": "paragraph",
+    "text": "“Non si può mangiare un pasticcino senza perderlo.”"
+   },
+   {
+    "type": "paragraph",
+    "text": "Soffri ritmicamente."
+   },
+   {
+    "type": "paragraph",
+    "text": "Ma tutta la vita è una metafisica al buio, con un brusio di dèi e l’ignoranza della via come unica via."
+   },
+   {
+    "type": "paragraph",
+    "text": "L’amore romantico è il prodotto estremo di secoli e secoli di influenza cristiana;"
+   },
+   {
+    "type": "paragraph",
+    "text": "Di giorno, io sono nulla, e di notte, io sono io."
+   },
+   {
+    "type": "paragraph",
+    "text": "Mi alzo dalla sedia con uno sforzo mostruoso, ma ho l’impressione di portarmi dietro la sedia e che la sedia sia più pesante, perché è la sedia del soggettivismo."
+   },
+   {
+    "type": "paragraph",
+    "text": "Agire, ecco la vera intelligenza. Sarò quello che vorrò. Ma devo volere quello che sarò."
+   },
+   {
+    "type": "paragraph",
+    "text": "Il successo risiede nell’aver successo e non nell’avere le condizioni per il successo."
+   },
+   {
+    "type": "paragraph",
+    "text": "Vince la lotteria della vita solo chi ne ha comprato i biglietti a casaccio."
+   },
+   {
+    "type": "paragraph",
+    "text": "Dormiamo la vita, eterni bambini del Destino."
+   },
+   {
+    "type": "paragraph",
+    "text": "Sapere che sarà scadente l’opera che non si comporrà mai. Peggio, tuttavia, sarà quella che non si cercherà mai di comporre."
+   },
+   {
+    "type": "paragraph",
+    "text": "e le risate della vita che passa mi feriscono come una capocchia di fiammifero sfregata sulle rughe sensibili del mio cuore."
+   },
+   {
+    "type": "paragraph",
+    "text": "Così come laviamo il nostro corpo, dovremmo lavare pure il destino, cambiare l’esistenza come cambiamo la biancheria: non per sostentare la vita, come mangiando e dormendo, ma per quel rispetto estraneo di noi stessi che appropriatamente chiamiamo igiene."
+   },
+   {
+    "type": "paragraph",
+    "text": "Siamo tutti abituati a considerare noi stessi essenzialmente come realtà mentali, mentre vediamo gli altri immediatamente come realtà fisiche; consideriamo noi stessi vagamente come persone fisiche solo in virtù dell’effetto dello sguardo degli altri; consideriamo vagamente gli altri come realtà mentali, ma solo nell’amore o nei conflitti prendiamo davvero coscienza che gli altri hanno soprattutto un’anima, come noi per noi stessi."
+   },
+   {
+    "type": "paragraph",
+    "text": "Non so se ho la febbre, giacché sento, oppure se ho smesso di avere la febbre che mi fa dormire la vita."
+   },
+   {
+    "type": "paragraph",
+    "text": "Non c’è pace – e, ahimè, non c’è neppure il desiderio di averla..."
+   },
+   {
+    "type": "paragraph",
+    "text": "“perché io sono della dimensione di ciò che vedo e non della dimensione della mia altezza.”15"
+   },
+   {
+    "type": "paragraph",
+    "text": "Sono nato in un’epoca in cui la maggioranza dei giovani aveva perduto la fede in Dio per la stessa ragione per la quale i loro padri l’avevano posseduta – senza sapere perché."
+   },
+   {
+    "type": "paragraph",
+    "text": "E dunque, poiché lo spirito umano tende naturalmente a criticare perché sente e non perché pensa, la maggioranza di questi giovani ha scelto l’Umanità come succedaneo di Dio."
+   },
+   {
+    "type": "paragraph",
+    "text": "Ho sempre considerato che Dio, essendo improbabile, potesse esistere e che potesse perciò essere adorato; ma che l’Umanità, essendo una mera idea biologica e non designando altro che la specie animale Umana, non fosse degna di adorazione più di un’altra qualsiasi specie animale. Questo culto dell’Umanità, con i suoi rituali di Libertà e Uguaglianza, mi è sempre parso una reviviscenza di antichi culti, in cui gli animali erano come dèi o gli dèi avevano la testa di animali."
+   },
+   {
+    "type": "paragraph",
+    "text": "Della scienza, accolgo solo quel suo precetto essenziale secondo cui tutto è soggetto a leggi fatali, contro le quali non si può reagire in modo autonomo, poiché reagire significa che esse hanno fatto in modo che reagissimo;"
+   },
+   {
+    "type": "paragraph",
+    "text": "Per tutti noi calerà la notte e arriverà la diligenza. Mi godo la brezza che mi è data e l’anima che mi hanno dato per goderne, e non interrogo né ricerco. Se quello che lascerò scritto nel libro dei viaggiatori potrà, una volta riletto da altri un giorno, anche divertirli durante la traversata, sarà un bene. Se non lo leggeranno e non si saranno divertiti, sarà un bene lo stesso."
    }
   ]
  },

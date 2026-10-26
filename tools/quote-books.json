@@ -1075,6 +1075,310 @@
    "author": "John Milton",
    "genre": "Poetry",
    "labels": []
+  },
+  "babel-or-the-necessity-of-violence": {
+   "title": "Babel, or The Necessity of Violence",
+   "author": "R.F. Kuang",
+   "genre": "Fantasy & science fiction",
+   "labels": [
+    "Babel, or The Necessity of Violence: An Arcane History of the Oxford Translators' Revolution"
+   ]
+  },
+  "blood-honey": {
+   "title": "Blood & Honey",
+   "author": "Shelby Mahurin",
+   "genre": "Fantasy & science fiction",
+   "labels": [
+    "Blood & Honey (Serpent & Dove, #2)"
+   ]
+  },
+  "the-bronzed-beasts": {
+   "title": "The Bronzed Beasts",
+   "author": "Roshani Chokshi",
+   "genre": "Fantasy & science fiction",
+   "labels": [
+    "The Bronzed Beasts (The Gilded Wolves #3)"
+   ]
+  },
+  "the-burning-god": {
+   "title": "The Burning God",
+   "author": "R.F. Kuang",
+   "genre": "Fantasy & science fiction",
+   "labels": [
+    "The Burning God (The Poppy War, #3)"
+   ]
+  },
+  "chain-of-iron": {
+   "title": "Chain of Iron",
+   "author": "Cassandra Clare",
+   "genre": "Fantasy & science fiction",
+   "labels": [
+    "Chain of Iron (The Last Hours, #2)"
+   ]
+  },
+  "the-city-of-brass": {
+   "title": "The City of Brass",
+   "author": "S.A. Chakraborty",
+   "genre": "Fantasy & science fiction",
+   "labels": [
+    "The City of Brass (The Daevabad Trilogy, #1)"
+   ]
+  },
+  "defy-me": {
+   "title": "Defy Me",
+   "author": "Tahereh Mafi",
+   "genre": "Fantasy & science fiction",
+   "labels": [
+    "Defy Me (Shatter Me, #5)"
+   ]
+  },
+  "the-dragon-republic": {
+   "title": "The Dragon Republic",
+   "author": "R.F. Kuang",
+   "genre": "Fantasy & science fiction",
+   "labels": [
+    "The Dragon Republic (The Poppy War, #2)"
+   ]
+  },
+  "the-empire-of-gold": {
+   "title": "The Empire of Gold",
+   "author": "S.A. Chakraborty",
+   "genre": "Fantasy & science fiction",
+   "labels": [
+    "The Empire of Gold (The Daevabad Trilogy, #3)"
+   ]
+  },
+  "the-complete-novels-the-trial-the-castle-amerika": {
+   "title": "The Complete Novels (The Trial, The Castle, Amerika)",
+   "author": "Franz Kafka",
+   "genre": "Novels & stories",
+   "labels": [
+    "Franz Kafka: The Complete Novels (The Trial, The Castle, Amerika)"
+   ]
+  },
+  "the-gilded-wolves": {
+   "title": "The Gilded Wolves",
+   "author": "Roshani Chokshi",
+   "genre": "Fantasy & science fiction",
+   "labels": [
+    "The Gilded Wolves (The Gilded Wolves, #1)"
+   ]
+  },
+  "girls-made-of-snow-and-glass": {
+   "title": "Girls Made of Snow and Glass",
+   "author": "Melissa Bashardoust",
+   "genre": "Fantasy & science fiction",
+   "labels": [
+    "Girls Made of Snow and Glass"
+   ]
+  },
+  "heart-of-a-dog": {
+   "title": "Heart of a Dog",
+   "author": "Mikhail Bulgakov",
+   "genre": "Novels & stories",
+   "labels": [
+    "Heart of a Dog"
+   ]
+  },
+  "imagine-me": {
+   "title": "Imagine Me",
+   "author": "Tahereh Mafi",
+   "genre": "Fantasy & science fiction",
+   "labels": [
+    "Imagine Me (Shatter Me, #6)"
+   ]
+  },
+  "le-intermittenze-della-morte": {
+   "title": "Le intermittenze della morte",
+   "author": "José Saramago",
+   "genre": "Novels & stories",
+   "labels": [
+    "Le intermittenze della morte"
+   ]
+  },
+  "the-invisible-life-of-addie-larue": {
+   "title": "The Invisible Life of Addie LaRue",
+   "author": "V.E. Schwab",
+   "genre": "Fantasy & science fiction",
+   "labels": [
+    "The Invisible Life of Addie LaRue"
+   ]
+  },
+  "the-kingdom-of-copper": {
+   "title": "The Kingdom of Copper",
+   "author": "S.A. Chakraborty",
+   "genre": "Fantasy & science fiction",
+   "labels": [
+    "The Kingdom of Copper (The Daevabad Trilogy, #2)"
+   ]
+  },
+  "il-libro-dell-inquietudine": {
+   "title": "Il libro dell'inquietudine",
+   "author": "Fernando Pessoa",
+   "genre": "Essays, letters & lives",
+   "labels": [
+    "Il libro dell'inquietudine"
+   ]
+  },
+  "milk-fed": {
+   "title": "Milk Fed",
+   "author": "Melissa Broder",
+   "genre": "Novels & stories",
+   "labels": [
+    "Milk Fed"
+   ]
+  },
+  "the-name-of-the-wind": {
+   "title": "The Name of the Wind",
+   "author": "Patrick Rothfuss",
+   "genre": "Fantasy & science fiction",
+   "labels": [
+    "The Name of the Wind (The Kingkiller Chronicle, #1)"
+   ]
+  },
+  "oltre-i-confini-del-tempo": {
+   "title": "Oltre i confini del tempo",
+   "author": "Amabile Giusti",
+   "genre": "Fantasy & science fiction",
+   "labels": [
+    "Oltre i confini del tempo (Odyssea #3)"
+   ]
+  },
+  "oltre-il-coraggio-del-sacrificio": {
+   "title": "Oltre il coraggio del sacrificio",
+   "author": "Amabile Giusti",
+   "genre": "Fantasy & science fiction",
+   "labels": [
+    "Oltre il coraggio del sacrificio"
+   ]
+  },
+  "oltre-le-catene-dell-orgoglio": {
+   "title": "Oltre le catene dell'orgoglio",
+   "author": "Amabile Giusti",
+   "genre": "Fantasy & science fiction",
+   "labels": [
+    "Oltre le catene dell'orgoglio (Odyssea #2)"
+   ]
+  },
+  "il-paese-delle-nevi": {
+   "title": "Il paese delle nevi",
+   "author": "Yasunari Kawabata",
+   "genre": "Novels & stories",
+   "labels": [
+    "Il paese delle nevi"
+   ]
+  },
+  "poison-s-kiss": {
+   "title": "Poison's Kiss",
+   "author": "Breeana Shields",
+   "genre": "Fantasy & science fiction",
+   "labels": [
+    "Poison's Kiss (Poison's Kiss, #1)"
+   ]
+  },
+  "the-queen-of-nothing": {
+   "title": "The Queen of Nothing",
+   "author": "Holly Black",
+   "genre": "Fantasy & science fiction",
+   "labels": [
+    "The Queen of Nothing (The Folk of the Air, #3)"
+   ]
+  },
+  "il-re-malvagio": {
+   "title": "Il re malvagio",
+   "author": "Holly Black",
+   "genre": "Fantasy & science fiction",
+   "labels": [
+    "Il re malvagio (The Folk of the Air Vol. 2)"
+   ]
+  },
+  "il-regno-corrotto": {
+   "title": "Il regno corrotto",
+   "author": "Leigh Bardugo",
+   "genre": "Fantasy & science fiction",
+   "labels": [
+    "Il regno corrotto. GrishaVerse (Six of Crows, #2)"
+   ]
+  },
+  "rule-of-wolves": {
+   "title": "Rule of Wolves",
+   "author": "Leigh Bardugo",
+   "genre": "Fantasy & science fiction",
+   "labels": [
+    "Rule of Wolves (King of Scars, #2)"
+   ]
+  },
+  "the-school-for-good-and-evil": {
+   "title": "The School for Good and Evil",
+   "author": "Soman Chainani",
+   "genre": "Fantasy & science fiction",
+   "labels": [
+    "The School for Good and Evil (The School for Good and Evil, #1)"
+   ]
+  },
+  "serpent-dove": {
+   "title": "Serpent & Dove",
+   "author": "Shelby Mahurin",
+   "genre": "Fantasy & science fiction",
+   "labels": [
+    "Serpent & Dove (Serpent & Dove, #1)"
+   ]
+  },
+  "the-shadows-between-us": {
+   "title": "The Shadows Between Us",
+   "author": "Tricia Levenseller",
+   "genre": "Fantasy & science fiction",
+   "labels": [
+    "The Shadows Between Us"
+   ]
+  },
+  "the-silvered-serpents": {
+   "title": "The Silvered Serpents",
+   "author": "Roshani Chokshi",
+   "genre": "Fantasy & science fiction",
+   "labels": [
+    "The Silvered Serpents (The Gilded Wolves, #2)"
+   ]
+  },
+  "the-stolen-heir": {
+   "title": "The Stolen Heir",
+   "author": "Holly Black",
+   "genre": "Fantasy & science fiction",
+   "labels": [
+    "The Stolen Heir (The Stolen Heir Duology, #1)"
+   ]
+  },
+  "these-violent-delights": {
+   "title": "These Violent Delights",
+   "author": "Chloe Gong",
+   "genre": "Fantasy & science fiction",
+   "labels": [
+    "These Violent Delights (These Violent Delights, #1)"
+   ]
+  },
+  "this-savage-song": {
+   "title": "This Savage Song",
+   "author": "Victoria Schwab",
+   "genre": "Fantasy & science fiction",
+   "labels": [
+    "This Savage Song (Monsters of Verity, #1)"
+   ]
+  },
+  "vengeful": {
+   "title": "Vengeful",
+   "author": "V.E. Schwab",
+   "genre": "Fantasy & science fiction",
+   "labels": [
+    "Vengeful (Villains, #2)"
+   ]
+  },
+  "vicious": {
+   "title": "Vicious",
+   "author": "V.E. Schwab",
+   "genre": "Fantasy & science fiction",
+   "labels": [
+    "Vicious (Villains, #1)"
+   ]
   }
  },
  "blocks": {
