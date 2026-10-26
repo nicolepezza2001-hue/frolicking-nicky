@@ -2255,19 +2255,7 @@ window.FN_QUOTE_BOOKS = [
    },
    {
     "type": "paragraph",
-    "text": "Nemmeno nei momenti peggiori potrei distruggere una statua greca o un affresco di Giotto. Perchè lo farei dunque con un'altra cosa? Perchè, per esempio, con un istante della vita d'un essere umani, che potrebbe essere un istante felice?"
-   },
-   {
-    "type": "paragraph",
-    "text": "Impossibile perdonare chi ci ha fatto del male, se quel male ci abbassa. Bisogna pensare che non ci ha abbassati, ma che ha rivelato il nostro real livello."
-   },
-   {
-    "type": "paragraph",
     "text": "Desiderio di vedere altri soffrire quel che stiamo soffrendo, esattamente. Per questo, eccetto i periodi di instabilità sociale, i rancori dei miseri hanno di mira i loro simili. È questo un fattore di stabilità sociale."
-   },
-   {
-    "type": "paragraph",
-    "text": "Anch'io sono altra da quella che m'immagino essere. Saperlo è il perdono."
    },
    {
     "type": "paragraph",
@@ -2637,23 +2625,6 @@ window.FN_QUOTE_BOOKS = [
    {
     "type": "paragraph",
     "text": "Marriage is not a happy ending but an imperfect beginning."
-   }
-  ]
- },
- {
-  "id": "quote-carnival-row",
-  "title": "Carnival Row",
-  "author": "",
-  "genre": "Film & TV",
-  "kicker": "Film & TV",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "text": "At the end of the day a man's no better than the pain he's caused the people he loves and what he's welling to do to set it right."
-   },
-   {
-    "type": "paragraph",
-    "text": "At the end of the day a man's no better than the pain he's caused the people he loves and what he's willing to do to set it right."
    }
   ]
  },
@@ -4550,6 +4521,10 @@ window.FN_QUOTE_BOOKS = [
    {
     "type": "paragraph",
     "text": "We rip out so much of ourselves to be cured of things faster than we should that we go bankrupt by the age of thirty and have less to offer each time we start with someone new. But to make yourself feel nothing so as not to feel anything - what a waste!\n— Call Me by Your Name, André Aciman"
+   },
+   {
+    "type": "paragraph",
+    "text": "At the end of the day a man's no better than the pain he's caused the people he loves and what he's welling to do to set it right.\n— Carnival Row"
    },
    {
     "type": "paragraph",
