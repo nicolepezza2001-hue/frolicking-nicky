@@ -1,0 +1,20 @@
+name: Probe Goodreads notes (temporary)
+on:
+  push:
+    branches: ['probe/**']
+jobs:
+  probe:
+    runs-on: ubuntu-24.04
+    steps:
+      - run: |
+          for UA in 'Mozilla/5.0 (Frolicking Nicky quotes sync)' 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36'; do
+          for u in "notes/197324729-nicole-p" "notes/197324729-nicole-p?page=2" "user/show/197324729-nicole-p"; do
+            echo "=== $u ($UA)"
+            curl -sSL -A "$UA" -w '%{http_code} %{size_download}\n' "https://www.goodreads.com/$u" -o p.html
+            grep -o '/notes/[0-9][^"?]*197324729-nicole-p' p.html | sort -u
+            grep -o "class=['\"][^'\"]*annotatedBook[^'\"]*['\"]\|No notes\|no notes[^<]*\|private[^<]\{0,80\}" p.html | sort | uniq -c | head
+          done; done
+          curl -sSL "https://www.goodreads.com/notes/197324729-nicole-p" -o l.html
+          python3 -c "
+          import re;h=open('l.html').read();i=h.find('annotatedBooks');i=i if i>0 else h.find('Notes &amp; Highlights')
+          print(re.sub(r'\s+',' ',re.sub(r'<script.*?</script>','',h[i:i+4000],flags=re.S)))"
