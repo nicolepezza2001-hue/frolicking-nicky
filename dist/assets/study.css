@@ -382,3 +382,32 @@ article.fn-lesson[id^="quote-"] .fn-lesson-table td{white-space:pre-line;font-st
 article.fn-lesson[id^="quote-"] .fn-lesson-table tr:first-child{display:none}
 article.fn-lesson[id^="quote-"] .fn-lesson-table td{display:block;width:auto;border-bottom:0}
 article.fn-lesson[id^="quote-"] .fn-lesson-table td+td{padding-top:0;opacity:.78;border-bottom:1px solid #2b1e3822}}
+/* By heart (assets/by-heart.js): a poem's room, one stanza at a time; read, fade to first letters, recite */
+.fn-heart-open{text-decoration:none;margin-right:auto;margin-left:16px}
+.fn-heart-all{font-size:1rem}
+.fn-heart-actions{margin:0 0 26px}
+.fn-heart-stage:empty{display:none}
+.fn-heart-stage{margin:0 0 34px;padding:22px 26px;border:1px solid var(--st-line);border-radius:12px;background:#150e1d66}
+.fn-heart-step{margin:0 0 14px;color:var(--st-soft);font-style:italic}
+.fn-heart-verse{margin:0 0 18px;font:500 clamp(1.25rem,3vw,1.5rem)/1.55 'Cormorant Garamond',Georgia,serif;color:var(--st-cream)}
+.fn-heart-line{margin:0}
+.fn-heart-line:nth-child(3){padding-left:1.4em}
+.fn-heart-word.is-faded{color:#c9b9d699;letter-spacing:.06em;cursor:pointer;border-radius:3px}
+.fn-heart-word.is-faded:hover,.fn-heart-word.is-faded:focus-visible{color:var(--st-yellow);outline:none}
+.fn-heart-word.is-said{color:var(--st-yellow)}
+.fn-heart-word.is-missed{color:var(--st-cream);text-decoration:underline;text-decoration-color:#e8a0a0;text-decoration-thickness:2px;text-underline-offset:4px}
+.fn-heart-translation{margin:0 0 20px;white-space:pre-line;color:var(--st-soft);font-style:italic;font-size:1rem;line-height:1.55}
+.fn-heart-cue{margin:0 0 12px;color:var(--st-soft);font-style:italic}
+.fn-heart-help .fn-heart-verse{font-size:1.1rem;margin-bottom:10px}
+.fn-heart-form textarea{display:block;margin:0 0 12px;font-size:1.2rem;line-height:1.55;resize:vertical}
+.fn-heart-map{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:6px}
+.fn-heart-dot{width:34px;height:34px;border-radius:50%;border:1px solid #f3d99555;background:transparent;color:var(--st-soft);font:500 .8rem Georgia,serif;cursor:pointer;padding:0}
+.fn-heart-dot:hover,.fn-heart-dot:focus-visible{border-color:var(--st-yellow);color:var(--st-yellow);outline:none}
+.fn-heart-dot[data-step="1"]{background:#f3d99526;color:var(--st-cream)}
+.fn-heart-dot[data-step="2"]{background:#f3d99540;color:var(--st-cream)}
+.fn-heart-dot[data-step="3"]{background:#f3d99566;color:var(--st-night)}
+.fn-heart-dot[data-step="4"],.fn-heart-dot[data-step="5"]{background:var(--st-yellow);color:var(--st-night)}
+.fn-heart-dot[data-due]{box-shadow:0 0 0 2px var(--st-night),0 0 0 3px #e8a0a0}
+.fn-heart-shelf{margin:0 0 34px}
+.fn-quotes-book[data-due] .fn-quotes-author{color:var(--st-yellow)}
+@media(max-width:760px){.fn-heart-stage{padding:16px 14px}.fn-heart-open{margin-left:10px}}

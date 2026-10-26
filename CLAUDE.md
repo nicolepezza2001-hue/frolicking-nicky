@@ -182,6 +182,12 @@ a separate Europe close-up, the map legend or the trip buttons under the map on 
   bumps the shelf's `?v=` and redeploys. Nicky's calls: books marked `hidden` in `quote-books.json` stay off the page (Alessandra, Elena, Men said), and every book with a single quote is gathered, signed, on one **Miscellaneous** page with her
   sayings and unnamed lines. New quotes find their book by their bold source line; unknown books land under
   "Newly added" until they get a genre in `quote-books.json`. A source that can't be reached keeps its last copy.
+- **Whole poems and By heart** (`tools/quote-poems.json`, `assets/by-heart.js`): a poem listed there follows Nicky's quotes on
+  its book page (original beside Italiano, one stanza per row; the Italian is Claude's own when no free translation exists)
+  and is built into `window.FN_POEMS`. Each poem page gets **Learn by heart**, opening `#heart-<poem>`: read a stanza (with
+  its translation), let its words fade to first letters (tap to peek), then type it from memory (90% of the words counts;
+  "I was right" overrides). Recited stanzas come back after 1, 2, 4, 7, 15, 30, 60, 120 days, a miss starts again at one day;
+  "By heart" at the top of Quotes shows what is due. Progress lives in `fn-study-heart-v1`, synced with the other keys.
 - Topic pages use the study palette Nicky loves: deep purple `#2b1e38` / `#150e1d` and candle-yellow `#f3d995`,
   with cream `#efe0bf` text, all set in Cormorant Garamond, notes on yellow-ruled lines (`assets/study.css`).
   Keep it elegant: no emoji, no tooltips, no outlines; only the glow and the Arnold Böcklin word on hover.
