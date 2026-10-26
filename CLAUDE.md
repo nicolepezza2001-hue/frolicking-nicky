@@ -172,12 +172,14 @@ a separate Europe close-up, the map legend or the trip buttons under the map on 
   pages she agreed, `assets/linguistics-lessons.js`, each with a quiz), quartz crystal = "What next?" (add a topic;
   added topics are listed on that page). Hover gives the object a faint candle glow and writes its subject
   in Arnold Böcklin (yellow `#f3d995`); on touch screens every object breathes a faint glow.
-- **Quotes** (`#quotes`, the three books; `assets/quotes.js`): Nicky's quotes from her Notion page "Quotes" and her Goodreads
-  quotes, word for word, read from `assets/quotes.json`. `.github/workflows/sync-quotes.yml` refreshes that file every morning
-  (`tools/sync-quotes.mjs`), commits it to main and starts the deploy. Notion needs the `NOTION_TOKEN` repository secret
-  (an internal integration added to the page's Connections; never in the repo); Goodreads needs her profile id in
-  `GOODREADS_USER`. A source that can't be reached keeps its last copy. Page: a quote drawn at random, a search box, then
-  Goodreads and Notion in their own order (bold-only Notion lines become source headings, code blocks keep their line breaks).
+- **Quotes** (`#quotes`, the three books; `assets/quotes.js`): Nicky's books, by genre and then A to Z (leading articles
+  ignored); each opens its own notes page (`#quote-…`, rendered by `study.js` like the lessons, so highlights, margin notes and
+  Edit lesson work). Her quotes stay word for word. `assets/quote-books.js` is **built**, never edited by hand:
+  `.github/workflows/sync-quotes.yml` runs `tools/sync-quotes.mjs` every morning, which copies her Notion page "Quotes"
+  (repository secret `NOTION_TOKEN`) and her Goodreads quotes (`GOODREADS_USER`) into `tools/quotes.json`, sorts them into
+  books with `tools/quote-books.json` (book, author and genre per quote; her source lines in `labels` are left off the page),
+  bumps the shelf's `?v=` and redeploys. New quotes find their book by their bold source line; unknown books land under
+  "Newly added" until they get a genre in `quote-books.json`. A source that can't be reached keeps its last copy.
 - Topic pages use the study palette Nicky loves: deep purple `#2b1e38` / `#150e1d` and candle-yellow `#f3d995`,
   with cream `#efe0bf` text, all set in Cormorant Garamond, notes on yellow-ruled lines (`assets/study.css`).
   Keep it elegant: no emoji, no tooltips, no outlines; only the glow and the Arnold Böcklin word on hover.

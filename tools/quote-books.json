@@ -1,0 +1,875 @@
+{
+ "_about": "Which book each Notion quote belongs to, for the Quotes page of the study. tools/sync-quotes.mjs reads it. 'blocks' maps the start of a quote (lower case, punctuation removed, 60 characters) to a book key; 'labels' are Nicky's own source lines in Notion, left off the book page because the page title already says it. Quotes not listed here are placed by their bold source line or the quote before them; unknown books go under 'Newly added' until they are given a genre here.",
+ "genres": [
+  "Novels & stories",
+  "Fantasy & science fiction",
+  "Poetry",
+  "Plays",
+  "Philosophy & faith",
+  "Essays, letters & lives",
+  "Film & TV",
+  "Friends & family",
+  "Lines & sayings"
+ ],
+ "books": {
+  "weil": {
+   "title": "L’ombra e la grazia",
+   "author": "Simone Weil",
+   "genre": "Philosophy & faith",
+   "labels": [
+    "SIMONE WEIL, L'ombra e la grazia"
+   ]
+  },
+  "house-of-mirth": {
+   "title": "The House of Mirth",
+   "author": "Edith Wharton",
+   "genre": "Novels & stories",
+   "labels": []
+  },
+  "this-is-water": {
+   "title": "This Is Water",
+   "author": "David Foster Wallace",
+   "genre": "Essays, letters & lives",
+   "labels": []
+  },
+  "gita": {
+   "title": "Bhagavad Gita",
+   "author": "",
+   "genre": "Philosophy & faith",
+   "labels": []
+  },
+  "kara": {
+   "title": "Kara",
+   "author": "",
+   "genre": "Friends & family",
+   "labels": []
+  },
+  "dania": {
+   "title": "Dania",
+   "author": "",
+   "genre": "Friends & family",
+   "labels": []
+  },
+  "alessandra": {
+   "title": "Alessandra",
+   "author": "",
+   "genre": "Friends & family",
+   "labels": []
+  },
+  "rumi": {
+   "title": "Rumi",
+   "author": "",
+   "genre": "Poetry",
+   "labels": []
+  },
+  "lu": {
+   "title": "Lu",
+   "author": "",
+   "genre": "Friends & family",
+   "labels": [
+    "LU",
+    "Lu"
+   ]
+  },
+  "agamemnon": {
+   "title": "Agamemnon",
+   "author": "Seneca",
+   "genre": "Plays",
+   "labels": [
+    "Agamnenon, Seneca"
+   ]
+  },
+  "eurydice": {
+   "title": "Eurydice",
+   "author": "H.D.",
+   "genre": "Poetry",
+   "labels": [
+    "Eurydice",
+    "BY H.D."
+   ]
+  },
+  "sayings": {
+   "title": "Sayings and single lines",
+   "author": "",
+   "genre": "Lines & sayings",
+   "labels": []
+  },
+  "girard": {
+   "title": "René Girard",
+   "author": "",
+   "genre": "Philosophy & faith",
+   "labels": []
+  },
+  "ember": {
+   "title": "An Ember in the Ashes",
+   "author": "Sabaa Tahir",
+   "genre": "Fantasy & science fiction",
+   "labels": []
+  },
+  "apocalisse": {
+   "title": "Apocalisse",
+   "author": "Giovanni",
+   "genre": "Philosophy & faith",
+   "labels": [
+    "Apocalisse, Giovanni"
+   ]
+  },
+  "attraversare-i-muri": {
+   "title": "Attraversare i muri",
+   "author": "Marina Abramović",
+   "genre": "Essays, letters & lives",
+   "labels": [
+    "Attraversare i muri"
+   ]
+  },
+  "bellezza-e-tristezza": {
+   "title": "Bellezza e tristezza",
+   "author": "Yasunari Kawabata",
+   "genre": "Novels & stories",
+   "labels": [
+    "Bellezza e tristezza"
+   ]
+  },
+  "beautiful-and-damned": {
+   "title": "The Beautiful and Damned",
+   "author": "F. Scott Fitzgerald",
+   "genre": "Novels & stories",
+   "labels": []
+  },
+  "camus": {
+   "title": "Albert Camus",
+   "author": "",
+   "genre": "Essays, letters & lives",
+   "labels": []
+  },
+  "carmilla": {
+   "title": "Carmilla",
+   "author": "Sheridan Le Fanu",
+   "genre": "Novels & stories",
+   "labels": [
+    "Carmilla"
+   ]
+  },
+  "chungking-express": {
+   "title": "Chungking Express",
+   "author": "Wong Kar-wai",
+   "genre": "Film & TV",
+   "labels": [
+    "Chankging express"
+   ]
+  },
+  "cime-tempestose": {
+   "title": "Cime tempestose",
+   "author": "Emily Brontë",
+   "genre": "Novels & stories",
+   "labels": [
+    "Cime tempestose"
+   ]
+  },
+  "de-profundis": {
+   "title": "De Profundis",
+   "author": "Oscar Wilde",
+   "genre": "Essays, letters & lives",
+   "labels": [
+    "De Profundis"
+   ]
+  },
+  "demain-des-laube": {
+   "title": "Demain, dès l’aube",
+   "author": "Victor Hugo",
+   "genre": "Poetry",
+   "labels": []
+  },
+  "donna-e-altro": {
+   "title": "Donna e Altro",
+   "author": "",
+   "genre": "Essays, letters & lives",
+   "labels": [
+    "Donna e Altro"
+   ]
+  },
+  "zhivago": {
+   "title": "Il dottor Živago",
+   "author": "Boris Pasternak",
+   "genre": "Novels & stories",
+   "labels": []
+  },
+  "fondamenta": {
+   "title": "Fondamenta degli incurabili",
+   "author": "Iosif Brodskij",
+   "genre": "Essays, letters & lives",
+   "labels": [
+    "Fondamenta degli incurabili"
+   ]
+  },
+  "germinal": {
+   "title": "Germinal",
+   "author": "Émile Zola",
+   "genre": "Novels & stories",
+   "labels": []
+  },
+  "grishaverse": {
+   "title": "Grishaverse",
+   "author": "Leigh Bardugo",
+   "genre": "Fantasy & science fiction",
+   "labels": [
+    "Grishaverse, Leigh Bardugo"
+   ]
+  },
+  "henry-v": {
+   "title": "Henry V",
+   "author": "William Shakespeare",
+   "genre": "Plays",
+   "labels": []
+  },
+  "hippius": {
+   "title": "Zinaida Hippius",
+   "author": "",
+   "genre": "Poetry",
+   "labels": [
+    "Hippius"
+   ]
+  },
+  "karamazov": {
+   "title": "I fratelli Karamazov",
+   "author": "Fëdor Dostoevskij",
+   "genre": "Novels & stories",
+   "labels": []
+  },
+  "palazzo-dei-sogni": {
+   "title": "Il palazzo dei sogni",
+   "author": "Ismail Kadare",
+   "genre": "Novels & stories",
+   "labels": []
+  },
+  "rosso-e-nero": {
+   "title": "Il rosso e il nero",
+   "author": "Stendhal",
+   "genre": "Novels & stories",
+   "labels": []
+  },
+  "trionfo-della-morte": {
+   "title": "Il trionfo della morte",
+   "author": "Gabriele D’Annunzio",
+   "genre": "Novels & stories",
+   "labels": [
+    "Il trionfo della morte"
+   ]
+  },
+  "autunno-del-patriarca": {
+   "title": "L’autunno del patriarca",
+   "author": "Gabriel García Márquez",
+   "genre": "Novels & stories",
+   "labels": [
+    "L'autunno del patriarca"
+   ]
+  },
+  "kundera-esistenza": {
+   "title": "L’esistenza",
+   "author": "Milan Kundera",
+   "genre": "Novels & stories",
+   "labels": [
+    "L'esistenza - Kundera"
+   ]
+  },
+  "insostenibile": {
+   "title": "L’insostenibile leggerezza dell’essere",
+   "author": "Milan Kundera",
+   "genre": "Novels & stories",
+   "labels": [
+    "L'insostenibile leggerezza dell'essere"
+   ]
+  },
+  "camelie": {
+   "title": "La signora delle camelie",
+   "author": "Alexandre Dumas",
+   "genre": "Novels & stories",
+   "labels": [
+    "La signora delle camelie"
+   ]
+  },
+  "vegetariana": {
+   "title": "La vegetariana",
+   "author": "Han Kang",
+   "genre": "Novels & stories",
+   "labels": [
+    "La vegetariana"
+   ]
+  },
+  "labe": {
+   "title": "Louise Labé",
+   "author": "",
+   "genre": "Poetry",
+   "labels": []
+  },
+  "affinita-elettive": {
+   "title": "Le affinità elettive",
+   "author": "Johann Wolfgang von Goethe",
+   "genre": "Novels & stories",
+   "labels": [
+    "Le affinità elettive"
+   ]
+  },
+  "fantasma-opera": {
+   "title": "Il fantasma dell’opera",
+   "author": "Gaston Leroux",
+   "genre": "Novels & stories",
+   "labels": []
+  },
+  "les-mouches": {
+   "title": "Les Mouches",
+   "author": "Jean-Paul Sartre",
+   "genre": "Plays",
+   "labels": []
+  },
+  "men-said": {
+   "title": "Men said",
+   "author": "",
+   "genre": "Friends & family",
+   "labels": [
+    "Men said"
+   ]
+  },
+  "foucault": {
+   "title": "Michel Foucault",
+   "author": "",
+   "genre": "Philosophy & faith",
+   "labels": [
+    "Michel Foucault"
+   ]
+  },
+  "naval": {
+   "title": "Naval",
+   "author": "Naval Ravikant",
+   "genre": "Essays, letters & lives",
+   "labels": [
+    "Naval"
+   ]
+  },
+  "noi": {
+   "title": "Noi",
+   "author": "Evgenij Zamjatin",
+   "genre": "Fantasy & science fiction",
+   "labels": [
+    "Noi, Zamiatin"
+   ]
+  },
+  "carnival-row": {
+   "title": "Carnival Row",
+   "author": "",
+   "genre": "Film & TV",
+   "labels": [
+    "Carnival Row"
+   ]
+  },
+  "laus-veneris": {
+   "title": "Laus Veneris",
+   "author": "Algernon Swinburne",
+   "genre": "Poetry",
+   "labels": [
+    "Swinburne, Laus Veneris"
+   ]
+  },
+  "zarathustra": {
+   "title": "Così parlò Zarathustra",
+   "author": "Friedrich Nietzsche",
+   "genre": "Philosophy & faith",
+   "labels": [
+    "Also Sprach Zarathustra"
+   ]
+  },
+  "ungaretti": {
+   "title": "Giuseppe Ungaretti",
+   "author": "",
+   "genre": "Poetry",
+   "labels": [
+    "Ungaretti"
+   ]
+  },
+  "narciso": {
+   "title": "Narciso e Boccadoro",
+   "author": "Hermann Hesse",
+   "genre": "Novels & stories",
+   "labels": [
+    "Narciso e Boccadoro"
+   ]
+  },
+  "principe-crudele": {
+   "title": "Il principe crudele",
+   "author": "Holly Black",
+   "genre": "Fantasy & science fiction",
+   "labels": [
+    "Il principe crudele"
+   ]
+  },
+  "andric": {
+   "title": "Ivo Andrić",
+   "author": "",
+   "genre": "Novels & stories",
+   "labels": [
+    "Ivo Andrič"
+   ]
+  },
+  "yourcenar": {
+   "title": "Marguerite Yourcenar",
+   "author": "",
+   "genre": "Novels & stories",
+   "labels": [
+    "Marguerite Yourcenar"
+   ]
+  },
+  "silvered-serpents": {
+   "title": "The Silvered Serpents",
+   "author": "Roshani Chokshi",
+   "genre": "Fantasy & science fiction",
+   "labels": [
+    "Silvered serpents"
+   ]
+  },
+  "po-chu-i": {
+   "title": "Selected Poems",
+   "author": "Po Chü-i",
+   "genre": "Poetry",
+   "labels": [
+    "Po Chu-i, Selected Poems"
+   ]
+  },
+  "educazione": {
+   "title": "L’educazione sentimentale",
+   "author": "Gustave Flaubert",
+   "genre": "Novels & stories",
+   "labels": [
+    "L'educazione sentimentale"
+   ]
+  },
+  "foresta": {
+   "title": "La foresta della notte",
+   "author": "Djuna Barnes",
+   "genre": "Novels & stories",
+   "labels": [
+    "La foresta della notte"
+   ]
+  },
+  "antigone": {
+   "title": "Antigone",
+   "author": "",
+   "genre": "Plays",
+   "labels": [
+    "Antigone"
+   ]
+  },
+  "elena": {
+   "title": "Elena",
+   "author": "",
+   "genre": "Friends & family",
+   "labels": [
+    "Елена"
+   ]
+  },
+  "giorgi": {
+   "title": "Gaia Ginevra Giorgi",
+   "author": "",
+   "genre": "Poetry",
+   "labels": [
+    "Gaia Ginevra Giorgi"
+   ]
+  },
+  "call-me": {
+   "title": "Call Me by Your Name",
+   "author": "André Aciman",
+   "genre": "Novels & stories",
+   "labels": []
+  },
+  "for-black-boys": {
+   "title": "For Black Boys",
+   "author": "",
+   "genre": "Plays",
+   "labels": [
+    "For Black Boys"
+   ]
+  },
+  "plath": {
+   "title": "Sylvia Plath",
+   "author": "",
+   "genre": "Poetry",
+   "labels": [
+    "Sylvia Plath"
+   ]
+  },
+  "unnamed": {
+   "title": "Lines without a name",
+   "author": "",
+   "genre": "Lines & sayings",
+   "labels": []
+  },
+  "orlando": {
+   "title": "Orlando",
+   "author": "Virginia Woolf",
+   "genre": "Novels & stories",
+   "labels": [
+    "Orlando"
+   ]
+  },
+  "dead-jews": {
+   "title": "People Love Dead Jews",
+   "author": "Dara Horn",
+   "genre": "Essays, letters & lives",
+   "labels": [
+    "PEOPLE LOVE DEAD JEWS"
+   ]
+  },
+  "said-2024": {
+   "title": "Said in 2024",
+   "author": "",
+   "genre": "Friends & family",
+   "labels": [
+    "2024"
+   ]
+  },
+  "said-2023": {
+   "title": "Said in 2023",
+   "author": "",
+   "genre": "Friends & family",
+   "labels": [
+    "2023"
+   ]
+  },
+  "seni-e-uova": {
+   "title": "Seni e uova",
+   "author": "Mieko Kawakami",
+   "genre": "Novels & stories",
+   "labels": []
+  },
+  "shades-of-magic": {
+   "title": "Shades of Magic",
+   "author": "V. E. Schwab",
+   "genre": "Fantasy & science fiction",
+   "labels": [
+    "Shades of magic"
+   ]
+  },
+  "shameless": {
+   "title": "Shameless",
+   "author": "",
+   "genre": "Film & TV",
+   "labels": []
+  },
+  "augustine": {
+   "title": "Sant’Agostino",
+   "author": "",
+   "genre": "Philosophy & faith",
+   "labels": [
+    "St Augustine"
+   ]
+  },
+  "ulysses": {
+   "title": "Ulysses",
+   "author": "Alfred, Lord Tennyson",
+   "genre": "Poetry",
+   "labels": []
+  },
+  "tess": {
+   "title": "Tess dei d’Urberville",
+   "author": "Thomas Hardy",
+   "genre": "Novels & stories",
+   "labels": [
+    "Thomas Hardy, Tess dei d'Urberville"
+   ]
+  },
+  "city-walls": {
+   "title": "The City and Its Uncertain Walls",
+   "author": "Haruki Murakami",
+   "genre": "Novels & stories",
+   "labels": [
+    "The city and its uncertain walls"
+   ]
+  },
+  "dubliners": {
+   "title": "Dubliners",
+   "author": "James Joyce",
+   "genre": "Novels & stories",
+   "labels": [
+    "The Dubliners"
+   ]
+  },
+  "ethical-slut": {
+   "title": "The Ethical Slut",
+   "author": "Dossie Easton and Janet W. Hardy",
+   "genre": "Essays, letters & lives",
+   "labels": [
+    "The ethical slut"
+   ]
+  },
+  "gatsby": {
+   "title": "The Great Gatsby",
+   "author": "F. Scott Fitzgerald",
+   "genre": "Novels & stories",
+   "labels": []
+  },
+  "name-of-the-wind": {
+   "title": "The Name of the Wind",
+   "author": "Patrick Rothfuss",
+   "genre": "Fantasy & science fiction",
+   "labels": [
+    "The name of the wind"
+   ]
+  },
+  "oleander-sword": {
+   "title": "The Oleander Sword",
+   "author": "Tasha Suri",
+   "genre": "Fantasy & science fiction",
+   "labels": [
+    "The Oleander Sword"
+   ]
+  },
+  "prophet": {
+   "title": "The Prophet",
+   "author": "Kahlil Gibran",
+   "genre": "Poetry",
+   "labels": [
+    "The Profet"
+   ]
+  },
+  "queen-of-nothing": {
+   "title": "The Queen of Nothing",
+   "author": "Holly Black",
+   "genre": "Fantasy & science fiction",
+   "labels": [
+    "The Queen of Nothing"
+   ]
+  },
+  "road-not-taken": {
+   "title": "The Road Not Taken",
+   "author": "Robert Frost",
+   "genre": "Poetry",
+   "labels": [
+    "The Road Not Taken\nby Robert Frost"
+   ]
+  },
+  "tempest": {
+   "title": "The Tempest",
+   "author": "William Shakespeare",
+   "genre": "Plays",
+   "labels": [
+    "The Tempest"
+   ]
+  },
+  "larkin": {
+   "title": "This Be The Verse",
+   "author": "Philip Larkin",
+   "genre": "Poetry",
+   "labels": [
+    "Philip Larkin"
+   ]
+  },
+  "time-war": {
+   "title": "This Is How You Lose the Time War",
+   "author": "Amal El-Mohtar and Max Gladstone",
+   "genre": "Fantasy & science fiction",
+   "labels": [
+    "This is how you lose the time war"
+   ]
+  },
+  "madding-crowd": {
+   "title": "Via dalla pazza folla",
+   "author": "Thomas Hardy",
+   "genre": "Novels & stories",
+   "labels": [
+    "Via dalla pazza folla"
+   ]
+  },
+  "wild-nights": {
+   "title": "Wild Nights",
+   "author": "Emily Dickinson",
+   "genre": "Poetry",
+   "labels": [
+    "WILD NIGHTS",
+    "Emily Dickinson"
+   ]
+  },
+  "wings": {
+   "title": "Wings",
+   "author": "Mikhail Kuzmin",
+   "genre": "Novels & stories",
+   "labels": []
+  },
+  "den-bez-vranya": {
+   "title": "День без вранья",
+   "author": "Viktoria Tokareva",
+   "genre": "Novels & stories",
+   "labels": []
+  }
+ },
+ "blocks": {
+  "nemmeno nei momenti peggiori potrei distruggere una statua g": "weil",
+  "tutte le colpe sono uguali c è una colpa sola non avere la c": "weil",
+  "impossibile perdonare chi ci ha fatto del male se quel male ": "weil",
+  "anch io sono altra da quella che m immagino essere saperlo è": "weil",
+  "volerlo a vuoto volere il vuoto": "weil",
+  "la sventura che costringe ad affezionarsi a oggetti miserabi": "weil",
+  "nell infelicità quasi infernale come nella perfezione c è qu": "weil",
+  "la necessità è lo schermo posto fra dio e noi perché noi pos": "weil",
+  "essere appena l intermediario fra la terra incolta e il camp": "weil",
+  "ci si dirige verso una cosa perché si crede che essa sia buo": "weil",
+  "l illusione sulle cose di questo mondo non concerne la loro ": "weil",
+  "distinzione fra quelli che rimangono nella caverna chiudono ": "weil",
+  "come si distingue l immaginario dal reale nel dominio spirit": "weil",
+  "c è nell anima qualcosa che somiglia a una fagocitosi tutta ": "weil",
+  "per questo fuggiamo il vuoto interiore perché dio potrebbe i": "weil",
+  "invece che indurirla la sfortuna l aveva resa docile e un ma": "house-of-mirth",
+  "era sempre stata una spettatrice della vita e la sua mente s": "house-of-mirth",
+  "l alta società era un corpo celeste che veniva giudicato a s": "house-of-mirth",
+  "ecco di nuovo davanti a lui in tutta la sua completezza la s": "house-of-mirth",
+  "ma c è qualcos altro che devo fare prima si interruppe di nu": "house-of-mirth",
+  "e guardandosi in dietro si rese conto che non c era mai stat": "house-of-mirth",
+  "una simile visione di solidarietà non si era ancora mai offe": "house-of-mirth",
+  "everybody worships the only choice we get is what to worship": "this-is-water",
+  "gita we are not called to solve the meaning of life but to f": "gita",
+  "the world is the nursery of saints": "gita",
+  "man and god need a third party as intermediary no more than ": "gita",
+  "the consciousness of imperfection indicates that the soul is": "gita",
+  "life is like a game of bridge we did not invent the game or ": "gita",
+  "we cannot cure desires by fresh desires we cannot cure actio": "gita",
+  "wisdom is not to be confused with theoretical learning or co": "gita",
+  "wisdom is direct experience it is not a thing to be acquired": "gita",
+  "of the non existent there is no coming to be of the existent": "gita",
+  "beings are unmanifest in their beginnings manifest in the mi": "gita",
+  "weep not for such is here the life of man": "gita",
+  "unasked he came unbidden went he hence psalms": "gita",
+  "feeling is healing": "kara",
+  "we are made of 4 parts the mind is a monkey always active th": "kara",
+  "yantra mantra tantra": "kara",
+  "it s very easy to be complicated and very complicated to be ": "kara",
+  "eating too much and loving too much are both a waste": "kara",
+  "you need to learn how to take instead of always giving": "kara",
+  "you need to keep something for yourself so if things go righ": "kara",
+  "if you have two portions of food and you give two of them aw": "kara",
+  "you need to reign your emotions because you are a sentimenta": "kara",
+  "intuition and manifestation": "kara",
+  "through conversation with one self to empty the ego": "kara",
+  "you have to learn to accept what s given to you not to say i": "kara",
+  "that could get me into drinking coffee 07 03 36 about the co": "dania",
+  "intollerante alla tristezza alessandra": "alessandra",
+  "out beyond ideas of wrongdoing and rightdoing": "rumi",
+  "there is a field i ll meet you there": "rumi",
+  "when the soul lies down in that grass": "rumi",
+  "the world is too full to talk about": "rumi",
+  "ideas language even the phrase": "rumi",
+  "each other": "rumi",
+  "doesn t make any sense": "rumi",
+  "lu stai finalmente vivendo la tua vita il mondo è qui per fa": "lu",
+  "è così difficile perché ci stai mettendo così tanto impegno ": "dania",
+  "accingere anime bella non levia apparas mors misera non est ": "agamemnon",
+  "eurydice by h d i so you have swept me back i who could have": "eurydice",
+  "volli e volli sempre e fortissimamente volli": "sayings",
+  "solo vivendo si guarisce lu": "lu",
+  "the more we imitate the more we become the same and it is ou": "girard",
+  "there is success and there is failure the land in between is": "ember",
+  "le stelle del cielo si abbatterono sopra la terra come un al": "apocalisse",
+  "infatti mi ero convinta che l arte dovesse essere disturbant": "attraversare-i-muri",
+  "se tristezza aleggia in questi rapporti erosivi bellezza tro": "bellezza-e-tristezza",
+  "otoko la mia non è una faccia da arte sacra tutto dipende da": "bellezza-e-tristezza",
+  "il vincitore è schiavo del bottino anthony patch": "beautiful-and-damned",
+  "esiste la bellezza ed esiste l inferno degli oppressi per qu": "camus",
+  "each generation doubtless feels called upon to reform the wo": "camus",
+  "think me not cruel because i obey the irresistible law of my": "carmilla",
+  "nobis cum semel occidit brevis lux nox est perpetua una dorm": "sayings",
+  "we re all unlucky in love sometimes when i am i go jogging t": "chungking-express",
+  "catherine earnshaw may you not rest as long as i am living y": "cime-tempestose",
+  "l odio uccide tutto fuorchè se stesso avrei potuto squarciar": "de-profundis",
+  "demain dès l aube victor hugo les contemplations 1856 demain": "demain-des-laube",
+  "bambino nasce e si sente alterità rispetto al tutto per recu": "donna-e-altro",
+  "e questa lontananza è la russia la sua incomparabile celebre": "zhivago",
+  "non c è cosa peggiore di amare qualcuno che non ama se stess": "sayings",
+  "la polvere è la carne del tempo il senso estetico è gemello ": "fondamenta",
+  "non sarete mai degni della felicità fintanto che avrete qual": "germinal",
+  "maybe love was a superstition a prayer we said to keep the t": "grishaverse",
+  "vorrei poterti far amare i libri più di tua madre proverbio ": "sayings",
+  "thus may we gather honey from the weed": "henry-v",
+  "ho bisogno di quello che non c è al mondo attendevo il volo ": "hippius",
+  "amare la vita più che il senso di essa": "karamazov",
+  "laggiù aveva visto evocare sguardi di ogni sorta da far rabb": "palazzo-dei-sogni",
+  "sento per te quello che dovrei sentire soltanto per dio": "rosso-e-nero",
+  "nell aria grigia e sorda morivano i romori rari io ho il gus": "trionfo-della-morte",
+  "everyone mourns the first blossom who will weep for the rest": "grishaverse",
+  "if they sky falls down on you there s always a hole that you": "sayings",
+  "i tuoi amori lenti e abissali i roseti innevati di polvere l": "autunno-del-patriarca",
+  "bambino esistenza priva di biografia è impossibile avere un ": "kundera-esistenza",
+  "non si può mai sapere che cosa si deve volere perchè si vive": "insostenibile",
+  "simone weil l ombra e la grazia pesantezza in genere quel ch": "weil",
+  "questo mondo che si mostra crudele affinchè lo si possa cred": "camelie",
+  "quello che aveva davanti agli occhi era il corpo di una bell": "vegetariana",
+  "the colder i feel the hotter i burn": "labe",
+  "noi giochiamo con le profezie con le visioni e con i sogni p": "affinita-elettive",
+  "ma il cuore non è il muso di un cane": "fantasma-opera",
+  "ah the soul destroying boredom of long days of mild content": "les-mouches",
+  "se vuoi possiamo provare a capirci insieme visto che anch io": "men-said",
+  "power is poor in resources sparing of its methods monotonous": "foucault",
+  "money is social credit it s how society values you and thank": "naval",
+  "se essi non comprenderanno che noi portiamo loro la felicità": "noi",
+  "nostrum istud vivere triste persio": "sayings",
+  "siamo conduttori em lo scopo è lasciarsi attraversare em eri": "sayings",
+  "at the end of the day a man s no better than the pain he s c": "carnival-row",
+  "perchè quando tuoneranno le trombe le anime potranno divider": "laus-veneris",
+  "che me ne importa della mia giustizia non vedo ancora ch io ": "zarathustra",
+  "nel mio silenzio ho scritto lettere piene d amore non sono m": "ungaretti",
+  "tu sei un artista io un pensatore tu dormi sul petto della m": "narciso",
+  "ora che mi sono spinta fino all orlo voglio solo cadere se n": "principe-crudele",
+  "take my robe take my crown all my power all my pride take my": "unnamed",
+  "l oblio cura tutto e il canto è la sua forma più bella perch": "andric",
+  "quasi tutto quel che gli uomini han detto di meglio è stato ": "yourcenar",
+  "may our means justify our ends silvered serpents": "silvered-serpents",
+  "before i saw you i meditated for a thousand years but these ": "po-chu-i",
+  "aveva adorato il potere con tale passione che avrebbe pagato": "educazione",
+  "era per destino una di quelle persone che vengono al mondo s": "foresta",
+  "la morte è un altro paese antigone": "antigone",
+  "no one has ever dared to go so far before as you have dared ": "antigone",
+  "morality s a moving target": "unnamed",
+  "shit s gotta be tasty millions of flies can t be wrong 48 40": "elena",
+  "io sono un albero di fine estate di tutti i voli preferisco ": "giorgi",
+  "sit tibi terra levis sia per te leggera la terra iscrizione ": "sayings",
+  "you could burn my house down to the ground and i wouldn t lo": "unnamed",
+  "alla persona che mi ricorda che la vita è scontare i propri ": "lu",
+  "we rip out so much of ourselves to be cured of things faster": "call-me",
+  "may the bridges i burn light the way": "unnamed",
+  "you dream in a language that i cannot understand": "unnamed",
+  "death is a beautiful thing the circle of life is nature s ca": "unnamed",
+  "the child who is not embraced by the village will burn it do": "for-black-boys",
+  "may it be my will that my compassion will overcome my anger ": "sayings",
+  "i act and react and suddenly i wonder where is the girl that": "plath",
+  "my human experience is only the universe finding a way to ex": "unnamed",
+  "it s not my fault that love is the only thought and pain is ": "unnamed",
+  "il dito della morte deve posarsi di tanto in tanto sul tumul": "orlando",
+  "she was married true but if one s husband was always sailing": "orlando",
+  "the holocaust was not a morality play except perhaps for its": "dead-jews",
+  "2024 jan 1 per fortuna non siamo ricchi lu dopo aver guardat": "said-2024",
+  "2023 jan 26 feeling loved is not enough to make you happy be": "said-2023",
+  "for the vices that make social institutions necessary are th": "sayings",
+  "he who feeds you controls you": "unnamed",
+  "il fatto in sè di venire al mondo ed esistere è quanto più c": "seni-e-uova",
+  "there has to be more i have to be more a life worth having i": "shades-of-magic",
+  "we only have two jobs on this earth to learn and to cope wit": "shameless",
+  "role models and morals are for the comfortably middle class ": "shameless",
+  "human nature is arranged in such a way that a desire of the ": "weil",
+  "the fruitful wastes of the desert as a youth i had prayed to": "augustine",
+  "to strive to seek to find and not to yield": "ulysses",
+  "un paradiso zenitale un inferno nadirale è altrettanto infre": "tess",
+  "on a cold night a flickering reddish fire had the power to s": "city-walls",
+  "gazing up into the darkness i saw myself as a creature drive": "dubliners",
+  "a ring around the finger does not cause a nerve block to the": "ethical-slut",
+  "reserving judgment is a matter of infinite hope": "gatsby",
+  "they took it to the priest he did all the right things for a": "name-of-the-wind",
+  "you know one of my faces yes the one that s under my hands n": "oleander-sword",
+  "but if you fear you would seek only love s peace and love s ": "prophet",
+  "i urge you come be angry at a nearer distance come home and ": "queen-of-nothing",
+  "the road not taken by robert frost two roads diverged in a y": "road-not-taken",
+  "we are such stuff as dreams are made on and our little life ": "tempest",
+  "they fuck you up your mum and dad they may not mean to but t": "larkin",
+  "your unstoppable force to our immovable object the ends don ": "time-war",
+  "to make yourself rich make your needs few": "sayings",
+  "per una donna non è facile tradurre i propri sentimenti in u": "madding-crowd",
+  "wild nights emily dickinson wild nights wild nights were i w": "wild-nights",
+  "people walk around like blind men like dead men when they co": "wings",
+  "у меня такое чувство будто сам господин бог поручил мне забо": "den-bez-vranya"
+ }
+}

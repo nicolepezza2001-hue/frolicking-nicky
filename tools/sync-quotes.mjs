@@ -1,14 +1,20 @@
-// Copies Nicky's quotes into dist/assets/quotes.json for the Quotes page of the study (the three books on the painting).
+// Copies Nicky's quotes into tools/quotes.json, then builds the Quotes shelf of the study (the three books on the painting):
+// dist/assets/quote-books.js, one notes page per book, sorted by genre and then A to Z (tools/quote-books.json says which
+// book and genre each quote belongs to), and bumps its ?v= in dist/hub/index.html.
 // Run by .github/workflows/sync-quotes.yml every morning, or by hand: NOTION_TOKEN=… node tools/sync-quotes.mjs
+// (without the secrets it just rebuilds the shelf from the last copy).
 //  - Notion: her page "Quotes", read block by block through the Notion API with the NOTION_TOKEN secret
 //    (an internal integration that has been added to the page under ••• → Connections). Wording is kept exactly.
 //  - Goodreads: the public "Quotes" list of her profile (GOODREADS_USER below), page by page.
 // If one source can't be reached, its last copy is kept, so a bad morning never empties the page.
 import { readFile, writeFile } from 'node:fs/promises';
+import { createHash } from 'node:crypto';
 
 const NOTION_PAGE = '295e55107ba580dfba58d344913c6a0c';
 const GOODREADS_USER = process.env.GOODREADS_USER || ''; // the number (and name) in her profile link, e.g. "12345-nicky"
-const FILE = new URL('../dist/assets/quotes.json', import.meta.url);
+const FILE = new URL('quotes.json', import.meta.url);
+const CATALOG = new URL('quote-books.json', import.meta.url);
+const SHELF = new URL('../dist/assets/quote-books.js', import.meta.url), HUB = new URL('../dist/hub/index.html', import.meta.url);
 
 const old = JSON.parse(await readFile(FILE, 'utf8').catch(() => '{}'));
 const out = { notion: old.notion || [], goodreads: old.goodreads || [] };
@@ -104,4 +110,63 @@ const next = JSON.stringify(out, null, 1) + '\n';
 if (next !== JSON.stringify(old, null, 1) + '\n') {
   await writeFile(FILE, next);
   console.log('quotes.json updated');
-} else console.log('No changes');
+} else console.log('No new quotes');
+
+// ---- The shelf: one page per book ---------------------------------------------------------------------
+const catalog = JSON.parse(await readFile(CATALOG, 'utf8'));
+const NEW = 'Newly added';
+const books = Object.fromEntries(Object.entries(catalog.books).map(([key, b]) => [key, { ...b, key, blocks: [] }]));
+const norm = s => s.toLowerCase().replace(/[’']/g, "'").replace(/\s+/g, ' ').trim();
+const fp = s => s.toLowerCase().replace(/[^\p{L}\p{N}_]+/gu, ' ').trim().slice(0, 60);
+const slug = s => s.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') || 'book';
+// A source line ("Orlando", "Germinal, Zola") finds its book by title or by one of Nicky's labels; otherwise it starts a new one
+const bookFor = (label, author = '') => {
+  const n = norm(label);
+  const found = Object.values(books).find(b => norm(b.title) === n || b.labels.some(l => norm(l) === n));
+  if (found) return found;
+  let key = slug(label); while (books[key]) key += '-2';
+  return (books[key] = { key, title: label, author, genre: NEW, labels: [label], blocks: [] });
+};
+const isSource = s => s && !s.includes('\n') && s.length <= 60 && !/[.!?»"”…:;,]$/.test(s);
+const paras = text => text.split(/\n\s*\n/).map(s => s.replace(/^\n+|\s+$/g, '')).filter(s => s.trim());
+
+let current = books.unnamed, heading = null;
+for (const b of out.notion) {
+  if (b.t === 'gap') continue;
+  if (b.t === 'h') { heading = b.text; continue; }
+  let book = books[catalog.blocks[fp(b.text)]];
+  if (!book) {
+    const last = b.t === 'pre' ? paras(b.text).at(-1) : null;
+    book = b.cite ? bookFor(b.cite) : isSource(last) && paras(b.text).length > 1 ? bookFor(last) : heading ? bookFor(heading) : current;
+  }
+  heading = null; current = book;
+  if (b.t === 'p') {
+    const own = !b.cite || book.labels.concat(book.title).some(l => norm(l) === norm(b.cite));
+    book.blocks.push({ type: 'paragraph', text: own ? b.text : b.text + '\n— ' + b.cite });
+  } else {
+    const drop = book.labels.concat(book.title).map(norm);
+    paras(b.text).filter(p => !drop.includes(norm(p))).forEach(p =>
+      book.blocks.push(/^\d{4}$/.test(p.trim()) ? { type: 'heading', text: p.trim() } : { type: 'paragraph', text: p }));
+  }
+}
+for (const q of out.goodreads) {
+  const book = bookFor(q.book || q.author || 'Goodreads', q.book ? q.author : '');
+  book.blocks.push({ type: 'paragraph', text: q.book || !q.author ? q.text : q.text + '\n— ' + q.author });
+}
+
+const genres = [NEW, ...catalog.genres];
+const sortTitle = t => t.replace(/^(?:(?:the|an?|il|lo|la|le|les|gli|i)\s+|l[’'])/i, ''); // "The Prophet" under P, "L’ombra" under O
+const shelf = Object.values(books).filter(b => b.blocks.length)
+  .sort((a, b) => genres.indexOf(a.genre) - genres.indexOf(b.genre) || sortTitle(a.title).localeCompare(sortTitle(b.title), 'it', { sensitivity: 'base' }))
+  .map(b => ({ id: 'quote-' + b.key, title: b.title, author: b.author, genre: b.genre, kicker: b.author ? b.author + ' · ' + b.genre : b.genre, blocks: b.blocks }));
+const js = '// Built by tools/sync-quotes.mjs from Nicky\'s Notion and Goodreads quotes (word for word): one page per book, by genre, A to Z.\n'
+  + '// Don\'t edit by hand: change tools/quote-books.json and run node tools/sync-quotes.mjs.\n'
+  + 'window.FN_QUOTE_BOOKS = ' + JSON.stringify(shelf, null, 1) + ';\n';
+const before = await readFile(SHELF, 'utf8').catch(() => '');
+if (js !== before) {
+  await writeFile(SHELF, js);
+  const v = createHash('sha1').update(js).digest('hex').slice(0, 8);
+  const hub = await readFile(HUB, 'utf8');
+  await writeFile(HUB, hub.replace(/quote-books\.js\?v=[\w]+/, 'quote-books.js?v=' + v));
+  console.log(`Shelf rebuilt: ${shelf.length} books`);
+} else console.log(`Shelf unchanged: ${shelf.length} books`);
