@@ -2,6 +2,84 @@
 // Don't edit by hand: change tools/quote-books.json and run node tools/sync-quotes.mjs.
 window.FN_QUOTE_BOOKS = [
  {
+  "id": "quote-the-empress-s-j-kincaid-diabolic-2",
+  "title": "The Empress: S.J. Kincaid (Diabolic 2)",
+  "author": "S.J. Kincaid",
+  "genre": "Newly added",
+  "kicker": "S.J. Kincaid · Newly added",
+  "blocks": [
+   {
+    "type": "paragraph",
+    "text": "I couldn’t say I knew for certain whether I believed in the Living Cosmos, but I knew that the Cosmos didn’t believe in me. Every vicar had told me as much."
+   },
+   {
+    "type": "paragraph",
+    "text": "But that planet showed me what it really meant to be a Domitrian: I wasn’t ever going to be a victim of circumstance. I was going to shape the circumstances, if I just survived long enough to do so."
+   },
+   {
+    "type": "paragraph",
+    "text": "“I love you to the very depths of my soul,” Tyrus noted quietly, “and sometimes I truly hate you for that.”"
+   }
+  ]
+ },
+ {
+  "id": "quote-germinale",
+  "title": "Germinale",
+  "author": "Émile Zola",
+  "genre": "Newly added",
+  "kicker": "Émile Zola · Newly added",
+  "blocks": [
+   {
+    "type": "paragraph",
+    "text": "buio accecante delle tenebre."
+   },
+   {
+    "type": "paragraph",
+    "text": "la morte del lavoro, una carestia che avrebbe ucciso molti uomini."
+   },
+   {
+    "type": "paragraph",
+    "text": "E il Voreux, in fondo alla sua tana, rannicchiato come una bestia feroce, restava acquattato, il respiro sempre più affannoso e lungo, quasi soffrisse a causa della laboriosa digestione di tanta carne umana."
+   },
+   {
+    "type": "paragraph",
+    "text": "Pensava con rabbia alla gente di cui gli aveva parlato Bonnemort, a quel dio sazio e accovacciato al quale diecimila affamati, senza conoscerlo, offrivano la propria carne."
+   },
+   {
+    "type": "paragraph",
+    "text": "In fondo alla loro fedeltà c’era un terrore superstizioso, la paura che il milione, il prodotto di un singolo denaro, scomparisse d’improvviso se fosse stato incassato e messo in un cassetto. Lo ritenevano più al sicuro nella terra, dove un popolo di minatori, generazioni di morti di fame, lo estraeva per loro, un po’ al giorno, secondo il bisogno."
+   },
+   {
+    "type": "paragraph",
+    "text": "figli... Se scende troppo, gli operai crepano e la domanda di nuove braccia lo fa risalire. Se sale troppo, l’offerta troppo alta lo fa abbassare. È l’equilibrio delle pance vuote, la perpetua condanna all’inferno della fame”."
+   },
+   {
+    "type": "paragraph",
+    "text": "Era questo in fondo a radicalizzare i sistemi, costringendo gli uni all’esagerazione rivoluzionaria, gli altri a un’ostentazione di prudenza, trascinandoli loro malgrado al di là delle loro vere idee a identificarsi in ruoli che non avevano scelto."
+   },
+   {
+    "type": "paragraph",
+    "text": "Era la campana a morto delle piccole imprese, l’annuncio della prossima scomparsa dei piccoli proprietari, divorati uno a uno dall’orco del capitale perennemente affamato, sommersi dalla marea montante delle grandi compagnie. Era l’unico ad aver pagato le conseguenze"
+   },
+   {
+    "type": "paragraph",
+    "text": "Disprezzava quelli che parlano molto"
+   },
+   {
+    "type": "paragraph",
+    "text": "bene, gente che entra in politica come si entra nella carriera forense, facendosi pagare belle frasi con bei soldi."
+   },
+   {
+    "type": "paragraph",
+    "text": "Darwin aveva dunque ragione, il mondo era una lotta perenne in cui i forti mangiano i deboli per la bellezza e la continuità della specie? Quella"
+   },
+   {
+    "type": "paragraph",
+    "text": "Germogliavano uomini, un esercito nero, vendicatore, che cresceva lentamente nei solchi, pronto per le raccolte del prossimo secolo, e la sua germinazione avrebbe ben presto fatto esplodere la terra."
+   }
+  ]
+ },
+ {
   "id": "quote-affinita-elettive",
   "title": "Le affinità elettive",
   "author": "Johann Wolfgang von Goethe",
@@ -2481,6 +2559,194 @@ window.FN_QUOTE_BOOKS = [
    {
     "type": "paragraph",
     "text": "Ma la Natura, le cui dolci piogge bagnano indistintamente il giusto come il pecca- tore, avrà anfratti nelle rocce entro cui potrò nascondermi, e valli segrete nel cui silenzio potrò piangere indisturbato. Essa appenderà stelle alla volta del cielo perché io possa camminare nelle tenebre senza inciampare; e farà soffiare il vento perché cancelli le mie impronte e io non venga inseguito e braccato a morte. Essa mi laverà con i suoi grandi fiumi, e le sue erbe amare mi guariranno."
+   },
+   {
+    "type": "paragraph",
+    "text": "nostre amare lezioni. Soffrire è un solo lunghissimo momento. Perché io sono"
+   },
+   {
+    "type": "paragraph",
+    "text": "piangi, come piangiamo noi in carcere, dove per le lacrime non esiste distinzione tra il giorno e la notte."
+   },
+   {
+    "type": "paragraph",
+    "text": "vero sciocco, colui che gli dèi deridono e distruggono, è quello che non conosce se stesso. Io lo fui per troppo tempo. Tu anche lo fosti per troppo tempo. Non esserlo piú. Non aver timore. Il vizio supremo è la superficialità. Tutto ciò che viene vissuto fino in fondo è giusto."
+   },
+   {
+    "type": "paragraph",
+    "text": "Nella vita non ci sono, in effetti, cose grandi o piccole. Tutte le cose hanno uno stesso valore e una stessa misura."
+   },
+   {
+    "type": "paragraph",
+    "text": "Anch'io avevo le mie illusioni. Pensavo che la vita sarebbe stata una commedia brillante, e tu uno dei suoi molti affascinanti personaggi. Scopersi che era una tragedia repellente e"
+   },
+   {
+    "type": "paragraph",
+    "text": "L'Amore si nutre di immaginazione, per mezzo della quale diventiamo piú saggi di quanto sappiamo, migliori di quel che sentiamo, piú nobili di ciò che siamo; per mezzo della quale vediamo la vita come un tutto unico; per mezzo della quale soltanto possiamo comprendere gli altri nei rapporti"
+   },
+   {
+    "type": "paragraph",
+    "text": "Sapevi che cosa fosse per me la mia arte, come fosse la grande nota fondamentale per mezzo della quale avevo rivelato, me stesso prima a me stesso, poi al mondo;"
+   },
+   {
+    "type": "paragraph",
+    "text": "l'amore al cui confronto tutti gli altri amori erano come acqua di palude paragonata a vino rosso, o il fuoco fatuo della palude al magico specchio della luna. Non"
+   },
+   {
+    "type": "paragraph",
+    "text": "Dal punto di vista delle emozioni è una forma di Atrofia e uccide tutto fuorché se stesso. Scrivere ai giornali di odiare qualcuno è"
+   },
+   {
+    "type": "paragraph",
+    "text": "Ma l'Amore non fa baratti da mercato, né usa la bilancia del merdaiolo. La sua gioia, come la gioia dell'intelletto, è di sentirsi vivo. Il fine dell'Amore è amare; niente di piú e niente di meno. Tu eri il nemico; nemico peggiore nessuno l'ha avuto mai. Ti avevo dato la mia vita, e tu per soddisfare la piú bassa e spregevole di tutte le passioni umane, Odio e Vanità e Cupidigia, l'avevi gettata via. In meno di tre anni mi avevi completamente rovinato sotto ogni punto di vista. Per il mio bene proprio non potevo far altro che amarti. Sapevo che se mi fossi lasciato andare a odiarti, nell'arido"
+   },
+   {
+    "type": "paragraph",
+    "text": "\"Bisogna che oggi l'Amore rimanga nel mio cuore; come farò altrimenti a vivere fino a stasera?\" Mi"
+   },
+   {
+    "type": "paragraph",
+    "text": "La sofferenza è un solo lunghissimo momento. Non"
+   },
+   {
+    "type": "paragraph",
+    "text": "In un intero universo di pensiero o di movimento, nulla si muove senza che il Dolore vibri in corrispondenza con palpito terribile benché squisito. È"
+   },
+   {
+    "type": "paragraph",
+    "text": "io ti avrei scritto, a tempo e fuori tempo, nella speranza che una frase, una parola isolata, anche solo un'eco confusa d'amore, potessero raggiungerti. Se ti fossi rifiutato di ricevere le mie lettere,"
+   },
+   {
+    "type": "paragraph",
+    "text": "Debbo dire a me stesso che né tu né tuo padre, moltiplicati mille volte, avrebbero potuto rovinare un uomo come me; che mi sono rovinato da solo; e che nessuno, grande o piccolo, può rovinarsi eccetto che di propria mano."
+   },
+   {
+    "type": "paragraph",
+    "text": "Io ero un uomo che stava in un rapporto simbolico con l'arte e la cultura della sua"
+   },
+   {
+    "type": "paragraph",
+    "text": "epoca. Di questo mi ero reso conto per me stesso all'alba della mia giovinezza, e in seguito avevo costretto la mia epoca a rendersene conto."
+   },
+   {
+    "type": "paragraph",
+    "text": "facevo dell'arte una filosofia e della filosofia un'arte; mutavo"
+   },
+   {
+    "type": "paragraph",
+    "text": "il falso e il vero non sono che forme di esistenza intellettuale."
+   },
+   {
+    "type": "paragraph",
+    "text": "Ma mentre capisco che non vi è mai nulla di male in ciò che si fa, capisco anche che vi è qualche cosa di male in ciò che si diventa."
+   },
+   {
+    "type": "paragraph",
+    "text": "come molti di coloro, o tutti coloro, che hanno posto su questa terra il loro Paradiso, ho trovato in essa non solo la bellezza del Paradiso ma anche l'orrore dell'Inferno."
+   },
+   {
+    "type": "paragraph",
+    "text": "Quando mi accade di pensare alla Religione, sento che mi piacerebbe fondare un Ordine per quelli che sono incapaci di credere; si potrebbe chiamarla la Confraternita degli Orfani, sul cui altare spoglio di candele un prete nel cui cuore non alberga la pace celebri con pane non benedetto e calice vuoto di vino."
+   },
+   {
+    "type": "paragraph",
+    "text": "Respingere le nostre esperienze è arrestare il nostro sviluppo."
+   },
+   {
+    "type": "paragraph",
+    "text": "io devo accettare il fatto che siamo puniti per il bene non meno che per il male che facciamo."
+   },
+   {
+    "type": "paragraph",
+    "text": "infatti non sono passato dall'oscurità alla momentanea notorietà del delitto, ma da una specie di eternità di fama a una specie di eternità di infamia,"
+   },
+   {
+    "type": "paragraph",
+    "text": "di come tra la fama e l'infamia non vi sia che un passo, o meno ancora."
+   },
+   {
+    "type": "paragraph",
+    "text": "se per me la vita è, come lo è, un problema, è anche vero che io sono un problema di Vita."
+   },
+   {
+    "type": "paragraph",
+    "text": "e sento che non vergognarmi del mio castigo è uno dei primi stadi a cui debbo arrivare per il mio perfezionamento interiore, appunto perché sono tanto imperfetto."
+   },
+   {
+    "type": "paragraph",
+    "text": "Poi debbo imparare ad essere felice. Un tempo lo sapevo, o credevo di saperlo, per istinto. Era sempre primavera, un tempo, nel mio cuore. Il mio temperamento inclinava alla felicità."
+   },
+   {
+    "type": "paragraph",
+    "text": "Ho davanti a me tante cose da fare che considererei una tragedia morire prima di riuscire a compierne almeno una piccola parte."
+   },
+   {
+    "type": "paragraph",
+    "text": "\"Chi non mangiò mai il pane del dolore, chi non passò mai le ore della notte a piangere e a sospirare il mattino, quegli non vi conosce, o potenze celesti.\""
+   },
+   {
+    "type": "paragraph",
+    "text": "Dietro alla Gioia e al Riso può esservi un temperamento rozzo, duro e insensibile. Ma dietro al Dolore vi è sempre il Dolore. La Sofferenza non porta maschera, al contrario del Piacere."
+   },
+   {
+    "type": "paragraph",
+    "text": "La verità in Arte non è una corrispondenza tra l'idea essenziale e l'esistenza accidentale;"
+   },
+   {
+    "type": "paragraph",
+    "text": "La verità nell'Arte è l'unità di un oggetto con se stesso; l'aspetto esteriore esprimente l'interiorità; l'anima incarnata, il corpo infuso di spirito."
+   },
+   {
+    "type": "paragraph",
+    "text": "Perché il segreto della vita è la sofferenza. Essa è ciò che si nasconde dietro ogni cosa."
+   },
+   {
+    "type": "paragraph",
+    "text": "che dovunque vi sia un dolore, anche solo quello di un bimbo in lacrime in un giardinetto per una colpa commessa (o forse non commessa), la faccia del creato intero ne rimane completamente sfigurata. Avevo torto."
+   },
+   {
+    "type": "paragraph",
+    "text": "se come ho detto, dal Dolore sono stati creati i mondi, ciò è avvenuto per mano d'Amore, perché in nessun altro modo l'anima dell'uomo, per il quale furono creati i mondi, poteva raggiungere il grado massimo di perfezione. Il Piacere è per il bel corpo, ma la Sofferenza per la bella anima."
+   },
+   {
+    "type": "paragraph",
+    "text": "Il suo aspetto piú terribile non è che essa ci spezzi il cuore — i cuori sono fatti per essere spezzati, — ma che lo impietrisca."
+   },
+   {
+    "type": "paragraph",
+    "text": "Nemmeno per un attimo mi pento di esser vissuto per il piacere. L'ho fatto fino in fondo, come si dovrebbe fare fino in fondo tutto ciò che si fa."
+   },
+   {
+    "type": "paragraph",
+    "text": "In ogni singolo momento della nostra vita siamo ciò che saremo non meno di ciò che fummo. L'arte è un simbolo perché l'uomo è un simbolo."
+   },
+   {
+    "type": "paragraph",
+    "text": "Perché la vita artistica è semplicemente evoluzione interiore."
+   },
+   {
+    "type": "paragraph",
+    "text": "Egli comprese la lebbra del lebbroso, l'oscura notte del cieco, l'infelicità selvaggia di coloro che vivono per il piacere, la strana povertà dei ricchi."
+   },
+   {
+    "type": "paragraph",
+    "text": "poesia. Vi è tuttavia per me qualche cosa di quasi incredibile nell'idea che un giovane contadino di Galilea abbia immaginato di poter reggere sulle spalle il fardello dell'umanità intera; ciò"
+   },
+   {
+    "type": "paragraph",
+    "text": "l'oppressione e il cui silenzio è udito da Dio soltanto;"
+   },
+   {
+    "type": "paragraph",
+    "text": "gli è rivelata in cambio la bellezza del proprio dolore."
+   },
+   {
+    "type": "paragraph",
+    "text": "la bellezza del mondo si mostra attraverso una nebbia di lacrime e la vita di un uomo non è niente di piú della vita di un fiore,"
+   },
+   {
+    "type": "paragraph",
+    "text": "un amante per il cui amore il mondo intero sia stato troppo piccolo."
    }
   ]
  },
