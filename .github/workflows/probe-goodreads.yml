@@ -8,14 +8,15 @@ jobs:
     steps:
       - run: |
           UA='Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36'
+          for u in "notes/197324729-nicole-p" "notes/197324729-nicole-p?page=2" "review/list/197324729?shelf=read&per_page=100" "user/show/197324729-nicole-p"; do
+            echo "=== $u"
+            curl -sSL -A "$UA" -w '%{http_code} %{size_download}\n' "https://www.goodreads.com/$u" -o p.html
+            grep -o 'href="[^"]*/notes/[0-9][^"]*197324729[^"]*"' p.html | sed 's/?.*//' | sort -u | head -80
+          done
           curl -sSL -A "$UA" "https://www.goodreads.com/notes/44321121-gods-of-jade-and-shadow/197324729-nicole-p" -o b.html
-          grep -o "class=['\"][^'\"]*['\"]" b.html | grep -i 'note\|highlight\|pag' | sort | uniq -c
-          grep -o 'href="[^"]*page=[^"]*"' b.html | sort -u | head
           python3 - <<'PY'
           import re
           h=open('b.html',encoding='utf8').read()
-          i=h.find('noteHighlightContainer')
-          if i<0: i=h.find('readingNotesMainContainer__rightColumn')
-          body=re.sub(r'<script.*?</script>','',h[i:],flags=re.S)
-          print(re.sub(r'\s+',' ',body)[:7000])
+          for k in ['readingNotesBookDetailsContainer','pagination__nextLink','<title>']:
+            i=h.find(k); print('---',k); print(re.sub(r'\s+',' ',re.sub(r'<script.*?</script>','',h[i-200:i+1500],flags=re.S)))
           PY
