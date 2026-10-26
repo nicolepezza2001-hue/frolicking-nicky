@@ -1,0 +1,6 @@
+/ebooks/
+/ebooks/18726
+/ebooks/27401
+/ebooks/30191
+/ebooks/35402
+/ebooks/56613
