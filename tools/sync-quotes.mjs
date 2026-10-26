@@ -189,11 +189,19 @@ const said = new Set(), start = s => s.replace(/\n— [^\n]*$/, '').toLowerCase(
 const twice = x => { const k = start(x.text); if (x.type !== 'paragraph' || k.length < 40) return false; return said.has(k.slice(0, 80)) || !said.add(k.slice(0, 80)); };
 for (const b of Object.values(books)) b.blocks = b.blocks.filter(x => !twice(x));
 
-// Whole poems Nicky asked for (tools/quote-poems.json) follow her quotes on their book's page: the original beside an
-// Italian translation, one stanza per row, so the book gets its own page even when she kept a single quote from it
-const poems = JSON.parse(await readFile(new URL('quote-poems.json', import.meta.url), 'utf8').catch(() => '{}'));
-for (const [key, poem] of Object.entries(poems)) if (books[key]) books[key].blocks.push(
-  { type: 'heading', text: poem.heading }, { type: 'note', text: poem.note }, { type: 'table', head: poem.head, rows: poem.rows });
+// Whole poems Nicky asked for (tools/quote-poems.json) follow her quotes on their book's page, one stanza per row with a
+// column per version (the pinyin sits under the Chinese, line by line), so the book gets its own page even when she kept
+// a single quote from it
+const poems = Object.entries(JSON.parse(await readFile(new URL('quote-poems.json', import.meta.url), 'utf8').catch(() => '{}')).poems || {});
+const PINYIN = 'zh-Latn';
+for (const [, poem] of poems) {
+  const shown = poem.versions.filter(v => v.lang !== PINYIN), pinyin = poem.versions.find(v => v.lang === PINYIN);
+  const cell = (v, i) => v.lang === 'zh' && pinyin
+    ? v.stanzas[i].split('\n').map((line, n) => line + '\n' + (pinyin.stanzas[i].split('\n')[n] || '')).join('\n')
+    : v.stanzas[i];
+  books[poem.book]?.blocks.push({ type: 'heading', text: poem.heading }, { type: 'note', text: poem.note },
+    { type: 'table', head: shown.map(v => v.label), rows: shown[0].stanzas.map((_, i) => shown.map(v => cell(v, i))) });
+}
 
 const sortTitle = t => t.replace(/^(?:(?:the|an?|il|lo|la|le|les|gli|i)\s+|l[’'])/i, ''); // "The Prophet" under P, "L’ombra" under O
 // Nicky's call: some people stay off the page, and every book with a single quote shares one Miscellaneous page,
@@ -213,10 +221,9 @@ const shelf = visible.filter(b => !loose.includes(b) && b.genre !== MISC).concat
 const js = '// Built by tools/sync-quotes.mjs from Nicky\'s Notion and Goodreads quotes (word for word): one page per book, by genre, A to Z.\n'
   + '// Don\'t edit by hand: change tools/quote-books.json and run node tools/sync-quotes.mjs.\n'
   + 'window.FN_QUOTE_BOOKS = ' + JSON.stringify(shelf, null, 1) + ';\n'
-  // The poems she can learn by heart (assets/by-heart.js): the original, stanza by stanza, with its translation
-  + 'window.FN_POEMS = ' + JSON.stringify(Object.entries(poems).filter(([key]) => shelf.some(b => b.id === 'quote-' + key)).map(([key, poem]) => ({
-    id: key, book: 'quote-' + key, title: books[key].title, author: books[key].author, lang: poem.lang || 'en',
-    stanzas: poem.rows.map(r => r[0]), translation: poem.rows.map(r => r[1] || '') })), null, 1) + ';\n';
+  // The poems she can learn by heart (assets/by-heart.js), in every version, stanza by stanza
+  + 'window.FN_POEMS = ' + JSON.stringify(poems.filter(([, poem]) => shelf.some(b => b.id === 'quote-' + poem.book)).map(([id, poem]) => ({
+    id, book: 'quote-' + poem.book, title: poem.title, author: poem.author, heading: poem.heading, versions: poem.versions })), null, 1) + ';\n';
 const before = await readFile(SHELF, 'utf8').catch(() => '');
 if (js !== before) {
   await writeFile(SHELF, js);
