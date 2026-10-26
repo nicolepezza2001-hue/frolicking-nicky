@@ -173,7 +173,7 @@ body.fn-lesson-open{background:#faeac0}
 .fn-room-art:has([data-spot="silver-age"]:is(:hover,:focus-visible)) .fn-petal{animation-play-state:running}
 @keyframes fn-petal-fall{0%{opacity:0;transform:translate(0,0) rotate(0deg)}12%{opacity:.8}80%{opacity:.55}100%{opacity:0;transform:translate(var(--drift),145px) rotate(220deg)}}
 .fn-book-hover{transform-box:view-box;transform-origin:301px 755px;transition:transform 1.3s ease}
-.fn-room-art:has([data-spot="russian"]:is(:hover,:focus-visible)) .fn-book-hover{transform:translateY(-4px) rotate(-1deg)}
+.fn-room-art:has([data-spot="quotes"]:is(:hover,:focus-visible)) .fn-book-hover{transform:translateY(-4px) rotate(-1deg)}
 .fn-bust-smile{opacity:0;transition:opacity 1.2s ease}
 .fn-room-art:has([data-spot="french"]:is(:hover,:focus-visible)) .fn-bust-smile{opacity:1}
 .fn-room-art:has([data-spot="hittite"]:is(:hover,:focus-visible)) .fn-horse-glint{animation:fn-bronze-shine 3s ease-in-out infinite}
@@ -365,3 +365,23 @@ html:has(body.fn-lesson-open){background:#faeac0}
 .fn-sync input[type=password]{flex:1 1 220px;min-width:0;background:#1a1224;color:var(--st-cream);border:1px solid var(--st-line);border-radius:10px;padding:10px 12px;font:400 18px/1.5 'Cormorant Garamond',Georgia,serif}
 .fn-sync input[type=password]:focus{outline:2px solid var(--st-yellow);outline-offset:1px}
 .fn-sync .fn-vocab-modes{margin-bottom:4px}
+/* Quotes (#quotes, the three books; quotes.js): one quote drawn at random, a search box, then every quote */
+.fn-quotes-drawn{max-width:760px;margin:6px auto 34px;text-align:center}
+.fn-quotes-drawn .fn-quote{margin:0 0 20px;padding:26px 10px 0;border-top:1px solid var(--st-line)}
+.fn-quotes-drawn blockquote{font-size:clamp(1.35rem,3vw,1.75rem);line-height:1.45}
+.fn-quotes-drawn figcaption{justify-content:center}
+.fn-study input[type=text].fn-quotes-search{display:block;max-width:420px;margin:0 auto 34px}
+.fn-quotes-list{max-width:760px;margin:0 auto}
+.fn-quotes-group{margin:0 0 30px}
+.fn-quotes-group .fn-study-label{margin-top:30px;text-align:center}
+.fn-quotes-source{font:600 1.05rem 'Cormorant Garamond',Georgia,serif;letter-spacing:.22em;text-transform:uppercase;color:var(--st-yellow);text-align:center;margin:38px 0 18px}
+.fn-quote{margin:0 0 18px}
+.fn-quote blockquote{margin:0;font-style:italic;font-size:1.15rem;line-height:1.6;color:var(--st-cream);white-space:pre-line;overflow-wrap:anywhere}
+.fn-quote-long blockquote+blockquote{margin-top:14px}
+.fn-quote figcaption{display:flex;gap:10px;align-items:center;margin-top:8px;color:var(--st-yellow);font-size:1rem;letter-spacing:.04em}
+.fn-quote figcaption::before{content:'';width:26px;border-top:1px solid var(--st-yellow);opacity:.7}
+.fn-quote-long{padding:18px 22px;border-left:1px solid var(--st-line);background:#f3d99508;border-radius:0 12px 12px 0}
+.fn-quotes-rule{width:48px;margin:20px auto;border:0;border-top:1px solid var(--st-line)}
+.fn-quotes-group.is-searching .fn-quotes-rule{display:none}
+.fn-quotes-none{text-align:center;color:var(--st-soft);font-style:italic}
+@media(max-width:700px){.fn-quote-long{padding:14px 14px}.fn-quote blockquote{font-size:1.08rem}}
