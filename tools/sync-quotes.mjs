@@ -212,7 +212,11 @@ const shelf = visible.filter(b => !loose.includes(b) && b.genre !== MISC).concat
   .map(b => ({ id: 'quote-' + b.key, title: b.title, author: b.author, genre: b.genre, kicker: b.author ? b.author + ' · ' + b.genre : b.genre === MISC ? 'Single quotes from many books' : b.genre, blocks: b.blocks }));
 const js = '// Built by tools/sync-quotes.mjs from Nicky\'s Notion and Goodreads quotes (word for word): one page per book, by genre, A to Z.\n'
   + '// Don\'t edit by hand: change tools/quote-books.json and run node tools/sync-quotes.mjs.\n'
-  + 'window.FN_QUOTE_BOOKS = ' + JSON.stringify(shelf, null, 1) + ';\n';
+  + 'window.FN_QUOTE_BOOKS = ' + JSON.stringify(shelf, null, 1) + ';\n'
+  // The poems she can learn by heart (assets/by-heart.js): the original, stanza by stanza, with its translation
+  + 'window.FN_POEMS = ' + JSON.stringify(Object.entries(poems).filter(([key]) => shelf.some(b => b.id === 'quote-' + key)).map(([key, poem]) => ({
+    id: key, book: 'quote-' + key, title: books[key].title, author: books[key].author, lang: poem.lang || 'en',
+    stanzas: poem.rows.map(r => r[0]), translation: poem.rows.map(r => r[1] || '') })), null, 1) + ';\n';
 const before = await readFile(SHELF, 'utf8').catch(() => '');
 if (js !== before) {
   await writeFile(SHELF, js);
