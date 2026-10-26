@@ -207,14 +207,28 @@
     });
     return out.map(x => x.trim()).filter(Boolean);
   });
+  // Lines that belong together (a poem copied line by line, or a passage in several paragraphs: one Notion block) are one
+  // quote with one link under its last line. Short verse lines are learned four at a time, longer paragraphs one by one.
+  const VERSE = 80, verse4 = ls => ls.reduce((out, l, n) => (n % 4 ? out[out.length - 1] += '\n' + l : out.push(l), out), []);
   const QUOTES = new Map();
-  (window.FN_QUOTE_BOOKS || []).forEach(book => book.blocks.forEach((b, n) => {
-    if (b.type !== 'paragraph') return;
-    const from = b.text.match(sign)?.[0].slice(3), text = b.text.replace(sign, '').trim(); if (!text) return;
-    const id = 'q-' + hash(book.id + '|' + text);
-    QUOTES.set(id, { id, book: book.id, block: n, unit: 'part', title: from || book.title, author: from ? '' : book.author,
-      versions: [{ lang: '', label: '', stanzas: parts(text) }] });
-  }));
+  (window.FN_QUOTE_BOOKS || []).forEach(book => {
+    const runs = [];
+    book.blocks.forEach((b, n) => {
+      if (b.type !== 'paragraph') return;
+      const last = runs.at(-1);
+      if (b.group != null && last?.group === b.group && last.end === n - 1) { last.items.push(b); last.end = n; }
+      else runs.push({ group: b.group, items: [b], end: n });
+    });
+    runs.forEach(run => {
+      const from = run.items.at(-1).text.match(sign)?.[0].slice(3);
+      const texts = run.items.map(b => b.text.replace(sign, '').trim()).filter(Boolean); if (!texts.length) return;
+      const lines = texts.every(t => !t.includes('\n') && t.length <= VERSE) && texts.length > 1;
+      const stanzas = lines ? verse4(texts) : texts.flatMap(parts);
+      const id = 'q-' + hash(book.id + '|' + texts.join('\n'));
+      QUOTES.set(id, { id, book: book.id, block: run.end, unit: lines ? 'stanza' : 'part', title: from || book.title, author: from ? '' : book.author,
+        versions: [{ lang: '', label: '', stanzas }] });
+    });
+  });
   // Their rooms are made when first opened (before the study shows them)
   const open = id => {
     const quote = QUOTES.get(id); if (!quote || document.getElementById('heart-' + id)) return false;
@@ -256,9 +270,9 @@
     box.append(el('h3', 'fn-study-label', 'By heart'));
     (going.length ? going : POEMS).forEach(poem => {
       const li = el('li'), a = el('a', 'fn-quotes-book'); a.href = '#heart-' + poem.id;
-      const name = poem.unit === 'part' ? '“' + poem.versions[0].stanzas[0].split(/\s+/).slice(0, 7).join(' ') + '…”' : poem.title;
-      a.append(el('span', 'fn-quotes-title', name), el('span', 'fn-quotes-author', learned(poem) ? (poem.unit === 'part' ? poem.title + ' · ' : '') + summary(poem) : 'Not started yet'));
-      if (poem.unit === 'part') a.addEventListener('click', () => open(poem.id));
+      const name = poem.id.startsWith('q-') ? '“' + poem.versions[0].stanzas[0].split(/\s+/).slice(0, 7).join(' ') + '…”' : poem.title;
+      a.append(el('span', 'fn-quotes-title', name), el('span', 'fn-quotes-author', learned(poem) ? (poem.id.startsWith('q-') ? poem.title + ' · ' : '') + summary(poem) : 'Not started yet'));
+      if (poem.id.startsWith('q-')) a.addEventListener('click', () => open(poem.id));
       if (due(poem).length) a.dataset.due = '';
       li.append(a); ul.append(li);
     });
