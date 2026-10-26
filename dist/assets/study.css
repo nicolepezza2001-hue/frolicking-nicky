@@ -394,8 +394,7 @@ article.fn-lesson[id^="quote-"] .fn-lesson-table td+td{padding-top:0;opacity:.78
 .fn-heart-step{margin:0 0 14px;color:var(--st-soft);font-style:italic}
 .fn-heart-verse{margin:0 0 18px;font:500 clamp(1.25rem,3vw,1.5rem)/1.55 'Cormorant Garamond',Georgia,serif;color:var(--st-cream)}
 .fn-heart-line{margin:0}
-.fn-heart-line:nth-child(3){padding-left:1.4em}
-[data-script=zh] .fn-heart-line:nth-child(3){padding-left:0}
+#heart-laus-veneris .fn-heart-line:nth-child(3){padding-left:1.4em} /* the unrhymed third line of Swinburne's quatrains */
 .fn-heart-word.is-faded{color:#c9b9d699;letter-spacing:.06em;cursor:pointer;border-radius:3px}
 .fn-heart-word.is-faded:hover,.fn-heart-word.is-faded:focus-visible{color:var(--st-yellow);outline:none}
 .fn-heart-word.is-said{color:var(--st-yellow)}

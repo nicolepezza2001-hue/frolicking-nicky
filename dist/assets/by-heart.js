@@ -43,9 +43,11 @@
   // Dashes part words too ("softly—fairer", "lute-playings"), and every Chinese character counts as a word of its own
   const SPLIT = /(\p{Script=Han}|[\s\u2013\u2014-]+)/u, HAN = /^\p{Script=Han}$/u;
   const words = text => text.split(SPLIT).filter(w => fold(w));
+  // Old spellings count as the word ("Heav'n", "Warr", "displaid", "Showrs"): doubled letters, e's and y/i don't matter
+  const spell = w => fold(w).replace(/(.)\1+/g, '$1').replace(/e/g, '').replace(/y/g, 'i');
   // Which words of the stanza were said, in order (longest common run of words)
   const said = (stanza, typed) => {
-    const a = words(stanza).map(fold), b = words(typed).map(fold), L = a.map(() => new Array(b.length + 1).fill(0));
+    const a = words(stanza).map(spell), b = words(typed).map(spell), L = a.map(() => new Array(b.length + 1).fill(0));
     L.push(new Array(b.length + 1).fill(0));
     for (let i = a.length - 1; i >= 0; i--) for (let j = b.length - 1; j >= 0; j--) L[i][j] = a[i] === b[j] ? L[i + 1][j + 1] + 1 : Math.max(L[i + 1][j], L[i][j + 1]);
     const hit = new Set(); let i = 0, j = 0;
@@ -95,7 +97,7 @@
 
     let queue = [], kind = '';
     const draw = () => {
-      count.textContent = summary(poem); sec.dataset.script = /^zh/.test(version(poem).lang) ? 'zh' : '';
+      count.textContent = summary(poem);
       langs.querySelectorAll('button').forEach(b => b.setAttribute('aria-pressed', String(b.lang === version(poem).lang)));
       const d = due(poem), next = fresh(poem);
       actions.replaceChildren();

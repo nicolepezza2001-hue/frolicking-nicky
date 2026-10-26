@@ -186,6 +186,8 @@ a separate Europe close-up, the map legend or the trip buttons under the map on 
   `versions` (lang, label, stanzas; e.g. 中文, Pinyin `zh-Latn`, English, Italiano) and follows Nicky's quotes on that book page,
   versions side by side, one stanza per row (Pinyin goes under each Chinese line). Translations are Claude's own when no free
   one exists. Her Chinese poems (and new ones she asked for: Su Shi, Li Zhiyi) share one **Chinese poetry** page (`po-chu-i`).
+  Paradise Lost (her favourite is Book II) has its own page: eight Book II passages in Milton's 1674 spelling beside
+  Lazzaro Papi's Italian (1811, Wikisource); old spellings ("Heav'n", "Warr") count as the modern word when reciting.
   All is built into `window.FN_POEMS`. Each poem gets a **Learn by heart** link under its heading, opening `#heart-<poem>`:
   pick the language to learn it in, read a stanza (with the other versions), let its words fade to first letters (each Chinese
   character is a word; tap to peek), then type it from memory (90% of the words counts; "I was right" overrides). Recited
