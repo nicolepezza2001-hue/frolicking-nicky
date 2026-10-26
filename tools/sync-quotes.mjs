@@ -98,7 +98,7 @@ try {
   for (const page of pages) {
     const html = await get('notes/' + page);
     const book = strip((html.match(/class='readingNotesBookDetailsContainer'>[\s\S]*?<a [^>]*href="\/book\/show\/[^"]*">([\s\S]*?)<\/a>/) || [])[1] || '');
-    const author = strip((html.match(/by <a [^>]*href="\/author\/show\/[^"]*">([\s\S]*?)<\/a>/) || [])[1] || '');
+    const author = strip((html.match(/by\s*<a [^>]*href="\/author\/show\/[^"]*">([\s\S]*?)<\/a>/) || [])[1] || '');
     for (const [, text] of html.matchAll(/class='noteHighlightTextContainer__highlightText'>\s*<span[^>]*>([\s\S]*?)<\/span>/g))
       if (strip(text)) quotes.push({ text: strip(text), author, book });
   }
