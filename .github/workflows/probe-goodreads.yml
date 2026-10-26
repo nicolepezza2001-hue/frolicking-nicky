@@ -8,14 +8,14 @@ jobs:
     steps:
       - run: |
           UA='Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36'
-          curl -sSL -A "$UA" "https://www.goodreads.com/notes/44321121-gods-of-jade-and-shadow/197324729-nicole-p" -o b.html -w '%{http_code} %{size_download}\n'
-          grep -o 'class="[^"]*"' b.html | sort | uniq -c | sort -rn | head -50
-          grep -o 'href="/notes/[^"]*"' b.html | sort -u | head
+          curl -sSL -A "$UA" "https://www.goodreads.com/notes/44321121-gods-of-jade-and-shadow/197324729-nicole-p" -o b.html
+          grep -o "class=['\"][^'\"]*['\"]" b.html | grep -i 'note\|highlight\|pag' | sort | uniq -c
+          grep -o 'href="[^"]*page=[^"]*"' b.html | sort -u | head
           python3 - <<'PY'
           import re
           h=open('b.html',encoding='utf8').read()
-          i=h.find('mainContent')
-          print(re.sub(r'\s+',' ',re.sub(r'<script.*?</script>','',h[i:i+6000],flags=re.S))[:4000])
-          for m in list(re.finditer(r'noteHighlight|highlightText|annotation|data-react-props', h, re.I))[:5]:
-              print('---', h[max(0,m.start()-200):m.start()+800].replace('\n',' '))
+          i=h.find('noteHighlightContainer')
+          if i<0: i=h.find('readingNotesMainContainer__rightColumn')
+          body=re.sub(r'<script.*?</script>','',h[i:],flags=re.S)
+          print(re.sub(r'\s+',' ',body)[:7000])
           PY
