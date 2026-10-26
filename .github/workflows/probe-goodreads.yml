@@ -12,10 +12,9 @@ jobs:
       - run: |
           set +e
           mkdir -p out
-          curl -sSL "https://sourcebook.stanford.edu/assets/tei/su_shi_ten_years_dead_living.xml" > out/sushi.xml
-          curl -sSL "https://sourcebook.stanford.edu/su_shi_ten_years_dead_living/" > out/sushi.html
-          curl -sSL "https://sourcebook.stanford.edu/search/?q=Li+Zhiyi" > out/search1.html
-          curl -sSL "https://sourcebook.stanford.edu/texts/" > out/texts.html
+          for t in primo quarto quinto nono; do
+            curl -sSL "https://it.wikisource.org/w/api.php?action=parse&page=Il_paradiso_perduto/Libro_$t&prop=text&format=json" > "out/p-$t.json"
+          done
           ls -la out
           git config user.name "github-actions[bot]"; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git checkout -b probe/milton-data3 && git add -f out && git commit -qm "milton data (temporary)" && git push -f origin probe/milton-data3
+          git checkout -b probe/milton-data4 && git add -f out && git commit -qm "milton data (temporary)" && git push -f origin probe/milton-data4
