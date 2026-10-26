@@ -189,6 +189,12 @@ const said = new Set(), start = s => s.replace(/\n— [^\n]*$/, '').toLowerCase(
 const twice = x => { const k = start(x.text); if (x.type !== 'paragraph' || k.length < 40) return false; return said.has(k.slice(0, 80)) || !said.add(k.slice(0, 80)); };
 for (const b of Object.values(books)) b.blocks = b.blocks.filter(x => !twice(x));
 
+// Whole poems Nicky asked for (tools/quote-poems.json) follow her quotes on their book's page: the original beside an
+// Italian translation, one stanza per row, so the book gets its own page even when she kept a single quote from it
+const poems = JSON.parse(await readFile(new URL('quote-poems.json', import.meta.url), 'utf8').catch(() => '{}'));
+for (const [key, poem] of Object.entries(poems)) if (books[key]) books[key].blocks.push(
+  { type: 'heading', text: poem.heading }, { type: 'note', text: poem.note }, { type: 'table', head: poem.head, rows: poem.rows });
+
 const sortTitle = t => t.replace(/^(?:(?:the|an?|il|lo|la|le|les|gli|i)\s+|l[’'])/i, ''); // "The Prophet" under P, "L’ombra" under O
 // Nicky's call: some people stay off the page, and every book with a single quote shares one Miscellaneous page,
 // each quote signed with its book (A to Z), then her sayings and the lines without a name

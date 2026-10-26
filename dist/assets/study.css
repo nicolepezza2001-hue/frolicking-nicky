@@ -376,3 +376,9 @@ html:has(body.fn-lesson-open){background:#faeac0}
 .fn-quotes-book:focus-visible{outline:2px solid var(--st-yellow);outline-offset:3px;border-radius:2px}
 article.fn-lesson[id^="quote-"] .fn-lesson-notes p{white-space:pre-line;font-style:italic}
 article.fn-lesson[id^="quote-"] .fn-lesson-notes p+p{margin-top:1.1em}
+/* Whole poems on a book page (tools/quote-poems.json): original beside the Italian, one stanza per row; stacked on phones */
+article.fn-lesson[id^="quote-"] .fn-lesson-table td{white-space:pre-line;font-style:italic;width:50%}
+@media(max-width:760px){article.fn-lesson[id^="quote-"] .fn-lesson-table table{width:100%;font-size:15px}
+article.fn-lesson[id^="quote-"] .fn-lesson-table tr:first-child{display:none}
+article.fn-lesson[id^="quote-"] .fn-lesson-table td{display:block;width:auto;border-bottom:0}
+article.fn-lesson[id^="quote-"] .fn-lesson-table td+td{padding-top:0;opacity:.78;border-bottom:1px solid #2b1e3822}}
