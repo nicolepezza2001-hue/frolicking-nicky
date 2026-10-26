@@ -2659,6 +2659,141 @@ window.FN_QUOTE_BOOKS = [
   ]
  },
  {
+  "id": "quote-dania",
+  "title": "Dania",
+  "author": "",
+  "genre": "Friends & family",
+  "kicker": "Friends & family",
+  "blocks": [
+   {
+    "type": "paragraph",
+    "text": "“That could get me into drinking coffee” (07/03/36, about the coconut iced coffee at Kapi, Verkala)"
+   },
+   {
+    "type": "paragraph",
+    "text": "È così difficile perché ci stai mettendo così tanto impegno.\n\nYou're a strong, successful, and smart woman, who is lifting up everyone around her to be the best versions of themselves and nobody can take that away from you on your journey to change the world for the better."
+   }
+  ]
+ },
+ {
+  "id": "quote-kara",
+  "title": "Kara",
+  "author": "",
+  "genre": "Friends & family",
+  "kicker": "Friends & family",
+  "blocks": [
+   {
+    "type": "paragraph",
+    "text": "Feeling is healing"
+   },
+   {
+    "type": "paragraph",
+    "text": "We are made of 4 parts:\nThe mind is a monkey (always active)\nThe heart is a child (always asking for more)\nThe souls is an old man (contemplating and drawing conclusions)\nThe body is"
+   },
+   {
+    "type": "paragraph",
+    "text": "Yantra, mantra, tantra"
+   },
+   {
+    "type": "paragraph",
+    "text": "It’s very easy to be complicated, and very complicated to be easy"
+   },
+   {
+    "type": "paragraph",
+    "text": "Eating too much and loving too much are both a waste"
+   },
+   {
+    "type": "paragraph",
+    "text": "You need to learn how to take instead of always giving"
+   },
+   {
+    "type": "paragraph",
+    "text": "You need to keep something for yourself so if things go right and left you still are centered"
+   },
+   {
+    "type": "paragraph",
+    "text": "If you have two portions of food and you give two of them away you will not eat"
+   },
+   {
+    "type": "paragraph",
+    "text": "You need to reign your emotions because you are a sentimental person"
+   },
+   {
+    "type": "paragraph",
+    "text": "Intuition and manifestation"
+   },
+   {
+    "type": "paragraph",
+    "text": "Through conversation with one self, to empty the ego"
+   },
+   {
+    "type": "paragraph",
+    "text": "You have to learn to accept what’s given to you, not to say it’s nothing, it’s okay"
+   }
+  ]
+ },
+ {
+  "id": "quote-lu",
+  "title": "Lu",
+  "author": "",
+  "genre": "Friends & family",
+  "kicker": "Friends & family",
+  "blocks": [
+   {
+    "type": "paragraph",
+    "text": "Stai finalmente vivendo la tua vita. Il mondo è qui per farsi prendere per le palle da te"
+   },
+   {
+    "type": "paragraph",
+    "text": "La tua vera essenza è quella di una bad bitch che non si fa mettere sotto da nessuno"
+   },
+   {
+    "type": "paragraph",
+    "text": "Io per te ci sarò SEMPRE, in qualsiasi momento, anche durante un appuntamento col primo ragazzo decente della mia vita"
+   },
+   {
+    "type": "paragraph",
+    "text": "Sei una cazzo di stella che brilla di luce propria, non hai bisogno di niente e nessuno per risplendere (tranne me <3)"
+   },
+   {
+    "type": "paragraph",
+    "text": "Fai fiorire la tua arte. Non importa se fa freddo, piove, sei stufa di vedere facce coi denti gialli. La tua arte è là fuori, devi solo afferrarla"
+   },
+   {
+    "type": "paragraph",
+    "text": "Tu ami i bambini. Sono bellissimi. Lavorare con loro è il tuo sogno da sempre :)"
+   },
+   {
+    "type": "paragraph",
+    "text": "Lunga vita alla regina per quel che le resta, tanto tra un po' tutto il mondo sarà governato da delle diarche (noi)"
+   },
+   {
+    "type": "paragraph",
+    "text": "Esci! Respira! Ispirati! Sei parte dei movimenti del mondo e tutto l'universo batte all'unisono col tuo cuore"
+   },
+   {
+    "type": "paragraph",
+    "text": "Pensa a Will Herondale. Alla fine è l'unica soluzione nei momenti di sconforto."
+   },
+   {
+    "type": "paragraph",
+    "text": "Ti voglio bene"
+   },
+   {
+    "type": "paragraph",
+    "text": "Solo vivendo si guarisce"
+   },
+   {
+    "type": "paragraph",
+    "text": "Alla persona che mi ricorda che la vita è scontare i propri cento anni di solitudine, ma che allo stesso tempo, esistendo, non mi lascia mai sola.\nBuon compleanno,\nLucia"
+   },
+   {
+    "type": "paragraph",
+    "text": "10 settembre 2022"
+   }
+  ]
+ },
+ {
   "id": "quote-said-2023",
   "title": "Said in 2023",
   "author": "",
@@ -3848,6 +3983,523 @@ window.FN_QUOTE_BOOKS = [
    {
     "type": "paragraph",
     "text": "Dec 31\n'Se andassimo a dormire?'\nJulius"
+   }
+  ]
+ },
+ {
+  "id": "quote-said-2024",
+  "title": "Said in 2024",
+  "author": "",
+  "genre": "Friends & family",
+  "kicker": "Friends & family",
+  "blocks": [
+   {
+    "type": "paragraph",
+    "text": "2024\nJan 1\n'Per fortuna non siamo ricchi'\nLu dopo aver guardato Saltburn a Capodanno"
+   },
+   {
+    "type": "paragraph",
+    "text": "Jan 2\n'Bella ragazza'\nCatcallers a Roma (i terzi in una camminata di 10 minuti)"
+   },
+   {
+    "type": "paragraph",
+    "text": "Jan 3\n'I cannot believe you came all the way to Australia'\nDania"
+   },
+   {
+    "type": "paragraph",
+    "text": "Jan 4\n'Varda che il rene è un attimo che ti parta eh! E non torna più dopo'\nJulius (via Whatsapp)"
+   },
+   {
+    "type": "paragraph",
+    "text": "Jan 5\n'Tutto il mondo è San Fiorrr'\nLu (via Whatsapp)"
+   },
+   {
+    "type": "paragraph",
+    "text": "Jan 6\n'Let's have kangaroo meat'\nDania"
+   },
+   {
+    "type": "paragraph",
+    "text": "Jan 7\n'She's my kind of girl'\nDania's mum"
+   },
+   {
+    "type": "paragraph",
+    "text": "Jan 8\n'Only sovereign powers like Russia can guarantee democracy'\nDania's dad"
+   },
+   {
+    "type": "paragraph",
+    "text": "Jan 9\n'- I feel I have a connection with this parrot.\n- When you stop connecting with our parrot could you put him away in the cage?'\nMe and Dania's mum"
+   },
+   {
+    "type": "paragraph",
+    "text": "Jan 10\n'That's how spastic people kick a ball'\nDania at St Kilda"
+   },
+   {
+    "type": "paragraph",
+    "text": "Jan 11\n'At that time I started losing hearing...'\n'Sorry what did you say??'\nMary & me (Daniel's friend)"
+   },
+   {
+    "type": "paragraph",
+    "text": "Jan 12\n'The holidays were good. The best thing was the girls moving their mattresses to the floor for two weeks and chatting for ages every night. It's always so rare for Emilie to get such positive interactions from the person she loves maybe the most in the world.'\nMark (via Whatsapp)"
+   },
+   {
+    "type": "paragraph",
+    "text": "Jan 13\n'This might be the best pizza of my life'\nDania (at Capitano, talking about Salsiccia and Broccoli pizza...he was kinda right)"
+   },
+   {
+    "type": "paragraph",
+    "text": "Jan 14\n'I broke up with him and then chose him again'\nMichelle (talking about Avi)"
+   },
+   {
+    "type": "paragraph",
+    "text": "Jan 15\n'I love Tassy!'\nRichie (Tassy = Tasmania)"
+   },
+   {
+    "type": "paragraph",
+    "text": "Jan 16\n'I never heard of WhatsApp'\nPenny (owner of a bookshop, friend of Dania)"
+   },
+   {
+    "type": "paragraph",
+    "text": "Jan 17\n'- Dad can you show mum my tooth on the phone? I am Dracula.\n- Now you're Gapula.'\nDad and kid on the bus in Harbart (kid lost the tooth)"
+   },
+   {
+    "type": "paragraph",
+    "text": "Jan 18\n'Nicole will succeed for real'\nDania (part of a really beautiful speech)"
+   },
+   {
+    "type": "paragraph",
+    "text": "'- They look like a cult.\n-Ehy guys are you a cult?\n*Awkward silence*'\nMichelle&Me at the hike to cult members (we became friends after and I said sorry)"
+   },
+   {
+    "type": "paragraph",
+    "text": "Jan 19\n'- Tell me a secret.\n- My husband has a fresh hickey on his neck that we covered with a bandaid'\nRandom woman with husband and daughter at Mona"
+   },
+   {
+    "type": "paragraph",
+    "text": "Jan 20\n'Let's seat on that random rocking chair'\nDania (we had sex on it)"
+   },
+   {
+    "type": "paragraph",
+    "text": "Jan 21\n'Can I join you in opening a cafè in Maria's Island? '\nBecky"
+   },
+   {
+    "type": "paragraph",
+    "text": "Jan 22\n'I dare you to wear that unicorn headband'\nDania (we took turns)"
+   },
+   {
+    "type": "paragraph",
+    "text": "Jan 23\n'Antology of what? Ahah...Antology of Spoonriver...oh wow, it's actually a book'\nBitchy worker at book shop in the City"
+   },
+   {
+    "type": "paragraph",
+    "text": "Jan 24\n'Surprise!'\nDania (took me to the rooftop cinema to watch All of Us Strangers)"
+   },
+   {
+    "type": "paragraph",
+    "text": "Jan 25\n'I love Italy! Buongiorno! Come stai?'\nStrict lady at the post office(I was warned she was conservative and I had a revealing outfit but she lived me)"
+   },
+   {
+    "type": "paragraph",
+    "text": "Jan 26\n'- Can you see our flight on the board? I can't.\n- What's Avalon?\n- The other airport...'\nDania&Me (we went to Tullamarine instead)"
+   },
+   {
+    "type": "paragraph",
+    "text": "Jan 27\n'We'll just wait until we take the train and get out of this city'\nDania (talking about Sydney)"
+   },
+   {
+    "type": "paragraph",
+    "text": "Jan 28\n'Wait...so you would like to be in a throuple with another woman too?'\nDania (the day of my best orgasm yet)"
+   },
+   {
+    "type": "paragraph",
+    "text": "Jan 29\n'Ti prego dimmi che è questo con go Daddyyyyy'\nLu (parlando del mio website)"
+   },
+   {
+    "type": "paragraph",
+    "text": "Jan 30\n'- Please tell me I'll be great.\n- You'll be more than great.'\nMe&Dania (while I was sleeptalking)"
+   },
+   {
+    "type": "paragraph",
+    "text": "'I thought you wanted a real workshop, I was ready to teach you all the frothing styles'\nMY BELOVED RICHIE AT BEST COFFEE SHOP IN THE WORLD 28 SECONDS"
+   },
+   {
+    "type": "paragraph",
+    "text": "Jan 31\n'- You should talk to David, he has been travelling through South America.\n- AND CENTRAL America!'\nDaniel & his friend (at Trivia)"
+   },
+   {
+    "type": "paragraph",
+    "text": "Feb 1\n'We want to lay you to do nothing'\nUpwork guy on a meeting (he did pay me for nothing)"
+   },
+   {
+    "type": "paragraph",
+    "text": "Feb 2\n'You're on of us now'\nAvi talking about Jews to me"
+   },
+   {
+    "type": "paragraph",
+    "text": "'Let's play fight'\nDania (if you know you know)"
+   },
+   {
+    "type": "paragraph",
+    "text": "Feb 3\n'I have a camera pointing at the bed...'\nDania"
+   },
+   {
+    "type": "paragraph",
+    "text": "'Israel will be remembered as a Nazi state'\nOld man on the street at CBD"
+   },
+   {
+    "type": "paragraph",
+    "text": "Feb 4\n'I've never seen him so mesmerised by someone...it's like he forgot everything and everyone else'\nDaniel's mum (talking about him)"
+   },
+   {
+    "type": "paragraph",
+    "text": "'I feel love for you all the time'\nDania"
+   },
+   {
+    "type": "paragraph",
+    "text": "'Nicole, beautiful inside and out, you are a welcome guest here always. I might just do that! See u in Europe sister ♥️'\nBecky (via Whatsapp)"
+   },
+   {
+    "type": "paragraph",
+    "text": "Feb 5\n'Potremmo esserci lasciati'\nLu"
+   },
+   {
+    "type": "paragraph",
+    "text": "Feb 6\n'Con lo Spirito Santo Broccolo, il Padre Colesterolo parla'\nAli(in chiesa)"
+   },
+   {
+    "type": "paragraph",
+    "text": "Feb 7\n'We would like to just hire you now'\nUpwork diamond woman"
+   },
+   {
+    "type": "paragraph",
+    "text": "Feb 8\n'È molto particolare, molto intenso'\nMamma (parlando della Vegemite)"
+   },
+   {
+    "type": "paragraph",
+    "text": "Feb 9\n'Non azzardarti ad aggiungere acqua al tè, che lo annacqui'\nMamma"
+   },
+   {
+    "type": "paragraph",
+    "text": "'Hai avuto una notte di fuoco con un kazako, eh?'\nGinecologo"
+   },
+   {
+    "type": "paragraph",
+    "text": "Feb 10-Feb 23\nX"
+   },
+   {
+    "type": "paragraph",
+    "text": "Feb 24\n'What class are you? Wait, so you're like more clever than me?'\nClassmate Zayd"
+   },
+   {
+    "type": "paragraph",
+    "text": "Feb 25\n'You need to be writing. Humanity needs it'\nDania"
+   },
+   {
+    "type": "paragraph",
+    "text": "Feb 26\n'Bro forever'\nJulius"
+   },
+   {
+    "type": "paragraph",
+    "text": "Feb 27\n'Ma che businesswoman, sei la Maria Draghi'\nJulius"
+   },
+   {
+    "type": "paragraph",
+    "text": "Feb 28\n'- This is such an existence of longing.\n- It's the longing that tells you how much you love and are loved. It would be quite a sad existence without it'.\nMe&Mark"
+   },
+   {
+    "type": "paragraph",
+    "text": "Feb 29\n'Arriviamo il 29 [mar] e ripartiamo il 6 [apr]'\nMami (più di una settimana 🙃)"
+   },
+   {
+    "type": "paragraph",
+    "text": "March 1\n'Wow, you said you wanted to experiment with make up, and now you really did'\nChanel (looking disgusted - we barely talk)"
+   },
+   {
+    "type": "paragraph",
+    "text": "March 2\n'It looked like it would hurt!'\nClassmate James (while I was getting my brow pierced)"
+   },
+   {
+    "type": "paragraph",
+    "text": "March 3\n'He looks like my grandpa'\nRandom guy at Kiek the Kök (commenting on picture of an Orthodox patriarch)"
+   },
+   {
+    "type": "paragraph",
+    "text": "March 4\n'Continuo a masturbarmi con questa canzone in sottofondo, e ho pensato a te. Non mentre mi masturbavo. Insomma, ascoltala'\nAli (la canzone è Daphni et Chloe: Part III: Lever du Jour di Ravel e mi ci sono masturbata su)"
+   },
+   {
+    "type": "paragraph",
+    "text": "March 5\n'Si scrive vivendo. Tu sei uno scrittore ottocentesco'\nLu"
+   },
+   {
+    "type": "paragraph",
+    "text": "March 6\n'We'll come with you to check those cheao frozen cherries'\nClassmate Leah"
+   },
+   {
+    "type": "paragraph",
+    "text": "March 7\n'- Can I pay with cash?\n- No'\nRude server at next door supermarket"
+   },
+   {
+    "type": "paragraph",
+    "text": "Mar 8\n'I can wash this plate...it's Women's Day after all'\nClassmate Ilya"
+   },
+   {
+    "type": "paragraph",
+    "text": "Mar 9\n'We just get fucked to then fuck people to feel less lonely...just a Tallinn vibe'\nClassmate Joanna"
+   },
+   {
+    "type": "paragraph",
+    "text": "Mar 10\n'Are we in Greece?'\nGen (talking about Pirita beach)"
+   },
+   {
+    "type": "paragraph",
+    "text": "Mar 11\n'-Ci sarà Zucchero a Tallinn!\n-Qualcuno ci va?\n-Te pare?'\nItaliani&io (2nd) sul gruppo Erasmus su Whatsapp"
+   },
+   {
+    "type": "paragraph",
+    "text": "'I'd ask you not to refer to this relationship as disgusting and humiliating anymore please'\nDania (upsy)"
+   },
+   {
+    "type": "paragraph",
+    "text": "March 12\n'Mare ghiacciato, cagozzo assicurato'\nGiuli (parlando del mar Baltico)"
+   },
+   {
+    "type": "paragraph",
+    "text": "March 13\n'You're so naughty!'\nOxford girl after I told her I have a nipple piercing (I think she was flirting with me)"
+   },
+   {
+    "type": "paragraph",
+    "text": "'Anche se avrei preferito consegnarlo direttamente a te🤣'\nCorriere romano (riferendosi al mio pacco (contenente un sex toy lol). Ha poi cancellato il messaggio)"
+   },
+   {
+    "type": "paragraph",
+    "text": "March 14\n'Was the churning butter Polish song your sexual awakening?'\nClassmate Joanna"
+   },
+   {
+    "type": "paragraph",
+    "text": "'- Nightwalks in freezing rain >>\n- Wish I was there with you, saying let's go home now\n-I'd say just one more lap around the park\n- and i'd begrudgingly agree'\nMe&Dania"
+   },
+   {
+    "type": "paragraph",
+    "text": "March 15\n'I'll send this picture to my mum so she'll think I have friends'\nClassmate Goran"
+   },
+   {
+    "type": "paragraph",
+    "text": "March 16\n'Can we leave?'\nGen (tired of Tartu)"
+   },
+   {
+    "type": "paragraph",
+    "text": "March 17-March 29\nX"
+   },
+   {
+    "type": "paragraph",
+    "text": "March 30\n'Chiama l'ambulamza, ha un'insufficienza respiratoria!'\nAle (ero priva di sensi dopo aver vomitato ubriaca)"
+   },
+   {
+    "type": "paragraph",
+    "text": "March 31\n'Chiama quelli del ristorante russo e annulla la prenotazione. Non ce la faccio più di sto cibo russo'\nMamma (dopo letteralmente 1 borsch)"
+   },
+   {
+    "type": "paragraph",
+    "text": "April 1\n'Mi sa che abbiamo perso il traghetto'\nPapà"
+   },
+   {
+    "type": "paragraph",
+    "text": "April 2\n'Dai mangia una polpetta di renna su che ti fa bene'\nPapà"
+   },
+   {
+    "type": "paragraph",
+    "text": "April 3\n'You're so smart and insightful'\nMark"
+   },
+   {
+    "type": "paragraph",
+    "text": "April 4\n'Yes the war might mean the end of your relationship'\nClassmate Leah (talking about me&Dania arguing about Israel and Palestine - I agreed w her)"
+   },
+   {
+    "type": "paragraph",
+    "text": "April 5\n'Americana dall'Arizona. Non aggiungo altro'\nLu via whatsapp (adducendo questo come giustificazione delle idee stupide di una tipa)"
+   },
+   {
+    "type": "paragraph",
+    "text": "April 6\n'Don't tell me you're a horse girlie! Horse girlies are the female equivalent of rugby boys'\nClassmate Ilya"
+   },
+   {
+    "type": "paragraph",
+    "text": "April 7\n' тебе остались навыки'\nDasha, russian girl talking about my horse riding skills"
+   },
+   {
+    "type": "paragraph",
+    "text": "April 8\n'Magnanimity for Ineptitude is usually reserved for children in my eyes'\nDania"
+   },
+   {
+    "type": "paragraph",
+    "text": "'ZIAAAAA MAAAAAA richiamate il Bro Freud dalla tomba e fategli mettere qualche dito su per il culo della gente per vedere se hanno passato la fase anale…. Perchè qua siamo rimasti alla fase orale'\nJulius"
+   },
+   {
+    "type": "paragraph",
+    "text": "April 9\n'If I had to drop the friends who go out with people I don't like I wouldn't have many friends'\nClassmate Joanna (via whatsapp)"
+   },
+   {
+    "type": "paragraph",
+    "text": "April 10\n'This girl asked me out and I'm going out with her tonight...do you wanna join?'\nMaya, the girl I thought I was on a date on (neither me nor the other girl were)"
+   },
+   {
+    "type": "paragraph",
+    "text": "Apr 11\n'Capisci un sacco delle persone dal loro rapporto con sesso, soldi e potere'\nJulius"
+   },
+   {
+    "type": "paragraph",
+    "text": "Julius 12\n'You're the third person today who told me they want to off themselves'\nJoanna"
+   },
+   {
+    "type": "paragraph",
+    "text": "April 13\n'Nudity is community'\nLu"
+   },
+   {
+    "type": "paragraph",
+    "text": "April 14\n'- I tedeschi sono sporchi.\n- Eh a loro piace un'altra pulizia...quella etnica'\nMe&Julius"
+   },
+   {
+    "type": "paragraph",
+    "text": "April 15\n'- E quindi questo tipo che mangia 1 pollo e mezzo al giorno vuole diventare poliamoroso.\n- Polliamoroso?'\nIo&Lu"
+   },
+   {
+    "type": "paragraph",
+    "text": "Apr 16\n'That's why the left will always lose, because they use soft power against people who use the guns'\nClassmate Richard"
+   },
+   {
+    "type": "paragraph",
+    "text": "April 17\n'L'idea del body count è un'idea capitalistica'\nJulius (via Whatsapp)"
+   },
+   {
+    "type": "paragraph",
+    "text": "April 18\n'There's always fourth year, Nicole, of you'll ever change your mind'\nClassmate Ilya"
+   },
+   {
+    "type": "paragraph",
+    "text": "April 19\n'Io supporto tutti, ama chi vuoi...ma non i brutti'\nJulius"
+   },
+   {
+    "type": "paragraph",
+    "text": "April 20\n'I mean Nazists are the price to pay if you want to pay if you want to live in a democracy'\nАлися from Q-space"
+   },
+   {
+    "type": "paragraph",
+    "text": "Apr 21\n'You have to stop put yourself in dangerous situations'\nDania"
+   },
+   {
+    "type": "paragraph",
+    "text": "Apr 22\n'Social anxiety is scared of you'\nJoanna"
+   },
+   {
+    "type": "paragraph",
+    "text": "Apr 23\n'No ma cosa c'entra il patriarcato? Depilarsi fa parte della bellezza di essere donne. A me piace curarmi e anche a te perchè sei mia figlia'\nMamma"
+   },
+   {
+    "type": "paragraph",
+    "text": "Apr 24\n'If it gets up, I'll get down'\nJoanna (on older men' dicks)"
+   },
+   {
+    "type": "paragraph",
+    "text": "Apr 23\n'Y вас есть светлые глаза'\nВладимир the street musician"
+   },
+   {
+    "type": "paragraph",
+    "text": "Apr 24\n'- I feel like I can't do anything.\n- Well, it could have been worse. You could've not been able to do anything AND be ugly'\nMe&Iggy"
+   },
+   {
+    "type": "paragraph",
+    "text": "Apr 28\n'“Museum” and “Club” sounds totally opposite but I understand this is exactly Nicole vibes 😎😎😎'\nAlex, the Japanese guy"
+   },
+   {
+    "type": "paragraph",
+    "text": "Apr 29\n'- I have a pussy's heart.\n(Laughs) - I have a pussy's heart too. Maybe that's what the world needs'\nGustav, the Swedish guy"
+   },
+   {
+    "type": "paragraph",
+    "text": "Apr 30-May 17\nX"
+   },
+   {
+    "type": "paragraph",
+    "text": "May 18\nI didn't really know what missing someone truly was until this year.\nMark"
+   },
+   {
+    "type": "paragraph",
+    "text": "May 19-21\nX"
+   },
+   {
+    "type": "paragraph",
+    "text": "May 22\n'No allo stoicismo, sì all'industria farmaceutica'\nLu"
+   },
+   {
+    "type": "paragraph",
+    "text": "May 23-June 4\nX"
+   },
+   {
+    "type": "paragraph",
+    "text": "June 5\n'As long as you have that glorious mind as a sanctuary you'll be okay'\nDania"
+   },
+   {
+    "type": "paragraph",
+    "text": "June 6-18\nX"
+   },
+   {
+    "type": "paragraph",
+    "text": "June 19\n'Strambi si è in generale contro il sistema, non solo sotto le coperte'\nLu"
+   },
+   {
+    "type": "paragraph",
+    "text": "June 20-Jul 4\nX"
+   },
+   {
+    "type": "paragraph",
+    "text": "Jul 5\n'Give me a chance to make you fat'\nStrillone del ristorante vicino a Sorbillo"
+   },
+   {
+    "type": "paragraph",
+    "text": "Jul 9\n- How much is it (pointing at a restaurant)?\n- Me?\nDani&boat tour guide"
+   },
+   {
+    "type": "paragraph",
+    "text": "Jul 10-30\nX"
+   },
+   {
+    "type": "paragraph",
+    "text": "Jul 31\n' You are a really good person\nYeah but that's analogous to the definition of bravery - bravery isn't being fearless, it's facing the fear and pushing through anyway'\nMark"
+   },
+   {
+    "type": "paragraph",
+    "text": "Aug 1-18\nX"
+   },
+   {
+    "type": "paragraph",
+    "text": "Aug 19\n'Tu sei una cornacchia solitaria'\nAle"
+   },
+   {
+    "type": "paragraph",
+    "text": "Aug 20\n'- Possiamo parlare del tuo argomento preferito?\n-Aspetta sono confusa...droghe o bambini?'\nSarida&Giovanna attraverso Lu (via whatsapp)"
+   },
+   {
+    "type": "paragraph",
+    "text": "Aug 21\n'Se scegliamo il male è perchè abbiamo paura che gli altri ci facciano male'\nLu"
+   },
+   {
+    "type": "paragraph",
+    "text": "Aug 22\n'Papà continuava a urlare, moriremo! moriremo!'\nAlex (alle saline di Turda)"
+   },
+   {
+    "type": "paragraph",
+    "text": "Aug 23\n'You're very beautiful you know that'\nDania"
+   },
+   {
+    "type": "paragraph",
+    "text": "Aug 25\n'- Facciamo che Giulio è gli obesi.\n- Non è facile trovare un posto a sedersi per loro.\n-Sono Rosa Park?'\nJulius al gioco indovina chi delle minoranze"
+   },
+   {
+    "type": "paragraph",
+    "text": "'-Hanno una visione del mondo diversa dagli altri.\n-Sono i daltonici?'\nLu (erano i terrapiattisti)"
+   },
+   {
+    "type": "paragraph",
+    "text": "Aug 26\n'-I feel like a little pebble on the ground. Cute and stagnant lol.'\nSof (via WA)"
    }
   ]
  },
