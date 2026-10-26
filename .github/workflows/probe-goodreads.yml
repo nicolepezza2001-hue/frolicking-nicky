@@ -12,12 +12,13 @@ jobs:
       - run: |
           set +e
           mkdir -p out
-          curl -sSL "https://en.wikisource.org/w/api.php?action=query&list=search&srsearch=Laus%20Veneris%20Swinburne&format=json" > out/search.json
-          for t in "Laus_Veneris" "Poems_and_Ballads/Laus_Veneris" "Laus_Veneris_(Swinburne)" "Poems_and_Ballads_(1866)/Laus_Veneris"; do
-            curl -sSL "https://en.wikisource.org/w/index.php?title=$t&action=raw" > "out/ws-$(echo $t | tr '/()' '___').txt"
+          for id in 20 26; do curl -sSL "https://www.gutenberg.org/cache/epub/$id/pg$id.txt" > out/pg$id.txt; done
+          for q in "Paradiso%20perduto%20Papi" "Paradiso%20perduto%20Milton%20libro%20secondo" "Paradiso%20perduto%20Rolli"; do
+            curl -sSL "https://it.wikisource.org/w/api.php?action=query&list=search&srsearch=$q&srlimit=50&format=json" > "out/s-$q.json"
           done
-          curl -sSL "https://www.gutenberg.org/ebooks/search/?query=swinburne+poems+and+ballads" | grep -o '/ebooks/[0-9]*' | sort -u > out/gut.txt
-          for id in $(head -5 out/gut.txt | grep -o '[0-9]*'); do curl -sSL "https://www.gutenberg.org/cache/epub/$id/pg$id.txt" > out/pg$id.txt; done
+          curl -sSL "https://it.wikisource.org/w/api.php?action=query&list=allpages&apprefix=Il%20Paradiso%20perduto&aplimit=200&format=json" > out/ap1.json
+          curl -sSL "https://it.wikisource.org/w/api.php?action=query&list=allpages&apprefix=Paradiso%20perduto&aplimit=200&format=json" > out/ap2.json
+          curl -sSL "https://it.wikisource.org/w/api.php?action=query&list=allpages&apprefix=Il%20paradiso%20perduto&aplimit=200&format=json" > out/ap3.json
           ls -la out
           git config user.name "github-actions[bot]"; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git checkout -b probe/poem-data && git add -f out && git commit -qm "poem data (temporary)" && git push -f origin probe/poem-data
+          git checkout -b probe/milton-data && git add -f out && git commit -qm "milton data (temporary)" && git push -f origin probe/milton-data
