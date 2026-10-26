@@ -1,4 +1,4 @@
-# Every morning, copies Nicky's Goodreads and Notion quotes into tools/quotes.json and rebuilds the study's Quotes shelf (tools/sync-quotes.mjs)
+# Every morning, copies Nicky's Notion quotes and public Goodreads Kindle highlights into tools/quotes.json and rebuilds the study's Quotes shelf (tools/sync-quotes.mjs)
 # for the Quotes page of the study. If anything changed it commits the file to main and starts the site deploy
 # (pushes made by this workflow don't start other workflows by themselves).
 # Notion needs the NOTION_TOKEN repository secret; it is never stored in the repo.

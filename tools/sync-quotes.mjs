@@ -5,13 +5,13 @@
 // (without the secrets it just rebuilds the shelf from the last copy).
 //  - Notion: her page "Quotes", read block by block through the Notion API with the NOTION_TOKEN secret
 //    (an internal integration that has been added to the page under ••• → Connections). Wording is kept exactly.
-//  - Goodreads: the public "Quotes" list of her profile (GOODREADS_USER below), page by page.
+//  - Goodreads: the Kindle notes & highlights she has made public (GOODREADS_USER below), book by book.
 // If one source can't be reached, its last copy is kept, so a bad morning never empties the page.
 import { readFile, writeFile } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 
 const NOTION_PAGE = '295e55107ba580dfba58d344913c6a0c';
-const GOODREADS_USER = process.env.GOODREADS_USER || ''; // the number (and name) in her profile link, e.g. "12345-nicky"
+const GOODREADS_USER = process.env.GOODREADS_USER || '197324729-nicole-p'; // the number and name in her profile link
 const FILE = new URL('quotes.json', import.meta.url);
 const CATALOG = new URL('quote-books.json', import.meta.url);
 const SHELF = new URL('../dist/assets/quote-books.js', import.meta.url), HUB = new URL('../dist/hub/index.html', import.meta.url);
@@ -81,30 +81,30 @@ const decode = s => s.replace(/&(#x?[0-9a-f]+|\w+);/gi, (m, e) =>
   e[0] === '#' ? String.fromCodePoint(parseInt(e.slice(1).replace(/^x/i, ''), /^#x/i.test(e) ? 16 : 10)) : entities[e.toLowerCase()] ?? m);
 const strip = s => decode(s.replace(/<br\s*\/?>/gi, '\n').replace(/<[^>]+>/g, '')).replace(/[ \t]+/g, ' ').replace(/ *\n */g, '\n').trim();
 
-if (GOODREADS_USER) {
-  try {
-    const quotes = [];
-    for (let n = 1; n <= 60; n++) {
-      const res = await fetch(`https://www.goodreads.com/quotes/list/${GOODREADS_USER}?page=${n}`, {
-        headers: { 'User-Agent': 'Mozilla/5.0 (Frolicking Nicky quotes sync)', 'Accept-Language': 'en' },
-      });
-      if (!res.ok) throw new Error(`Goodreads ${res.status}`);
-      const html = await res.text();
-      const found = html.split('<div class="quoteText">').slice(1).map(chunk => {
-        const box = chunk.split(/<div class="quoteFooter"|<div class="right"/)[0];
-        const [said, source = ''] = box.split('―');
-        const text = strip(said).replace(/^[“"]\s*/, '').replace(/\s*[”"]$/, '');
-        const author = strip((source.match(/<span class="authorOrTitle">([\s\S]*?)<\/span>/) || [])[1] || '').replace(/,$/, '');
-        const book = strip((source.match(/<a class="authorOrTitle"[^>]*>([\s\S]*?)<\/a>/) || [])[1] || '');
-        return { text, author, book };
-      }).filter(q => q.text);
-      quotes.push(...found);
-      if (!found.length || !/class="next_page"(?! disabled)[^>]*href/.test(html) && !/rel="next"/.test(html)) break;
-    }
-    if (quotes.length) out.goodreads = quotes;
-    console.log(`Goodreads: ${quotes.length} quotes`);
-  } catch (e) { console.log('Goodreads skipped, keeping the last copy:', e.message); }
-} else console.log('Goodreads skipped: no profile set yet');
+// Her Kindle highlights: every book whose notes she has made public. They're found on her profile and her notes list
+// (plus any page listed under "goodreadsNotes" in quote-books.json), then each book's notes page is read highlight by highlight.
+try {
+  const get = async path => {
+    const res = await fetch('https://www.goodreads.com/' + path, {
+      headers: { 'User-Agent': 'Mozilla/5.0 (Frolicking Nicky quotes sync)', 'Accept-Language': 'en' },
+    });
+    if (!res.ok) throw new Error(`Goodreads ${res.status} for ${path}`);
+    return res.text();
+  };
+  const pages = new Set(JSON.parse(await readFile(CATALOG, 'utf8')).goodreadsNotes || []);
+  for (const path of [`user/show/${GOODREADS_USER}`, `notes/${GOODREADS_USER}`])
+    for (const [, page] of (await get(path)).matchAll(new RegExp(`/notes/(\\d+[\\w-]*/${GOODREADS_USER})(?=[?"])`, 'g'))) pages.add(page);
+  const quotes = [];
+  for (const page of pages) {
+    const html = await get('notes/' + page);
+    const book = strip((html.match(/class='readingNotesBookDetailsContainer'>[\s\S]*?<a [^>]*href="\/book\/show\/[^"]*">([\s\S]*?)<\/a>/) || [])[1] || '');
+    const author = strip((html.match(/by <a [^>]*href="\/author\/show\/[^"]*">([\s\S]*?)<\/a>/) || [])[1] || '');
+    for (const [, text] of html.matchAll(/class='noteHighlightTextContainer__highlightText'>\s*<span[^>]*>([\s\S]*?)<\/span>/g))
+      if (strip(text)) quotes.push({ text: strip(text), author, book });
+  }
+  if (quotes.length) out.goodreads = quotes;
+  console.log(`Goodreads: ${quotes.length} highlights from ${pages.size} books`);
+} catch (e) { console.log('Goodreads skipped, keeping the last copy:', e.message); }
 
 const next = JSON.stringify(out, null, 1) + '\n';
 if (next !== JSON.stringify(old, null, 1) + '\n') {
@@ -154,7 +154,9 @@ for (const b of out.notion) {
     else parts.forEach(p => book.blocks.push(/^\d{4}$/.test(p.trim()) ? { type: 'heading', text: p.trim() } : { type: 'paragraph', text: p }));
   }
 }
+const kept = new Set(Object.values(books).flatMap(b => b.blocks.map(x => fp(x.text))));
 for (const q of out.goodreads) {
+  if (kept.has(fp(q.text))) continue; // already copied into Notion
   const book = bookFor(q.book || q.author || 'Goodreads', q.book ? q.author : '');
   book.blocks.push({ type: 'paragraph', text: q.book || !q.author ? q.text : q.text + '\n— ' + q.author });
 }
