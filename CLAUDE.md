@@ -184,10 +184,15 @@ a separate Europe close-up, the map legend or the trip buttons under the map on 
   "Newly added" until they get a genre in `quote-books.json`. A source that can't be reached keeps its last copy.
 - **Whole poems and By heart** (`tools/quote-poems.json`, `assets/by-heart.js`): each poem there names its `book` and its
   `versions` (lang, label, stanzas; e.g. 中文, Pinyin `zh-Latn`, English, Italiano) and follows Nicky's quotes on that book page,
-  versions side by side, one stanza per row (Pinyin goes under each Chinese line). Translations are Claude's own when no free
-  one exists. Her Chinese poems (and new ones she asked for: Su Shi, Li Zhiyi) share one **Chinese poetry** page (`po-chu-i`).
-  Paradise Lost (her favourite is Book II) has its own page: eight Book II passages in Milton's 1674 spelling beside
-  Lazzaro Papi's Italian (1811, Wikisource); old spellings ("Heav'n", "Warr") count as the modern word when reciting.
+  English beside Italian, one stanza per row (Nicky's call: no Chinese or pinyin on the page; they stay for Learn by heart).
+  Nicky prefers published translations to Claude's: use a free one when it exists (Su Shi's English is Qian Jia's, Stanford
+  Global Medieval Sourcebook, CC BY-NC-SA) and say so in the note; Claude's own only when none can be found. Her Chinese poems (and new ones she asked for: Su Shi, Li Zhiyi) share one **Chinese poetry** page (`po-chu-i`).
+  Paradise Lost (her favourite is Book II, and she loves Satan at his angriest against God) has its own page: "Satan against
+  God" (Books I, IV, V, IX) and eight Book II passages, in Milton's 1674 spelling beside Lazzaro Papi's Italian (1811,
+  Wikisource) for now: she wants her own Italian translation ("in questo selvaggio abisso, grembo della natura, e forse
+  tomba…"), not found online yet. Old spellings ("Heav'n", "Warr") count as the modern word when reciting.
+  **Every quote** can be learned too: a quiet "Learn by heart" under each one opens `#heart-q-<hash of book + words>`
+  (made on first open; long quotes are cut into parts of about 35 words, sentence by sentence).
   All is built into `window.FN_POEMS`. Each poem gets a **Learn by heart** link under its heading, opening `#heart-<poem>`:
   pick the language to learn it in, read a stanza (with the other versions), let its words fade to first letters (each Chinese
   character is a word; tap to peek), then type it from memory (90% of the words counts; "I was right" overrides). Recited

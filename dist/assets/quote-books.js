@@ -6814,24 +6814,21 @@ window.FN_QUOTE_BOOKS = [
    },
    {
     "type": "note",
-    "text": "江城子·乙卯正月二十日夜记梦, to the tune of Jiangchengzi: a dream on the night of the twentieth of the first month, 1075. Su Shi wrote it ten years after his wife Wang Fu died. English and Italian by Claude."
+    "text": "江城子·乙卯正月二十日夜记梦, to the tune of Jiangchengzi: a dream on the night of the twentieth of the first month, 1075. Su Shi wrote it ten years after his wife Wang Fu died. English by Qian Jia (The Global Medieval Sourcebook, Stanford, CC BY-NC-SA 4.0); Italian by Claude."
    },
    {
     "type": "table",
     "head": [
-     "中文",
      "English",
      "Italiano"
     ],
     "rows": [
      [
-      "十年生死两茫茫，\nshí nián shēng sǐ liǎng máng máng,\n不思量，自难忘。\nbù sī liang, zì nán wàng.\n千里孤坟，无处话凄凉。\nqiān lǐ gū fén, wú chù huà qī liáng.\n纵使相逢应不识，\nzòng shǐ xiāng féng yīng bù shí,\n尘满面，鬓如霜。\nchén mǎn miàn, bìn rú shuāng.",
-      "Ten years, the living and the dead, lost to each other in the dark.\nI do not try to remember; I cannot forget.\nYour lonely grave is a thousand miles away, and there is nowhere to tell my grief.\nEven if we met, you would not know me:\ndust on my face, my temples white as frost.",
+      "For ten years, the dead and the living have been separated by a vast and obscure distance<note type= \"critical\" anchored=\"true\"><p>Su Shi’s first wife, Wang Fu, died in 1065 CE; by the time he wrote this song, it had been ten years since her death.</p></note>.\nI forced myself not to think of you,\nBut it is hard for me to forget.\nThe solitary grave, a thousand miles away,<note type= \"critical\" anchored=\"true\"><p>Wang Fu was buried in Meizhou, far away from Su Shi’s current location in Mizhou.</p></note>\nNowhere to speak about this loneliness and misery of mine.\nEven if we could meet, you would not recognize me.\nDust all over my face<note type= \"critical\" anchored=\"true\"><p>During the Song Dynasty, people traveled by horse and carriage, and “Dust all over my face” implies that the poet traveled a lot during the ten years. It also suggests that a lot had happened to him, and that complicated life experiences had made the older poet very different from his younger self.</p></note>,\nand the hair at my temples like frost.",
       "Dieci anni, i vivi e i morti, perduti l'uno all'altra nel buio.\nNon cerco di ricordare; non posso dimenticare.\nLa tua tomba solitaria è a mille miglia, e non ho dove dire il mio dolore.\nAnche se ci incontrassimo, non mi riconosceresti:\npolvere sul volto, le tempie bianche come brina."
      ],
      [
-      "夜来幽梦忽还乡，\nyè lái yōu mèng hū huán xiāng,\n小轩窗，正梳妆。\nxiǎo xuān chuāng, zhèng shū zhuāng.\n相顾无言，惟有泪千行。\nxiāng gù wú yán, wéi yǒu lèi qiān háng.\n料得年年肠断处，\nliào dé nián nián cháng duàn chù,\n明月夜，短松冈。\nmíng yuè yè, duǎn sōng gāng.",
-      "Last night, in a dim dream, I was suddenly home.\nAt the little window you were doing your hair.\nWe looked at each other and said nothing; only tears, a thousand lines of them.\nI know the place that will break my heart, year after year:\nthe moonlit night, the hill of little pines.",
+      "Yesterday night, in a mournful dream, I suddenly returned to my hometown.\nBy the small window,\nyou were combing your hair and doing your makeup.\nWe gazed at each other, speechless;\nonly thousands of lines of tears coursed down.\nI know your heart breaks for me year after year\nOn moonlit nights,\nupon the hill with the low pine trees.",
       "Stanotte, in un sogno oscuro, ero d'un tratto a casa.\nAlla piccola finestra ti stavi pettinando.\nCi guardammo senza parole; solo lacrime, mille righe di lacrime.\nSo qual è il luogo che ogni anno mi spezzerà il cuore:\nla notte di luna chiara, la collina dei piccoli pini."
      ]
     ]
@@ -6847,18 +6844,15 @@ window.FN_QUOTE_BOOKS = [
    {
     "type": "table",
     "head": [
-     "中文",
      "English",
      "Italiano"
     ],
     "rows": [
      [
-      "我住长江头，\nwǒ zhù cháng jiāng tóu,\n君住长江尾。\njūn zhù cháng jiāng wěi.\n日日思君不见君，\nrì rì sī jūn bú jiàn jūn,\n共饮长江水。\ngòng yǐn cháng jiāng shuǐ.",
       "I live at the head of the Yangtze,\nyou live at its tail.\nDay after day I long for you and never see you,\nyet we drink the water of the same river.",
       "Io vivo alla sorgente dello Yangtze,\ntu vivi alla sua foce.\nOgni giorno ti penso e non ti vedo,\neppure beviamo l'acqua dello stesso fiume."
      ],
      [
-      "此水几时休，\ncǐ shuǐ jǐ shí xiū,\n此恨何时已。\ncǐ hèn hé shí yǐ.\n只愿君心似我心，\nzhǐ yuàn jūn xīn sì wǒ xīn,\n定不负相思意。\ndìng bú fù xiāng sī yì.",
       "When will this water ever rest?\nWhen will this sorrow end?\nI only wish your heart were like my heart:\nthen this longing would not be in vain.",
       "Quando si fermerà quest'acqua?\nQuando finirà questo dolore?\nVorrei solo che il tuo cuore fosse come il mio:\nallora questa nostalgia non sarà vana."
      ]
@@ -7950,6 +7944,55 @@ window.FN_QUOTE_BOOKS = [
   "genre": "Poetry",
   "kicker": "John Milton · Poetry",
   "blocks": [
+   {
+    "type": "heading",
+    "text": "Satan against God · Passages to learn by heart"
+   },
+   {
+    "type": "note",
+    "text": "Satan at his angriest, from Books I, IV, V and IX: “What though the field be lost?” (I.105–116), “To do ought good never will be our task” (I.157–165), “Better to reign in Hell, then serve in Heav’n” (I.249–263), his address to the Sun (IV.32–41), “Which way I flie is Hell” (IV.73–78), “Evil be thou my Good” (IV.108–113), “self-begot, self-rais’d” (V.853–863) and “spite then with spite is best repaid” (IX.163–178). Milton’s own text and spelling (1674 edition); Italian by Lazzaro Papi (1811), from Wikisource."
+   },
+   {
+    "type": "table",
+    "head": [
+     "English",
+     "Italiano"
+    ],
+    "rows": [
+     [
+      "What though the field be lost?\nAll is not lost; the unconquerable Will,\nAnd study of revenge, immortal hate,\nAnd courage never to submit or yield:\nAnd what is else not to be overcome?\nThat Glory never shall his wrath or might\nExtort from me.  To bow and sue for grace\nWith suppliant knee, and deifie his power\nWho from the terrour of this Arm so late\nDoubted his Empire, that were low indeed,\nThat were an ignominy and shame beneath\nThis downfall;",
+      "Perduto è il campo, e sia: perduto il tutto\nDunque sarà? Quell’invincibil, fermo\nVoler ci resta ancor, quel di vendetta\nFero desìo, quell’immortal rancore\nE quel coraggio che non mai s’abbatte,\nChe mai non si sommette. E che altro è mai\nL’essere invitto ed invincibil? Questo\nVanto la rabbia sua, la sua possanza\nNo, non avrà da me. Ch’io grazia chieda?\nCh’io mi prostri al suo piè? che qual mio Nume,\nQual mio Signor lui riconosca e onori,\nLui che il terror di questo braccio mise\nTestè del regno in forse? Ah! questa invero\nFora viltà, fora ignominia ed onta\nPeggior della caduta."
+     ],
+     [
+      "Fall’n Cherube, to be weak is miserable\nDoing or Suffering: but of this be sure,\nTo do ought good never will be our task,\nBut ever to do ill our sole delight,\nAs being the contrary to his high will\nWhom we resist.  If then his Providence\nOut of our evil seek to bring forth good,\nOur labour must be to pervert that end,\nAnd out of good still to find means of evil;",
+      "Caduto Cherubino (a lui risponde\nVivamente Satáno), alma che langue,\nNell’oprar, nel soffrir, misera è sempre.\nTu certo intanto sii che nostra impresa\nIl ben non fia mai più. Nel male ognora,\nNel mal che opposto è per natura all’alto\nVoler di quei cui facciam guerra, il sommo\nDobiam cercar nostro diletto e vanto.\nStudi egli pur con provvido consiglio\nVolgere in bene il male; ogni nostr’arte\nQuel suo disegno a distornar si volga,\nE fuor del seno ancor del bene stesso\nPer nostre oblique trame il mal germogli."
+     ],
+     [
+      "Farewel happy Fields\nWhere Joy for ever dwells: Hail horrours, hail\nInfernal world, and thou profoundest Hell\nReceive thy new Possessor: One who brings\nA mind not to be chang’d by Place or Time.\nThe mind is its own place, and in it self\nCan make a Heav’n of Hell, a Hell of Heav’n.\nWhat matter where, if I be still the same,\nAnd what I should be, all but less then hee\nWhom Thunder hath made greater?  Here at least\nWe shall be free; th’ Almighty hath not built\nHere for his envy, will not drive us hence:\nHere we may reign secure, and in my choyce\nTo reign is worth ambition though in Hell:\nBetter to reign in Hell, then serve in Heav’n.",
+      "Addio, felici campi; addio, soggiorno\nD’eterna gioia. Salve, o Mondo inferno,\nSalvete, Orrori; e tu, profondo Abisso,\nIl tuo novello possessore accogli;\nAccogli quei che in petto un’alma serra\nPer loco o tempo non mutabil mai.\nL’alma in se stessa alberga, e in sè trasforma\nNel ciel l’inferno e nell’inferno il cielo:\nChe importa ov’io mi sia, se ognor lo stesso,\nE qual deggio, son io? se tutto io sono,\nFuorchè minor di lui che il fulmin solo\nFe’ più grande di me? Liberi almeno,\nQui liberi sarem: questo soggiorno\nEgli non fece onde lo invidii, e quindi\nSbandirci non vorrà: regnar sicuri\nQui noi possiamo, e, al parer mio, quaggiuso\nAnco è bello il regnar; sì, miglior sempre\nChe in ciel servaggio, è nell’inferno un regno."
+     ],
+     [
+      "O thou that with surpassing Glory crownd,\nLook’st from thy sole Dominion like the God\nOf this new World; at whose sight all the Starrs\nHide thir diminisht heads; to thee I call,\nBut with no friendly voice, and add thy name\nO Sun, to tell thee how I hate thy beams\nThat bring to my remembrance from what state\nI fell, how glorious once above thy Spheare;\nTill Pride and worse Ambition threw me down\nWarring in Heav’n against Heav’ns matchless King:",
+      "O tu, che cinto\nDi tanta gloria, spazïando vai\nSolo Signor lassù, che sembri Nume\nDi questo nuovo mondo, e in faccia a cui\nLa scema fronte ogn’altra stella asconde,\nMi volgo a te, ma non con voce amica\nIo già mi volgo, ed il tuo nome aggiungo,\nO sol, per dirti in qual dispetto io m’abbia\nI raggi tuoi che mi rammentan quale\nFosse il grado ond’io caddi, e la tua spera\nQuant’io di gloria e di splendor vincessi.\nOimè! da quale stato un cieco orgoglio\nPrecipitommi! Io contro il re del cielo,\nIo contro lui che paragon non ave,\nOsai levar lassù la fronte e l’armi?"
+     ],
+     [
+      "Me miserable! which way shall I flie\nInfinite wrauth, and infinite despaire?\nWhich way I flie is Hell; my self am Hell;\nAnd in the lowest deep a lower deep\nStill threatning to devour me opens wide,\nTo which the Hell I suffer seems a Heav’n.",
+      "Dove, misero me! dove sottrarmi\nAll’immensa ira sua? Dove allo stesso\nMio furor disperato? Ovunque io fugga,\nTrovo l’inferno, anzi del core in fondo\nMeco lo porto: ivi un più cupo abisso\nDi quell’abisso atroce in cui m’ha spinto\nIl mio delitto, si spalanca, e tanto\nLo supera in orror che bello e dolce\nL’inferno stesso è al paragone."
+     ],
+     [
+      "So farwel Hope, and with Hope farwel Fear,\nFarwel Remorse: all Good to me is lost;\nEvil be thou my Good; by thee at least\nDivided Empire with Heav’ns King I hold\nBy thee, and more then half perhaps will reigne;\nAs Man ere long, and this new World shall know.",
+      "Fuggi dunque, o speranza, e tu con essa\nFuggi, o timor, da questo sen; fuggite,\nVani rimorsi miei; per me in eterno\nÈ perduto ogni ben: tu solo, o male,\nSii mio sol bene omai; per te diviso\nCol re del cielo almen tengo l’impero,\nE più che la metà saprò fors’anco\nOccuparne per te. Vedrai bentosto,\nUomo odïato, e tu, novello mondo,\nLa possa di Satán."
+     ],
+     [
+      "who saw\nWhen this creation was? rememberst thou\nThy making, while the Maker gave thee being?\nWe know no time when we were not as now;\nKnow none before us, self-begot, self-rais’d\nBy our own quick’ning power, when fatal course\nHad circl’d his full Orbe, the birth mature\nOf this our native Heav’n, Ethereal Sons.\nOur puissance is our own, our own right hand\nShall teach us highest deeds, by proof to try\nWho is our equal:",
+      "Chi mai dal nulla escir le cose vide?\nRammenti tu quell’ora, in cui da prima\nIl tuo Fattor vita ti diè? Rammenti\nIl tempo in cui non eri, o allor chi fosse?\nPer propria forza animatrice noi,\nQuando un corso fatal tutto compiuto\nEbbe ’l suo giro, per noi stessi al lume\nDella vita sorgemmo eterei figli\nDi questo natìo ciel parto maturo.\nDa noi ci vien la nostra possa, e tosto\nSaprà mostrare il nostro braccio a prova\nChi sia qui Signor nostro o nostro eguale."
+     ],
+     [
+      "O foul descent! that I who erst contended\nWith Gods to sit the highest, am now constraind\nInto a Beast, and mixt with bestial slime,\nThis essence to incarnate and imbrute,\nThat to the hight of Deitie aspir’d;\nBut what will not Ambition and Revenge\nDescend to? who aspires must down as low\nAs high he soard, obnoxious first or last\nTo basest things.  Revenge, at first though sweet,\nBitter ere long back on it self recoiles;\nLet it; I reck not, so it light well aim’d,\nSince higher I fall short, on him who next\nProvokes my envie, this new Favorite\nOf Heav’n, this Man of Clay, Son of despite,\nWhom us the more to spite his Maker rais’d\nFrom dust: spite then with spite is best repaid.",
+      "Oh turpe, oh strano\nAvvilimento! Io che pugnai co’ Numi\nPer ergermi sovr’essi, or son costretto\nDentro il loto a ravvolgermi e la bava\nD’un bruto e questa mia divina essenza\nChe già del cielo i primi onori ambìa,\nAd incarnare, ad imbestiar! Ma dove,\nDi vendetta il desìo dove non mena?\nA che non scende ambizïon? Quant’alta\nÈ più la meta ov’ella aspira, è forza\nChe tanto più s’abbassi e, prima o poi,\nSoggiaccia ad ogni cosa indegna e vile.\nE tu, vendetta, ancor che dolce in pria,\nCome presto ti cangi, e il tosco amaro\nIn te stessa rivolgi! Ebben, nol curo;\nPurchè a ferire ed atterrar tu giunga,\nSe non giungesti a più sublime scopo,\nQuesto del mio livor secondo oggetto,\nQuest’uom sì caro al ciel, questo novello\nFiglio del suo dispetto, opra di fango\nChe tal formata fu solo per nostro\nScherno maggiore. E non sarà ch’io renda\nOdio all’odio, onta ad onta, oltraggio a oltraggio?"
+     ]
+    ]
+   },
    {
     "type": "heading",
     "text": "Book II · Passages to learn by heart"
@@ -12917,8 +12960,8 @@ window.FN_POEMS = [
     "lang": "en",
     "label": "English",
     "stanzas": [
-     "Ten years, the living and the dead, lost to each other in the dark.\nI do not try to remember; I cannot forget.\nYour lonely grave is a thousand miles away, and there is nowhere to tell my grief.\nEven if we met, you would not know me:\ndust on my face, my temples white as frost.",
-     "Last night, in a dim dream, I was suddenly home.\nAt the little window you were doing your hair.\nWe looked at each other and said nothing; only tears, a thousand lines of them.\nI know the place that will break my heart, year after year:\nthe moonlit night, the hill of little pines."
+     "For ten years, the dead and the living have been separated by a vast and obscure distance<note type= \"critical\" anchored=\"true\"><p>Su Shi’s first wife, Wang Fu, died in 1065 CE; by the time he wrote this song, it had been ten years since her death.</p></note>.\nI forced myself not to think of you,\nBut it is hard for me to forget.\nThe solitary grave, a thousand miles away,<note type= \"critical\" anchored=\"true\"><p>Wang Fu was buried in Meizhou, far away from Su Shi’s current location in Mizhou.</p></note>\nNowhere to speak about this loneliness and misery of mine.\nEven if we could meet, you would not recognize me.\nDust all over my face<note type= \"critical\" anchored=\"true\"><p>During the Song Dynasty, people traveled by horse and carriage, and “Dust all over my face” implies that the poet traveled a lot during the ten years. It also suggests that a lot had happened to him, and that complicated life experiences had made the older poet very different from his younger self.</p></note>,\nand the hair at my temples like frost.",
+     "Yesterday night, in a mournful dream, I suddenly returned to my hometown.\nBy the small window,\nyou were combing your hair and doing your makeup.\nWe gazed at each other, speechless;\nonly thousands of lines of tears coursed down.\nI know your heart breaks for me year after year\nOn moonlit nights,\nupon the hill with the low pine trees."
     ]
    },
    {
@@ -12968,6 +13011,43 @@ window.FN_POEMS = [
     "stanzas": [
      "Io vivo alla sorgente dello Yangtze,\ntu vivi alla sua foce.\nOgni giorno ti penso e non ti vedo,\neppure beviamo l'acqua dello stesso fiume.",
      "Quando si fermerà quest'acqua?\nQuando finirà questo dolore?\nVorrei solo che il tuo cuore fosse come il mio:\nallora questa nostalgia non sarà vana."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "satan-against-god",
+  "book": "quote-paradise-lost",
+  "title": "Paradise Lost: Satan against God",
+  "author": "John Milton",
+  "heading": "Satan against God · Passages to learn by heart",
+  "versions": [
+   {
+    "lang": "en",
+    "label": "English",
+    "stanzas": [
+     "What though the field be lost?\nAll is not lost; the unconquerable Will,\nAnd study of revenge, immortal hate,\nAnd courage never to submit or yield:\nAnd what is else not to be overcome?\nThat Glory never shall his wrath or might\nExtort from me.  To bow and sue for grace\nWith suppliant knee, and deifie his power\nWho from the terrour of this Arm so late\nDoubted his Empire, that were low indeed,\nThat were an ignominy and shame beneath\nThis downfall;",
+     "Fall’n Cherube, to be weak is miserable\nDoing or Suffering: but of this be sure,\nTo do ought good never will be our task,\nBut ever to do ill our sole delight,\nAs being the contrary to his high will\nWhom we resist.  If then his Providence\nOut of our evil seek to bring forth good,\nOur labour must be to pervert that end,\nAnd out of good still to find means of evil;",
+     "Farewel happy Fields\nWhere Joy for ever dwells: Hail horrours, hail\nInfernal world, and thou profoundest Hell\nReceive thy new Possessor: One who brings\nA mind not to be chang’d by Place or Time.\nThe mind is its own place, and in it self\nCan make a Heav’n of Hell, a Hell of Heav’n.\nWhat matter where, if I be still the same,\nAnd what I should be, all but less then hee\nWhom Thunder hath made greater?  Here at least\nWe shall be free; th’ Almighty hath not built\nHere for his envy, will not drive us hence:\nHere we may reign secure, and in my choyce\nTo reign is worth ambition though in Hell:\nBetter to reign in Hell, then serve in Heav’n.",
+     "O thou that with surpassing Glory crownd,\nLook’st from thy sole Dominion like the God\nOf this new World; at whose sight all the Starrs\nHide thir diminisht heads; to thee I call,\nBut with no friendly voice, and add thy name\nO Sun, to tell thee how I hate thy beams\nThat bring to my remembrance from what state\nI fell, how glorious once above thy Spheare;\nTill Pride and worse Ambition threw me down\nWarring in Heav’n against Heav’ns matchless King:",
+     "Me miserable! which way shall I flie\nInfinite wrauth, and infinite despaire?\nWhich way I flie is Hell; my self am Hell;\nAnd in the lowest deep a lower deep\nStill threatning to devour me opens wide,\nTo which the Hell I suffer seems a Heav’n.",
+     "So farwel Hope, and with Hope farwel Fear,\nFarwel Remorse: all Good to me is lost;\nEvil be thou my Good; by thee at least\nDivided Empire with Heav’ns King I hold\nBy thee, and more then half perhaps will reigne;\nAs Man ere long, and this new World shall know.",
+     "who saw\nWhen this creation was? rememberst thou\nThy making, while the Maker gave thee being?\nWe know no time when we were not as now;\nKnow none before us, self-begot, self-rais’d\nBy our own quick’ning power, when fatal course\nHad circl’d his full Orbe, the birth mature\nOf this our native Heav’n, Ethereal Sons.\nOur puissance is our own, our own right hand\nShall teach us highest deeds, by proof to try\nWho is our equal:",
+     "O foul descent! that I who erst contended\nWith Gods to sit the highest, am now constraind\nInto a Beast, and mixt with bestial slime,\nThis essence to incarnate and imbrute,\nThat to the hight of Deitie aspir’d;\nBut what will not Ambition and Revenge\nDescend to? who aspires must down as low\nAs high he soard, obnoxious first or last\nTo basest things.  Revenge, at first though sweet,\nBitter ere long back on it self recoiles;\nLet it; I reck not, so it light well aim’d,\nSince higher I fall short, on him who next\nProvokes my envie, this new Favorite\nOf Heav’n, this Man of Clay, Son of despite,\nWhom us the more to spite his Maker rais’d\nFrom dust: spite then with spite is best repaid."
+    ]
+   },
+   {
+    "lang": "it",
+    "label": "Italiano",
+    "stanzas": [
+     "Perduto è il campo, e sia: perduto il tutto\nDunque sarà? Quell’invincibil, fermo\nVoler ci resta ancor, quel di vendetta\nFero desìo, quell’immortal rancore\nE quel coraggio che non mai s’abbatte,\nChe mai non si sommette. E che altro è mai\nL’essere invitto ed invincibil? Questo\nVanto la rabbia sua, la sua possanza\nNo, non avrà da me. Ch’io grazia chieda?\nCh’io mi prostri al suo piè? che qual mio Nume,\nQual mio Signor lui riconosca e onori,\nLui che il terror di questo braccio mise\nTestè del regno in forse? Ah! questa invero\nFora viltà, fora ignominia ed onta\nPeggior della caduta.",
+     "Caduto Cherubino (a lui risponde\nVivamente Satáno), alma che langue,\nNell’oprar, nel soffrir, misera è sempre.\nTu certo intanto sii che nostra impresa\nIl ben non fia mai più. Nel male ognora,\nNel mal che opposto è per natura all’alto\nVoler di quei cui facciam guerra, il sommo\nDobiam cercar nostro diletto e vanto.\nStudi egli pur con provvido consiglio\nVolgere in bene il male; ogni nostr’arte\nQuel suo disegno a distornar si volga,\nE fuor del seno ancor del bene stesso\nPer nostre oblique trame il mal germogli.",
+     "Addio, felici campi; addio, soggiorno\nD’eterna gioia. Salve, o Mondo inferno,\nSalvete, Orrori; e tu, profondo Abisso,\nIl tuo novello possessore accogli;\nAccogli quei che in petto un’alma serra\nPer loco o tempo non mutabil mai.\nL’alma in se stessa alberga, e in sè trasforma\nNel ciel l’inferno e nell’inferno il cielo:\nChe importa ov’io mi sia, se ognor lo stesso,\nE qual deggio, son io? se tutto io sono,\nFuorchè minor di lui che il fulmin solo\nFe’ più grande di me? Liberi almeno,\nQui liberi sarem: questo soggiorno\nEgli non fece onde lo invidii, e quindi\nSbandirci non vorrà: regnar sicuri\nQui noi possiamo, e, al parer mio, quaggiuso\nAnco è bello il regnar; sì, miglior sempre\nChe in ciel servaggio, è nell’inferno un regno.",
+     "O tu, che cinto\nDi tanta gloria, spazïando vai\nSolo Signor lassù, che sembri Nume\nDi questo nuovo mondo, e in faccia a cui\nLa scema fronte ogn’altra stella asconde,\nMi volgo a te, ma non con voce amica\nIo già mi volgo, ed il tuo nome aggiungo,\nO sol, per dirti in qual dispetto io m’abbia\nI raggi tuoi che mi rammentan quale\nFosse il grado ond’io caddi, e la tua spera\nQuant’io di gloria e di splendor vincessi.\nOimè! da quale stato un cieco orgoglio\nPrecipitommi! Io contro il re del cielo,\nIo contro lui che paragon non ave,\nOsai levar lassù la fronte e l’armi?",
+     "Dove, misero me! dove sottrarmi\nAll’immensa ira sua? Dove allo stesso\nMio furor disperato? Ovunque io fugga,\nTrovo l’inferno, anzi del core in fondo\nMeco lo porto: ivi un più cupo abisso\nDi quell’abisso atroce in cui m’ha spinto\nIl mio delitto, si spalanca, e tanto\nLo supera in orror che bello e dolce\nL’inferno stesso è al paragone.",
+     "Fuggi dunque, o speranza, e tu con essa\nFuggi, o timor, da questo sen; fuggite,\nVani rimorsi miei; per me in eterno\nÈ perduto ogni ben: tu solo, o male,\nSii mio sol bene omai; per te diviso\nCol re del cielo almen tengo l’impero,\nE più che la metà saprò fors’anco\nOccuparne per te. Vedrai bentosto,\nUomo odïato, e tu, novello mondo,\nLa possa di Satán.",
+     "Chi mai dal nulla escir le cose vide?\nRammenti tu quell’ora, in cui da prima\nIl tuo Fattor vita ti diè? Rammenti\nIl tempo in cui non eri, o allor chi fosse?\nPer propria forza animatrice noi,\nQuando un corso fatal tutto compiuto\nEbbe ’l suo giro, per noi stessi al lume\nDella vita sorgemmo eterei figli\nDi questo natìo ciel parto maturo.\nDa noi ci vien la nostra possa, e tosto\nSaprà mostrare il nostro braccio a prova\nChi sia qui Signor nostro o nostro eguale.",
+     "Oh turpe, oh strano\nAvvilimento! Io che pugnai co’ Numi\nPer ergermi sovr’essi, or son costretto\nDentro il loto a ravvolgermi e la bava\nD’un bruto e questa mia divina essenza\nChe già del cielo i primi onori ambìa,\nAd incarnare, ad imbestiar! Ma dove,\nDi vendetta il desìo dove non mena?\nA che non scende ambizïon? Quant’alta\nÈ più la meta ov’ella aspira, è forza\nChe tanto più s’abbassi e, prima o poi,\nSoggiaccia ad ogni cosa indegna e vile.\nE tu, vendetta, ancor che dolce in pria,\nCome presto ti cangi, e il tosco amaro\nIn te stessa rivolgi! Ebben, nol curo;\nPurchè a ferire ed atterrar tu giunga,\nSe non giungesti a più sublime scopo,\nQuesto del mio livor secondo oggetto,\nQuest’uom sì caro al ciel, questo novello\nFiglio del suo dispetto, opra di fango\nChe tal formata fu solo per nostro\nScherno maggiore. E non sarà ch’io renda\nOdio all’odio, onta ad onta, oltraggio a oltraggio?"
     ]
    }
   ]

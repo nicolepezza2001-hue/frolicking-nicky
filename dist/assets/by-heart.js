@@ -1,4 +1,4 @@
-/* Frolicking Nicky: learning poems by heart in the study. Every poem in window.FN_POEMS (built into quote-books.js from
+/* Frolicking Nicky: learning poems (and any quote) by heart in the study. Every poem in window.FN_POEMS (built into quote-books.js from
    tools/quote-poems.json) gets a "Learn by heart" link under its heading on its Quotes page and its own room, #heart-<poem>,
    where it can be learned in any of its versions (the original, pinyin, English, Italian), each with its own progress.
    A stanza is learned in three steps: read it (with its translation), let its words fade to first letters, then recite it
@@ -6,7 +6,6 @@
    day), and the top of Quotes lists what is due today. Progress is saved in fn-study-heart-v1 and synced like the rest. */
 (() => {
   const POEMS = window.FN_POEMS || [];
-  if (!POEMS.length) return;
   const KEY = 'fn-study-heart-v1', GAPS = [0, 1, 2, 4, 7, 15, 30, 60, 120], PASS = 0.9;
   let state = {};
   try { state = JSON.parse(localStorage.getItem(KEY)) || {}; } catch (_) {}
@@ -28,9 +27,14 @@
   const due = poem => Object.entries(progress(poem)).filter(([, s]) => s.d <= today()).map(([i]) => +i).sort((a, b) => a - b);
   const fresh = poem => lines(poem).findIndex((_, i) => !progress(poem)[i]);
   const plural = (n, one, many) => n + ' ' + (n === 1 ? one : many);
+  // Poems are learned stanza by stanza; a quote part by part (a long one is cut into a few sentences at a time)
+  const unit = poem => poem.unit || 'stanza', units = (poem, n) => plural(n, unit(poem), unit(poem) + 's');
+  const Unit = poem => unit(poem)[0].toUpperCase() + unit(poem).slice(1);
+  const nextLabel = poem => lines(poem).length === 1 ? 'Learn it' : learned(poem) ? `Learn the next ${unit(poem)}` : `Learn the first ${unit(poem)}`;
   const summary = poem => {
     const n = learned(poem), d = due(poem).length;
-    return `${n} of ${plural(lines(poem).length, 'stanza', 'stanzas')} by heart` + (poem.versions.length > 1 ? ` in ${version(poem).label}` : '') + (d ? ` · ${d} to review today` : '');
+    if (lines(poem).length === 1 && poem.versions.length === 1) return (n ? 'By heart' : 'Not learned yet') + (d ? ' · to review today' : '');
+    return `${n} of ${units(poem, lines(poem).length)} by heart` + (poem.versions.length > 1 ? ` in ${version(poem).label}` : '') + (d ? ` · ${d} to review today` : '');
   };
   // A recited stanza moves up a step and comes back later; a miss starts it again tomorrow
   const mark = (poem, i, right) => {
@@ -79,7 +83,7 @@
     const head = el('div', 'fn-study-head'), title = el('h2', null, 'By heart'); title.id = sec.id + '-title';
     sec.setAttribute('aria-labelledby', title.id);
     const count = el('p', 'fn-study-count'); head.append(title, count);
-    const why = el('p', 'fn-study-why', poem.title + (poem.author ? ', ' + poem.author : '') + '. One stanza at a time: read it, let it fade, then say it from memory.');
+    const why = el('p', 'fn-study-why', poem.title + (poem.author ? ', ' + poem.author : '') + (lines(poem).length > 1 ? `. One ${unit(poem)} at a time: read it, let it fade, then say it from memory.` : '. Read it, let it fade, then say it from memory.'));
     // The version she learns it in; each keeps its own progress
     const langs = el('div', 'fn-vocab-modes fn-heart-langs');
     if (poem.versions.length > 1) {
@@ -92,8 +96,9 @@
     }
     const actions = el('div', 'fn-vocab-modes fn-heart-actions'), stage = el('div', 'fn-heart-stage');
     stage.setAttribute('aria-live', 'polite');
-    const mapLabel = el('h3', 'fn-study-label', 'The stanzas'), map = el('ol', 'fn-heart-map');
+    const mapLabel = el('h3', 'fn-study-label', `The ${unit(poem)}s`), map = el('ol', 'fn-heart-map');
     sec.append(bar, head, why, langs, actions, stage, mapLabel, map);
+    if (lines(poem).length === 1) { mapLabel.hidden = map.hidden = true; }
 
     let queue = [], kind = '';
     const draw = () => {
@@ -101,14 +106,14 @@
       langs.querySelectorAll('button').forEach(b => b.setAttribute('aria-pressed', String(b.lang === version(poem).lang)));
       const d = due(poem), next = fresh(poem);
       actions.replaceChildren();
-      if (d.length) { const b = button(`Review ${plural(d.length, 'stanza', 'stanzas')}`); b.addEventListener('click', () => start(d, 'review')); actions.append(b); }
-      if (next >= 0) { const b = button(learned(poem) ? 'Learn the next stanza' : 'Learn the first stanza', d.length ? 'fn-vocab-mode' : 'fn-study-btn'); b.addEventListener('click', () => start([next], 'learn')); actions.append(b); }
+      if (d.length) { const b = button(d.length === 1 && lines(poem).length === 1 ? 'Review it' : `Review ${units(poem, d.length)}`); b.addEventListener('click', () => start(d, 'review')); actions.append(b); }
+      if (next >= 0) { const b = button(nextLabel(poem), d.length ? 'fn-vocab-mode' : 'fn-study-btn'); b.addEventListener('click', () => start([next], 'learn')); actions.append(b); }
       const known = lines(poem).map((_, i) => i).filter(i => progress(poem)[i]);
       if (known.length > 1) { const b = button('Recite all I know', 'fn-vocab-mode'); b.addEventListener('click', () => start(known, 'recite')); actions.append(b); }
       map.replaceChildren(...lines(poem).map((stanza, i) => {
         const s = progress(poem)[i], li = el('li'), a = button(String(i + 1), 'fn-heart-dot');
         a.title = stanza.split('\n')[0];
-        a.setAttribute('aria-label', `Stanza ${i + 1}` + (s ? (s.d <= today() ? ', to review' : ', by heart') : ''));
+        a.setAttribute('aria-label', `${Unit(poem)} ${i + 1}` + (s ? (s.d <= today() ? ', to review' : ', by heart') : ''));
         a.dataset.step = s ? Math.min(s.b, 5) : 0; if (s && s.d <= today()) a.dataset.due = '';
         a.addEventListener('click', () => start([i], s ? 'review' : 'learn'));
         li.append(a); return li;
@@ -119,7 +124,7 @@
       stage.replaceChildren(el('p', 'fn-quiz-q', 'Well done.'), el('p', 'fn-quiz-progress', summary(poem)));
       const again = due(poem), next = fresh(poem), row = el('div', 'fn-vocab-modes');
       if (again.length) { const b = button('Review the rest'); b.addEventListener('click', () => start(again, 'review')); row.append(b); }
-      else if (next >= 0) { const b = button('Learn the next stanza'); b.addEventListener('click', () => start([next], 'learn')); row.append(b); }
+      else if (next >= 0) { const b = button(nextLabel(poem)); b.addEventListener('click', () => start([next], 'learn')); row.append(b); }
       stage.append(row); draw();
     };
     const turn = () => {
@@ -128,7 +133,7 @@
       const i = queue[0], learning = kind === 'learn' && !progress(poem)[i];
       learning ? read(i) : recite(i, kind === 'recite' ? 'all' : 'review');
     };
-    const label = i => el('p', 'fn-quiz-progress', `Stanza ${i + 1} of ${lines(poem).length}` + (queue.length > 1 ? ` · ${queue.length - 1} more after this` : ''));
+    const label = i => el('p', 'fn-quiz-progress', (lines(poem).length > 1 ? `${Unit(poem)} ${i + 1} of ${lines(poem).length}` : poem.title) + (queue.length > 1 ? ` · ${queue.length - 1} more after this` : ''));
     // The line before a stanza, so she can hear where it starts from
     const cue = i => i > 0 ? el('p', 'fn-heart-cue', '… ' + lines(poem)[i - 1].split('\n').at(-1)) : null;
 
@@ -158,7 +163,7 @@
     // Step 3: type it from memory; the words she said are shown in yellow, the ones she missed underlined
     const recite = (i, how) => {
       const form = el('form', 'fn-heart-form'), box = el('textarea'); box.rows = lines(poem)[i].split('\n').length + 1;
-      box.lang = version(poem).lang; box.setAttribute('aria-label', `Stanza ${i + 1} from memory`); box.spellcheck = false;
+      box.lang = version(poem).lang; box.setAttribute('aria-label', `${Unit(poem)} ${i + 1} from memory`); box.spellcheck = false;
       box.autocapitalize = 'off'; box.setAttribute('autocorrect', 'off');
       const check = el('button', 'fn-study-btn', 'Check'); check.type = 'submit';
       const peek = button('First letters', 'fn-vocab-mode'), row = el('div', 'fn-vocab-modes'); row.append(check, peek);
@@ -189,33 +194,76 @@
   };
   POEMS.forEach(poem => main.append(room(poem)));
 
-  // A "Learn by heart" link under each poem's heading on its Quotes page
-  const buttons = () => POEMS.forEach(poem => {
-    const page = document.getElementById(poem.book);
-    const heading = [...(page?.querySelectorAll('.fn-lesson-notes h3') || [])].find(h => h.textContent === poem.heading);
-    if (!heading || heading.nextElementSibling?.classList.contains('fn-heart-open')) return;
-    const p = el('p', 'fn-heart-open'), a = el('a', 'fn-highlight-mode', 'Learn by heart'); a.href = '#heart-' + poem.id;
-    p.append(a); heading.after(p);
+  // ---- Every quote can be learned too ---------------------------------------------------------------------
+  // A quote's id comes from its words, so its progress stays with it when the daily sync adds or moves quotes
+  const hash = t => { let h = 5381; for (const c of t) h = (h * 33 + c.codePointAt(0)) >>> 0; return h.toString(36); };
+  const sign = /\n— [^\n]*$/; // the line naming a quote's book on Miscellaneous
+  // A long quote is cut into parts of a few sentences (about 35 words), so it can be learned a bit at a time
+  const parts = text => text.split(/\n\s*\n/).flatMap(par => {
+    if (par.split(/\s+/).length <= 45) return [par];
+    const out = [];
+    (par.match(/[^.!?…]+(?:[.!?…]+["”»’)]*\s*|$)/gu) || [par]).forEach(sen => {
+      if (out.length && (out.at(-1) + sen).split(/\s+/).length <= 40) out[out.length - 1] += sen; else out.push(sen);
+    });
+    return out.map(x => x.trim()).filter(Boolean);
   });
+  const QUOTES = new Map();
+  (window.FN_QUOTE_BOOKS || []).forEach(book => book.blocks.forEach((b, n) => {
+    if (b.type !== 'paragraph') return;
+    const from = b.text.match(sign)?.[0].slice(3), text = b.text.replace(sign, '').trim(); if (!text) return;
+    const id = 'q-' + hash(book.id + '|' + text);
+    QUOTES.set(id, { id, book: book.id, block: n, unit: 'part', title: from || book.title, author: from ? '' : book.author,
+      versions: [{ lang: '', label: '', stanzas: parts(text) }] });
+  }));
+  // Their rooms are made when first opened (before the study shows them)
+  const open = id => {
+    const quote = QUOTES.get(id); if (!quote || document.getElementById('heart-' + id)) return false;
+    main.append(room(quote)); return true;
+  };
+  const opening = () => { const m = location.hash.match(/^#heart-(q-\w+)$/); return m && open(m[1]); };
+  addEventListener('hashchange', opening, true);
+  if (opening()) dispatchEvent(new HashChangeEvent('hashchange'));
+
+  // A "Learn by heart" link under each poem's heading, and a quiet one under every quote, on its Quotes page
+  const buttons = () => {
+    POEMS.forEach(poem => {
+      const page = document.getElementById(poem.book);
+      const heading = [...(page?.querySelectorAll('.fn-lesson-notes h3') || [])].find(h => h.textContent === poem.heading);
+      if (!heading || heading.nextElementSibling?.classList.contains('fn-heart-open')) return;
+      const p = el('p', 'fn-heart-open'), a = el('a', 'fn-highlight-mode', 'Learn by heart'); a.href = '#heart-' + poem.id;
+      p.append(a); heading.after(p);
+    });
+    QUOTES.forEach(quote => {
+      const par = document.querySelector(`#${quote.book} .fn-lesson-notes p[data-note-block="${quote.block}"]`);
+      if (!par || par.nextElementSibling?.classList.contains('fn-heart-quote')) return;
+      const p = el('p', 'fn-heart-quote'), a = el('a', null, 'Learn by heart'); a.href = '#heart-' + quote.id;
+      a.addEventListener('click', () => open(quote.id));
+      p.append(a); par.after(p);
+    });
+  };
   buttons();
   // Edit lesson redraws the page, so the links are put back
   const redraw = window.fnRedrawLesson;
   if (redraw) window.fnRedrawLesson = id => { const r = redraw(id); buttons(); return r; };
 
-  // At the top of Quotes: the poems being learned, and how many stanzas are due today
+  // At the top of Quotes: the poems and quotes being learned, and what is due today
   const shelf = document.getElementById('fn-quotes');
   const list = () => {
     shelf?.querySelector('.fn-heart-shelf')?.remove();
-    const going = POEMS.filter(p => learned(p));
+    const quotes = [...QUOTES.values()].filter(q => state.poems[q.id] && learned(q));
+    const going = POEMS.filter(p => learned(p)).concat(quotes);
     const box = el('section', 'fn-heart-shelf'), ul = el('ul', 'fn-quotes-books');
     box.append(el('h3', 'fn-study-label', 'By heart'));
     (going.length ? going : POEMS).forEach(poem => {
       const li = el('li'), a = el('a', 'fn-quotes-book'); a.href = '#heart-' + poem.id;
-      a.append(el('span', 'fn-quotes-title', poem.title), el('span', 'fn-quotes-author', learned(poem) ? summary(poem) : 'Not started yet'));
+      const name = poem.unit === 'part' ? '“' + poem.versions[0].stanzas[0].split(/\s+/).slice(0, 7).join(' ') + '…”' : poem.title;
+      a.append(el('span', 'fn-quotes-title', name), el('span', 'fn-quotes-author', learned(poem) ? (poem.unit === 'part' ? poem.title + ' · ' : '') + summary(poem) : 'Not started yet'));
+      if (poem.unit === 'part') a.addEventListener('click', () => open(poem.id));
       if (due(poem).length) a.dataset.due = '';
       li.append(a); ul.append(li);
     });
-    box.append(ul); shelf?.prepend(box);
+    box.append(el('p', 'fn-heart-hint', 'Any quote can be learned too: “Learn by heart” sits under each one.'), ul);
+    if (going.length || POEMS.length) shelf?.prepend(box);
   };
   list();
   addEventListener('hashchange', () => { if (location.hash === '#quotes') list(); });
