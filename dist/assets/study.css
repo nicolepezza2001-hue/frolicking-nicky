@@ -383,7 +383,10 @@ article.fn-lesson[id^="quote-"] .fn-lesson-table tr:first-child{display:none}
 article.fn-lesson[id^="quote-"] .fn-lesson-table td{display:block;width:auto;border-bottom:0}
 article.fn-lesson[id^="quote-"] .fn-lesson-table td+td{padding-top:0;opacity:.78;border-bottom:1px solid #2b1e3822}}
 /* By heart (assets/by-heart.js): a poem's room, one stanza at a time; read, fade to first letters, recite */
-.fn-heart-open{text-decoration:none;margin-right:auto;margin-left:16px}
+.fn-heart-open{margin:-4px 0 20px}
+.fn-heart-open a{display:inline-block;text-decoration:none}
+.fn-heart-langs{margin:0 0 16px;align-items:center}
+.fn-heart-langs-label{color:var(--st-soft);font-style:italic;margin-right:4px}
 .fn-heart-all{font-size:1rem}
 .fn-heart-actions{margin:0 0 26px}
 .fn-heart-stage:empty{display:none}
@@ -392,6 +395,7 @@ article.fn-lesson[id^="quote-"] .fn-lesson-table td+td{padding-top:0;opacity:.78
 .fn-heart-verse{margin:0 0 18px;font:500 clamp(1.25rem,3vw,1.5rem)/1.55 'Cormorant Garamond',Georgia,serif;color:var(--st-cream)}
 .fn-heart-line{margin:0}
 .fn-heart-line:nth-child(3){padding-left:1.4em}
+[data-script=zh] .fn-heart-line:nth-child(3){padding-left:0}
 .fn-heart-word.is-faded{color:#c9b9d699;letter-spacing:.06em;cursor:pointer;border-radius:3px}
 .fn-heart-word.is-faded:hover,.fn-heart-word.is-faded:focus-visible{color:var(--st-yellow);outline:none}
 .fn-heart-word.is-said{color:var(--st-yellow)}
@@ -410,4 +414,4 @@ article.fn-lesson[id^="quote-"] .fn-lesson-table td+td{padding-top:0;opacity:.78
 .fn-heart-dot[data-due]{box-shadow:0 0 0 2px var(--st-night),0 0 0 3px #e8a0a0}
 .fn-heart-shelf{margin:0 0 34px}
 .fn-quotes-book[data-due] .fn-quotes-author{color:var(--st-yellow)}
-@media(max-width:760px){.fn-heart-stage{padding:16px 14px}.fn-heart-open{margin-left:10px}}
+@media(max-width:760px){.fn-heart-stage{padding:16px 14px}}
