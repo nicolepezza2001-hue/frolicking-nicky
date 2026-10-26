@@ -1,0 +1,27 @@
+name: Probe Goodreads notes (temporary)
+on:
+  push:
+    branches: ['probe/**']
+jobs:
+  probe:
+    runs-on: ubuntu-24.04
+    steps:
+      - run: |
+          UA='Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36'
+          for u in "https://www.goodreads.com/notes/197324729-nicole-p" "https://www.goodreads.com/notes/197324729-nicole-p?page=2"; do
+            echo "=== $u"; curl -sSL -A "$UA" "$u" -o p.html -w '%{http_code} %{size_download}\n'
+            grep -o 'href="/notes/[^"]*"' p.html | sort -u | head -80
+            grep -o 'class="[^"]*"' p.html | sort | uniq -c | sort -rn | head -40
+          done
+          u=$(grep -o 'href="/notes/[0-9][^"]*/197324729[^"]*"' p.html | head -1 | sed 's/href="//;s/"$//')
+          curl -sSL -A "$UA" "https://www.goodreads.com/notes/197324729-nicole-p" -o p1.html
+          u=$(grep -o 'href="/notes/[0-9][^"]*/197324729[^"]*"' p1.html | grep -i jade | head -1 | sed 's/href="//;s/"$//')
+          [ -z "$u" ] && u=$(grep -o 'href="/notes/[0-9][^"]*/197324729[^"]*"' p1.html | head -1 | sed 's/href="//;s/"$//')
+          echo "=== BOOK $u"; curl -sSL -A "$UA" "https://www.goodreads.com$u" -o b.html -w '%{http_code} %{size_download}\n'
+          grep -o 'class="[^"]*"' b.html | sort | uniq -c | sort -rn | head -40
+          python3 - <<'PY'
+          import re
+          h=open('b.html',encoding='utf8').read()
+          for m in list(re.finditer(r'highlight', h, re.I))[:6]:
+              print('---', h[max(0,m.start()-300):m.start()+500].replace('\n',' '))
+          PY
