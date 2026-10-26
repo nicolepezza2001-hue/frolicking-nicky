@@ -2,6 +2,8 @@ name: Probe Goodreads notes (temporary)
 on:
   push:
     branches: ['probe/**']
+permissions:
+  contents: write
 jobs:
   probe:
     runs-on: ubuntu-24.04
@@ -10,4 +12,7 @@ jobs:
         with: { ref: study/quotes-trim-highlights }
       - uses: actions/setup-node@v4
         with: { node-version: 22 }
-      - run: node tools/sync-quotes.mjs && python3 -c "import json,collections;d=json.load(open('tools/quotes.json'))['goodreads'];print(json.dumps(sorted(collections.Counter((q["book"],q["author"]) for q in d).items()),ensure_ascii=False))"
+      - run: |
+          node tools/sync-quotes.mjs | tail -2
+          git config user.name "github-actions[bot]"; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b probe/goodreads-data && git add tools/quotes.json && git commit -qm "Goodreads data (temporary)" && git push -f origin probe/goodreads-data
