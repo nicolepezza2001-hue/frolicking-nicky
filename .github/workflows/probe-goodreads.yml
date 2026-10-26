@@ -10,4 +10,4 @@ jobs:
         with: { ref: study/quotes-trim-highlights }
       - uses: actions/setup-node@v4
         with: { node-version: 22 }
-      - run: node tools/sync-quotes.mjs && python3 -c "import json,collections;d=json.load(open('tools/quotes.json'))['goodreads'];print(collections.Counter(q['book'] for q in d))"
+      - run: node tools/sync-quotes.mjs && python3 -c "import json,collections;d=json.load(open('tools/quotes.json'))['goodreads'];print(json.dumps(sorted(collections.Counter((q["book"],q["author"]) for q in d).items()),ensure_ascii=False))"
