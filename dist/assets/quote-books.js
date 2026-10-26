@@ -35,43 +35,53 @@ window.FN_QUOTE_BOOKS = [
   "blocks": [
    {
     "type": "paragraph",
-    "text": "Noi giochiamo con le profezie, con le visioni e con i sogni per rendere importante la vita d'ogni giorno."
+    "text": "Noi giochiamo con le profezie, con le visioni e con i sogni per rendere importante la vita d'ogni giorno.",
+    "group": 25
    },
    {
     "type": "paragraph",
-    "text": "Per quanto si viva ritirati ci si ritrova, prima d'accorgersene, debitori o creditori."
+    "text": "Per quanto si viva ritirati ci si ritrova, prima d'accorgersene, debitori o creditori.",
+    "group": 25
    },
    {
     "type": "paragraph",
-    "text": "La persona indulgente trova ridicolo quasi tutto, quella intelligente quasi nulla."
+    "text": "La persona indulgente trova ridicolo quasi tutto, quella intelligente quasi nulla.",
+    "group": 25
    },
    {
     "type": "paragraph",
-    "text": "Il comportamento è uno specchio in cui ognuno mostra la sua immagine."
+    "text": "Il comportamento è uno specchio in cui ognuno mostra la sua immagine.",
+    "group": 25
    },
    {
     "type": "paragraph",
-    "text": "La buona pedagogia è dunque l'inverso della buona educazione. In società non ci so deve soffermare su nulla, mentre nell'insegnamento la regola principale è quella di operare contro la distrazione."
+    "text": "La buona pedagogia è dunque l'inverso della buona educazione. In società non ci so deve soffermare su nulla, mentre nell'insegnamento la regola principale è quella di operare contro la distrazione.",
+    "group": 25
    },
    {
     "type": "paragraph",
-    "text": "Non mi considero altro che un viaggiatore che rinuncia a molto per godere molto."
+    "text": "Non mi considero altro che un viaggiatore che rinuncia a molto per godere molto.",
+    "group": 25
    },
    {
     "type": "paragraph",
-    "text": "Il mondo mi disgusta e mi impaurisce solo se gli debbo servire, in ozio, da spettacolo."
+    "text": "Il mondo mi disgusta e mi impaurisce solo se gli debbo servire, in ozio, da spettacolo.",
+    "group": 25
    },
    {
     "type": "paragraph",
-    "text": "È insito nella natura umana pretendere da sè e dagli altri più di quanto si abbia già avuto."
+    "text": "È insito nella natura umana pretendere da sè e dagli altri più di quanto si abbia già avuto.",
+    "group": 25
    },
    {
     "type": "paragraph",
-    "text": "Possibile che io non debba riudire la tua voce? Non vuoi tornare in vita con una parola per me? E va bene, va bene! Ti seguirò nell'aldilà, dove parleremo altre lingue!"
+    "text": "Possibile che io non debba riudire la tua voce? Non vuoi tornare in vita con una parola per me? E va bene, va bene! Ti seguirò nell'aldilà, dove parleremo altre lingue!",
+    "group": 25
    },
    {
     "type": "paragraph",
-    "text": "È un compito terribile quello d'imitare l'inimitabile. Mi accorgo, mio caro, che occorre del genio per tutto, anche per il martirio."
+    "text": "È un compito terribile quello d'imitare l'inimitabile. Mi accorgo, mio caro, che occorre del genio per tutto, anche per il martirio.",
+    "group": 25
    },
    {
     "type": "paragraph",
@@ -441,11 +451,13 @@ window.FN_QUOTE_BOOKS = [
   "blocks": [
    {
     "type": "paragraph",
-    "text": "I tuoi amori lenti e abissali"
+    "text": "I tuoi amori lenti e abissali",
+    "group": 19
    },
    {
     "type": "paragraph",
-    "text": "I roseti innevati di polvere lunare"
+    "text": "I roseti innevati di polvere lunare",
+    "group": 19
    }
   ]
  },
@@ -458,23 +470,28 @@ window.FN_QUOTE_BOOKS = [
   "blocks": [
    {
     "type": "paragraph",
-    "text": "Se tristezza aleggia in questi rapporti erosivi, bellezza troneggia invece nel classicismo giapponese di cui Kawabata Yasunari si fa portavoce ed ambasciatore , mesto, in penombra, eppure cosi’ incisivo, poetico, elegante, ammaliante.\nGia’ le prime pagine risuonano attraverso le campane dei templi piu’ famosi, che le radio trasmettono per salutare il vecchio anno. I tempi brevi ma dilatati nei colori del tramonto, scie di viola ad annebbiare il rosso. Cerimonie dove il te’ e’ sorseggiato in tazze su cui poggiarono i raggi della luna .\nElementi del paesaggio circostante che nella loro staticita’ non rallentano ma saturano, mentre la vicenda si svolge tra ossessioni sezionate e sensualita’ celate."
+    "text": "Se tristezza aleggia in questi rapporti erosivi, bellezza troneggia invece nel classicismo giapponese di cui Kawabata Yasunari si fa portavoce ed ambasciatore , mesto, in penombra, eppure cosi’ incisivo, poetico, elegante, ammaliante.\nGia’ le prime pagine risuonano attraverso le campane dei templi piu’ famosi, che le radio trasmettono per salutare il vecchio anno. I tempi brevi ma dilatati nei colori del tramonto, scie di viola ad annebbiare il rosso. Cerimonie dove il te’ e’ sorseggiato in tazze su cui poggiarono i raggi della luna .\nElementi del paesaggio circostante che nella loro staticita’ non rallentano ma saturano, mentre la vicenda si svolge tra ossessioni sezionate e sensualita’ celate.",
+    "group": 7
    },
    {
     "type": "paragraph",
-    "text": "Riguardo a 'Bellezza e tristezza'"
+    "text": "Riguardo a 'Bellezza e tristezza'",
+    "group": 7
    },
    {
     "type": "paragraph",
-    "text": "- Otoko, la mia non è una faccia da arte sacra.\n- Tutto dipende dall'intensità dello spirito religioso di chi dipinge"
+    "text": "- Otoko, la mia non è una faccia da arte sacra.\n- Tutto dipende dall'intensità dello spirito religioso di chi dipinge",
+    "group": 8
    },
    {
     "type": "paragraph",
-    "text": "Com'è egoista questa solitudine, si disse Oki. Viene e va quando le pare."
+    "text": "Com'è egoista questa solitudine, si disse Oki. Viene e va quando le pare.",
+    "group": 8
    },
    {
     "type": "paragraph",
-    "text": "- Non voglio che tocchi il seno destro. Non va bene.\n- Che hai detto? - Taichiro non aveva capito subito il significato delle parole di Keiko, e scostò appena la mano che premeva il seno destro.\n- Questo di destra, - disse Keiko con gli occhi tuttora socchiusi -mi rende triste.\n- Triste?\n- Sì.\n- Come mai?\n- Chi lo sa. Probabilmente perchè il cuore si trova a sinistra."
+    "text": "- Non voglio che tocchi il seno destro. Non va bene.\n- Che hai detto? - Taichiro non aveva capito subito il significato delle parole di Keiko, e scostò appena la mano che premeva il seno destro.\n- Questo di destra, - disse Keiko con gli occhi tuttora socchiusi -mi rende triste.\n- Triste?\n- Sì.\n- Come mai?\n- Chi lo sa. Probabilmente perchè il cuore si trova a sinistra.",
+    "group": 8
    }
   ]
  },
@@ -536,19 +553,23 @@ window.FN_QUOTE_BOOKS = [
   "blocks": [
    {
     "type": "paragraph",
-    "text": "Think me not cruel because I obey the irresistible law of my strength and weakness; your dear heart is wounded, my wild heart bleeds with yours. In the rapture of my enormous humiliation I live in your warm life, and you shall die - die, sweetly die - into mine."
+    "text": "Think me not cruel because I obey the irresistible law of my strength and weakness; your dear heart is wounded, my wild heart bleeds with yours. In the rapture of my enormous humiliation I live in your warm life, and you shall die - die, sweetly die - into mine.",
+    "group": 10
    },
    {
     "type": "paragraph",
-    "text": "But to die as lovers may - to die together, so that they may live together. Girls are caterpillars while they live in the world, to be finally butterflies when the summer comes."
+    "text": "But to die as lovers may - to die together, so that they may live together. Girls are caterpillars while they live in the world, to be finally butterflies when the summer comes.",
+    "group": 10
    },
    {
     "type": "paragraph",
-    "text": "You will think me very cruel, very selfish, but love is always selfish; the more ardent the more selfish. How jealous ai am you cannot know. You must come with me, loving me, to death; or else hate me and still come with me, and hating me through death and after. There is no such word as indefference in my apathetic nature."
+    "text": "You will think me very cruel, very selfish, but love is always selfish; the more ardent the more selfish. How jealous ai am you cannot know. You must come with me, loving me, to death; or else hate me and still come with me, and hating me through death and after. There is no such word as indefference in my apathetic nature.",
+    "group": 10
    },
    {
     "type": "paragraph",
-    "text": "But dreams come through stone walls, light up dark rooms, or darken light ones, and tgeir persons make their exits and their entrances as they please, and laugh at locksmiths."
+    "text": "But dreams come through stone walls, light up dark rooms, or darken light ones, and tgeir persons make their exits and their entrances as they please, and laugh at locksmiths.",
+    "group": 10
    },
    {
     "type": "paragraph",
@@ -573,15 +594,18 @@ window.FN_QUOTE_BOOKS = [
   "blocks": [
    {
     "type": "paragraph",
-    "text": "“Catherine Earnshaw, may you not rest as long as I am living. You said I killed you – haunt me then. The murdered do haunt their murderers. I believe – I know that ghosts have wandered the earth. Be with me always – take any form – drive me mad. Only do not leave me in this abyss, where I cannot find you! Oh, God! It is unutterable! I cannot live without my life! I cannot live without my soul!”"
+    "text": "“Catherine Earnshaw, may you not rest as long as I am living. You said I killed you – haunt me then. The murdered do haunt their murderers. I believe – I know that ghosts have wandered the earth. Be with me always – take any form – drive me mad. Only do not leave me in this abyss, where I cannot find you! Oh, God! It is unutterable! I cannot live without my life! I cannot live without my soul!”",
+    "group": 12
    },
    {
     "type": "paragraph",
-    "text": "“If all else perished, and he remained, I should still continue to be; and if all else remained, and he were annihilated, the universe would turn to a mighty stranger.”"
+    "text": "“If all else perished, and he remained, I should still continue to be; and if all else remained, and he were annihilated, the universe would turn to a mighty stranger.”",
+    "group": 12
    },
    {
     "type": "paragraph",
-    "text": "“He shall never know I love him: and that, not because he’s handsome, but because he’s more myself than I am. Whatever our souls are made out of, his and mine are the same.”"
+    "text": "“He shall never know I love him: and that, not because he’s handsome, but because he’s more myself than I am. Whatever our souls are made out of, his and mine are the same.”",
+    "group": 12
    }
   ]
  },
@@ -594,23 +618,28 @@ window.FN_QUOTE_BOOKS = [
   "blocks": [
    {
     "type": "paragraph",
-    "text": "On a cold night a flickering reddish fire had the power to summon up a collective memory etched deep into our genetic makeup."
+    "text": "On a cold night a flickering reddish fire had the power to summon up a collective memory etched deep into our genetic makeup.",
+    "group": 42
    },
    {
     "type": "paragraph",
-    "text": "- Is this also one of your little ceremonies?\n- Sort of. My own secret ceremony. Each day one menthol cigarette and one glass of single malt. Or sometimes wine.\n- Single people need those kind of modest rituals in their lives. To get through each day."
+    "text": "- Is this also one of your little ceremonies?\n- Sort of. My own secret ceremony. Each day one menthol cigarette and one glass of single malt. Or sometimes wine.\n- Single people need those kind of modest rituals in their lives. To get through each day.",
+    "group": 42
    },
    {
     "type": "paragraph",
-    "text": "He was birn with other special abilities. Abilities unimaginable for ordinary people. In that sense you might say he's in something close to a divine realm. It might mean he's beloved by God, or, conversely, violating what God forbids."
+    "text": "He was birn with other special abilities. Abilities unimaginable for ordinary people. In that sense you might say he's in something close to a divine realm. It might mean he's beloved by God, or, conversely, violating what God forbids.",
+    "group": 42
    },
    {
     "type": "paragraph",
-    "text": "And what is it I have been waiting for all this time? Was I simply patiently waiting for it to become clear what I was waiting for? Like a series of nested wooden boxes, a smaller box inside a larger one, an endless succession of exquisitely crafted boxes one after the other. Tbe boxes grew progressively smaller - as did what lay at the center of it all. What was the starting point, and where did the destination lie - if indeed there was one?"
+    "text": "And what is it I have been waiting for all this time? Was I simply patiently waiting for it to become clear what I was waiting for? Like a series of nested wooden boxes, a smaller box inside a larger one, an endless succession of exquisitely crafted boxes one after the other. Tbe boxes grew progressively smaller - as did what lay at the center of it all. What was the starting point, and where did the destination lie - if indeed there was one?",
+    "group": 42
    },
    {
     "type": "paragraph",
-    "text": "My young heart thumped out dryly, deep inside my chest. My feelings became a sharp-edged wedge driven with a mallet unfailingly into the right gap."
+    "text": "My young heart thumped out dryly, deep inside my chest. My feelings became a sharp-edged wedge driven with a mallet unfailingly into the right gap.",
+    "group": 42
    }
   ]
  },
@@ -1034,15 +1063,18 @@ window.FN_QUOTE_BOOKS = [
   "blocks": [
    {
     "type": "paragraph",
-    "text": "Gazing up into the darkness I saw myself as a creature driven and derided by vanity; and my eyes burned with anguish and anger."
+    "text": "Gazing up into the darkness I saw myself as a creature driven and derided by vanity; and my eyes burned with anguish and anger.",
+    "group": 43
    },
    {
     "type": "paragraph",
-    "text": "Like illuminated pearls the lamps shone from the summits of their tall poled upon the living texture below which, changing shape and hue unceasingly, sent up into the warm grey evening air an unchanging unceasing murmur."
+    "text": "Like illuminated pearls the lamps shone from the summits of their tall poled upon the living texture below which, changing shape and hue unceasingly, sent up into the warm grey evening air an unchanging unceasing murmur.",
+    "group": 43
    },
    {
     "type": "paragraph",
-    "text": "Love between man and man is impossible because there must not be sexual intercourse and friendship between man and woman is impossible because there must be sexual intercourse."
+    "text": "Love between man and man is impossible because there must not be sexual intercourse and friendship between man and woman is impossible because there must be sexual intercourse.",
+    "group": 43
    },
    {
     "type": "paragraph",
@@ -1139,35 +1171,43 @@ window.FN_QUOTE_BOOKS = [
   "blocks": [
    {
     "type": "paragraph",
-    "text": "Bambino: esistenza priva di biografia."
+    "text": "Bambino: esistenza priva di biografia.",
+    "group": 20
    },
    {
     "type": "paragraph",
-    "text": "È impossibile avere un figlio e disprezzare il mondo così com'è fatto, perchè è a questo mondo che l'abbiamo destinato. [...] Morendo, mi hai privata del piacere di stare con te, ma al tempo stesso mi hai resa libera. Libera di fronte al mondo che non amo. E se posso permettermi di non amarlo è solo perché tu non ci sei più. I miei pensieri cupi non possono più ricadere su di te come una maledizione. Oggi, a distanza di tanti anni, voglio dirti che ho capito: la tua morte è stata un dono e questo terribile dono io ho finito per accettarlo."
+    "text": "È impossibile avere un figlio e disprezzare il mondo così com'è fatto, perchè è a questo mondo che l'abbiamo destinato. [...] Morendo, mi hai privata del piacere di stare con te, ma al tempo stesso mi hai resa libera. Libera di fronte al mondo che non amo. E se posso permettermi di non amarlo è solo perché tu non ci sei più. I miei pensieri cupi non possono più ricadere su di te come una maledizione. Oggi, a distanza di tanti anni, voglio dirti che ho capito: la tua morte è stata un dono e questo terribile dono io ho finito per accettarlo.",
+    "group": 20
    },
    {
     "type": "paragraph",
-    "text": "- Nessuno più gli interessava, era of mai solo con il suono che emetteva, un unic suono, un \"aaaaa\" che non si interrompesan non nei momenti in cui doveva prendest fiato, lo lo guardavo come ipnotizzato, una cosa che non sono mai riuscito a dimens care, perché, per quanto fossi poco più che un bambino, mi è sembrato di capire che Conavo davanti l'esistenza in quanto tale confronto con il tempo in quanto tale, e capito che questo confronto si chiama noia.\nLa noia di mio nonno si esprimeva con quel suono, con quell'interminabile \"aaaaa\", per- ché senza quell\"aaaaa\" il tempo lo avrebbe schiacciato, e contro il tempo mio nonno aveva quella sola arma di difesa, quel povero \"aaaaa\" che non finiva mai..\n- Vuoi dire che stava morendo e intanto si annoiava?\n- Si, è proprio quello che voglio dire."
+    "text": "- Nessuno più gli interessava, era of mai solo con il suono che emetteva, un unic suono, un \"aaaaa\" che non si interrompesan non nei momenti in cui doveva prendest fiato, lo lo guardavo come ipnotizzato, una cosa che non sono mai riuscito a dimens care, perché, per quanto fossi poco più che un bambino, mi è sembrato di capire che Conavo davanti l'esistenza in quanto tale confronto con il tempo in quanto tale, e capito che questo confronto si chiama noia.\nLa noia di mio nonno si esprimeva con quel suono, con quell'interminabile \"aaaaa\", per- ché senza quell\"aaaaa\" il tempo lo avrebbe schiacciato, e contro il tempo mio nonno aveva quella sola arma di difesa, quel povero \"aaaaa\" che non finiva mai..\n- Vuoi dire che stava morendo e intanto si annoiava?\n- Si, è proprio quello che voglio dire.",
+    "group": 20
    },
    {
     "type": "paragraph",
-    "text": " Perché mai dovrebbe farle una colpa di appartenere al suo sesso, di assomigliare alle altre donne, di portare un reggiseno e, unitamente a quello, la psicolo- gia del reggiseno? Come se lui non fosse a sua volta partecipe di una qualche imbecillità da sempre tipica del maschio! Escono tutti e due da quell'improvvisato laboratorio artigianale in cui i loro occhi sono stati sciupati mediante il movimento disarticolato delle palpebre, e nel loro ventre è stata installata una piccola officina maleodorante. Hanno tutti e due un corpo in cui ben poco spazio è riservato alla loro povera anima. E non dovrebbero perdo- narselo? Non dovrebbero passar oltre le pic- cole miserie che nascondono in fondo ai cas- setti?"
+    "text": " Perché mai dovrebbe farle una colpa di appartenere al suo sesso, di assomigliare alle altre donne, di portare un reggiseno e, unitamente a quello, la psicolo- gia del reggiseno? Come se lui non fosse a sua volta partecipe di una qualche imbecillità da sempre tipica del maschio! Escono tutti e due da quell'improvvisato laboratorio artigianale in cui i loro occhi sono stati sciupati mediante il movimento disarticolato delle palpebre, e nel loro ventre è stata installata una piccola officina maleodorante. Hanno tutti e due un corpo in cui ben poco spazio è riservato alla loro povera anima. E non dovrebbero perdo- narselo? Non dovrebbero passar oltre le pic- cole miserie che nascondono in fondo ai cas- setti?",
+    "group": 20
    },
    {
     "type": "paragraph",
-    "text": "Quale giudice ha mai stabilito che il conformismo è un male e l'anticonformismo un bene? Conformarsi non vuol forse dire avvicinarsi agli altri?"
+    "text": "Quale giudice ha mai stabilito che il conformismo è un male e l'anticonformismo un bene? Conformarsi non vuol forse dire avvicinarsi agli altri?",
+    "group": 20
    },
    {
     "type": "paragraph",
-    "text": "Per che cosa viviamo? Per procurare a Dio carne umana."
+    "text": "Per che cosa viviamo? Per procurare a Dio carne umana.",
+    "group": 20
    },
    {
     "type": "paragraph",
-    "text": "Il ragionamento di Leroy è tagliente come un rasoio, e Chantal è d'accordo con lui: l'amore inteso come esaltazione di due individui, come fedeltà e attaccamento appassionato a una sola persona, non esiste. E se esiste è solo come autopunizione, accecamento volontario, fuga in un monastero. Anche se esiste, pensa Chantal, l'amore non deve esistere."
+    "text": "Il ragionamento di Leroy è tagliente come un rasoio, e Chantal è d'accordo con lui: l'amore inteso come esaltazione di due individui, come fedeltà e attaccamento appassionato a una sola persona, non esiste. E se esiste è solo come autopunizione, accecamento volontario, fuga in un monastero. Anche se esiste, pensa Chantal, l'amore non deve esistere.",
+    "group": 20
    },
    {
     "type": "paragraph",
-    "text": "<<< La libertà? Vivendo il proprio squallore, cia- scuno può essere felice o infelice. La libertà consiste appunto in questa scelta. Ciascuno è libero di dissolvere la propria individualità nel pentolone della moltitudine provando o un senso di sconfitta o un senso di euforia. Quanto a noi, mia cara signora, abbiamo scelto l'euforia»."
+    "text": "<<< La libertà? Vivendo il proprio squallore, cia- scuno può essere felice o infelice. La libertà consiste appunto in questa scelta. Ciascuno è libero di dissolvere la propria individualità nel pentolone della moltitudine provando o un senso di sconfitta o un senso di euforia. Quanto a noi, mia cara signora, abbiamo scelto l'euforia».",
+    "group": 20
    }
   ]
  },
@@ -1702,95 +1742,118 @@ window.FN_QUOTE_BOOKS = [
   "blocks": [
    {
     "type": "paragraph",
-    "text": "Non si può mai sapere che cosa si deve volere perchè si vive una vita soltanto e non si può nè confrontarla con le proprie vite precedenti, nè correggerla nelle vite future."
+    "text": "Non si può mai sapere che cosa si deve volere perchè si vive una vita soltanto e non si può nè confrontarla con le proprie vite precedenti, nè correggerla nelle vite future.",
+    "group": 21
    },
    {
     "type": "paragraph",
-    "text": "Quello che avviene soltanto una volta è come se non fosse mai avvenuto. Se l'uomo può vivere solo una vita, è come se non vivesse affatto."
+    "text": "Quello che avviene soltanto una volta è come se non fosse mai avvenuto. Se l'uomo può vivere solo una vita, è come se non vivesse affatto.",
+    "group": 21
    },
    {
     "type": "paragraph",
-    "text": "Tereza ascolta e crede che il valore supremo della vita sia la maternità, e che la maternità sia un grosso sacrificio. E se la maternità è l'incarnazione del Sacrificio, allora il destino di figlia è la Colpa che non si potrà mai espiare."
+    "text": "Tereza ascolta e crede che il valore supremo della vita sia la maternità, e che la maternità sia un grosso sacrificio. E se la maternità è l'incarnazione del Sacrificio, allora il destino di figlia è la Colpa che non si potrà mai espiare.",
+    "group": 21
    },
    {
     "type": "paragraph",
-    "text": "Davanti c'era la menzogna comprensibile, e dietro, l'incompresibile verità."
+    "text": "Davanti c'era la menzogna comprensibile, e dietro, l'incompresibile verità.",
+    "group": 21
    },
    {
     "type": "paragraph",
-    "text": "Ma è proprio il debole che deve saper essere forte e andar via, quando il forte è troppo debole per poter fare del male al debole."
+    "text": "Ma è proprio il debole che deve saper essere forte e andar via, quando il forte è troppo debole per poter fare del male al debole.",
+    "group": 21
    },
    {
     "type": "paragraph",
-    "text": "Chi si dà all'altro come un soldato si dà al prigioniero, deve prima consegnare tutte le armi. E così privato di ogni difesa, non può fare a meno di chiedersi quando arriverà il colpo. Posso dunque affermare che per Franz l'amore era una continua attesa di un colpo imminente."
+    "text": "Chi si dà all'altro come un soldato si dà al prigioniero, deve prima consegnare tutte le armi. E così privato di ogni difesa, non può fare a meno di chiedersi quando arriverà il colpo. Posso dunque affermare che per Franz l'amore era una continua attesa di un colpo imminente.",
+    "group": 21
    },
    {
     "type": "paragraph",
-    "text": "Le cupole d'oro della chiesa ortodossa, come palle di cannone dorate che una forza invisibile avesse fermato un attimo prima che toccassero terra lasciandole sospese in aria."
+    "text": "Le cupole d'oro della chiesa ortodossa, come palle di cannone dorate che una forza invisibile avesse fermato un attimo prima che toccassero terra lasciandole sospese in aria.",
+    "group": 21
    },
    {
     "type": "paragraph",
-    "text": "E la passione per l'estremismo, in arte come in politica, è un desiderio di morte mascherato."
+    "text": "E la passione per l'estremismo, in arte come in politica, è un desiderio di morte mascherato.",
+    "group": 21
    },
    {
     "type": "paragraph",
-    "text": "Lei voleva dir loro che dietro il comunismo, dietro il fascismo, dietro il fascismo, dietro tutte le occupazioni e tutte le invasioni si nasconde un male ancora più fondamentalmente universale, e che l'immagine di quel male era per lei un corteo di gente che marcia levando il braccio e gridando all'unisono le stesse sillabe. Ma sapeva che non sarevve riuscito a spiegarglielo."
+    "text": "Lei voleva dir loro che dietro il comunismo, dietro il fascismo, dietro il fascismo, dietro tutte le occupazioni e tutte le invasioni si nasconde un male ancora più fondamentalmente universale, e che l'immagine di quel male era per lei un corteo di gente che marcia levando il braccio e gridando all'unisono le stesse sillabe. Ma sapeva che non sarevve riuscito a spiegarglielo.",
+    "group": 21
    },
    {
     "type": "paragraph",
-    "text": "Prima di scomparire definitivamente dal mondo, la bellezza esisterà ancora un poco per errore. La bellezza per errore è l'ultima fase della storia della bellezza."
+    "text": "Prima di scomparire definitivamente dal mondo, la bellezza esisterà ancora un poco per errore. La bellezza per errore è l'ultima fase della storia della bellezza.",
+    "group": 21
    },
    {
     "type": "paragraph",
-    "text": "In una società ricca, la gente non è costretta a lavorare manualmente e si dedica all'attività intellettuale. Aumentano le università e aumentano gli studenti. Per potersi laureare, bisogna trovare argomenti per le tesi di laurea. Gli argomenti sono una quantità infinita perchè è possibile scrivere tesi su ogni cosa al mondo. Risme su risme di fogli scritti si accumulano negli archivi, che sono più tristi dei cimiteri, perchè non ci entra nessuno nemmeno il giorno dei morti. La cultura scompare nell'abbondanza della sovrapproduzione, nella valanga dei segni, nella follia della quantità. Ecco perchè ti dico che un libro vietato nel tuo vecchio paese significa infinitamente di più dei miliardi di parole vomitati dalle nostre università."
+    "text": "In una società ricca, la gente non è costretta a lavorare manualmente e si dedica all'attività intellettuale. Aumentano le università e aumentano gli studenti. Per potersi laureare, bisogna trovare argomenti per le tesi di laurea. Gli argomenti sono una quantità infinita perchè è possibile scrivere tesi su ogni cosa al mondo. Risme su risme di fogli scritti si accumulano negli archivi, che sono più tristi dei cimiteri, perchè non ci entra nessuno nemmeno il giorno dei morti. La cultura scompare nell'abbondanza della sovrapproduzione, nella valanga dei segni, nella follia della quantità. Ecco perchè ti dico che un libro vietato nel tuo vecchio paese significa infinitamente di più dei miliardi di parole vomitati dalle nostre università.",
+    "group": 21
    },
    {
     "type": "paragraph",
-    "text": "Il suo non era un dramma della pesantezza, ma della leggerezza. Sulle spalle di Sabina non era caduto un fardello, ma l'insostenibile leggerezza dell'essere."
+    "text": "Il suo non era un dramma della pesantezza, ma della leggerezza. Sulle spalle di Sabina non era caduto un fardello, ma l'insostenibile leggerezza dell'essere.",
+    "group": 21
    },
    {
     "type": "paragraph",
-    "text": "Una persona può tradire i genitori, il marito, l'amore, la patria, ma quando non ci sono più nè genitori, nè marito, nè amore, nè patria, che cosa resterà da tradire?"
+    "text": "Una persona può tradire i genitori, il marito, l'amore, la patria, ma quando non ci sono più nè genitori, nè marito, nè amore, nè patria, che cosa resterà da tradire?",
+    "group": 21
    },
    {
     "type": "paragraph",
-    "text": "Forse se fossero rimasti insieme ancora per qualche tempo, avrebbero cominciato a capire a poco a poco le parole che dicevano. I loro vocabolari si sarebbero pudicamente e lentamente avvicinati l'uno all'altro come amanti molto timidi. Ma è troppo tardi."
+    "text": "Forse se fossero rimasti insieme ancora per qualche tempo, avrebbero cominciato a capire a poco a poco le parole che dicevano. I loro vocabolari si sarebbero pudicamente e lentamente avvicinati l'uno all'altro come amanti molto timidi. Ma è troppo tardi.",
+    "group": 21
    },
    {
     "type": "paragraph",
-    "text": "Gli amori sono come gli imperi: quando scompare l'idea su cui sono fondati, periscono anch'essi."
+    "text": "Gli amori sono come gli imperi: quando scompare l'idea su cui sono fondati, periscono anch'essi.",
+    "group": 21
    },
    {
     "type": "paragraph",
-    "text": "Chi pensa che i regmi comunisti dell'Europa Centrale siano esclusivamente opera di criminali, si lascia sfuggire una verità fondamentale: i regimi criminale non furono creati da criminali ma da entusiasti, convinti di aver scoperto l'unica strada per il paradiso. Essi difesero cin coraggio quella strada, giustiziando per questo molte persone. In seguito, fu chiaro che il paradiso non esisteva e che gli entusiasti erano quindi degli assassini."
+    "text": "Chi pensa che i regmi comunisti dell'Europa Centrale siano esclusivamente opera di criminali, si lascia sfuggire una verità fondamentale: i regimi criminale non furono creati da criminali ma da entusiasti, convinti di aver scoperto l'unica strada per il paradiso. Essi difesero cin coraggio quella strada, giustiziando per questo molte persone. In seguito, fu chiaro che il paradiso non esisteva e che gli entusiasti erano quindi degli assassini.",
+    "group": 21
    },
    {
     "type": "paragraph",
-    "text": "Un imbecille seduto sul trono è sollevato da ogni responsabilità solo per il fatto che è un imbecille?"
+    "text": "Un imbecille seduto sul trono è sollevato da ogni responsabilità solo per il fatto che è un imbecille?",
+    "group": 21
    },
    {
     "type": "paragraph",
-    "text": "Dio, si potrebbe supporre, ha previsto l'omicidio, ma non la chirurgia. Non si immaginava che qualcuno avrebbe avuto il coraggio di infilare una mano dentro un meccanismo inventato da lui, imballato con cura nella pelle, sigillato e chiuso agli occhi dell'uomo."
+    "text": "Dio, si potrebbe supporre, ha previsto l'omicidio, ma non la chirurgia. Non si immaginava che qualcuno avrebbe avuto il coraggio di infilare una mano dentro un meccanismo inventato da lui, imballato con cura nella pelle, sigillato e chiuso agli occhi dell'uomo.",
+    "group": 21
    },
    {
     "type": "paragraph",
-    "text": "Cio chè l'io ha di unico si cela appunto in ciò che l'uomo ha di inimmaginabile."
+    "text": "Cio chè l'io ha di unico si cela appunto in ciò che l'uomo ha di inimmaginabile.",
+    "group": 21
    },
    {
     "type": "paragraph",
-    "text": "Forse qui la sua passione di chirurgo convergeva con la sua passione di donnaiolo. Non posava il bisturo immaginario nemmeno quando era con le sue amanti. Desiderava impadronirsi di qualcosa che era profondamente nascosto dentro di loro e per raggiungere il quale era necessario lacerare il loro rivestimento superficiale."
+    "text": "Forse qui la sua passione di chirurgo convergeva con la sua passione di donnaiolo. Non posava il bisturo immaginario nemmeno quando era con le sue amanti. Desiderava impadronirsi di qualcosa che era profondamente nascosto dentro di loro e per raggiungere il quale era necessario lacerare il loro rivestimento superficiale.",
+    "group": 21
    },
    {
     "type": "paragraph",
-    "text": "Non era quindi il desiderio del piacere sessuale, bensì il desiderio di impadronirsi del mondo (di aprire con il bisturi il corpo supino del mondo) ciò che lo spingeva a inseguire le donne."
+    "text": "Non era quindi il desiderio del piacere sessuale, bensì il desiderio di impadronirsi del mondo (di aprire con il bisturi il corpo supino del mondo) ciò che lo spingeva a inseguire le donne.",
+    "group": 21
    },
    {
     "type": "paragraph",
-    "text": "La nostalgia del Paradiso è il desiderio dell'uomo di non essere uomo."
+    "text": "La nostalgia del Paradiso è il desiderio dell'uomo di non essere uomo.",
+    "group": 21
    },
    {
     "type": "paragraph",
-    "text": "Il tempo umano non ruota in cerchio ma avanza veloce in linea retta. È per questo che l'uomo non può essere felice, perché la felicità è desiderio di ripetizione."
+    "text": "Il tempo umano non ruota in cerchio ma avanza veloce in linea retta. È per questo che l'uomo non può essere felice, perché la felicità è desiderio di ripetizione.",
+    "group": 21
    },
    {
     "type": "paragraph",
@@ -2387,35 +2450,43 @@ window.FN_QUOTE_BOOKS = [
   "blocks": [
    {
     "type": "paragraph",
-    "text": "Il dito della morte deve posarsi di tanto in tanto sul tumulto della vita, perchè questa non ci faccia a pezzi? Siamo fatti in modo tale da dover prendere la morte a piccole dosi giornaliere per affrontare l'impresa di vivere?"
+    "text": "Il dito della morte deve posarsi di tanto in tanto sul tumulto della vita, perchè questa non ci faccia a pezzi? Siamo fatti in modo tale da dover prendere la morte a piccole dosi giornaliere per affrontare l'impresa di vivere?",
+    "group": 34
    },
    {
     "type": "paragraph",
-    "text": "La verità ci distrugge. La vita è un sogno. È il risveglio a ucciderci."
+    "text": "La verità ci distrugge. La vita è un sogno. È il risveglio a ucciderci.",
+    "group": 34
    },
    {
     "type": "paragraph",
-    "text": "Per secoli ho cercato la felicità senza trovarla, la fama senza ottenerla, l'amore senza conoscerlo, la vita...ed ecco, è meglio la morte."
+    "text": "Per secoli ho cercato la felicità senza trovarla, la fama senza ottenerla, l'amore senza conoscerlo, la vita...ed ecco, è meglio la morte.",
+    "group": 34
    },
    {
     "type": "paragraph",
-    "text": "Era sposata, questo era vero: ma se tuo marito stava sempre a navigare a Capo Horn, poteva considerarsi un matrimonio? Se lui ti piaceva, era un matrimonio? Se ti piacevano altre persone, era un matrimonio? E infine: se desideravi ancora scrivere poesie più di ogni altra cosa al mondo, era un matrimonio?"
+    "text": "Era sposata, questo era vero: ma se tuo marito stava sempre a navigare a Capo Horn, poteva considerarsi un matrimonio? Se lui ti piaceva, era un matrimonio? Se ti piacevano altre persone, era un matrimonio? E infine: se desideravi ancora scrivere poesie più di ogni altra cosa al mondo, era un matrimonio?",
+    "group": 34
    },
    {
     "type": "paragraph",
-    "text": "Orlando aveva fatto in modo di trovarsi in un'ottima posizione: non aveva bisogno nè di combattere il suo tempo, nè di sottomettersi a esso. Ne faceva parte, eppure rimaneva se stessa. Ora, quindi, poteva scrivere, e difatti scrisse. E scrisse. E scrisse."
+    "text": "Orlando aveva fatto in modo di trovarsi in un'ottima posizione: non aveva bisogno nè di combattere il suo tempo, nè di sottomettersi a esso. Ne faceva parte, eppure rimaneva se stessa. Ora, quindi, poteva scrivere, e difatti scrisse. E scrisse. E scrisse.",
+    "group": 34
    },
    {
     "type": "paragraph",
-    "text": "E finché penserà a un uomo, nessuno avrà da ridire sul fatto che una donna pensi."
+    "text": "E finché penserà a un uomo, nessuno avrà da ridire sul fatto che una donna pensi.",
+    "group": 34
    },
    {
     "type": "paragraph",
-    "text": "She was married, true; but if one’s husband was always sailing round Cape Horn, was it marriage? If one liked him, was it marriage? If one liked other people, was it marriage? And finally, if one still wished, more than anything in the whole world, to write poetry, was it marriage? She had her doubts."
+    "text": "She was married, true; but if one’s husband was always sailing round Cape Horn, was it marriage? If one liked him, was it marriage? If one liked other people, was it marriage? And finally, if one still wished, more than anything in the whole world, to write poetry, was it marriage? She had her doubts.",
+    "group": 35
    },
    {
     "type": "paragraph",
-    "text": "But she would put it to the test"
+    "text": "But she would put it to the test",
+    "group": 35
    }
   ]
  },
@@ -2603,27 +2674,33 @@ window.FN_QUOTE_BOOKS = [
   "blocks": [
    {
     "type": "paragraph",
-    "text": "Questo mondo che si mostra crudele affinchè lo si possa credere forte."
+    "text": "Questo mondo che si mostra crudele affinchè lo si possa credere forte.",
+    "group": 23
    },
    {
     "type": "paragraph",
-    "text": "È la mia morta preferita. Sapete, noi siamo quasi obbligati a voler bene ai morti, perchè ci tengono così occupati che non abbiamo il tempo di amare nient'altro."
+    "text": "È la mia morta preferita. Sapete, noi siamo quasi obbligati a voler bene ai morti, perchè ci tengono così occupati che non abbiamo il tempo di amare nient'altro.",
+    "group": 23
    },
    {
     "type": "paragraph",
-    "text": "Quando feci il mio ingresso nel palco, Marguerite stava ridendo fragorosamente.\nAvrei voluto che fosse triste."
+    "text": "Quando feci il mio ingresso nel palco, Marguerite stava ridendo fragorosamente.\nAvrei voluto che fosse triste.",
+    "group": 23
    },
    {
     "type": "paragraph",
-    "text": "Perchè sapendo che potrò vivere meno degli altri, mi sono ripromessa di vivere più in fretta."
+    "text": "Perchè sapendo che potrò vivere meno degli altri, mi sono ripromessa di vivere più in fretta.",
+    "group": 23
    },
    {
     "type": "paragraph",
-    "text": "Ebbene, amico mio, avreste dovuto amarmi un po' di meno e capirmi un po' di più."
+    "text": "Ebbene, amico mio, avreste dovuto amarmi un po' di meno e capirmi un po' di più.",
+    "group": 23
    },
    {
     "type": "paragraph",
-    "text": "E se proprio bisogna consumarsi, meglio gettarsi in un incendio che soffocare lentamente a causa del fumo."
+    "text": "E se proprio bisogna consumarsi, meglio gettarsi in un incendio che soffocare lentamente a causa del fumo.",
+    "group": 23
    }
   ]
  },
@@ -2636,11 +2713,13 @@ window.FN_QUOTE_BOOKS = [
   "blocks": [
    {
     "type": "paragraph",
-    "text": "Un Paradiso zenitale, un Inferno nadirale."
+    "text": "Un Paradiso zenitale, un Inferno nadirale.",
+    "group": 41
    },
    {
     "type": "paragraph",
-    "text": "È altrettanto infrequente che l'uomo da amare coincida con l'ora dell'amore."
+    "text": "È altrettanto infrequente che l'uomo da amare coincida con l'ora dell'amore.",
+    "group": 41
    }
   ]
  },
@@ -2653,103 +2732,128 @@ window.FN_QUOTE_BOOKS = [
   "blocks": [
    {
     "type": "paragraph",
-    "text": "Nell'aria grigia e sorda morivano i romori rari."
+    "text": "Nell'aria grigia e sorda morivano i romori rari.",
+    "group": 18
    },
    {
     "type": "paragraph",
-    "text": "Io ho il gusto delle cose amare."
+    "text": "Io ho il gusto delle cose amare.",
+    "group": 18
    },
    {
     "type": "paragraph",
-    "text": "Egli non doveva dolersi dell'amata ma dell'amore."
+    "text": "Egli non doveva dolersi dell'amata ma dell'amore.",
+    "group": 18
    },
    {
     "type": "paragraph",
-    "text": "Anche nella più alta ebbrezza, noi siamo due, sempre due, separati, estranei, interiormetre solitarii. Io bacio la tua fronte; e sotto la fronte si muove forse un pensiero che non è mio."
+    "text": "Anche nella più alta ebbrezza, noi siamo due, sempre due, separati, estranei, interiormetre solitarii. Io bacio la tua fronte; e sotto la fronte si muove forse un pensiero che non è mio.",
+    "group": 18
    },
    {
     "type": "paragraph",
-    "text": "L'anatomia presuppone il cadavere."
+    "text": "L'anatomia presuppone il cadavere.",
+    "group": 18
    },
    {
     "type": "paragraph",
-    "text": "-Vedi- ella disse [..] - tu mi guasti."
+    "text": "-Vedi- ella disse [..] - tu mi guasti.",
+    "group": 18
    },
    {
     "type": "paragraph",
-    "text": "Un bagliore fievole attinse una collina, la sparse d'una doratura leggera, si spense. Altri bagliori si accesero, languirono."
+    "text": "Un bagliore fievole attinse una collina, la sparse d'una doratura leggera, si spense. Altri bagliori si accesero, languirono.",
+    "group": 18
    },
    {
     "type": "paragraph",
-    "text": "Ed egli, dal basso, vedeva la bocca di lei aprirsi con infinita lentezza e dal fondo sorgere il calice niveo dei denti. Ella la richiudeva: e ancora, lentamente, lentamente, le labbra si schiudevano, come un fiore di due petali; e sorgeva dal fondo il candore perlato."
+    "text": "Ed egli, dal basso, vedeva la bocca di lei aprirsi con infinita lentezza e dal fondo sorgere il calice niveo dei denti. Ella la richiudeva: e ancora, lentamente, lentamente, le labbra si schiudevano, come un fiore di due petali; e sorgeva dal fondo il candore perlato.",
+    "group": 18
    },
    {
     "type": "paragraph",
-    "text": "Una serenità quasi adamantina s'incurvava su la campagna sazia di acque. Ancora nell'aria diafana erravano atomi di luce crepuscolare."
+    "text": "Una serenità quasi adamantina s'incurvava su la campagna sazia di acque. Ancora nell'aria diafana erravano atomi di luce crepuscolare.",
+    "group": 18
    },
    {
     "type": "paragraph",
-    "text": "Le tazze fumigarono come turiboli."
+    "text": "Le tazze fumigarono come turiboli.",
+    "group": 18
    },
    {
     "type": "paragraph",
-    "text": "Se penso che tu non ci sei, ecco,il giorno si oscura, la luce mi diventa nemica, la terra mi appare come una tomba senza fondo: -io entro nella morte."
+    "text": "Se penso che tu non ci sei, ecco,il giorno si oscura, la luce mi diventa nemica, la terra mi appare come una tomba senza fondo: -io entro nella morte.",
+    "group": 18
    },
    {
     "type": "paragraph",
-    "text": "Mandami un fiore lungamente baciato."
+    "text": "Mandami un fiore lungamente baciato.",
+    "group": 18
    },
    {
     "type": "paragraph",
-    "text": "Qui tutto è violenza, spasimo, eccesso. Ma dove sono le mie delicatezze? Dove sono le mie malinconie squallide e complicate, certe afflizioni profonde e tortuose con cui l'anima si perdeva come in labirinti inestricabili?"
+    "text": "Qui tutto è violenza, spasimo, eccesso. Ma dove sono le mie delicatezze? Dove sono le mie malinconie squallide e complicate, certe afflizioni profonde e tortuose con cui l'anima si perdeva come in labirinti inestricabili?",
+    "group": 18
    },
    {
     "type": "paragraph",
-    "text": "Con le dita strappavo piano piano i brani della pelle, e pensavo che forse in quei brani morti era ancora il segno della tua guancia e della tua bocca. Ho perduta la prima spoglia, come un serpente."
+    "text": "Con le dita strappavo piano piano i brani della pelle, e pensavo che forse in quei brani morti era ancora il segno della tua guancia e della tua bocca. Ho perduta la prima spoglia, come un serpente.",
+    "group": 18
    },
    {
     "type": "paragraph",
-    "text": "Come farò? Mi pare di non poter più dormire se non sul tuo cuore."
+    "text": "Come farò? Mi pare di non poter più dormire se non sul tuo cuore.",
+    "group": 18
    },
    {
     "type": "paragraph",
-    "text": "La vita gli parve un cieco fermento di materie impure."
+    "text": "La vita gli parve un cieco fermento di materie impure.",
+    "group": 18
    },
    {
     "type": "paragraph",
-    "text": "'Ha voluto morire per non aver potuto rendere la sua vita conforme al suo sogno'"
+    "text": "'Ha voluto morire per non aver potuto rendere la sua vita conforme al suo sogno'",
+    "group": 18
    },
    {
     "type": "paragraph",
-    "text": "Aveva compreso che qualunque allettamento esteriore era trascurabile al paragone del fascino emanato dagli abissi ch'egli in sé medesimo scrutava."
+    "text": "Aveva compreso che qualunque allettamento esteriore era trascurabile al paragone del fascino emanato dagli abissi ch'egli in sé medesimo scrutava.",
+    "group": 18
    },
    {
     "type": "paragraph",
-    "text": "L'agonia del pudore"
+    "text": "L'agonia del pudore",
+    "group": 18
    },
    {
     "type": "paragraph",
-    "text": "- Tu arderai e ti consumerai come un cero.\n- T'illuminerò."
+    "text": "- Tu arderai e ti consumerai come un cero.\n- T'illuminerò.",
+    "group": 18
    },
    {
     "type": "paragraph",
-    "text": "L'orrore sacro dei meriggi canicolari su la plaga abitata da un dio immite e occulto."
+    "text": "L'orrore sacro dei meriggi canicolari su la plaga abitata da un dio immite e occulto.",
+    "group": 18
    },
    {
     "type": "paragraph",
-    "text": "Come nella notte lunare al cospetto della vigna oltremirabile, ora la sostanza della sua vita e della vita di tutte le cose dissolvevasi in vapore di sogno."
+    "text": "Come nella notte lunare al cospetto della vigna oltremirabile, ora la sostanza della sua vita e della vita di tutte le cose dissolvevasi in vapore di sogno.",
+    "group": 18
    },
    {
     "type": "paragraph",
-    "text": "E la bocca appassita ove il sale delle lacrime scendeva a rendere più durevole il sapore dei baci."
+    "text": "E la bocca appassita ove il sale delle lacrime scendeva a rendere più durevole il sapore dei baci.",
+    "group": 18
    },
    {
     "type": "paragraph",
-    "text": "Fate ch'io ritrovi in fondo a qualunque inferno la mia volontà incandescente."
+    "text": "Fate ch'io ritrovi in fondo a qualunque inferno la mia volontà incandescente.",
+    "group": 18
    },
    {
     "type": "paragraph",
-    "text": "-Confessami che tu vai là per questo- ella gli mormorò con una voce morbida come per i durlo a confessare.\n-Per che cosa? - domandò egli, provando sotto quelle mani la sensazione che si prova nell'impallidire.\n-Per la paura dei miei baci."
+    "text": "-Confessami che tu vai là per questo- ella gli mormorò con una voce morbida come per i durlo a confessare.\n-Per che cosa? - domandò egli, provando sotto quelle mani la sensazione che si prova nell'impallidire.\n-Per la paura dei miei baci.",
+    "group": 18
    }
   ]
  },
@@ -2855,15 +2959,18 @@ window.FN_QUOTE_BOOKS = [
   "blocks": [
    {
     "type": "paragraph",
-    "text": "Quello che aveva davanti agli occhi era il corpo di una bella ragazza, convenzionalmente un og- getto di desiderio, eppure era un corpo dal quale era stato eliminato ogni desiderio. E non il rozzo, crasso de- siderio carnale, non nel suo caso: ciò a cui la cognata a- veva rinunciato, o così sembrava, era piuttosto la vita stes sa che il suo corpo rappresentava. I raggi del sole che penetravano dall'ampia finestra frammentandosi e dis- solvendosi in minuscoli granelli di sabbia, e la bellezza di quel corpo che, per quanto non visibile a occhio nudo, si frammentava anch'esso senza sosta... La soverchiante i- neffabilità di quella scena lo travolse con la violenza di un'onda che si infrange sulle rocce, placando anche le spaventose, indecifrabili pulsioni che gli avevano causa- to tanta sofferenza nel corso dell'ultimo anno."
+    "text": "Quello che aveva davanti agli occhi era il corpo di una bella ragazza, convenzionalmente un og- getto di desiderio, eppure era un corpo dal quale era stato eliminato ogni desiderio. E non il rozzo, crasso de- siderio carnale, non nel suo caso: ciò a cui la cognata a- veva rinunciato, o così sembrava, era piuttosto la vita stes sa che il suo corpo rappresentava. I raggi del sole che penetravano dall'ampia finestra frammentandosi e dis- solvendosi in minuscoli granelli di sabbia, e la bellezza di quel corpo che, per quanto non visibile a occhio nudo, si frammentava anch'esso senza sosta... La soverchiante i- neffabilità di quella scena lo travolse con la violenza di un'onda che si infrange sulle rocce, placando anche le spaventose, indecifrabili pulsioni che gli avevano causa- to tanta sofferenza nel corso dell'ultimo anno.",
+    "group": 24
    },
    {
     "type": "paragraph",
-    "text": "E più lei ride, più lui fa il pagliaccio. Finché non ha passato in rassegna tutti i reconditi misteri della risa ta che l'essere umano abbia mai compreso, mobilitando ogni mezzo a sua disposizione. Non può immaginare quali sensi di colpa susciti questo in sua madre: vedere un bambino cosi piccolo fare di tutto solo per strappar- le un pochino di apparente felicità, senza nemmeno s pere che alla fine le sue risate si esauriranno."
+    "text": "E più lei ride, più lui fa il pagliaccio. Finché non ha passato in rassegna tutti i reconditi misteri della risa ta che l'essere umano abbia mai compreso, mobilitando ogni mezzo a sua disposizione. Non può immaginare quali sensi di colpa susciti questo in sua madre: vedere un bambino cosi piccolo fare di tutto solo per strappar- le un pochino di apparente felicità, senza nemmeno s pere che alla fine le sue risate si esauriranno.",
+    "group": 24
    },
    {
     "type": "paragraph",
-    "text": "La vita è così strana, pensa dopo aver smesso di ridere. Le persone, anche dopo che gli sono successe certe cose non importa quanto terribili, continuano comunque a mangiare e a bere, ad andare al bagno e a lavarsi - in altre parole, a vivere. E a volte ridono perfino di gusto. E pro babilmente hanno questi stessi pensieri, e quando suc- cede si ricordano tutta la tristezza che erano riuscite per breve tempo a dimenticare."
+    "text": "La vita è così strana, pensa dopo aver smesso di ridere. Le persone, anche dopo che gli sono successe certe cose non importa quanto terribili, continuano comunque a mangiare e a bere, ad andare al bagno e a lavarsi - in altre parole, a vivere. E a volte ridono perfino di gusto. E pro babilmente hanno questi stessi pensieri, e quando suc- cede si ricordano tutta la tristezza che erano riuscite per breve tempo a dimenticare.",
+    "group": 24
    }
   ]
  },
@@ -2876,11 +2983,13 @@ window.FN_QUOTE_BOOKS = [
   "blocks": [
    {
     "type": "paragraph",
-    "text": "Per una donna non è facile tradurre i propri sentimenti in un linguaggio che è stato inventato soprattutto dagli uomini per esprimere i loro."
+    "text": "Per una donna non è facile tradurre i propri sentimenti in un linguaggio che è stato inventato soprattutto dagli uomini per esprimere i loro.",
+    "group": 53
    },
    {
     "type": "paragraph",
-    "text": "Qualche punto debole in testa lei ce l'ha, ma non sono mai riuscito a entrarci dentro, neanche in uno; magari ci starà il diavolo!"
+    "text": "Qualche punto debole in testa lei ce l'ha, ma non sono mai riuscito a entrarci dentro, neanche in uno; magari ci starà il diavolo!",
+    "group": 53
    }
   ]
  },
@@ -4246,67 +4355,83 @@ window.FN_QUOTE_BOOKS = [
   "blocks": [
    {
     "type": "paragraph",
-    "text": "Maybe love was a superstition, a prayer we said to keep the truth of loneliness at bay"
+    "text": "Maybe love was a superstition, a prayer we said to keep the truth of loneliness at bay",
+    "group": 16
    },
    {
     "type": "paragraph",
-    "text": "Fine. Make me your villain."
+    "text": "Fine. Make me your villain.",
+    "group": 16
    },
    {
     "type": "paragraph",
-    "text": "I will not let him put himself beyond redemption."
+    "text": "I will not let him put himself beyond redemption.",
+    "group": 16
    },
    {
     "type": "paragraph",
-    "text": "\"The ox feels the yoke\", she says, \"but does the bird feel the weight of its wings?\""
+    "text": "\"The ox feels the yoke\", she says, \"but does the bird feel the weight of its wings?\"",
+    "group": 16
    },
    {
     "type": "paragraph",
-    "text": "\"Why won't you leave me alone?\"\n\"Then I'd be alone, too\""
+    "text": "\"Why won't you leave me alone?\"\n\"Then I'd be alone, too\"",
+    "group": 16
    },
    {
     "type": "paragraph",
-    "text": "\"Yuyeh sesh. Despise your heart.\n  Ni weh sesh. I have no heart\""
+    "text": "\"Yuyeh sesh. Despise your heart.\n  Ni weh sesh. I have no heart\"",
+    "group": 16
    },
    {
     "type": "paragraph",
-    "text": "Everyone mourns the first blossom. Who will grieve the rest who fall?"
+    "text": "Everyone mourns the first blossom. Who will grieve the rest who fall?",
+    "group": 16
    },
    {
     "type": "paragraph",
-    "text": "\"Na razhrusha'ya. E'ya razrushost. I am not ruined. I am ruination\"\n\"Remind me to stay on your good side\"\n\"Darling,\" she said, turning one scarred cheek to me, then the other, \"I don't have a good side anymore\"."
+    "text": "\"Na razhrusha'ya. E'ya razrushost. I am not ruined. I am ruination\"\n\"Remind me to stay on your good side\"\n\"Darling,\" she said, turning one scarred cheek to me, then the other, \"I don't have a good side anymore\".",
+    "group": 16
    },
    {
     "type": "paragraph",
-    "text": "I will strip away all that you know, all that you love, until you have no shelter but me."
+    "text": "I will strip away all that you know, all that you love, until you have no shelter but me.",
+    "group": 16
    },
    {
     "type": "paragraph",
-    "text": "Let me make a mark on this world before I leave it."
+    "text": "Let me make a mark on this world before I leave it.",
+    "group": 16
    },
    {
     "type": "paragraph",
-    "text": "Honesty was much like herbal tea - something well-meaning people recommended when they were out of better options."
+    "text": "Honesty was much like herbal tea - something well-meaning people recommended when they were out of better options.",
+    "group": 16
    },
    {
     "type": "paragraph",
-    "text": "This country. They can't even hang a man right."
+    "text": "This country. They can't even hang a man right.",
+    "group": 16
    },
    {
     "type": "paragraph",
-    "text": "Our first job is always to survive. I won't apologize for it."
+    "text": "Our first job is always to survive. I won't apologize for it.",
+    "group": 16
    },
    {
     "type": "paragraph",
-    "text": "Most women suffer thorns for the sake of the flowers. But we who would wield power adorn ourselves in flowers to hide the sting of our thorns."
+    "text": "Most women suffer thorns for the sake of the flowers. But we who would wield power adorn ourselves in flowers to hide the sting of our thorns.",
+    "group": 16
    },
    {
     "type": "paragraph",
-    "text": "You are strong enough to survive the fall."
+    "text": "You are strong enough to survive the fall.",
+    "group": 16
    },
    {
     "type": "paragraph",
-    "text": "They would build a new world together.\nBut first they had to burn the old one down."
+    "text": "They would build a new world together.\nBut first they had to burn the old one down.",
+    "group": 16
    },
    {
     "type": "paragraph",
@@ -4671,11 +4796,13 @@ window.FN_QUOTE_BOOKS = [
   "blocks": [
    {
     "type": "paragraph",
-    "text": "They took it to the priest. He did all the right things for all the wrong reasons."
+    "text": "They took it to the priest. He did all the right things for all the wrong reasons.",
+    "group": 45
    },
    {
     "type": "paragraph",
-    "text": "'I hope you're as good as you seem to think you are. I could use someone else around here with Illien's fire'.\n'I hope this place is as good as everyone seems to think it is. I need a place to burn'."
+    "text": "'I hope you're as good as you seem to think you are. I could use someone else around here with Illien's fire'.\n'I hope this place is as good as everyone seems to think it is. I need a place to burn'.",
+    "group": 45
    }
   ]
  },
@@ -4751,75 +4878,93 @@ window.FN_QUOTE_BOOKS = [
   "blocks": [
    {
     "type": "paragraph",
-    "text": "Se essi non comprenderanno che noi portiamo loro la felicità matematicamente esatta, è nostro dovere costringerli ad essere felici."
+    "text": "Se essi non comprenderanno che noi portiamo loro la felicità matematicamente esatta, è nostro dovere costringerli ad essere felici.",
+    "group": 29
    },
    {
     "type": "paragraph",
-    "text": "Perché il senso profondo della danza è appunto nell'assoluta dipendenza este- tica ad una costrizione ideale. E se è vero che i nostri antenati si abbandonavano alla danza nei momenti più ispirati della loro vita (i misteri religiosi, le parate mi- litari), ciò significa una cosa sola: che questo istinto di costrizione è sempre ed organicamente esistito nell'uomo, e noi, nella nostra vita attuale, ne abbiamo la consapevolezza..."
+    "text": "Perché il senso profondo della danza è appunto nell'assoluta dipendenza este- tica ad una costrizione ideale. E se è vero che i nostri antenati si abbandonavano alla danza nei momenti più ispirati della loro vita (i misteri religiosi, le parate mi- litari), ciò significa una cosa sola: che questo istinto di costrizione è sempre ed organicamente esistito nell'uomo, e noi, nella nostra vita attuale, ne abbiamo la consapevolezza...",
+    "group": 29
    },
    {
     "type": "paragraph",
-    "text": "Non è forse ancora chiaro che la bea- titudine e l'invidia sono il numeratore e il denominatore di quella frazione chia- mata felicità?"
+    "text": "Non è forse ancora chiaro che la bea- titudine e l'invidia sono il numeratore e il denominatore di quella frazione chia- mata felicità?",
+    "group": 29
    },
    {
     "type": "paragraph",
-    "text": "\"L'amore e la fame dominano il mondo\". Ergo: per domi- nare il mondo, l'uomo deve dominare i dominatori del mondo."
+    "text": "\"L'amore e la fame dominano il mondo\". Ergo: per domi- nare il mondo, l'uomo deve dominare i dominatori del mondo.",
+    "group": 29
    },
    {
     "type": "paragraph",
-    "text": "La li- bertà e la delinquenza sono così in- dissolubilmente legate tra loro come... mettiamo, il movimento dell'aereo e la sua velocità; la velocità dell'aereo se la velocità dell'aereo = 0, l'aereo non si muove; se la libertà dell'uomo = 0, egli non commette delitti. È chiaro."
+    "text": "La li- bertà e la delinquenza sono così in- dissolubilmente legate tra loro come... mettiamo, il movimento dell'aereo e la sua velocità; la velocità dell'aereo se la velocità dell'aereo = 0, l'aereo non si muove; se la libertà dell'uomo = 0, egli non commette delitti. È chiaro.",
+    "group": 29
    },
    {
     "type": "paragraph",
-    "text": "La conoscenza, convinta di essere esatta, si chiama fede."
+    "text": "La conoscenza, convinta di essere esatta, si chiama fede.",
+    "group": 29
    },
    {
     "type": "paragraph",
-    "text": "Gli dei sono diventati come noi, ergo noi siamo diventati come dei."
+    "text": "Gli dei sono diventati come noi, ergo noi siamo diventati come dei.",
+    "group": 29
    },
    {
     "type": "paragraph",
-    "text": "Tutto è imbevuto del tenero sangue solare, tutto è vivo: vive e morbide le pietre; vivo e caldo il ferro; vivi e sorridenti gli uomini."
+    "text": "Tutto è imbevuto del tenero sangue solare, tutto è vivo: vive e morbide le pietre; vivo e caldo il ferro; vivi e sorridenti gli uomini.",
+    "group": 29
    },
    {
     "type": "paragraph",
-    "text": "La matematica e la morte non sbagliano mai."
+    "text": "La matematica e la morte non sbagliano mai.",
+    "group": 29
    },
    {
     "type": "paragraph",
-    "text": "Solo gli antichi conoscevano la pietà a causa della scarsa conoscenza dell'aritmetica: noi la consideriamo ridicola."
+    "text": "Solo gli antichi conoscevano la pietà a causa della scarsa conoscenza dell'aritmetica: noi la consideriamo ridicola.",
+    "group": 29
    },
    {
     "type": "paragraph",
-    "text": "La sola via naturale dalla nullità alla grandezza, sta nel dimenticare che si è un grammo per sentirsi la milionesima parte di una tonnellata."
+    "text": "La sola via naturale dalla nullità alla grandezza, sta nel dimenticare che si è un grammo per sentirsi la milionesima parte di una tonnellata.",
+    "group": 29
    },
    {
     "type": "paragraph",
-    "text": "\"Noi\" deriviamo da Dio, ma\"Io\" dal diavolo."
+    "text": "\"Noi\" deriviamo da Dio, ma\"Io\" dal diavolo.",
+    "group": 29
    },
    {
     "type": "paragraph",
-    "text": "Ma è anche il fiorire pur sempre una malattia? Il bocciolo che si schiude, non prova anch'esso dolore? E non ci pensate al fatto che lo spermatozoo sia il più terribile dei microbi?"
+    "text": "Ma è anche il fiorire pur sempre una malattia? Il bocciolo che si schiude, non prova anch'esso dolore? E non ci pensate al fatto che lo spermatozoo sia il più terribile dei microbi?",
+    "group": 29
    },
    {
     "type": "paragraph",
-    "text": "L'uomo è come un romanzo: fino all'ultima pagina non sai come finisce. Altrimenti non varrebbe la pena di leggere..."
+    "text": "L'uomo è come un romanzo: fino all'ultima pagina non sai come finisce. Altrimenti non varrebbe la pena di leggere...",
+    "group": 29
    },
    {
     "type": "paragraph",
-    "text": "E le stelle sembrano essere delle gocce di geludo sudore argenteo... Ed ecco la sinistra notte, insoppor- tabilmente chiara, nera, stellare, solare. Come se foste diventati improvvisa- mente sordi: voi vedete le trombe suo- nare, ma le vedete soltanto, le trombe sono mute, silenziose. E così era il sole - muto."
+    "text": "E le stelle sembrano essere delle gocce di geludo sudore argenteo... Ed ecco la sinistra notte, insoppor- tabilmente chiara, nera, stellare, solare. Come se foste diventati improvvisa- mente sordi: voi vedete le trombe suo- nare, ma le vedete soltanto, le trombe sono mute, silenziose. E così era il sole - muto.",
+    "group": 29
    },
    {
     "type": "paragraph",
-    "text": "E lo stesso Dio cri- stiano, il più misericordioso, che lenta- mente brucia nel fuoco infernale tutti i ribelli, non è forse un carnefice?"
+    "text": "E lo stesso Dio cri- stiano, il più misericordioso, che lenta- mente brucia nel fuoco infernale tutti i ribelli, non è forse un carnefice?",
+    "group": 29
    },
    {
     "type": "paragraph",
-    "text": "L'antico sogno del paradiso... Ri- cordate; nel paradiso non si conoscono i desideri, non si conoscono la pietà e l'amore, là sono tutti beati perché non hanno fantasia (e solo per questo sono beati) - angeli, servi di Dio..."
+    "text": "L'antico sogno del paradiso... Ri- cordate; nel paradiso non si conoscono i desideri, non si conoscono la pietà e l'amore, là sono tutti beati perché non hanno fantasia (e solo per questo sono beati) - angeli, servi di Dio...",
+    "group": 29
    },
    {
     "type": "paragraph",
-    "text": "Ma nessuno sente, nessuno sente come grido io: \"Salva- temi, salvatemi!\" ecco, oh, se avessi una madre, come l'avevano gli antichi: ecco mia madre. Oh, se per lei io non fossi il Costruttore dell'Integrale, non fossi il numero D-503, non fossi una molecola dello Stato Unico, ma un semplice pezzetto umano, un pezzetto di lei pe- stato, schiacciato, buttato via... Oh, sicu- ramente lei, mentre io vengo inchiodato o inchiodo altri sulla croce - che forse poi è la stessa cosa! - lei sentirebbe cer- tamente quello che nessun altro sente e le sue labbra di vecchia, tutte solcate di rughe..."
+    "text": "Ma nessuno sente, nessuno sente come grido io: \"Salva- temi, salvatemi!\" ecco, oh, se avessi una madre, come l'avevano gli antichi: ecco mia madre. Oh, se per lei io non fossi il Costruttore dell'Integrale, non fossi il numero D-503, non fossi una molecola dello Stato Unico, ma un semplice pezzetto umano, un pezzetto di lei pe- stato, schiacciato, buttato via... Oh, sicu- ramente lei, mentre io vengo inchiodato o inchiodo altri sulla croce - che forse poi è la stessa cosa! - lei sentirebbe cer- tamente quello che nessun altro sente e le sue labbra di vecchia, tutte solcate di rughe...",
+    "group": 29
    },
    {
     "type": "paragraph",
@@ -4956,27 +5101,33 @@ window.FN_QUOTE_BOOKS = [
   "blocks": [
    {
     "type": "paragraph",
-    "text": "\" You know one of my faces.\n\" Yes. The one that's under my hands now,\" said Pryia. \"The real one.\""
+    "text": "\" You know one of my faces.\n\" Yes. The one that's under my hands now,\" said Pryia. \"The real one.\"",
+    "group": 46
    },
    {
     "type": "paragraph",
-    "text": "\"I barely understand it, the way I would willingly kneel for you, anywhere, for anything. The way I would fight for you. The way I want to be at your side. Is that what love is, Malini? Is that how awful love is? Because if it is, then I love you, the way that roots love the deep and leaves love the light. It's - the way I am. And no matter how much I try to be good, to do right - I'm all flowers in your arms, for your war, for you-\""
+    "text": "\"I barely understand it, the way I would willingly kneel for you, anywhere, for anything. The way I would fight for you. The way I want to be at your side. Is that what love is, Malini? Is that how awful love is? Because if it is, then I love you, the way that roots love the deep and leaves love the light. It's - the way I am. And no matter how much I try to be good, to do right - I'm all flowers in your arms, for your war, for you-\"",
+    "group": 46
    },
    {
     "type": "paragraph",
-    "text": "\"You may think you break yourself on loving me\"\n\"Try and break me\""
+    "text": "\"You may think you break yourself on loving me\"\n\"Try and break me\"",
+    "group": 46
    },
    {
     "type": "paragraph",
-    "text": "\"I will remember that we are not what is done to us\""
+    "text": "\"I will remember that we are not what is done to us\"",
+    "group": 46
    },
    {
     "type": "paragraph",
-    "text": "'Whatever you cannot mourn,  I will mourn for you'"
+    "text": "'Whatever you cannot mourn,  I will mourn for you'",
+    "group": 46
    },
    {
     "type": "paragraph",
-    "text": "[You are deep waters]"
+    "text": "[You are deep waters]",
+    "group": 46
    },
    {
     "type": "paragraph",
@@ -5313,23 +5464,28 @@ window.FN_QUOTE_BOOKS = [
   "blocks": [
    {
     "type": "paragraph",
-    "text": "Ora che mi sono spinta fino all'orlo, voglio solo cadere."
+    "text": "Ora che mi sono spinta fino all'orlo, voglio solo cadere.",
+    "group": 31
    },
    {
     "type": "paragraph",
-    "text": "Se non potrò essere migliore di loro, diventerò molto peggio di loro.\nIf I cannot be better than them, I will become so much worse."
+    "text": "Se non potrò essere migliore di loro, diventerò molto peggio di loro.\nIf I cannot be better than them, I will become so much worse.",
+    "group": 31
    },
    {
     "type": "paragraph",
-    "text": "In fondo, essere nati mortali è come essere nati già morti."
+    "text": "In fondo, essere nati mortali è come essere nati già morti.",
+    "group": 31
    },
    {
     "type": "paragraph",
-    "text": "Prina non sapevo fino a dove avrei potuto spingermi. Adesso credo di avere la risposta. Andrò più lontano che posso. Andrò oltre."
+    "text": "Prina non sapevo fino a dove avrei potuto spingermi. Adesso credo di avere la risposta. Andrò più lontano che posso. Andrò oltre.",
+    "group": 31
    },
    {
     "type": "paragraph",
-    "text": "Penso a cosa significhi essere la cattiva della storia."
+    "text": "Penso a cosa significhi essere la cattiva della storia.",
+    "group": 31
    },
    {
     "type": "paragraph",
@@ -5398,39 +5554,48 @@ window.FN_QUOTE_BOOKS = [
   "blocks": [
    {
     "type": "paragraph",
-    "text": "I urge you: come be angry at a nearer distance."
+    "text": "I urge you: come be angry at a nearer distance.",
+    "group": 48
    },
    {
     "type": "paragraph",
-    "text": "Come home and fight with me. Come home and break my heart, if you must. Just come home."
+    "text": "Come home and fight with me. Come home and break my heart, if you must. Just come home.",
+    "group": 48
    },
    {
     "type": "paragraph",
-    "text": "I flattered myself that at moments you had feeling for me other than contempt, but even were that true, they would make but a thin gruel beside the feast of your other, greater desires."
+    "text": "I flattered myself that at moments you had feeling for me other than contempt, but even were that true, they would make but a thin gruel beside the feast of your other, greater desires.",
+    "group": 48
    },
    {
     "type": "paragraph",
-    "text": "At home and homesick all at the same time."
+    "text": "At home and homesick all at the same time.",
+    "group": 48
    },
    {
     "type": "paragraph",
-    "text": "Plunge a heated sword into oil, and any small flaw will turn into a crack. But quenched in blood as you were, none of you broke. You were only hardened."
+    "text": "Plunge a heated sword into oil, and any small flaw will turn into a crack. But quenched in blood as you were, none of you broke. You were only hardened.",
+    "group": 48
    },
    {
     "type": "paragraph",
-    "text": "Mock me all you like. Whatever I imagined then, now it is I who would bag and grovel for a kind word from your lips.\nBy you, I am forever undone."
+    "text": "Mock me all you like. Whatever I imagined then, now it is I who would bag and grovel for a kind word from your lips.\nBy you, I am forever undone.",
+    "group": 48
    },
    {
     "type": "paragraph",
-    "text": "My sweet nemesis, how glad I am that you returned."
+    "text": "My sweet nemesis, how glad I am that you returned.",
+    "group": 48
    },
    {
     "type": "paragraph",
-    "text": "I think of his riddle. How do people like us take off our armor?\nOne piece at a time."
+    "text": "I think of his riddle. How do people like us take off our armor?\nOne piece at a time.",
+    "group": 48
    },
    {
     "type": "paragraph",
-    "text": "Let me be feared and never again afraid.\nLet me have everything I have ever wanted, everything I have ever dreamed, and eternal misery along with that. Let me live on with an ice shard through my heart."
+    "text": "Let me be feared and never again afraid.\nLet me have everything I have ever wanted, everything I have ever dreamed, and eternal misery along with that. Let me live on with an ice shard through my heart.",
+    "group": 48
    }
   ]
  },
@@ -5957,47 +6122,58 @@ window.FN_QUOTE_BOOKS = [
   "blocks": [
    {
     "type": "paragraph",
-    "text": "There has to be more. I have to be more."
+    "text": "There has to be more. I have to be more.",
+    "group": 39
    },
    {
     "type": "paragraph",
-    "text": "A life worth having is a life worth taking."
+    "text": "A life worth having is a life worth taking.",
+    "group": 39
    },
    {
     "type": "paragraph",
-    "text": "I'd rather die on an adventure than living standing still."
+    "text": "I'd rather die on an adventure than living standing still.",
+    "group": 39
    },
    {
     "type": "paragraph",
-    "text": "\"I'm not going to die\", she said \"not till I've seen it\".\n\"Seen what?\"\nHer smile widened. \"Everything.\""
+    "text": "\"I'm not going to die\", she said \"not till I've seen it\".\n\"Seen what?\"\nHer smile widened. \"Everything.\"",
+    "group": 39
    },
    {
     "type": "paragraph",
-    "text": "For the ones who fight their way forward."
+    "text": "For the ones who fight their way forward.",
+    "group": 39
    },
    {
     "type": "paragraph",
-    "text": "Whatever I am, she tought, pressing her hand to the wall, let it be enough."
+    "text": "Whatever I am, she tought, pressing her hand to the wall, let it be enough.",
+    "group": 39
    },
    {
     "type": "paragraph",
-    "text": "No one suffers as beautifully as you."
+    "text": "No one suffers as beautifully as you.",
+    "group": 39
    },
    {
     "type": "paragraph",
-    "text": "Power required corruption, and corruption rewarded power."
+    "text": "Power required corruption, and corruption rewarded power.",
+    "group": 39
    },
    {
     "type": "paragraph",
-    "text": "Better safe than sorry."
+    "text": "Better safe than sorry.",
+    "group": 39
    },
    {
     "type": "paragraph",
-    "text": "We don't choose who we are, but we choose what we do."
+    "text": "We don't choose who we are, but we choose what we do.",
+    "group": 39
    },
    {
     "type": "paragraph",
-    "text": "I will wear your body through the streets until it burns."
+    "text": "I will wear your body through the streets until it burns.",
+    "group": 39
    }
   ]
  },
@@ -6263,115 +6439,143 @@ window.FN_QUOTE_BOOKS = [
   "blocks": [
    {
     "type": "paragraph",
-    "text": "Your unstoppable force to our immovable object."
+    "text": "Your unstoppable force to our immovable object.",
+    "group": 52
    },
    {
     "type": "paragraph",
-    "text": "The ends don't always resemble our means."
+    "text": "The ends don't always resemble our means.",
+    "group": 52
    },
    {
     "type": "paragraph",
-    "text": "Some days Blue wonders why anyone ever bothered making numbers so small; other days she supposes even infinity needs to start somewhere."
+    "text": "Some days Blue wonders why anyone ever bothered making numbers so small; other days she supposes even infinity needs to start somewhere.",
+    "group": 52
    },
    {
     "type": "paragraph",
-    "text": "Sex improves when decoupled from animalist procreative desperation."
+    "text": "Sex improves when decoupled from animalist procreative desperation.",
+    "group": 52
    },
    {
     "type": "paragraph",
-    "text": "But hunger is a many-splendoured thing; to sate a hunger or to stoke it, to feel hunger as a furnace, to trace its edges like teeth. Have you ever had a hunger that whetted itself on what you fed it, sharpened so keen and bright that it might split you open, break a new thing out?\nSometimes I think that's what I have instead of friends."
+    "text": "But hunger is a many-splendoured thing; to sate a hunger or to stoke it, to feel hunger as a furnace, to trace its edges like teeth. Have you ever had a hunger that whetted itself on what you fed it, sharpened so keen and bright that it might split you open, break a new thing out?\nSometimes I think that's what I have instead of friends.",
+    "group": 52
    },
    {
     "type": "paragraph",
-    "text": "Mannered as a novel, filthy only where story requires it, all meat pies and monarchy - this London is a place Blue loves, and hates herself for loving."
+    "text": "Mannered as a novel, filthy only where story requires it, all meat pies and monarchy - this London is a place Blue loves, and hates herself for loving.",
+    "group": 52
    },
    {
     "type": "paragraph",
-    "text": "Humans need marks to strive for - but imperfect systems decay. So we build them ideals."
+    "text": "Humans need marks to strive for - but imperfect systems decay. So we build them ideals.",
+    "group": 52
    },
    {
     "type": "paragraph",
-    "text": "Radiant with age and command."
+    "text": "Radiant with age and command.",
+    "group": 52
    },
    {
     "type": "paragraph",
-    "text": "Adventure calls to those who care more for living than for their lives."
+    "text": "Adventure calls to those who care more for living than for their lives.",
+    "group": 52
    },
    {
     "type": "paragraph",
-    "text": "A confession is also a dare is also a compulsion."
+    "text": "A confession is also a dare is also a compulsion.",
+    "group": 52
    },
    {
     "type": "paragraph",
-    "text": "And harvest is not a word for swiftness; the future harvests us, stomps us into wine, pours us back into the root system of loving libation, and we grow stronger and more potent together."
+    "text": "And harvest is not a word for swiftness; the future harvests us, stomps us into wine, pours us back into the root system of loving libation, and we grow stronger and more potent together.",
+    "group": 52
    },
    {
     "type": "paragraph",
-    "text": "Longing, this longing to possess, to become, to break like a wave on a rock and reform, and break again, and wash away. This is a necessary part of any ecosystem, but it unsettles others, this inability to be satisfied. It is difficult - it is very difficult, to befriend where you wish to consume, to find those who, when they ask Do I have you, when they end a letter with Yours, mean it in any substantive way. So I go. I travel farther and faster and harder than most, and I read, and I write, and I love cities. To be alone in a crowd, apart and belonging, to have a distance between what I see and what I am."
+    "text": "Longing, this longing to possess, to become, to break like a wave on a rock and reform, and break again, and wash away. This is a necessary part of any ecosystem, but it unsettles others, this inability to be satisfied. It is difficult - it is very difficult, to befriend where you wish to consume, to find those who, when they ask Do I have you, when they end a letter with Yours, mean it in any substantive way. So I go. I travel farther and faster and harder than most, and I read, and I write, and I love cities. To be alone in a crowd, apart and belonging, to have a distance between what I see and what I am.",
+    "group": 52
    },
    {
     "type": "paragraph",
-    "text": "I kept knotting your name at night, but this salutation seemed wiser - I've learned to take warning from delight."
+    "text": "I kept knotting your name at night, but this salutation seemed wiser - I've learned to take warning from delight.",
+    "group": 52
    },
    {
     "type": "paragraph",
-    "text": "I try not to think of you the same way twice."
+    "text": "I try not to think of you the same way twice.",
+    "group": 52
    },
    {
     "type": "paragraph",
-    "text": "I feel your hand in places I've touched."
+    "text": "I feel your hand in places I've touched.",
+    "group": 52
    },
    {
     "type": "paragraph",
-    "text": "I like you to know, with my words in your mouth, the places and ways in which I think of you. It feels good to be reciprocal; eat this part of me while I drive reeds into the depth of you, spill out something sweet. I wish sometimes I could be less fierce with you."
+    "text": "I like you to know, with my words in your mouth, the places and ways in which I think of you. It feels good to be reciprocal; eat this part of me while I drive reeds into the depth of you, spill out something sweet. I wish sometimes I could be less fierce with you.",
+    "group": 52
    },
    {
     "type": "paragraph",
-    "text": "I have seen small bright singers puff before they trill. That's how I feel. I sing myself out to you."
+    "text": "I have seen small bright singers puff before they trill. That's how I feel. I sing myself out to you.",
+    "group": 52
    },
    {
     "type": "paragraph",
-    "text": "I want to sharpen your hungers fully as much as I long to satisfy them."
+    "text": "I want to sharpen your hungers fully as much as I long to satisfy them.",
+    "group": 52
    },
    {
     "type": "paragraph",
-    "text": "All good stories travel from the outside in."
+    "text": "All good stories travel from the outside in.",
+    "group": 52
    },
    {
     "type": "paragraph",
-    "text": "Because though I speak so easily of certain things, though I rush through ground that to you seems mined, it's only earth to me."
+    "text": "Because though I speak so easily of certain things, though I rush through ground that to you seems mined, it's only earth to me.",
+    "group": 52
    },
    {
     "type": "paragraph",
-    "text": "There was, I am sure, a time I did not know you. Or did I dream that me, as I've so often dreamed of you? Have we always fulfilled one another in the chase?"
+    "text": "There was, I am sure, a time I did not know you. Or did I dream that me, as I've so often dreamed of you? Have we always fulfilled one another in the chase?",
+    "group": 52
    },
    {
     "type": "paragraph",
-    "text": "I want to chase you, find you, I want to be eluded and teased and adored; I want to be defeated and victorious - I want you to cut me, sharpen me. I want to drink tea beside you in ten years or a thousand."
+    "text": "I want to chase you, find you, I want to be eluded and teased and adored; I want to be defeated and victorious - I want you to cut me, sharpen me. I want to drink tea beside you in ten years or a thousand.",
+    "group": 52
    },
    {
     "type": "paragraph",
-    "text": "I sought loneliness when I was young. But when I think of you, I want to be alone together. I want to strive against and for. I want to live in contact. I want to be a context for you, and you for me. I love you, and I love you, and I want to find out what that means together."
+    "text": "I sought loneliness when I was young. But when I think of you, I want to be alone together. I want to strive against and for. I want to live in contact. I want to be a context for you, and you for me. I love you, and I love you, and I want to find out what that means together.",
+    "group": 52
    },
    {
     "type": "paragraph",
-    "text": "I want to scorch the thousand earths between us to see what blooms from the ash, so we can discover it hand in hand, content in context, intelligible only to each other. I want to meet you in every place I loved."
+    "text": "I want to scorch the thousand earths between us to see what blooms from the ash, so we can discover it hand in hand, content in context, intelligible only to each other. I want to meet you in every place I loved.",
+    "group": 52
    },
    {
     "type": "paragraph",
-    "text": "This is me, the truth of me, as I do so: broken open by the act, in the palm of your hand, dying."
+    "text": "This is me, the truth of me, as I do so: broken open by the act, in the palm of your hand, dying.",
+    "group": 52
    },
    {
     "type": "paragraph",
-    "text": "I am yours, as I watch the world for your signs, apophenic as a haruspex."
+    "text": "I am yours, as I watch the world for your signs, apophenic as a haruspex.",
+    "group": 52
    },
    {
     "type": "paragraph",
-    "text": "I wander what of me there is in you."
+    "text": "I wander what of me there is in you.",
+    "group": 52
    },
    {
     "type": "paragraph",
-    "text": "Letters are structures, not events. Yours give me a place to live inside. My memories of you spread through millennia, and each highlights you in motion."
+    "text": "Letters are structures, not events. Yours give me a place to live inside. My memories of you spread through millennia, and each highlights you in motion.",
+    "group": 52
    },
    {
     "type": "paragraph",
@@ -6794,19 +6998,23 @@ window.FN_QUOTE_BOOKS = [
   "blocks": [
    {
     "type": "paragraph",
-    "text": "Before I saw you\nI meditated for a thousand years,\nBut these thousand years are worth\nLess than a moment with you."
+    "text": "Before I saw you\nI meditated for a thousand years,\nBut these thousand years are worth\nLess than a moment with you.",
+    "group": 32
    },
    {
     "type": "paragraph",
-    "text": "Bai Su Zhen in The Sorcerer and the White Snake"
+    "text": "Bai Su Zhen in The Sorcerer and the White Snake",
+    "group": 32
    },
    {
     "type": "paragraph",
-    "text": "Lady Meng Jiang, Butterfly Lovers, The Cowherd and the Weaver Girl"
+    "text": "Lady Meng Jiang, Butterfly Lovers, The Cowherd and the Weaver Girl",
+    "group": 32
    },
    {
     "type": "paragraph",
-    "text": "I wish we could be trees\nDeep in the mountains\nTouching, twining limb around limb"
+    "text": "I wish we could be trees\nDeep in the mountains\nTouching, twining limb around limb",
+    "group": 32
    },
    {
     "type": "heading",
@@ -6869,15 +7077,18 @@ window.FN_QUOTE_BOOKS = [
   "blocks": [
    {
     "type": "paragraph",
-    "text": "Demain, dès l’aube\n(Victor Hugo, Les Contemplations, 1856)\nDemain, dès l’aube, à l’heure où blanchit la campagne,\nJe partirai. Vois-tu, je sais que tu m’attends.\nJ’irai par la forêt, j’irai par la montagne.\nJe ne puis demeurer loin de toi plus longtemps."
+    "text": "Demain, dès l’aube\n(Victor Hugo, Les Contemplations, 1856)\nDemain, dès l’aube, à l’heure où blanchit la campagne,\nJe partirai. Vois-tu, je sais que tu m’attends.\nJ’irai par la forêt, j’irai par la montagne.\nJe ne puis demeurer loin de toi plus longtemps.",
+    "group": 14
    },
    {
     "type": "paragraph",
-    "text": "Je marcherai les yeux fixés sur mes pensées,\nSans rien voir au dehors, sans entendre aucun bruit,\nSeul, inconnu, le dos courbé, les mains croisées,\nTriste, et le jour pour moi sera comme la nuit."
+    "text": "Je marcherai les yeux fixés sur mes pensées,\nSans rien voir au dehors, sans entendre aucun bruit,\nSeul, inconnu, le dos courbé, les mains croisées,\nTriste, et le jour pour moi sera comme la nuit.",
+    "group": 14
    },
    {
     "type": "paragraph",
-    "text": "Je ne regarderai ni l’or du soir qui tombe,\nNi les voiles au loin descendant vers Harfleur,\nEt quand j’arriverai, je mettrai sur ta tombe\nUn bouquet de houx vert et de bruyère en fleur.\nLet me know if you’d like a line-by-line translation or analysis."
+    "text": "Je ne regarderai ni l’or du soir qui tombe,\nNi les voiles au loin descendant vers Harfleur,\nEt quand j’arriverai, je mettrai sur ta tombe\nUn bouquet de houx vert et de bruyère en fleur.\nLet me know if you’d like a line-by-line translation or analysis.",
+    "group": 14
    }
   ]
  },
@@ -6890,575 +7101,718 @@ window.FN_QUOTE_BOOKS = [
   "blocks": [
    {
     "type": "paragraph",
-    "text": "I"
+    "text": "I",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "So you have swept me back,"
+    "text": "So you have swept me back,",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "I who could have walked with the live souls"
+    "text": "I who could have walked with the live souls",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "above the earth,"
+    "text": "above the earth,",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "I who could have slept among the live flowers"
+    "text": "I who could have slept among the live flowers",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "at last;"
+    "text": "at last;",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "so for your arrogance"
+    "text": "so for your arrogance",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "and your ruthlessness"
+    "text": "and your ruthlessness",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "I am swept back"
+    "text": "I am swept back",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "where dead lichens drip"
+    "text": "where dead lichens drip",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "dead cinders upon moss of ash;"
+    "text": "dead cinders upon moss of ash;",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "so for your arrogance"
+    "text": "so for your arrogance",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "I am broken at last,"
+    "text": "I am broken at last,",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "I who had lived unconscious,"
+    "text": "I who had lived unconscious,",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "who was almost forgot;"
+    "text": "who was almost forgot;",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "if you had let me wait"
+    "text": "if you had let me wait",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "I had grown from listlessness"
+    "text": "I had grown from listlessness",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "into peace,"
+    "text": "into peace,",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "if you had let me rest with the dead,"
+    "text": "if you had let me rest with the dead,",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "I had forgot you"
+    "text": "I had forgot you",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "and the past."
+    "text": "and the past.",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "                               II"
+    "text": "                               II",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "Here only flame upon flame"
+    "text": "Here only flame upon flame",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "and black among the red sparks,"
+    "text": "and black among the red sparks,",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "streaks of black and light"
+    "text": "streaks of black and light",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "grown colourless;"
+    "text": "grown colourless;",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "why did you turn back,"
+    "text": "why did you turn back,",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "that hell should be reinhabited"
+    "text": "that hell should be reinhabited",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "of myself thus"
+    "text": "of myself thus",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "swept into nothingness?"
+    "text": "swept into nothingness?",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "why did you glance back?"
+    "text": "why did you glance back?",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "why did you hesitate for that moment?"
+    "text": "why did you hesitate for that moment?",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "why did you bend your face"
+    "text": "why did you bend your face",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "caught with the flame of the upper earth,"
+    "text": "caught with the flame of the upper earth,",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "above my face?"
+    "text": "above my face?",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "what was it that crossed my face"
+    "text": "what was it that crossed my face",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "with the light from yours"
+    "text": "with the light from yours",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "and your glance?"
+    "text": "and your glance?",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "what was it you saw in my face?"
+    "text": "what was it you saw in my face?",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "the light of your own face,"
+    "text": "the light of your own face,",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "the fire of your own presence?"
+    "text": "the fire of your own presence?",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "What had my face to offer"
+    "text": "What had my face to offer",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "but reflex of the earth,"
+    "text": "but reflex of the earth,",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "hyacinth colour"
+    "text": "hyacinth colour",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "caught from the raw fissure in the rock"
+    "text": "caught from the raw fissure in the rock",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "where the light struck,"
+    "text": "where the light struck,",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "and the colour of azure crocuses"
+    "text": "and the colour of azure crocuses",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "and the bright surface of gold crocuses"
+    "text": "and the bright surface of gold crocuses",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "and of the wind-flower,"
+    "text": "and of the wind-flower,",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "swift in its veins as lightning"
+    "text": "swift in its veins as lightning",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "and as white."
+    "text": "and as white.",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "                               III"
+    "text": "                               III",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "Saffron from the fringe of the earth,"
+    "text": "Saffron from the fringe of the earth,",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "wild saffron that has bent"
+    "text": "wild saffron that has bent",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "over the sharp edge of earth,"
+    "text": "over the sharp edge of earth,",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "all the flowers that cut through the earth,"
+    "text": "all the flowers that cut through the earth,",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "all, all the flowers are lost;"
+    "text": "all, all the flowers are lost;",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "everything is lost,"
+    "text": "everything is lost,",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "everything is crossed with black,"
+    "text": "everything is crossed with black,",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "black upon black"
+    "text": "black upon black",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "and worse than black,"
+    "text": "and worse than black,",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "this colourless light."
+    "text": "this colourless light.",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "                               IV"
+    "text": "                               IV",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "Fringe upon fringe"
+    "text": "Fringe upon fringe",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "of blue crocuses,"
+    "text": "of blue crocuses,",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "crocuses, walled against blue of themselves,"
+    "text": "crocuses, walled against blue of themselves,",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "blue of that upper earth,"
+    "text": "blue of that upper earth,",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "blue of the depth upon depth of flowers,"
+    "text": "blue of the depth upon depth of flowers,",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "lost;"
+    "text": "lost;",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "flowers,"
+    "text": "flowers,",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "if I could have taken once my breath of them,"
+    "text": "if I could have taken once my breath of them,",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "enough of them,"
+    "text": "enough of them,",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "more than earth,"
+    "text": "more than earth,",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "even than of the upper earth,"
+    "text": "even than of the upper earth,",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "had passed with me"
+    "text": "had passed with me",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "beneath the earth;"
+    "text": "beneath the earth;",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "if I could have caught up from the earth,"
+    "text": "if I could have caught up from the earth,",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "the whole of the flowers of the earth,"
+    "text": "the whole of the flowers of the earth,",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "if once I could have breathed into myself"
+    "text": "if once I could have breathed into myself",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "the very golden crocuses"
+    "text": "the very golden crocuses",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "and the red,"
+    "text": "and the red,",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "and the very golden hearts of the first saffron,"
+    "text": "and the very golden hearts of the first saffron,",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "the whole of the golden mass,"
+    "text": "the whole of the golden mass,",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "the whole of the great fragrance,"
+    "text": "the whole of the great fragrance,",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "I could have dared the loss."
+    "text": "I could have dared the loss.",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "                              V"
+    "text": "                              V",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "So for your arrogance"
+    "text": "So for your arrogance",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "and your ruthlessness"
+    "text": "and your ruthlessness",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "I have lost the earth"
+    "text": "I have lost the earth",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "and the flowers of the earth,"
+    "text": "and the flowers of the earth,",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "and the live souls above the earth,"
+    "text": "and the live souls above the earth,",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "and you who passed across the light"
+    "text": "and you who passed across the light",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "and reached"
+    "text": "and reached",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "ruthless;"
+    "text": "ruthless;",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "you who have your own light,"
+    "text": "you who have your own light,",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "who are to yourself a presence,"
+    "text": "who are to yourself a presence,",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "who need no presence;"
+    "text": "who need no presence;",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "yet for all your arrogance"
+    "text": "yet for all your arrogance",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "and your glance,"
+    "text": "and your glance,",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "I tell you this:"
+    "text": "I tell you this:",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "such loss is no loss,"
+    "text": "such loss is no loss,",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "such terror, such coils and strands and pitfalls"
+    "text": "such terror, such coils and strands and pitfalls",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "of blackness,"
+    "text": "of blackness,",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "such terror"
+    "text": "such terror",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "is no loss;"
+    "text": "is no loss;",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "hell is no worse than your earth"
+    "text": "hell is no worse than your earth",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "above the earth,"
+    "text": "above the earth,",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "hell is no worse,"
+    "text": "hell is no worse,",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "no, nor your flowers"
+    "text": "no, nor your flowers",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "nor your veins of light"
+    "text": "nor your veins of light",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "nor your presence,"
+    "text": "nor your presence,",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "a loss;"
+    "text": "a loss;",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "my hell is no worse than yours"
+    "text": "my hell is no worse than yours",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "though you pass among the flowers and speak"
+    "text": "though you pass among the flowers and speak",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "with the spirits above earth."
+    "text": "with the spirits above earth.",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "                               VI"
+    "text": "                               VI",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "Against the black"
+    "text": "Against the black",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "I have more fervour"
+    "text": "I have more fervour",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "than you in all the splendour of that place,"
+    "text": "than you in all the splendour of that place,",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "against the blackness"
+    "text": "against the blackness",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "and the stark grey"
+    "text": "and the stark grey",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "I have more light;"
+    "text": "I have more light;",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "and the flowers,"
+    "text": "and the flowers,",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "if I should tell you,"
+    "text": "if I should tell you,",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "you would turn from your own fit paths"
+    "text": "you would turn from your own fit paths",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "toward hell,"
+    "text": "toward hell,",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "turn again and glance back"
+    "text": "turn again and glance back",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "and I would sink into a place"
+    "text": "and I would sink into a place",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "even more terrible than this."
+    "text": "even more terrible than this.",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "                              VII"
+    "text": "                              VII",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "At least I have the flowers of myself,"
+    "text": "At least I have the flowers of myself,",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "and my thoughts, no god"
+    "text": "and my thoughts, no god",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "can take that;"
+    "text": "can take that;",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "I have the fervour of myself for a presence"
+    "text": "I have the fervour of myself for a presence",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "and my own spirit for light;"
+    "text": "and my own spirit for light;",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "and my spirit with its loss"
+    "text": "and my spirit with its loss",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "knows this;"
+    "text": "knows this;",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "though small against the black,"
+    "text": "though small against the black,",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "small against the formless rocks,"
+    "text": "small against the formless rocks,",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "hell must break before I am lost;"
+    "text": "hell must break before I am lost;",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "before I am lost,"
+    "text": "before I am lost,",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "hell must open like a red rose"
+    "text": "hell must open like a red rose",
+    "group": 3
    },
    {
     "type": "paragraph",
-    "text": "for the dead to pass."
+    "text": "for the dead to pass.",
+    "group": 3
    }
   ]
  },
@@ -7471,15 +7825,18 @@ window.FN_QUOTE_BOOKS = [
   "blocks": [
    {
     "type": "paragraph",
-    "text": "Nel mio silenzio\nHo scritto\nLettere piene d'amore"
+    "text": "Nel mio silenzio\nHo scritto\nLettere piene d'amore",
+    "group": 30
    },
    {
     "type": "paragraph",
-    "text": "Non sono mai stato\nTanto\nAttaccato alla vita.\nVeglia"
+    "text": "Non sono mai stato\nTanto\nAttaccato alla vita.\nVeglia",
+    "group": 30
    },
    {
     "type": "paragraph",
-    "text": "La morte\nSi sconta\nVivendo.\nSono una creatura"
+    "text": "La morte\nSi sconta\nVivendo.\nSono una creatura",
+    "group": 30
    }
   ]
  },
@@ -8053,99 +8410,123 @@ window.FN_QUOTE_BOOKS = [
   "blocks": [
    {
     "type": "paragraph",
-    "text": "But if you fear you would seek only\nlove's peace and love's pleasure,\nThen it is better for you that you\ncover your nakedness and pass out of love's\nthreshing-floor,\nInto the drasonless world where you shall\nlaugh, but not all of your laughter, and\nweep, but not all of your tears."
+    "text": "But if you fear you would seek only\nlove's peace and love's pleasure,\nThen it is better for you that you\ncover your nakedness and pass out of love's\nthreshing-floor,\nInto the drasonless world where you shall\nlaugh, but not all of your laughter, and\nweep, but not all of your tears.",
+    "group": 47
    },
    {
     "type": "paragraph",
-    "text": "Love gives naught but itself and takes\nnaught but from itself.\nLove possesses not nor would it be possessed;\nFor love is sufficient unto love."
+    "text": "Love gives naught but itself and takes\nnaught but from itself.\nLove possesses not nor would it be possessed;\nFor love is sufficient unto love.",
+    "group": 47
    },
    {
     "type": "paragraph",
-    "text": "But if you love and must needs have\ndesires, let these be your desires;\nTo know the pain of too much tenderness.\nTo be wounded by your own understanding of love;\nAnd to bleed willingly and joyfully."
+    "text": "But if you love and must needs have\ndesires, let these be your desires;\nTo know the pain of too much tenderness.\nTo be wounded by your own understanding of love;\nAnd to bleed willingly and joyfully.",
+    "group": 47
    },
    {
     "type": "paragraph",
-    "text": "You shall be together when the white\nwings of death scatter your days.\nAye, you shall be together even in the\nsilent memory of God."
+    "text": "You shall be together when the white\nwings of death scatter your days.\nAye, you shall be together even in the\nsilent memory of God.",
+    "group": 47
    },
    {
     "type": "paragraph",
-    "text": "Love one another, but make not a bond\nof love:\nFill each other's cup but drink not from\none cup.\nSing and dance together and be joyous,\nbut let each one of you be alone,\nEven as the strings of a lute are alone\nthough they quiver with the same music.\nGive your hearts, but not into each other's\nKeeping.\nFor only the hand of Life can contain your\nhearts."
+    "text": "Love one another, but make not a bond\nof love:\nFill each other's cup but drink not from\none cup.\nSing and dance together and be joyous,\nbut let each one of you be alone,\nEven as the strings of a lute are alone\nthough they quiver with the same music.\nGive your hearts, but not into each other's\nKeeping.\nFor only the hand of Life can contain your\nhearts.",
+    "group": 47
    },
    {
     "type": "paragraph",
-    "text": "Your children are not your children\nThey are sons and daughtetd of Life's\nlonging for itself.\nThey come through you but not from you,\nAnd though they are with you yet they\nbelong not to you.\nYou may give them your love but not\nyour thoughts,\nFor they have their own thoughts.\nYou may house their bodies but not their\nsouls,\nFor their souls dwell in the house of tomorrow,\nwhich you cannot visit, not even\nin your dreams.\nYou may strive to be like them, but seek\nnot to make them like you.\nFor life goes not backward nor tarries\nwith yesterday."
+    "text": "Your children are not your children\nThey are sons and daughtetd of Life's\nlonging for itself.\nThey come through you but not from you,\nAnd though they are with you yet they\nbelong not to you.\nYou may give them your love but not\nyour thoughts,\nFor they have their own thoughts.\nYou may house their bodies but not their\nsouls,\nFor their souls dwell in the house of tomorrow,\nwhich you cannot visit, not even\nin your dreams.\nYou may strive to be like them, but seek\nnot to make them like you.\nFor life goes not backward nor tarries\nwith yesterday.",
+    "group": 47
    },
    {
     "type": "paragraph",
-    "text": "What penalty lay you upon him who slays in the flesh yet is himself slain in the spirit?\nAnd how prosecute you him who in action is a deceiver and an oppressor,\nYet who also is aggrieved and outraged?\n[...]\nOnly then shall you know that the erect and the fallen are but one man standing in twilight between the night of his pigmy-self and the day of his god-self..."
+    "text": "What penalty lay you upon him who slays in the flesh yet is himself slain in the spirit?\nAnd how prosecute you him who in action is a deceiver and an oppressor,\nYet who also is aggrieved and outraged?\n[...]\nOnly then shall you know that the erect and the fallen are but one man standing in twilight between the night of his pigmy-self and the day of his god-self...",
+    "group": 47
    },
    {
     "type": "paragraph",
-    "text": "People of Orphalese, you can muffle the deum, and you can loosen the strings of the lyre, but who shall command the skylark not to sing?"
+    "text": "People of Orphalese, you can muffle the deum, and you can loosen the strings of the lyre, but who shall command the skylark not to sing?",
+    "group": 47
    },
    {
     "type": "paragraph",
-    "text": "For you can only be free when even the desire of seeking freedom becomes a harness to you, and when you cease to speak of freedom as a goal and a fulfilment.\nYou shall be free indeed when your days are not without a care nor your nights without a want or grief,\nBut rather when these things girdle your life and yet you rise above them naked and unbound."
+    "text": "For you can only be free when even the desire of seeking freedom becomes a harness to you, and when you cease to speak of freedom as a goal and a fulfilment.\nYou shall be free indeed when your days are not without a care nor your nights without a want or grief,\nBut rather when these things girdle your life and yet you rise above them naked and unbound.",
+    "group": 47
    },
    {
     "type": "paragraph",
-    "text": "You too should rest in reason and move in passion."
+    "text": "You too should rest in reason and move in passion.",
+    "group": 47
    },
    {
     "type": "paragraph",
-    "text": "Your pain is the breaking of the shell that encloses your understanding.\n[...]\nMuch of your pain is self-chosen.\nIt is the bitter potion by which the physician within you heals your sick self.\nTherefore trust the physician, and drink his remedy in silence and tranquillity."
+    "text": "Your pain is the breaking of the shell that encloses your understanding.\n[...]\nMuch of your pain is self-chosen.\nIt is the bitter potion by which the physician within you heals your sick self.\nTherefore trust the physician, and drink his remedy in silence and tranquillity.",
+    "group": 47
    },
    {
     "type": "paragraph",
-    "text": "For what is your friend that you should seek him with hours to kill?\nSeek him always with hours to live."
+    "text": "For what is your friend that you should seek him with hours to kill?\nSeek him always with hours to live.",
+    "group": 47
    },
    {
     "type": "paragraph",
-    "text": "For what is evil but good tortured by its own hunger and thirst?"
+    "text": "For what is evil but good tortured by its own hunger and thirst?",
+    "group": 47
    },
    {
     "type": "paragraph",
-    "text": "For what is prayer but the expansion of yourself into the living ether?\n[...]\nWhen you pray you rise to meet in the air those who are praying at that very hour, and whom save in prayer you may not meet."
+    "text": "For what is prayer but the expansion of yourself into the living ether?\n[...]\nWhen you pray you rise to meet in the air those who are praying at that very hour, and whom save in prayer you may not meet.",
+    "group": 47
    },
    {
     "type": "paragraph",
-    "text": "Our God, who art our winged self."
+    "text": "Our God, who art our winged self.",
+    "group": 47
    },
    {
     "type": "paragraph",
-    "text": "Beauty is eternity gazing at itself in a mirror.\nBut you are eternity and you are the mirror."
+    "text": "Beauty is eternity gazing at itself in a mirror.\nBut you are eternity and you are the mirror.",
+    "group": 47
    },
    {
     "type": "paragraph",
-    "text": "Who can separate his faith from his actions, or his belief from his occupations?\nAll your hours are wings that beat through space from self to self.\nAnd he to whom worshipping is a window, to open but also to shut, has not yet visited the house of his soul whose windows are from dawn to dawn.\nYour daily life is your temple and your religion.\nWhenever you enter into it take with you your all."
+    "text": "Who can separate his faith from his actions, or his belief from his occupations?\nAll your hours are wings that beat through space from self to self.\nAnd he to whom worshipping is a window, to open but also to shut, has not yet visited the house of his soul whose windows are from dawn to dawn.\nYour daily life is your temple and your religion.\nWhenever you enter into it take with you your all.",
+    "group": 47
    },
    {
     "type": "paragraph",
-    "text": "For what is it to die but to stand naked in the wind and to melt in the sun?\nAnd what is it to cease breathing but to free the breath from its restless tides, that it may rise and expand and seek God unencumbered?\nOnly when you drink from the river of silence shall you indeed sing."
+    "text": "For what is it to die but to stand naked in the wind and to melt in the sun?\nAnd what is it to cease breathing but to free the breath from its restless tides, that it may rise and expand and seek God unencumbered?\nOnly when you drink from the river of silence shall you indeed sing.",
+    "group": 47
    },
    {
     "type": "paragraph",
-    "text": "We wanderers, ever seeking the lonelier way, begin no day where we have ended another day; and no sunrise finds us where sunset left us.\nEven while the earth sleeps we travel.\nWe are the seeds of the tenacious plant, and it is in our ripeness and our fullness of heart that we are given to the wind and are scattered."
+    "text": "We wanderers, ever seeking the lonelier way, begin no day where we have ended another day; and no sunrise finds us where sunset left us.\nEven while the earth sleeps we travel.\nWe are the seeds of the tenacious plant, and it is in our ripeness and our fullness of heart that we are given to the wind and are scattered.",
+    "group": 47
    },
    {
     "type": "paragraph",
-    "text": "Man's needs change, but not his love, nor his desire that his love should satisfy his needs.\nKnow, therefore, that from the greater silence I shall return."
+    "text": "Man's needs change, but not his love, nor his desire that his love should satisfy his needs.\nKnow, therefore, that from the greater silence I shall return.",
+    "group": 47
    },
    {
     "type": "paragraph",
-    "text": "And like the seasons you are also,\nAnd though in your winter you deny your spring,\nYet spring, reposing within you, smiles\nIn her drowdiness and is not offended."
+    "text": "And like the seasons you are also,\nAnd though in your winter you deny your spring,\nYet spring, reposing within you, smiles\nIn her drowdiness and is not offended.",
+    "group": 47
    },
    {
     "type": "paragraph",
-    "text": "It is life in quest of life in bodies that fear the grave."
+    "text": "It is life in quest of life in bodies that fear the grave.",
+    "group": 47
    },
    {
     "type": "paragraph",
-    "text": "But the hunter was also the hunted;\nFor many of my arrows left my bow only\nto seek my own breast."
+    "text": "But the hunter was also the hunted;\nFor many of my arrows left my bow only\nto seek my own breast.",
+    "group": 47
    },
    {
     "type": "paragraph",
-    "text": "I say,\nYou are not enclosed within your bodies,\nnor confined to houses or fields.\nThat which is you dwells above the\nmountain and roves with the wind."
+    "text": "I say,\nYou are not enclosed within your bodies,\nnor confined to houses or fields.\nThat which is you dwells above the\nmountain and roves with the wind.",
+    "group": 47
    }
   ]
  },
@@ -8158,19 +8539,23 @@ window.FN_QUOTE_BOOKS = [
   "blocks": [
    {
     "type": "paragraph",
-    "text": "Two roads diverged in a yellow wood,\nAnd sorry I could not travel both\nAnd be one traveler, long I stood\nAnd looked down one as far as I could\nTo where it bent in the undergrowth;"
+    "text": "Two roads diverged in a yellow wood,\nAnd sorry I could not travel both\nAnd be one traveler, long I stood\nAnd looked down one as far as I could\nTo where it bent in the undergrowth;",
+    "group": 49
    },
    {
     "type": "paragraph",
-    "text": "Then took the other, as just as fair,\nAnd having perhaps the better claim,\nBecause it was grassy and wanted wear;\nThough as for that the passing there\nHad worn them really about the same,"
+    "text": "Then took the other, as just as fair,\nAnd having perhaps the better claim,\nBecause it was grassy and wanted wear;\nThough as for that the passing there\nHad worn them really about the same,",
+    "group": 49
    },
    {
     "type": "paragraph",
-    "text": "And both that morning equally lay\nIn leaves no step had trodden black.\nOh, I kept the first for another day!\nYet knowing how way leads on to way,\nI doubted if I should ever come back."
+    "text": "And both that morning equally lay\nIn leaves no step had trodden black.\nOh, I kept the first for another day!\nYet knowing how way leads on to way,\nI doubted if I should ever come back.",
+    "group": 49
    },
    {
     "type": "paragraph",
-    "text": "I shall be telling this with a sigh\nSomewhere ages and ages hence:\nTwo roads diverged in a wood, and I—\nI took the one less traveled by,\nAnd that has made all the difference."
+    "text": "I shall be telling this with a sigh\nSomewhere ages and ages hence:\nTwo roads diverged in a wood, and I—\nI took the one less traveled by,\nAnd that has made all the difference.",
+    "group": 49
    }
   ]
  },
@@ -8220,51 +8605,63 @@ window.FN_QUOTE_BOOKS = [
   "blocks": [
    {
     "type": "paragraph",
-    "text": "They fuck you up, your mum and dad."
+    "text": "They fuck you up, your mum and dad.",
+    "group": 51
    },
    {
     "type": "paragraph",
-    "text": "    They may not mean to, but they do."
+    "text": "    They may not mean to, but they do.",
+    "group": 51
    },
    {
     "type": "paragraph",
-    "text": "They fill you with the faults they had"
+    "text": "They fill you with the faults they had",
+    "group": 51
    },
    {
     "type": "paragraph",
-    "text": "    And add some extra, just for you."
+    "text": "    And add some extra, just for you.",
+    "group": 51
    },
    {
     "type": "paragraph",
-    "text": "But they were fucked up in their turn"
+    "text": "But they were fucked up in their turn",
+    "group": 51
    },
    {
     "type": "paragraph",
-    "text": "    By fools in old-style hats and coats,"
+    "text": "    By fools in old-style hats and coats,",
+    "group": 51
    },
    {
     "type": "paragraph",
-    "text": "Who half the time were soppy-stern"
+    "text": "Who half the time were soppy-stern",
+    "group": 51
    },
    {
     "type": "paragraph",
-    "text": "    And half at one another’s throats."
+    "text": "    And half at one another’s throats.",
+    "group": 51
    },
    {
     "type": "paragraph",
-    "text": "Man hands on misery to man."
+    "text": "Man hands on misery to man.",
+    "group": 51
    },
    {
     "type": "paragraph",
-    "text": "    It deepens like a coastal shelf."
+    "text": "    It deepens like a coastal shelf.",
+    "group": 51
    },
    {
     "type": "paragraph",
-    "text": "Get out as early as you can,"
+    "text": "Get out as early as you can,",
+    "group": 51
    },
    {
     "type": "paragraph",
-    "text": "    And don’t have any kids yourself."
+    "text": "    And don’t have any kids yourself.",
+    "group": 51
    }
   ]
  },
@@ -8277,15 +8674,18 @@ window.FN_QUOTE_BOOKS = [
   "blocks": [
    {
     "type": "paragraph",
-    "text": "Wild Nights-Wild Nights!\nWere I with thee\nWild Nights should be\nOur luxury!"
+    "text": "Wild Nights-Wild Nights!\nWere I with thee\nWild Nights should be\nOur luxury!",
+    "group": 54
    },
    {
     "type": "paragraph",
-    "text": "Futile-the Winds-\nTo a Heart in port-\nDone with the Compass-\nDone with the Chart!"
+    "text": "Futile-the Winds-\nTo a Heart in port-\nDone with the Compass-\nDone with the Chart!",
+    "group": 54
    },
    {
     "type": "paragraph",
-    "text": "Rowing in Eden-\nAh, the Sea!\nMight I but moor-Tonight-\nIn Thee!"
+    "text": "Rowing in Eden-\nAh, the Sea!\nMight I but moor-Tonight-\nIn Thee!",
+    "group": 54
    }
   ]
  },
@@ -8298,11 +8698,13 @@ window.FN_QUOTE_BOOKS = [
   "blocks": [
    {
     "type": "paragraph",
-    "text": "Ho bisogno di quello che non c'è al mondo"
+    "text": "Ho bisogno di quello che non c'è al mondo",
+    "group": 17
    },
    {
     "type": "paragraph",
-    "text": "Attendevo il volo e l'esistenza\nMa uno sparviero morto è la mia anima"
+    "text": "Attendevo il volo e l'esistenza\nMa uno sparviero morto è la mia anima",
+    "group": 17
    }
   ]
  },
@@ -8315,23 +8717,28 @@ window.FN_QUOTE_BOOKS = [
   "blocks": [
    {
     "type": "paragraph",
-    "text": "Accingere, anime: bella non levia apparas"
+    "text": "Accingere, anime: bella non levia apparas",
+    "group": 2
    },
    {
     "type": "paragraph",
-    "text": "Mors misera non est commori cum quo velis"
+    "text": "Mors misera non est commori cum quo velis",
+    "group": 2
    },
    {
     "type": "paragraph",
-    "text": "Per me l'unico modo per non aver paura è morire"
+    "text": "Per me l'unico modo per non aver paura è morire",
+    "group": 2
    },
    {
     "type": "paragraph",
-    "text": "Feminas ferrum decet"
+    "text": "Feminas ferrum decet",
+    "group": 2
    },
    {
     "type": "paragraph",
-    "text": "Furibunda virgo"
+    "text": "Furibunda virgo",
+    "group": 2
    }
   ]
  },
@@ -8361,19 +8768,23 @@ window.FN_QUOTE_BOOKS = [
   "blocks": [
    {
     "type": "paragraph",
-    "text": "[...] We are such stuff\nAs dreams are made on, and our\nlittle life\nIs rounded with a sleep. [...]"
+    "text": "[...] We are such stuff\nAs dreams are made on, and our\nlittle life\nIs rounded with a sleep. [...]",
+    "group": 50
    },
    {
     "type": "paragraph",
-    "text": "Sebastian: Well, I am standing water.\nAntonio: I will teach you how to flow."
+    "text": "Sebastian: Well, I am standing water.\nAntonio: I will teach you how to flow.",
+    "group": 50
    },
    {
     "type": "paragraph",
-    "text": "'Hell is empty,\nAnd all the devils are here'."
+    "text": "'Hell is empty,\nAnd all the devils are here'.",
+    "group": 50
    },
    {
     "type": "paragraph",
-    "text": "[...] The rarer action is\nIn virtue than in vengeance [...]."
+    "text": "[...] The rarer action is\nIn virtue than in vengeance [...].",
+    "group": 50
    }
   ]
  },
@@ -8386,15 +8797,18 @@ window.FN_QUOTE_BOOKS = [
   "blocks": [
    {
     "type": "paragraph",
-    "text": "Le stelle del cielo si abbatterono sopra la terra, come un albero di fichi, sbattuto dalla bufera, lascia cadere i frutti non ancora maturi."
+    "text": "Le stelle del cielo si abbatterono sopra la terra, come un albero di fichi, sbattuto dalla bufera, lascia cadere i frutti non ancora maturi.",
+    "group": 5
    },
    {
     "type": "paragraph",
-    "text": "In quei giorni gli uomini cercheranno la morte, ma non la troveranno; brameranno morire, ma la morte fuggirà da loro."
+    "text": "In quei giorni gli uomini cercheranno la morte, ma non la troveranno; brameranno morire, ma la morte fuggirà da loro.",
+    "group": 5
    },
    {
     "type": "paragraph",
-    "text": "E vidi quella donna, ubriaca del sangue dei santi e del sangue dei martiri di Gesù."
+    "text": "E vidi quella donna, ubriaca del sangue dei santi e del sangue dei martiri di Gesù.",
+    "group": 5
    }
   ]
  },
@@ -8585,11 +8999,13 @@ window.FN_QUOTE_BOOKS = [
   "blocks": [
    {
     "type": "paragraph",
-    "text": "Power is poor in resources, sparing of its methods, monotonous in the tactics it utilizes, incapable of invention, and seemingly doomed always to repeat itself."
+    "text": "Power is poor in resources, sparing of its methods, monotonous in the tactics it utilizes, incapable of invention, and seemingly doomed always to repeat itself.",
+    "group": 27
    },
    {
     "type": "paragraph",
-    "text": "This is the paradox of its effectiveness: it is incapable of doing anything, except to render what it dominates incapable of doing anything either, except for what this power allows it to do."
+    "text": "This is the paradox of its effectiveness: it is incapable of doing anything, except to render what it dominates incapable of doing anything either, except for what this power allows it to do.",
+    "group": 27
    }
   ]
  },
@@ -8662,35 +9078,43 @@ window.FN_QUOTE_BOOKS = [
    },
    {
     "type": "paragraph",
-    "text": "Pesantezza. In genere quel che ci si aspetta dagli altri è determinato dagli effetti della pesantezza in noi; quel che noi riceviamo da loro è dterminato dagli effetti della pesantezza in essi. Qualche volta (per caso) questi due fatti coincidono; spesso no."
+    "text": "Pesantezza. In genere quel che ci si aspetta dagli altri è determinato dagli effetti della pesantezza in noi; quel che noi riceviamo da loro è dterminato dagli effetti della pesantezza in essi. Qualche volta (per caso) questi due fatti coincidono; spesso no.",
+    "group": 22
    },
    {
     "type": "paragraph",
-    "text": "Bisogna fare una data cosa. Ma dove trovare l'energia necessaria? Un'azione virtuosa può disperdersi, se al medesimo livello non c'è energia disponibile."
+    "text": "Bisogna fare una data cosa. Ma dove trovare l'energia necessaria? Un'azione virtuosa può disperdersi, se al medesimo livello non c'è energia disponibile.",
+    "group": 22
    },
    {
     "type": "paragraph",
-    "text": "Chiunque soffra cerca di comunicare la sua sofferenza - sia maltrattando, sia provocando la pietà - per diminuirla; e, così facendo, la diminuisce veramente."
+    "text": "Chiunque soffra cerca di comunicare la sua sofferenza - sia maltrattando, sia provocando la pietà - per diminuirla; e, così facendo, la diminuisce veramente.",
+    "group": 22
    },
    {
     "type": "paragraph",
-    "text": "Desiderio di vedere altri soffrire quel che stiamo soffrendo, esattamente. Per questo, eccetto i periodi di instabilità sociale, i rancori dei miseri hanno di mira i loro simili. È questo un fattore di stabilità sociale."
+    "text": "Desiderio di vedere altri soffrire quel che stiamo soffrendo, esattamente. Per questo, eccetto i periodi di instabilità sociale, i rancori dei miseri hanno di mira i loro simili. È questo un fattore di stabilità sociale.",
+    "group": 22
    },
    {
     "type": "paragraph",
-    "text": "Non esercitare tutto il potere di cui si dispone vuol dire sopportare il vuoto."
+    "text": "Non esercitare tutto il potere di cui si dispone vuol dire sopportare il vuoto.",
+    "group": 22
    },
    {
     "type": "paragraph",
-    "text": "Accettare il passato, senza chiedere compenso all'avvenire."
+    "text": "Accettare il passato, senza chiedere compenso all'avvenire.",
+    "group": 22
    },
    {
     "type": "paragraph",
-    "text": "Desiderare a vuoto."
+    "text": "Desiderare a vuoto.",
+    "group": 22
    },
    {
     "type": "paragraph",
-    "text": "Amare Dio attraverso la distruzione di Troia e di Cartagine. L'amore non è consolazione, è luce."
+    "text": "Amare Dio attraverso la distruzione di Troia e di Cartagine. L'amore non è consolazione, è luce.",
+    "group": 22
    },
    {
     "type": "paragraph",
@@ -8707,31 +9131,38 @@ window.FN_QUOTE_BOOKS = [
   "blocks": [
    {
     "type": "paragraph",
-    "text": "The more we imitate, the more we become the same - and it is our sameness, not our differences, that makes us fight."
+    "text": "The more we imitate, the more we become the same - and it is our sameness, not our differences, that makes us fight.",
+    "group": 4
    },
    {
     "type": "paragraph",
-    "text": "We are persecutors who see ourselves as victims."
+    "text": "We are persecutors who see ourselves as victims.",
+    "group": 4
    },
    {
     "type": "paragraph",
-    "text": "Our impossible plight: the mechanism of scapegoat violence - whether on the level of the individual, or society, or epoch - is rooted in the very imitation that teaches us to love and learn, in fact, the very tissue that connects us with the rest of humanity.The mystery of imitation is what threatens our survival and enables it."
+    "text": "Our impossible plight: the mechanism of scapegoat violence - whether on the level of the individual, or society, or epoch - is rooted in the very imitation that teaches us to love and learn, in fact, the very tissue that connects us with the rest of humanity.The mystery of imitation is what threatens our survival and enables it.",
+    "group": 4
    },
    {
     "type": "paragraph",
-    "text": "How do we use our will to love the 'unlovable' other? What would happen if we truly believed 'each of us is guilty before all for everyone and everything'."
+    "text": "How do we use our will to love the 'unlovable' other? What would happen if we truly believed 'each of us is guilty before all for everyone and everything'.",
+    "group": 4
    },
    {
     "type": "paragraph",
-    "text": "Some systems are better than others, no doubt, but, except for universal death, we have yet to discover the one that will prevent the human genius for discord from reasserting itself. In my opinion, this genius is rooted in a form of alienation much more comprehen- sive and universal than anything discovered by Marx, Freud, et al."
+    "text": "Some systems are better than others, no doubt, but, except for universal death, we have yet to discover the one that will prevent the human genius for discord from reasserting itself. In my opinion, this genius is rooted in a form of alienation much more comprehen- sive and universal than anything discovered by Marx, Freud, et al.",
+    "group": 4
    },
    {
     "type": "paragraph",
-    "text": "Even the most passionate among us never feel they truly are the persons they want to be. To them, the most wonderful being, the only semi-god, is always someone else whom they emulate and from whom they borrow their desires, thus ensuring for themselves lives of perpetual strife and rivalry with those they simultaneously hate and admire."
+    "text": "Even the most passionate among us never feel they truly are the persons they want to be. To them, the most wonderful being, the only semi-god, is always someone else whom they emulate and from whom they borrow their desires, thus ensuring for themselves lives of perpetual strife and rivalry with those they simultaneously hate and admire.",
+    "group": 4
    },
    {
     "type": "paragraph",
-    "text": "All desire is a desire for being"
+    "text": "All desire is a desire for being",
+    "group": 4
    }
   ]
  },
@@ -8744,23 +9175,28 @@ window.FN_QUOTE_BOOKS = [
   "blocks": [
    {
     "type": "paragraph",
-    "text": "The fruitful wastes of the desert"
+    "text": "The fruitful wastes of the desert",
+    "group": 40
    },
    {
     "type": "paragraph",
-    "text": "As a youth I had prayed to you for chastity and said 'give me chastity and continence, but not yet'."
+    "text": "As a youth I had prayed to you for chastity and said 'give me chastity and continence, but not yet'.",
+    "group": 40
    },
    {
     "type": "paragraph",
-    "text": "I was dying a death that would bring me life."
+    "text": "I was dying a death that would bring me life.",
+    "group": 40
    },
    {
     "type": "paragraph",
-    "text": "For it occured to me that tears were best shed in solitude."
+    "text": "For it occured to me that tears were best shed in solitude.",
+    "group": 40
    },
    {
     "type": "paragraph",
-    "text": "Sin offers death for wages."
+    "text": "Sin offers death for wages.",
+    "group": 40
    }
   ]
  },
@@ -8777,15 +9213,18 @@ window.FN_QUOTE_BOOKS = [
    },
    {
     "type": "paragraph",
-    "text": "Each generation doubtless feels called upon to reform the world. Mine knows that it will not reform it, but its task is perhaps even greater. It consists in preventing the world from destroying itself. Heir to a corrupt history, in which are mingled fallen revolutions, technology gone mad, dead gods, and worn-out ideologies, where mediocre powers can destroy all yet no longer know how to convince, where intelligence has debased itself to become the servant of hatred and oppression, this generation starting from its own negations has had to re-establish, both within and without, a little of that which constitutes the dignity of life and death."
+    "text": "Each generation doubtless feels called upon to reform the world. Mine knows that it will not reform it, but its task is perhaps even greater. It consists in preventing the world from destroying itself. Heir to a corrupt history, in which are mingled fallen revolutions, technology gone mad, dead gods, and worn-out ideologies, where mediocre powers can destroy all yet no longer know how to convince, where intelligence has debased itself to become the servant of hatred and oppression, this generation starting from its own negations has had to re-establish, both within and without, a little of that which constitutes the dignity of life and death.",
+    "group": 9
    },
    {
     "type": "paragraph",
-    "text": "The artist forges himself to the others, midway between the beauty he cannot do without and the community he cannot tear himself away from. That is why true artists scorn nothing: they are obliged to understand rather than to judge. And if they have to take sides in this world, they can perhaps side only with that society in which, according to Nietzsche’s great words, not the judge but the creator will rule, whether he be a worker or an intellectual."
+    "text": "The artist forges himself to the others, midway between the beauty he cannot do without and the community he cannot tear himself away from. That is why true artists scorn nothing: they are obliged to understand rather than to judge. And if they have to take sides in this world, they can perhaps side only with that society in which, according to Nietzsche’s great words, not the judge but the creator will rule, whether he be a worker or an intellectual.",
+    "group": 9
    },
    {
     "type": "paragraph",
-    "text": "Camus's Nobel speech"
+    "text": "Camus's Nobel speech",
+    "group": 9
    }
   ]
  },
@@ -8798,15 +9237,18 @@ window.FN_QUOTE_BOOKS = [
   "blocks": [
    {
     "type": "paragraph",
-    "text": "Infatti mi ero convinta che l'arte dovesse essere disturbante, do- vesse porre domande, dovesse predire il futuro. Ma se l'arte non è che politica, diventa come un giornale. Può essere usata una volta, e il giorno dopo è come una notizia ormai priva di attualità."
+    "text": "Infatti mi ero convinta che l'arte dovesse essere disturbante, do- vesse porre domande, dovesse predire il futuro. Ma se l'arte non è che politica, diventa come un giornale. Può essere usata una volta, e il giorno dopo è come una notizia ormai priva di attualità.",
+    "group": 6
    },
    {
     "type": "paragraph",
-    "text": "In questi lavori basati sulla reiterazione non ci sono elementi di sorpresa per il corpo, e così il cervello se ne va altrove. In quel momento accedi a uno stato di armonia con tutto ciò che ti circonda: è allora che ti raggiunge quella che chiamo la \"conoscenza liquida\". Penso che la conoscenza universale sia ovunque attorno a noi. La questione è solo come poter arrivare a questo tipo di conoscenza."
+    "text": "In questi lavori basati sulla reiterazione non ci sono elementi di sorpresa per il corpo, e così il cervello se ne va altrove. In quel momento accedi a uno stato di armonia con tutto ciò che ti circonda: è allora che ti raggiunge quella che chiamo la \"conoscenza liquida\". Penso che la conoscenza universale sia ovunque attorno a noi. La questione è solo come poter arrivare a questo tipo di conoscenza.",
+    "group": 6
    },
    {
     "type": "paragraph",
-    "text": "Voglio capire e vedere chiaramente che cosa c'è dietro tutto questo. Voglio smettere di volere."
+    "text": "Voglio capire e vedere chiaramente che cosa c'è dietro tutto questo. Voglio smettere di volere.",
+    "group": 6
    },
    {
     "type": "paragraph",
@@ -8839,87 +9281,108 @@ window.FN_QUOTE_BOOKS = [
   "blocks": [
    {
     "type": "paragraph",
-    "text": "[L'odio] uccide tutto fuorchè se stesso."
+    "text": "[L'odio] uccide tutto fuorchè se stesso.",
+    "group": 13
    },
    {
     "type": "paragraph",
-    "text": "Avrei potuto squarciarti con le mie maledizioni."
+    "text": "Avrei potuto squarciarti con le mie maledizioni.",
+    "group": 13
    },
    {
     "type": "paragraph",
-    "text": "Ma l'Amore non fa baratti da mercato, nè usa la bilancia del merdaiolo. La sua gioia, come la gioia dell'intelletto, è di sentirsi vivo. Il fine dell'Amore è amare, nè di più e niente di meno."
+    "text": "Ma l'Amore non fa baratti da mercato, nè usa la bilancia del merdaiolo. La sua gioia, come la gioia dell'intelletto, è di sentirsi vivo. Il fine dell'Amore è amare, nè di più e niente di meno.",
+    "group": 13
    },
    {
     "type": "paragraph",
-    "text": "La sofferenza è un solo lunghissimo momento."
+    "text": "La sofferenza è un solo lunghissimo momento.",
+    "group": 13
    },
    {
     "type": "paragraph",
-    "text": "In un intero universo di pensiero e movimento, nulla si muove senza che il Dolore vibri in corrispondenza con palpito terribile benchè squisito."
+    "text": "In un intero universo di pensiero e movimento, nulla si muove senza che il Dolore vibri in corrispondenza con palpito terribile benchè squisito.",
+    "group": 13
    },
    {
     "type": "paragraph",
-    "text": "Dov'è il Dolore, là il suolo è sacro."
+    "text": "Dov'è il Dolore, là il suolo è sacro.",
+    "group": 13
    },
    {
     "type": "paragraph",
-    "text": "Esiste una forma di tatto in amore, e una forma di tatto in letteratura; tu non sei stato sensibile nè all'una nè all'altra."
+    "text": "Esiste una forma di tatto in amore, e una forma di tatto in letteratura; tu non sei stato sensibile nè all'una nè all'altra.",
+    "group": 13
    },
    {
     "type": "paragraph",
-    "text": "Cristo è il supremo individualista. L'umiltà, come l'accettazione di ogni esperienza da parte dell'artista, non è che una forma del suo manifestarsi."
+    "text": "Cristo è il supremo individualista. L'umiltà, come l'accettazione di ogni esperienza da parte dell'artista, non è che una forma del suo manifestarsi.",
+    "group": 13
    },
    {
     "type": "paragraph",
-    "text": "Quel momento fu la mia salvezza. Vidi allora che la sola cosa da fare era accettare ogni cosa."
+    "text": "Quel momento fu la mia salvezza. Vidi allora che la sola cosa da fare era accettare ogni cosa.",
+    "group": 13
    },
    {
     "type": "paragraph",
-    "text": "Chi meglio di lui poteva sapere che è la vocazione, non la volizione, che ci determina e che non si può cogliere uva dai rovi, nè fichi dai cardi?"
+    "text": "Chi meglio di lui poteva sapere che è la vocazione, non la volizione, che ci determina e che non si può cogliere uva dai rovi, nè fichi dai cardi?",
+    "group": 13
    },
    {
     "type": "paragraph",
-    "text": "Quando egli dice 'perdonate ai vostro nemici' non lo dice per i nemici, ma per la salvezza dell'anima nostra: e perchè l'Amore è più bello dell'Odio."
+    "text": "Quando egli dice 'perdonate ai vostro nemici' non lo dice per i nemici, ma per la salvezza dell'anima nostra: e perchè l'Amore è più bello dell'Odio.",
+    "group": 13
    },
    {
     "type": "paragraph",
-    "text": "Un'idea non ha valore finchè non s'incarna e non si fa immagine."
+    "text": "Un'idea non ha valore finchè non s'incarna e non si fa immagine.",
+    "group": 13
    },
    {
     "type": "paragraph",
-    "text": "Circa sei settimane fa il medico mi diede il permesso di mangiare pane bianco invece del rozzo pane nero o bigio che passa il carcere. È una gran leccornia. Può sembrar strano che del pane secco possa apparirmi una leccornia. Per me lo è, al punto che alla fine di ogni pasto mangio con cura tutte le briciole che restano sul mio piatto di stagno, o che sono cadute sul rozzo strofinaccio che adopero come tovaglia per non insudiciare il tavolo; e faccio questo non per fame - ho cibo a sufficienza - ma semplicemente perché niente di ciò che mi danno vada sprecato. Allo stesso modo andrebbe considerato l'amore."
+    "text": "Circa sei settimane fa il medico mi diede il permesso di mangiare pane bianco invece del rozzo pane nero o bigio che passa il carcere. È una gran leccornia. Può sembrar strano che del pane secco possa apparirmi una leccornia. Per me lo è, al punto che alla fine di ogni pasto mangio con cura tutte le briciole che restano sul mio piatto di stagno, o che sono cadute sul rozzo strofinaccio che adopero come tovaglia per non insudiciare il tavolo; e faccio questo non per fame - ho cibo a sufficienza - ma semplicemente perché niente di ciò che mi danno vada sprecato. Allo stesso modo andrebbe considerato l'amore.",
+    "group": 13
    },
    {
     "type": "paragraph",
-    "text": "Chi vuole una maschera è costretto a portarla."
+    "text": "Chi vuole una maschera è costretto a portarla.",
+    "group": 13
    },
    {
     "type": "paragraph",
-    "text": "Per cui, mentre durante il primo anno di prigionia non facevo altro né ricordo d'aver fatto altro- che torcermi le mani, impotente e disperato, dicendo: \"Che fine! che fine spaventosa!,\" ora tento di dirmi -ea volte, quando non mi sto torturando, ar- rivo a dirmelo sinceramente -: \"Quale principio! quale meraviglioso principio!\" Può esserlo realmente. Può diventarlo."
+    "text": "Per cui, mentre durante il primo anno di prigionia non facevo altro né ricordo d'aver fatto altro- che torcermi le mani, impotente e disperato, dicendo: \"Che fine! che fine spaventosa!,\" ora tento di dirmi -ea volte, quando non mi sto torturando, ar- rivo a dirmelo sinceramente -: \"Quale principio! quale meraviglioso principio!\" Può esserlo realmente. Può diventarlo.",
+    "group": 13
    },
    {
     "type": "paragraph",
-    "text": "Se quando uscirò di qui un amico darà una festa e non mi inviterà, non vi troverò a ridire. Posso essere perfettamente felice solo con me stesso. Chi non sa- rebbe felice trovandosi libero, con dei libri, dei fiori, e la luna? D'altra parte, le feste non sono più cose per me. Ne ho date troppe per averne ancora voglia."
+    "text": "Se quando uscirò di qui un amico darà una festa e non mi inviterà, non vi troverò a ridire. Posso essere perfettamente felice solo con me stesso. Chi non sa- rebbe felice trovandosi libero, con dei libri, dei fiori, e la luna? D'altra parte, le feste non sono più cose per me. Ne ho date troppe per averne ancora voglia.",
+    "group": 13
    },
    {
     "type": "paragraph",
-    "text": "Ho diritto alla mia parte di Dolore: e chi guarda alla bellezza del mondo e ne condivide il dolore e comprende la bellezza di entrambi."
+    "text": "Ho diritto alla mia parte di Dolore: e chi guarda alla bellezza del mondo e ne condivide il dolore e comprende la bellezza di entrambi.",
+    "group": 13
    },
    {
     "type": "paragraph",
-    "text": "Perchè un sentimentale non è altri se non colui che desidera il lusso d'un'emozione senza pagare per averla."
+    "text": "Perchè un sentimentale non è altri se non colui che desidera il lusso d'un'emozione senza pagare per averla.",
+    "group": 13
    },
    {
     "type": "paragraph",
-    "text": "Anche le emozioni più nobili ed altruistiche hanno un prezzo. Stranamente, anzi, è proprio questo che le nobilita. La vita in- tellettuale ed emotiva delle persone co- muni è una cosa assolutamente sprege- vole. Esse prendono in prestito le loro idee da una specie di biblioteca circo- lante del pensiero lo Zeitgeist di una generazione senz'anima e le restitui- scono insudiciate alla fine della settimana; e allo stesso modo cercano di avere a credito le loro emozioni, e quando arriva il conto, si rifiutano di pa- garlo. Dovresti aver superato questo concetto della vita. Quando dovrai pagare per un'emozione, allora saprai ciò ch'essa vale."
+    "text": "Anche le emozioni più nobili ed altruistiche hanno un prezzo. Stranamente, anzi, è proprio questo che le nobilita. La vita in- tellettuale ed emotiva delle persone co- muni è una cosa assolutamente sprege- vole. Esse prendono in prestito le loro idee da una specie di biblioteca circo- lante del pensiero lo Zeitgeist di una generazione senz'anima e le restitui- scono insudiciate alla fine della settimana; e allo stesso modo cercano di avere a credito le loro emozioni, e quando arriva il conto, si rifiutano di pa- garlo. Dovresti aver superato questo concetto della vita. Quando dovrai pagare per un'emozione, allora saprai ciò ch'essa vale.",
+    "group": 13
    },
    {
     "type": "paragraph",
-    "text": "La parola ha bisogno di essere accordata come un violino: troppe vibrazioni, o troppe poche, nella voce del cantante, o il tremolare della corda, possono falsare la nota."
+    "text": "La parola ha bisogno di essere accordata come un violino: troppe vibrazioni, o troppe poche, nella voce del cantante, o il tremolare della corda, possono falsare la nota.",
+    "group": 13
    },
    {
     "type": "paragraph",
-    "text": "Ma la Natura, le cui dolci piogge bagnano indistintamente il giusto come il pecca- tore, avrà anfratti nelle rocce entro cui potrò nascondermi, e valli segrete nel cui silenzio potrò piangere indisturbato. Essa appenderà stelle alla volta del cielo perché io possa camminare nelle tenebre senza inciampare; e farà soffiare il vento perché cancelli le mie impronte e io non venga inseguito e braccato a morte. Essa mi laverà con i suoi grandi fiumi, e le sue erbe amare mi guariranno."
+    "text": "Ma la Natura, le cui dolci piogge bagnano indistintamente il giusto come il pecca- tore, avrà anfratti nelle rocce entro cui potrò nascondermi, e valli segrete nel cui silenzio potrò piangere indisturbato. Essa appenderà stelle alla volta del cielo perché io possa camminare nelle tenebre senza inciampare; e farà soffiare il vento perché cancelli le mie impronte e io non venga inseguito e braccato a morte. Essa mi laverà con i suoi grandi fiumi, e le sue erbe amare mi guariranno.",
+    "group": 13
    },
    {
     "type": "paragraph",
@@ -9256,35 +9719,43 @@ window.FN_QUOTE_BOOKS = [
   "blocks": [
    {
     "type": "paragraph",
-    "text": "A ring around the finger does not cause a nerve block to the genitals."
+    "text": "A ring around the finger does not cause a nerve block to the genitals.",
+    "group": 44
    },
    {
     "type": "paragraph",
-    "text": "Learning new things takes time, so give yourself plenty. It can be useful to get clear with what you are working on learning right now - like how to feel safe and sexy and special when your partner is out on a date - and promise yourself you will learn the next thing, well, next."
+    "text": "Learning new things takes time, so give yourself plenty. It can be useful to get clear with what you are working on learning right now - like how to feel safe and sexy and special when your partner is out on a date - and promise yourself you will learn the next thing, well, next.",
+    "group": 44
    },
    {
     "type": "paragraph",
-    "text": "Great sluts are made, not born."
+    "text": "Great sluts are made, not born.",
+    "group": 44
    },
    {
     "type": "paragraph",
-    "text": "No one \"makes\" you feel jealous or insecure - the person who makes you feel you that way is you."
+    "text": "No one \"makes\" you feel jealous or insecure - the person who makes you feel you that way is you.",
+    "group": 44
    },
    {
     "type": "paragraph",
-    "text": "The problem is that when you blame someone else for how you feel, you disempower yourself."
+    "text": "The problem is that when you blame someone else for how you feel, you disempower yourself.",
+    "group": 44
    },
    {
     "type": "paragraph",
-    "text": "Everybody feels bad sometimes, so you are in excellent company."
+    "text": "Everybody feels bad sometimes, so you are in excellent company.",
+    "group": 44
    },
    {
     "type": "paragraph",
-    "text": "I ask for whatever I want and say no to whatever I don't."
+    "text": "I ask for whatever I want and say no to whatever I don't.",
+    "group": 44
    },
    {
     "type": "paragraph",
-    "text": "Remember, the most important sexual organ is always found between the ears."
+    "text": "Remember, the most important sexual organ is always found between the ears.",
+    "group": 44
    },
    {
     "type": "paragraph",
@@ -9529,19 +10000,23 @@ window.FN_QUOTE_BOOKS = [
   "blocks": [
    {
     "type": "paragraph",
-    "text": "La polvere è la carne del tempo"
+    "text": "La polvere è la carne del tempo",
+    "group": 15
    },
    {
     "type": "paragraph",
-    "text": "Il senso estetico è gemello dell'istinto di conservazione ed è più atrendibile dell'etica."
+    "text": "Il senso estetico è gemello dell'istinto di conservazione ed è più atrendibile dell'etica.",
+    "group": 15
    },
    {
     "type": "paragraph",
-    "text": "Posto che la bellezza sia una particolare distribuzione della luce, quella più congeniale alla retina, una lacrima è il modo con cui la retina - come la lacrima stessa - ammette la propria incapacità di trattenere la bellezza."
+    "text": "Posto che la bellezza sia una particolare distribuzione della luce, quella più congeniale alla retina, una lacrima è il modo con cui la retina - come la lacrima stessa - ammette la propria incapacità di trattenere la bellezza.",
+    "group": 15
    },
    {
     "type": "paragraph",
-    "text": "L'arte moderna, [...] è profetica solo in quanto è povera."
+    "text": "L'arte moderna, [...] è profetica solo in quanto è povera.",
+    "group": 15
    }
   ]
  },
@@ -10316,43 +10791,53 @@ window.FN_QUOTE_BOOKS = [
   "blocks": [
    {
     "type": "paragraph",
-    "text": "Money is social credit. It's how society values you and thanks you in exchange for the work you've done for it."
+    "text": "Money is social credit. It's how society values you and thanks you in exchange for the work you've done for it.",
+    "group": 28
    },
    {
     "type": "paragraph",
-    "text": "Status games are necessary evils. People play them to figure out who's in charge. Status is a better predictor of survival than wealth is. Hunters and gatherers lived under status based societies. Farmers started going under wealth based societies."
+    "text": "Status games are necessary evils. People play them to figure out who's in charge. Status is a better predictor of survival than wealth is. Hunters and gatherers lived under status based societies. Farmers started going under wealth based societies.",
+    "group": 28
    },
    {
     "type": "paragraph",
-    "text": "To win status games you need to put other people down."
+    "text": "To win status games you need to put other people down.",
+    "group": 28
    },
    {
     "type": "paragraph",
-    "text": "Play stupid games, win stupid prizes."
+    "text": "Play stupid games, win stupid prizes.",
+    "group": 28
    },
    {
     "type": "paragraph",
-    "text": "Escape competition through autenticity."
+    "text": "Escape competition through autenticity.",
+    "group": 28
    },
    {
     "type": "paragraph",
-    "text": "The masses are never right. You wanna specialize in being you."
+    "text": "The masses are never right. You wanna specialize in being you.",
+    "group": 28
    },
    {
     "type": "paragraph",
-    "text": "The best founders I know listen to everyone, but then ignore everybody."
+    "text": "The best founders I know listen to everyone, but then ignore everybody.",
+    "group": 28
    },
    {
     "type": "paragraph",
-    "text": "Making money should be a function of your identity."
+    "text": "Making money should be a function of your identity.",
+    "group": 28
    },
    {
     "type": "paragraph",
-    "text": "The most interesting parts [of the podcast] are the ones you disagree with, because that's where you can improve your thinking."
+    "text": "The most interesting parts [of the podcast] are the ones you disagree with, because that's where you can improve your thinking.",
+    "group": 28
    },
    {
     "type": "paragraph",
-    "text": "If you think and act like the owner, it's only a better of time until you'll become the owner."
+    "text": "If you think and act like the owner, it's only a better of time until you'll become the owner.",
+    "group": 28
    }
   ]
  },
@@ -10365,23 +10850,28 @@ window.FN_QUOTE_BOOKS = [
   "blocks": [
    {
     "type": "paragraph",
-    "text": "The Holocaust was not a morality play, except perhaps for its perpetrators."
+    "text": "The Holocaust was not a morality play, except perhaps for its perpetrators.",
+    "group": 36
    },
    {
     "type": "paragraph",
-    "text": "We can't change the past, but we can change its meaning. Doing so is an act of creativity, but it is foremost an act of bravery and love."
+    "text": "We can't change the past, but we can change its meaning. Doing so is an act of creativity, but it is foremost an act of bravery and love.",
+    "group": 36
    },
    {
     "type": "paragraph",
-    "text": "One appeal to conspiracy theories is thay they absolve their believers of accountability, replacing the difficult obligation to build relationships with the easy urge to destroy."
+    "text": "One appeal to conspiracy theories is thay they absolve their believers of accountability, replacing the difficult obligation to build relationships with the easy urge to destroy.",
+    "group": 36
    },
    {
     "type": "paragraph",
-    "text": "The freedoms that we cherish are meaningless without our commitments to one another."
+    "text": "The freedoms that we cherish are meaningless without our commitments to one another.",
+    "group": 36
    },
    {
     "type": "paragraph",
-    "text": "Marriage is not a happy ending but an imperfect beginning."
+    "text": "Marriage is not a happy ending but an imperfect beginning.",
+    "group": 36
    },
    {
     "type": "paragraph",
@@ -10591,11 +11081,13 @@ window.FN_QUOTE_BOOKS = [
   "blocks": [
    {
     "type": "paragraph",
-    "text": "We're all unlucky in love sometimes. When I am, I go jogging. The body loses water when you jog... so you have none left for tears."
+    "text": "We're all unlucky in love sometimes. When I am, I go jogging. The body loses water when you jog... so you have none left for tears.",
+    "group": 11
    },
    {
     "type": "paragraph",
-    "text": "Knowing someone doesn't mean keeping them. People change. A person may like pineapple today... and something different tomorrow."
+    "text": "Knowing someone doesn't mean keeping them. People change. A person may like pineapple today... and something different tomorrow.",
+    "group": 11
    }
   ]
  },
@@ -10699,43 +11191,53 @@ window.FN_QUOTE_BOOKS = [
   "blocks": [
    {
     "type": "paragraph",
-    "text": "Stai finalmente vivendo la tua vita. Il mondo è qui per farsi prendere per le palle da te"
+    "text": "Stai finalmente vivendo la tua vita. Il mondo è qui per farsi prendere per le palle da te",
+    "group": 1
    },
    {
     "type": "paragraph",
-    "text": "La tua vera essenza è quella di una bad bitch che non si fa mettere sotto da nessuno"
+    "text": "La tua vera essenza è quella di una bad bitch che non si fa mettere sotto da nessuno",
+    "group": 1
    },
    {
     "type": "paragraph",
-    "text": "Io per te ci sarò SEMPRE, in qualsiasi momento, anche durante un appuntamento col primo ragazzo decente della mia vita"
+    "text": "Io per te ci sarò SEMPRE, in qualsiasi momento, anche durante un appuntamento col primo ragazzo decente della mia vita",
+    "group": 1
    },
    {
     "type": "paragraph",
-    "text": "Sei una cazzo di stella che brilla di luce propria, non hai bisogno di niente e nessuno per risplendere (tranne me <3)"
+    "text": "Sei una cazzo di stella che brilla di luce propria, non hai bisogno di niente e nessuno per risplendere (tranne me <3)",
+    "group": 1
    },
    {
     "type": "paragraph",
-    "text": "Fai fiorire la tua arte. Non importa se fa freddo, piove, sei stufa di vedere facce coi denti gialli. La tua arte è là fuori, devi solo afferrarla"
+    "text": "Fai fiorire la tua arte. Non importa se fa freddo, piove, sei stufa di vedere facce coi denti gialli. La tua arte è là fuori, devi solo afferrarla",
+    "group": 1
    },
    {
     "type": "paragraph",
-    "text": "Tu ami i bambini. Sono bellissimi. Lavorare con loro è il tuo sogno da sempre :)"
+    "text": "Tu ami i bambini. Sono bellissimi. Lavorare con loro è il tuo sogno da sempre :)",
+    "group": 1
    },
    {
     "type": "paragraph",
-    "text": "Lunga vita alla regina per quel che le resta, tanto tra un po' tutto il mondo sarà governato da delle diarche (noi)"
+    "text": "Lunga vita alla regina per quel che le resta, tanto tra un po' tutto il mondo sarà governato da delle diarche (noi)",
+    "group": 1
    },
    {
     "type": "paragraph",
-    "text": "Esci! Respira! Ispirati! Sei parte dei movimenti del mondo e tutto l'universo batte all'unisono col tuo cuore"
+    "text": "Esci! Respira! Ispirati! Sei parte dei movimenti del mondo e tutto l'universo batte all'unisono col tuo cuore",
+    "group": 1
    },
    {
     "type": "paragraph",
-    "text": "Pensa a Will Herondale. Alla fine è l'unica soluzione nei momenti di sconforto."
+    "text": "Pensa a Will Herondale. Alla fine è l'unica soluzione nei momenti di sconforto.",
+    "group": 1
    },
    {
     "type": "paragraph",
-    "text": "Ti voglio bene"
+    "text": "Ti voglio bene",
+    "group": 1
    },
    {
     "type": "paragraph",
@@ -10743,11 +11245,13 @@ window.FN_QUOTE_BOOKS = [
    },
    {
     "type": "paragraph",
-    "text": "Alla persona che mi ricorda che la vita è scontare i propri cento anni di solitudine, ma che allo stesso tempo, esistendo, non mi lascia mai sola.\nBuon compleanno,\nLucia"
+    "text": "Alla persona che mi ricorda che la vita è scontare i propri cento anni di solitudine, ma che allo stesso tempo, esistendo, non mi lascia mai sola.\nBuon compleanno,\nLucia",
+    "group": 33
    },
    {
     "type": "paragraph",
-    "text": "10 settembre 2022"
+    "text": "10 settembre 2022",
+    "group": 33
    }
   ]
  },
@@ -10760,1187 +11264,1483 @@ window.FN_QUOTE_BOOKS = [
   "blocks": [
    {
     "type": "paragraph",
-    "text": "2023\nJan 26\n'Feeling loved is not enough to make you happy'\nBenjamin (about Henry V)"
+    "text": "2023\nJan 26\n'Feeling loved is not enough to make you happy'\nBenjamin (about Henry V)",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "'I know I am a weakling'\nGirl from the bus"
+    "text": "'I know I am a weakling'\nGirl from the bus",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "'Imagine I were a young offender. They would ask me \"what have you done, sir?\" \"I shot the teacher on the head\" \"Oh, you should have gone for the place down there, the one boys are interested in\".\nGirl's brother on the bus"
+    "text": "'Imagine I were a young offender. They would ask me \"what have you done, sir?\" \"I shot the teacher on the head\" \"Oh, you should have gone for the place down there, the one boys are interested in\".\nGirl's brother on the bus",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Jan 28\n'Vorrei essere un piccione per cagare in testa alla gente e poi volare via'\nGiulia"
+    "text": "Jan 28\n'Vorrei essere un piccione per cagare in testa alla gente e poi volare via'\nGiulia",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Jan 29\n- Tell me something funny\n-Your job prospects"
+    "text": "Jan 29\n- Tell me something funny\n-Your job prospects",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Dan&me"
+    "text": "Dan&me",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Jan 30\n'Perhaps you've heard of Frida Kahlo'.\nLecturer"
+    "text": "Jan 30\n'Perhaps you've heard of Frida Kahlo'.\nLecturer",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "-Booh!\n-Ah! I thought you were Kate Bush!\nMe&Dan"
+    "text": "-Booh!\n-Ah! I thought you were Kate Bush!\nMe&Dan",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Jan 31\n'Vorrei del figone, per favore'\nDan"
+    "text": "Jan 31\n'Vorrei del figone, per favore'\nDan",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Jan ?\n'That's exactly how I would describe you, as a Byronian hero'\nDaniel"
+    "text": "Jan ?\n'That's exactly how I would describe you, as a Byronian hero'\nDaniel",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Feb 1\n'The first duty of wine is to be red. Don't talk to me of your white wines'.\nMurger"
+    "text": "Feb 1\n'The first duty of wine is to be red. Don't talk to me of your white wines'.\nMurger",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Feb 2\n'Peace is just war in another form'\nBenjamin😍🤌🏻"
+    "text": "Feb 2\n'Peace is just war in another form'\nBenjamin😍🤌🏻",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Feb 3\n'Alla fine noi siamo signorine perbene'\nGiulia"
+    "text": "Feb 3\n'Alla fine noi siamo signorine perbene'\nGiulia",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "'What does love feel like for you?'\nSofia"
+    "text": "'What does love feel like for you?'\nSofia",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Feb 4\n'I heard this strong Glaswegian accent and I thought he was raping her'\nRuth (Raffi's mum)"
+    "text": "Feb 4\n'I heard this strong Glaswegian accent and I thought he was raping her'\nRuth (Raffi's mum)",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "'Even if it's difficult for you, you can do it, because you already learnt English, which is a very tough language. Here, take my Scottish flag so you'll remember the weird Scottish guy who annoyed you on the train'.\nDrunk Scottish guy on the train"
+    "text": "'Even if it's difficult for you, you can do it, because you already learnt English, which is a very tough language. Here, take my Scottish flag so you'll remember the weird Scottish guy who annoyed you on the train'.\nDrunk Scottish guy on the train",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Feb 5\n'Non ripeteremo gli errori che hanno fatto i nostri genitori. Se tutto va bene, sarà il cambiamento climatico a rovinarci la vita'.\nLu"
+    "text": "Feb 5\n'Non ripeteremo gli errori che hanno fatto i nostri genitori. Se tutto va bene, sarà il cambiamento climatico a rovinarci la vita'.\nLu",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Feb 6\n'I used to be like you, just sleeping around with everyone'\nChanel"
+    "text": "Feb 6\n'I used to be like you, just sleeping around with everyone'\nChanel",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "'Eror 404'\nLu (via email)"
+    "text": "'Eror 404'\nLu (via email)",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Feb 7\n'Ma dove lo trovi un popolo con così tanto stile, con gli uomini in gonna a quadri tipo High School Musical, e pure etero? Col pipo all'aria. Mi piacciono gli scozzesi'.\nJulius"
+    "text": "Feb 7\n'Ma dove lo trovi un popolo con così tanto stile, con gli uomini in gonna a quadri tipo High School Musical, e pure etero? Col pipo all'aria. Mi piacciono gli scozzesi'.\nJulius",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Feb 8\n'He [Roberto] said he works in real estate (he's probably a burgler'\nGiuli"
+    "text": "Feb 8\n'He [Roberto] said he works in real estate (he's probably a burgler'\nGiuli",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "'You came home (on Friday), fell on the floor and couldn't take off your boots. I helped you and you started saying that you love Daniel. Then you also said that you love Robert and the whole of humanity'.\nGiuli"
+    "text": "'You came home (on Friday), fell on the floor and couldn't take off your boots. I helped you and you started saying that you love Daniel. Then you also said that you love Robert and the whole of humanity'.\nGiuli",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Feb 10\n'I've never met anyone who's slightly like you'.\nDaniel"
+    "text": "Feb 10\n'I've never met anyone who's slightly like you'.\nDaniel",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Feb 11\n'Sicilians are dramatic'\nOwner of the coffe shop La Rustique in Tufnell Park"
+    "text": "Feb 11\n'Sicilians are dramatic'\nOwner of the coffe shop La Rustique in Tufnell Park",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Feb 12\n'Non c'è una gradazione della resistenza. Si resiste e basta'.\nLu"
+    "text": "Feb 12\n'Non c'è una gradazione della resistenza. Si resiste e basta'.\nLu",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "'If I were a Russian oligarch I would marry you'.\nCreepy Alan from work"
+    "text": "'If I were a Russian oligarch I would marry you'.\nCreepy Alan from work",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Feb 13\n'- Lo sai che Emily Dickinson è morta per una niefrite?\n- Intanto buongiorno amore☕❤️'\nMamma (messaggi whatsapp)"
+    "text": "Feb 13\n'- Lo sai che Emily Dickinson è morta per una niefrite?\n- Intanto buongiorno amore☕❤️'\nMamma (messaggi whatsapp)",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Feb 14\n'Meglio farci una birra a casa va''\nGiuli"
+    "text": "Feb 14\n'Meglio farci una birra a casa va''\nGiuli",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Feb 15\n'Guarda come sono bella, sei fortunata, anche tu sarai bella da signora. Queste cose sono ereditarie'.\nMamma"
+    "text": "Feb 15\n'Guarda come sono bella, sei fortunata, anche tu sarai bella da signora. Queste cose sono ereditarie'.\nMamma",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Feb 16\nseeing as your criteria is 25+ then maybe you’re removing a large group of people who are within your immediate circles of who you might meet- the people who are interested in you romantically are everyone you know within that age range (bar jelly) 🤣🤣\nDan"
+    "text": "Feb 16\nseeing as your criteria is 25+ then maybe you’re removing a large group of people who are within your immediate circles of who you might meet- the people who are interested in you romantically are everyone you know within that age range (bar jelly) 🤣🤣\nDan",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Feb 17\n'We're too pretty to think'\nRaffi"
+    "text": "Feb 17\n'We're too pretty to think'\nRaffi",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Feb 18\n'If it's meant to be, it will be'\nNancy"
+    "text": "Feb 18\n'If it's meant to be, it will be'\nNancy",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Feb 20\n'Mi sto sciogliendo come formaggio in una raclette'\nGiulio"
+    "text": "Feb 20\n'Mi sto sciogliendo come formaggio in una raclette'\nGiulio",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Feb 21\n'I prefer ideas to facts, which is terrible, of course'\nBenjamin"
+    "text": "Feb 21\n'I prefer ideas to facts, which is terrible, of course'\nBenjamin",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Feb 22\n'Come to phineas, everyone's gonna be there'\nIggy"
+    "text": "Feb 22\n'Come to phineas, everyone's gonna be there'\nIggy",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Feb 23\n'I'm wrong ten times out of nine'\nBenjamin"
+    "text": "Feb 23\n'I'm wrong ten times out of nine'\nBenjamin",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Feb 24\n'You're one of a kind'\nDaniel"
+    "text": "Feb 24\n'You're one of a kind'\nDaniel",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Feb 25\n'Preferisco i napoletani furbi ai veneti onesti'\nMamma"
+    "text": "Feb 25\n'Preferisco i napoletani furbi ai veneti onesti'\nMamma",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Feb 26\n'Moments before you left everyone else breathless'\nDaniel (commenting my story on ig)"
+    "text": "Feb 26\n'Moments before you left everyone else breathless'\nDaniel (commenting my story on ig)",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Feb 27\n'Who's the American's milf?'\n'Mattea's mum'\n'Oh, I thought it was Jennifer Coolidge'.\nDan and me"
+    "text": "Feb 27\n'Who's the American's milf?'\n'Mattea's mum'\n'Oh, I thought it was Jennifer Coolidge'.\nDan and me",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Feb 28\n'Learning a language is like living a life. You cannot live constrained by your fears, sometimes you have to bloody let go!'\nZhenya"
+    "text": "Feb 28\n'Learning a language is like living a life. You cannot live constrained by your fears, sometimes you have to bloody let go!'\nZhenya",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "'You seem to have been massively important to me forever'\nMark"
+    "text": "'You seem to have been massively important to me forever'\nMark",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Feb ?\n'It's a glitch in the Matrix'\n'You're a bitch in the Matrix'\nMe&Dan"
+    "text": "Feb ?\n'It's a glitch in the Matrix'\n'You're a bitch in the Matrix'\nMe&Dan",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "March 1\nDad: 'That's how you do it, ladies first'\nSon: 'I honestly don't care'\nDad letting me first on the bus"
+    "text": "March 1\nDad: 'That's how you do it, ladies first'\nSon: 'I honestly don't care'\nDad letting me first on the bus",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "'I'm not sure, I'm Shaum'\nDan"
+    "text": "'I'm not sure, I'm Shaum'\nDan",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "March 2\n'With you I'll try anything once, even if we summon the devil'\nDaniel"
+    "text": "March 2\n'With you I'll try anything once, even if we summon the devil'\nDaniel",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "'It's a bit of a sad movie, because everyone at the end is either dead or sad. Or maybe that's just called life'\nBenjamin ofc"
+    "text": "'It's a bit of a sad movie, because everyone at the end is either dead or sad. Or maybe that's just called life'\nBenjamin ofc",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "'This is the work of a retarded'\nStupid boss to me"
+    "text": "'This is the work of a retarded'\nStupid boss to me",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "March 3\n'Noi funzioniamo a specchio, siamo l'una il modello dell'altra'.\nMamma"
+    "text": "March 3\n'Noi funzioniamo a specchio, siamo l'una il modello dell'altra'.\nMamma",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "March 4\n'We have to see each other more, you were my first year best friend!! Love you!'\nQuella falsona di Bran"
+    "text": "March 4\n'We have to see each other more, you were my first year best friend!! Love you!'\nQuella falsona di Bran",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "March 5\n'Noi facciamo la pelalife- la vita da pelandrone'\nGiuli"
+    "text": "March 5\n'Noi facciamo la pelalife- la vita da pelandrone'\nGiuli",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "March 6\n'Faccio io il pappone!\nGiulio"
+    "text": "March 6\n'Faccio io il pappone!\nGiulio",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "March 7\n'Tu sei una figa, perchè anch'io lo sono e ti ho fatta io'\nMamma"
+    "text": "March 7\n'Tu sei una figa, perchè anch'io lo sono e ti ho fatta io'\nMamma",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "March 8\n'Your presentational and public speaking skills will take you somewhere in life. You should use them. You're perfect at speaking'\nYordanka🥺"
+    "text": "March 8\n'Your presentational and public speaking skills will take you somewhere in life. You should use them. You're perfect at speaking'\nYordanka🥺",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "'You're always very fashionable'\nYordanka"
+    "text": "'You're always very fashionable'\nYordanka",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "March 9\n'Thank you for making me think of this, my dear Nicole. I shod have included this more in my lecture'\nBenjamin"
+    "text": "March 9\n'Thank you for making me think of this, my dear Nicole. I shod have included this more in my lecture'\nBenjamin",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "March 10\nCrux desperationis"
+    "text": "March 10\nCrux desperationis",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "March 11\n'I have a handsome, clever son for you. We're wealthy as well'\nClient at Twickenham Stadium"
+    "text": "March 11\n'I have a handsome, clever son for you. We're wealthy as well'\nClient at Twickenham Stadium",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "March 12\n'You don't know what you're missing out'\nRasputin outside of The Blues Kitchen"
+    "text": "March 12\n'You don't know what you're missing out'\nRasputin outside of The Blues Kitchen",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "March 13\n'Meg stepped on a piece of art on the floor and broke it. They fixed it with glue but she looked upset and apologetic'\nMattea"
+    "text": "March 13\n'Meg stepped on a piece of art on the floor and broke it. They fixed it with glue but she looked upset and apologetic'\nMattea",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "March 14\n'I think Rosseau was kind of needy'\nBenjamin"
+    "text": "March 14\n'I think Rosseau was kind of needy'\nBenjamin",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "March 15\n'Che Dio ce la mandi bona, e già che c'è pure bionda'\nAli"
+    "text": "March 15\n'Che Dio ce la mandi bona, e già che c'è pure bionda'\nAli",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "March 16\n'Can I just fail the module?'\nGen"
+    "text": "March 16\n'Can I just fail the module?'\nGen",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "March 17\n'E gli ho detto: bisogna avere cura delle persone. Ma gliel'ho detto in un modo così bello, guarda'.\nAli"
+    "text": "March 17\n'E gli ho detto: bisogna avere cura delle persone. Ma gliel'ho detto in un modo così bello, guarda'.\nAli",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "March 18\n'You're stunning'\nTipo ubriaco a Shoreditch"
+    "text": "March 18\n'You're stunning'\nTipo ubriaco a Shoreditch",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "'Proviamo a scappare senza farci vedere'\n(Erano fuori a fumare)\nGiuli, riferendosi agli albanesi a Shoreditch"
+    "text": "'Proviamo a scappare senza farci vedere'\n(Erano fuori a fumare)\nGiuli, riferendosi agli albanesi a Shoreditch",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "March 19\n'La casa è vuota senza una rompiscatole come te'\nPapà"
+    "text": "March 19\n'La casa è vuota senza una rompiscatole come te'\nPapà",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "March 20\n'You should just give up'\nRaffi"
+    "text": "March 20\n'You should just give up'\nRaffi",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "March 21\n'Nicolche...you can understand who's my favourite from the diminutives I give'\nBeautiful talented ambitious incredible amazing breathtaking Yordanka"
+    "text": "March 21\n'Nicolche...you can understand who's my favourite from the diminutives I give'\nBeautiful talented ambitious incredible amazing breathtaking Yordanka",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "March 22\n'You could be a businesswoman. 80% of it is just talking'.\nChanel's boyfriend to me"
+    "text": "March 22\n'You could be a businesswoman. 80% of it is just talking'.\nChanel's boyfriend to me",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "March 23\n'He fucked me so good my eyes were twitching, you know?'\nRaffi (the family in front of us turned to look at us)"
+    "text": "March 23\n'He fucked me so good my eyes were twitching, you know?'\nRaffi (the family in front of us turned to look at us)",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "'Sei italiana e non sei mai stata nella chiesa di San Clemente?'\nEx primo ministro bulgaro a me"
+    "text": "'Sei italiana e non sei mai stata nella chiesa di San Clemente?'\nEx primo ministro bulgaro a me",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "March 24\n'You finally look like a lesbian'\nChris to me in a wig"
+    "text": "March 24\n'You finally look like a lesbian'\nChris to me in a wig",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "March 25\n'Can I kiss you?'\nChinese daddy (I said yes)"
+    "text": "March 25\n'Can I kiss you?'\nChinese daddy (I said yes)",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "March 26\n'Io ho ancora la nausea'\nGiuli (dopo un giorno in hangover)"
+    "text": "March 26\n'Io ho ancora la nausea'\nGiuli (dopo un giorno in hangover)",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "March 27\n'Sorry, no more avocadoes. There's a shortage'\nGuy at Nisa💔"
+    "text": "March 27\n'Sorry, no more avocadoes. There's a shortage'\nGuy at Nisa💔",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "March 28\n'I would love to read it (no pun intended)'\nMark (referring to my essay on love)"
+    "text": "March 28\n'I would love to read it (no pun intended)'\nMark (referring to my essay on love)",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "March 29\n'I don't know what's the word in English, but in Spanish I would say you are...resolutiva'\nNancy"
+    "text": "March 29\n'I don't know what's the word in English, but in Spanish I would say you are...resolutiva'\nNancy",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "'We love italians! We feel italians! Ehy you (to the other waiter who was making fun of my accent)! Are you italian? No, we didn't think so. You look too plain'\nGuests at work on the Tower Bridge"
+    "text": "'We love italians! We feel italians! Ehy you (to the other waiter who was making fun of my accent)! Are you italian? No, we didn't think so. You look too plain'\nGuests at work on the Tower Bridge",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "March 30\n'Police!'\nRobert to the drug dealer who came for Raffi's coke at home"
+    "text": "March 30\n'Police!'\nRobert to the drug dealer who came for Raffi's coke at home",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "March 31\n'Manca una bambola diva star tra gli invitati'\nLu a me che non ero alla loro festa a Roma"
+    "text": "March 31\n'Manca una bambola diva star tra gli invitati'\nLu a me che non ero alla loro festa a Roma",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "April 1\n'Lucia è in ospedale con l'astragalo rotto'.\nQuche ora dopo...\n'Pesce d'aprile!'\nQuei rincoglioniti di Lu, Julius e Ali"
+    "text": "April 1\n'Lucia è in ospedale con l'astragalo rotto'.\nQuche ora dopo...\n'Pesce d'aprile!'\nQuei rincoglioniti di Lu, Julius e Ali",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "April 2\n'Lei/her/she'\nProfilo di bisessuale a Portogruaro, Hinge"
+    "text": "April 2\n'Lei/her/she'\nProfilo di bisessuale a Portogruaro, Hinge",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "April 3\n'Tu prenoti una data qualsiasa ma poi vieni qua quando vuoi e ci arrangiamo noi...'\nPoliziotto in questura per rinnovo passaporto"
+    "text": "April 3\n'Tu prenoti una data qualsiasa ma poi vieni qua quando vuoi e ci arrangiamo noi...'\nPoliziotto in questura per rinnovo passaporto",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "April 4\n'Io non ti compro queste cazzate (candela profumata da Aldi, ndr). Se vuoi una candela andiamo al cimitero e ne rubiamo una.'\nPapà"
+    "text": "April 4\n'Io non ti compro queste cazzate (candela profumata da Aldi, ndr). Se vuoi una candela andiamo al cimitero e ne rubiamo una.'\nPapà",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "April 5\n'All'Oktoberfest mi sono ubriacata così tanto che è arrivata la polizia e mi ha scattato delle foto. Il giorno dopo erano sul giornale'.\nNonna Mary"
+    "text": "April 5\n'All'Oktoberfest mi sono ubriacata così tanto che è arrivata la polizia e mi ha scattato delle foto. Il giorno dopo erano sul giornale'.\nNonna Mary",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "April 6\n'Indoviniamo di che segno era Frida Kahlo...oddio, era Cancro? Non è che abbiamo sprecato i nostri soldi per la mostra?'\nMamma a me sul treno per Padova"
+    "text": "April 6\n'Indoviniamo di che segno era Frida Kahlo...oddio, era Cancro? Non è che abbiamo sprecato i nostri soldi per la mostra?'\nMamma a me sul treno per Padova",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "April 7\n'I love your recent work'\nMark"
+    "text": "April 7\n'I love your recent work'\nMark",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "April 8\n'Io le puttane le sbatterei tutte in carcere'\n'Tanto su sembri comunista, con quel giubbotto rosso'\n'Non era così cessa quando le ficcavo la lingua in bocca'\nAmico problematico della Anna"
+    "text": "April 8\n'Io le puttane le sbatterei tutte in carcere'\n'Tanto su sembri comunista, con quel giubbotto rosso'\n'Non era così cessa quando le ficcavo la lingua in bocca'\nAmico problematico della Anna",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "April 9\n'Facciamo le streghe!'\nLaura nella serata pasquale spiritica con mamma, Lu e me"
+    "text": "April 9\n'Facciamo le streghe!'\nLaura nella serata pasquale spiritica con mamma, Lu e me",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "April 10\n'Ehy raga! Raga(di anali)'\nQualcuno a Pasquetta (io, Lu, Ali, Julius e Mati)"
+    "text": "April 10\n'Ehy raga! Raga(di anali)'\nQualcuno a Pasquetta (io, Lu, Ali, Julius e Mati)",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "April 11\n'Non smadonnare lo scazzus'\nGiulio"
+    "text": "April 11\n'Non smadonnare lo scazzus'\nGiulio",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "'La vita è fatta di tanti pali...e poche buche'\nJulius"
+    "text": "'La vita è fatta di tanti pali...e poche buche'\nJulius",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "April 12\n[12.04, 13:48] Martim: AHAHAH OH MY YOU MADE OUT WITH A CHINESE\n[12.04, 14:01] Martim: I mean how come not to fatshame considering the amount of time fat people take on the gym\n[12.04, 14:01] Martim: And it's not because they're fat\n[12.04, 14:01] Martim: It's just that they sit there in the machines and do nothing"
+    "text": "April 12\n[12.04, 13:48] Martim: AHAHAH OH MY YOU MADE OUT WITH A CHINESE\n[12.04, 14:01] Martim: I mean how come not to fatshame considering the amount of time fat people take on the gym\n[12.04, 14:01] Martim: And it's not because they're fat\n[12.04, 14:01] Martim: It's just that they sit there in the machines and do nothing",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "April 13\nCrux desperationis"
+    "text": "April 13\nCrux desperationis",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "April 14\n'If we are all made up of different parts, then I'm quite the chessboard'\nAnna in Chains of Thorns, Cassandra Clare"
+    "text": "April 14\n'If we are all made up of different parts, then I'm quite the chessboard'\nAnna in Chains of Thorns, Cassandra Clare",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "April 15\nBabylon soundtrack: my girl's pussy\nLu: Just pussy today\nJulius: bella questa, più elegante\nVia Whatsapp"
+    "text": "April 15\nBabylon soundtrack: my girl's pussy\nLu: Just pussy today\nJulius: bella questa, più elegante\nVia Whatsapp",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "April 16\n'No ma l'inno nazionale della marina russa è troppo bello'\nJulius"
+    "text": "April 16\n'No ma l'inno nazionale della marina russa è troppo bello'\nJulius",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "April 17\n'You can hitchike because you're a girl, but I can't because I have a penus and people are scared. Maybe I should stop hitchiking without my trousers'.\nDaniel"
+    "text": "April 17\n'You can hitchike because you're a girl, but I can't because I have a penus and people are scared. Maybe I should stop hitchiking without my trousers'.\nDaniel",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "O anche quell’ombrellone dato che non vedo acqua marina sin dai tempi del primo giorno della Creazione di Diooooo, in cui l’amatissimo nostro signore disse: sia il firmamento in mezzo alle acque….. ecco io direi a tal proposito “sia il firmamento in mezzo alle chiappe”\nPAROLAAAA DI DIOOOOO\nRENDIAMOOO GRAZIE A DIOOO\nJulius"
+    "text": "O anche quell’ombrellone dato che non vedo acqua marina sin dai tempi del primo giorno della Creazione di Diooooo, in cui l’amatissimo nostro signore disse: sia il firmamento in mezzo alle acque….. ecco io direi a tal proposito “sia il firmamento in mezzo alle chiappe”\nPAROLAAAA DI DIOOOOO\nRENDIAMOOO GRAZIE A DIOOO\nJulius",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "April 18\n'Ma cos'è questa salsa, spice garlic?'\n'No, Spice girls'\nAle & Papà"
+    "text": "April 18\n'Ma cos'è questa salsa, spice garlic?'\n'No, Spice girls'\nAle & Papà",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "April 19\nX"
+    "text": "April 19\nX",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "April 20\n'Per me il dolce dev'essere dolce'\nStudente alla Sapienza"
+    "text": "April 20\n'Per me il dolce dev'essere dolce'\nStudente alla Sapienza",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "'Tu sei come Cardi B. Ma senza Cardi'\nJulius"
+    "text": "'Tu sei come Cardi B. Ma senza Cardi'\nJulius",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "April 21\n'Girl...powDer'\nLucia dopo l'ecstasy"
+    "text": "April 21\n'Girl...powDer'\nLucia dopo l'ecstasy",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "April 22\n'Of course you're the popesse, only God could've created a body like yours'\nDaniel"
+    "text": "April 22\n'Of course you're the popesse, only God could've created a body like yours'\nDaniel",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "APRIL 23-MAY 11\nCrux felicitationis\nSomewhere in between (May 4th)\n'- This is not post oxytocin sex, but...I mean, this is not post sex oxytocin, but I love you.\n-Wow...that's not what I was expecting. Are you sure?'\nMe&Daniel"
+    "text": "APRIL 23-MAY 11\nCrux felicitationis\nSomewhere in between (May 4th)\n'- This is not post oxytocin sex, but...I mean, this is not post sex oxytocin, but I love you.\n-Wow...that's not what I was expecting. Are you sure?'\nMe&Daniel",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "May 12\n'We actually share a lot of similar trauma'\nChanel"
+    "text": "May 12\n'We actually share a lot of similar trauma'\nChanel",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "May 13\n'In Italy we say that a brave sailor also sails the red sea'\n'But there's no tide in the Red Sea'\nAfter 5 minutes of conversation:\n'Wait you were talking about sex?!'\nDan&me"
+    "text": "May 13\n'In Italy we say that a brave sailor also sails the red sea'\n'But there's no tide in the Red Sea'\nAfter 5 minutes of conversation:\n'Wait you were talking about sex?!'\nDan&me",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "May 14\n'Sei l'unica che mi ha fatto gli auguri per la festa della mamma. Tu, e X (tizio con cui si vede)'.\nMamma"
+    "text": "May 14\n'Sei l'unica che mi ha fatto gli auguri per la festa della mamma. Tu, e X (tizio con cui si vede)'.\nMamma",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "May 15\n'Did you have many problems getting a passport in Italy then?'\nZhenya a me (le avevo mentito per andare in Toscana)"
+    "text": "May 15\n'Did you have many problems getting a passport in Italy then?'\nZhenya a me (le avevo mentito per andare in Toscana)",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "May 16\nX"
+    "text": "May 16\nX",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "May 17\n'Pourquoi n'achètes-tu pas les vêtements du Coco Chanel?'\nTeacher at the french oral"
+    "text": "May 17\n'Pourquoi n'achètes-tu pas les vêtements du Coco Chanel?'\nTeacher at the french oral",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "May 18\nX"
+    "text": "May 18\nX",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "May 19\n'Vorrei che la te del Marconi ti sentisse parlare ora'\nLu"
+    "text": "May 19\n'Vorrei che la te del Marconi ti sentisse parlare ora'\nLu",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "May 20\n'Facciamo passo o smasho coi cani'\nLu, Ali &io"
+    "text": "May 20\n'Facciamo passo o smasho coi cani'\nLu, Ali &io",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "May 21\n'Questi cupcake hanno semi di coriandolo, paprika e curcuma'\nLu"
+    "text": "May 21\n'Questi cupcake hanno semi di coriandolo, paprika e curcuma'\nLu",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "'Papà ha detto che si fa del male se mamma lo lascia'\nAle"
+    "text": "'Papà ha detto che si fa del male se mamma lo lascia'\nAle",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "May 22\n'L'ho dovuto inseguire per farmi lasciare'\nAli"
+    "text": "May 22\n'L'ho dovuto inseguire per farmi lasciare'\nAli",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "May 23\n'I can order my own drinks, I'm not a child anymore'\n50 y.o. rich guy to his wife at Chelsea Flower Show"
+    "text": "May 23\n'I can order my own drinks, I'm not a child anymore'\n50 y.o. rich guy to his wife at Chelsea Flower Show",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "May 24\n'-We have daddy's card!\n-But mum, he said it's just for emergencies...\n-Chelsea is an emergency, darling. Four glasses of champagne, please'\nWoman at Chelsea Flower Show"
+    "text": "May 24\n'-We have daddy's card!\n-But mum, he said it's just for emergencies...\n-Chelsea is an emergency, darling. Four glasses of champagne, please'\nWoman at Chelsea Flower Show",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "May 25\n'Let them starve, those communists!'\nQueen Charlotte from Bridgeton looking British woman"
+    "text": "May 25\n'Let them starve, those communists!'\nQueen Charlotte from Bridgeton looking British woman",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "'In Ireland they're so backward, they don't even have fridges in the hotels!'\nDrunk american guy"
+    "text": "'In Ireland they're so backward, they don't even have fridges in the hotels!'\nDrunk american guy",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "May 26\n'Ha detto Umbi che è molto fatato'\nLu (riferito a San Fior, via text)"
+    "text": "May 26\n'Ha detto Umbi che è molto fatato'\nLu (riferito a San Fior, via text)",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "May 27\n'We're delighted to have had you'\nLying cashier at Waterstone when I went in the shop 5 minutes before the cloding time"
+    "text": "May 27\n'We're delighted to have had you'\nLying cashier at Waterstone when I went in the shop 5 minutes before the cloding time",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "May 28\n'Just buy the train ticket for two stops rather than the whole way. And add a disabled person railcard.'\nRobert"
+    "text": "May 28\n'Just buy the train ticket for two stops rather than the whole way. And add a disabled person railcard.'\nRobert",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "May 29\n'But I was also like if anyone nicole would be the one to just casually be in america without telling anyone hahaha'\nMattea (via ig)"
+    "text": "May 29\n'But I was also like if anyone nicole would be the one to just casually be in america without telling anyone hahaha'\nMattea (via ig)",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "May 30\n'Divertiti facendo le cose che ti piacciono davvero,non quelle che ti farebbero sembrare più figa agli occhi degli altri'\nLu"
+    "text": "May 30\n'Divertiti facendo le cose che ti piacciono davvero,non quelle che ti farebbero sembrare più figa agli occhi degli altri'\nLu",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "May 31\n'Ma siamo noi delle stronze insopportabilil o sono loro?'\nGiuli"
+    "text": "May 31\n'Ma siamo noi delle stronze insopportabilil o sono loro?'\nGiuli",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "June 1\n'Please keep in mind that there is a difference between what someone can lift, and what someone can safely lift'.\nHealth & Safety Induction of the Festival of Wight 2023"
+    "text": "June 1\n'Please keep in mind that there is a difference between what someone can lift, and what someone can safely lift'.\nHealth & Safety Induction of the Festival of Wight 2023",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "June 2\n'Pestiamo merda sul marciapiede tutti i giorni, ci sta che pestiamo anche merda nella vita'\nJulius (via Whatsapp)"
+    "text": "June 2\n'Pestiamo merda sul marciapiede tutti i giorni, ci sta che pestiamo anche merda nella vita'\nJulius (via Whatsapp)",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "June 3\n'Only Jesus can free Iran'\nChristian gathering at Trafalgar Square replying to Iran gathering"
+    "text": "June 3\n'Only Jesus can free Iran'\nChristian gathering at Trafalgar Square replying to Iran gathering",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "June 4\n'Giulia! Giulia!'\nSconosciute al parco che mi aiutano ad attirare l'attenzione di Giuli che non mi vede"
+    "text": "June 4\n'Giulia! Giulia!'\nSconosciute al parco che mi aiutano ad attirare l'attenzione di Giuli che non mi vede",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "June 5\n'I should've taken that Xanax'\nGroom before walking the aisle at Syon House"
+    "text": "June 5\n'I should've taken that Xanax'\nGroom before walking the aisle at Syon House",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "June 6\n'I am honoured to have someone like you in my life that I can talk to'\nMark"
+    "text": "June 6\n'I am honoured to have someone like you in my life that I can talk to'\nMark",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "June 7\n'Che palle 'sti uomini'\nGiuli"
+    "text": "June 7\n'Che palle 'sti uomini'\nGiuli",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "June 8\n'I guess individual deaths don't count when you're trying to achieve an utopia'\nWeird guy at work"
+    "text": "June 8\n'I guess individual deaths don't count when you're trying to achieve an utopia'\nWeird guy at work",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "June 9\n'Prendiamo i contatti [per l'mdma] da Raffi e poi ordiniamo su Just Sniff'\nJulius"
+    "text": "June 9\n'Prendiamo i contatti [per l'mdma] da Raffi e poi ordiniamo su Just Sniff'\nJulius",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "June 10\n'I will travel until I don't have money anymore'\nIvy the Swiss girl"
+    "text": "June 10\n'I will travel until I don't have money anymore'\nIvy the Swiss girl",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "June 11\n'I can see in your eyes that you are a warrior...you're angry often?'\nAnastasia thr Uzbek woman"
+    "text": "June 11\n'I can see in your eyes that you are a warrior...you're angry often?'\nAnastasia thr Uzbek woman",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "'Casate conmigo'\nRich drunk 70 yo man who offered us all the drink and pissed himself"
+    "text": "'Casate conmigo'\nRich drunk 70 yo man who offered us all the drink and pissed himself",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "June 12\n'You are bisexual because you're clever and you want to have all the options'\nAnastasia the Uzbek woman"
+    "text": "June 12\n'You are bisexual because you're clever and you want to have all the options'\nAnastasia the Uzbek woman",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "June 13\n'Here you are, preciosa'\nSpanish waitress"
+    "text": "June 13\n'Here you are, preciosa'\nSpanish waitress",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "June 14\n'-Do you know if anyone wants to go to the supermarket?\n-Let's see. DOES ANYONE WANT TO GO TO THE SUPERMARKET??'\nSean & me (that's how I met everyone)"
+    "text": "June 14\n'-Do you know if anyone wants to go to the supermarket?\n-Let's see. DOES ANYONE WANT TO GO TO THE SUPERMARKET??'\nSean & me (that's how I met everyone)",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "June 15\n'What a day'\nDex circa 3002829 volte"
+    "text": "June 15\n'What a day'\nDex circa 3002829 volte",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "'Wake up! Wake up! You're in a simulation!'\nGuy on ketamine to me and Dex"
+    "text": "'Wake up! Wake up! You're in a simulation!'\nGuy on ketamine to me and Dex",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "June 16\n'Once he called me his missus and at that point I asked him if we were in a relationship'\nLucy"
+    "text": "June 16\n'Once he called me his missus and at that point I asked him if we were in a relationship'\nLucy",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "June 17\n'Come on, jump on the buggy'\nCapo di Festaff"
+    "text": "June 17\n'Come on, jump on the buggy'\nCapo di Festaff",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "June 18\n'The most important thing for a performer is loving his audience. And I tried to love you all individually in the 90s, but that's in the past'\nRobbi Williams"
+    "text": "June 18\n'The most important thing for a performer is loving his audience. And I tried to love you all individually in the 90s, but that's in the past'\nRobbi Williams",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "June 19\n'You couldn't go on this bus but I'll let you get in this one time'\nBus driver in Southampton"
+    "text": "June 19\n'You couldn't go on this bus but I'll let you get in this one time'\nBus driver in Southampton",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "June 21\n'Potrei essere una guardia (reale di Buckingham), sta ferma per ore e non sorride mai'\nItaliana a Buckingham"
+    "text": "June 21\n'Potrei essere una guardia (reale di Buckingham), sta ferma per ore e non sorride mai'\nItaliana a Buckingham",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "'Tu sei come un Negroni, piaci a tutti ma nessuno ti regge'\nAlex"
+    "text": "'Tu sei come un Negroni, piaci a tutti ma nessuno ti regge'\nAlex",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "June 22\n'[22/06, 19:49] Chanel: It’s DONE\n[22/06, 19:49] Chanel: 2 73, Northern Lights, Dostyq Street 5 5/2, Astana, 020000, Kazakhstan'\nChanel about our flat in Astana via Whatsapp"
+    "text": "June 22\n'[22/06, 19:49] Chanel: It’s DONE\n[22/06, 19:49] Chanel: 2 73, Northern Lights, Dostyq Street 5 5/2, Astana, 020000, Kazakhstan'\nChanel about our flat in Astana via Whatsapp",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "June 23\n'C'è mi ha spezzato il cuore 2.0'\nItaliana a Greenwich"
+    "text": "June 23\n'C'è mi ha spezzato il cuore 2.0'\nItaliana a Greenwich",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "June 24\n'L'unica perdita che è Serenissima [riferito alla mia verginità persa a Venezia]'\nLu via Whatsapp"
+    "text": "June 24\n'L'unica perdita che è Serenissima [riferito alla mia verginità persa a Venezia]'\nLu via Whatsapp",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "June 25\n'I promise this is going to be good in a minute'\nPink at her concert"
+    "text": "June 25\n'I promise this is going to be good in a minute'\nPink at her concert",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "June 26\n'Mamma, ho perso l'aereo'\nAlex"
+    "text": "June 26\n'Mamma, ho perso l'aereo'\nAlex",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "June 27\n'What would Freud say, then, about this missed flight🤔'\nMark"
+    "text": "June 27\n'What would Freud say, then, about this missed flight🤔'\nMark",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "June 28\n'Una passione per la Polonia come la tua non si vedeva dai tempi di Hitler'\nJulius via Whatsapp (riferito a tutti le/i polacch* che mi piacciono)"
+    "text": "June 28\n'Una passione per la Polonia come la tua non si vedeva dai tempi di Hitler'\nJulius via Whatsapp (riferito a tutti le/i polacch* che mi piacciono)",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "June 29\n'Oh you can take pain then'\nTattoo artist to me"
+    "text": "June 29\n'Oh you can take pain then'\nTattoo artist to me",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "June 30\n'I'm a born naughty boy'\nDan"
+    "text": "June 30\n'I'm a born naughty boy'\nDan",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "July 1\n'Do you want some popper?'\nPerson (he/him) at the gay pride"
+    "text": "July 1\n'Do you want some popper?'\nPerson (he/him) at the gay pride",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "July 2\n(notte tra l'1 e il 2)\n'Dio non è morto, ho solo detto di averlo ucciso io per sentirmi più uomo. In realtà tu sei Dio'\nNietzsche nella mia testa sotto ecstasy"
+    "text": "July 2\n(notte tra l'1 e il 2)\n'Dio non è morto, ho solo detto di averlo ucciso io per sentirmi più uomo. In realtà tu sei Dio'\nNietzsche nella mia testa sotto ecstasy",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "'Il governo ci mente, ci fa bere e fumare invece di prendere mdma che non fa così male solo per renderci schiavi'\nJulius"
+    "text": "'Il governo ci mente, ci fa bere e fumare invece di prendere mdma che non fa così male solo per renderci schiavi'\nJulius",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "July 3\n'I don't know if you've ever heard of it, but I work for an organisation calles Fbi'\nAshley the American date"
+    "text": "July 3\n'I don't know if you've ever heard of it, but I work for an organisation calles Fbi'\nAshley the American date",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "July 4\n'Se hai problemi stasera puoi dormire in hotel con noi'\nAdorabile famiglia italiana durante il disastro del pre-volo"
+    "text": "July 4\n'Se hai problemi stasera puoi dormire in hotel con noi'\nAdorabile famiglia italiana durante il disastro del pre-volo",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "July 5\n'Praticamente la guerra Ucraina-russia continuava ancora ma i nostri Dumb ass volevano avventure, adrenalina. Quindi decidiamo di partire di nascosto per la Russia con al scusa di una missione umanitaria(in relatá volevamo solo vedere la Russia e ci eravamo rotte che non potessimo per la guerra). Entriamo comunque clandestine in una specie di nave sottomarino aereo e arriviamo, eravamo arrivate in questo paesino sperduto dove pensavamo che la guerra praticamente non ci fosse tanto era isolato. Allora partiamo rigorosamente zitte per non farci scoprire a cercare un modo per non destare sospetti, però cominciano dei bombardamenti, ma come avevamo pensato noi non le bombe non arrivavano direttamente lì, ma le vediamo scoppiare in lontananza nello sfondo grigio della neve come fossero fuochi d'artificio. Un po' spaventate entriamo in un edificio e passando per dei corridoi arriviamo in un aula studio piena di ragazzi. Erano tutti seduti a studiare, ma senza luce ecc. Noi ci intrufoliamo bellamente perché tanto sembriamo studentesse. Ci sediamo e ci viene il colpo di genio. Oer giustificare la nostra presenza dobbiamo convivere i ragazzi che siamo lì per redigere una lettera di resistenza con le loro testimonianze da portare in Europa. Ci sembrava geniale, però ai russi in realtà non fregava nulla. Tu però parli con questa ragazza dolcissima e cominciate a scrivere visto che tu sai il russo e ti spiega ti insegna e scrivete in una lavagna metà russo corsivo metà russo ma traslitterato. Mentre voi fate questo io mi ritrovo immezzo a un dibattito, ma gli altri danno per scontato io sia anche io russa e cominciano tutti a parlare e a guardarmi strano perché non rispondo. Poi scende da una specie di soppalchetto una ragazza bellissima con i capelli neri lunghissimi, frangetta e occhi verdissimi che sembrava un ragno quasi e mi sporca il viso di colore, allora tutti iniziano a cantare e a sporcarsi con il colore, d'improvviso dopo mesi ritorna la luce. Ma arriva una vecchia e ci dice di smetterla, di non dimenticarci che siamo in guerra e insinua che tra di loro ci siano dei libanesi perché solo loro creano questo scompiglio. Mente la tizia ispeziona noi cerchiamo di stare più mimetizzate possibile per non farci scoprire, però eravamo tranquille perché aveva sbagliato dicendo libanesi. Poi se ne va. Noi pensiamo che è l'ora di andarcene e comincia il piano sovversivo di fuga con il pretesto dell'immunità diplomatica.'\nLu via Whatsapp"
+    "text": "July 5\n'Praticamente la guerra Ucraina-russia continuava ancora ma i nostri Dumb ass volevano avventure, adrenalina. Quindi decidiamo di partire di nascosto per la Russia con al scusa di una missione umanitaria(in relatá volevamo solo vedere la Russia e ci eravamo rotte che non potessimo per la guerra). Entriamo comunque clandestine in una specie di nave sottomarino aereo e arriviamo, eravamo arrivate in questo paesino sperduto dove pensavamo che la guerra praticamente non ci fosse tanto era isolato. Allora partiamo rigorosamente zitte per non farci scoprire a cercare un modo per non destare sospetti, però cominciano dei bombardamenti, ma come avevamo pensato noi non le bombe non arrivavano direttamente lì, ma le vediamo scoppiare in lontananza nello sfondo grigio della neve come fossero fuochi d'artificio. Un po' spaventate entriamo in un edificio e passando per dei corridoi arriviamo in un aula studio piena di ragazzi. Erano tutti seduti a studiare, ma senza luce ecc. Noi ci intrufoliamo bellamente perché tanto sembriamo studentesse. Ci sediamo e ci viene il colpo di genio. Oer giustificare la nostra presenza dobbiamo convivere i ragazzi che siamo lì per redigere una lettera di resistenza con le loro testimonianze da portare in Europa. Ci sembrava geniale, però ai russi in realtà non fregava nulla. Tu però parli con questa ragazza dolcissima e cominciate a scrivere visto che tu sai il russo e ti spiega ti insegna e scrivete in una lavagna metà russo corsivo metà russo ma traslitterato. Mentre voi fate questo io mi ritrovo immezzo a un dibattito, ma gli altri danno per scontato io sia anche io russa e cominciano tutti a parlare e a guardarmi strano perché non rispondo. Poi scende da una specie di soppalchetto una ragazza bellissima con i capelli neri lunghissimi, frangetta e occhi verdissimi che sembrava un ragno quasi e mi sporca il viso di colore, allora tutti iniziano a cantare e a sporcarsi con il colore, d'improvviso dopo mesi ritorna la luce. Ma arriva una vecchia e ci dice di smetterla, di non dimenticarci che siamo in guerra e insinua che tra di loro ci siano dei libanesi perché solo loro creano questo scompiglio. Mente la tizia ispeziona noi cerchiamo di stare più mimetizzate possibile per non farci scoprire, però eravamo tranquille perché aveva sbagliato dicendo libanesi. Poi se ne va. Noi pensiamo che è l'ora di andarcene e comincia il piano sovversivo di fuga con il pretesto dell'immunità diplomatica.'\nLu via Whatsapp",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "July 6\n'- I wasn't saying anything, I was just contemplating you.\n- You don't know how often that happens to me with you. All the times, actually'\nMe&Daniel"
+    "text": "July 6\n'- I wasn't saying anything, I was just contemplating you.\n- You don't know how often that happens to me with you. All the times, actually'\nMe&Daniel",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "July 7\n'-[...] who benefits from the capitalist system.\n-your mum'\nMe&Dan via Ig"
+    "text": "July 7\n'-[...] who benefits from the capitalist system.\n-your mum'\nMe&Dan via Ig",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "July 8\n'I think Emilie, Clemence and Virginie are all a bit like me: sure they want to see you often but more important is you having a happy life.'\nMark via Whatsapp"
+    "text": "July 8\n'I think Emilie, Clemence and Virginie are all a bit like me: sure they want to see you often but more important is you having a happy life.'\nMark via Whatsapp",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "July 9\n'Pensavo che in Svizzera parlassero lo svizzero'\nMamma"
+    "text": "July 9\n'Pensavo che in Svizzera parlassero lo svizzero'\nMamma",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "July 10\n'Sono un po' rattristata a fatto che i miei stiano più in ospedale con mia nonna che con me, dato che tra poco parto per l'America'\nAnna Francesca"
+    "text": "July 10\n'Sono un po' rattristata a fatto che i miei stiano più in ospedale con mia nonna che con me, dato che tra poco parto per l'America'\nAnna Francesca",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "July 11\n'Se sei in Italia...in Veneto, la prossima settimana, ti rapisco (se ti va)'.\nMati via Whatsapp"
+    "text": "July 11\n'Se sei in Italia...in Veneto, la prossima settimana, ti rapisco (se ti va)'.\nMati via Whatsapp",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "July 12\n'Fatti comprare una sigaretta elettronica e stai zitta'\nMamma"
+    "text": "July 12\n'Fatti comprare una sigaretta elettronica e stai zitta'\nMamma",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "July 13\n'Hai la faccia di una fanciulla, di una bambina che ha appena ricevuto la sua Barbie preferita'\nMiky riferendosi al racconto della relazione a distanza del suo amico"
+    "text": "July 13\n'Hai la faccia di una fanciulla, di una bambina che ha appena ricevuto la sua Barbie preferita'\nMiky riferendosi al racconto della relazione a distanza del suo amico",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "July 14\n'Scusami per le bad energies'\nJulius"
+    "text": "July 14\n'Scusami per le bad energies'\nJulius",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "July 15\n'Everyone is scared of you Nicole, you're very intimidating'\nIggy (jokingly, via Ig)"
+    "text": "July 15\n'Everyone is scared of you Nicole, you're very intimidating'\nIggy (jokingly, via Ig)",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "July 16\n'Meglio che vi acchiappate comunque'\nRomano offeso che abbiamo perso interesse in lui a Pigneto"
+    "text": "July 16\n'Meglio che vi acchiappate comunque'\nRomano offeso che abbiamo perso interesse in lui a Pigneto",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "July 17\n'Una volta che la fai magnà, te la scopi'\nRomani al bar sotto casa"
+    "text": "July 17\n'Una volta che la fai magnà, te la scopi'\nRomani al bar sotto casa",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "July 18\n'Io sto da sola pè questo, se uno non me va bene più, mo' lo butto'\nVecchietta romana al supermercato"
+    "text": "July 18\n'Io sto da sola pè questo, se uno non me va bene più, mo' lo butto'\nVecchietta romana al supermercato",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "'Grazi mille'\nMatthey Bellamy in Italian after the concert"
+    "text": "'Grazi mille'\nMatthey Bellamy in Italian after the concert",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "July 19\n'Sei bravissima...tu dovevi fare la ginecologa'\nMamma alla piercer romana Francesca"
+    "text": "July 19\n'Sei bravissima...tu dovevi fare la ginecologa'\nMamma alla piercer romana Francesca",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "July 20\n'Ma solo io ci vedo un cazzo'\nTipo nei dm commentando il mio cactus di legno"
+    "text": "July 20\n'Ma solo io ci vedo un cazzo'\nTipo nei dm commentando il mio cactus di legno",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "July 21\n'E se non hai abbastanza soldi sulla carta, puoi sempre chiamare il tuo papino per chiederli'\nVenditore al mercato di Coney"
+    "text": "July 21\n'E se non hai abbastanza soldi sulla carta, puoi sempre chiamare il tuo papino per chiederli'\nVenditore al mercato di Coney",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "July 22\n'Easy conversations, difficult life. Difficult conversations, easy life'\nDaniel"
+    "text": "July 22\n'Easy conversations, difficult life. Difficult conversations, easy life'\nDaniel",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "'Come dice la nonna, monogamia...o monotonia?'\nTipo veneto al Sile Jazz"
+    "text": "'Come dice la nonna, monogamia...o monotonia?'\nTipo veneto al Sile Jazz",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "July 23\n'-Siamo le più eleganti.\n- Vabbè, cosa c'è di nuovo?'\nIo&Mamma"
+    "text": "July 23\n'-Siamo le più eleganti.\n- Vabbè, cosa c'è di nuovo?'\nIo&Mamma",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "July 24\n'Andremo alla festa dopo la cerimonia, così possiamo vestirci meno istituzionali'\nAli via whatsapp"
+    "text": "July 24\n'Andremo alla festa dopo la cerimonia, così possiamo vestirci meno istituzionali'\nAli via whatsapp",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "July 25\n'Le principesse di oggi i rospi non li baciano più, li ingoiano!'\nRadio Birikina"
+    "text": "July 25\n'Le principesse di oggi i rospi non li baciano più, li ingoiano!'\nRadio Birikina",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "July 26\n'Io mi sto solo fumando le canne e dissociando'\nSeba all'1am"
+    "text": "July 26\n'Io mi sto solo fumando le canne e dissociando'\nSeba all'1am",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "July 27\n'In Lyon since yesterday. Keep thinking how much you would love the views, the food'.\nMark via Whatsapp"
+    "text": "July 27\n'In Lyon since yesterday. Keep thinking how much you would love the views, the food'.\nMark via Whatsapp",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "July 28\n'Ciao! Siete andate a vedere Barbie?'\nTipe in macchina che pensavamo stessero per farci catcalling"
+    "text": "July 28\n'Ciao! Siete andate a vedere Barbie?'\nTipe in macchina che pensavamo stessero per farci catcalling",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "July 29\n'I want you to feel loved'\n'I wanna believe in the causes you believe in'\nDaniel"
+    "text": "July 29\n'I want you to feel loved'\n'I wanna believe in the causes you believe in'\nDaniel",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "July 30\n'Moto moto'\nLu via Whatsapp, commentando le mie peach pics"
+    "text": "July 30\n'Moto moto'\nLu via Whatsapp, commentando le mie peach pics",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "July 31\n'Ale ha detto che ha avuto una rissa al campetto perchè due suoi ex compagni gli hanno detto che sua mamma è una puttana romena e sua sorella una troia'\nMamma"
+    "text": "July 31\n'Ale ha detto che ha avuto una rissa al campetto perchè due suoi ex compagni gli hanno detto che sua mamma è una puttana romena e sua sorella una troia'\nMamma",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Aug 1\n'Trop de blabla philosophique et peu d'action'\nAMT on the Amazon review of Atlas six"
+    "text": "Aug 1\n'Trop de blabla philosophique et peu d'action'\nAMT on the Amazon review of Atlas six",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Aug 2\n'Signora io tra un anno inizio a studiare psichiatria e le consiglio da dottore di farsi visitare'\nJulius alla pazza che ci fotografava davanti a casa sua a Fregona (eravamo in macchina aspettando I love rock'n'roll)"
+    "text": "Aug 2\n'Signora io tra un anno inizio a studiare psichiatria e le consiglio da dottore di farsi visitare'\nJulius alla pazza che ci fotografava davanti a casa sua a Fregona (eravamo in macchina aspettando I love rock'n'roll)",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Aug 3\n'What I want in a wife is that she is attractive, she has a good character and loves me'\nLeo"
+    "text": "Aug 3\n'What I want in a wife is that she is attractive, she has a good character and loves me'\nLeo",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Aug 4\n'Abbiamo forato la ruota'\nPapà"
+    "text": "Aug 4\n'Abbiamo forato la ruota'\nPapà",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Aug 5\n'Also Nicole, I don't know if you know, but we met a year ago today'\nDaniel via Whatsapp"
+    "text": "Aug 5\n'Also Nicole, I don't know if you know, but we met a year ago today'\nDaniel via Whatsapp",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "'Sciocca pennuta'\nPapà"
+    "text": "'Sciocca pennuta'\nPapà",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "'Nicole farebbe bungee jumping senza filo'\nAle&papà\nAug 6\n'Vorrei che gli uomini si sentissero almeno un giorno come i Ken per capire'\nGiuli (via Whatsapp)"
+    "text": "'Nicole farebbe bungee jumping senza filo'\nAle&papà\nAug 6\n'Vorrei che gli uomini si sentissero almeno un giorno come i Ken per capire'\nGiuli (via Whatsapp)",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Aug 7\n'La pizza non può essere migliore di così'\nBunica (in traduzione - a proposito della pizza Mado romena)"
+    "text": "Aug 7\n'La pizza non può essere migliore di così'\nBunica (in traduzione - a proposito della pizza Mado romena)",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Aug 8\n'Non lasciarti vincere dal fato'\nBunica (in traduzione)"
+    "text": "Aug 8\n'Non lasciarti vincere dal fato'\nBunica (in traduzione)",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Aug 9\n'Sii felice nel momento'\nBunica (in traduzione)"
+    "text": "Aug 9\n'Sii felice nel momento'\nBunica (in traduzione)",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Aug 10\n'Una stella cadente là!'\nMarisol"
+    "text": "Aug 10\n'Una stella cadente là!'\nMarisol",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Aug 11\n'Quando mi hai fatto leggere il tuo racconto ho pensato, però, guarda che amica che ho'\nAli"
+    "text": "Aug 11\n'Quando mi hai fatto leggere il tuo racconto ho pensato, però, guarda che amica che ho'\nAli",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Aug 12-14\nX"
+    "text": "Aug 12-14\nX",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Aug 15\n'-Ma siete di Roma? Sembrate romani!\n- Macchè romani, siamo marocchini!'\nBagnino e ragazzi in spiaggia"
+    "text": "Aug 15\n'-Ma siete di Roma? Sembrate romani!\n- Macchè romani, siamo marocchini!'\nBagnino e ragazzi in spiaggia",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Aug 16\n'Dai ragazze volete un shottino Lamborghini?'\nWill di Sanremo in Capannina all'1am"
+    "text": "Aug 16\n'Dai ragazze volete un shottino Lamborghini?'\nWill di Sanremo in Capannina all'1am",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "'Perchè gli americani non sanno usare le x, e non sanno neanche fare le operazioni con le x'\nTipo a Venezia"
+    "text": "'Perchè gli americani non sanno usare le x, e non sanno neanche fare le operazioni con le x'\nTipo a Venezia",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Aug 17\n'I saw someone selling a bunch of Swiss Army knives today and thought of u'\nArielle via Whatsapp"
+    "text": "Aug 17\n'I saw someone selling a bunch of Swiss Army knives today and thought of u'\nArielle via Whatsapp",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Aug 18\n'Poi in realtà se me li hai attaccati [i pidocchi], capisco molte più cose, perchè sentivo delle voci nella testa ultimamente'\nLu via Whatsapp"
+    "text": "Aug 18\n'Poi in realtà se me li hai attaccati [i pidocchi], capisco molte più cose, perchè sentivo delle voci nella testa ultimamente'\nLu via Whatsapp",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "'Me eeeee magnoooo le uova [di pidocchio]'\nJulius via whatsapp"
+    "text": "'Me eeeee magnoooo le uova [di pidocchio]'\nJulius via whatsapp",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Aug 19\n'Questo ti piace? Dimmi che ti piace'\nSardi"
+    "text": "Aug 19\n'Questo ti piace? Dimmi che ti piace'\nSardi",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Aug 20\n'I like your tattoo'\nWaitress at the Istanbul Sabiha airport"
+    "text": "Aug 20\n'I like your tattoo'\nWaitress at the Istanbul Sabiha airport",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Aug 21\n'How much money does a man have to make for you?'\nTiktoker che mi intervista (in traduzione)"
+    "text": "Aug 21\n'How much money does a man have to make for you?'\nTiktoker che mi intervista (in traduzione)",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Aug 22\n'How do these things happen to you! I swear I’m so excited for all ur stories to come Nicole haha'\nChanel via Whatsapp"
+    "text": "Aug 22\n'How do these things happen to you! I swear I’m so excited for all ur stories to come Nicole haha'\nChanel via Whatsapp",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Aug 23\n'so weird haha this always happens to youuu (being followed by creepy guys) were they young?'\nMattea via whatsapp"
+    "text": "Aug 23\n'so weird haha this always happens to youuu (being followed by creepy guys) were they young?'\nMattea via whatsapp",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Aug 24\n'Feel free to come but I think ur tired and ill and I won’t be long just popping there to say hi'\nChanel making decisions for me lol"
+    "text": "Aug 24\n'Feel free to come but I think ur tired and ill and I won’t be long just popping there to say hi'\nChanel making decisions for me lol",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Aug 25\n'Facciamo una scommessa che alla fine mangerai carne di cavallo'\nAlex"
+    "text": "Aug 25\n'Facciamo una scommessa che alla fine mangerai carne di cavallo'\nAlex",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Aug 26\n'A  что это?'\nSecurity guard at the club looking at my stomach pills (for diarrhea) thinking it's drug"
+    "text": "Aug 26\n'A  что это?'\nSecurity guard at the club looking at my stomach pills (for diarrhea) thinking it's drug",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Aug 27\n'We were supposed to study but we just drank red georgian wine'\nChanel"
+    "text": "Aug 27\n'We were supposed to study but we just drank red georgian wine'\nChanel",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Aug 28\n'We can give you 10 more minutes if that helps'\nTeachers about the impossible crazy russian test"
+    "text": "Aug 28\n'We can give you 10 more minutes if that helps'\nTeachers about the impossible crazy russian test",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Aug 29\n'What do we think of the russian revolution? Tell me about it in russian'\nDina the teacher (in translation)"
+    "text": "Aug 29\n'What do we think of the russian revolution? Tell me about it in russian'\nDina the teacher (in translation)",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Aug 30\n'I think that, if I had to define you, I would say that you are too much about art. Some people think themselves characters from a book or a film, but you believe that your whole life and everything about it must be shaped by books, not even only by books, but by every form of art. Nothing can be normal for you, you can't be happy in a normal life. Everything must be art, and seen as if it is art. And wanting this means always having drama and difficulties.'\nLuke"
+    "text": "Aug 30\n'I think that, if I had to define you, I would say that you are too much about art. Some people think themselves characters from a book or a film, but you believe that your whole life and everything about it must be shaped by books, not even only by books, but by every form of art. Nothing can be normal for you, you can't be happy in a normal life. Everything must be art, and seen as if it is art. And wanting this means always having drama and difficulties.'\nLuke",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "'I'm not a belly dancer but I have a beer belly'\nDrunk guy outside of пинта"
+    "text": "'I'm not a belly dancer but I have a beer belly'\nDrunk guy outside of пинта",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Aug 31\n'Какой моти бесплотно?'\n'Ахахах...ну, шоколад'\nCommesso at the Baiterek tower"
+    "text": "Aug 31\n'Какой моти бесплотно?'\n'Ахахах...ну, шоколад'\nCommesso at the Baiterek tower",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Sep 1\n'This is your place...do you like it?'\nOur Airbnb host"
+    "text": "Sep 1\n'This is your place...do you like it?'\nOur Airbnb host",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Sep 2\n'Your painting looks like the ones of that disabled artist, what's she called...Frida Kahlo!'\nKazakh guy working at the wine tasting"
+    "text": "Sep 2\n'Your painting looks like the ones of that disabled artist, what's she called...Frida Kahlo!'\nKazakh guy working at the wine tasting",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Sep 3-5\nX"
+    "text": "Sep 3-5\nX",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Sep 6\n'Luke asked me why everything with you and Nicole is always political'\nSofia"
+    "text": "Sep 6\n'Luke asked me why everything with you and Nicole is always political'\nSofia",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Sep 7-9\nX"
+    "text": "Sep 7-9\nX",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Sep 10\n'I know you are going to accomplish great things'\nSofia"
+    "text": "Sep 10\n'I know you are going to accomplish great things'\nSofia",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Sep 11\n'I was in your shoes once so I want to give you this wine bottle for free'\nCommesso at the shop in Almaty"
+    "text": "Sep 11\n'I was in your shoes once so I want to give you this wine bottle for free'\nCommesso at the shop in Almaty",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Sep 12- 19\nX"
+    "text": "Sep 12- 19\nX",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Sep 20\n'Hey man, hope you're good after hearing that shit, strong little cunt mate'\nTom via Whatsapp"
+    "text": "Sep 20\n'Hey man, hope you're good after hearing that shit, strong little cunt mate'\nTom via Whatsapp",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Sep 21\n'At least we have our legs'\nChanel (after seeing a man without a leg)"
+    "text": "Sep 21\n'At least we have our legs'\nChanel (after seeing a man without a leg)",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Sep 22\n'sorry i had to cut you off so quickly nicole, things will get better there and you’ve proved to yourself you’re capable with dealing with anything, speak soon 🙌🙌❤️'\nDan (via Whatsapp)"
+    "text": "Sep 22\n'sorry i had to cut you off so quickly nicole, things will get better there and you’ve proved to yourself you’re capable with dealing with anything, speak soon 🙌🙌❤️'\nDan (via Whatsapp)",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "'Quando hai detto che quella ragazza è una fonte di ispirazione, è da ammirare... dovresti vedere la tua faccia allo specchio, perchè sei tu quella da ammirare'\nMati (via Whatsapp)"
+    "text": "'Quando hai detto che quella ragazza è una fonte di ispirazione, è da ammirare... dovresti vedere la tua faccia allo specchio, perchè sei tu quella da ammirare'\nMati (via Whatsapp)",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Sep 23\n'I love villains'\nHajeera"
+    "text": "Sep 23\n'I love villains'\nHajeera",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Sep 24\n'Let's watch Sex Ed'\nChanel"
+    "text": "Sep 24\n'Let's watch Sex Ed'\nChanel",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Sep 25\n'Should we take with us the spray deodorant to protect ourselves?'\nChanel"
+    "text": "Sep 25\n'Should we take with us the spray deodorant to protect ourselves?'\nChanel",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Sep 26\n'But you're clearly an extrovert because first time I saw you you were like 'HI, I'M NICOLE' and I was like, okay wow'\nKevin"
+    "text": "Sep 26\n'But you're clearly an extrovert because first time I saw you you were like 'HI, I'M NICOLE' and I was like, okay wow'\nKevin",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Sep 27\n'Una relazione non dev'essere di sussistenza ma di supporto'\nLu (ovviamente)"
+    "text": "Sep 27\n'Una relazione non dev'essere di sussistenza ma di supporto'\nLu (ovviamente)",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "'Nicole have you been kidnaped by the URSS or have you gone to jail!'\nMartim"
+    "text": "'Nicole have you been kidnaped by the URSS or have you gone to jail!'\nMartim",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Sep 28\n'Tranquilla che io non ti smollo da te'\nGiuli"
+    "text": "Sep 28\n'Tranquilla che io non ti smollo da te'\nGiuli",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Sep 29\n'Nothing starts at the same time it shows on the ticket'\nHostess at the jazz 'concert' (in translation)"
+    "text": "Sep 29\n'Nothing starts at the same time it shows on the ticket'\nHostess at the jazz 'concert' (in translation)",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Sep 30\n'Crazy Saturday night at Izbushka'\nRose"
+    "text": "Sep 30\n'Crazy Saturday night at Izbushka'\nRose",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Oct 1\n'Sadness will slow you and anger will blind you. You have to let go of both. Change can only come from a place of acceptance and love. Think of the love your friends have for you and act.'\nSofia"
+    "text": "Oct 1\n'Sadness will slow you and anger will blind you. You have to let go of both. Change can only come from a place of acceptance and love. Think of the love your friends have for you and act.'\nSofia",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Oct 2\n'What's your most expensive room? We would like to see it'\nChanel at the Ritz in Astana"
+    "text": "Oct 2\n'What's your most expensive room? We would like to see it'\nChanel at the Ritz in Astana",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Oct 3\n'You are not a doctor after studying medicine for two years. Same for russian. Let that sink in'\nChanel"
+    "text": "Oct 3\n'You are not a doctor after studying medicine for two years. Same for russian. Let that sink in'\nChanel",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Oct 4-6\nX"
+    "text": "Oct 4-6\nX",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Oct 7\n'Agisci in base al tuo cuore'\nMamma"
+    "text": "Oct 7\n'Agisci in base al tuo cuore'\nMamma",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Oct 8-10\nX"
+    "text": "Oct 8-10\nX",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Oct 11\n'Это не cringe, это romantic!'\nHorse riding instructor while taking pictures of me and Daniel on our horses holding hands"
+    "text": "Oct 11\n'Это не cringe, это romantic!'\nHorse riding instructor while taking pictures of me and Daniel on our horses holding hands",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Oct 12-17\nX"
+    "text": "Oct 12-17\nX",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Oct 18\n'You know why my dad hates J.K Rowling? Not because she's transphobic, but because she's against Bitcoin'\nSofia"
+    "text": "Oct 18\n'You know why my dad hates J.K Rowling? Not because she's transphobic, but because she's against Bitcoin'\nSofia",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Oct 19\n'I look at all this art and I think, once men did this...now they're djs'\nGrace"
+    "text": "Oct 19\n'I look at all this art and I think, once men did this...now they're djs'\nGrace",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Oct 20\n'People will never be pleased by me, so I'll just spend my time pleasing myself'\nMartim (through his friend)"
+    "text": "Oct 20\n'People will never be pleased by me, so I'll just spend my time pleasing myself'\nMartim (through his friend)",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Oct 21-25\nX"
+    "text": "Oct 21-25\nX",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Oct 26\n'I trust that you will succeed'\nDaniel"
+    "text": "Oct 26\n'I trust that you will succeed'\nDaniel",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Oct 27\n'I feel like I've known you for longer'\nInna (Sofia's russian friend)"
+    "text": "Oct 27\n'I feel like I've known you for longer'\nInna (Sofia's russian friend)",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Oct 28\n'My mental health plummeted because of this'\nChanel (about sharing a flat)"
+    "text": "Oct 28\n'My mental health plummeted because of this'\nChanel (about sharing a flat)",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Oct 29\n'Мы думали, что вы были не дружелюбными'\nKazakh girls from Kazgoo we're doing a podcast with"
+    "text": "Oct 29\n'Мы думали, что вы были не дружелюбными'\nKazakh girls from Kazgoo we're doing a podcast with",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Oct 30\n'Fuck your fatigue'\nSofia (about my fake fatigue)"
+    "text": "Oct 30\n'Fuck your fatigue'\nSofia (about my fake fatigue)",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Oct 31\n'You're the most traditional non traditionalist I know. You don't hate on traditionalist thinks because of a trend, like the others...but out of desire'.\nLuke"
+    "text": "Oct 31\n'You're the most traditional non traditionalist I know. You don't hate on traditionalist thinks because of a trend, like the others...but out of desire'.\nLuke",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Nov 1\n'Excluding a sport one, you would pass any test'\nDaniel"
+    "text": "Nov 1\n'Excluding a sport one, you would pass any test'\nDaniel",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Nov 2-9\nX"
+    "text": "Nov 2-9\nX",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Nov 10\n'I'm a virgin at baking'\nMax"
+    "text": "Nov 10\n'I'm a virgin at baking'\nMax",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Nov 11\n'Писдолись - это не хорошо в Казахстане'\nGulnaz (after midnight)"
+    "text": "Nov 11\n'Писдолись - это не хорошо в Казахстане'\nGulnaz (after midnight)",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Nov 12\n'That's the wardrobe, not the restaurant'\nHost at the restaurant вечное небо (in translation)"
+    "text": "Nov 12\n'That's the wardrobe, not the restaurant'\nHost at the restaurant вечное небо (in translation)",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Nov 13\n'Don't say another word. I'm only allowed to cry once every six months'\n'Daniel, it's been six months since the last time you cried'\nDaniel&me"
+    "text": "Nov 13\n'Don't say another word. I'm only allowed to cry once every six months'\n'Daniel, it's been six months since the last time you cried'\nDaniel&me",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Nov 14-20\nX"
+    "text": "Nov 14-20\nX",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Nov 21\n'Siete rompicoglioni come lo zio Luciano. Che riposi in pace'\nMami"
+    "text": "Nov 21\n'Siete rompicoglioni come lo zio Luciano. Che riposi in pace'\nMami",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Nov 22-24\nX"
+    "text": "Nov 22-24\nX",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Nov 25\n'Sapevo che saresti tornata oggi! Ti ho sognata!'\nMamma"
+    "text": "Nov 25\n'Sapevo che saresti tornata oggi! Ti ho sognata!'\nMamma",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Nov 26\n*cane abbaia*\n'Non sapevo che ci fosse ancora così tanto dog calling al giorno d'oggi'\nAle"
+    "text": "Nov 26\n*cane abbaia*\n'Non sapevo che ci fosse ancora così tanto dog calling al giorno d'oggi'\nAle",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Nov 27\n'Lei è quella che dimenticato il portafoglio con i soldi sull'aereo?'\nAddetta del lost and found a Venezia"
+    "text": "Nov 27\n'Lei è quella che dimenticato il portafoglio con i soldi sull'aereo?'\nAddetta del lost and found a Venezia",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Nov 18-Dec 4\nX"
+    "text": "Nov 18-Dec 4\nX",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Dec 5\n'Your novel reads like a mix between an opium-dream, a nightmare, and a philosophical expertise'"
+    "text": "Dec 5\n'Your novel reads like a mix between an opium-dream, a nightmare, and a philosophical expertise'",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "'Mi stanchi (cercava di dirmi 'mi manchi')\nDania"
+    "text": "'Mi stanchi (cercava di dirmi 'mi manchi')\nDania",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "'Ho trovato il rimedio allo Xanax'\nMamma (parlando de La Coscienza di Zeno)"
+    "text": "'Ho trovato il rimedio allo Xanax'\nMamma (parlando de La Coscienza di Zeno)",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Dec 6-13\nX"
+    "text": "Dec 6-13\nX",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Dec 14\n'Your writing has the beauty of Marquez and the oppression of Kafka'\nDania"
+    "text": "Dec 14\n'Your writing has the beauty of Marquez and the oppression of Kafka'\nDania",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Dec 15\n'I'm kind of turned on by this Tallulah'\nSofia"
+    "text": "Dec 15\n'I'm kind of turned on by this Tallulah'\nSofia",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "'Tallulah is you and I nicky\nWhat I truly am is in awe\nwhat a wonderful character\nStrained and dispossessed\nYet gleaming\nMi chica Nicole xxx who knows how far you’ll go ♥️\nAnd what a gorgeous and violent honesty\nThe beauty within terror\nI will get drunk tonight on her name, and do something dark and risky 🫡🫡🫡'\nSofia💕💕"
+    "text": "'Tallulah is you and I nicky\nWhat I truly am is in awe\nwhat a wonderful character\nStrained and dispossessed\nYet gleaming\nMi chica Nicole xxx who knows how far you’ll go ♥️\nAnd what a gorgeous and violent honesty\nThe beauty within terror\nI will get drunk tonight on her name, and do something dark and risky 🫡🫡🫡'\nSofia💕💕",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Dec 16\n'Orco cane'\nPapà (quando gli ho detto che ho crampi mestruali)"
+    "text": "Dec 16\n'Orco cane'\nPapà (quando gli ho detto che ho crampi mestruali)",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Dec 17-25"
+    "text": "Dec 17-25",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Dec 26\n'Fai un mestiere diVino'\nLu a un tipo chiamato il Vinaio che presenta e vende vini"
+    "text": "Dec 26\n'Fai un mestiere diVino'\nLu a un tipo chiamato il Vinaio che presenta e vende vini",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Dec 27\n'Chi ha fatto i tedeschi è stato abbastanza bravo'\nLu"
+    "text": "Dec 27\n'Chi ha fatto i tedeschi è stato abbastanza bravo'\nLu",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "'Mia sorella ha della codeina se volete'\nJulius"
+    "text": "'Mia sorella ha della codeina se volete'\nJulius",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Dec 28\n'Julius: c'è la fila\nLu: alla bakery???\nJulius: no, al museo. Ti interessa di più la bakery?\nLu: mica me le mangio le mummie io'\nLu&Julius"
+    "text": "Dec 28\n'Julius: c'è la fila\nLu: alla bakery???\nJulius: no, al museo. Ti interessa di più la bakery?\nLu: mica me le mangio le mummie io'\nLu&Julius",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Dec 29\n'- Questo non ti lascia più, è come una calamita (indicando Giulio)\nLu: - È per tutti e due (riferito a me)'\nSconosciuto a Julius parlando di me"
+    "text": "Dec 29\n'- Questo non ti lascia più, è come una calamita (indicando Giulio)\nLu: - È per tutti e due (riferito a me)'\nSconosciuto a Julius parlando di me",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Dec 30\n'Non ho mai visto unghie con così tante pellicine'\nOxana l'estetista"
+    "text": "Dec 30\n'Non ho mai visto unghie con così tante pellicine'\nOxana l'estetista",
+    "group": 38
    },
    {
     "type": "paragraph",
-    "text": "Dec 31\n'Se andassimo a dormire?'\nJulius"
+    "text": "Dec 31\n'Se andassimo a dormire?'\nJulius",
+    "group": 38
    }
   ]
  },
@@ -11953,511 +12753,638 @@ window.FN_QUOTE_BOOKS = [
   "blocks": [
    {
     "type": "paragraph",
-    "text": "2024\nJan 1\n'Per fortuna non siamo ricchi'\nLu dopo aver guardato Saltburn a Capodanno"
+    "text": "2024\nJan 1\n'Per fortuna non siamo ricchi'\nLu dopo aver guardato Saltburn a Capodanno",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "Jan 2\n'Bella ragazza'\nCatcallers a Roma (i terzi in una camminata di 10 minuti)"
+    "text": "Jan 2\n'Bella ragazza'\nCatcallers a Roma (i terzi in una camminata di 10 minuti)",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "Jan 3\n'I cannot believe you came all the way to Australia'\nDania"
+    "text": "Jan 3\n'I cannot believe you came all the way to Australia'\nDania",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "Jan 4\n'Varda che il rene è un attimo che ti parta eh! E non torna più dopo'\nJulius (via Whatsapp)"
+    "text": "Jan 4\n'Varda che il rene è un attimo che ti parta eh! E non torna più dopo'\nJulius (via Whatsapp)",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "Jan 5\n'Tutto il mondo è San Fiorrr'\nLu (via Whatsapp)"
+    "text": "Jan 5\n'Tutto il mondo è San Fiorrr'\nLu (via Whatsapp)",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "Jan 6\n'Let's have kangaroo meat'\nDania"
+    "text": "Jan 6\n'Let's have kangaroo meat'\nDania",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "Jan 7\n'She's my kind of girl'\nDania's mum"
+    "text": "Jan 7\n'She's my kind of girl'\nDania's mum",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "Jan 8\n'Only sovereign powers like Russia can guarantee democracy'\nDania's dad"
+    "text": "Jan 8\n'Only sovereign powers like Russia can guarantee democracy'\nDania's dad",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "Jan 9\n'- I feel I have a connection with this parrot.\n- When you stop connecting with our parrot could you put him away in the cage?'\nMe and Dania's mum"
+    "text": "Jan 9\n'- I feel I have a connection with this parrot.\n- When you stop connecting with our parrot could you put him away in the cage?'\nMe and Dania's mum",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "Jan 10\n'That's how spastic people kick a ball'\nDania at St Kilda"
+    "text": "Jan 10\n'That's how spastic people kick a ball'\nDania at St Kilda",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "Jan 11\n'At that time I started losing hearing...'\n'Sorry what did you say??'\nMary & me (Daniel's friend)"
+    "text": "Jan 11\n'At that time I started losing hearing...'\n'Sorry what did you say??'\nMary & me (Daniel's friend)",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "Jan 12\n'The holidays were good. The best thing was the girls moving their mattresses to the floor for two weeks and chatting for ages every night. It's always so rare for Emilie to get such positive interactions from the person she loves maybe the most in the world.'\nMark (via Whatsapp)"
+    "text": "Jan 12\n'The holidays were good. The best thing was the girls moving their mattresses to the floor for two weeks and chatting for ages every night. It's always so rare for Emilie to get such positive interactions from the person she loves maybe the most in the world.'\nMark (via Whatsapp)",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "Jan 13\n'This might be the best pizza of my life'\nDania (at Capitano, talking about Salsiccia and Broccoli pizza...he was kinda right)"
+    "text": "Jan 13\n'This might be the best pizza of my life'\nDania (at Capitano, talking about Salsiccia and Broccoli pizza...he was kinda right)",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "Jan 14\n'I broke up with him and then chose him again'\nMichelle (talking about Avi)"
+    "text": "Jan 14\n'I broke up with him and then chose him again'\nMichelle (talking about Avi)",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "Jan 15\n'I love Tassy!'\nRichie (Tassy = Tasmania)"
+    "text": "Jan 15\n'I love Tassy!'\nRichie (Tassy = Tasmania)",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "Jan 16\n'I never heard of WhatsApp'\nPenny (owner of a bookshop, friend of Dania)"
+    "text": "Jan 16\n'I never heard of WhatsApp'\nPenny (owner of a bookshop, friend of Dania)",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "Jan 17\n'- Dad can you show mum my tooth on the phone? I am Dracula.\n- Now you're Gapula.'\nDad and kid on the bus in Harbart (kid lost the tooth)"
+    "text": "Jan 17\n'- Dad can you show mum my tooth on the phone? I am Dracula.\n- Now you're Gapula.'\nDad and kid on the bus in Harbart (kid lost the tooth)",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "Jan 18\n'Nicole will succeed for real'\nDania (part of a really beautiful speech)"
+    "text": "Jan 18\n'Nicole will succeed for real'\nDania (part of a really beautiful speech)",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "'- They look like a cult.\n-Ehy guys are you a cult?\n*Awkward silence*'\nMichelle&Me at the hike to cult members (we became friends after and I said sorry)"
+    "text": "'- They look like a cult.\n-Ehy guys are you a cult?\n*Awkward silence*'\nMichelle&Me at the hike to cult members (we became friends after and I said sorry)",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "Jan 19\n'- Tell me a secret.\n- My husband has a fresh hickey on his neck that we covered with a bandaid'\nRandom woman with husband and daughter at Mona"
+    "text": "Jan 19\n'- Tell me a secret.\n- My husband has a fresh hickey on his neck that we covered with a bandaid'\nRandom woman with husband and daughter at Mona",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "Jan 20\n'Let's seat on that random rocking chair'\nDania (we had sex on it)"
+    "text": "Jan 20\n'Let's seat on that random rocking chair'\nDania (we had sex on it)",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "Jan 21\n'Can I join you in opening a cafè in Maria's Island? '\nBecky"
+    "text": "Jan 21\n'Can I join you in opening a cafè in Maria's Island? '\nBecky",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "Jan 22\n'I dare you to wear that unicorn headband'\nDania (we took turns)"
+    "text": "Jan 22\n'I dare you to wear that unicorn headband'\nDania (we took turns)",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "Jan 23\n'Antology of what? Ahah...Antology of Spoonriver...oh wow, it's actually a book'\nBitchy worker at book shop in the City"
+    "text": "Jan 23\n'Antology of what? Ahah...Antology of Spoonriver...oh wow, it's actually a book'\nBitchy worker at book shop in the City",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "Jan 24\n'Surprise!'\nDania (took me to the rooftop cinema to watch All of Us Strangers)"
+    "text": "Jan 24\n'Surprise!'\nDania (took me to the rooftop cinema to watch All of Us Strangers)",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "Jan 25\n'I love Italy! Buongiorno! Come stai?'\nStrict lady at the post office(I was warned she was conservative and I had a revealing outfit but she lived me)"
+    "text": "Jan 25\n'I love Italy! Buongiorno! Come stai?'\nStrict lady at the post office(I was warned she was conservative and I had a revealing outfit but she lived me)",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "Jan 26\n'- Can you see our flight on the board? I can't.\n- What's Avalon?\n- The other airport...'\nDania&Me (we went to Tullamarine instead)"
+    "text": "Jan 26\n'- Can you see our flight on the board? I can't.\n- What's Avalon?\n- The other airport...'\nDania&Me (we went to Tullamarine instead)",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "Jan 27\n'We'll just wait until we take the train and get out of this city'\nDania (talking about Sydney)"
+    "text": "Jan 27\n'We'll just wait until we take the train and get out of this city'\nDania (talking about Sydney)",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "Jan 28\n'Wait...so you would like to be in a throuple with another woman too?'\nDania (the day of my best orgasm yet)"
+    "text": "Jan 28\n'Wait...so you would like to be in a throuple with another woman too?'\nDania (the day of my best orgasm yet)",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "Jan 29\n'Ti prego dimmi che è questo con go Daddyyyyy'\nLu (parlando del mio website)"
+    "text": "Jan 29\n'Ti prego dimmi che è questo con go Daddyyyyy'\nLu (parlando del mio website)",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "Jan 30\n'- Please tell me I'll be great.\n- You'll be more than great.'\nMe&Dania (while I was sleeptalking)"
+    "text": "Jan 30\n'- Please tell me I'll be great.\n- You'll be more than great.'\nMe&Dania (while I was sleeptalking)",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "'I thought you wanted a real workshop, I was ready to teach you all the frothing styles'\nMY BELOVED RICHIE AT BEST COFFEE SHOP IN THE WORLD 28 SECONDS"
+    "text": "'I thought you wanted a real workshop, I was ready to teach you all the frothing styles'\nMY BELOVED RICHIE AT BEST COFFEE SHOP IN THE WORLD 28 SECONDS",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "Jan 31\n'- You should talk to David, he has been travelling through South America.\n- AND CENTRAL America!'\nDaniel & his friend (at Trivia)"
+    "text": "Jan 31\n'- You should talk to David, he has been travelling through South America.\n- AND CENTRAL America!'\nDaniel & his friend (at Trivia)",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "Feb 1\n'We want to lay you to do nothing'\nUpwork guy on a meeting (he did pay me for nothing)"
+    "text": "Feb 1\n'We want to lay you to do nothing'\nUpwork guy on a meeting (he did pay me for nothing)",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "Feb 2\n'You're on of us now'\nAvi talking about Jews to me"
+    "text": "Feb 2\n'You're on of us now'\nAvi talking about Jews to me",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "'Let's play fight'\nDania (if you know you know)"
+    "text": "'Let's play fight'\nDania (if you know you know)",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "Feb 3\n'I have a camera pointing at the bed...'\nDania"
+    "text": "Feb 3\n'I have a camera pointing at the bed...'\nDania",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "'Israel will be remembered as a Nazi state'\nOld man on the street at CBD"
+    "text": "'Israel will be remembered as a Nazi state'\nOld man on the street at CBD",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "Feb 4\n'I've never seen him so mesmerised by someone...it's like he forgot everything and everyone else'\nDaniel's mum (talking about him)"
+    "text": "Feb 4\n'I've never seen him so mesmerised by someone...it's like he forgot everything and everyone else'\nDaniel's mum (talking about him)",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "'I feel love for you all the time'\nDania"
+    "text": "'I feel love for you all the time'\nDania",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "'Nicole, beautiful inside and out, you are a welcome guest here always. I might just do that! See u in Europe sister ♥️'\nBecky (via Whatsapp)"
+    "text": "'Nicole, beautiful inside and out, you are a welcome guest here always. I might just do that! See u in Europe sister ♥️'\nBecky (via Whatsapp)",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "Feb 5\n'Potremmo esserci lasciati'\nLu"
+    "text": "Feb 5\n'Potremmo esserci lasciati'\nLu",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "Feb 6\n'Con lo Spirito Santo Broccolo, il Padre Colesterolo parla'\nAli(in chiesa)"
+    "text": "Feb 6\n'Con lo Spirito Santo Broccolo, il Padre Colesterolo parla'\nAli(in chiesa)",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "Feb 7\n'We would like to just hire you now'\nUpwork diamond woman"
+    "text": "Feb 7\n'We would like to just hire you now'\nUpwork diamond woman",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "Feb 8\n'È molto particolare, molto intenso'\nMamma (parlando della Vegemite)"
+    "text": "Feb 8\n'È molto particolare, molto intenso'\nMamma (parlando della Vegemite)",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "Feb 9\n'Non azzardarti ad aggiungere acqua al tè, che lo annacqui'\nMamma"
+    "text": "Feb 9\n'Non azzardarti ad aggiungere acqua al tè, che lo annacqui'\nMamma",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "'Hai avuto una notte di fuoco con un kazako, eh?'\nGinecologo"
+    "text": "'Hai avuto una notte di fuoco con un kazako, eh?'\nGinecologo",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "Feb 10-Feb 23\nX"
+    "text": "Feb 10-Feb 23\nX",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "Feb 24\n'What class are you? Wait, so you're like more clever than me?'\nClassmate Zayd"
+    "text": "Feb 24\n'What class are you? Wait, so you're like more clever than me?'\nClassmate Zayd",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "Feb 25\n'You need to be writing. Humanity needs it'\nDania"
+    "text": "Feb 25\n'You need to be writing. Humanity needs it'\nDania",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "Feb 26\n'Bro forever'\nJulius"
+    "text": "Feb 26\n'Bro forever'\nJulius",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "Feb 27\n'Ma che businesswoman, sei la Maria Draghi'\nJulius"
+    "text": "Feb 27\n'Ma che businesswoman, sei la Maria Draghi'\nJulius",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "Feb 28\n'- This is such an existence of longing.\n- It's the longing that tells you how much you love and are loved. It would be quite a sad existence without it'.\nMe&Mark"
+    "text": "Feb 28\n'- This is such an existence of longing.\n- It's the longing that tells you how much you love and are loved. It would be quite a sad existence without it'.\nMe&Mark",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "Feb 29\n'Arriviamo il 29 [mar] e ripartiamo il 6 [apr]'\nMami (più di una settimana 🙃)"
+    "text": "Feb 29\n'Arriviamo il 29 [mar] e ripartiamo il 6 [apr]'\nMami (più di una settimana 🙃)",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "March 1\n'Wow, you said you wanted to experiment with make up, and now you really did'\nChanel (looking disgusted - we barely talk)"
+    "text": "March 1\n'Wow, you said you wanted to experiment with make up, and now you really did'\nChanel (looking disgusted - we barely talk)",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "March 2\n'It looked like it would hurt!'\nClassmate James (while I was getting my brow pierced)"
+    "text": "March 2\n'It looked like it would hurt!'\nClassmate James (while I was getting my brow pierced)",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "March 3\n'He looks like my grandpa'\nRandom guy at Kiek the Kök (commenting on picture of an Orthodox patriarch)"
+    "text": "March 3\n'He looks like my grandpa'\nRandom guy at Kiek the Kök (commenting on picture of an Orthodox patriarch)",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "March 4\n'Continuo a masturbarmi con questa canzone in sottofondo, e ho pensato a te. Non mentre mi masturbavo. Insomma, ascoltala'\nAli (la canzone è Daphni et Chloe: Part III: Lever du Jour di Ravel e mi ci sono masturbata su)"
+    "text": "March 4\n'Continuo a masturbarmi con questa canzone in sottofondo, e ho pensato a te. Non mentre mi masturbavo. Insomma, ascoltala'\nAli (la canzone è Daphni et Chloe: Part III: Lever du Jour di Ravel e mi ci sono masturbata su)",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "March 5\n'Si scrive vivendo. Tu sei uno scrittore ottocentesco'\nLu"
+    "text": "March 5\n'Si scrive vivendo. Tu sei uno scrittore ottocentesco'\nLu",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "March 6\n'We'll come with you to check those cheao frozen cherries'\nClassmate Leah"
+    "text": "March 6\n'We'll come with you to check those cheao frozen cherries'\nClassmate Leah",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "March 7\n'- Can I pay with cash?\n- No'\nRude server at next door supermarket"
+    "text": "March 7\n'- Can I pay with cash?\n- No'\nRude server at next door supermarket",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "Mar 8\n'I can wash this plate...it's Women's Day after all'\nClassmate Ilya"
+    "text": "Mar 8\n'I can wash this plate...it's Women's Day after all'\nClassmate Ilya",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "Mar 9\n'We just get fucked to then fuck people to feel less lonely...just a Tallinn vibe'\nClassmate Joanna"
+    "text": "Mar 9\n'We just get fucked to then fuck people to feel less lonely...just a Tallinn vibe'\nClassmate Joanna",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "Mar 10\n'Are we in Greece?'\nGen (talking about Pirita beach)"
+    "text": "Mar 10\n'Are we in Greece?'\nGen (talking about Pirita beach)",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "Mar 11\n'-Ci sarà Zucchero a Tallinn!\n-Qualcuno ci va?\n-Te pare?'\nItaliani&io (2nd) sul gruppo Erasmus su Whatsapp"
+    "text": "Mar 11\n'-Ci sarà Zucchero a Tallinn!\n-Qualcuno ci va?\n-Te pare?'\nItaliani&io (2nd) sul gruppo Erasmus su Whatsapp",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "'I'd ask you not to refer to this relationship as disgusting and humiliating anymore please'\nDania (upsy)"
+    "text": "'I'd ask you not to refer to this relationship as disgusting and humiliating anymore please'\nDania (upsy)",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "March 12\n'Mare ghiacciato, cagozzo assicurato'\nGiuli (parlando del mar Baltico)"
+    "text": "March 12\n'Mare ghiacciato, cagozzo assicurato'\nGiuli (parlando del mar Baltico)",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "March 13\n'You're so naughty!'\nOxford girl after I told her I have a nipple piercing (I think she was flirting with me)"
+    "text": "March 13\n'You're so naughty!'\nOxford girl after I told her I have a nipple piercing (I think she was flirting with me)",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "'Anche se avrei preferito consegnarlo direttamente a te🤣'\nCorriere romano (riferendosi al mio pacco (contenente un sex toy lol). Ha poi cancellato il messaggio)"
+    "text": "'Anche se avrei preferito consegnarlo direttamente a te🤣'\nCorriere romano (riferendosi al mio pacco (contenente un sex toy lol). Ha poi cancellato il messaggio)",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "March 14\n'Was the churning butter Polish song your sexual awakening?'\nClassmate Joanna"
+    "text": "March 14\n'Was the churning butter Polish song your sexual awakening?'\nClassmate Joanna",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "'- Nightwalks in freezing rain >>\n- Wish I was there with you, saying let's go home now\n-I'd say just one more lap around the park\n- and i'd begrudgingly agree'\nMe&Dania"
+    "text": "'- Nightwalks in freezing rain >>\n- Wish I was there with you, saying let's go home now\n-I'd say just one more lap around the park\n- and i'd begrudgingly agree'\nMe&Dania",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "March 15\n'I'll send this picture to my mum so she'll think I have friends'\nClassmate Goran"
+    "text": "March 15\n'I'll send this picture to my mum so she'll think I have friends'\nClassmate Goran",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "March 16\n'Can we leave?'\nGen (tired of Tartu)"
+    "text": "March 16\n'Can we leave?'\nGen (tired of Tartu)",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "March 17-March 29\nX"
+    "text": "March 17-March 29\nX",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "March 30\n'Chiama l'ambulamza, ha un'insufficienza respiratoria!'\nAle (ero priva di sensi dopo aver vomitato ubriaca)"
+    "text": "March 30\n'Chiama l'ambulamza, ha un'insufficienza respiratoria!'\nAle (ero priva di sensi dopo aver vomitato ubriaca)",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "March 31\n'Chiama quelli del ristorante russo e annulla la prenotazione. Non ce la faccio più di sto cibo russo'\nMamma (dopo letteralmente 1 borsch)"
+    "text": "March 31\n'Chiama quelli del ristorante russo e annulla la prenotazione. Non ce la faccio più di sto cibo russo'\nMamma (dopo letteralmente 1 borsch)",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "April 1\n'Mi sa che abbiamo perso il traghetto'\nPapà"
+    "text": "April 1\n'Mi sa che abbiamo perso il traghetto'\nPapà",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "April 2\n'Dai mangia una polpetta di renna su che ti fa bene'\nPapà"
+    "text": "April 2\n'Dai mangia una polpetta di renna su che ti fa bene'\nPapà",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "April 3\n'You're so smart and insightful'\nMark"
+    "text": "April 3\n'You're so smart and insightful'\nMark",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "April 4\n'Yes the war might mean the end of your relationship'\nClassmate Leah (talking about me&Dania arguing about Israel and Palestine - I agreed w her)"
+    "text": "April 4\n'Yes the war might mean the end of your relationship'\nClassmate Leah (talking about me&Dania arguing about Israel and Palestine - I agreed w her)",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "April 5\n'Americana dall'Arizona. Non aggiungo altro'\nLu via whatsapp (adducendo questo come giustificazione delle idee stupide di una tipa)"
+    "text": "April 5\n'Americana dall'Arizona. Non aggiungo altro'\nLu via whatsapp (adducendo questo come giustificazione delle idee stupide di una tipa)",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "April 6\n'Don't tell me you're a horse girlie! Horse girlies are the female equivalent of rugby boys'\nClassmate Ilya"
+    "text": "April 6\n'Don't tell me you're a horse girlie! Horse girlies are the female equivalent of rugby boys'\nClassmate Ilya",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "April 7\n' тебе остались навыки'\nDasha, russian girl talking about my horse riding skills"
+    "text": "April 7\n' тебе остались навыки'\nDasha, russian girl talking about my horse riding skills",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "April 8\n'Magnanimity for Ineptitude is usually reserved for children in my eyes'\nDania"
+    "text": "April 8\n'Magnanimity for Ineptitude is usually reserved for children in my eyes'\nDania",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "'ZIAAAAA MAAAAAA richiamate il Bro Freud dalla tomba e fategli mettere qualche dito su per il culo della gente per vedere se hanno passato la fase anale…. Perchè qua siamo rimasti alla fase orale'\nJulius"
+    "text": "'ZIAAAAA MAAAAAA richiamate il Bro Freud dalla tomba e fategli mettere qualche dito su per il culo della gente per vedere se hanno passato la fase anale…. Perchè qua siamo rimasti alla fase orale'\nJulius",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "April 9\n'If I had to drop the friends who go out with people I don't like I wouldn't have many friends'\nClassmate Joanna (via whatsapp)"
+    "text": "April 9\n'If I had to drop the friends who go out with people I don't like I wouldn't have many friends'\nClassmate Joanna (via whatsapp)",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "April 10\n'This girl asked me out and I'm going out with her tonight...do you wanna join?'\nMaya, the girl I thought I was on a date on (neither me nor the other girl were)"
+    "text": "April 10\n'This girl asked me out and I'm going out with her tonight...do you wanna join?'\nMaya, the girl I thought I was on a date on (neither me nor the other girl were)",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "Apr 11\n'Capisci un sacco delle persone dal loro rapporto con sesso, soldi e potere'\nJulius"
+    "text": "Apr 11\n'Capisci un sacco delle persone dal loro rapporto con sesso, soldi e potere'\nJulius",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "Julius 12\n'You're the third person today who told me they want to off themselves'\nJoanna"
+    "text": "Julius 12\n'You're the third person today who told me they want to off themselves'\nJoanna",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "April 13\n'Nudity is community'\nLu"
+    "text": "April 13\n'Nudity is community'\nLu",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "April 14\n'- I tedeschi sono sporchi.\n- Eh a loro piace un'altra pulizia...quella etnica'\nMe&Julius"
+    "text": "April 14\n'- I tedeschi sono sporchi.\n- Eh a loro piace un'altra pulizia...quella etnica'\nMe&Julius",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "April 15\n'- E quindi questo tipo che mangia 1 pollo e mezzo al giorno vuole diventare poliamoroso.\n- Polliamoroso?'\nIo&Lu"
+    "text": "April 15\n'- E quindi questo tipo che mangia 1 pollo e mezzo al giorno vuole diventare poliamoroso.\n- Polliamoroso?'\nIo&Lu",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "Apr 16\n'That's why the left will always lose, because they use soft power against people who use the guns'\nClassmate Richard"
+    "text": "Apr 16\n'That's why the left will always lose, because they use soft power against people who use the guns'\nClassmate Richard",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "April 17\n'L'idea del body count è un'idea capitalistica'\nJulius (via Whatsapp)"
+    "text": "April 17\n'L'idea del body count è un'idea capitalistica'\nJulius (via Whatsapp)",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "April 18\n'There's always fourth year, Nicole, of you'll ever change your mind'\nClassmate Ilya"
+    "text": "April 18\n'There's always fourth year, Nicole, of you'll ever change your mind'\nClassmate Ilya",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "April 19\n'Io supporto tutti, ama chi vuoi...ma non i brutti'\nJulius"
+    "text": "April 19\n'Io supporto tutti, ama chi vuoi...ma non i brutti'\nJulius",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "April 20\n'I mean Nazists are the price to pay if you want to pay if you want to live in a democracy'\nАлися from Q-space"
+    "text": "April 20\n'I mean Nazists are the price to pay if you want to pay if you want to live in a democracy'\nАлися from Q-space",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "Apr 21\n'You have to stop put yourself in dangerous situations'\nDania"
+    "text": "Apr 21\n'You have to stop put yourself in dangerous situations'\nDania",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "Apr 22\n'Social anxiety is scared of you'\nJoanna"
+    "text": "Apr 22\n'Social anxiety is scared of you'\nJoanna",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "Apr 23\n'No ma cosa c'entra il patriarcato? Depilarsi fa parte della bellezza di essere donne. A me piace curarmi e anche a te perchè sei mia figlia'\nMamma"
+    "text": "Apr 23\n'No ma cosa c'entra il patriarcato? Depilarsi fa parte della bellezza di essere donne. A me piace curarmi e anche a te perchè sei mia figlia'\nMamma",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "Apr 24\n'If it gets up, I'll get down'\nJoanna (on older men' dicks)"
+    "text": "Apr 24\n'If it gets up, I'll get down'\nJoanna (on older men' dicks)",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "Apr 23\n'Y вас есть светлые глаза'\nВладимир the street musician"
+    "text": "Apr 23\n'Y вас есть светлые глаза'\nВладимир the street musician",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "Apr 24\n'- I feel like I can't do anything.\n- Well, it could have been worse. You could've not been able to do anything AND be ugly'\nMe&Iggy"
+    "text": "Apr 24\n'- I feel like I can't do anything.\n- Well, it could have been worse. You could've not been able to do anything AND be ugly'\nMe&Iggy",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "Apr 28\n'“Museum” and “Club” sounds totally opposite but I understand this is exactly Nicole vibes 😎😎😎'\nAlex, the Japanese guy"
+    "text": "Apr 28\n'“Museum” and “Club” sounds totally opposite but I understand this is exactly Nicole vibes 😎😎😎'\nAlex, the Japanese guy",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "Apr 29\n'- I have a pussy's heart.\n(Laughs) - I have a pussy's heart too. Maybe that's what the world needs'\nGustav, the Swedish guy"
+    "text": "Apr 29\n'- I have a pussy's heart.\n(Laughs) - I have a pussy's heart too. Maybe that's what the world needs'\nGustav, the Swedish guy",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "Apr 30-May 17\nX"
+    "text": "Apr 30-May 17\nX",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "May 18\nI didn't really know what missing someone truly was until this year.\nMark"
+    "text": "May 18\nI didn't really know what missing someone truly was until this year.\nMark",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "May 19-21\nX"
+    "text": "May 19-21\nX",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "May 22\n'No allo stoicismo, sì all'industria farmaceutica'\nLu"
+    "text": "May 22\n'No allo stoicismo, sì all'industria farmaceutica'\nLu",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "May 23-June 4\nX"
+    "text": "May 23-June 4\nX",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "June 5\n'As long as you have that glorious mind as a sanctuary you'll be okay'\nDania"
+    "text": "June 5\n'As long as you have that glorious mind as a sanctuary you'll be okay'\nDania",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "June 6-18\nX"
+    "text": "June 6-18\nX",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "June 19\n'Strambi si è in generale contro il sistema, non solo sotto le coperte'\nLu"
+    "text": "June 19\n'Strambi si è in generale contro il sistema, non solo sotto le coperte'\nLu",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "June 20-Jul 4\nX"
+    "text": "June 20-Jul 4\nX",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "Jul 5\n'Give me a chance to make you fat'\nStrillone del ristorante vicino a Sorbillo"
+    "text": "Jul 5\n'Give me a chance to make you fat'\nStrillone del ristorante vicino a Sorbillo",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "Jul 9\n- How much is it (pointing at a restaurant)?\n- Me?\nDani&boat tour guide"
+    "text": "Jul 9\n- How much is it (pointing at a restaurant)?\n- Me?\nDani&boat tour guide",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "Jul 10-30\nX"
+    "text": "Jul 10-30\nX",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "Jul 31\n' You are a really good person\nYeah but that's analogous to the definition of bravery - bravery isn't being fearless, it's facing the fear and pushing through anyway'\nMark"
+    "text": "Jul 31\n' You are a really good person\nYeah but that's analogous to the definition of bravery - bravery isn't being fearless, it's facing the fear and pushing through anyway'\nMark",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "Aug 1-18\nX"
+    "text": "Aug 1-18\nX",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "Aug 19\n'Tu sei una cornacchia solitaria'\nAle"
+    "text": "Aug 19\n'Tu sei una cornacchia solitaria'\nAle",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "Aug 20\n'- Possiamo parlare del tuo argomento preferito?\n-Aspetta sono confusa...droghe o bambini?'\nSarida&Giovanna attraverso Lu (via whatsapp)"
+    "text": "Aug 20\n'- Possiamo parlare del tuo argomento preferito?\n-Aspetta sono confusa...droghe o bambini?'\nSarida&Giovanna attraverso Lu (via whatsapp)",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "Aug 21\n'Se scegliamo il male è perchè abbiamo paura che gli altri ci facciano male'\nLu"
+    "text": "Aug 21\n'Se scegliamo il male è perchè abbiamo paura che gli altri ci facciano male'\nLu",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "Aug 22\n'Papà continuava a urlare, moriremo! moriremo!'\nAlex (alle saline di Turda)"
+    "text": "Aug 22\n'Papà continuava a urlare, moriremo! moriremo!'\nAlex (alle saline di Turda)",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "Aug 23\n'You're very beautiful you know that'\nDania"
+    "text": "Aug 23\n'You're very beautiful you know that'\nDania",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "Aug 25\n'- Facciamo che Giulio è gli obesi.\n- Non è facile trovare un posto a sedersi per loro.\n-Sono Rosa Park?'\nJulius al gioco indovina chi delle minoranze"
+    "text": "Aug 25\n'- Facciamo che Giulio è gli obesi.\n- Non è facile trovare un posto a sedersi per loro.\n-Sono Rosa Park?'\nJulius al gioco indovina chi delle minoranze",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "'-Hanno una visione del mondo diversa dagli altri.\n-Sono i daltonici?'\nLu (erano i terrapiattisti)"
+    "text": "'-Hanno una visione del mondo diversa dagli altri.\n-Sono i daltonici?'\nLu (erano i terrapiattisti)",
+    "group": 37
    },
    {
     "type": "paragraph",
-    "text": "Aug 26\n'-I feel like a little pebble on the ground. Cute and stagnant lol.'\nSof (via WA)"
+    "text": "Aug 26\n'-I feel like a little pebble on the ground. Cute and stagnant lol.'\nSof (via WA)",
+    "group": 37
    }
   ]
  },

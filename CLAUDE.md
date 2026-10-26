@@ -192,7 +192,9 @@ a separate Europe close-up, the map legend or the trip buttons under the map on 
   Wikisource) for now: she wants her own Italian translation ("in questo selvaggio abisso, grembo della natura, e forse
   tomba…"), not found online yet. Old spellings ("Heav'n", "Warr") count as the modern word when reciting.
   **Every quote** can be learned too: a quiet "Learn by heart" under each one opens `#heart-q-<hash of book + words>`
-  (made on first open; long quotes are cut into parts of about 35 words, sentence by sentence).
+  (made on first open; long quotes are cut into parts of about 35 words, sentence by sentence). Paragraphs that came from
+  one Notion block share a `group` and get one link under the last (Nicky's call: not a link under every line of a poem);
+  short verse lines are learned four lines at a time.
   All is built into `window.FN_POEMS`. Each poem gets a **Learn by heart** link under its heading, opening `#heart-<poem>`:
   pick the language to learn it in, read a stanza (with the other versions), let its words fade to first letters (each Chinese
   character is a word; tap to peek), then type it from memory (90% of the words counts; "I was right" overrides). Recited

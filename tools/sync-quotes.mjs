@@ -143,7 +143,7 @@ const isSource = s => s && !s.includes('\n') && s.length <= 60 && !/[.!?»"”�
 const paras = text => text.split(/\n\s*\n/).map(s => s.replace(/^\n+|\s+$/g, '')).filter(s => s.trim());
 
 const LOOSE = ['sayings', 'unnamed']; // her sayings and lines without a name, shown on the Miscellaneous page
-let current = books.unnamed, heading = null;
+let current = books.unnamed, heading = null; let groups = 0;
 for (const b of out.notion) {
   if (b.t === 'gap') continue;
   if (b.t === 'h') { heading = b.text; continue; }
@@ -163,7 +163,10 @@ for (const b of out.notion) {
       .filter(p => !drop.includes(norm(p)));
     // On the Miscellaneous page each saying stays whole, with the line naming it
     if (LOOSE.includes(book.key)) book.blocks.push({ type: 'paragraph', text: parts.join('\n\n') });
-    else parts.forEach(p => book.blocks.push(/^\d{4}$/.test(p.trim()) ? { type: 'heading', text: p.trim() } : { type: 'paragraph', text: p }));
+    // Lines kept together in one Notion block (a poem, or a passage in several paragraphs) share a group, so they are
+    // learned by heart as one piece rather than line by line
+    else { const group = parts.length > 1 ? ++groups : undefined;
+      parts.forEach(p => book.blocks.push(/^\d{4}$/.test(p.trim()) ? { type: 'heading', text: p.trim() } : { type: 'paragraph', text: p, group })); }
   }
 }
 // A Kindle highlight often catches a word or two of the sentences around it ("nostre amare lezioni. Soffrire è un solo
