@@ -7,8 +7,10 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - run: |
+          set +e
           UA='Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36'
           curl -sSL -A "$UA" "https://www.goodreads.com/notes/197324729-nicole-p" -o l.html
+          grep -o '<script[^>]*src=[^>]*>' l.html | head -30
           for s in $(grep -o 'src="[^"]*\.js[^"]*"' l.html | sed 's/src="//;s/"$//' | sed 's#^/#https://www.goodreads.com/#'); do
             curl -sSL "$s" -o b.js; n=$(grep -c AnnotatedBooks b.js); echo "$n $s"
             if [ "$n" != 0 ]; then grep -o '.\{300\}AnnotatedBooksLandingPage.\{50\}' b.js | head -2; grep -o '"[^"]*\(notes\|annotated\)[^"]*"' b.js | sort -u | head -40; fi
