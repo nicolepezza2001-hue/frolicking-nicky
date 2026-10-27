@@ -597,15 +597,22 @@
   // random order, typed answers checked like the vocabulary quiz (alternatives separated by " / ").
   const lessonQuiz = (items, code) => {
     const box = el('section', 'fn-lesson-quiz'), h = el('h3', null, 'Quiz'), body = el('div', 'fn-quiz');
-    box.setAttribute('aria-label', 'Quiz on this lesson'); box.append(h, body);
+    box.setAttribute('aria-label', 'Quiz on this lesson');
+    // While the quiz runs the notes are hidden, so the answers aren't just above; "Show my notes" brings them back
+    const peek = el('button', 'fn-highlight-mode fn-quiz-peek', 'Show my notes'); peek.type = 'button'; peek.hidden = true;
+    const page = () => box.closest('.fn-lesson');
+    const only = on => { page()?.classList.toggle('fn-quiz-only', on); peek.textContent = on ? 'Show my notes' : 'Hide my notes'; };
+    peek.addEventListener('click', () => { only(!page()?.classList.contains('fn-quiz-only')); box.scrollIntoView({ block: 'start' }); });
+    const head = el('div', 'fn-quiz-head'); head.append(h, peek); box.append(head, body);
     const button = (cls, text, on) => { const b = el('button', cls, text); b.type = 'button'; b.addEventListener('click', on); return b; };
     const row = (...items) => { const r = el('div', 'fn-vocab-modes'); r.append(...items); return r; };
     const n = Math.min(items.length, 10), sep = /\s\/\s/;
-    const intro = () => body.replaceChildren(el('p', 'fn-quiz-progress', `${n} questions on this page. Type the answer, then check it.`),
-      row(button('fn-study-btn', 'Start the quiz', run)));
+    const intro = () => (only(false), peek.hidden = true, body.replaceChildren(el('p', 'fn-quiz-progress', `${n} questions on this page. Type the answer, then check it.`),
+      row(button('fn-study-btn', 'Start the quiz', run))));
     const run = () => {
       const round = items.map(x => [Math.random(), x]).sort((a, b) => a[0] - b[0]).slice(0, n).map(x => x[1]);
       let i = 0, score = 0; const missed = [];
+      only(true); peek.hidden = false; box.scrollIntoView({ block: 'start' });
       const ask = () => {
         if (i === round.length) return finish();
         const [question, answer] = round[i], [first, ...also] = answer.split(sep);
@@ -633,6 +640,7 @@
         input.focus({ preventScroll: true }); box.scrollIntoView({ block: 'nearest' });
       };
       const finish = () => {
+        only(false); peek.hidden = true; // the notes come back to look things up
         body.replaceChildren(el('p', 'fn-quiz-q', `${score} / ${round.length}`),
           el('p', 'fn-quiz-progress', missed.length ? 'To look at again:' : 'Every one right.'));
         if (missed.length) {
