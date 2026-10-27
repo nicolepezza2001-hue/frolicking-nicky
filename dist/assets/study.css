@@ -423,3 +423,28 @@ article.fn-lesson[id^="quote-"] .fn-lesson-notes p.fn-heart-quote{margin:.15em 0
 .fn-heart-hint{margin:-4px 0 12px;font-style:italic;color:var(--st-soft)}
 .fn-quotes-book[data-due] .fn-quotes-author{color:var(--st-yellow)}
 @media(max-width:760px){.fn-heart-stage{padding:16px 14px}}
+
+/* Quotes: search and "Surprise me" (quotes.js); the quote you land on glows for a moment */
+.fn-quotes-tools{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin:0 0 26px}
+.fn-quotes-tools input{flex:1 1 220px;min-width:0;font:inherit;font-size:1.1rem;padding:8px 14px;border-radius:999px;background:transparent;color:var(--st-cream);border:1px solid #f3d99555}
+.fn-quotes-tools input::placeholder{color:#efe0bf80}
+.fn-quotes-tools input:focus{outline:none;border-color:var(--st-yellow);box-shadow:0 0 10px #f3d99533}
+.fn-quotes-found{margin:0 0 30px}
+.is-searching .fn-heart-shelf{display:none}
+.fn-quotes-tools input::-webkit-search-cancel-button{-webkit-appearance:none;appearance:none}
+.fn-quotes-hits{list-style:none;margin:0;padding:0}
+.fn-quotes-hit{display:block;text-decoration:none;color:inherit;padding:10px 0;border-bottom:1px solid #f3d99522}
+.fn-quotes-hit:hover .fn-quotes-snippet{color:var(--st-yellow)}
+.fn-quotes-snippet{display:block;font-style:italic;color:var(--st-cream);transition:color .3s ease}
+.fn-quotes-snippet mark{background:none;color:var(--st-yellow);font-style:normal;border-bottom:1px solid currentColor}
+@keyframes fn-quote-found{0%,40%{background:#f3d99566}100%{background:transparent}}
+article.fn-lesson .fn-quote-found{animation:fn-quote-found 2.6s ease-out;border-radius:4px}
+/* Reading aloud (by-heart.js): on the light book pages the speaker is drawn in purple */
+article.fn-lesson .fn-heart-quote .fn-listen,article.fn-lesson .fn-heart-open .fn-listen{color:var(--st-purple);margin-left:6px}
+.fn-heart-step .fn-listen{margin-left:4px}
+.fn-heart-verse>.fn-listen{float:right}
+/* Today (today.js) */
+.fn-today-link{margin-left:auto}
+.fn-study-bar .fn-today-link~.fn-today-link{display:none}
+.fn-today-none{font-style:italic;color:var(--st-soft)}
+@media(prefers-reduced-motion:reduce){article.fn-lesson .fn-quote-found{animation:none;background:#f3d99544}.fn-quotes-snippet{transition:none}}

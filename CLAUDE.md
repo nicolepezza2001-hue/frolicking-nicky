@@ -245,6 +245,14 @@ a separate Europe close-up, the map legend or the trip buttons under the map on 
   `[question, answer]`, alternatives split by " / "): up to ten questions shuffled, Check shows the answer, "I was right"
   overrides. While a quiz runs the page's notes are hidden (Nicky could see the answers just above); "Show my notes"
   brings them back, and they return by themselves at the score. New lessons need a quiz entry too.
+- **Today** (`#today`, `assets/today.js`): everything due in one place: poems and quotes to recite (`window.fnHeartDue()` in
+  `by-heart.js`), lesson-quiz questions she missed that have come back, and vocabulary words she keeps missing. A small "Today"
+  link sits at the right of the bar on the study's pages. Missed lesson-quiz questions are kept in `fn-study-v1` under `review`
+  (by lesson id) and come back after 2, then 4, then 8 days, first in the next quiz on that lesson; a right answer moves them on.
+- **Search and Surprise me** (top of Quotes, `assets/quotes.js`): search finds words in every quote, author and book (up to 60
+  shown); a result opens its book page at that quote with a soft glow. "Surprise me" opens a random quote the same way.
+- **Read aloud**: a small fine-line speaker beside each poem's and quote's Learn by heart link, in the read step and after
+  reciting (`listen()` in `by-heart.js`, the browser's own voice, language guessed from the text).
 - **Sync between devices** (`assets/study-sync.js`, loaded before `study-annotations.js`): the box "On all your devices" on the
   crystal's page. Nicky pastes a fine-grained GitHub token with only Gists read/write (remembered on that device, in
   `fn-study-sync-v1`); `fn-study-v1`, `fn-study-lessons-v1` and `fn-study-annotations-v1` are copied to a secret gist

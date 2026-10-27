@@ -73,6 +73,32 @@
   };
   const hint = word => { if (HAN.test(word)) return '〇'; const m = word.match(/^([^\p{L}\p{N}]*[\p{L}\p{N}])(.*)$/u); return m ? m[1] + m[2].replace(/[\p{L}\p{N}]/gu, '·') : word; };
 
+  // ---- Reading aloud, in the browser's own voice --------------------------------------------------------------
+  const VOICES = { en: 'en-GB', it: 'it-IT', fr: 'fr-FR', ru: 'ru-RU', zh: 'zh-CN' };
+  // A quote has no language of its own: guess it from its letters and its commonest little words
+  const SMALL = { it: /^(che|non|il|di|la|è|per|una|sono|mi|ma|del|della|gli|le|ho|come|più)$/, fr: /^(le|les|des|est|je|pas|une|et|qui|que|dans|ne|du|au|vous|il|elle)$/,
+    en: /^(the|and|of|to|is|you|that|in|it|i|was|for|my|me|not|with|be)$/ };
+  const guess = text => {
+    if (/\p{Script=Han}/u.test(text)) return 'zh';
+    if (/[\u0400-\u04ff]/.test(text)) return 'ru';
+    const ws = text.toLowerCase().split(/[^\p{L}]+/u), score = l => ws.filter(w => SMALL[l].test(w)).length;
+    return ['en', 'it', 'fr'].sort((a, b) => score(b) - score(a))[0];
+  };
+  const speak = (text, lang) => {
+    const code = (lang || guess(text)).split('-')[0], u = new SpeechSynthesisUtterance(text.replace(/\n/g, ',\n'));
+    u.lang = VOICES[code] || ''; u.rate = .9;
+    const v = speechSynthesis.getVoices().find(x => x.lang.toLowerCase().startsWith(code)); if (v) u.voice = v;
+    speechSynthesis.cancel(); speechSynthesis.speak(u);
+  };
+  // A small speaker in fine lines, like the one on the vocabulary
+  const listen = (text, lang, label = 'Listen') => {
+    if (!('speechSynthesis' in window) || lang === 'zh-Latn') return null;
+    const b = el('button', 'fn-listen'); b.type = 'button'; b.setAttribute('aria-label', label);
+    b.innerHTML = '<svg viewBox="0 0 24 24" width="1.15em" height="1.15em" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9.5h3.2L12 5.5v13l-4.8-4H4z"/><path d="M15.2 9.2a4 4 0 0 1 0 5.6"/><path d="M17.6 6.8a7.4 7.4 0 0 1 0 10.4"/></svg>';
+    b.addEventListener('click', e => { e.preventDefault(); speechSynthesis.speaking ? speechSynthesis.cancel() : speak(typeof text === 'function' ? text() : text, lang); });
+    return b;
+  };
+
   // ---- A poem's room ------------------------------------------------------------------------------------
   const main = document.querySelector('.fn-study-main') || document.body;
   const room = poem => {
@@ -139,7 +165,9 @@
 
     // Step 1: read it, with the translation underneath
     const read = i => {
-      const v = version(poem), parts = [label(i), el('p', 'fn-heart-step', 'Read it slowly, aloud if you can.'), verse(v.stanzas[i])];
+      const v = version(poem), step = el('p', 'fn-heart-step', 'Read it slowly, aloud if you can. ');
+      const ear = listen(v.stanzas[i], v.lang, 'Hear it read aloud'); if (ear) step.append(ear);
+      const parts = [label(i), step, verse(v.stanzas[i])];
       parts[2].lang = v.lang;
       poem.versions.filter(o => o !== v && o.stanzas[i]).forEach(o => { const t = el('p', 'fn-heart-translation', o.stanzas[i]); t.lang = o.lang; parts.push(t); });
       const go = button('Let it fade'); go.addEventListener('click', () => fade(i, 1));
@@ -182,6 +210,7 @@
         fine.addEventListener('click', () => { tally(true); turn(); });
         redo.addEventListener('click', () => recite(i, how));
         buttons.append(next); if (!right) buttons.append(redo, fine);
+        const ear = listen(lines(poem)[i], version(poem).lang, 'Hear it read aloud'); if (ear) v.prepend(ear);
         result.replaceChildren(el('p', 'fn-quiz-verdict', right ? (score === 1 ? 'Every word.' : `Yes: ${hit.size} of ${total} words.`) : `${hit.size} of ${total} words. Underlined: the ones that slipped away.`), v, buttons);
         next.focus({ preventScroll: true });
       });
@@ -245,14 +274,17 @@
       const heading = [...(page?.querySelectorAll('.fn-lesson-notes h3') || [])].find(h => h.textContent === poem.heading);
       if (!heading || heading.nextElementSibling?.classList.contains('fn-heart-open')) return;
       const p = el('p', 'fn-heart-open'), a = el('a', 'fn-highlight-mode', 'Learn by heart'); a.href = '#heart-' + poem.id;
-      p.append(a); heading.after(p);
+      const en = poem.versions.find(v => v.lang === 'en') || poem.versions[0];
+      const ear = listen(() => en.stanzas.join('\n\n'), en.lang, 'Hear the poem read aloud');
+      p.append(a); if (ear) p.append(ear); heading.after(p);
     });
     QUOTES.forEach(quote => {
       const par = document.querySelector(`#${quote.book} .fn-lesson-notes p[data-note-block="${quote.block}"]`);
       if (!par || par.nextElementSibling?.classList.contains('fn-heart-quote')) return;
       const p = el('p', 'fn-heart-quote'), a = el('a', null, 'Learn by heart'); a.href = '#heart-' + quote.id;
       a.addEventListener('click', () => open(quote.id));
-      p.append(a); par.after(p);
+      const ear = listen(() => quote.versions[0].stanzas.join('\n'), '', 'Hear it read aloud');
+      p.append(a); if (ear) p.append(' ', ear); par.after(p);
     });
   };
   buttons();
@@ -277,8 +309,16 @@
       li.append(a); ul.append(li);
     });
     box.append(el('p', 'fn-heart-hint', 'Any quote can be learned too: “Learn by heart” sits under each one.'), ul);
-    if (going.length || POEMS.length) shelf?.prepend(box);
+    // under the search box of Quotes (quotes.js)
+    const found = shelf?.querySelector('.fn-quotes-found');
+    if (going.length || POEMS.length) found ? found.after(box) : shelf?.prepend(box);
   };
   list();
   addEventListener('hashchange', () => { if (location.hash === '#quotes') list(); });
+
+  // For the Today page (today.js): every poem or quote with stanzas due today
+  window.fnHeartDue = () => POEMS.concat([...QUOTES.values()]).filter(p => state.poems[p.id] && due(p).length).map(p => ({
+    title: p.id.startsWith('q-') ? '“' + p.versions[0].stanzas[0].split(/\s+/).slice(0, 7).join(' ') + '…”' : p.title,
+    sub: (p.id.startsWith('q-') ? p.title + ' · ' : '') + summary(p), href: '#heart-' + p.id,
+    open: () => { if (p.id.startsWith('q-')) open(p.id); } }));
 })();
