@@ -302,6 +302,9 @@ html:has(body.fn-lesson-open){background:#faeac0}
 
 /* The quiz at the end of a lesson, in purple ink on the lesson paper */
 .fn-lesson-quiz{max-width:760px;border-top:1px solid #2b1e3840;margin-top:36px;padding-top:24px}
+.fn-lesson.fn-quiz-only .fn-lesson-workspace{display:none}
+.fn-lesson.fn-quiz-only .fn-lesson-quiz{border-top:0;margin-top:8px;padding-top:0}
+.fn-quiz-head{display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap}
 .fn-lesson-quiz h3{font:800 1.4rem/1.4 'Arnold Boecklin',Georgia,serif;color:var(--st-purple);margin:0 0 6px;word-spacing:-.38em}
 .fn-lesson-quiz .fn-quiz-progress,.fn-lesson-quiz .fn-quiz-verdict{color:#2b1e38b3}
 .fn-lesson-quiz .fn-quiz-q{font-size:clamp(1.4rem,3.6vw,1.9rem);color:var(--st-purple)}

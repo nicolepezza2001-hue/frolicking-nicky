@@ -243,7 +243,8 @@ a separate Europe close-up, the map legend or the trip buttons under the map on 
   and her own Voices page for voice types (`pages` in its TOPICS entry).
 - Every French, Russian, Linguistics, Silver Age, Tocharian, Avestan, Opera and PIE study-notes lesson ends with a typed quiz (`FN_LESSON_QUIZZES` in `assets/lesson-quizzes.js`,
   `[question, answer]`, alternatives split by " / "): up to ten questions shuffled, Check shows the answer, "I was right"
-  overrides. New lessons need a quiz entry too.
+  overrides. While a quiz runs the page's notes are hidden (Nicky could see the answers just above); "Show my notes"
+  brings them back, and they return by themselves at the score. New lessons need a quiz entry too.
 - **Sync between devices** (`assets/study-sync.js`, loaded before `study-annotations.js`): the box "On all your devices" on the
   crystal's page. Nicky pastes a fine-grained GitHub token with only Gists read/write (remembered on that device, in
   `fn-study-sync-v1`); `fn-study-v1`, `fn-study-lessons-v1` and `fn-study-annotations-v1` are copied to a secret gist
