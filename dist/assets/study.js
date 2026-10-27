@@ -595,7 +595,20 @@
 
   // A short quiz at the end of a lesson (FN_LESSON_QUIZZES in lesson-quizzes.js): up to ten of its questions in a
   // random order, typed answers checked like the vocabulary quiz (alternatives separated by " / ").
-  const lessonQuiz = (items, code) => {
+  // A lesson-quiz question she got wrong comes back after a few days (2, then 4, then 8) until she has it right three
+  // times running; state.review[lesson] keeps them, and the Today page (today.js) lists the lessons with some due
+  const DAY = () => Math.floor((Date.now() - new Date().getTimezoneOffset() * 60000) / 864e5), AGAIN = [0, 2, 4, 8];
+  const lessonQuiz = (items, code, lesson = {}) => {
+    const due = () => { const r = state.review?.[lesson.id]?.q || {}; return items.filter(([q]) => r[q] && r[q].d <= DAY()); };
+    const remember = (question, right) => {
+      if (!lesson.id) return;
+      const rec = (state.review ||= {})[lesson.id] ||= { title: lesson.title, q: {} }, q = rec.q[question];
+      rec.title = lesson.title;
+      if (!right) rec.q[question] = { b: 1, d: DAY() + AGAIN[1] };
+      else if (q) { if (q.b + 1 >= AGAIN.length) delete rec.q[question]; else rec.q[question] = { b: q.b + 1, d: DAY() + AGAIN[q.b + 1] }; }
+      if (!Object.keys(rec.q).length) delete state.review[lesson.id];
+      save();
+    };
     const box = el('section', 'fn-lesson-quiz'), h = el('h3', null, 'Quiz'), body = el('div', 'fn-quiz');
     box.setAttribute('aria-label', 'Quiz on this lesson');
     // While the quiz runs the notes are hidden, so the answers aren't just above; "Show my notes" brings them back
@@ -607,10 +620,11 @@
     const button = (cls, text, on) => { const b = el('button', cls, text); b.type = 'button'; b.addEventListener('click', on); return b; };
     const row = (...items) => { const r = el('div', 'fn-vocab-modes'); r.append(...items); return r; };
     const n = Math.min(items.length, 10), sep = /\s\/\s/;
-    const intro = () => (only(false), peek.hidden = true, body.replaceChildren(el('p', 'fn-quiz-progress', `${n} questions on this page. Type the answer, then check it.`),
+    const intro = () => (only(false), peek.hidden = true, body.replaceChildren(el('p', 'fn-quiz-progress', `${n} questions on this page. Type the answer, then check it.`
+      + (due().length ? ` ${due().length === 1 ? 'One you missed before comes' : due().length + ' you missed before come'} first.` : '')),
       row(button('fn-study-btn', 'Start the quiz', run))));
     const run = () => {
-      const round = items.map(x => [Math.random(), x]).sort((a, b) => a[0] - b[0]).slice(0, n).map(x => x[1]);
+      const back = due(), round = back.concat(items.filter(x => !back.includes(x)).map(x => [Math.random(), x]).sort((a, b) => a[0] - b[0]).map(x => x[1])).slice(0, Math.max(n, back.length));
       let i = 0, score = 0; const missed = [];
       only(true); peek.hidden = false; box.scrollIntoView({ block: 'start' });
       const ask = () => {
@@ -629,11 +643,16 @@
           const right = matches(input.value, answer, sep);
           input.disabled = check.disabled = true;
           if (right) score++; else missed.push(round[i]);
+          const before = state.review?.[lesson.id]?.q?.[question]; remember(question, right);
           const sol = el('p', 'fn-quiz-solution', first); sol.lang = code;
           result.replaceChildren(el('p', 'fn-quiz-verdict', right ? 'Right.' : input.value.trim() ? 'Not quite. The answer:' : 'The answer:'), sol);
           if (also.length) { const more = el('p', 'fn-quiz-verdict', 'Also right: ' + also.join(' · ')); more.lang = code; result.append(more); }
           const go = button('fn-study-btn', i + 1 === round.length ? 'See my score' : 'Next', next), buttons = [go];
-          if (!right) buttons.push(button('fn-highlight-mode', 'I was right', () => { missed.pop(); score++; next(); }));
+          if (!right) buttons.push(button('fn-highlight-mode', 'I was right', () => {
+            missed.pop(); score++;
+            // "I was right" counts as right: put back what was saved before the miss, then move it on
+            const rec = state.review?.[lesson.id]; if (rec) { if (before) rec.q[question] = before; else delete rec.q[question]; }
+            remember(question, true); next(); }));
           result.append(row(...buttons)); go.focus();
         });
         body.replaceChildren(el('p', 'fn-quiz-progress', `${i + 1} of ${round.length}`), el('p', 'fn-quiz-q', question), form, result);
@@ -729,7 +748,7 @@
     workspace.append(notes, margin); sec.append(workspace);
     window.fnAnnotateLesson?.(lesson, notes, margin, sec);
     const quiz = (window.FN_LESSON_QUIZZES || {})[lesson.id];
-    if (quiz?.length) sec.append(lessonQuiz(quiz, VOCAB[topic]?.[1] || 'en'));
+    if (quiz?.length) sec.append(lessonQuiz(quiz, VOCAB[topic]?.[1] || 'en', { id: original.id, title: lesson.title + ' · ' + name }));
     const footer = el('nav', 'fn-lesson-footer'); footer.setAttribute('aria-label', 'Other lessons');
     const prev = lessons[index - 1], next = lessons[index + 1];
     if (prev) { const link = el('a', 'fn-study-back', '← Previous: ' + prev.title); link.href = '#' + prev.id; footer.append(link); }
