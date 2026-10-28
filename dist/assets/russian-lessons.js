@@ -1509,5 +1509,10 @@ window.FN_RUSSIAN_VOCAB = [
   "id": "ru-131",
   "word": "Маша-растеряша",
   "en": "scatterbrain (a girl who loses everything, from a children’s poem)"
+  },
+  {
+  "id": "ru-132",
+  "word": "вдохновлять / вдохновить",
+  "en": "to inspire (imperfective / perfective; кого? на что?)"
   }
 ];
