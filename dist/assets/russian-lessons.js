@@ -578,6 +578,10 @@ window.FN_RUSSIAN_LESSONS = [
       },
       {
         "type": "note",
+        "text": "Word order: with нужен (agreeing with a thing), был usually comes first: Мне был нужен совет. Мне была нужна помощь. (Мне нужен был совет is heard too, in speech.) With надо, нужно and должен it comes after: надо было, нужно было, должен был, должна была."
+      },
+      {
+        "type": "note",
         "text": "The same goes for надо: надо было, надо будет; and for должен: должен был, должна была, должен буду."
       },
       {
