@@ -173,7 +173,7 @@ a separate Europe close-up, the map legend or the trip buttons under the map on 
   added topics are listed on that page). Hover gives the object a faint candle glow and writes its subject
   in Arnold Böcklin (yellow `#f3d995`); on touch screens every object breathes a faint glow.
 - **Quotes** (`#quotes`, the three books; `assets/quotes.js`): Nicky's books, by genre and then A to Z (leading articles
-  ignored); each opens its own notes page (`#quote-…`, rendered by `study.js` like the lessons, so highlights, margin notes and
+  ignored); each genre is a drop-down, closed when the page opens (Nicky's call), and coming back from a book reopens its genre; each opens its own notes page (`#quote-…`, rendered by `study.js` like the lessons, so highlights, margin notes and
   Edit lesson work). Her quotes stay word for word. `assets/quote-books.js` is **built**, never edited by hand:
   `.github/workflows/sync-quotes.yml` runs `tools/sync-quotes.mjs` every morning, which copies her Notion page "Quotes"
   (repository secret `NOTION_TOKEN`) and the Kindle highlights she has made public on Goodreads (profile `197324729-nicole-p`; each book's notes page is
