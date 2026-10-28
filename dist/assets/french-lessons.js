@@ -3001,5 +3001,10 @@ window.FN_FRENCH_VOCAB = [
     "word": "le nord, le sud, l’est, l’ouest · le nord-est, le nord-ouest, le sud-est, le sud-ouest",
     "en": "north, south, east, west · north-east, north-west, south-east, south-west"
   }
+  },
+  {
+  "id": "fr-75",
+  "word": "faire semblant (de + infinitif)",
+  "en": "to pretend (prétendre means “to claim”)"
   }
 ];
