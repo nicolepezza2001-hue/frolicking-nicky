@@ -113,6 +113,7 @@
         ['Futur simple and futur antérieur', 'Promises, plans, and “when I’ve finished”.'],
         ['Le discours indirect', 'Reporting what someone said.'],
         ['Les connecteurs', 'Linking ideas when you speak and write.'],
+        ['Slang and spoken French', 'Verlan, argot and how people really talk.'],
         ['Past lessons', 'Class notes, newest first.']
       ],
       shelf: [
@@ -254,6 +255,11 @@
   if (!state.moved?.ruModality) {
     [9, 8, 7].forEach(i => { if (state.done['russian:' + i]) { state.done['russian:' + (i + 1)] = true; delete state.done['russian:' + i]; } });
     (state.moved ||= {}).ruModality = 1; save();
+  }
+  // Same for "Slang and spoken French", French step 17: Past lessons moves down one (once)
+  if (!state.moved.frSlang) {
+    if (state.done['french:16']) { state.done['french:17'] = true; delete state.done['french:16']; }
+    state.moved.frSlang = 1; save();
   }
 
   const LESSONS = [

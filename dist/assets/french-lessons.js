@@ -896,6 +896,308 @@ window.FN_FRENCH_LESSONS = [
     ]
   },
   {
+    "id": "french-slang",
+    "kicker": "Study notes · French",
+    "title": "Slang and spoken French",
+    "blocks": [
+      {
+        "type": "note",
+        "text": "Three layers: le français familier (relaxed, with friends), l’argot (slang) and le verlan (words said backwards). All fine with friends, none with your boss."
+      },
+      {
+        "type": "heading",
+        "text": "Everyday slang"
+      },
+      {
+        "type": "table",
+        "head": [
+          "Slang",
+          "Standard",
+          "English"
+        ],
+        "rows": [
+          [
+            "un mec, un gars",
+            "un homme, un garçon",
+            "a guy"
+          ],
+          [
+            "une meuf",
+            "une femme",
+            "a woman; my girlfriend (ma meuf)"
+          ],
+          [
+            "un pote",
+            "un ami",
+            "a mate"
+          ],
+          [
+            "le boulot, bosser",
+            "le travail, travailler",
+            "work, to work"
+          ],
+          [
+            "le fric, la thune, le pognon, les sous",
+            "l’argent",
+            "money"
+          ],
+          [
+            "la bouffe, bouffer",
+            "la nourriture, manger",
+            "food, to eat"
+          ],
+          [
+            "des fringues",
+            "des vêtements",
+            "clothes"
+          ],
+          [
+            "un truc, un machin",
+            "une chose",
+            "a thing, a whatsit"
+          ],
+          [
+            "une bagnole, une caisse",
+            "une voiture",
+            "a car"
+          ],
+          [
+            "un flic, un keuf",
+            "un policier",
+            "a cop"
+          ],
+          [
+            "le bahut",
+            "le lycée",
+            "school"
+          ],
+          [
+            "crevé(e)",
+            "très fatigué(e)",
+            "knackered"
+          ],
+          [
+            "bourré(e)",
+            "ivre",
+            "drunk"
+          ],
+          [
+            "marrant, se marrer",
+            "drôle, rire",
+            "funny, to laugh"
+          ],
+          [
+            "chiant",
+            "ennuyeux, pénible",
+            "boring, annoying"
+          ],
+          [
+            "dingue",
+            "fou, incroyable",
+            "crazy, amazing (C’est dingue ! Il est dingue de toi.)"
+          ],
+          [
+            "nul",
+            "très mauvais",
+            "rubbish"
+          ],
+          [
+            "kiffer",
+            "aimer bien",
+            "to love, to be into"
+          ],
+          [
+            "piger",
+            "comprendre",
+            "to get it"
+          ],
+          [
+            "galérer, une galère",
+            "avoir du mal, un problème",
+            "to struggle; a nightmare"
+          ],
+          [
+            "se casser, se tirer",
+            "partir",
+            "to clear off"
+          ],
+          [
+            "vachement, grave, trop",
+            "très",
+            "really (C’est trop bien ! Il est grave sympa.)"
+          ]
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Feelings and states"
+      },
+      {
+        "type": "note",
+        "text": "avoir la flemme: can’t be bothered. J’ai la flemme de sortir."
+      },
+      {
+        "type": "note",
+        "text": "avoir la dalle: to be starving."
+      },
+      {
+        "type": "note",
+        "text": "avoir le cafard: to feel down."
+      },
+      {
+        "type": "note",
+        "text": "avoir le seum: to be gutted, sore (young people’s slang)."
+      },
+      {
+        "type": "note",
+        "text": "avoir la gueule de bois: to have a hangover."
+      },
+      {
+        "type": "note",
+        "text": "être à l’ouest: to be out of it, miles away."
+      },
+      {
+        "type": "note",
+        "text": "ça craint: that sucks. C’est le pied ! It’s brilliant!"
+      },
+      {
+        "type": "heading",
+        "text": "Le verlan"
+      },
+      {
+        "type": "note",
+        "text": "Verlan turns a word inside out by its syllables (l’envers → verlan). Some words are now everyday French."
+      },
+      {
+        "type": "table",
+        "head": [
+          "Verlan",
+          "From",
+          "English"
+        ],
+        "rows": [
+          [
+            "une meuf",
+            "femme",
+            "a woman"
+          ],
+          [
+            "ouf",
+            "fou",
+            "crazy (C’est ouf !)"
+          ],
+          [
+            "relou",
+            "lourd",
+            "annoying, heavy-going"
+          ],
+          [
+            "chelou",
+            "louche",
+            "dodgy, weird"
+          ],
+          [
+            "une teuf",
+            "fête",
+            "a party"
+          ],
+          [
+            "un keuf",
+            "flic",
+            "a cop"
+          ],
+          [
+            "vénère",
+            "énervé",
+            "annoyed, wound up"
+          ],
+          [
+            "zarbi",
+            "bizarre",
+            "weird"
+          ],
+          [
+            "cimer",
+            "merci",
+            "thanks"
+          ]
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "How people really speak"
+      },
+      {
+        "type": "note",
+        "text": "The ne disappears: Je sais pas. C’est pas grave. Il y a → y a: Y a personne."
+      },
+      {
+        "type": "note",
+        "text": "on instead of nous: On y va ? On s’est bien marrés."
+      },
+      {
+        "type": "note",
+        "text": "Short forms: t’es (tu es), t’as (tu as), chais pas (je sais pas), ’fin (enfin)."
+      },
+      {
+        "type": "note",
+        "text": "Questions by tone alone: Tu viens ? rather than Est-ce que tu viens ?"
+      },
+      {
+        "type": "note",
+        "text": "Little words: bah, ben, bon, hein, quoi (C’était nul, quoi.), genre, du coup, en mode (En mode vacances.)."
+      },
+      {
+        "type": "note",
+        "text": "Cut-down words: un appart, un resto, la fac, le ciné, l’apéro, sympa, d’acc, à plus, à toute (à tout à l’heure)."
+      },
+      {
+        "type": "heading",
+        "text": "Set phrases"
+      },
+      {
+        "type": "note",
+        "text": "Ça roule ? (how’s it going?) Ça marche ! (OK, deal!)"
+      },
+      {
+        "type": "note",
+        "text": "T’inquiète. Don’t worry, no worries."
+      },
+      {
+        "type": "note",
+        "text": "Laisse tomber. Forget it. (in verlan: Laisse béton.)"
+      },
+      {
+        "type": "note",
+        "text": "Je m’en fiche. I don’t care. (Je m’en fous is ruder.)"
+      },
+      {
+        "type": "note",
+        "text": "C’est n’importe quoi. That’s nonsense."
+      },
+      {
+        "type": "note",
+        "text": "Poser un lapin à quelqu’un: to stand someone up."
+      },
+      {
+        "type": "note",
+        "text": "Coûter les yeux de la tête: to cost an arm and a leg."
+      },
+      {
+        "type": "note",
+        "text": "Faire la grasse mat’: to have a lie-in."
+      },
+      {
+        "type": "heading",
+        "text": "Texting"
+      },
+      {
+        "type": "note",
+        "text": "mdr (mort de rire: lol), tkt (t’inquiète), jsp (je sais pas), cc or slt (coucou, salut), stp (s’il te plaît), bcp (beaucoup), pk (pourquoi), A+ (à plus)."
+      }
+    ]
+  },
+  {
     "id": "french-past-lessons",
     "kicker": "Class notes · French",
     "title": "Past lessons",
@@ -3006,5 +3308,45 @@ window.FN_FRENCH_VOCAB = [
   "id": "fr-75",
   "word": "faire semblant (de + infinitif)",
   "en": "to pretend (prétendre means “to claim”)"
+  },
+  {
+  "id": "fr-76",
+  "word": "le pognon",
+  "en": "money (slang; also le fric, la thune)"
+  },
+  {
+  "id": "fr-77",
+  "word": "dingue",
+  "en": "crazy, amazing (slang: C’est dingue !)"
+  },
+  {
+  "id": "fr-78",
+  "word": "le boulot",
+  "en": "work, a job (slang; bosser: to work)"
+  },
+  {
+  "id": "fr-79",
+  "word": "un pote",
+  "en": "a mate, a friend (slang)"
+  },
+  {
+  "id": "fr-80",
+  "word": "un gars",
+  "en": "a guy (slang; also un mec)"
+  },
+  {
+  "id": "fr-81",
+  "word": "un flic",
+  "en": "a cop (slang; verlan: un keuf)"
+  },
+  {
+  "id": "fr-82",
+  "word": "une caisse",
+  "en": "a car (slang; also une bagnole)"
+  },
+  {
+  "id": "fr-83",
+  "word": "des fringues",
+  "en": "clothes (slang)"
   }
 ];

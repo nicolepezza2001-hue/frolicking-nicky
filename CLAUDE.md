@@ -227,7 +227,7 @@ a separate Europe close-up, the map legend or the trip buttons under the map on 
   (page "Russian"; `assets/russian-lessons.js`, wording kept exactly: wishes, describing a picture, «ну» и «ведь»),
   then study notes Claude wrote for her (kicker "Study notes · Russian": participles, verbal adverbs, figurative motion
   verbs, aspect, modality: must, need, should have (Nicky asked for it; added as step 8, ticks moved once by `moved.ruModality`), word building, numerals, register), then Vocabulary, seeded once from her Notion word list
-  (`FN_RUSSIAN_VOCAB`). French likewise has "Study notes · French" pages between her Notion subjects and Past lessons.
+  (`FN_RUSSIAN_VOCAB`). French likewise has "Study notes · French" pages between her Notion subjects and Past lessons, the last being "Slang and spoken French" (Nicky asked for it; Claude picked the words; added as step 17, Past lessons' tick moved once by `moved.frSlang`).
   Every path step opens a page (Nicky had the placeholder steps without notes removed). Agree new topics with her first.
 - Nicky's own lessons (`assets/lesson-editor.js`) take pictures: paste, drop or "Add image". Each is shrunk to a 1200px
   JPEG and kept in the lesson's `images`; the notes hold an `[image:id]` line where it goes (delete the line to remove it).
