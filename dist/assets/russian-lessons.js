@@ -1514,5 +1514,10 @@ window.FN_RUSSIAN_VOCAB = [
   "id": "ru-132",
   "word": "вдохновлять / вдохновить",
   "en": "to inspire (imperfective / perfective; кого? на что?)"
+  },
+  {
+  "id": "ru-133",
+  "word": "притворяться / притвориться",
+  "en": "to pretend (+ instrumental: притворяться больным; or что…); also делать вид"
   }
 ];
