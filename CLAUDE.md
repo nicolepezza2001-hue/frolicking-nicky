@@ -218,6 +218,11 @@ a separate Europe close-up, the map legend or the trip buttons under the map on 
   `fn-study-v1` under `vocab`. "Quiz me" runs up to ten words (either direction or mixed): she types the translation, Check shows the answer (lenient match, plus an "I was right" button); misses
   are counted in `fn-study-v1` under `quiz` and make a word come back more often. `FN_FRENCH_VOCAB` (her Notion "IMPORTANT" table) seeds the French list once
   (`seeded` in `fn-study-v1`), so words she removes or edits stay that way.
+- **Irregular verbs** (`#french-verbs`, `assets/french-verbs.js`; Nicky asked for it): a French path step before Vocabulary. 31
+  irregular verbs, each a drop-down with its tables (présent, passé composé, imparfait, futur, conditionnel, subjonctif,
+  passé simple), built from a few forms per verb (`VERBS`, `SUBJ`). "Test yourself": pick tenses, then one form at a time,
+  a whole tense to fill in, or "The ones I miss"; accents are gently corrected ("mind the accent"), a typed pronoun or
+  agreement doesn't matter. Misses live in `fn-study-verbs-v1` (synced), come up more often and show on Today.
 - Russian is pitched at **B2/C1** (French at B1). Its path opens with her Notion notes
   (page "Russian"; `assets/russian-lessons.js`, wording kept exactly: wishes, describing a picture, «ну» и «ведь»),
   then study notes Claude wrote for her (kicker "Study notes · Russian": participles, verbal adverbs, figurative motion

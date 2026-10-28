@@ -457,3 +457,36 @@ article.fn-lesson .fn-heart-quote .fn-listen,article.fn-lesson .fn-heart-open .f
 .fn-today-none{font-style:italic;color:var(--st-soft)}
 @media(prefers-reduced-motion:reduce){article.fn-lesson .fn-quote-found{animation:none;background:#f3d99544}.fn-quotes-snippet{transition:none}}
 @media(prefers-reduced-motion:reduce){.fn-quotes-genre>summary::before{transition:none}}
+/* Irregular verbs (#french-verbs, french-verbs.js): each verb a drop-down with its tense tables, then typed tests */
+.fn-verbs-tenses{margin:0 0 14px}
+.fn-verbs .fn-vocab-head+.fn-quiz+.fn-study-saved{margin:0 0 8px}
+.fn-verbs .fn-vocab-modes .fn-study-btn{padding:5px 20px}
+.fn-verbs-list{margin-top:28px;border-top:1px solid var(--st-line)}
+.fn-verb{border-bottom:1px solid var(--st-line)}
+.fn-verb>summary{list-style:none;cursor:inherit;display:flex;align-items:baseline;gap:14px;padding:12px 0}
+.fn-verb>summary::-webkit-details-marker{display:none}
+.fn-verb>summary::before{content:'';flex:none;width:7px;height:7px;border:solid var(--st-yellow);border-width:0 1px 1px 0;transform:translateY(-3px) rotate(-45deg);transition:transform .25s ease}
+.fn-verb[open]>summary::before{transform:translateY(-5px) rotate(45deg)}
+.fn-verb-inf{font:600 1.35rem 'Cormorant Garamond',Georgia,serif;color:var(--st-yellow)}
+.fn-verb-en{font-style:italic;color:var(--st-soft)}
+.fn-verb>summary:hover .fn-verb-inf{text-shadow:0 0 12px rgba(243,217,149,.45)}
+.fn-verb-tables{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:22px 34px;padding:6px 0 18px 21px}
+.fn-verb-tense-name{margin:0 0 6px;font:italic 500 1.05rem 'Cormorant Garamond',Georgia,serif;color:var(--st-yellow);border-bottom:1px dashed #f3d99540;padding-bottom:4px}
+.fn-verb-tense ol{list-style:none;margin:0;padding:0}
+.fn-verb-tense li{padding:1px 0;font-size:1.05rem}
+.fn-verb-who{color:var(--st-soft);font-style:italic}
+.fn-verb-form{color:var(--st-cream)}
+.fn-verb .fn-vocab-modes{padding:0 0 18px 21px}
+.fn-verbs-cue{margin:-6px 0 16px;font-size:1.2rem;color:var(--st-cream)}
+.fn-verbs-cue em{color:var(--st-yellow)}
+.fn-verbs-fill{display:grid;gap:10px;margin:0 0 14px;max-width:520px}
+.fn-quiz-q .fn-verb-en{font:italic 400 1.1rem 'Cormorant Garamond',Georgia,serif;margin-left:6px}
+.fn-verbs-line{display:grid;grid-template-columns:6.8em 1fr;align-items:center;gap:10px}
+.fn-verbs-line input[type=text]{font-size:1.15rem;width:auto;min-width:0}
+.fn-verbs-line input:disabled{opacity:.75}
+.fn-verbs-line.is-right input{border-color:#b9d79a}
+.fn-verbs-line.is-wrong input{border-color:#e39a8f}
+.fn-verbs-fix{grid-column:2;margin-top:-4px;color:var(--st-yellow);font-style:italic}
+.fn-verbs-fill .fn-vocab-modes{margin-top:6px}
+@media(max-width:520px){.fn-verbs-line{grid-template-columns:5.6em 1fr}.fn-verb-tables{padding-left:0}.fn-verb .fn-vocab-modes{padding-left:0}}
+@media(prefers-reduced-motion:reduce){.fn-verb>summary::before{transition:none}}
