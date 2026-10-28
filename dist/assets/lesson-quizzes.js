@@ -163,6 +163,29 @@ window.FN_LESSON_QUIZZES = {
     ['however (formal)', 'cependant / pourtant / toutefois'],
     ['in short', 'bref / en somme']
   ],
+  'french-slang': [
+    ['money (slang)', 'le fric / la thune / le pognon / les sous / fric / thune / pognon'],
+    ['work, a job (slang)', 'le boulot / boulot'],
+    ['to work (slang)', 'bosser'],
+    ['a guy', 'un mec / mec / un gars / gars'],
+    ['clothes (slang)', 'des fringues / les fringues / fringues'],
+    ['a mate', 'un pote / pote'],
+    ['knackered', 'crevé / crevée'],
+    ['to be starving', 'avoir la dalle'],
+    ['can’t be bothered (avoir…)', 'avoir la flemme'],
+    ['crazy, amazing (not verlan)', 'dingue / ouf'],
+    ['fou, in verlan', 'ouf'],
+    ['louche, in verlan', 'chelou'],
+    ['lourd, in verlan', 'relou'],
+    ['a party (verlan)', 'une teuf / teuf'],
+    ['T’inquiète.', 'Don’t worry / No worries'],
+    ['to stand someone up', 'poser un lapin / poser un lapin à quelqu’un'],
+    ['to have a hangover', 'avoir la gueule de bois'],
+    ['lol, in a French text', 'mdr'],
+    ['That sucks.', 'Ça craint'],
+    ['to get it, to understand (slang)', 'piger'],
+    ['a car (slang)', 'une bagnole / une caisse / bagnole / caisse']
+  ],
   // French: her class notes
   'french-past-lessons': [
     ['un remboursement', 'a refund / refund'],
