@@ -610,6 +610,10 @@ window.FN_RUSSIAN_LESSONS = [
       },
       {
         "type": "note",
+        "text": "должно быть (probably, must be) is a fixed parenthetical expression, so it is always neuter and set off by commas, whoever the subject is: Он, должно быть, устал. Она, должно быть, устала. Они, должно быть, забыли."
+      },
+      {
+        "type": "note",
         "text": "Spoken Russian: Мне бы… (if only I could, I’d love to): Мне бы отдохнуть. Не мешало бы (it wouldn’t hurt to): Не мешало бы поесть."
       }
     ]
