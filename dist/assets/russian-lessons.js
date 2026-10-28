@@ -419,6 +419,198 @@ window.FN_RUSSIAN_LESSONS = [
     ]
   },
   {
+    "id": "russian-modality",
+    "kicker": "Study notes · Russian",
+    "title": "Must, need, should have",
+    "blocks": [
+      {
+        "type": "note",
+        "text": "Most of these words have no subject in the nominative: the person goes in the dative (мне, тебе, нам). Only должен and обязан take a normal subject."
+      },
+      {
+        "type": "table",
+        "head": [
+          "Meaning",
+          "Russian",
+          "Example"
+        ],
+        "rows": [
+          [
+            "must, have to (duty, a plan, a promise)",
+            "должен, должна, должно, должны + infinitive",
+            "Я должна идти. Ты должен ему позвонить."
+          ],
+          [
+            "need to, have to (circumstances)",
+            "нужно / надо + infinitive (dative)",
+            "Мне нужно идти. Нам надо поговорить."
+          ],
+          [
+            "to need something",
+            "нужен, нужна, нужно, нужны (dative; agrees with the thing)",
+            "Мне нужен зонт. Ей нужна помощь. Нам нужны билеты."
+          ],
+          [
+            "had to (and did)",
+            "пришлось + infinitive (dative)",
+            "Нам пришлось уйти."
+          ],
+          [
+            "will have to",
+            "придётся + infinitive (dative)",
+            "Тебе придётся подождать."
+          ],
+          [
+            "should, ought to",
+            "следует / следовало бы (dative)",
+            "Вам следует отдохнуть."
+          ],
+          [
+            "it’s worth, you should",
+            "стоит / стоило бы (dative)",
+            "Тебе стоит посмотреть этот фильм."
+          ],
+          [
+            "may, it’s allowed",
+            "можно (dative)",
+            "Можно войти? Тебе можно."
+          ],
+          [
+            "mustn't, can't",
+            "нельзя (dative)",
+            "Здесь нельзя курить."
+          ],
+          [
+            "don't have to",
+            "не нужно, не надо, не обязательно",
+            "Тебе не обязательно приходить."
+          ],
+          [
+            "be obliged (formal, legal)",
+            "обязан, обязана, обязаны",
+            "Вы обязаны предъявить паспорт."
+          ],
+          [
+            "must (surely, probably)",
+            "должно быть, наверное",
+            "Он, должно быть, устал."
+          ]
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Should have, could have, had to"
+      },
+      {
+        "type": "note",
+        "text": "надо было / нужно было + infinitive: “should have”, looking back with regret. Надо было взять зонт. Мне нужно было сказать раньше."
+      },
+      {
+        "type": "note",
+        "text": "не надо было + imperfective: “shouldn’t have”. Не надо было приходить. (See Aspect in the finer cases.)"
+      },
+      {
+        "type": "note",
+        "text": "должен был: “was supposed to”, “should have”. Он должен был прийти в пять, но опоздал. Я должна была позвонить. With a perfective it can also mean “must have”: Он должен был уже приехать (he must have arrived by now)."
+      },
+      {
+        "type": "note",
+        "text": "следовало бы / следовало + infinitive: “ought to have”, more formal. Тебе следовало бы извиниться."
+      },
+      {
+        "type": "note",
+        "text": "не стоило + infinitive: “you shouldn’t have (it wasn’t worth it)”. Не стоило тебе этого говорить. Стоило бы подумать заранее."
+      },
+      {
+        "type": "note",
+        "text": "зря + past: “I shouldn’t have”, “it was for nothing”. Зря я это сказала. Зря ты волновалась."
+      },
+      {
+        "type": "note",
+        "text": "мог бы, могла бы, могли бы + infinitive: “could have”, often a reproach. Ты мог бы позвонить!"
+      },
+      {
+        "type": "note",
+        "text": "пришлось: “had to”, and it happened, usually against your will. Мне пришлось остаться. Its future is придётся."
+      },
+      {
+        "type": "heading",
+        "text": "нужен in every tense"
+      },
+      {
+        "type": "table",
+        "head": [
+          "",
+          "Past",
+          "Present",
+          "Future"
+        ],
+        "rows": [
+          [
+            "он (зонт)",
+            "был нужен",
+            "нужен",
+            "будет нужен"
+          ],
+          [
+            "она (помощь)",
+            "была нужна",
+            "нужна",
+            "будет нужна"
+          ],
+          [
+            "оно (время), or an infinitive",
+            "было нужно",
+            "нужно",
+            "будет нужно"
+          ],
+          [
+            "они (билеты)",
+            "были нужны",
+            "нужны",
+            "будут нужны"
+          ]
+        ]
+      },
+      {
+        "type": "note",
+        "text": "With an infinitive it is always the neuter нужно: Мне нужно было уйти. Мне нужно будет уйти."
+      },
+      {
+        "type": "note",
+        "text": "The same goes for надо: надо было, надо будет; and for должен: должен был, должна была, должен буду."
+      },
+      {
+        "type": "heading",
+        "text": "Shades of meaning"
+      },
+      {
+        "type": "note",
+        "text": "должен: an obligation you feel or have agreed to, or what is expected. Ты должен мне сто рублей (you owe me)."
+      },
+      {
+        "type": "note",
+        "text": "надо / нужно: what the situation needs. надо is a little more spoken; нужно is neutral."
+      },
+      {
+        "type": "note",
+        "text": "не должен: “mustn’t”, “shouldn’t”. Ты не должен так говорить. But не нужно / не надо: “there’s no need”. Не нужно так говорить also works as a polite “don’t”."
+      },
+      {
+        "type": "note",
+        "text": "нельзя + imperfective: not allowed (Здесь нельзя курить). нельзя + perfective: impossible (Эту дверь нельзя открыть)."
+      },
+      {
+        "type": "note",
+        "text": "можно + imperfective in questions asks permission for an action in general: Можно курить? With a perfective, one action: Можно открыть окно?"
+      },
+      {
+        "type": "note",
+        "text": "Spoken Russian: Мне бы… (if only I could, I’d love to): Мне бы отдохнуть. Не мешало бы (it wouldn’t hurt to): Не мешало бы поесть."
+      }
+    ]
+  },
+  {
     "id": "russian-word-building",
     "kicker": "Study notes · Russian",
     "title": "Word building",

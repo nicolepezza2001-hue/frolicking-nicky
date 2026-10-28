@@ -247,6 +247,24 @@ window.FN_LESSON_QUIZZES = {
     ['Which aspect after перестать?', 'imperfective / несовершенный / несовершенный вид'],
     ['I’m not going to do it. (стать)', 'Я не стану это делать']
   ],
+  'russian-modality': [
+    ['I must go. (a woman, должен)', 'Я должна идти'],
+    ['Мне ___ новое пальто. (I need a new coat)', 'нужно'],
+    ['Ей ___ помощь. (She needs help)', 'нужна'],
+    ['Нам ___ билеты. (We need tickets)', 'нужны'],
+    ['I needed a dictionary. (нужен)', 'Мне был нужен словарь / Мне нужен был словарь / Словарь был мне нужен'],
+    ['I should have taken an umbrella. (надо)', 'Надо было взять зонт / Мне надо было взять зонт / Надо было взять зонтик'],
+    ['He was supposed to come at five. (должен)', 'Он должен был прийти в пять'],
+    ['We had to leave. (it happened)', 'Нам пришлось уйти'],
+    ['You’ll have to wait. (ты)', 'Тебе придётся подождать'],
+    ['You ought to apologise. (вы, следует)', 'Вам следует извиниться'],
+    ['You shouldn’t have said that. (стоило, ты)', 'Не стоило тебе этого говорить / Тебе не стоило этого говорить / Не стоило этого говорить / Не стоило тебе это говорить'],
+    ['I shouldn’t have said that. (a woman, зря)', 'Зря я это сказала / Зря я сказала это / Я зря это сказала'],
+    ['You could have called! (to a man)', 'Ты мог бы позвонить / Мог бы позвонить / Мог бы и позвонить'],
+    ['He must be tired. (probably)', 'Он должно быть устал / Должно быть он устал / Он наверное устал / Наверное он устал'],
+    ['You don’t have to come. (ты, обязательно)', 'Тебе не обязательно приходить'],
+    ['Which aspect after нельзя means “impossible”?', 'perfective / совершенный / совершенный вид']
+  ],
   'russian-word-building': [
     ['to eat your fill', 'наесться'],
     ['to burst out laughing', 'засмеяться'],

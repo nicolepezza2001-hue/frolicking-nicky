@@ -226,7 +226,7 @@ a separate Europe close-up, the map legend or the trip buttons under the map on 
 - Russian is pitched at **B2/C1** (French at B1). Its path opens with her Notion notes
   (page "Russian"; `assets/russian-lessons.js`, wording kept exactly: wishes, describing a picture, «ну» и «ведь»),
   then study notes Claude wrote for her (kicker "Study notes · Russian": participles, verbal adverbs, figurative motion
-  verbs, aspect, word building, numerals, register), then Vocabulary, seeded once from her Notion word list
+  verbs, aspect, modality: must, need, should have (Nicky asked for it; added as step 8, ticks moved once by `moved.ruModality`), word building, numerals, register), then Vocabulary, seeded once from her Notion word list
   (`FN_RUSSIAN_VOCAB`). French likewise has "Study notes · French" pages between her Notion subjects and Past lessons.
   Every path step opens a page (Nicky had the placeholder steps without notes removed). Agree new topics with her first.
 - Nicky's own lessons (`assets/lesson-editor.js`) take pictures: paste, drop or "Add image". Each is shrunk to a 1200px
