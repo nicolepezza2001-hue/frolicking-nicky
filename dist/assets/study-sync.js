@@ -2,7 +2,7 @@
    Nicky's own lessons are copied to a secret gist on her GitHub account and fetched back on her other devices.
    The gist key (a GitHub token allowed only to read and write gists) is remembered on each device she connects. */
 (() => {
-  const KEYS = ['fn-study-v1', 'fn-study-lessons-v1', 'fn-study-annotations-v1', 'fn-study-heart-v1'];
+  const KEYS = ['fn-study-v1', 'fn-study-lessons-v1', 'fn-study-annotations-v1', 'fn-study-heart-v1', 'fn-study-verbs-v1'];
   const SELF = 'fn-study-sync-v1', FILE = 'study.json', NAME = 'Frolicking Nicky study (private sync)';
   const API = 'https://api.github.com';
   let conf = {};

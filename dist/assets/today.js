@@ -40,7 +40,10 @@
       const words = new Set((state.vocab?.[id] || []).map(w => w.id)), n = Object.keys(state.quiz?.[id] || {}).filter(w => !words.size || words.has(w)).length;
       return n && document.getElementById(id + '-vocabulary') ? item(lang + ' vocabulary', (n === 1 ? 'One word' : n + ' words') + ' you keep missing: Quiz me brings them up first', '#' + id + '-vocabulary') : null;
     }).filter(Boolean);
-    const parts = [group('By heart', heart), group('Quiz questions to try again', quiz), group('Words to practise', vocab)].filter(Boolean);
+    // French irregular verb forms she keeps missing (french-verbs.js)
+    const verbs = window.FN_FRENCH_VERBS?.misses() || 0;
+    if (verbs && document.getElementById('french-verbs')) vocab.push(item('French irregular verbs', (verbs === 1 ? 'One form' : verbs + ' forms') + ' you keep missing: “The ones I miss” brings them back', '#french-verbs'));
+    const parts = [group('By heart', heart), group('Quiz questions to try again', quiz), group('To practise', vocab)].filter(Boolean);
     const total = heart.length + quiz.length + vocab.length;
     count.textContent = total ? (total === 1 ? 'One thing due' : total + ' things due') : 'All done';
     body.replaceChildren(...(parts.length ? parts : [el('p', 'fn-today-none', 'Nothing is due today. Open a poem to learn by heart, or take a quiz.')]));
