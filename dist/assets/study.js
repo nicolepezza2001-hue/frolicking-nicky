@@ -78,6 +78,7 @@
         ['Деепричастия: verbal adverbs', 'Читая, прочитав: while doing, having done.'],
         ['Prefixed verbs of motion, figuratively', 'Прийти в себя, выйти замуж, перейти на «ты».'],
         ['Aspect in the finer cases', 'Imperatives, negation, and “не надо было”.'],
+        ['Must, need, should have', 'Должен, нужен, надо было, пришлось, зря.'],
         ['Word building', 'Prefixes and suffixes that change meaning.'],
         ['Numerals and their cases', 'Два рубля, пять рублей, с двумя друзьями.'],
         ['Bookish and spoken Russian', 'Является or это, приобрести or купить.']
@@ -249,6 +250,11 @@
   try { state = JSON.parse(localStorage.getItem(KEY)) || {}; } catch (_) {}
   state.done ||= {}; state.notes ||= {}; state.custom ||= []; state.extra ||= {}; state.vocab ||= {};
   const save = () => { try { localStorage.setItem(KEY, JSON.stringify(state)); window.fnStudyChanged?.(); } catch (_) {} };
+  // Ticks are kept by step number: "Must, need, should have" went in as Russian step 8, so later ticks move down one (once)
+  if (!state.moved?.ruModality) {
+    [9, 8, 7].forEach(i => { if (state.done['russian:' + i]) { state.done['russian:' + (i + 1)] = true; delete state.done['russian:' + i]; } });
+    (state.moved ||= {}).ruModality = 1; save();
+  }
 
   const LESSONS = [
     { topic: 'hittite', name: 'Hittite', lessons: window.FN_HITTITE_LESSONS || [] },
