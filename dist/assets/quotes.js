@@ -48,8 +48,11 @@
   let list;
   books.forEach((book, i) => {
     if (book.genre !== books[i - 1]?.genre) {
-      const shelf = el('section', 'fn-quotes-genre');
-      shelf.append(el('h3', 'fn-study-label', book.genre));
+      // Each genre is a drop-down: the page opens on the genre names only (Nicky's call), a click shows its books
+      const shelf = el('details', 'fn-quotes-genre'), head = el('summary', 'fn-study-label');
+      const n = books.filter(b => b.genre === book.genre).length;
+      head.append(el('span', null, book.genre), el('span', 'fn-quotes-n', n === 1 ? '1 book' : n + ' books'));
+      shelf.append(head);
       shelves.push(shelf);
       list = el('ul', 'fn-quotes-books'); shelf.append(list); root.append(shelf);
     }
@@ -68,6 +71,6 @@
     if (id.startsWith('quote-')) { last = id; if (target?.book.id === id) { const q = target; target = null; requestAnimationFrame(() => show(q)); } return; }
     if (id !== 'quotes' || !last) return;
     const link = root.querySelector(`a[href="#${CSS.escape(last)}"]`);
-    if (link) requestAnimationFrame(() => { link.scrollIntoView({ block: 'center' }); });
+    if (link) { link.closest('details').open = true; requestAnimationFrame(() => { link.scrollIntoView({ block: 'center' }); }); }
   });
 })();

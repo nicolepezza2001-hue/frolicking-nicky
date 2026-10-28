@@ -369,7 +369,15 @@ html:has(body.fn-lesson-open){background:#faeac0}
 .fn-sync input[type=password]:focus{outline:2px solid var(--st-yellow);outline-offset:1px}
 .fn-sync .fn-vocab-modes{margin-bottom:4px}
 /* Quotes (#quotes, the three books; quotes.js): her books by genre, A to Z; each opens a notes page (ids quote-…) */
-.fn-quotes-genre{margin:0 0 34px}
+.fn-quotes-genre{margin:0 0 6px}
+.fn-quotes-genre[open]{margin-bottom:30px}
+.fn-quotes-genre>summary{list-style:none;cursor:inherit;display:flex;align-items:baseline;gap:14px;padding:14px 0 9px;margin:0}
+.fn-quotes-genre>summary::-webkit-details-marker{display:none}
+.fn-quotes-genre>summary::before{content:'';flex:none;width:7px;height:7px;border:solid currentColor;border-width:0 1px 1px 0;transform:translateY(-3px) rotate(-45deg);transition:transform .25s ease}
+.fn-quotes-genre[open]>summary::before{transform:translateY(-5px) rotate(45deg)}
+.fn-quotes-genre>summary:hover{text-shadow:0 0 12px rgba(243,217,149,.45)}
+.fn-quotes-n{margin-left:auto;font:italic 400 1rem 'Cormorant Garamond',Georgia,serif;letter-spacing:0;text-transform:none;color:var(--st-cream,#efe0bf);opacity:.7}
+.fn-quotes-genre[open]>summary{margin-bottom:14px}
 .fn-quotes-books{list-style:none;margin:0;padding:0;columns:2 280px;column-gap:44px}
 .fn-quotes-books li{break-inside:avoid;margin:0 0 4px}
 .fn-quotes-book{display:block;padding:7px 0;text-decoration:none;border-bottom:1px solid #f3d9951f}
@@ -448,3 +456,4 @@ article.fn-lesson .fn-heart-quote .fn-listen,article.fn-lesson .fn-heart-open .f
 .fn-study-bar .fn-today-link~.fn-today-link{display:none}
 .fn-today-none{font-style:italic;color:var(--st-soft)}
 @media(prefers-reduced-motion:reduce){article.fn-lesson .fn-quote-found{animation:none;background:#f3d99544}.fn-quotes-snippet{transition:none}}
+@media(prefers-reduced-motion:reduce){.fn-quotes-genre>summary::before{transition:none}}
