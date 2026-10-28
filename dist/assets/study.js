@@ -659,7 +659,7 @@
           const before = state.review?.[lesson.id]?.q?.[question]; remember(question, right);
           const sol = el('p', 'fn-quiz-solution', first); sol.lang = code;
           result.replaceChildren(el('p', 'fn-quiz-verdict', right ? 'Right.' : input.value.trim() ? 'Not quite. The answer:' : 'The answer:'), sol);
-          if (also.length) { const more = el('p', 'fn-quiz-verdict', 'Also right: ' + also.join(' · ')); more.lang = code; result.append(more); }
+          if (also.length) { const more = el('p', 'fn-quiz-verdict', 'Also right: ' + also.slice(0, 4).join(' · ') + (also.length > 4 ? ' · and other ways' : '')); more.lang = code; result.append(more); }
           const go = button('fn-study-btn', i + 1 === round.length ? 'See my score' : 'Next', next), buttons = [go];
           if (!right) buttons.push(button('fn-highlight-mode', 'I was right', () => {
             missed.pop(); score++;
