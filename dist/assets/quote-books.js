@@ -13537,6 +13537,10 @@ window.FN_QUOTE_BOOKS = [
    },
    {
     "type": "paragraph",
+    "text": "The first gulp from the glass of natural sciences will turn you into an atheist, but at the bottom of the glass God is waiting for you.\n— Werner Heisenberg"
+   },
+   {
+    "type": "paragraph",
     "text": "People walk around like blind men, like dead men, when they could create the most ardent life, where all enjoyment would be so heightened, it would be as if you had only just been born and would die at any moment. It is with precisely such greed that every- thing must be appreciated. There are wonders all around us at every step.\n— Wings, Mikhail Kuzmin"
    },
    {

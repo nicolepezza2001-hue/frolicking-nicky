@@ -181,7 +181,7 @@ a separate Europe close-up, the map legend or the trip buttons under the map on 
   books with `tools/quote-books.json` (book, author and genre per quote; her source lines in `labels` are left off the page),
   bumps the shelf's `?v=` and redeploys. Nicky's calls: books marked `hidden` in `quote-books.json` stay off the page (Alessandra, Elena, Men said), and every book with a single quote is gathered, signed, on one **Miscellaneous** page with her
   sayings and unnamed lines. New quotes find their book by their bold source line; unknown books land under
-  "Newly added" until they get a genre in `quote-books.json`. A source that can't be reached keeps its last copy.
+  "Newly added" until they get a genre in `quote-books.json`. Quotes she sends in a message go in `extra` in `quote-books.json` (text, author, book if any), so the daily rebuild keeps them. A source that can't be reached keeps its last copy.
 - **Whole poems and By heart** (`tools/quote-poems.json`, `assets/by-heart.js`): each poem there names its `book` and its
   `versions` (lang, label, stanzas; e.g. 中文, Pinyin `zh-Latn`, English, Italiano) and follows Nicky's quotes on that book page,
   English beside Italian, one stanza per row (Nicky's call: no Chinese or pinyin on the page; they stay for Learn by heart).

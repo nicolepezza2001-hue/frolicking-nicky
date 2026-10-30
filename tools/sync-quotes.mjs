@@ -180,7 +180,8 @@ const whole = t => {
   return t.slice(a, b).trim().replace(/([;:])\s+[^\s.!?…;:,]+(?:\s+[^\s.!?…;:,]+){0,2}$/u, '$1') || t;
 };
 const kept = new Set(Object.values(books).flatMap(b => b.blocks.map(x => fp(x.text))));
-for (const raw of out.goodreads) {
+// Quotes Nicky sent in a message rather than saving in Notion (catalog.extra) are added like Goodreads highlights
+for (const raw of [...out.goodreads, ...(catalog.extra || [])]) {
   const q = { ...raw, text: whole(raw.text) };
   if (kept.has(fp(q.text))) continue; // already copied into Notion
   const book = bookFor(q.book || q.author || 'Goodreads', q.book ? q.author : '');
