@@ -367,6 +367,8 @@
     veinte: 'taco', juarezmkt: 'chapulines', jalatlaco: 'palette', mezcaloteca: 'agave', fortin: 'sun', class: 'whisk',
     boulenc: 'bread', bodaega: 'wine', levadura: 'bread', humo: 'pasta', danzantes: 'pasta', tierrasol: 'sun', copal: 'agave', selva: 'flower',
     alban: 'pyramid', arrazola: 'sparkle', tule: 'tree', mitla: 'pyramid', palenque: 'agave', hierve: 'hierve', tlacolula: 'chapulines',
+    verbena: 'papel', atzompa: 'cup', xoxotapetes: 'flower', grancomparsa: 'papel', marketcrawl: 'bread',
+    xoxoaltares: 'lantern', hechooaxaca: 'sparkle', etla: 'skeleton', chinas: 'flower', tapetejalatlaco: 'palette', xoxocomparsas: 'bell',
     barbacoa: 'taco', teotitlan: 'loom', tilcajete: 'sparkle', temazcal: 'springs', tejate: 'cup', chapulines: 'chapulines'
   };
   // Keyword icons for every other stop and heading on the site (first match wins; a map pin if nothing fits)
