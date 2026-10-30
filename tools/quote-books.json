@@ -1,5 +1,5 @@
 {
- "_about": "Which book each Notion quote belongs to, for the Quotes page of the study. tools/sync-quotes.mjs reads it. 'blocks' maps the start of a quote (lower case, punctuation removed, 60 characters) to a book key; 'labels' are Nicky's own source lines in Notion, left off the book page because the page title already says it. Quotes not listed here are placed by their bold source line or the quote before them; unknown books go under 'Newly added' until they are given a genre here. Books marked hidden are left off the page (Nicky's call). Every book with a single quote, plus 'sayings' and 'unnamed', is gathered on one Miscellaneous page.",
+ "_about": "Which book each Notion quote belongs to, for the Quotes page of the study. tools/sync-quotes.mjs reads it. 'blocks' maps the start of a quote (lower case, punctuation removed, 60 characters) to a book key; 'labels' are Nicky's own source lines in Notion, left off the book page because the page title already says it. Quotes not listed here are placed by their bold source line or the quote before them; unknown books go under 'Newly added' until they are given a genre here. Books marked hidden are left off the page (Nicky's call). Every book with a single quote, plus 'sayings' and 'unnamed', is gathered on one Miscellaneous page. 'extra' holds quotes Nicky sent in a message (text, author, book if any), added like Goodreads highlights.",
  "genres": [
   "Novels & stories",
   "Fantasy & science fiction",
@@ -1553,5 +1553,11 @@
   "people walk around like blind men like dead men when they co": "wings",
   "у меня такое чувство будто сам господин бог поручил мне забо": "den-bez-vranya"
  },
- "goodreadsNotes": []
+ "goodreadsNotes": [],
+ "extra": [
+  {
+   "text": "The first gulp from the glass of natural sciences will turn you into an atheist, but at the bottom of the glass God is waiting for you.",
+   "author": "Werner Heisenberg"
+  }
+ ]
 }
