@@ -389,6 +389,31 @@
      ]
     }
    ]
+  },
+  "ulysses": {
+   "book": "ulysses",
+   "title": "Ulysses",
+   "author": "Alfred, Lord Tennyson",
+   "heading": "The whole poem",
+   "note": "Alfred, Lord Tennyson, Poems (1842), with his spelling (enjoy’d, thro’). All 70 lines, in ten parts to learn by heart one at a time.",
+   "versions": [
+    {
+     "lang": "en",
+     "label": "English",
+     "stanzas": [
+      "It little profits that an idle king,\nBy this still hearth, among these barren crags,\nMatch’d with an aged wife, I mete and dole\nUnequal laws unto a savage race,\nThat hoard, and sleep, and feed, and know not me.",
+      "I cannot rest from travel: I will drink\nLife to the lees: all times I have enjoy’d\nGreatly, have suffer’d greatly, both with those\nThat loved me, and alone; on shore, and when\nThro’ scudding drifts the rainy Hyades\nVext the dim sea: I am become a name;",
+      "For always roaming with a hungry heart\nMuch have I seen and known; cities of men\nAnd manners, climates, councils, governments,\nMyself not least, but honour’d of them all;\nAnd drunk delight of battle with my peers,\nFar on the ringing plains of windy Troy.",
+      "I am a part of all that I have met;\nYet all experience is an arch wherethro’\nGleams that untravell’d world, whose margin fades\nFor ever and for ever when I move.",
+      "How dull it is to pause, to make an end,\nTo rust unburnish’d, not to shine in use!\nAs tho’ to breathe were life. Life piled on life\nWere all too little, and of one to me\nLittle remains: but every hour is saved\nFrom that eternal silence, something more,\nA bringer of new things; and vile it were\nFor some three suns to store and hoard myself,\nAnd this gray spirit yearning in desire\nTo follow knowledge like a sinking star,\nBeyond the utmost bound of human thought.",
+      "This is my son, mine own Telemachus,\nTo whom I leave the sceptre and the isle,—\nWell-loved of me, discerning to fulfil\nThis labour, by slow prudence to make mild\nA rugged people, and thro’ soft degrees\nSubdue them to the useful and the good.",
+      "Most blameless is he, centred in the sphere\nOf common duties, decent not to fail\nIn offices of tenderness, and pay\nMeet adoration to my household gods,\nWhen I am gone. He works his work, I mine.",
+      "There lies the port; the vessel puffs her sail:\nThere gloom the dark, broad seas. My mariners,\nSouls that have toil’d, and wrought, and thought with me—\nThat ever with a frolic welcome took\nThe thunder and the sunshine, and opposed\nFree hearts, free foreheads—you and I are old;\nOld age hath yet his honour and his toil;\nDeath closes all: but something ere the end,\nSome work of noble note, may yet be done,\nNot unbecoming men that strove with Gods.",
+      "The lights begin to twinkle from the rocks:\nThe long day wanes: the slow moon climbs: the deep\nMoans round with many voices. Come, my friends,\n’Tis not too late to seek a newer world.\nPush off, and sitting well in order smite\nThe sounding furrows; for my purpose holds\nTo sail beyond the sunset, and the baths\nOf all the western stars, until I die.",
+      "It may be that the gulfs will wash us down:\nIt may be we shall touch the Happy Isles,\nAnd see the great Achilles, whom we knew.\nTho’ much is taken, much abides; and tho’\nWe are not now that strength which in old days\nMoved earth and heaven; that which we are, we are;\nOne equal temper of heroic hearts,\nMade weak by time and fate, but strong in will\nTo strive, to seek, to find, and not to yield."
+     ]
+    }
+   ]
   }
  }
 }
