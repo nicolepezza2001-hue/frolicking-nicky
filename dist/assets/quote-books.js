@@ -8666,6 +8666,65 @@ window.FN_QUOTE_BOOKS = [
   ]
  },
  {
+  "id": "quote-ulysses",
+  "title": "Ulysses",
+  "author": "Alfred, Lord Tennyson",
+  "genre": "Poetry",
+  "kicker": "Alfred, Lord Tennyson · Poetry",
+  "blocks": [
+   {
+    "type": "paragraph",
+    "text": "To strive, to seek, to find and not to yield.\n— Lord Tennyson"
+   },
+   {
+    "type": "heading",
+    "text": "The whole poem"
+   },
+   {
+    "type": "note",
+    "text": "Alfred, Lord Tennyson, Poems (1842), with his spelling (enjoy’d, thro’). All 70 lines, in ten parts to learn by heart one at a time."
+   },
+   {
+    "type": "table",
+    "head": [
+     "English"
+    ],
+    "rows": [
+     [
+      "It little profits that an idle king,\nBy this still hearth, among these barren crags,\nMatch’d with an aged wife, I mete and dole\nUnequal laws unto a savage race,\nThat hoard, and sleep, and feed, and know not me."
+     ],
+     [
+      "I cannot rest from travel: I will drink\nLife to the lees: all times I have enjoy’d\nGreatly, have suffer’d greatly, both with those\nThat loved me, and alone; on shore, and when\nThro’ scudding drifts the rainy Hyades\nVext the dim sea: I am become a name;"
+     ],
+     [
+      "For always roaming with a hungry heart\nMuch have I seen and known; cities of men\nAnd manners, climates, councils, governments,\nMyself not least, but honour’d of them all;\nAnd drunk delight of battle with my peers,\nFar on the ringing plains of windy Troy."
+     ],
+     [
+      "I am a part of all that I have met;\nYet all experience is an arch wherethro’\nGleams that untravell’d world, whose margin fades\nFor ever and for ever when I move."
+     ],
+     [
+      "How dull it is to pause, to make an end,\nTo rust unburnish’d, not to shine in use!\nAs tho’ to breathe were life. Life piled on life\nWere all too little, and of one to me\nLittle remains: but every hour is saved\nFrom that eternal silence, something more,\nA bringer of new things; and vile it were\nFor some three suns to store and hoard myself,\nAnd this gray spirit yearning in desire\nTo follow knowledge like a sinking star,\nBeyond the utmost bound of human thought."
+     ],
+     [
+      "This is my son, mine own Telemachus,\nTo whom I leave the sceptre and the isle,—\nWell-loved of me, discerning to fulfil\nThis labour, by slow prudence to make mild\nA rugged people, and thro’ soft degrees\nSubdue them to the useful and the good."
+     ],
+     [
+      "Most blameless is he, centred in the sphere\nOf common duties, decent not to fail\nIn offices of tenderness, and pay\nMeet adoration to my household gods,\nWhen I am gone. He works his work, I mine."
+     ],
+     [
+      "There lies the port; the vessel puffs her sail:\nThere gloom the dark, broad seas. My mariners,\nSouls that have toil’d, and wrought, and thought with me—\nThat ever with a frolic welcome took\nThe thunder and the sunshine, and opposed\nFree hearts, free foreheads—you and I are old;\nOld age hath yet his honour and his toil;\nDeath closes all: but something ere the end,\nSome work of noble note, may yet be done,\nNot unbecoming men that strove with Gods."
+     ],
+     [
+      "The lights begin to twinkle from the rocks:\nThe long day wanes: the slow moon climbs: the deep\nMoans round with many voices. Come, my friends,\n’Tis not too late to seek a newer world.\nPush off, and sitting well in order smite\nThe sounding furrows; for my purpose holds\nTo sail beyond the sunset, and the baths\nOf all the western stars, until I die."
+     ],
+     [
+      "It may be that the gulfs will wash us down:\nIt may be we shall touch the Happy Isles,\nAnd see the great Achilles, whom we knew.\nTho’ much is taken, much abides; and tho’\nWe are not now that strength which in old days\nMoved earth and heaven; that which we are, we are;\nOne equal temper of heroic hearts,\nMade weak by time and fate, but strong in will\nTo strive, to seek, to find, and not to yield."
+     ]
+    ]
+   }
+  ]
+ },
+ {
   "id": "quote-wild-nights",
   "title": "Wild Nights",
   "author": "Emily Dickinson",
@@ -13533,10 +13592,6 @@ window.FN_QUOTE_BOOKS = [
    },
    {
     "type": "paragraph",
-    "text": "To strive, to seek, to find and not to yield.\n— Ulysses, Alfred, Lord Tennyson"
-   },
-   {
-    "type": "paragraph",
     "text": "The first gulp from the glass of natural sciences will turn you into an atheist, but at the bottom of the glass God is waiting for you.\n— Werner Heisenberg"
    },
    {
@@ -14016,6 +14071,31 @@ window.FN_POEMS = [
      "Quell’altra forma, se tal nome darsi\nPur puote a ciò che non ha forma alcuna\nDistinta in membro od in giuntura, un cieco\nTorbo Fantasma che sustanza ed ombra\nA un tempo stesso rassomiglia, stava\nNera qual densa notte, a par di dieci\nFurie crudel, come l’inferno orrenda,\nE un fier dardo brandía: quel ch’esser fronte\nIn lei pareva, di regal corona\nAvea sopra un’imago.",
      "Tal era il tetro\nSconvolto abisso, onde Natura emerse\nE dove un dì fors’anco avrà la tomba.\nIvi terra non è, non mar, non foco,\nNon aere, ma confusi insieme e misti\nIn lor pregnanti cause i germi oscuri\nCombatton sempre, e fie la guerra eterna,\nSe la Man creatrice un dì non svolge\nLa massa informe e nuovi mondi ordisce.\nColà sull’orlo dell’inferno alquanto\nSatán ristassi, e gira intorno il guardo,\nPonderando il cammin; chè ancor non breve\nVarco gli resta a superar.",
      "Là di quel Vano tra i vapor men densi\nChe d’aere hanno sembianza, egli si libra\nSulle robuste ali distese e ’l vasto\nGiro de’ cieli di lontan rimira\nA suo grand’agio; ma confusa, incerta\nLa lor figura e nell’ampiezza assorta\nSfugge gli sguardi suoi: l’eccelse rocche\nD’Opalo fulgidissimo e di vivo\nZaffiro ornati gli alti merli ei vede,\nGià sua natìa dimora, e non più grande\nDi stella piccolissima, dappresso\nA lei che della notte il vel dirada,\nDalla catena d’ôr che al ciel lo lega\nPender questo Universo. Ivi spirante\nVendetta e rabbia, in maledetto punto\nAffretta quel maligno i passi e ’l volo."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ulysses",
+  "book": "quote-ulysses",
+  "title": "Ulysses",
+  "author": "Alfred, Lord Tennyson",
+  "heading": "The whole poem",
+  "versions": [
+   {
+    "lang": "en",
+    "label": "English",
+    "stanzas": [
+     "It little profits that an idle king,\nBy this still hearth, among these barren crags,\nMatch’d with an aged wife, I mete and dole\nUnequal laws unto a savage race,\nThat hoard, and sleep, and feed, and know not me.",
+     "I cannot rest from travel: I will drink\nLife to the lees: all times I have enjoy’d\nGreatly, have suffer’d greatly, both with those\nThat loved me, and alone; on shore, and when\nThro’ scudding drifts the rainy Hyades\nVext the dim sea: I am become a name;",
+     "For always roaming with a hungry heart\nMuch have I seen and known; cities of men\nAnd manners, climates, councils, governments,\nMyself not least, but honour’d of them all;\nAnd drunk delight of battle with my peers,\nFar on the ringing plains of windy Troy.",
+     "I am a part of all that I have met;\nYet all experience is an arch wherethro’\nGleams that untravell’d world, whose margin fades\nFor ever and for ever when I move.",
+     "How dull it is to pause, to make an end,\nTo rust unburnish’d, not to shine in use!\nAs tho’ to breathe were life. Life piled on life\nWere all too little, and of one to me\nLittle remains: but every hour is saved\nFrom that eternal silence, something more,\nA bringer of new things; and vile it were\nFor some three suns to store and hoard myself,\nAnd this gray spirit yearning in desire\nTo follow knowledge like a sinking star,\nBeyond the utmost bound of human thought.",
+     "This is my son, mine own Telemachus,\nTo whom I leave the sceptre and the isle,—\nWell-loved of me, discerning to fulfil\nThis labour, by slow prudence to make mild\nA rugged people, and thro’ soft degrees\nSubdue them to the useful and the good.",
+     "Most blameless is he, centred in the sphere\nOf common duties, decent not to fail\nIn offices of tenderness, and pay\nMeet adoration to my household gods,\nWhen I am gone. He works his work, I mine.",
+     "There lies the port; the vessel puffs her sail:\nThere gloom the dark, broad seas. My mariners,\nSouls that have toil’d, and wrought, and thought with me—\nThat ever with a frolic welcome took\nThe thunder and the sunshine, and opposed\nFree hearts, free foreheads—you and I are old;\nOld age hath yet his honour and his toil;\nDeath closes all: but something ere the end,\nSome work of noble note, may yet be done,\nNot unbecoming men that strove with Gods.",
+     "The lights begin to twinkle from the rocks:\nThe long day wanes: the slow moon climbs: the deep\nMoans round with many voices. Come, my friends,\n’Tis not too late to seek a newer world.\nPush off, and sitting well in order smite\nThe sounding furrows; for my purpose holds\nTo sail beyond the sunset, and the baths\nOf all the western stars, until I die.",
+     "It may be that the gulfs will wash us down:\nIt may be we shall touch the Happy Isles,\nAnd see the great Achilles, whom we knew.\nTho’ much is taken, much abides; and tho’\nWe are not now that strength which in old days\nMoved earth and heaven; that which we are, we are;\nOne equal temper of heroic hearts,\nMade weak by time and fate, but strong in will\nTo strive, to seek, to find, and not to yield."
     ]
    }
   ]

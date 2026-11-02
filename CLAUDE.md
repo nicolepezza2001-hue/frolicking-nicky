@@ -186,7 +186,7 @@ a separate Europe close-up, the map legend or the trip buttons under the map on 
   `versions` (lang, label, stanzas; e.g. 中文, Pinyin `zh-Latn`, English, Italiano) and follows Nicky's quotes on that book page,
   English beside Italian, one stanza per row (Nicky's call: no Chinese or pinyin on the page; they stay for Learn by heart).
   Nicky prefers published translations to Claude's: use a free one when it exists (Su Shi's English is Qian Jia's, Stanford
-  Global Medieval Sourcebook, CC BY-NC-SA) and say so in the note; Claude's own only when none can be found. Her Chinese poems (and new ones she asked for: Su Shi, Li Zhiyi) share one **Chinese poetry** page (`po-chu-i`).
+  Global Medieval Sourcebook, CC BY-NC-SA) and say so in the note; Claude's own only when none can be found. Her Chinese poems (and new ones she asked for: Su Shi, Li Zhiyi) share one **Chinese poetry** page (`po-chu-i`). Tennyson's **Ulysses** (Nov 2026) is English only, in his 1842 spelling, in ten parts to learn.
   Paradise Lost (her favourite is Book II, and she loves Satan at his angriest against God) has its own page: "Satan against
   God" (Books I, IV, V, IX) and eight Book II passages, in Milton's 1674 spelling beside Lazzaro Papi's Italian (1811,
   Wikisource) for now: she wants her own Italian translation ("in questo selvaggio abisso, grembo della natura, e forse
