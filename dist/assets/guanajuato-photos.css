@@ -1,0 +1,23 @@
+/* Guanajuato: existing scrapbook rows, without photo captions or cropped portraits. */
+html body.fn-guanajuato .gto-hero{padding:8px;max-width:360px;justify-self:center;box-sizing:border-box}
+html body.fn-guanajuato .gto-hero img{display:block;width:100%;height:auto;max-height:none;aspect-ratio:auto}
+html body.fn-guanajuato .ba-scrap-row{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:32px;margin:30px 0}
+html body.fn-guanajuato .ba-scrap-row>.vn-stop{grid-column:2;grid-row:1;min-width:0}
+html body.fn-guanajuato .ba-scrap-photos{grid-column:1;grid-row:1;min-width:0;justify-content:center}
+html body.fn-guanajuato .gto-reverse>.vn-stop{grid-column:1}
+html body.fn-guanajuato .gto-reverse>.ba-scrap-photos{grid-column:2}
+html body.fn-guanajuato .ba-scrap-photo{flex:1 1 0;width:auto;padding:6px}
+html body.fn-guanajuato .ba-scrap-photo:only-child{max-width:300px}
+html body.fn-guanajuato .ba-scrap-photo :is(img,video){display:block;width:100%;height:auto;max-height:none;aspect-ratio:auto}
+html body.fn-guanajuato .gto-event{margin:44px 0;scroll-margin-top:24px}
+html body.fn-guanajuato .gto-event h2{font-family:'Playfair Display',Georgia,serif;font-size:clamp(1.8rem,4vw,2.7rem)}
+html body.fn-guanajuato .gto-event .vn-stop h3{margin:0 0 12px;font-size:1.45rem;font-family:'Playfair Display',Georgia,serif}
+html body.fn-guanajuato .gto-event p{margin:0 0 12px}
+@media(max-width:650px){
+html body.fn-guanajuato .ba-scrap-row{grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);gap:14px;margin:26px 0}
+html body.fn-guanajuato .ba-scrap-row>.vn-stop{padding:14px 12px}
+html body.fn-guanajuato .ba-scrap-photos{gap:6px}
+html body.fn-guanajuato .ba-scrap-photo{padding:3px}
+html body.fn-guanajuato .ba-scrap-photo:only-child{max-width:100%}
+html body.fn-guanajuato .gto-event .vn-stop h3{font-size:1.15rem}
+}
