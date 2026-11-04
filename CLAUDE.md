@@ -87,6 +87,7 @@ Italian copies and the best-time-to-visit data.
   with her own.
 - **Share previews**: every page has Open Graph/Twitter tags; images are
   `dist/assets/share-*.jpg` (1200×630).
+- **Nicole’s photo rule (4 November 2026):** Never add visible photo captions, including hero labels. Keep accessibility alt text. Use a generous selection of supplied photos beside relevant activities; verify the destination, and never use a Guanajuato city photo for San Miguel.
 - **Photos**: keep JPEGs at most 1400px on the long side, quality ~76, with
   metadata stripped (this also removes GPS). Lay new photos out the way the
   other itinerary pages do (tilted photos beside the card they belong to, at

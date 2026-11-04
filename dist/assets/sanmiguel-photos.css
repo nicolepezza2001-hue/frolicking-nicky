@@ -1,8 +1,8 @@
 /* Use the shared scrapbook frames, keeping photographs beside their activity card at every size. */
 html body.fn-sanmiguel .fn-v-side{align-items:center}
-html body.fn-sanmiguel .fn-v-photo{box-sizing:border-box;padding:8px 8px 12px}
+html body.fn-sanmiguel .fn-v-photo{box-sizing:border-box;padding:8px}
 html body.fn-sanmiguel .fn-v-photo:nth-child(2){margin-top:18px}
-html body.fn-sanmiguel .fn-v-photo figcaption{overflow-wrap:anywhere}
+
 html body.fn-sanmiguel .postcard img{height:auto;max-height:540px;object-fit:cover}
 @media(max-width:760px){
 html body.fn-sanmiguel .fn-v-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:14px;align-items:center}
@@ -10,10 +10,10 @@ html body.fn-sanmiguel .fn-v-row>.task-group{grid-column:2;grid-row:1;width:auto
 html body.fn-sanmiguel .fn-v-row.fn-v-rev>.task-group{grid-column:1}
 html body.fn-sanmiguel .fn-v-side{grid-column:1;grid-row:1;width:auto;padding:2px;gap:5px}
 html body.fn-sanmiguel .fn-v-row.fn-v-rev .fn-v-side{grid-column:2}
-html body.fn-sanmiguel .fn-v-photo{padding:3px 3px 7px}
+html body.fn-sanmiguel .fn-v-photo{padding:3px}
 html body.fn-sanmiguel .fn-v-photo:only-child{max-width:100%}
 html body.fn-sanmiguel .fn-v-photo:nth-child(2){margin-top:12px}
-html body.fn-sanmiguel .fn-v-photo figcaption{font-size:.62rem;line-height:1.35;margin-top:5px}
+
 html body.fn-sanmiguel .fn-v-row .task{padding:12px 0;gap:7px;grid-template-columns:20px 1fr}
 html body.fn-sanmiguel .fn-v-row .task-title{font-size:.9rem}
 html body.fn-sanmiguel .fn-v-row .specialty,html body.fn-sanmiguel .fn-v-row .task-note{font-size:.78rem}
