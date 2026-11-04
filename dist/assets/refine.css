@@ -134,3 +134,7 @@ html body .fn-filter select{-webkit-appearance:none;appearance:none;padding:10px
 html body .pace{padding:20px 28px;margin:8px 0 28px}
 html body .pace p{margin:0}
 @media(max-width:600px){html body .pace{padding:16px 20px}}
+/* Booking and info links under a stop (Puerto Escondido tours): small cherry links, one per line on phones */
+html body .fn-task-links{display:flex;flex-wrap:wrap;gap:4px 16px;margin-top:6px;font-size:.85em}
+html body .fn-task-links a{color:#B30545;text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
+html body .fn-plan-name a{color:inherit;text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
