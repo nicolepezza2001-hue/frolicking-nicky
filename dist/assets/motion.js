@@ -284,6 +284,15 @@
       `<path d="M16 8.4v31.2M19.6 8.4v31.2M23.2 8.4v31.2M26.8 8.4v31.2M30.4 8.4v31.2" opacity=".35" stroke-width=".8"/>` +
       [37.4, 34.2, 31, 27.8, 24.6, 21.4].map((y, i) => `<path class="fn-i-weave" style="--d:${(i * .55).toFixed(2)}s" d="${i % 2 ? `M14 ${y}l2.4-2 2.4 2 2.4-2 2.4 2 2.4-2 2.4 2 2.4-2 2.4 2` : `M14 ${y - 2}l2.4 2 2.4-2 2.4 2 2.4-2 2.4 2 2.4-2 2.4 2 2.4-2`}" stroke-width="1.1"/>`).join('') +
       `<g class="fn-i-shuttle"><path d="M13.4 17.6h21.2" opacity=".5" stroke-width=".8"/><path d="M15 17.6c1.4-1.4 4.4-1.4 5.8 0-1.4 1.4-4.4 1.4-5.8 0z" fill="currentColor" fill-opacity=".3"/></g>`, 'fn-i-loom', false),
+    // Puerto Escondido: a hatchling crawls down the sand into the waves
+    turtle: g(`<g class="fn-i-crawl"><path d="M13 30.6c.6-5.6 4.8-9 10.4-9s9.8 3.4 10.4 9z"/><path d="M17 30.6l2.6-5.4 3.8 5.4 3.8-5.4 2.8 5.4M19.6 25.2h7.6" opacity=".55" stroke-width="1"/><path d="M33.8 28.4c1-1.8 3.4-2.4 5-1.2.8.8.6 2-.6 2.6-1.4.6-3 .4-4.4-1.4"/><path d="M37.6 27.4h.1" stroke-width="1.6"/><path class="fn-i-fl" d="M29.6 30.6l3.6 3.4"/><path class="fn-i-fl2" d="M16.8 30.6l-3.4 3"/><path d="M13 30.6c-1.6.2-2.8 1-3.4 2"/></g>` +
+      `<path d="M6 37.4h22" opacity=".5" stroke-dasharray="1 2.6"/><path class="fn-i-wave" d="M30 37.4c2-1.6 3.6-1.6 5.4 0s3.6 1.6 5.4 0"/><path d="M33 41c1.8-1.2 3.4-1.2 5 0" opacity=".6"/>${star(40, 13, 1.6, 'fn-i-twinkle', 0)}`, 'fn-i-turtle'),
+    // Dolphin boat: a dolphin leaps out of the waves with a little splash
+    dolphin: g(`<g class="fn-i-leap"><path d="M11.6 31.4C15 22.6 23 17.6 31.4 18.8c3 .4 5.6 1.8 7.4 3.8l3.4.8-3 1.2c-.4.8-1 1.2-1.8 1-3.6-2.6-9.4-3-14.2-.6-3.8 1.8-6.8 4.8-8.6 8.2"/><path d="M24.4 20.6c-.4-2.4.6-4.6 2.6-5.6-.4 1.8 0 3.6 1 4.8"/><path d="M27 24.6c1.4 1.4 1.6 3 .8 4.6" opacity=".7"/><path d="M11.6 31.4c-2.4-.2-4.2.8-5 2.6 2.2-.4 3.6 0 4.6 1M11.6 31.4c.4-2.4-.4-4.2-2.2-5.2.2 2 0 3.4-1 4.4"/><path d="M35.6 21.6h.1" stroke-width="1.6"/></g>` +
+      `<path class="fn-i-wave" d="M8 39.6c2.6-2.2 4.8-2.2 7 0s4.8 2.2 7 0 4.8-2.2 7 0 4.8 2.2 7 0 4.8-2.2 5.4-.6"/><circle class="fn-i-splash" style="--d:.2s" cx="14" cy="36" r=".9" fill="currentColor" stroke="none"/><circle class="fn-i-splash" style="--d:.5s" cx="17.4" cy="35" r=".7" fill="currentColor" stroke="none"/>`, 'fn-i-dolphin'),
+    // Horses & hot springs: a horse nods, mane rippling, with a couple of sparkles
+    horse: g(`<g class="fn-i-nod"><path d="M17.4 40c-.4-6.6.8-12.2 4-16.6l-2.4-6.6 4.4 3c1.6-1.4 3.6-2.2 5.8-2.4l1-3.8 2 3.6c2.6 1 4.6 3.4 5.8 6.8l2.6 7c.6 1.8-.4 3.4-2.2 3.6-1.6.2-2.8-.4-3.6-1.6l-3.4-4.6c-1.4 3.4-1.4 7.2.2 11.6"/><path d="M33.4 25.6h.1" stroke-width="1.8"/><path d="M38.4 33.2h.1" stroke-width="1.6"/><path class="fn-i-mane" d="M23.4 20.4c-3 2-5.4 5.4-6.4 9.6M25.4 19.4c-2.8 2.8-4.4 6.6-4.6 10.6M20.8 22.6c-3.6 1.4-6.4 4.6-7.8 8.6" opacity=".7"/></g>` +
+      `${star(11, 14, 1.8, 'fn-i-twinkle', 0)}${star(40, 11, 1.4, 'fn-i-twinkle2', 0)}`, 'fn-i-horse'),
     // Small icons for stop cards (Guanajuato and Oaxaca)
     tunnel: g(`<path d="M6 40V24c0-10 8-16.6 18-16.6S42 14 42 24v16"/><path d="M13 40V25.6c0-6.4 4.8-11 11-11s11 4.6 11 11V40"/><path d="M8.4 20.4l4.6 2M10.6 14.4l4 3.4M15.6 10.2l2.6 4.4M39.6 20.4l-4.6 2M37.4 14.4l-4 3.4M32.4 10.2l-2.6 4.4" opacity=".55" stroke-width="1"/><path d="M4 40h40"/><path class="fn-i-dash" d="M24 40V28" stroke-dasharray="1.6 2.4" opacity=".7"/><g class="fn-i-tunnelcar"><path d="M20.4 34.6h7.2l-1-2.6h-5.2z" stroke-width="1"/><circle cx="21.6" cy="35.4" r=".8" fill="currentColor" stroke="none"/><circle cx="26.4" cy="35.4" r=".8" fill="currentColor" stroke="none"/></g>`, 'fn-i-tunnel', false),
     agave: g(`<g class="fn-i-sway"><path d="M24 38c-1-8-.4-15 0-24 .4 9 1 16 0 24z"/><path d="M23 38c-4.6-5.4-8-10.8-9.6-18.6 3.6 6 6.6 11.4 9.6 18.6zM25 38c4.6-5.4 8-10.8 9.6-18.6-3.6 6-6.6 11.4-9.6 18.6z"/><path d="M22 38.4c-6.4-2.6-10.8-6.2-14-12.4 4.6 4.2 9 7.6 14 12.4zM26 38.4c6.4-2.6 10.8-6.2 14-12.4-4.6 4.2-9 7.6-14 12.4z"/></g><path d="M10 40.6h28"/><path d="M14 43c3-1 6-1 9 0" opacity=".5"/><g class="fn-i-drip"><path d="M38.6 9.6c-1.4 1.8-1.4 3.2 0 3.6 1.4-.4 1.4-1.8 0-3.6z" fill="currentColor" fill-opacity=".5"/></g>${star(9, 10, 1.6, 'fn-i-twinkle', 0)}`, 'fn-i-agave', false),
@@ -295,6 +304,13 @@
     [/^(one thing at a time|una cosa alla volta)$/i, 'mummy'],
     [/^(getting there & back|come arrivare e tornare)$/i, 'bus'],
     [/^(choose one day trip|una gita a scelta)$/i, 'signpost'],
+    [/turtles|tartarughe/i, 'turtle'],
+    [/dolphin|delfini/i, 'dolphin'],
+    [/^(horses & hot springs|cavalli e terme)$/i, 'horse'],
+    [/^(choose one morning out|scegli una mattina fuori)$/i, 'signpost'],
+    [/^(into town|in città)$/i, 'chapulines'],
+    [/^la punta$|puerto angelito/i, 'boat'],
+    [/mazunte/i, 'sun'],
     [/santo domingo/i, 'church'],
     [/jalatlaco/i, 'chapulines'],
     [/hierve el agua/i, 'hierve'],
@@ -369,10 +385,17 @@
     alban: 'pyramid', arrazola: 'sparkle', tule: 'tree', mitla: 'pyramid', palenque: 'agave', hierve: 'hierve', tlacolula: 'chapulines',
     verbena: 'papel', atzompa: 'cup', xoxotapetes: 'flower', grancomparsa: 'papel', marketcrawl: 'bread',
     xoxoaltares: 'lantern', hechooaxaca: 'sparkle', etla: 'skeleton', chinas: 'flower', tapetejalatlaco: 'palette', xoxocomparsas: 'bell',
+    lapuntabeach: 'boat', puntasunset: 'sun', lapuntacoffee: 'cup', capsula: 'cup', sukuun: 'cup', malagua: 'cup', casakooks: 'pasta',
+    blackbaba: 'pasta', chicama: 'pasta', alalena: 'pasta', poke: 'pasta', fishshack: 'taco', nativo: 'pasta', boneyard: 'pasta',
+    bikini: 'wine', nodo: 'wine', checowork: 'pencil', coworkpuerto: 'pencil', carrizalillobeach: 'boat', pepes: 'taco', tentate: 'cup',
+    turtles: 'turtle', bacocho: 'sun', angelitobeach: 'boat', manzanillo: 'boat', mercado: 'chapulines', adoquin: 'shoe', binisa: 'cup',
+    dolphins: 'dolphin', horseride: 'horse', mazuntebeach: 'boat', tortuga: 'turtle', sanagustinillo: 'boat', zipolite: 'boat',
+    puntacometa: 'sun', manialtepec: 'moon', surf: 'boat',
     barbacoa: 'taco', teotitlan: 'loom', tilcajete: 'sparkle', temazcal: 'springs', tejate: 'cup', chapulines: 'chapulines'
   };
   // Keyword icons for every other stop and heading on the site (first match wins; a map pin if nothing fits)
   const GUESS = [
+    [/turtle|tortug|tartarug/i, 'turtle'], [/dolphin|delfin/i, 'dolphin'],
     [/cemetery|panteón|cimitero/i, 'skeleton'], [/cave|grotta/i, 'cave'], [/lantern|lanterne/i, 'lantern'],
     [/hot springs|gruta|spa\b|temazcal|onsen|terme/i, 'springs'], [/kimono|yukata|tea ceremony|cerimonia del tè/i, 'blossom'],
     [/library|biblioteca|bibliothek/i, 'books'], [/frida|casa azul|klimt/i, 'palette'],
@@ -392,7 +415,7 @@
     [/river|lake|danube|canal|sumida|boat|kayak|cruise|trajinera|xochimilco|snorkel|island|presa|beach|ha long|an bang|seaside|odaiba|fiume|lago/i, 'boat'],
     [/park|parco|garden|giardino|jardín|gyoen|bosque|koko-en|alameda|yoyogi|ueno|quetzal|prater|philosopher|centenario|charco|ohara|nara/i, 'flower'],
     [/puppet|kabuki|opera|concert|theatre|teatro|show/i, 'sparkle'],
-    [/horse|cavall|zipline|aventura|riesenrad|gundam|wagner|hundertwasser|alebrije|statue/i, 'sparkle'],
+    [/horse|cavall/i, 'horse'], [/zipline|aventura|riesenrad|gundam|wagner|hundertwasser|alebrije|statue/i, 'sparkle'],
     [/transfer|train|station|stazione|travel to|leave|back to|torna|limousine|arrival|arrivo|jeep|tour from|loop/i, 'bus'],
     [/budget/i, 'piggy'], [/dinner|cena|lunch|pranzo|brunch|breakfast|colazione|food|cibo|ramen|soba|udon|tsukemen|tempura|sushi|wagyu|gyukatsu|izakaya|beisl|buffet|okonomiyaki|takoyaki|snack|seafood|restaurant|ristorante|kitchen|street food|taco|maíz|maize|maizajo|chava|máximo|conchudo|xuna|expendio|migrante|odette|tata|milagros|quince|panina|luna de queso|tostév|izuu|junsei|hikiniku|savoy|nemuro|age\.3|gonpachi|mukai|kisaburo|benizuru|ichinoya|kani\b|karashibi|idaten|dashi|tantan|gyoza/i, 'pasta'],
     [/walk|stroll|wander|passegg|street|straße|graben|lanes|vicoli|quarter|old town|ancient town|nakamise|dori|cat street|omotesando|kagurazaka|yanaka|nihonbashi|dotonbori|gion|ring\b|district|roma|juárez|condesa|mesón|neighbo|crossing|shibuya|explore|cycle|bici/i, 'shoe'],
