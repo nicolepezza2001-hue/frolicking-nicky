@@ -36,6 +36,48 @@ export const visitSeasons = {
     reasons: ['Freddo; Takayama innevata e chiusure per il Capodanno.','Giornate fredde in città; neve a Takayama.','Ideale per la fioritura dei ciliegi di fine mese; all’inizio di marzo fa più fresco. La folla e i prezzi più alti valgono la pena.','I ciliegi in fiore lo rendono una scelta top nonostante folla e prezzi più alti. I tempi della fioritura variano; la Golden Week inizia a fine aprile.','Ideale dopo la Golden Week, prima delle piogge principali.','Stagione delle piogge; tieni flessibili i programmi all’aperto.','La pioggia lascia il posto a caldo e umidità intensi.','Molto caldo e umido; i viaggi per l’Obon aumentano la domanda.','Caldo persistente e rischio più alto di disagi per i tifoni.','Più piacevole da esplorare; Takayama più fresca e domanda autunnale.','Giornate frizzanti e foliage; i posti più famosi di Kyoto restano affollati.','Spesso asciutto in città; montagne fredde e chiusure di fine anno.'],
     sources: [['JNTO · maggio e Golden Week','https://www.japan.travel/en/guide/may/'],['JNTO · estate','https://www.japan.travel/en/guide/summer-guide/'],['JNTO · settembre','https://www.japan.travel/en/guide/september/'],['JNTO · stagioni di viaggio e festività','https://www.japan.travel/en/gc/tips/']]
   },
+  'puerto-escondido': {
+      "scope": "Per le spiagge di Puerto Escondido e la gita a Mazunte di questo itinerario.",
+      "ratings": [
+          "Best",
+          "Best",
+          "Good",
+          "Good",
+          "Okay",
+          "Okay",
+          "Okay",
+          "Okay",
+          "Okay",
+          "Good",
+          "Best",
+          "Good"
+      ],
+      "note": "La mia scelta: novembre, quando inizia la stagione secca, le colline sono ancora verdi e si liberano le ultime tartarughine. Da dicembre a marzo è secco e soleggiato, con le megattere al largo, ma dicembre è affollato. Da giugno a settembre fa caldo e piove, con le onde più grandi.",
+      "reasons": [
+          "Secco e soleggiato; stagione delle balene.",
+          "Secco, caldo, mare calmo.",
+          "Secco; meno balene; la Settimana Santa può essere affollata.",
+          "Caldo e secco; buon rapporto qualità-prezzo.",
+          "Il mese più caldo prima delle piogge.",
+          "Iniziano le piogge; mareggiate.",
+          "Temporali il pomeriggio; stagione del surf.",
+          "Umido e piovoso; picco della nidificazione delle tartarughe.",
+          "Il mese più piovoso.",
+          "Le piogge calano; colline verdi; si liberano tartarughe.",
+          "Inizia la stagione secca; ultime tartarughine.",
+          "Secco e soleggiato, ma affollato e più caro."
+      ],
+      "sources": [
+          [
+              "Champion Traveler · best time to visit Puerto Escondido",
+              "https://championtraveler.com/dates/best-time-to-visit-puerto-escondido-mx/"
+          ],
+          [
+              "Mexico Daily Post · whale season in Oaxaca",
+              "https://mexicodailypost.news/2025/11/22/where-and-when-can-you-see-whales-in-oaxaca/"
+          ]
+      ]
+  },
   oaxaca: {
     scope: "Per Oaxaca città e le gite nella valle di questo itinerario.",
     ratings: ["Good", "Good", "Good", "Okay", "Okay", "Okay", "Good", "Okay", "Okay", "Best", "Best", "Good"],

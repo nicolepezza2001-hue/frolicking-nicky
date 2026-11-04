@@ -36,6 +36,48 @@ export const visitSeasons = {
     reasons: ['Cold; snowy Takayama and New Year closures.','Cold city days; snow in Takayama.','Best for the late-month cherry blossom season; earlier March is cooler. Crowds and higher prices are worth it.','Cherry blossoms make this a top pick despite crowds and higher prices. Bloom timing varies; Golden Week begins late April.','Best after Golden Week, before the main rains.','Rainy season; allow flexible outdoor plans.','Rain gives way to intense heat and humidity.','Very hot and humid; Obon travel adds demand.','Lingering heat and elevated typhoon disruption risk.','More comfortable exploring; cooler Takayama and autumn demand.','Crisp days and foliage; popular Kyoto spots stay busy.','Often dry in the cities; cold mountains and year-end closures.'],
     sources: [['JNTO · May & Golden Week','https://www.japan.travel/en/guide/may/'],['JNTO · summer','https://www.japan.travel/en/guide/summer-guide/'],['JNTO · September','https://www.japan.travel/en/guide/september/'],['JNTO · travel seasons & holidays','https://www.japan.travel/en/gc/tips/']]
   },
+  'puerto-escondido': {
+      "scope": "For Puerto Escondido’s beaches and the day out to Mazunte in this itinerary.",
+      "ratings": [
+          "Best",
+          "Best",
+          "Good",
+          "Good",
+          "Okay",
+          "Okay",
+          "Okay",
+          "Okay",
+          "Okay",
+          "Good",
+          "Best",
+          "Good"
+      ],
+      "note": "My pick: November, when the dry season starts, the hills are still green and the last baby turtles are being released. December to March is dry and sunny, with humpback whales offshore, but December is busy. June to September is hot and wet, with the biggest surf.",
+      "reasons": [
+          "Dry and sunny; whale season.",
+          "Dry, warm, calm seas.",
+          "Dry; whales thin out; Semana Santa can be busy.",
+          "Hot and dry; good value.",
+          "The hottest month before the rains.",
+          "Rains begin; big swells.",
+          "Afternoon storms; surf season.",
+          "Wet and humid; turtle nesting peaks.",
+          "The wettest month.",
+          "Rains ease; green hills; turtle releases.",
+          "Dry season starts; last turtle releases.",
+          "Dry and sunny, but busy and pricier."
+      ],
+      "sources": [
+          [
+              "Champion Traveler · best time to visit Puerto Escondido",
+              "https://championtraveler.com/dates/best-time-to-visit-puerto-escondido-mx/"
+          ],
+          [
+              "Mexico Daily Post · whale season in Oaxaca",
+              "https://mexicodailypost.news/2025/11/22/where-and-when-can-you-see-whales-in-oaxaca/"
+          ]
+      ]
+  },
   oaxaca: {
     scope: "For Oaxaca City and the valley day trips in this itinerary.",
     ratings: ["Good", "Good", "Good", "Okay", "Okay", "Okay", "Good", "Okay", "Okay", "Best", "Best", "Good"],
