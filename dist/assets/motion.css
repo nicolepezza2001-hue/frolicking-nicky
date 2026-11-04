@@ -265,6 +265,16 @@ h3 .fn-icon { width: 2em; height: 2em; margin-top: -1.06em; left: .3em; }
   .fn-i-splash { opacity: 0; animation: fn-i-splash 1.2s var(--d, 0s) ease-out infinite; }
   @keyframes fn-i-whisk { from { rotate: -12deg; translate: -1px 0; } to { rotate: 12deg; translate: 1px 0; } }
   @keyframes fn-i-splash { 0% { opacity: 0; translate: 0 2px; } 20% { opacity: 1; translate: 0 -4px; } 45%, 100% { opacity: 0; translate: 0 1px; } }
+  /* Puerto Escondido: hatchling crawling to the sea, leaping dolphin, nodding horse */
+  .fn-i-crawl { animation: fn-i-crawl 3.2s ease-in-out infinite; }
+  .fn-i-fl { transform-origin: 0 0; animation: fn-i-leg .4s ease-in-out infinite alternate; }
+  .fn-i-fl2 { transform-origin: 100% 0; animation: fn-i-leg .4s -.4s ease-in-out infinite alternate; }
+  .fn-i-leap { transform-origin: 50% 100%; animation: fn-i-leap 2.8s ease-in-out infinite; }
+  .fn-i-nod { transform-origin: 40% 90%; animation: fn-i-nod 1.8s ease-in-out infinite; }
+  .fn-i-mane { animation: fn-i-wave 1.4s ease-in-out infinite; }
+  @keyframes fn-i-crawl { 0% { translate: -4px 0; opacity: 0; } 12% { opacity: 1; } 78% { translate: 4px 0; opacity: 1; } 100% { translate: 7px 1px; opacity: 0; } }
+  @keyframes fn-i-leap { 0%, 100% { translate: 0 3px; rotate: -6deg; } 50% { translate: 0 -3px; rotate: 6deg; } }
+  @keyframes fn-i-nod { 0%, 100% { rotate: 0deg; } 30% { rotate: -6deg; } 45% { rotate: 2deg; } }
   /* Dog: trots along with a wagging tail */
   .fn-i-trot { animation: fn-i-trot .5s ease-in-out infinite alternate; }
   .fn-i-leg { transform-origin: 50% 0; animation: fn-i-leg .5s ease-in-out infinite alternate; }
