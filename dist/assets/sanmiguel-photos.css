@@ -3,7 +3,18 @@ html body.fn-sanmiguel .fn-v-side{align-items:center}
 html body.fn-sanmiguel .fn-v-photo{box-sizing:border-box;padding:8px}
 html body.fn-sanmiguel .fn-v-photo:nth-child(2){margin-top:18px}
 
-html body.fn-sanmiguel .postcard img{height:auto;max-height:540px;object-fit:cover}
+/* Portrait photographs keep their natural proportions; the frame has four equal edges. */
+html body.fn-sanmiguel .intro{gap:clamp(28px,4vw,50px);padding-bottom:36px}
+html body.fn-sanmiguel .intro>.fn-pc-wrap{width:min(100%,360px);justify-self:center}
+html body.fn-sanmiguel .postcard{padding:10px;margin:16px 8px 20px;box-sizing:border-box}
+html body.fn-sanmiguel .postcard img{display:block;width:100%;height:auto;max-height:none;aspect-ratio:auto;object-fit:initial}
+/* Give the introductory note breathing room and keep jump links out of the photos. */
+html body.fn-sanmiguel .jump{position:static;display:flex;flex-wrap:wrap;overflow:visible;gap:10px;margin:14px 0 0;padding:12px 0 18px}
+html body.fn-sanmiguel .pace{display:block;padding:22px 26px;margin:8px 0 36px}
+html body.fn-sanmiguel .pace p{max-width:none;margin:0}
+html body.fn-sanmiguel #itinerary{padding-top:0}
+@media(max-width:600px){html body.fn-sanmiguel .pace{padding:18px 20px;margin:8px 0 28px}html body.fn-sanmiguel .jump{gap:8px;margin:10px 0 0;padding:10px 0 14px}html body.fn-sanmiguel .jump a{padding:8px 12px;font-size:.8rem}}
+
 @media(max-width:760px){
 html body.fn-sanmiguel .fn-v-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:14px;align-items:center}
 html body.fn-sanmiguel .fn-v-row>.task-group{grid-column:2;grid-row:1;width:auto;margin:0;padding:14px 10px}
