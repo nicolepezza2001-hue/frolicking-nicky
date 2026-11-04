@@ -2,6 +2,27 @@
 // Don't edit by hand: change tools/quote-books.json and run node tools/sync-quotes.mjs.
 window.FN_QUOTE_BOOKS = [
  {
+  "id": "quote-hell-bent-portale-per-l-inferno",
+  "title": "Hell Bent: Portale per l'inferno",
+  "author": "Leigh Bardugo",
+  "genre": "Newly added",
+  "kicker": "Leigh Bardugo · Newly added",
+  "blocks": [
+   {
+    "type": "paragraph",
+    "text": "Ignoranti erano di ogni cosa finché venni io e dissi loro del sorgere delle stelle e del loro scuro declinare, insegnai loro anche l’arte dei numeri, regina della conoscenza. Li istruii su come unire le lettere, rendendole proprie schiave per servire la memoria, madre della musa."
+   },
+   {
+    "type": "paragraph",
+    "text": "«Alex» rispose Michelle, spolverandosi la gonna, «lui andrebbe all’inferno solo per prendere appunti sul clima.»"
+   },
+   {
+    "type": "paragraph",
+    "text": "Non le era mai piaciuta l’espressione “diamante grezzo”. Significava solo che ti avrebbero tagliato più e più volte per far entrare la luce."
+   }
+  ]
+ },
+ {
   "id": "quote-affinita",
   "title": "Affinità",
   "author": "Sarah Waters",
@@ -4436,27 +4457,6 @@ window.FN_QUOTE_BOOKS = [
    {
     "type": "paragraph",
     "text": "Everyone mourns the first blossom.\nWho will weep for the rest that fall?\nI will remain to sing for you\nLong after the spring has gone.\nKing of scars"
-   }
-  ]
- },
- {
-  "id": "quote-hell-bent",
-  "title": "Hell Bent",
-  "author": "Leigh Bardugo",
-  "genre": "Fantasy & science fiction",
-  "kicker": "Leigh Bardugo · Fantasy & science fiction",
-  "blocks": [
-   {
-    "type": "paragraph",
-    "text": "Ignoranti erano di ogni cosa finché venni io e dissi loro del sorgere delle stelle e del loro scuro declinare, insegnai loro anche l’arte dei numeri, regina della conoscenza. Li istruii su come unire le lettere, rendendole proprie schiave per servire la memoria, madre della musa."
-   },
-   {
-    "type": "paragraph",
-    "text": "«Alex» rispose Michelle, spolverandosi la gonna, «lui andrebbe all’inferno solo per prendere appunti sul clima.»"
-   },
-   {
-    "type": "paragraph",
-    "text": "Non le era mai piaciuta l’espressione “diamante grezzo”. Significava solo che ti avrebbero tagliato più e più volte per far entrare la luce."
    }
   ]
  },
