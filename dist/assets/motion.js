@@ -311,6 +311,7 @@
     [/^(into town|in città)$/i, 'chapulines'],
     [/^la punta$|puerto angelito/i, 'boat'],
     [/mazunte/i, 'sun'],
+    [/manialtepec/i, 'moon'],
     [/santo domingo/i, 'church'],
     [/jalatlaco/i, 'chapulines'],
     [/hierve el agua/i, 'hierve'],
