@@ -8768,6 +8768,37 @@ window.FN_QUOTE_BOOKS = [
   ]
  },
  {
+  "id": "quote-blok",
+  "title": "Ночь, улица, фонарь, аптека",
+  "author": "Alexander Blok",
+  "genre": "Poetry",
+  "kicker": "Alexander Blok · Poetry",
+  "blocks": [
+   {
+    "type": "heading",
+    "text": "The whole poem"
+   },
+   {
+    "type": "note",
+    "text": "Alexander Blok, 10 October 1912, from the cycle «Пляски смерти» (Dances of Death). Russian only."
+   },
+   {
+    "type": "table",
+    "head": [
+     "Русский"
+    ],
+    "rows": [
+     [
+      "Ночь, улица, фонарь, аптека,\nБессмысленный и тусклый свет.\nЖиви ещё хоть четверть века —\nВсё будет так. Исхода нет."
+     ],
+     [
+      "Умрёшь — начнёшь опять сначала\nИ повторится всё, как встарь:\nНочь, ледяная рябь канала,\nАптека, улица, фонарь."
+     ]
+    ]
+   }
+  ]
+ },
+ {
   "id": "quote-agamemnon",
   "title": "Agamemnon",
   "author": "Seneca",
@@ -14096,6 +14127,23 @@ window.FN_POEMS = [
      "There lies the port; the vessel puffs her sail:\nThere gloom the dark, broad seas. My mariners,\nSouls that have toil’d, and wrought, and thought with me—\nThat ever with a frolic welcome took\nThe thunder and the sunshine, and opposed\nFree hearts, free foreheads—you and I are old;\nOld age hath yet his honour and his toil;\nDeath closes all: but something ere the end,\nSome work of noble note, may yet be done,\nNot unbecoming men that strove with Gods.",
      "The lights begin to twinkle from the rocks:\nThe long day wanes: the slow moon climbs: the deep\nMoans round with many voices. Come, my friends,\n’Tis not too late to seek a newer world.\nPush off, and sitting well in order smite\nThe sounding furrows; for my purpose holds\nTo sail beyond the sunset, and the baths\nOf all the western stars, until I die.",
      "It may be that the gulfs will wash us down:\nIt may be we shall touch the Happy Isles,\nAnd see the great Achilles, whom we knew.\nTho’ much is taken, much abides; and tho’\nWe are not now that strength which in old days\nMoved earth and heaven; that which we are, we are;\nOne equal temper of heroic hearts,\nMade weak by time and fate, but strong in will\nTo strive, to seek, to find, and not to yield."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "blok-night-street",
+  "book": "quote-blok",
+  "title": "Ночь, улица, фонарь, аптека",
+  "author": "Alexander Blok",
+  "heading": "The whole poem",
+  "versions": [
+   {
+    "lang": "ru",
+    "label": "Русский",
+    "stanzas": [
+     "Ночь, улица, фонарь, аптека,\nБессмысленный и тусклый свет.\nЖиви ещё хоть четверть века —\nВсё будет так. Исхода нет.",
+     "Умрёшь — начнёшь опять сначала\nИ повторится всё, как встарь:\nНочь, ледяная рябь канала,\nАптека, улица, фонарь."
     ]
    }
   ]
