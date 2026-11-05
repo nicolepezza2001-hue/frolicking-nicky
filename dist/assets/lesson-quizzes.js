@@ -480,6 +480,19 @@ window.FN_LESSON_QUIZZES = {
     ['Decadence is resistance to…', 'bourgeois respectability']
   ],
   // Silver Age poetry: study notes
+  'silver-age-blok': [
+    ['Blok’s wife, the daughter of Mendeleev', 'Lyubov Mendeleeva / Lyubov / Lyobov Mendeleeva / Lyobov'],
+    ['The poet who made a throuple with Blok and Lyubov', 'Andrei Bely / Bely'],
+    ['Solovyov’s idea behind the Beautiful Lady: the Eternal…', 'Feminine / Eternal Feminine'],
+    ['Instead of the Middle Ages, Blok and Bely turned to … spirituality', 'Byzantine / Byzantium'],
+    ['Moscow as the heir of Byzantium is the …', 'third Rome / the third Rome'],
+    ['In Russia, Mary is more … than Virgin', 'Mother / mother'],
+    ['The woman in the restaurant, in a hat with black feathers', 'The Stranger / Stranger / Незнакомка'],
+    ['Night, street, lamp, …', 'pharmacy / аптека'],
+    ['In the poem Russia he calls her “my…”', 'wife / жена'],
+    ['Who walks in front of the twelve guards, in white?', 'Jesus / Christ / Jesus Christ / Христос'],
+    ['The year Blok died', '1921']
+  ],
   'silver-age-bely-ivanov': [
     ['Ivanov’s salon on Tavricheskaya Street was called…', 'the Tower / Башня / Tower'],
     ['The philosopher behind the younger Symbolists', 'Vladimir Solovyov / Solovyov'],

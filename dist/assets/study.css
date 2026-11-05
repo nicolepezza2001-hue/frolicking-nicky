@@ -394,6 +394,12 @@ article.fn-lesson[id^="quote-"] .fn-lesson-table td{white-space:pre-line;font-st
 article.fn-lesson[id^="quote-"] .fn-lesson-table tr:first-child{display:none}
 article.fn-lesson[id^="quote-"] .fn-lesson-table td{display:block;width:auto;border-bottom:0}
 article.fn-lesson[id^="quote-"] .fn-lesson-table td+td{padding-top:0;opacity:.78;border-bottom:1px solid #2b1e3822}}
+/* Blok (lesson 3): poems line by line, Russian beside the slides' English; stacked on phones */
+article#silver-age-blok .fn-lesson-table table{table-layout:fixed}
+article#silver-age-blok .fn-lesson-table td{font-style:italic;padding-top:2px;padding-bottom:2px;border-bottom:0}
+@media(max-width:760px){article#silver-age-blok .fn-lesson-table :is(table,tbody,tr){display:block;width:100%;min-width:0;font-size:15px}
+article#silver-age-blok .fn-lesson-table td{display:block;width:auto}
+article#silver-age-blok .fn-lesson-table td+td{padding-top:0;padding-bottom:8px;opacity:.78}}
 /* By heart (assets/by-heart.js): a poem's room, one stanza at a time; read, fade to first letters, recite */
 .fn-heart-open{margin:-4px 0 20px}
 /* Every quote can be learned by heart too: a small quiet link under it */

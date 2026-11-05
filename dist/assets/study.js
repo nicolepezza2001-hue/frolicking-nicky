@@ -47,6 +47,7 @@
       path: [
         ['Introduction', 'Lesson 1 · The Silver Age, its movements and historical context.', 'Lesson 1 · The Silver Age, its movements and historical context.'],
         ['Symbolism', 'Lesson 2 · European roots, Russian Symbolists and the invisible world.', 'Lesson 2 · European roots, Russian Symbolists and the invisible world.'],
+        ['Alexander Blok', 'Lesson 3 · Lyubov and the Beautiful Lady, the city, Russia as a woman, The Twelve.', 'Lesson 3 · Lyubov and the Beautiful Lady, the city, Russia as a woman, The Twelve.'],
         ['Andrei Bely & Vyacheslav Ivanov', 'Symbolism at its most mystical, and Ivanov’s Tower salon.', 'Il simbolismo più mistico e il salotto della Torre di Ivanov.'],
         ['Nikolai Gumilev', 'The Poets’ Guild and the Acmeist manifesto: clarity, the thing itself.', 'La Corporazione dei poeti e il manifesto acmeista: chiarezza, la cosa in sé.'],
         ['Anna Akhmatova', 'The early lyrics (Evening, Rosary), then Requiem.', 'Le prime liriche (La sera, Il rosario), poi Requiem.'],
@@ -260,6 +261,11 @@
   if (!state.moved.frSlang) {
     if (state.done['french:16']) { state.done['french:17'] = true; delete state.done['french:16']; }
     state.moved.frSlang = 1; save();
+  }
+  // And for "Alexander Blok", Silver Age step 3 (lesson 3): the steps after Symbolism move down one (once)
+  if (!state.moved.saBlok) {
+    for (let i = 10; i >= 2; i--) if (state.done['silver-age:' + i]) { state.done['silver-age:' + (i + 1)] = true; delete state.done['silver-age:' + i]; }
+    state.moved.saBlok = 1; save();
   }
 
   const LESSONS = [

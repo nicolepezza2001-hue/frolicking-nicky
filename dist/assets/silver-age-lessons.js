@@ -320,6 +320,475 @@ window.FN_SILVER_AGE_LESSONS = [
     ]
   },
   {
+    "id": "silver-age-blok",
+    "number": 3,
+    "title": "Alexander Blok",
+    "blocks": [
+      {
+        "type": "heading",
+        "text": "Life, Lyubov and Bely"
+      },
+      {
+        "type": "note",
+        "text": "1880-1921, didn’t write for much but during important events in Russia, central figure of Symbolism;"
+      },
+      {
+        "type": "note",
+        "text": "His poetry is about love, spirituality, beauty, urban life, historical change, fate of Russia;"
+      },
+      {
+        "type": "note",
+        "text": "Literary career reflects transformation of Russian culture from idealism of 1900s to revolutionary upheavals of 1917;"
+      },
+      {
+        "type": "note",
+        "text": "Born into an educated aristocratic family, his mum prominent translator, dad professor of law;"
+      },
+      {
+        "type": "note",
+        "text": "Grew up near Moscow, estate in countryside which contributed to his imagination;"
+      },
+      {
+        "type": "note",
+        "text": "Very Russian upbringing, married daughter of Mendeelev, Lyobov Mendeleeva (they were in love since they were kids), he studied law first, dropped out, did history and philology, graduated at 23;"
+      },
+      {
+        "type": "note",
+        "text": "Lyobov was personification of everything that is holy, a virgin – so didn’t have sex with her, open marriage (they had sex with other people, not with each other); they were a throuple at one point - with Bely!!! lol;"
+      },
+      {
+        "type": "note",
+        "text": "Lyobov was too untouchable for him; she kept diary saying how she tried to seduce him, it didn’t work, they had a talk; she could have demanded divorce (accepted under Orthodox law), but she loved him as a person, so they had other affairs;"
+      },
+      {
+        "type": "note",
+        "text": "She was a translator, intelligent, educated woman; without her, Blok couldn’t have lived such a comfortable life (his mom lived with them too);"
+      },
+      {
+        "type": "paragraph",
+        "text": "From the slides: born on 28 November 1880 in St Petersburg. Grew up partly at his grandfather’s estate, Shakhmatovo, near Moscow. Studied at St Petersburg University, first Law, then History and Philology. Married Lyubov Mendeleeva in 1903, daughter of the chemist Dmitri Mendeleev; the marriage became closely intertwined with his literary mythology."
+      },
+      {
+        "type": "paragraph",
+        "text": "Key question (slides): how did a poet who began by searching for eternal beauty become the poetic voice of revolutionary transformation?"
+      },
+      {
+        "type": "heading",
+        "text": "Symbolism, Byzantium and the Beautiful Lady"
+      },
+      {
+        "type": "note",
+        "text": "Blok was associated with the younger generation of Symbolists, alongside Andrei Bely; when Symbolists took European imagery and transplanted it to Russian soul/soil/language – it was forced at the beginning, then Blok made it look natural (Europe-Russia have different religion and history);"
+      },
+      {
+        "type": "note",
+        "text": "Just mentioning the symbol opens up the whole imagery behind it, the invisible reality;"
+      },
+      {
+        "type": "note",
+        "text": "Blok and Bely didn’t want to orient themselves to christian spirituality, so instead of Medieval times, they turn to Byzantine spirituality; Solovyov (Eternal Feminine - Saint Sofia, Eternal Wisdom);"
+      },
+      {
+        "type": "note",
+        "text": "In 1900s Slavianophili vs Zapadniki conflict came back, Russia is descendant of Byzantium instead, Moscow is third Rome (from 16th century, fall of Constantinople);"
+      },
+      {
+        "type": "note",
+        "text": "Russian Orthodox Church had negative reputation, considered backward, both Blok and Bely wanted to develop literary spirituality developed on ROC;"
+      },
+      {
+        "type": "paragraph",
+        "text": "From the slides: Symbolists believed visible reality concealed a deeper, spiritual world; poetry approached hidden meanings through symbols, music, imagery and intuition. Blok’s early poetry: musicality, dreamlike imagery, religious symbolism, a search for an ideal world beyond everyday existence. Influences: Vladimir Solovyov’s Eternal Feminine (Вечная Женственность) and the European Symbolist tradition."
+      },
+      {
+        "type": "table",
+        "head": [
+          "Far away in misty northern (slides)"
+        ],
+        "rows": [
+          [
+            "Far away in misty northern"
+          ],
+          [
+            "Region craggy outcrop’s loom"
+          ],
+          [
+            "Mars the boundlessness of ocean,"
+          ],
+          [
+            "Wondrous face in watery tomb."
+          ],
+          [
+            "Hewn from sharp-edged cliff-face, stirring"
+          ],
+          [
+            "Northern folk of simple stock,"
+          ],
+          [
+            "Pious minds a visage conjuring,"
+          ],
+          [
+            "Maiden dark they call the rock."
+          ],
+          [
+            "Often midst the foaming ocean,"
+          ],
+          [
+            "Hopeless lost in stormy cloud,"
+          ],
+          [
+            "Sudden mist-wrapped sailor’s notion"
+          ],
+          [
+            "Dark one spies in outcrop proud..."
+          ],
+          [
+            "Prayer to her he offers ardent..."
+          ],
+          [
+            "Wrathful maiden, pleased, may save."
+          ],
+          [
+            "Thus the ship may pass escarpment"
+          ],
+          [
+            "Safely coasting on her wave..."
+          ]
+        ]
+      },
+      {
+        "type": "note",
+        "text": "Far away in misty northern - region has nothing to do with Russia, sounds more like England (sea-faring), Blok wanted to be like Pushkin (everybody in Russia can read Evgeny Onegin and appreciate it, it appeals to Russian, written in accessible Russian language);"
+      },
+      {
+        "type": "note",
+        "text": "Verses about the beautiful lady: still influenced by Western tradition, inspired by Lyobov, written 1901-02, first main poem collection; cult of the virgin: never had that cult, Mary is never a virgin in Russia, in icons of Annunciation super rare, Mary always either mother or giving birth; Mary in Russia is more Mother than Virgin;"
+      },
+      {
+        "type": "note",
+        "text": "Blok’s Virgin cult is imported, Beautiful Lady is the Eternal Feminine (spiritual perfection, harmony, possibility of transforming the world); lyrical speaker exists in anticipation of her appearance, in mysterious landscape of churches, twilight, silence;"
+      },
+      {
+        "type": "note",
+        "text": "Western church different from Russian, Blok fluent in English, French, German, travelled extensively (with Lyobov and mother), lived in Venice, still drawn to Russia;"
+      },
+      {
+        "type": "paragraph",
+        "text": "From the slides: Verses About the Beautiful Lady (Стихи о Прекрасной Даме, 1904) made his name as a leading Symbolist. The Beautiful Lady is both a beloved woman and a metaphysical figure. Central tension: the ideal against the real, spiritual expectation against human experience."
+      },
+      {
+        "type": "table",
+        "head": [
+          "Tender-grey the day was (slides)"
+        ],
+        "rows": [
+          [
+            "Tender-grey the day was, grey as sorrow, and"
+          ],
+          [
+            "Pallid grew the evening, like a woman's hand."
+          ],
+          [
+            "In the house at evening they had hid their hearts,"
+          ],
+          [
+            "Faint with tender sorrow, — grief that ne'er departs."
+          ],
+          [
+            "Hands were clasped together, eyes forebore to meet,"
+          ],
+          [
+            "Unto glistening shoulders laughing lips retreat."
+          ],
+          [
+            "Garb that bares the shoulders, serpent-like array,"
+          ],
+          [
+            "White as scaly raiment in the waning day."
+          ],
+          [
+            "O'er the table-cover brow to brow inclined;"
+          ],
+          [
+            "O'er the glowing faces locks of hair were twined."
+          ],
+          [
+            "Beat of hearts grew swifter, glances sore oppressed,"
+          ],
+          [
+            "In their thoughts the garden, sultry, deep, at rest."
+          ],
+          [
+            "Mutely they together, as in covenant, stirred;"
+          ],
+          [
+            "Woman's white apparel on the steps was heard."
+          ],
+          [
+            "Mutely in the garden, tracelessly they fled,"
+          ],
+          [
+            "Softly in the heavens, shame its flush outspread."
+          ],
+          [
+            "Then, perchance, a star fell, with a trail of red."
+          ]
+        ]
+      },
+      {
+        "type": "note",
+        "text": "Grief, hands clasped together (Anna Akhmatova), sultry, deep, star: Mary (star, NOT in Orthodox Russia), white = purity, red = feminine maturity, star falls from the sky = from object of worship to real, Blok had a recorded aversion of menstruation, cult of Virginity (Mary never menstruated in Catholicism);"
+      },
+      {
+        "type": "heading",
+        "text": "1905: from mysticism to the street"
+      },
+      {
+        "type": "note",
+        "text": "1905: everything changes, loss of Russo-Japanese war (from propaganda pov, that was something that hurt national pride) + Revolution (Blok: liberal, he voted for liberal party at Duma election in 1906, Manifesto of October 1905 was a half-win, constitutional monarchy);"
+      },
+      {
+        "type": "note",
+        "text": "Disillusionment, uncertainty, many losses in 1905, from mysticism Blok goes to ordinary urban life, about how people live in the city;"
+      },
+      {
+        "type": "note",
+        "text": "Lyrical narrator lives in this unstable world, no border between reality and imagination, did a lot of drugs (opium);"
+      },
+      {
+        "type": "table",
+        "head": [
+          "Незнакомка (1906)",
+          "The Stranger (slides)"
+        ],
+        "rows": [
+          [
+            "И каждый вечер, в час назначенный",
+            "Each night, at the appointed hour,"
+          ],
+          [
+            "(Иль это только снится мне?),",
+            "(Is it in dream I view that same?)"
+          ],
+          [
+            "Девичий стан, шелками схваченный,",
+            "The form of a girl, clothed in silk,"
+          ],
+          [
+            "В туманном движется окне.",
+            "Passes across the misted pane,"
+          ],
+          [
+            "И медленно, пройдя меж пьяными,",
+            "Moves, slowly, among the drunks,"
+          ],
+          [
+            "Всегда без спутников, одна,",
+            "And then, forever on her own,"
+          ],
+          [
+            "Дыша духами и туманами,",
+            "Sits down, beside the window-glass"
+          ],
+          [
+            "Она садится у окна.",
+            "Scattering mist, and rich perfume."
+          ]
+        ]
+      },
+      {
+        "type": "note",
+        "text": "The Stranger (poem): girl sits in provincial restaurant surrounded by vulgarity, alcohol, ordinary life, she is exceptional, perhaps a supernatural figure/idealized vision, wearing a hat with black feathers (in mourning); woman is Russia (forever on her own, unsupported by her own people, too drunk to realise, even if she begs for recognition);"
+      },
+      {
+        "type": "paragraph",
+        "text": "From the slides: in The Stranger (Незнакомка) it stays unclear whether she is a supernatural figure, an idealised vision, or the speaker’s imagination. Themes: the mundane against the sublime; the instability of perception; the impossibility of recovering an ideal world."
+      },
+      {
+        "type": "heading",
+        "text": "The city: night, street, lamp, pharmacy"
+      },
+      {
+        "type": "note",
+        "text": "Nikrasov was social poet, not Blok, but St Petersburg became central setting, city is space of alienation, poverty, violence, anonymity, spiritual exhaustion (he lived near industrial district, he lived there, now museum);"
+      },
+      {
+        "type": "note",
+        "text": "After revolution, his poetry incorporated images of crowds, workers, streets, taverns, political unrest…"
+      },
+      {
+        "type": "note",
+        "text": "The City, the Snow Mask (1907), The puppet show (1906);"
+      },
+      {
+        "type": "paragraph",
+        "text": "From the slides: The City (Город), The Snow Mask (Снежная маска, 1907), The Puppet Show (Балаганчик, 1906). His urban landscapes carry the anxieties of modernity and the social tensions of the Empire; the Revolution of 1905 deeply changed his sense of history and society."
+      },
+      {
+        "type": "table",
+        "head": [
+          "Ночь, улица, фонарь, аптека (1912)",
+          "Night, street, lamp, and pharmacy (slides)"
+        ],
+        "rows": [
+          [
+            "Ночь, улица, фонарь, аптека,",
+            "Night, street, lamp, and pharmacy,"
+          ],
+          [
+            "Бессмысленный и тусклый свет.",
+            "A dull, a meaningless light."
+          ],
+          [
+            "Живи ещё хоть четверть века —",
+            "Live another quarter century –"
+          ],
+          [
+            "Всё будет так. Исхода нет.",
+            "The same. No exit in sight."
+          ],
+          [
+            "Умрёшь — начнёшь опять сначала",
+            "You’ll die – once more, begin it all;"
+          ],
+          [
+            "И повторится всё, как встарь:",
+            "As before, all will repeat:"
+          ],
+          [
+            "Ночь, ледяная рябь канала,",
+            "Night, cold ripples on the canal,"
+          ],
+          [
+            "Аптека, улица, фонарь.",
+            "Pharmacy, lamp, and street."
+          ]
+        ]
+      },
+      {
+        "type": "note",
+        "text": "No exit in sight - American Psycho, at the end there is a sign, ‘this is not an exit’; after death, there is no heaven, in the netherworld (copy of St Petersburg) everything will be repeated there exactly as here; night = general, street more particular, lamp , then pharmacy (you can only see after pharmacy after lamp, where you get your drugs);"
+      },
+      {
+        "type": "note",
+        "text": "Second stanza he changes order, first night, then he gets out of pharmacy street, and then last thing you see lamp (even in hellish landscape there is some hope);"
+      },
+      {
+        "type": "heading",
+        "text": "Russia as a Woman"
+      },
+      {
+        "type": "note",
+        "text": "Russia as a Woman: personification of Russia as a woman happened in medieval church texts already, woman is mysterious, vulnerable, beautiful, suffering; Russia is geographical and historical destiny;"
+      },
+      {
+        "type": "note",
+        "text": "Attachment to Russia is not patriotic, it’s emotional, symbolic, ambivalent; he didn’t leave Russia even after Revolution; poem Russia (1908): there was an old battle there, he calls her ‘my wife’, he calls her Rus’, not Russia; not motherland, it’s a spiritual union;"
+      },
+      {
+        "type": "table",
+        "head": [
+          "На поле Куликовом, 1 (1908)",
+          "Russia (slides)"
+        ],
+        "rows": [
+          [
+            "Река раскинулась. Течёт, грустит лениво",
+            "The river spreads wide. Flows sluggish, sad,"
+          ],
+          [
+            "И моет берега.",
+            "Erodes the banks on either hand."
+          ],
+          [
+            "Над скудной глиной жёлтого обрыва",
+            "Above the yellow cliff’s barren clay,"
+          ],
+          [
+            "В степи грустят стога.",
+            "In the steppe, sad hayricks stand."
+          ],
+          [
+            "О, Русь моя! Жена моя! До боли",
+            "O, Russia! My wife! Our long road lies"
+          ],
+          [
+            "Нам ясен долгий путь!",
+            "Ahead, clear is the hour!"
+          ],
+          [
+            "Наш путь — стрелой татарской древней воли",
+            "The road has pierced our breast like an arrow"
+          ],
+          [
+            "Пронзил нам грудь.",
+            "Fired with bygone Tartar power."
+          ],
+          [
+            "Наш путь — степной, наш путь — в тоске безбрежной,",
+            "Our road – lies through the steppe – and endless"
+          ],
+          [
+            "В твоей тоске, о, Русь!",
+            "Anguish, your anguish, Russia!"
+          ],
+          [
+            "И даже мглы — ночной и зарубежной —",
+            "And now I no longer fear the dark of night"
+          ],
+          [
+            "Я не боюсь.",
+            "That lies beyond the border."
+          ]
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "These lines open the cycle On the Field of Kulikovo (На поле Куликовом, 1908): the old battle is Kulikovo, 1380, Dmitry Donskoy against the Tatars. In Russian he says «О, Русь моя! Жена моя!», Rus’, not Россия."
+      },
+      {
+        "type": "paragraph",
+        "text": "From the slides: in Russia (Россия, 1908) the country appears through poverty, roads, villages and hardship. Key idea: Russia is not merely a geographical or political entity but a spiritual and historical destiny."
+      },
+      {
+        "type": "heading",
+        "text": "War, Revolution and The Twelve"
+      },
+      {
+        "type": "note",
+        "text": "First World War intensified his sense of historical catastrophe, he was mobilised as engineer on Western front of Russian empire; in The Intelligentsia and the Revolution he called Russian intelligentsia to listen to revolution (he was anti-monarchist); yet he felt the approaching catastrophe;"
+      },
+      {
+        "type": "paragraph",
+        "text": "From the slides: mobilised in 1916, in an engineering and construction unit. February 1917 brought down the monarchy; October transformed the political order. Blok first saw the collapse of the old world as a possibly necessary transformation: hope, fascination, fear. The Intelligentsia and the Revolution (Интеллигенция и революция) is from 1918."
+      },
+      {
+        "type": "note",
+        "text": "Bunin left without repercussions and second thoughts, didn't write for 10 years;"
+      },
+      {
+        "type": "note",
+        "text": "1918: the Twelve (= apostles), 12 guards patrolling streets of Revolutionary Petrograd, it combines revolutionary slogans, street language, popular songs, religious imagery, Futurist style; drastic change; but it’s about the people, how they really speak and what they say;"
+      },
+      {
+        "type": "note",
+        "text": "In front of guards = Jesus in white, people disturbed by it, is he blessing it or condemning it? Bolsheviks loved it, emigres hated it;"
+      },
+      {
+        "type": "paragraph",
+        "text": "From the slides: The Twelve (Двенадцать): twelve Red Guards in a snowstorm; Christ walks ahead of them with a red flag. Is he blessing the Revolution, judging it, or a new spiritual order? Key question: does Blok celebrate the Revolution, condemn its violence, or show it as an uncontrollable historical force?"
+      },
+      {
+        "type": "note",
+        "text": "His relationship with Soviet cultural institutions got harder, died in 1921 (40), that was end of Symbolist era; he's a testimony to Russian history, crisis of 20th century; 11:30, 10:30"
+      },
+      {
+        "type": "paragraph",
+        "text": "From the slides: after 1918 he wrote little; disillusionment, illness and exhaustion. Died in Petrograd on 7 August 1921, aged forty. His poetry runs from the symbolic search for an ideal world to the historical experience of its violent destruction."
+      }
+    ]
+  },
+  {
     "id": "silver-age-bely-ivanov",
     "kicker": "Study notes · Silver Age poetry",
     "title": "Andrei Bely & Vyacheslav Ivanov",
