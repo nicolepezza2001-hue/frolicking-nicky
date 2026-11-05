@@ -730,7 +730,6 @@
         const tx = dx + nx * bend * 4 * (1 - 2 * t), ty = dy + ny * bend * 4 * (1 - 2 * t), ang = Math.atan2(ty, tx);
         const side = i % 2 ? 2.4 : -2.4;
         print(x - Math.sin(ang) * side, y + Math.cos(ang) * side, ang * 180 / Math.PI);
-        if (i === n) { label(name); const z = +svg.dataset.z || 1; tag.dataset.x = x2; tag.dataset.y = y2; tag.setAttribute('transform', `translate(${x2} ${y2 - 4 / z}) scale(${(1 / z).toFixed(4)})`); tag.style.opacity = 1; }
       }, i * 150);
       at = next;
       timer = setTimeout(hop, n * 150 + 1400);
