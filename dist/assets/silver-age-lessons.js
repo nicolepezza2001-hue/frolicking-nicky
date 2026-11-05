@@ -330,47 +330,39 @@ window.FN_SILVER_AGE_LESSONS = [
       },
       {
         "type": "note",
-        "text": "1880-1921, didn’t write for much but during important events in Russia, central figure of Symbolism;"
+        "text": "Alexander Blok (1880–1921) is the central figure of Russian Symbolism. He didn’t write all the time: his great bursts of poetry came around the big events in Russian history."
       },
       {
         "type": "note",
-        "text": "His poetry is about love, spirituality, beauty, urban life, historical change, fate of Russia;"
+        "text": "His themes are love, spirituality, beauty, urban life, historical change and the fate of Russia. His career mirrors the whole transformation of Russian culture, from the mystical idealism of the 1900s to the revolutionary upheavals of 1917."
       },
       {
         "type": "note",
-        "text": "Literary career reflects transformation of Russian culture from idealism of 1900s to revolutionary upheavals of 1917;"
+        "text": "Born on 28 November 1880 in St Petersburg into an educated, aristocratic family: his father was a professor of law, his mother a well-known translator from a literary family (the Beketovs)."
       },
       {
         "type": "note",
-        "text": "Born into an educated aristocratic family, his mum prominent translator, dad professor of law;"
+        "text": "He grew up partly at his grandfather’s estate, Shakhmatovo, near Moscow; the estate and its countryside fed his imagination for the rest of his life."
       },
       {
         "type": "note",
-        "text": "Grew up near Moscow, estate in countryside which contributed to his imagination;"
+        "text": "A very Russian upbringing. At St Petersburg University he started in Law, dropped it, and switched to History and Philology, graduating at 23."
       },
       {
         "type": "note",
-        "text": "Very Russian upbringing, married daughter of Mendeelev, Lyobov Mendeleeva (they were in love since they were kids), he studied law first, dropped out, did history and philology, graduated at 23;"
+        "text": "In 1903 he married Lyubov Mendeleeva, daughter of the chemist Dmitri Mendeleev. They had been in love since they were children (their families’ estates were neighbours)."
       },
       {
         "type": "note",
-        "text": "Lyobov was personification of everything that is holy, a virgin – so didn’t have sex with her, open marriage (they had sex with other people, not with each other); they were a throuple at one point - with Bely!!! lol;"
+        "text": "For Blok, Lyubov was the personification of everything holy, a virgin: so he didn’t have sex with her. Theirs became an open marriage: they had sex with other people, but not with each other. At one point they were even a throuple, with Andrei Bely!"
       },
       {
         "type": "note",
-        "text": "Lyobov was too untouchable for him; she kept diary saying how she tried to seduce him, it didn’t work, they had a talk; she could have demanded divorce (accepted under Orthodox law), but she loved him as a person, so they had other affairs;"
+        "text": "She was simply too untouchable for him. In her diary she describes trying to seduce him; it didn’t work, and they had a talk about it. She could have demanded a divorce (non-consummation was accepted grounds under Orthodox law), but she loved him as a person, so instead they both had other affairs."
       },
       {
         "type": "note",
-        "text": "She was a translator, intelligent, educated woman; without her, Blok couldn’t have lived such a comfortable life (his mom lived with them too);"
-      },
-      {
-        "type": "paragraph",
-        "text": "From the slides: born on 28 November 1880 in St Petersburg. Grew up partly at his grandfather’s estate, Shakhmatovo, near Moscow. Studied at St Petersburg University, first Law, then History and Philology. Married Lyubov Mendeleeva in 1903, daughter of the chemist Dmitri Mendeleev; the marriage became closely intertwined with his literary mythology."
-      },
-      {
-        "type": "paragraph",
-        "text": "Key question (slides): how did a poet who began by searching for eternal beauty become the poetic voice of revolutionary transformation?"
+        "text": "Lyubov was an intelligent, educated woman, an actress and later a translator and historian of ballet. Without her, Blok couldn’t have lived such a comfortable life (his mother lived with them too). Their marriage became part of his literary mythology."
       },
       {
         "type": "heading",
@@ -378,32 +370,28 @@ window.FN_SILVER_AGE_LESSONS = [
       },
       {
         "type": "note",
-        "text": "Blok was associated with the younger generation of Symbolists, alongside Andrei Bely; when Symbolists took European imagery and transplanted it to Russian soul/soil/language – it was forced at the beginning, then Blok made it look natural (Europe-Russia have different religion and history);"
+        "text": "Symbolists believed that visible reality hides a deeper, spiritual world, and that poetry could reach it through symbols, music, imagery and intuition. Just naming a symbol opens up the whole world of images behind it: the invisible reality."
       },
       {
         "type": "note",
-        "text": "Just mentioning the symbol opens up the whole imagery behind it, the invisible reality;"
+        "text": "Blok belongs to the younger generation of Symbolists, alongside Andrei Bely. The Symbolists took European imagery and transplanted it into the Russian soul, soil and language. At first this felt forced, since Europe and Russia have different religions and histories; Blok was the one who made it look natural."
       },
       {
         "type": "note",
-        "text": "Blok and Bely didn’t want to orient themselves to christian spirituality, so instead of Medieval times, they turn to Byzantine spirituality; Solovyov (Eternal Feminine - Saint Sofia, Eternal Wisdom);"
+        "text": "Blok and Bely didn’t want to orient themselves towards Western Christian spirituality, so instead of the European Middle Ages they turned to Byzantium. Their guide was Vladimir Solovyov and his Eternal Feminine (Вечная Женственность): Saint Sophia, the Eternal Wisdom of God."
       },
       {
         "type": "note",
-        "text": "In 1900s Slavianophili vs Zapadniki conflict came back, Russia is descendant of Byzantium instead, Moscow is third Rome (from 16th century, fall of Constantinople);"
+        "text": "In the 1900s the old quarrel between Slavophiles (славянофилы) and Westernisers (западники) came back. The idea: Russia descends from Byzantium, not from Rome, and Moscow is the Third Rome, a doctrine from the 16th century, after the fall of Constantinople (1453)."
       },
       {
         "type": "note",
-        "text": "Russian Orthodox Church had negative reputation, considered backward, both Blok and Bely wanted to develop literary spirituality developed on ROC;"
-      },
-      {
-        "type": "paragraph",
-        "text": "From the slides: Symbolists believed visible reality concealed a deeper, spiritual world; poetry approached hidden meanings through symbols, music, imagery and intuition. Blok’s early poetry: musicality, dreamlike imagery, religious symbolism, a search for an ideal world beyond everyday existence. Influences: Vladimir Solovyov’s Eternal Feminine (Вечная Женственность) and the European Symbolist tradition."
+        "text": "The Russian Orthodox Church had a bad reputation among the educated: backward and bureaucratic. Blok and Bely wanted to build a literary spirituality out of Orthodox roots instead."
       },
       {
         "type": "table",
         "head": [
-          "Far away in misty northern (slides)"
+          "Far away in misty northern"
         ],
         "rows": [
           [
@@ -458,28 +446,28 @@ window.FN_SILVER_AGE_LESSONS = [
       },
       {
         "type": "note",
-        "text": "Far away in misty northern - region has nothing to do with Russia, sounds more like England (sea-faring), Blok wanted to be like Pushkin (everybody in Russia can read Evgeny Onegin and appreciate it, it appeals to Russian, written in accessible Russian language);"
+        "text": "The misty northern region of this poem has nothing Russian about it: a seafaring, rocky coast, it sounds more like England. And yet Blok wanted to be like Pushkin: everyone in Russia can read Eugene Onegin and love it, because it speaks to Russians in plain, accessible Russian."
       },
       {
         "type": "note",
-        "text": "Verses about the beautiful lady: still influenced by Western tradition, inspired by Lyobov, written 1901-02, first main poem collection; cult of the virgin: never had that cult, Mary is never a virgin in Russia, in icons of Annunciation super rare, Mary always either mother or giving birth; Mary in Russia is more Mother than Virgin;"
+        "text": "Verses About the Beautiful Lady (Стихи о Прекрасной Даме, 1904), his first major collection, written mostly in 1901–02 and inspired by Lyubov, made him a leading Symbolist. It is still shaped by Western tradition, above all the cult of the Virgin."
       },
       {
         "type": "note",
-        "text": "Blok’s Virgin cult is imported, Beautiful Lady is the Eternal Feminine (spiritual perfection, harmony, possibility of transforming the world); lyrical speaker exists in anticipation of her appearance, in mysterious landscape of churches, twilight, silence;"
+        "text": "Russia never had that cult. In Russian icons Mary is hardly ever a virgin: the Annunciation is rare, and she is almost always shown as a mother, holding or giving birth to Christ. In Russia, Mary is more Mother than Virgin."
       },
       {
         "type": "note",
-        "text": "Western church different from Russian, Blok fluent in English, French, German, travelled extensively (with Lyobov and mother), lived in Venice, still drawn to Russia;"
+        "text": "So Blok’s cult of the Virgin is imported. The Beautiful Lady is both a real beloved woman and the Eternal Feminine: spiritual perfection, harmony, the possibility of transforming the world. The speaker lives in expectation of her appearance, in a mysterious landscape of churches, twilight, silence and distant light. The central tension: the ideal against the real."
       },
       {
-        "type": "paragraph",
-        "text": "From the slides: Verses About the Beautiful Lady (Стихи о Прекрасной Даме, 1904) made his name as a leading Symbolist. The Beautiful Lady is both a beloved woman and a metaphysical figure. Central tension: the ideal against the real, spiritual expectation against human experience."
+        "type": "note",
+        "text": "The Western church was different from his own, but he knew the West well: fluent in English, French and German, he travelled widely (with Lyubov and his mother) and spent time in Venice and Italy. Still, he was always drawn back to Russia."
       },
       {
         "type": "table",
         "head": [
-          "Tender-grey the day was (slides)"
+          "Tender-grey the day was"
         ],
         "rows": [
           [
@@ -537,7 +525,11 @@ window.FN_SILVER_AGE_LESSONS = [
       },
       {
         "type": "note",
-        "text": "Grief, hands clasped together (Anna Akhmatova), sultry, deep, star: Mary (star, NOT in Orthodox Russia), white = purity, red = feminine maturity, star falls from the sky = from object of worship to real, Blok had a recorded aversion of menstruation, cult of Virginity (Mary never menstruated in Catholicism);"
+        "text": "Reading it: grief, and hands clasped together (an image Anna Akhmatova would make famous: «Сжала руки под тёмной вуалью»); the garden, sultry and deep. The star is Mary, Stella Maris, a Catholic image, not an Orthodox Russian one. White is purity, red is feminine maturity: when the star falls from the sky with a trail of red, she drops from object of worship to real woman."
+      },
+      {
+        "type": "note",
+        "text": "Behind it, the cult of virginity: Blok had a recorded aversion to menstruation, and in Catholic tradition Mary, born without sin, never menstruated."
       },
       {
         "type": "heading",
@@ -545,21 +537,25 @@ window.FN_SILVER_AGE_LESSONS = [
       },
       {
         "type": "note",
-        "text": "1905: everything changes, loss of Russo-Japanese war (from propaganda pov, that was something that hurt national pride) + Revolution (Blok: liberal, he voted for liberal party at Duma election in 1906, Manifesto of October 1905 was a half-win, constitutional monarchy);"
+        "text": "1905 changes everything. Russia loses the war against Japan, a blow to national pride (the propaganda had promised an easy win), and the Revolution breaks out."
       },
       {
         "type": "note",
-        "text": "Disillusionment, uncertainty, many losses in 1905, from mysticism Blok goes to ordinary urban life, about how people live in the city;"
+        "text": "Blok was a liberal: he voted for the liberal party in the 1906 Duma elections. The October Manifesto of 1905 was only a half-victory: a constitutional monarchy, with the Tsar still in charge."
       },
       {
         "type": "note",
-        "text": "Lyrical narrator lives in this unstable world, no border between reality and imagination, did a lot of drugs (opium);"
+        "text": "Disillusionment, uncertainty and many losses: after 1905 Blok turns from mysticism to ordinary urban life, to how people actually live in the city. The ideal world of the Beautiful Lady gives way to loneliness."
+      },
+      {
+        "type": "note",
+        "text": "His lyrical narrator lives in this unstable world, where there is no border between reality and imagination. Blok himself drank heavily and took a lot of drugs (opium)."
       },
       {
         "type": "table",
         "head": [
           "Незнакомка (1906)",
-          "The Stranger (slides)"
+          "The Stranger"
         ],
         "rows": [
           [
@@ -598,11 +594,11 @@ window.FN_SILVER_AGE_LESSONS = [
       },
       {
         "type": "note",
-        "text": "The Stranger (poem): girl sits in provincial restaurant surrounded by vulgarity, alcohol, ordinary life, she is exceptional, perhaps a supernatural figure/idealized vision, wearing a hat with black feathers (in mourning); woman is Russia (forever on her own, unsupported by her own people, too drunk to realise, even if she begs for recognition);"
+        "text": "The Stranger (Незнакомка): a girl sits in a provincial restaurant, surrounded by vulgarity, alcohol and ordinary life. She is exceptional: perhaps a supernatural figure, perhaps an idealised vision, perhaps only the drunk speaker’s dream. She wears a hat with black feathers, as if in mourning."
       },
       {
-        "type": "paragraph",
-        "text": "From the slides: in The Stranger (Незнакомка) it stays unclear whether she is a supernatural figure, an idealised vision, or the speaker’s imagination. Themes: the mundane against the sublime; the instability of perception; the impossibility of recovering an ideal world."
+        "type": "note",
+        "text": "The woman is Russia: forever on her own, unsupported by her own people, who are too drunk to notice her, even when she begs for recognition. The poem sets the mundane against the sublime, and shows that the lost ideal can’t be recovered."
       },
       {
         "type": "heading",
@@ -610,25 +606,21 @@ window.FN_SILVER_AGE_LESSONS = [
       },
       {
         "type": "note",
-        "text": "Nikrasov was social poet, not Blok, but St Petersburg became central setting, city is space of alienation, poverty, violence, anonymity, spiritual exhaustion (he lived near industrial district, he lived there, now museum);"
+        "text": "Nekrasov was the social poet, not Blok; but St Petersburg became Blok’s central setting. His city is a place of alienation, poverty, violence, anonymity and spiritual exhaustion."
       },
       {
         "type": "note",
-        "text": "After revolution, his poetry incorporated images of crowds, workers, streets, taverns, political unrest…"
+        "text": "He knew it first-hand: he lived near the industrial outskirts, by the Pryazhka river, and his last flat there is now the Blok Museum."
       },
       {
         "type": "note",
-        "text": "The City, the Snow Mask (1907), The puppet show (1906);"
-      },
-      {
-        "type": "paragraph",
-        "text": "From the slides: The City (Город), The Snow Mask (Снежная маска, 1907), The Puppet Show (Балаганчик, 1906). His urban landscapes carry the anxieties of modernity and the social tensions of the Empire; the Revolution of 1905 deeply changed his sense of history and society."
+        "text": "After 1905 his poetry fills with crowds, workers, streets, taverns, factories and political unrest. Key works: the cycle The City (Город), The Snow Mask (Снежная маска, 1907) and the play The Puppet Show (Балаганчик, 1906)."
       },
       {
         "type": "table",
         "head": [
           "Ночь, улица, фонарь, аптека (1912)",
-          "Night, street, lamp, and pharmacy (slides)"
+          "Night, street, lamp, and pharmacy"
         ],
         "rows": [
           [
@@ -667,11 +659,15 @@ window.FN_SILVER_AGE_LESSONS = [
       },
       {
         "type": "note",
-        "text": "No exit in sight - American Psycho, at the end there is a sign, ‘this is not an exit’; after death, there is no heaven, in the netherworld (copy of St Petersburg) everything will be repeated there exactly as here; night = general, street more particular, lamp , then pharmacy (you can only see after pharmacy after lamp, where you get your drugs);"
+        "text": "“No exit in sight” (Исхода нет): think of the end of American Psycho, with its sign “THIS IS NOT AN EXIT”. After death there is no heaven: the netherworld is a copy of St Petersburg, where everything repeats exactly as it was here."
       },
       {
         "type": "note",
-        "text": "Second stanza he changes order, first night, then he gets out of pharmacy street, and then last thing you see lamp (even in hellish landscape there is some hope);"
+        "text": "The first line zooms in: night is the most general, then the street, then the lamp, and only under the lamp do you see the pharmacy, where you get your drugs."
+      },
+      {
+        "type": "note",
+        "text": "In the second stanza the order changes: first night, then out of the pharmacy into the street, and the last thing you see is the lamp. Even in this hellish landscape, there is a little light, some hope."
       },
       {
         "type": "heading",
@@ -679,17 +675,17 @@ window.FN_SILVER_AGE_LESSONS = [
       },
       {
         "type": "note",
-        "text": "Russia as a Woman: personification of Russia as a woman happened in medieval church texts already, woman is mysterious, vulnerable, beautiful, suffering; Russia is geographical and historical destiny;"
+        "text": "Picturing Russia as a woman goes back to medieval church texts. In Blok she is mysterious, vulnerable, beautiful and suffering, and Russia is a geographical and historical destiny, not just a state."
       },
       {
         "type": "note",
-        "text": "Attachment to Russia is not patriotic, it’s emotional, symbolic, ambivalent; he didn’t leave Russia even after Revolution; poem Russia (1908): there was an old battle there, he calls her ‘my wife’, he calls her Rus’, not Russia; not motherland, it’s a spiritual union;"
+        "text": "His attachment to Russia isn’t patriotic: it is emotional, symbolic and ambivalent. He loves her and sees her poverty, her hardship and her contradictions. And he didn’t leave Russia, even after the Revolution."
       },
       {
         "type": "table",
         "head": [
           "На поле Куликовом, 1 (1908)",
-          "Russia (slides)"
+          "Russia"
         ],
         "rows": [
           [
@@ -743,12 +739,12 @@ window.FN_SILVER_AGE_LESSONS = [
         ]
       },
       {
-        "type": "paragraph",
-        "text": "These lines open the cycle On the Field of Kulikovo (На поле Куликовом, 1908): the old battle is Kulikovo, 1380, Dmitry Donskoy against the Tatars. In Russian he says «О, Русь моя! Жена моя!», Rus’, not Россия."
+        "type": "note",
+        "text": "These lines open the cycle On the Field of Kulikovo (1908): an old battle was fought there, in 1380, when Dmitry Donskoy beat the Tatars. Blok calls Russia “my wife”, and he calls her Rus’ (Русь), the old, almost sacred name, not Россия. She isn’t his motherland but his bride: it is a spiritual union."
       },
       {
-        "type": "paragraph",
-        "text": "From the slides: in Russia (Россия, 1908) the country appears through poverty, roads, villages and hardship. Key idea: Russia is not merely a geographical or political entity but a spiritual and historical destiny."
+        "type": "note",
+        "text": "Blok wrote about Russia herself in Russia (Россия, 1908) too: poverty, roads, villages, hardship, and love all the same."
       },
       {
         "type": "heading",
@@ -756,35 +752,35 @@ window.FN_SILVER_AGE_LESSONS = [
       },
       {
         "type": "note",
-        "text": "First World War intensified his sense of historical catastrophe, he was mobilised as engineer on Western front of Russian empire; in The Intelligentsia and the Revolution he called Russian intelligentsia to listen to revolution (he was anti-monarchist); yet he felt the approaching catastrophe;"
-      },
-      {
-        "type": "paragraph",
-        "text": "From the slides: mobilised in 1916, in an engineering and construction unit. February 1917 brought down the monarchy; October transformed the political order. Blok first saw the collapse of the old world as a possibly necessary transformation: hope, fascination, fear. The Intelligentsia and the Revolution (Интеллигенция и революция) is from 1918."
+        "text": "The First World War deepened his sense of historical catastrophe. In 1916 he was mobilised and served as an engineer, in a construction unit on the Western Front of the Russian Empire."
       },
       {
         "type": "note",
-        "text": "Bunin left without repercussions and second thoughts, didn't write for 10 years;"
+        "text": "February 1917 brought down the monarchy, October overturned the whole order. Blok was anti-monarchist, and at first he saw the collapse of the old world as a necessary transformation: hope, fascination, and fear all at once."
       },
       {
         "type": "note",
-        "text": "1918: the Twelve (= apostles), 12 guards patrolling streets of Revolutionary Petrograd, it combines revolutionary slogans, street language, popular songs, religious imagery, Futurist style; drastic change; but it’s about the people, how they really speak and what they say;"
+        "text": "In The Intelligentsia and the Revolution (Интеллигенция и революция, 1918) he called on the Russian intelligentsia to “listen to the Revolution”. And yet he could feel the catastrophe coming."
       },
       {
         "type": "note",
-        "text": "In front of guards = Jesus in white, people disturbed by it, is he blessing it or condemning it? Bolsheviks loved it, emigres hated it;"
-      },
-      {
-        "type": "paragraph",
-        "text": "From the slides: The Twelve (Двенадцать): twelve Red Guards in a snowstorm; Christ walks ahead of them with a red flag. Is he blessing the Revolution, judging it, or a new spiritual order? Key question: does Blok celebrate the Revolution, condemn its violence, or show it as an uncontrollable historical force?"
+        "text": "Compare Bunin, who left Russia without second thoughts or consequences, and stayed away for good."
       },
       {
         "type": "note",
-        "text": "His relationship with Soviet cultural institutions got harder, died in 1921 (40), that was end of Symbolist era; he's a testimony to Russian history, crisis of 20th century; 11:30, 10:30"
+        "text": "The Twelve (Двенадцать, 1918): twelve Red Guards (the twelve apostles) patrol the streets of revolutionary Petrograd in a snowstorm. It mixes revolutionary slogans, street language, popular songs and religious imagery, in an almost Futurist style. A drastic change from the Beautiful Lady, but it’s about the people: how they really speak and what they say."
       },
       {
-        "type": "paragraph",
-        "text": "From the slides: after 1918 he wrote little; disillusionment, illness and exhaustion. Died in Petrograd on 7 August 1921, aged forty. His poetry runs from the symbolic search for an ideal world to the historical experience of its violent destruction."
+        "type": "note",
+        "text": "At the end, in front of the guards walks Jesus, in white, with a red flag: «В белом венчике из роз — / Впереди — Исус Христос.» People were disturbed by it: is he blessing the Revolution or condemning it? The Bolsheviks loved the poem; the émigrés hated it."
+      },
+      {
+        "type": "note",
+        "text": "After 1918 he wrote very little. His relationship with the new Soviet cultural institutions got harder, and illness and exhaustion followed. He died in Petrograd on 7 August 1921, at 40, and his death marked the end of the Symbolist era."
+      },
+      {
+        "type": "note",
+        "text": "Blok is a witness to Russian history and to the crisis of the 20th century: his poetry runs from the search for an ideal world to the experience of its violent destruction."
       }
     ]
   },
