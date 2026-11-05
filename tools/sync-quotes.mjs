@@ -197,8 +197,8 @@ for (const b of Object.values(books)) b.blocks = b.blocks.filter(x => !twice(x))
 // column for the English and one for the Italian, so the book gets its own page even when she kept
 // a single quote from it
 const poems = Object.entries(JSON.parse(await readFile(new URL('quote-poems.json', import.meta.url), 'utf8').catch(() => '{}')).poems || {});
-// Nicky's call: the page shows the English and Italian only; the Chinese and its pinyin are there to learn by heart
-const ON_PAGE = ['en', 'it'];
+// Nicky's call: the page shows the English, Italian and Russian only (Blok is Russian alone); the Chinese and its pinyin are there to learn by heart
+const ON_PAGE = ['en', 'it', 'ru'];
 for (const [, poem] of poems) {
   const shown = poem.versions.filter(v => ON_PAGE.includes(v.lang));
   books[poem.book]?.blocks.push({ type: 'heading', text: poem.heading }, { type: 'note', text: poem.note },

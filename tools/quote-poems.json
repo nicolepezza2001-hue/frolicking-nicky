@@ -414,6 +414,23 @@
      ]
     }
    ]
+  },
+  "blok-night-street": {
+   "book": "blok",
+   "title": "Ночь, улица, фонарь, аптека",
+   "author": "Alexander Blok",
+   "heading": "The whole poem",
+   "note": "Alexander Blok, 10 October 1912, from the cycle «Пляски смерти» (Dances of Death). Russian only.",
+   "versions": [
+    {
+     "lang": "ru",
+     "label": "Русский",
+     "stanzas": [
+      "Ночь, улица, фонарь, аптека,\nБессмысленный и тусклый свет.\nЖиви ещё хоть четверть века —\nВсё будет так. Исхода нет.",
+      "Умрёшь — начнёшь опять сначала\nИ повторится всё, как встарь:\nНочь, ледяная рябь канала,\nАптека, улица, фонарь."
+     ]
+    }
+   ]
   }
  }
 }
