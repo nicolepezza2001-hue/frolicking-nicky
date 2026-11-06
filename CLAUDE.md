@@ -239,7 +239,7 @@ a separate Europe close-up, the map legend or the trip buttons under the map on 
   `prefix`/`suffix`, and on every render it is found again in the current text (best context match, then nearest), so
   editing a lesson never shifts them. Words that were deleted keep their highlight saved but hidden. Older highlights
   (position only) are recovered from their quote, looking in the original lesson (`originalBlocks`) when it was edited.
-- Every path step opens a page (Nicky: "add notes for all other topics"). Silver Age: her three lessons (Introduction, Symbolism, and Alexander Blok: her notes tidied into clear sentences at her request, sex and all, the slides blended in without labels, padded with Claude's knowledge, and his poems line by line, Russian beside the slides' English; added Nov 2026 as step 3, later ticks moved once by `moved.saBlok`), then study
+- Every path step opens a page (Nicky: "add notes for all other topics"). Silver Age: her three lessons (Introduction, Symbolism, and Alexander Blok: her notes tidied into clear sentences at her request, sex and all, the slides blended in without labels, padded with Claude's knowledge, and every poem line by line, Russian beside the slides' English (Nicky asked for the Russian of all of them); added Nov 2026 as step 3, later ticks moved once by `moved.saBlok`), then study
   notes (`silver-age-lessons.js`); Tocharian (`tocharian-lessons.js`) and Avestan (`avestan-lessons.js`) are study notes,
   kicker "Study notes · …". Linguistics: **Alignment is Nicky's own notes** (her Google Doc on Harris & Campbell, word
   for word, plus a glossary), then "Comparative syntax and Universal Grammar". Proto-Indo-European: her course notes, then a

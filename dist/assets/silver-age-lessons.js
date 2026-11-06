@@ -391,62 +391,79 @@ window.FN_SILVER_AGE_LESSONS = [
       {
         "type": "table",
         "head": [
-          "Far away in misty northern"
+          "Чёрная Дева (1899)",
+          "The Dark Maiden"
         ],
         "rows": [
           [
+            "В дальних северных туманах",
             "Far away in misty northern"
           ],
           [
+            "Есть угрюмая скала.",
             "Region craggy outcrop’s loom"
           ],
           [
+            "На безбрежных океанах",
             "Mars the boundlessness of ocean,"
           ],
           [
+            "Чудный лик свой вознесла.",
             "Wondrous face in watery tomb."
           ],
           [
+            "Тех утёсов очертанье",
             "Hewn from sharp-edged cliff-face, stirring"
           ],
           [
+            "Бедный северный народ,",
             "Northern folk of simple stock,"
           ],
           [
+            "По глубокому преданью,",
             "Pious minds a visage conjuring,"
           ],
           [
+            "Чёрной Девою зовёт.",
             "Maiden dark they call the rock."
           ],
           [
+            "В час, когда средь океана",
             "Often midst the foaming ocean,"
           ],
           [
+            "Нет спасенья, всё во мгле, —",
             "Hopeless lost in stormy cloud,"
           ],
           [
+            "Вдруг пловец из-за тумана",
             "Sudden mist-wrapped sailor’s notion"
           ],
           [
+            "Видит Деву на скале…",
             "Dark one spies in outcrop proud..."
           ],
           [
+            "Он молитву ей возносит…",
             "Prayer to her he offers ardent..."
           ],
           [
+            "Если Дева смягчена,",
             "Wrathful maiden, pleased, may save."
           ],
           [
+            "То корабль к земле приносит",
             "Thus the ship may pass escarpment"
           ],
           [
+            "Ей послушная волна…",
             "Safely coasting on her wave..."
           ]
         ]
       },
       {
         "type": "note",
-        "text": "The misty northern region of this poem has nothing Russian about it: a seafaring, rocky coast, it sounds more like England. And yet Blok wanted to be like Pushkin: everyone in Russia can read Eugene Onegin and love it, because it speaks to Russians in plain, accessible Russian."
+        "text": "The Dark Maiden (Чёрная Дева, a “northern legend”, 1899) is set in a misty northern region that has nothing Russian about it: a seafaring, rocky coast, it sounds more like England. And yet Blok wanted to be like Pushkin: everyone in Russia can read Eugene Onegin and love it, because it speaks to Russians in plain, accessible Russian."
       },
       {
         "type": "note",
@@ -467,58 +484,76 @@ window.FN_SILVER_AGE_LESSONS = [
       {
         "type": "table",
         "head": [
+          "День был нежно-серый… (1903)",
           "Tender-grey the day was"
         ],
         "rows": [
           [
+            "День был нежно-серый, серый, как тоска.",
             "Tender-grey the day was, grey as sorrow, and"
           ],
           [
+            "Вечер стал матовый, как женская рука.",
             "Pallid grew the evening, like a woman's hand."
           ],
           [
+            "В комнатах вечерних прятали сердца,",
             "In the house at evening they had hid their hearts,"
           ],
           [
+            "Усталые от нежной тоски без конца.",
             "Faint with tender sorrow, — grief that ne'er departs."
           ],
           [
+            "Пожимали руки, избегали встреч,",
             "Hands were clasped together, eyes forebore to meet,"
           ],
           [
+            "Укрывали смехи белизною плеч.",
             "Unto glistening shoulders laughing lips retreat."
           ],
           [
+            "Длинный вырез платья, платье, как змея,",
             "Garb that bares the shoulders, serpent-like array,"
           ],
           [
+            "В сумерках белее платья чешуя.",
             "White as scaly raiment in the waning day."
           ],
           [
+            "Над скатертью в столовой наклонились ниц,",
             "O'er the table-cover brow to brow inclined;"
           ],
           [
+            "Касаясь прическами пылающих лиц.",
             "O'er the glowing faces locks of hair were twined."
           ],
           [
+            "Стуки сердца чаще, напряженней взгляд,",
             "Beat of hearts grew swifter, glances sore oppressed,"
           ],
           [
+            "В мыслях — он, глубокий, нежный, душный сад.",
             "In their thoughts the garden, sultry, deep, at rest."
           ],
           [
+            "И молча, как по знаку, двинулись вниз.",
             "Mutely they together, as in covenant, stirred;"
           ],
           [
+            "На ступеньках шорох белых женских риз.",
             "Woman's white apparel on the steps was heard."
           ],
           [
+            "Молча потонули в саду без следа.",
             "Mutely in the garden, tracelessly they fled,"
           ],
           [
+            "Небо тихо вспыхнуло заревом стыда.",
             "Softly in the heavens, shame its flush outspread."
           ],
           [
+            "Может быть, скатилась красная звезда.",
             "Then, perchance, a star fell, with a trail of red."
           ]
         ]
