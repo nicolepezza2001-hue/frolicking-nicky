@@ -251,6 +251,10 @@ a separate Europe close-up, the map legend or the trip buttons under the map on 
   `[question, answer]`, alternatives split by " / "): up to ten questions shuffled, Check shows the answer, "I was right"
   overrides. While a quiz runs the page's notes are hidden (Nicky could see the answers just above); "Show my notes"
   brings them back, and they return by themselves at the score. New lessons need a quiz entry too.
+- **Teachers' exercises** (`assets/french-exercises.js`, loaded before `study.js`): handouts her teachers give, word for word, each its own
+  lesson-styled page with a typed box per blank, Check (accents gently corrected, "I was right"), and a short "why" per answer (Claude's key,
+  not the teacher's). A link sits under the lesson it belongs to (`FN_LESSON_EXERCISES`, read by `renderLesson`). First: "Subjonctif ou
+  indicatif ?" by Eliott, her French teacher (Nov 2026), under The subjunctive (`#french-subjonctif-eliott`).
 - **Today** (`#today`, `assets/today.js`): everything due in one place: poems and quotes to recite (`window.fnHeartDue()` in
   `by-heart.js`), lesson-quiz questions she missed that have come back, and vocabulary words she keeps missing. A small "Today"
   link sits at the right of the bar on the study's pages. Missed lesson-quiz questions are kept in `fn-study-v1` under `review`

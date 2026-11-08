@@ -496,3 +496,29 @@ article.fn-lesson .fn-heart-quote .fn-listen,article.fn-lesson .fn-heart-open .f
 .fn-verbs-fill .fn-vocab-modes{margin-top:6px}
 @media(max-width:520px){.fn-verbs-line{grid-template-columns:5.6em 1fr}.fn-verb-tables{padding-left:0}.fn-verb .fn-vocab-modes{padding-left:0}}
 @media(prefers-reduced-motion:reduce){.fn-verb>summary::before{transition:none}}
+/* Exercises from her teachers (french-exercises.js): the handout, with a box for each blank */
+.fn-lesson-exercise{margin:28px 0 0;font:italic 500 1.3rem 'Cormorant Garamond',Georgia,serif}
+.fn-lesson-exercise a{color:var(--st-purple);text-underline-offset:5px;text-decoration-thickness:1px}
+.fn-exercise-sheet{max-width:860px;margin-top:28px}
+.fn-exercise-heading{font:italic 500 1.25rem/1.4 'Cormorant Garamond',Georgia,serif;margin:0}
+.fn-exercise-sheet h3{margin-top:1em}
+.fn-exercise-consigne{margin:0 0 1.4em}
+.fn-exercise-list{padding-left:1.6em;margin:0}
+.fn-exercise-list li{padding-left:.3em;margin:0 0 1.1em}
+.fn-exercise-list li::marker{color:#2b1e38a6;font-size:.85em}
+.fn-exercise-line{margin:0}
+.fn-exercise-sheet input[type=text]{display:inline-block;width:auto;min-width:0;max-width:100%;margin:0 .25em;padding:0 .3em;border:0;border-bottom:1px dotted #2b1e3899;border-radius:0;background:transparent;color:var(--st-purple);font:italic 600 19px/1.5 Georgia,serif;vertical-align:baseline}
+.fn-exercise-sheet input[type=text]:focus{outline:0;border-bottom:1px solid var(--st-purple);background:#2b1e380a}
+.fn-exercise-sheet input.is-right{border-bottom:1px solid #5d8a3a;color:#3f6a22}
+.fn-exercise-sheet input.is-wrong{border-bottom:1px solid #b5574a;color:#9a3f33;text-decoration:line-through;text-decoration-thickness:1px}
+.fn-exercise-sheet input:disabled{opacity:1;-webkit-text-fill-color:currentColor}
+.fn-exercise-hint{color:#2b1e38b3}
+.fn-exercise-fix{margin:.2em 0 0;font:16px/1.6 Georgia,serif}
+.fn-exercise-answer{font-style:italic;font-weight:600}
+.fn-exercise-why{color:#2b1e38b3}
+.fn-exercise-mine{background:none;border:0;padding:0;color:var(--st-purple);font:italic 15px Georgia,serif;text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+.fn-exercise-actions{margin-top:10px}
+.fn-exercise .fn-vocab-mode{color:var(--st-purple);border-color:#2b1e3866}
+.fn-exercise-score{color:var(--st-purple);font:italic 500 1.3rem 'Cormorant Garamond',Georgia,serif;margin-top:14px}
+@media(max-width:760px){.fn-exercise-sheet input[type=text]{font-size:17px}}
+.fn-exercise .fn-study-btn{background:var(--st-purple);color:#faeac0}

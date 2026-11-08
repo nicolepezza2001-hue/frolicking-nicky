@@ -766,6 +766,10 @@
     const margin = el('aside', 'fn-lesson-margin'); margin.setAttribute('aria-label', 'Your margin notes');
     workspace.append(notes, margin); sec.append(workspace);
     window.fnAnnotateLesson?.(lesson, notes, margin, sec);
+    // Exercises her teachers gave for this lesson, each its own page (french-exercises.js)
+    ((window.FN_LESSON_EXERCISES || {})[original.id] || []).forEach(x => {
+      const p = el('p', 'fn-lesson-exercise'), a = el('a', null, x.text + ' →'); a.href = x.href; p.append(a); sec.append(p);
+    });
     const quiz = (window.FN_LESSON_QUIZZES || {})[lesson.id];
     if (quiz?.length) sec.append(lessonQuiz(quiz, VOCAB[topic]?.[1] || 'en', { id: original.id, title: lesson.title + ' · ' + name }));
     const footer = el('nav', 'fn-lesson-footer'); footer.setAttribute('aria-label', 'Other lessons');
