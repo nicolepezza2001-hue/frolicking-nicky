@@ -224,6 +224,12 @@ button.fn-vocab-cell{background:none;border:0;text-align:left;cursor:pointer;tra
 button.fn-vocab-cell.is-veiled{filter:blur(7px);opacity:.55;user-select:none}
 button.fn-vocab-cell:focus-visible{outline:1px solid var(--st-yellow)}
 .fn-vocab-add input[type=text]{flex:1 1 160px}
+/* Vocabulary search: a quiet pill like the Quotes search */
+.fn-vocab-search{display:block;width:100%;box-sizing:border-box;margin:0 0 14px;font:inherit;font-size:1.1rem;padding:8px 16px;border-radius:999px;background:transparent;color:var(--st-cream);border:1px solid #f3d99555}
+.fn-vocab-search::placeholder{color:#efe0bf80;font-style:italic}
+.fn-vocab-search:focus{outline:none;border-color:var(--st-yellow);box-shadow:0 0 10px #f3d99533}
+.fn-vocab-search::-webkit-search-cancel-button{-webkit-appearance:none;appearance:none}
+.fn-vocab-search[hidden]{display:none}
 @media(prefers-reduced-motion:reduce){button.fn-vocab-cell{transition:none}}
 @media(max-width:760px){.fn-vocab-row{gap:12px}.fn-vocab-cell{font-size:1.12rem}}
 /* Match the bronze light to the horse, rather than the surrounding hotspot. */
