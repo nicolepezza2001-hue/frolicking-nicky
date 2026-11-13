@@ -1,0 +1,11 @@
+/* Oaxaca: Nicky's own photos, in the shared scrapbook frames. */
+/* Día de Muertos: each day's photos sit beside that day's plan. */
+html body.fn-oaxaca .fn-plan-panel .fn-v-row{align-items:start;margin:0}
+html body.fn-oaxaca .fn-v-row>.fn-plan-stops{grid-column:2;grid-row:1;min-width:0}
+html body.fn-oaxaca .fn-v-rev>.fn-plan-stops{grid-column:1}
+html body.fn-oaxaca .fn-v-photo video{display:block;width:100%;height:auto}
+@media(max-width:760px){html body.fn-oaxaca .fn-plan-panel .fn-v-side{margin-bottom:10px}}
+/* The portrait hero keeps its natural proportions; the frame has four equal edges. */
+html body.fn-oaxaca .intro>.fn-pc-wrap{width:min(100%,360px);justify-self:center}
+html body.fn-oaxaca .postcard{padding:10px;margin:16px 8px 20px;box-sizing:border-box}
+html body.fn-oaxaca .postcard img{display:block;width:100%;height:auto;max-height:none;aspect-ratio:auto;object-fit:initial}
