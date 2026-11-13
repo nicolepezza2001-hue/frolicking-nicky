@@ -9,3 +9,11 @@ html body.fn-oaxaca .fn-v-photo video{display:block;width:100%;height:auto}
 html body.fn-oaxaca .intro>.fn-pc-wrap{width:min(100%,360px);justify-self:center}
 html body.fn-oaxaca .postcard{padding:10px;margin:16px 8px 20px;box-sizing:border-box}
 html body.fn-oaxaca .postcard img{display:block;width:100%;height:auto;max-height:none;aspect-ratio:auto;object-fit:initial}
+/* Photos a little bigger (Nicky's call): the photo side takes more of the row and the frames sit closer together. */
+html body.fn-oaxaca .fn-v-row{grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:30px}
+html body.fn-oaxaca .fn-v-row.fn-v-rev{grid-template-columns:minmax(0,1fr) minmax(0,1.3fr)}
+html body.fn-oaxaca .fn-v-side{padding:4px;gap:14px}
+html body.fn-oaxaca .fn-v-photo{padding:8px}
+html body.fn-oaxaca .fn-v-photo:only-child{max-width:440px}
+html body.fn-oaxaca .fn-plan-panel .fn-v-row+.fn-v-row{margin-top:34px}
+@media(max-width:760px){html body.fn-oaxaca .fn-v-side{padding:0;gap:8px}html body.fn-oaxaca .fn-v-photo{padding:4px}html body.fn-oaxaca .fn-v-photo:only-child{max-width:100%}html body.fn-oaxaca .fn-plan-panel .fn-v-row+.fn-v-row{margin-top:22px}}
