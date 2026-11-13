@@ -36,6 +36,48 @@ export const visitSeasons = {
     reasons: ['Cold; snowy Takayama and New Year closures.','Cold city days; snow in Takayama.','Best for the late-month cherry blossom season; earlier March is cooler. Crowds and higher prices are worth it.','Cherry blossoms make this a top pick despite crowds and higher prices. Bloom timing varies; Golden Week begins late April.','Best after Golden Week, before the main rains.','Rainy season; allow flexible outdoor plans.','Rain gives way to intense heat and humidity.','Very hot and humid; Obon travel adds demand.','Lingering heat and elevated typhoon disruption risk.','More comfortable exploring; cooler Takayama and autumn demand.','Crisp days and foliage; popular Kyoto spots stay busy.','Often dry in the cities; cold mountains and year-end closures.'],
     sources: [['JNTO · May & Golden Week','https://www.japan.travel/en/guide/may/'],['JNTO · summer','https://www.japan.travel/en/guide/summer-guide/'],['JNTO · September','https://www.japan.travel/en/guide/september/'],['JNTO · travel seasons & holidays','https://www.japan.travel/en/gc/tips/']]
   },
+  'san-cristobal-de-las-casas': {
+      "scope": "For San Cristóbal de las Casas and the day trips in this itinerary.",
+      "ratings": [
+            "Good",
+            "Best",
+            "Best",
+            "Good",
+            "Okay",
+            "Okay",
+            "Okay",
+            "Okay",
+            "Okay",
+            "Good",
+            "Best",
+            "Good"
+      ],
+      "note": "My pick: November, when the rains have just ended and the hills are still green. The dry season runs from November to April, with clear days and cold nights. May to October is the rainy season, wettest from June to September, usually in the afternoon.",
+      "reasons": [
+            "Dry and sunny; the coldest nights.",
+            "Dry, clear days.",
+            "Dry and the sunniest month.",
+            "Warm and dry; Semana Santa is busy.",
+            "The rains begin.",
+            "The wettest month.",
+            "Afternoon rain most days.",
+            "Afternoon rain most days.",
+            "Still wet; blocked roads are more likely.",
+            "The rains ease.",
+            "The dry season starts; green hills.",
+            "Dry and cold at night; busy around Christmas."
+      ],
+      "sources": [
+            [
+                  "Climates to Travel · San Cristóbal de las Casas",
+                  "https://climatestotravel.com/climate/mexico/san-cristóbal"
+            ],
+            [
+                  "BestDateWeather · San Cristóbal month by month",
+                  "https://bestdateweather.com/en/best-time-to-visit-san-cristobal"
+            ]
+      ]
+  },
   'puerto-escondido': {
       "scope": "For Puerto Escondido’s beaches and the day out to Mazunte in this itinerary.",
       "ratings": [
