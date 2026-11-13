@@ -406,6 +406,16 @@
     shuffle.addEventListener('click', () => { order = words.map(w => w.id).sort(() => Math.random() - .5); draw(); });
     modes.append(shuffle);
     head.append(label, modes);
+    // Search: narrows the list as she types, on either side, ignoring case, accents and ё/е;
+    // Russian words can also be found by typing them in Latin letters
+    const find = el('input', 'fn-vocab-search'); find.type = 'search'; find.placeholder = 'Find a word…';
+    find.setAttribute('aria-label', 'Find a word'); find.autocomplete = 'off'; find.spellcheck = false;
+    const loose = t => t.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/\s+/g, ' ').trim();
+    const latin = t => fold([...t].map(c => LATIN[c] ?? c).join(''));
+    const hit = (w, term) => loose(w.word).includes(term) || loose(w.en).includes(term);
+    // Latin letters are only read as Russian when nothing matches as typed (so "to" doesn't find густой)
+    const sounds = (w, term) => /[а-я]/.test(loose(w.word)) && /^[a-z ]+$/.test(term) && latin(loose(w.word)).includes(fold(term));
+    find.addEventListener('input', () => draw());
     const cols = el('div', 'fn-vocab-row fn-vocab-cols'); cols.append(el('span', null, lang), el('span'), el('span', null, 'English'));
     const list = el('ul', 'fn-vocab-list'), tally = el('p', 'fn-study-saved');
     const cell = (w, side, hide) => {
@@ -428,7 +438,9 @@
     const draw = () => {
       btns.forEach(b => b.setAttribute('aria-pressed', String(b.dataset.mode === mode)));
       list.replaceChildren();
-      const shown = order ? order.map(i => words.find(w => w.id === i)).filter(Boolean).concat(words.filter(w => !order.includes(w.id))) : words;
+      const all = order ? order.map(i => words.find(w => w.id === i)).filter(Boolean).concat(words.filter(w => !order.includes(w.id))) : words;
+      const term = loose(find.value), direct = term ? all.filter(w => hit(w, term)) : all;
+      const shown = term && !direct.length ? all.filter(w => sounds(w, term)) : direct;
       shown.forEach(w => {
         const li = el('li', 'fn-vocab-row');
         const x = el('button', 'fn-study-x', '×'); x.type = 'button'; x.setAttribute('aria-label', `${T.remove}: ${w.word}`);
@@ -437,9 +449,11 @@
         const ear = mode === 'word' ? el('span') : listen(() => w.word, code) || el('span');
         li.append(cell(w, 'word', mode === 'word'), ear, cell(w, 'en', mode === 'en'), x); list.append(li);
       });
-      cols.hidden = !words.length; tell();
+      cols.hidden = !shown.length; tell(term ? shown.length : null);
     };
-    const tell = () => { tally.textContent = words.length ? `${words.length} ${words.length === 1 ? 'word' : 'words'}` : 'No words yet. Add the first one below.'; };
+    const tell = (n = loose(find.value) ? list.children.length : null) => {
+      if (n !== null) { tally.textContent = n ? `${n} of ${words.length} ${words.length === 1 ? 'word' : 'words'}` : 'No word matches. Add it below?'; return; }
+      tally.textContent = words.length ? `${words.length} ${words.length === 1 ? 'word' : 'words'}` : 'No words yet. Add the first one below.'; };
     const form = el('form', 'fn-study-add fn-vocab-add');
     const a = el('input'); a.type = 'text'; a.placeholder = lang + '…'; a.lang = code; a.setAttribute('aria-label', lang + ' word');
     const b = el('input'); b.type = 'text'; b.placeholder = 'English…'; b.setAttribute('aria-label', 'English meaning');
@@ -449,14 +463,14 @@
     form.addEventListener('submit', e => {
       e.preventDefault(); const word = a.value.trim(), en = b.value.trim();
       if (!word || !en) { (word ? b : a).focus(); return; }
-      words.push({ id: Date.now().toString(36) + Math.random().toString(36).slice(2, 5), word, en }); save(); draw();
+      words.push({ id: Date.now().toString(36) + Math.random().toString(36).slice(2, 5), word, en }); find.value = ''; save(); draw();
       a.value = b.value = ''; a.focus();
     });
     // Quiz: up to ten words; Nicky types the translation and checks it. Words missed before come up more often.
     const misses = ((state.quiz ||= {})[id] ||= {});
     const quiz = el('div', 'fn-quiz'); quiz.hidden = true;
     const quizBtn = el('button', 'fn-vocab-mode', 'Quiz me'); quizBtn.type = 'button'; modes.append(quizBtn);
-    const listView = [cols, list, tally, form, shuffle, ...btns];
+    const listView = [find, cols, list, tally, form, shuffle, ...btns];
     const close = () => { quiz.hidden = true; listView.forEach(e => { e.hidden = false; }); quizBtn.setAttribute('aria-pressed', 'false'); draw(); };
     const button = (cls, text, on) => { const b = el('button', cls, text); b.type = 'button'; b.addEventListener('click', on); return b; };
     const row = (...items) => { const r = el('div', 'fn-vocab-modes'); r.append(...items); return r; };
@@ -521,7 +535,7 @@
       };
       ask();
     };
-    box.append(head, quiz, cols, list, tally, form); draw();
+    box.append(head, find, quiz, cols, list, tally, form); draw();
     return box;
   };
 
