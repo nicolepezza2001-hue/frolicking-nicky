@@ -36,6 +36,48 @@ export const visitSeasons = {
     reasons: ['Freddo; Takayama innevata e chiusure per il Capodanno.','Giornate fredde in città; neve a Takayama.','Ideale per la fioritura dei ciliegi di fine mese; all’inizio di marzo fa più fresco. La folla e i prezzi più alti valgono la pena.','I ciliegi in fiore lo rendono una scelta top nonostante folla e prezzi più alti. I tempi della fioritura variano; la Golden Week inizia a fine aprile.','Ideale dopo la Golden Week, prima delle piogge principali.','Stagione delle piogge; tieni flessibili i programmi all’aperto.','La pioggia lascia il posto a caldo e umidità intensi.','Molto caldo e umido; i viaggi per l’Obon aumentano la domanda.','Caldo persistente e rischio più alto di disagi per i tifoni.','Più piacevole da esplorare; Takayama più fresca e domanda autunnale.','Giornate frizzanti e foliage; i posti più famosi di Kyoto restano affollati.','Spesso asciutto in città; montagne fredde e chiusure di fine anno.'],
     sources: [['JNTO · maggio e Golden Week','https://www.japan.travel/en/guide/may/'],['JNTO · estate','https://www.japan.travel/en/guide/summer-guide/'],['JNTO · settembre','https://www.japan.travel/en/guide/september/'],['JNTO · stagioni di viaggio e festività','https://www.japan.travel/en/gc/tips/']]
   },
+  'san-cristobal-de-las-casas': {
+      "scope": "Per San Cristóbal de las Casas e le gite di questo itinerario.",
+      "ratings": [
+            "Good",
+            "Best",
+            "Best",
+            "Good",
+            "Okay",
+            "Okay",
+            "Okay",
+            "Okay",
+            "Okay",
+            "Good",
+            "Best",
+            "Good"
+      ],
+      "note": "La mia scelta: novembre, quando le piogge sono appena finite e le colline sono ancora verdi. La stagione secca va da novembre ad aprile, con giornate limpide e notti fredde. Da maggio a ottobre è la stagione delle piogge, più intense da giugno a settembre, di solito il pomeriggio.",
+      "reasons": [
+            "Asciutto e soleggiato; le notti più fredde.",
+            "Giornate asciutte e limpide.",
+            "Asciutto, il mese con più sole.",
+            "Caldo e asciutto; la Settimana Santa è affollata.",
+            "Iniziano le piogge.",
+            "Il mese più piovoso.",
+            "Pioggia il pomeriggio quasi ogni giorno.",
+            "Pioggia il pomeriggio quasi ogni giorno.",
+            "Ancora piovoso; più probabili le strade bloccate.",
+            "Le piogge calano.",
+            "Inizia la stagione secca; colline verdi.",
+            "Asciutto e freddo di notte; affollato a Natale."
+      ],
+      "sources": [
+            [
+                  "Climates to Travel · San Cristóbal de las Casas",
+                  "https://climatestotravel.com/climate/mexico/san-cristóbal"
+            ],
+            [
+                  "BestDateWeather · San Cristóbal month by month",
+                  "https://bestdateweather.com/en/best-time-to-visit-san-cristobal"
+            ]
+      ]
+  },
   'puerto-escondido': {
       "scope": "Per le spiagge di Puerto Escondido e la gita a Mazunte di questo itinerario.",
       "ratings": [
