@@ -3,7 +3,7 @@
 window.FN_QUOTE_BOOKS = [
  {
   "id": "quote-hell-bent-portale-per-l-inferno",
-  "title": "Hell Bent: Portale per l'inferno",
+  "title": "Hell Bent. Portale per l'inferno",
   "author": "Leigh Bardugo",
   "genre": "Newly added",
   "kicker": "Leigh Bardugo · Newly added",
