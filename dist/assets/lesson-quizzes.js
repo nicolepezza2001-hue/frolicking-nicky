@@ -211,7 +211,11 @@ window.FN_LESSON_QUIZZES = {
     ['la plupart', 'the majority / most'],
     ['jusqu’à', 'until'],
     ['l’ail', 'garlic'],
-    ['les plats', 'dishes / the dishes']
+    ['les plats', 'dishes / the dishes'],
+    ['un couvre-feu', 'a curfew / curfew'],
+    ['le marché immobilier', 'the property market / property market / the housing market / housing market / real estate market'],
+    ['ma mère d’accueil', 'my host mother / host mother'],
+    ['Ils se sont éloignés de moi', 'They drifted away from me / they moved away from me / they distanced themselves from me']
   ],
   // Russian: Nicky's Notion pages
   'russian-wishes': [
