@@ -406,6 +406,8 @@ article#silver-age-blok .fn-lesson-table td{font-style:italic;padding-top:2px;pa
 @media(max-width:760px){article#silver-age-blok .fn-lesson-table :is(table,tbody,tr){display:block;width:100%;min-width:0;font-size:15px}
 article#silver-age-blok .fn-lesson-table td{display:block;width:auto}
 article#silver-age-blok .fn-lesson-table td+td{padding-top:0;padding-bottom:8px;opacity:.78}}
+/* The subjunctive's verb tables: wrap on phones instead of scrolling sideways */
+@media(max-width:760px){article#french-subjunctive .fn-lesson-table table{width:100%;min-width:0;font-size:15px}article#french-subjunctive .fn-lesson-table td:first-child{white-space:nowrap;padding-right:6px}}
 /* By heart (assets/by-heart.js): a poem's room, one stanza at a time; read, fade to first letters, recite */
 .fn-heart-open{margin:-4px 0 20px}
 /* Every quote can be learned by heart too: a small quiet link under it */
