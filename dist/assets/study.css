@@ -506,6 +506,7 @@ article.fn-lesson .fn-heart-quote .fn-listen,article.fn-lesson .fn-heart-open .f
 @media(prefers-reduced-motion:reduce){.fn-verb>summary::before{transition:none}}
 /* Exercises from her teachers (french-exercises.js): the handout, with a box for each blank */
 .fn-lesson-exercise{margin:28px 0 0;font:italic 500 1.3rem 'Cormorant Garamond',Georgia,serif}
+.fn-exercise-when{margin:6px 0 0;font:italic 1.05rem 'Cormorant Garamond',Georgia,serif;opacity:.75}
 .fn-lesson-exercise a{color:var(--st-purple);text-underline-offset:5px;text-decoration-thickness:1px}
 .fn-exercise-sheet{max-width:860px;margin-top:28px}
 .fn-exercise-heading{font:italic 500 1.25rem/1.4 'Cormorant Garamond',Georgia,serif;margin:0}
