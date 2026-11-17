@@ -287,8 +287,6 @@
   const topics = () => TOPICS.concat(state.custom.map(c => ({ ...c, custom: true, path: [], shelf: [] })));
   const steps = t => t.path.map((s, i) => ({ key: `${t.id}:${i}`, title: pick(s[0]), note: s[2] ? L(s[1], s[2]) : s[1], href: t.pages ? t.pages[i] && '#' + t.pages[i] : !['pie', 'opera', 'hittite'].includes(t.id) && lessonsOf(t.id)[i] && '#' + lessonsOf(t.id)[i].id }))
     .concat(t.id === 'french' ? [{ key: 'french:verbs', title: 'Irregular verbs', note: 'Every tense, and tests to type the forms.', href: '#french-verbs' }] : [])
-    // Teachers' exercises (french-exercises.js) get their own row on the topic page, not only under their lesson
-    .concat(lessonsOf(t.id).flatMap(l => ((window.FN_LESSON_EXERCISES || {})[l.id] || []).map(x => ({ key: `${t.id}:ex:${x.href.slice(1)}`, title: x.text, note: 'Under ' + l.title + '. Type the answers, then check.', href: x.href }))))
     .concat(VOCAB[t.id] ? [{ key: `${t.id}:vocab`, title: 'Vocabulary', note: VOCAB[t.id][0] + ' on one side, English on the other.', href: `#${t.id}-vocabulary` }] : [])
     .concat((state.extra[t.id] || []).map(s => ({ key: `${t.id}:x${s.id}`, title: s.text, note: '', extra: s.id })));
   const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; };
