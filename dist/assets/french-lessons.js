@@ -1235,6 +1235,134 @@ window.FN_FRENCH_LESSONS = [
     "blocks": [
       {
         "type": "heading",
+        "text": "10 November"
+      },
+      {
+        "type": "note",
+        "text": "Comment sont les gens ? = What are the people like?"
+      },
+      {
+        "type": "note",
+        "text": "C'est vraiment ton choix = It's really your choice"
+      },
+      {
+        "type": "note",
+        "text": "Ce sont des travailleurs = They are hard workers"
+      },
+      {
+        "type": "note",
+        "text": "Décriminalisé = decriminalised"
+      },
+      {
+        "type": "note",
+        "text": "La semaine dernière = last week"
+      },
+      {
+        "type": "note",
+        "text": "Nous sommes allées au cimetière = We went to the cemetery"
+      },
+      {
+        "type": "note",
+        "text": "Tous les gens avaient mis = Everyone had put"
+      },
+      {
+        "type": "note",
+        "text": "Bougie = candle"
+      },
+      {
+        "type": "note",
+        "text": "Il y avait des gens qui jouaient de la musique = There were people playing music"
+      },
+      {
+        "type": "note",
+        "text": "Beurre = butter"
+      },
+      {
+        "type": "note",
+        "text": "Bière = beer"
+      },
+      {
+        "type": "note",
+        "text": "Squelettes = skeletons"
+      },
+      {
+        "type": "note",
+        "text": "Ils boivent = they drink"
+      },
+      {
+        "type": "note",
+        "text": "Alcoolisée / Bourée = tipsy / drunk (spelt bourrée)"
+      },
+      {
+        "type": "note",
+        "text": "Elle ne pouvait pas me tirer en dehors de l'eau = She couldn't pull me out of the water (more natural: me sortir de l'eau)"
+      },
+      {
+        "type": "note",
+        "text": "Elle a essayé = She tried"
+      },
+      {
+        "type": "note",
+        "text": "Ils se sont éloignés de moi = They drifted away from me"
+      },
+      {
+        "type": "note",
+        "text": "Ma mère d'accueil = my host mother"
+      },
+      {
+        "type": "note",
+        "text": "couvre-feu = curfew"
+      },
+      {
+        "type": "note",
+        "text": "l'année à l'étranger = the year abroad"
+      },
+      {
+        "type": "note",
+        "text": "Les intérêts = interests"
+      },
+      {
+        "type": "note",
+        "text": "une vie = a life"
+      },
+      {
+        "type": "note",
+        "text": "Avoir une vie toujours un peu nomade = To always have a somewhat nomadic life"
+      },
+      {
+        "type": "note",
+        "text": "Ni moi, ni lui = Neither me nor him"
+      },
+      {
+        "type": "note",
+        "text": "le marché immobilier = the property market"
+      },
+      {
+        "type": "note",
+        "text": "La sécurité de tes citoyens = the safety of your citizens"
+      },
+      {
+        "type": "note",
+        "text": "Tuer = to kill"
+      },
+      {
+        "type": "note",
+        "text": "Ils peuvent jouer aux jeux vidéos = They can play video games"
+      },
+      {
+        "type": "note",
+        "text": "à distance = remote"
+      },
+      {
+        "type": "note",
+        "text": "Quel âge ils ont = How old they are"
+      },
+      {
+        "type": "note",
+        "text": "73 = soixante-treize"
+      },
+      {
+        "type": "heading",
         "text": "13 October"
       },
       {
@@ -3379,5 +3507,20 @@ window.FN_FRENCH_VOCAB = [
   "id": "fr-83",
   "word": "des fringues",
   "en": "clothes (slang)"
+  },
+  {
+  "id": "fr-84",
+  "word": "s’éloigner de",
+  "en": "to drift away from, to move away from (Ils se sont éloignés de moi)"
+  },
+  {
+  "id": "fr-85",
+  "word": "le marché immobilier",
+  "en": "the property market"
+  },
+  {
+  "id": "fr-86",
+  "word": "un couvre-feu",
+  "en": "a curfew"
   }
 ];
