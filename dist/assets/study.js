@@ -287,6 +287,8 @@
   const topics = () => TOPICS.concat(state.custom.map(c => ({ ...c, custom: true, path: [], shelf: [] })));
   const steps = t => t.path.map((s, i) => ({ key: `${t.id}:${i}`, title: pick(s[0]), note: s[2] ? L(s[1], s[2]) : s[1], href: t.pages ? t.pages[i] && '#' + t.pages[i] : !['pie', 'opera', 'hittite'].includes(t.id) && lessonsOf(t.id)[i] && '#' + lessonsOf(t.id)[i].id }))
     .concat(t.id === 'french' ? [{ key: 'french:verbs', title: 'Irregular verbs', note: 'Every tense, and tests to type the forms.', href: '#french-verbs' }] : [])
+    // Teachers' exercises (french-exercises.js) get their own row on the topic page, not only under their lesson
+    .concat(lessonsOf(t.id).flatMap(l => ((window.FN_LESSON_EXERCISES || {})[l.id] || []).map(x => ({ key: `${t.id}:ex:${x.href.slice(1)}`, title: x.text, note: 'Under ' + l.title + '. Type the answers, then check.', href: x.href }))))
     .concat(VOCAB[t.id] ? [{ key: `${t.id}:vocab`, title: 'Vocabulary', note: VOCAB[t.id][0] + ' on one side, English on the other.', href: `#${t.id}-vocabulary` }] : [])
     .concat((state.extra[t.id] || []).map(s => ({ key: `${t.id}:x${s.id}`, title: s.text, note: '', extra: s.id })));
   const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; };
@@ -751,6 +753,10 @@
     sec.setAttribute('aria-labelledby', title.id);
     const kicker = lesson.kicker || 'Lesson ' + lesson.number + ' · ' + name;
     sec.append(bar, el('p', 'fn-lesson-number', o ? kicker + ' · Edited on this device' : kicker), title);
+    // Her teachers' exercises for this lesson: a link at the top too, so she needn't scroll past the notes
+    ((window.FN_LESSON_EXERCISES || {})[original.id] || []).forEach(x => {
+      const p = el('p', 'fn-lesson-exercise fn-lesson-exercise-top'), a = el('a', null, x.text + ' →'); a.href = x.href; p.append(a); sec.append(p);
+    });
     const notes = el('div', 'fn-lesson-notes'); let list;
     lesson.blocks.forEach((block, blockIndex) => {
       if (block.type === 'heading') { list = null; const heading = el('h3', null, block.text); heading.dataset.noteBlock = blockIndex; notes.append(heading); }
