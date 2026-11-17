@@ -33,7 +33,17 @@ window.FN_LESSON_QUIZZES = {
     ['so that', 'pour que / afin que'],
     ['until', 'jusqu’à ce que / en attendant que'],
     ['for fear that', 'de peur que / de crainte que'],
-    ['provided that', 'à condition que / pourvu que']
+    ['provided that', 'à condition que / pourvu que'],
+    ['Il faut que tu … avant midi. (finir)', 'finisses'],
+    ['Bien qu’il … froid, on sort. (faire)', 'fasse'],
+    ['Je doute qu’il … venir. (pouvoir)', 'puisse'],
+    ['Pourvu qu’elle … la réponse ! (savoir)', 'sache'],
+    ['Il faut qu’on … à la banque. (aller)', 'aille'],
+    ['Il faut que nous … le train. (prendre)', 'prenions'],
+    ['Je ne crois pas qu’il … partir. (vouloir)', 'veuille'],
+    ['Il est possible qu’ils … raison. (avoir)', 'aient'],
+    ['Je veux que vous … dîner. (venir)', 'veniez'],
+    ['Que je / que nous of boire', 'boive, buvions / boive buvions']
   ],
   'french-hypothesis': [
     ['Si + imparfait + …?', 'conditionnel présent'],
