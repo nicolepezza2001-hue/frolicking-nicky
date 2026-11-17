@@ -751,10 +751,6 @@
     sec.setAttribute('aria-labelledby', title.id);
     const kicker = lesson.kicker || 'Lesson ' + lesson.number + ' · ' + name;
     sec.append(bar, el('p', 'fn-lesson-number', o ? kicker + ' · Edited on this device' : kicker), title);
-    // Her teachers' exercises for this lesson: a link at the top too, so she needn't scroll past the notes
-    ((window.FN_LESSON_EXERCISES || {})[original.id] || []).forEach(x => {
-      const p = el('p', 'fn-lesson-exercise fn-lesson-exercise-top'), a = el('a', null, x.text + ' →'); a.href = x.href; p.append(a); sec.append(p);
-    });
     const notes = el('div', 'fn-lesson-notes'); let list;
     lesson.blocks.forEach((block, blockIndex) => {
       if (block.type === 'heading') { list = null; const heading = el('h3', null, block.text); heading.dataset.noteBlock = blockIndex; notes.append(heading); }
