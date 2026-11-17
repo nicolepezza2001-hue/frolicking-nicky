@@ -43,6 +43,14 @@
   const bare = t => t.toLowerCase().replace(/[’']/g, '’').replace(/[.,!?;:…]+$/g, '').replace(/\s+/g, ' ').trim()
     .replace(/^(qu’|que )/, '').replace(/^(je |j’|tu |il |elle |on |nous |vous |ils |elles |la grève |ce voyage |les vols )/, '').trim();
   const flat = t => t.normalize('NFD').replace(/[̀-ͯ]/g, '');
+  // Her answers stay after checking (to show her teacher) until she presses Erase: fn-study-exercises-v1, synced
+  const STORE = 'fn-study-exercises-v1';
+  const load = () => { try { return JSON.parse(localStorage.getItem(STORE)) || {}; } catch (_) { return {}; } };
+  const keep = (id, entry) => {
+    const all = load(); if (entry) all[id] = entry; else delete all[id];
+    try { localStorage.setItem(STORE, JSON.stringify(all)); } catch (_) {}
+    window.fnStudyChanged?.();
+  };
   const judge = (typed, ok) => { const t = bare(typed); if (!t) return 0; if (ok.includes(t)) return 2; return ok.some(a => flat(a) === flat(t)) ? 1 : 0; };
 
   EXERCISES.forEach(x => {
@@ -74,37 +82,54 @@
     sheet.append(ol);
 
     const verdict = el('p', 'fn-quiz-verdict fn-exercise-score'); verdict.setAttribute('aria-live', 'polite');
+    const when = el('p', 'fn-exercise-when'); when.hidden = true;
+    let mineRight = []; // phrases she marked "I was right"
+    const save = checked => keep(x.id, { answers: blanks.map(b => b.input.value), checked, right: mineRight, at: checked ? (load()[x.id]?.at || new Date().toISOString()) : null });
+    blanks.forEach(b => b.input.addEventListener('input', () => save(false)));
     const check = el('button', 'fn-study-btn', 'Check my answers'); check.type = 'submit';
-    const again = button('fn-vocab-mode', 'Start again', () => {
+    const again = button('fn-vocab-mode', 'Erase and do it again', () => {
+      mineRight = []; keep(x.id, null); when.hidden = true;
       blanks.forEach(b => { b.input.value = ''; b.input.disabled = false; b.input.classList.remove('is-right', 'is-wrong'); });
       ol.querySelectorAll('li').forEach(li => { li._fix.hidden = true; li._fix.replaceChildren(); li.classList.remove('is-right', 'is-wrong'); });
       verdict.textContent = ''; check.hidden = false; again.hidden = true; blanks[0].input.focus();
     });
     again.hidden = true;
     const row = el('div', 'fn-vocab-modes fn-exercise-actions'); row.append(check, again);
-    sheet.append(row, verdict);
+    sheet.append(row, verdict, when);
 
     let score = 0;
     const tally = () => { verdict.textContent = score === x.items.length ? `All ${x.items.length} right.` : `${score} of ${x.items.length} right.`; };
-    sheet.addEventListener('submit', e => {
-      e.preventDefault(); if (check.hidden) return;
+    const grade = fresh => {
       score = 0;
       ol.querySelectorAll('li').forEach(li => {
         const marks = li._mine.map(b => { const j = judge(b.input.value, b.ok); b.input.disabled = true; b.input.classList.add(j ? 'is-right' : 'is-wrong'); return j; });
         const right = marks.every(j => j > 0), accent = marks.some(j => j === 1);
         if (right) score++;
         li.classList.add(right ? 'is-right' : 'is-wrong');
-        const answer = li._mine.map(b => b.ok[0]).join(' … ');
+        const answer = li._mine.map(b => b.ok[0]).join(' … '), n = [...ol.children].indexOf(li);
+        const markMine = () => { li.classList.replace('is-wrong', 'is-right'); li._mine.forEach(b => b.input.classList.replace('is-wrong', 'is-right')); score++; };
         li._fix.replaceChildren(
           el('span', 'fn-exercise-answer', right ? (accent ? 'Right, but mind the accent: ' + answer : 'Right.') : (li._mine.some(b => b.input.value.trim()) ? 'Not quite: ' : 'The answer: ') + answer),
           ' ', el('span', 'fn-exercise-why', li._why));
-        if (!right) li._fix.append(' ', button('fn-exercise-mine', 'I was right', ev => {
-          ev.target.remove(); li.classList.replace('is-wrong', 'is-right'); li._mine.forEach(b => b.input.classList.replace('is-wrong', 'is-right')); score++; tally();
+        if (!right && mineRight.includes(n)) markMine();
+        else if (!right) li._fix.append(' ', button('fn-exercise-mine', 'I was right', ev => {
+          ev.target.remove(); markMine(); mineRight.push(n); tally(); save(true);
         }));
         li._fix.hidden = false;
       });
-      tally(); check.hidden = true; again.hidden = false; again.focus();
-    });
+      tally(); check.hidden = true; again.hidden = false;
+      if (fresh) { save(true); again.focus(); }
+      const at = load()[x.id]?.at;
+      if (at) { when.textContent = 'Checked on ' + new Date(at).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' }) + '. Saved until you erase it.'; when.hidden = false; }
+    };
+    sheet.addEventListener('submit', e => { e.preventDefault(); if (!check.hidden) grade(true); });
+    // Back to how she left it: typed answers, and the corrections if she had checked
+    const saved = load()[x.id];
+    if (saved) {
+      blanks.forEach((b, i) => { b.input.value = saved.answers?.[i] || ''; });
+      mineRight = saved.right || [];
+      if (saved.checked) grade(false);
+    }
     sec.append(sheet);
 
     if (lesson) {
