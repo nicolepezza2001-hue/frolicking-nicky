@@ -1235,6 +1235,106 @@ window.FN_FRENCH_LESSONS = [
     "blocks": [
       {
         "type": "heading",
+        "text": "18 November"
+      },
+      {
+        "type": "note",
+        "text": "Équipe = Team"
+      },
+      {
+        "type": "note",
+        "text": "Le marketing pour qui ce n'est pas une passion = Marketing, for people who aren't passionate about it"
+      },
+      {
+        "type": "note",
+        "text": "Jeux de pouvoirs = Power games (usually written jeux de pouvoir)"
+      },
+      {
+        "type": "note",
+        "text": "Comme une pieuvre = Like an octopus"
+      },
+      {
+        "type": "note",
+        "text": "La moitié = half"
+      },
+      {
+        "type": "note",
+        "text": "Usines de production = Production plants, factories"
+      },
+      {
+        "type": "note",
+        "text": "Les coûts de production = Production costs"
+      },
+      {
+        "type": "note",
+        "text": "Gratuitement = for free"
+      },
+      {
+        "type": "note",
+        "text": "son bras droit = his/her right-hand man (or woman)"
+      },
+      {
+        "type": "note",
+        "text": "Ils viennent du monde corporate = They come from the corporate world (more French: du monde de l'entreprise)"
+      },
+      {
+        "type": "note",
+        "text": "siège = HQ (in full: le siège social)"
+      },
+      {
+        "type": "note",
+        "text": "pot de départ = leaving drinks, a farewell party at work"
+      },
+      {
+        "type": "note",
+        "text": "C'est mieux que de rester en France ou en Italie = It's better than staying in France or Italy"
+      },
+      {
+        "type": "note",
+        "text": "Tu as fait combien de temps à distance ? = How long did you work remotely? (also: Tu as été en télétravail combien de temps ?)"
+      },
+      {
+        "type": "note",
+        "text": "Ils disent des choses très blessantes = They say very hurtful things"
+      },
+      {
+        "type": "note",
+        "text": "J'ai essayé d'être ouverte d'esprit = I tried to be open-minded"
+      },
+      {
+        "type": "note",
+        "text": "Je ne parlais pas du tout français = I didn't speak French at all"
+      },
+      {
+        "type": "note",
+        "text": "Elle n'avait pas une bonne estime d'elle-même = She didn't have good self-esteem"
+      },
+      {
+        "type": "note",
+        "text": "avril = April"
+      },
+      {
+        "type": "note",
+        "text": "mai = May"
+      },
+      {
+        "type": "note",
+        "text": "juin = June"
+      },
+      {
+        "type": "note",
+        "text": "Je te dirai = I'll tell you, I'll let you know"
+      },
+      {
+        "type": "note",
+        "text": "échange = exchange"
+      },
+      {
+        "type": "note",
+        "text": "jumelé = twinned (une ville jumelée = a twin town)"
+      },
+      {
+        "type": "heading",
         "text": "10 November"
       },
       {
@@ -3537,5 +3637,20 @@ window.FN_FRENCH_VOCAB = [
   "id": "fr-89",
   "word": "je suis stressée",
   "en": "I am stressed (stressé for a man)"
+  },
+  {
+  "id": "fr-90",
+  "word": "blessant(e)",
+  "en": "hurtful (Ils disent des choses très blessantes)"
+  },
+  {
+  "id": "fr-91",
+  "word": "ouvert(e) d’esprit",
+  "en": "open-minded (J’ai essayé d’être ouverte d’esprit)"
+  },
+  {
+  "id": "fr-92",
+  "word": "son bras droit",
+  "en": "his/her right-hand man (or woman)"
   }
 ];
