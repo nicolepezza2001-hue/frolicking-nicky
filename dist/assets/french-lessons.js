@@ -3522,5 +3522,20 @@ window.FN_FRENCH_VOCAB = [
   "id": "fr-86",
   "word": "un couvre-feu",
   "en": "a curfew"
+  },
+  {
+  "id": "fr-87",
+  "word": "tuer",
+  "en": "to kill"
+  },
+  {
+  "id": "fr-88",
+  "word": "être en colère contre",
+  "en": "to be angry at (Je suis en colère contre lui)"
+  },
+  {
+  "id": "fr-89",
+  "word": "je suis stressée",
+  "en": "I am stressed (stressé for a man)"
   }
 ];
