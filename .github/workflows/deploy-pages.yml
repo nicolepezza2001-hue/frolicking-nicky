@@ -55,6 +55,21 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: dist
+      # GitHub sometimes can't see the just-uploaded artifact yet ("No artifacts named github-pages"),
+      # so wait a moment first and try once more if the first attempt fails.
+      - name: Give GitHub a moment to register the upload
+        run: sleep 15
       - name: Deploy
-        id: deployment
+        id: deployment_try
+        continue-on-error: true
         uses: actions/deploy-pages@v4
+      - name: Wait before retrying
+        if: steps.deployment_try.outcome == 'failure'
+        run: sleep 45
+      - name: Deploy (retry)
+        id: deployment_retry
+        if: steps.deployment_try.outcome == 'failure'
+        uses: actions/deploy-pages@v4
+      - name: Note the address
+        id: deployment
+        run: echo "page_url=${{ steps.deployment_try.outputs.page_url || steps.deployment_retry.outputs.page_url }}" >> "$GITHUB_OUTPUT"
