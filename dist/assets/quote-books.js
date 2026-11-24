@@ -7841,6 +7841,34 @@ window.FN_QUOTE_BOOKS = [
   ]
  },
  {
+  "id": "quote-gospel-of-john",
+  "title": "The Gospel of John",
+  "author": "King James Bible",
+  "genre": "Poetry",
+  "kicker": "King James Bible · Poetry",
+  "blocks": [
+   {
+    "type": "heading",
+    "text": "John 3:19"
+   },
+   {
+    "type": "note",
+    "text": "The Gospel according to St John, chapter 3, verse 19, in the King James Bible (1611; standard 1769 text). English only."
+   },
+   {
+    "type": "table",
+    "head": [
+     "English"
+    ],
+    "rows": [
+     [
+      "And this is the condemnation, that light is come into the world, and men loved darkness rather than light, because their deeds were evil."
+     ]
+    ]
+   }
+  ]
+ },
+ {
   "id": "quote-laus-veneris",
   "title": "Laus Veneris",
   "author": "Algernon Swinburne",
@@ -14144,6 +14172,22 @@ window.FN_POEMS = [
     "stanzas": [
      "Ночь, улица, фонарь, аптека,\nБессмысленный и тусклый свет.\nЖиви ещё хоть четверть века —\nВсё будет так. Исхода нет.",
      "Умрёшь — начнёшь опять сначала\nИ повторится всё, как встарь:\nНочь, ледяная рябь канала,\nАптека, улица, фонарь."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "john-3-19",
+  "book": "quote-gospel-of-john",
+  "title": "John 3:19",
+  "author": "King James Bible",
+  "heading": "John 3:19",
+  "versions": [
+   {
+    "lang": "en",
+    "label": "English",
+    "stanzas": [
+     "And this is the condemnation, that light is come into the world, and men loved darkness rather than light, because their deeds were evil."
     ]
    }
   ]
