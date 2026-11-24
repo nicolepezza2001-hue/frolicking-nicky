@@ -110,11 +110,12 @@
    ]
   },
   "apocalisse": {
-   "title": "Apocalisse",
-   "author": "Giovanni",
-   "genre": "Philosophy & faith",
+   "title": "The Bible",
+   "author": "",
+   "genre": "Poetry",
    "labels": [
-    "Apocalisse, Giovanni"
+    "Apocalisse, Giovanni",
+    "Apocalisse"
    ]
   },
   "attraversare-i-muri": {
@@ -580,12 +581,6 @@
   "ulysses": {
    "title": "Ulysses",
    "author": "Alfred, Lord Tennyson",
-   "genre": "Poetry",
-   "labels": []
-  },
-  "gospel-of-john": {
-   "title": "The Gospel of John",
-   "author": "King James Bible",
    "genre": "Poetry",
    "labels": []
   },
