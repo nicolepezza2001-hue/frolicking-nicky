@@ -547,3 +547,6 @@ article.fn-lesson[id^="quote-"] .fn-lesson-notes p.fn-verse-ref+p{margin-top:0}
 .fn-verse-close{position:absolute;top:12px;right:14px;background:none;border:0;color:var(--st-purple);font:1.7rem/1 'Cormorant Garamond',Georgia,serif;cursor:inherit;opacity:.6;padding:4px 8px}
 .fn-verse-close:hover,.fn-verse-close:focus-visible{opacity:1;outline:none}
 @media(max-width:760px){.fn-verse-inner{padding:22px 20px 20px;font-size:16px}}
+.fn-verse-dialog p.fn-verse-more{margin-top:14px;font-size:.92em}
+.fn-verse-more a{color:var(--st-purple);text-decoration:none;border-bottom:1px solid #2b1e3866}
+.fn-verse-more a:hover,.fn-verse-more a:focus-visible{border-bottom-color:currentColor;outline:none}

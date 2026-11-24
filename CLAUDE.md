@@ -191,7 +191,8 @@ a separate Europe close-up, the map legend or the trip buttons under the map on 
   **The Bible** (Nov 2026, book key `apocalisse` kept so her highlights and By heart progress stay): a Poetry page with her
   Italian Apocalisse lines first, then the King James verses she sent, under her five themes (`tools/quote-passages.json`:
   `lead`, `about`, `passages`). Each verse has its reference above it; clicking the verse or the reference opens a small
-  window with its background (Claude's, `verseWindow` in `study.js`). More verses go in `passages`.
+  window with its background (Claude's, `verseWindow` in `study.js`) and a link to the whole chapter on Bible Gateway (KJV); the
+  page ends with links to read each book and the whole Bible (`read`). More verses go in `passages`.
   Paradise Lost (her favourite is Book II, and she loves Satan at his angriest against God) has its own page: "Satan against
   God" (Books I, IV, V, IX) and eight Book II passages, in Milton's 1674 spelling beside Lazzaro Papi's Italian (1811,
   Wikisource) for now: she wants her own Italian translation ("in questo selvaggio abisso, grembo della natura, e forse

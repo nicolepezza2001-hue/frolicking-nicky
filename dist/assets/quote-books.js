@@ -7005,21 +7005,24 @@ window.FN_QUOTE_BOOKS = [
     "text": "Le stelle del cielo si abbatterono sopra la terra, come un albero di fichi, sbattuto dalla bufera, lascia cadere i frutti non ancora maturi.",
     "group": 5,
     "ref": "Apocalisse 6:13",
-    "about": "Revelation (the Apocalypse) is the visions of a man called John, written on the island of Patmos near the end of the first century. Here the Lamb opens the sixth of seven seals on a scroll: a great earthquake shakes the world, the sun turns black as sackcloth, the moon becomes like blood, and the stars drop like unripe figs from a tree shaken by the wind. The whole old order of heaven is coming apart."
+    "about": "Revelation (the Apocalypse) is the visions of a man called John, written on the island of Patmos near the end of the first century. Here the Lamb opens the sixth of seven seals on a scroll: a great earthquake shakes the world, the sun turns black as sackcloth, the moon becomes like blood, and the stars drop like unripe figs from a tree shaken by the wind. The whole old order of heaven is coming apart.",
+    "chapter": "https://www.biblegateway.com/passage/?search=Revelation+6&version=KJV"
    },
    {
     "type": "paragraph",
     "text": "In quei giorni gli uomini cercheranno la morte, ma non la troveranno; brameranno morire, ma la morte fuggirà da loro.",
     "group": 5,
     "ref": "Apocalisse 9:6",
-    "about": "At the fifth trumpet a star falls from heaven and opens the bottomless pit. Out of its smoke come locusts with the faces of men, the hair of women and the teeth of lions, who may not kill anyone, only torment for five months those who lack God’s seal. The worst of it is this verse: death itself runs away from the people who long for it."
+    "about": "At the fifth trumpet a star falls from heaven and opens the bottomless pit. Out of its smoke come locusts with the faces of men, the hair of women and the teeth of lions, who may not kill anyone, only torment for five months those who lack God’s seal. The worst of it is this verse: death itself runs away from the people who long for it.",
+    "chapter": "https://www.biblegateway.com/passage/?search=Revelation+9&version=KJV"
    },
    {
     "type": "paragraph",
     "text": "E vidi quella donna, ubriaca del sangue dei santi e del sangue dei martiri di Gesù.",
     "group": 5,
     "ref": "Apocalisse 17:6",
-    "about": "John is shown the great whore, “Babylon the great, the mother of harlots”, dressed in purple and scarlet and riding a scarlet beast with seven heads and ten horns. She is drunk on the blood of the martyrs, and John says he wondered at her “with great admiration”. Her seven heads are seven hills, so she is usually read as imperial Rome, which was then persecuting the Christians."
+    "about": "John is shown the great whore, “Babylon the great, the mother of harlots”, dressed in purple and scarlet and riding a scarlet beast with seven heads and ten horns. She is drunk on the blood of the martyrs, and John says he wondered at her “with great admiration”. Her seven heads are seven hills, so she is usually read as imperial Rome, which was then persecuting the Christians.",
+    "chapter": "https://www.biblegateway.com/passage/?search=Revelation+17&version=KJV"
    },
    {
     "type": "heading",
@@ -7029,25 +7032,29 @@ window.FN_QUOTE_BOOKS = [
     "type": "paragraph",
     "text": "And this is the condemnation, that light is come into the world, and men loved darkness rather than light, because their deeds were evil.",
     "ref": "John 3:19",
-    "about": "Jesus is talking at night with Nicodemus, a Pharisee who came to him in the dark so as not to be seen. This comes three verses after “For God so loved the world”: God sent his Son to save the world, not to judge it, so the judgement is people’s own choice. The light came, and they preferred the dark, which hides what they do. Light against darkness runs through the whole Gospel of John, written in Greek around 90 to 100 AD."
+    "about": "Jesus is talking at night with Nicodemus, a Pharisee who came to him in the dark so as not to be seen. This comes three verses after “For God so loved the world”: God sent his Son to save the world, not to judge it, so the judgement is people’s own choice. The light came, and they preferred the dark, which hides what they do. Light against darkness runs through the whole Gospel of John, written in Greek around 90 to 100 AD.",
+    "chapter": "https://www.biblegateway.com/passage/?search=John+3&version=KJV"
    },
    {
     "type": "paragraph",
     "text": "The heart is deceitful above all things, and desperately wicked: who can know it?",
     "ref": "Jeremiah 17:9",
-    "about": "Jeremiah preached in Jerusalem in the decades before the Babylonians destroyed it in 586 BC, mostly to people who did not want to hear him. Chapter 17 sets the man who trusts in man, “like the heath in the desert”, against the one who trusts in God, a tree by the water. Then this verse, and God’s answer to its question in the next: “I the LORD search the heart.” In Hebrew the heart is the seat of thought and will, not only of feeling."
+    "about": "Jeremiah preached in Jerusalem in the decades before the Babylonians destroyed it in 586 BC, mostly to people who did not want to hear him. Chapter 17 sets the man who trusts in man, “like the heath in the desert”, against the one who trusts in God, a tree by the water. Then this verse, and God’s answer to its question in the next: “I the LORD search the heart.” In Hebrew the heart is the seat of thought and will, not only of feeling.",
+    "chapter": "https://www.biblegateway.com/passage/?search=Jeremiah+17&version=KJV"
    },
    {
     "type": "paragraph",
     "text": "If therefore the light that is in thee be darkness, how great is that darkness!",
     "ref": "Matthew 6:23",
-    "about": "From the Sermon on the Mount. Jesus has just said “Lay not up for yourselves treasures upon earth”, and next comes “No man can serve two masters”. The verse before says “The light of the body is the eye”: a clear, generous eye fills you with light, an evil (in Hebrew idiom, a greedy) eye fills you with darkness. If the very thing that should light you is dark, nothing can light you at all."
+    "about": "From the Sermon on the Mount. Jesus has just said “Lay not up for yourselves treasures upon earth”, and next comes “No man can serve two masters”. The verse before says “The light of the body is the eye”: a clear, generous eye fills you with light, an evil (in Hebrew idiom, a greedy) eye fills you with darkness. If the very thing that should light you is dark, nothing can light you at all.",
+    "chapter": "https://www.biblegateway.com/passage/?search=Matthew+6&version=KJV"
    },
    {
     "type": "paragraph",
     "text": "For what shall it profit a man, if he shall gain the whole world, and lose his own soul?",
     "ref": "Mark 8:36",
-    "about": "Peter has just called Jesus the Christ, and Jesus has told the disciples for the first time that he must suffer and be killed. Peter objects and is told “Get thee behind me, Satan”. Then Jesus calls the crowd: whoever would follow him must take up his cross, and whoever saves his life will lose it. The Greek word, psyche, means both life and soul, and the verse plays on both."
+    "about": "Peter has just called Jesus the Christ, and Jesus has told the disciples for the first time that he must suffer and be killed. Peter objects and is told “Get thee behind me, Satan”. Then Jesus calls the crowd: whoever would follow him must take up his cross, and whoever saves his life will lose it. The Greek word, psyche, means both life and soul, and the verse plays on both.",
+    "chapter": "https://www.biblegateway.com/passage/?search=Mark+8&version=KJV"
    },
    {
     "type": "heading",
@@ -7057,31 +7064,36 @@ window.FN_QUOTE_BOOKS = [
     "type": "paragraph",
     "text": "Vanity of vanities, saith the Preacher, vanity of vanities; all is vanity.",
     "ref": "Ecclesiastes 1:2",
-    "about": "The first words of Ecclesiastes, whose speaker calls himself Qoheleth, “the one who gathers” (the Preacher), a son of David who was king in Jerusalem. Tradition made him Solomon, but the book was probably written around the third century BC. “Vanity” is the Hebrew hebel, a breath or vapour: everything is fleeting, weightless, gone as soon as it appears. The Latin vanitas vanitatum gave the word to centuries of still lifes with skulls."
+    "about": "The first words of Ecclesiastes, whose speaker calls himself Qoheleth, “the one who gathers” (the Preacher), a son of David who was king in Jerusalem. Tradition made him Solomon, but the book was probably written around the third century BC. “Vanity” is the Hebrew hebel, a breath or vapour: everything is fleeting, weightless, gone as soon as it appears. The Latin vanitas vanitatum gave the word to centuries of still lifes with skulls.",
+    "chapter": "https://www.biblegateway.com/passage/?search=Ecclesiastes+1&version=KJV"
    },
    {
     "type": "paragraph",
     "text": "For in much wisdom is much grief: and he that increaseth knowledge increaseth sorrow.",
     "ref": "Ecclesiastes 1:18",
-    "about": "The last verse of the first chapter. The Preacher says he set his heart to know wisdom, and madness and folly too, and found that it was all “vexation of spirit”, a chasing after wind. The more you understand the world, the more clearly you see what is crooked in it and cannot be made straight. It is the closest the Bible comes to Leopardi."
+    "about": "The last verse of the first chapter. The Preacher says he set his heart to know wisdom, and madness and folly too, and found that it was all “vexation of spirit”, a chasing after wind. The more you understand the world, the more clearly you see what is crooked in it and cannot be made straight. It is the closest the Bible comes to Leopardi.",
+    "chapter": "https://www.biblegateway.com/passage/?search=Ecclesiastes+1&version=KJV"
    },
    {
     "type": "paragraph",
     "text": "For dust thou art, and unto dust shalt thou return.",
     "ref": "Genesis 3:19",
-    "about": "God’s sentence on Adam after he and Eve eat from the tree of knowledge. The verse opens “In the sweat of thy face shalt thou eat bread, till thou return unto the ground; for out of it wast thou taken”. Adam’s name is a play on adamah, the ground he was made from. The Latin, Memento, homo, quia pulvis es, is said to every Catholic on Ash Wednesday as the ashes are put on their forehead."
+    "about": "God’s sentence on Adam after he and Eve eat from the tree of knowledge. The verse opens “In the sweat of thy face shalt thou eat bread, till thou return unto the ground; for out of it wast thou taken”. Adam’s name is a play on adamah, the ground he was made from. The Latin, Memento, homo, quia pulvis es, is said to every Catholic on Ash Wednesday as the ashes are put on their forehead.",
+    "chapter": "https://www.biblegateway.com/passage/?search=Genesis+3&version=KJV"
    },
    {
     "type": "paragraph",
     "text": "All go unto one place; all are of the dust, and all turn to dust again.",
     "ref": "Ecclesiastes 3:20",
-    "about": "The Preacher has been looking at injustice under the sun and decides that God is testing people to show them they are beasts. “That which befalleth the sons of men befalleth beasts”: as one dies, so dies the other, and man has no advantage. He then asks, sceptically, who knows whether the spirit of man goes upward and the spirit of the beast down into the earth."
+    "about": "The Preacher has been looking at injustice under the sun and decides that God is testing people to show them they are beasts. “That which befalleth the sons of men befalleth beasts”: as one dies, so dies the other, and man has no advantage. He then asks, sceptically, who knows whether the spirit of man goes upward and the spirit of the beast down into the earth.",
+    "chapter": "https://www.biblegateway.com/passage/?search=Ecclesiastes+3&version=KJV"
    },
    {
     "type": "paragraph",
     "text": "He cometh forth like a flower, and is cut down: he fleeth also as a shadow, and continueth not.",
     "ref": "Job 14:2",
-    "about": "Job has lost his children, his wealth and his health, and argues with his friends and with God. Chapter 14 begins “Man that is born of a woman is of few days, and full of trouble”, words that later opened the Anglican burial service. Even a tree cut down has hope, Job says, since its stump can sprout again at the scent of water; but man lies down and does not rise."
+    "about": "Job has lost his children, his wealth and his health, and argues with his friends and with God. Chapter 14 begins “Man that is born of a woman is of few days, and full of trouble”, words that later opened the Anglican burial service. Even a tree cut down has hope, Job says, since its stump can sprout again at the scent of water; but man lies down and does not rise.",
+    "chapter": "https://www.biblegateway.com/passage/?search=Job+14&version=KJV"
    },
    {
     "type": "heading",
@@ -7091,25 +7103,29 @@ window.FN_QUOTE_BOOKS = [
     "type": "paragraph",
     "text": "Set me as a seal upon thine heart, as a seal upon thine arm: for love is strong as death; jealousy is cruel as the grave.",
     "ref": "Song of Solomon 8:6",
-    "about": "Near the end of the Song of Songs, a collection of love poems between a woman and her lover, with no mention of God at all. She is speaking. A seal was a carved stone worn on a cord over the heart or as a ring, the owner’s signature: she wants to be part of him. “Jealousy” is ardent passion, and the verse goes on: “the coals thereof are coals of fire, which hath a most vehement flame”, in Hebrew perhaps “the very flame of the LORD”."
+    "about": "Near the end of the Song of Songs, a collection of love poems between a woman and her lover, with no mention of God at all. She is speaking. A seal was a carved stone worn on a cord over the heart or as a ring, the owner’s signature: she wants to be part of him. “Jealousy” is ardent passion, and the verse goes on: “the coals thereof are coals of fire, which hath a most vehement flame”, in Hebrew perhaps “the very flame of the LORD”.",
+    "chapter": "https://www.biblegateway.com/passage/?search=Song+of+Solomon+8&version=KJV"
    },
    {
     "type": "paragraph",
     "text": "Many waters cannot quench love, neither can the floods drown it.",
     "ref": "Song of Solomon 8:7",
-    "about": "It follows straight on from “love is strong as death”. The many waters are the floods of chaos that only God could hold back in the old Hebrew stories, and still they cannot put out this fire. The verse ends: “if a man would give all the substance of his house for love, it would utterly be contemned”. Love cannot be bought, only given."
+    "about": "It follows straight on from “love is strong as death”. The many waters are the floods of chaos that only God could hold back in the old Hebrew stories, and still they cannot put out this fire. The verse ends: “if a man would give all the substance of his house for love, it would utterly be contemned”. Love cannot be bought, only given.",
+    "chapter": "https://www.biblegateway.com/passage/?search=Song+of+Solomon+8&version=KJV"
    },
    {
     "type": "paragraph",
     "text": "For now we see through a glass, darkly; but then face to face.",
     "ref": "1 Corinthians 13:12",
-    "about": "From Paul’s hymn to love (“charity” in the King James) in his letter to the church at Corinth, around 54 AD. Mirrors then were polished bronze, and Corinth was famous for its bronze: even the best showed a dim, blurred image. Now we know “in part”, Paul says, and the verse goes on: “now I know in part; but then shall I know even as also I am known”. Bergman took the title of his film Through a Glass Darkly from it."
+    "about": "From Paul’s hymn to love (“charity” in the King James) in his letter to the church at Corinth, around 54 AD. Mirrors then were polished bronze, and Corinth was famous for its bronze: even the best showed a dim, blurred image. Now we know “in part”, Paul says, and the verse goes on: “now I know in part; but then shall I know even as also I am known”. Bergman took the title of his film Through a Glass Darkly from it.",
+    "chapter": "https://www.biblegateway.com/passage/?search=1+Corinthians+13&version=KJV"
    },
    {
     "type": "paragraph",
     "text": "I found him whom my soul loveth: I held him, and would not let him go.",
     "ref": "Song of Solomon 3:4",
-    "about": "At night on her bed the woman longs for her lover and cannot find him. She gets up and goes about the city through the streets and squares, asking the watchmen if they have seen him whom her soul loves. Just past them she finds him, holds him, and will not let him go until she has brought him into her mother’s house."
+    "about": "At night on her bed the woman longs for her lover and cannot find him. She gets up and goes about the city through the streets and squares, asking the watchmen if they have seen him whom her soul loves. Just past them she finds him, holds him, and will not let him go until she has brought him into her mother’s house.",
+    "chapter": "https://www.biblegateway.com/passage/?search=Song+of+Solomon+3&version=KJV"
    },
    {
     "type": "heading",
@@ -7119,25 +7135,29 @@ window.FN_QUOTE_BOOKS = [
     "type": "paragraph",
     "text": "Deep calleth unto deep at the noise of thy waterspouts: all thy waves and thy billows are gone over me.",
     "ref": "Psalm 42:7",
-    "about": "A psalm of the sons of Korah, temple singers. It opens “As the hart panteth after the water brooks, so panteth my soul after thee, O God”. The singer is far from Jerusalem, in the north by the Jordan’s springs and Mount Hermon, where the waters roar down. The torrents become his despair: one abyss calling to another, every wave of God’s breaking over him."
+    "about": "A psalm of the sons of Korah, temple singers. It opens “As the hart panteth after the water brooks, so panteth my soul after thee, O God”. The singer is far from Jerusalem, in the north by the Jordan’s springs and Mount Hermon, where the waters roar down. The torrents become his despair: one abyss calling to another, every wave of God’s breaking over him.",
+    "chapter": "https://www.biblegateway.com/passage/?search=Psalm+42&version=KJV"
    },
    {
     "type": "paragraph",
     "text": "I was not in safety, neither had I rest, neither was I quiet; yet trouble came.",
     "ref": "Job 3:26",
-    "about": "The last verse of Job’s first speech. After seven days of silence with his friends, he opens his mouth and curses the day he was born: “Let the day perish wherein I was born”. Why is light given to the miserable, who long for death and dig for it more than for hidden treasure? Just before this: “the thing which I greatly feared is come upon me”."
+    "about": "The last verse of Job’s first speech. After seven days of silence with his friends, he opens his mouth and curses the day he was born: “Let the day perish wherein I was born”. Why is light given to the miserable, who long for death and dig for it more than for hidden treasure? Just before this: “the thing which I greatly feared is come upon me”.",
+    "chapter": "https://www.biblegateway.com/passage/?search=Job+3&version=KJV"
    },
    {
     "type": "paragraph",
     "text": "Out of the depths have I cried unto thee, O LORD.",
     "ref": "Psalm 130:1",
-    "about": "A “Song of degrees”, one of the songs sung by pilgrims going up to Jerusalem, and one of the seven penitential psalms. In Latin it begins De profundis, and was sung for the dead. A cry from the bottom of guilt and despair that still waits for the Lord “more than they that watch for the morning”. Oscar Wilde took the Latin as the title of his letter from Reading Gaol."
+    "about": "A “Song of degrees”, one of the songs sung by pilgrims going up to Jerusalem, and one of the seven penitential psalms. In Latin it begins De profundis, and was sung for the dead. A cry from the bottom of guilt and despair that still waits for the Lord “more than they that watch for the morning”. Oscar Wilde took the Latin as the title of his letter from Reading Gaol.",
+    "chapter": "https://www.biblegateway.com/passage/?search=Psalm+130&version=KJV"
    },
    {
     "type": "paragraph",
     "text": "My God, my God, why hast thou forsaken me?",
     "ref": "Matthew 27:46",
-    "about": "Jesus on the cross. From noon there has been darkness over all the land, and at the ninth hour, about three in the afternoon, he cries in Aramaic “Eli, Eli, lama sabachthani?”. It is the first line of Psalm 22. Some of the bystanders think he is calling Elijah. A little later he cries out again and dies."
+    "about": "Jesus on the cross. From noon there has been darkness over all the land, and at the ninth hour, about three in the afternoon, he cries in Aramaic “Eli, Eli, lama sabachthani?”. It is the first line of Psalm 22. Some of the bystanders think he is calling Elijah. A little later he cries out again and dies.",
+    "chapter": "https://www.biblegateway.com/passage/?search=Matthew+27&version=KJV"
    },
    {
     "type": "heading",
@@ -7147,25 +7167,102 @@ window.FN_QUOTE_BOOKS = [
     "type": "paragraph",
     "text": "And I saw a new heaven and a new earth: for the first heaven and the first earth were passed away; and there was no more sea.",
     "ref": "Revelation 21:1",
-    "about": "The last vision of Revelation, the same book as your Apocalisse lines. After the final judgement, the old world is gone, and next John sees the holy city, the new Jerusalem, coming down from heaven “as a bride adorned for her husband”. The sea had been the home of chaos, where the beast rose from; and for John, exiled on Patmos, it was also what cut him off."
+    "about": "The last vision of Revelation, the same book as your Apocalisse lines. After the final judgement, the old world is gone, and next John sees the holy city, the new Jerusalem, coming down from heaven “as a bride adorned for her husband”. The sea had been the home of chaos, where the beast rose from; and for John, exiled on Patmos, it was also what cut him off.",
+    "chapter": "https://www.biblegateway.com/passage/?search=Revelation+21&version=KJV"
    },
    {
     "type": "paragraph",
     "text": "And the light shineth in darkness; and the darkness comprehended it not.",
     "ref": "John 1:5",
-    "about": "From the prologue to John’s Gospel, which begins like Genesis: “In the beginning was the Word”. The Word, Christ, is the life, and the life is the light of men. The Greek verb behind “comprehended” means both to grasp and to overcome, so the darkness neither understood the light nor put it out; modern Bibles often say “the darkness has not overcome it”."
+    "about": "From the prologue to John’s Gospel, which begins like Genesis: “In the beginning was the Word”. The Word, Christ, is the life, and the life is the light of men. The Greek verb behind “comprehended” means both to grasp and to overcome, so the darkness neither understood the light nor put it out; modern Bibles often say “the darkness has not overcome it”.",
+    "chapter": "https://www.biblegateway.com/passage/?search=John+1&version=KJV"
    },
    {
     "type": "paragraph",
     "text": "He hath made every thing beautiful in his time: also he hath set the world in their heart, so that no man can find out the work that God maketh from the beginning to the end.",
     "ref": "Ecclesiastes 3:11",
-    "about": "Right after “To every thing there is a season, and a time to every purpose under the heaven”: a time to be born and a time to die, a time to mourn and a time to dance. The Hebrew for “the world” is olam, more often read as eternity: God has put a sense of eternity in our hearts, yet we can never see the whole of what he does."
+    "about": "Right after “To every thing there is a season, and a time to every purpose under the heaven”: a time to be born and a time to die, a time to mourn and a time to dance. The Hebrew for “the world” is olam, more often read as eternity: God has put a sense of eternity in our hearts, yet we can never see the whole of what he does.",
+    "chapter": "https://www.biblegateway.com/passage/?search=Ecclesiastes+3&version=KJV"
    },
    {
     "type": "paragraph",
     "text": "I am Alpha and Omega, the beginning and the end, the first and the last.",
     "ref": "Revelation 22:13",
-    "about": "Christ speaking in the last chapter of the Bible: “Behold, I come quickly”. Alpha and omega are the first and last letters of the Greek alphabet, so he is everything from start to finish. It echoes God in Isaiah 44:6: “I am the first, and I am the last; and beside me there is no God”."
+    "about": "Christ speaking in the last chapter of the Bible: “Behold, I come quickly”. Alpha and omega are the first and last letters of the Greek alphabet, so he is everything from start to finish. It echoes God in Isaiah 44:6: “I am the first, and I am the last; and beside me there is no God”.",
+    "chapter": "https://www.biblegateway.com/passage/?search=Revelation+22&version=KJV"
+   },
+   {
+    "type": "heading",
+    "text": "Read the whole books (King James Version)"
+   },
+   {
+    "type": "note",
+    "text": "Each opens at chapter 1; the arrows at the end of every chapter lead to the next."
+   },
+   {
+    "type": "link",
+    "text": "The whole King James Bible, book by book (Bible Gateway)",
+    "href": "https://www.biblegateway.com/versions/King-James-Version-KJV-Bible/#booklist"
+   },
+   {
+    "type": "link",
+    "text": "The whole King James Bible as one book (Project Gutenberg)",
+    "href": "https://www.gutenberg.org/ebooks/10"
+   },
+   {
+    "type": "link",
+    "text": "Genesis, from chapter 1",
+    "href": "https://www.biblegateway.com/passage/?search=Genesis+1&version=KJV"
+   },
+   {
+    "type": "link",
+    "text": "Job, from chapter 1",
+    "href": "https://www.biblegateway.com/passage/?search=Job+1&version=KJV"
+   },
+   {
+    "type": "link",
+    "text": "Psalms, from chapter 1",
+    "href": "https://www.biblegateway.com/passage/?search=Psalms+1&version=KJV"
+   },
+   {
+    "type": "link",
+    "text": "Ecclesiastes, from chapter 1",
+    "href": "https://www.biblegateway.com/passage/?search=Ecclesiastes+1&version=KJV"
+   },
+   {
+    "type": "link",
+    "text": "Song of Solomon, from chapter 1",
+    "href": "https://www.biblegateway.com/passage/?search=Song+of+Solomon+1&version=KJV"
+   },
+   {
+    "type": "link",
+    "text": "Jeremiah, from chapter 1",
+    "href": "https://www.biblegateway.com/passage/?search=Jeremiah+1&version=KJV"
+   },
+   {
+    "type": "link",
+    "text": "Matthew, from chapter 1",
+    "href": "https://www.biblegateway.com/passage/?search=Matthew+1&version=KJV"
+   },
+   {
+    "type": "link",
+    "text": "Mark, from chapter 1",
+    "href": "https://www.biblegateway.com/passage/?search=Mark+1&version=KJV"
+   },
+   {
+    "type": "link",
+    "text": "John, from chapter 1",
+    "href": "https://www.biblegateway.com/passage/?search=John+1&version=KJV"
+   },
+   {
+    "type": "link",
+    "text": "1 Corinthians, from chapter 1",
+    "href": "https://www.biblegateway.com/passage/?search=1+Corinthians+1&version=KJV"
+   },
+   {
+    "type": "link",
+    "text": "Revelation, from chapter 1",
+    "href": "https://www.biblegateway.com/passage/?search=Revelation+1&version=KJV"
    }
   ]
  },
