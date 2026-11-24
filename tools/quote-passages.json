@@ -1,5 +1,5 @@
 {
- "_about": "Passages Nicky asked for that are not in her Notion or Goodreads, added to a book page by tools/sync-quotes.mjs after her own quotes. 'lead' is a heading put before her own quotes; 'about' gives a reference and a short background to one of her own quotes (keyed by its first 60 letters, as in quote-books.json 'blocks'); 'passages' are headings and quotes, each with its reference ('ref') and background ('about', written by Claude), shown in a small window when she clicks the quote or its reference. Her words are kept exactly as she sent them.",
+ "_about": "Passages Nicky asked for that are not in her Notion or Goodreads, added to a book page by tools/sync-quotes.mjs after her own quotes. 'lead' is a heading put before her own quotes; 'about' gives a reference and a short background to one of her own quotes (keyed by its first 60 letters, as in quote-books.json 'blocks'); 'passages' are headings and quotes, each with its reference ('ref') and background ('about', written by Claude), shown in a small window when she clicks the quote or its reference. Her words are kept exactly as she sent them. 'chapter' is a link pattern for each reference's whole chapter ({chapter} = book and chapter; 'names' renames a book for it), shown in the window; 'read' adds a heading and links at the end of the page.",
  "books": {
   "apocalisse": {
    "lead": "Apocalisse",
@@ -138,7 +138,69 @@
      "text": "I am Alpha and Omega, the beginning and the end, the first and the last.",
      "about": "Christ speaking in the last chapter of the Bible: “Behold, I come quickly”. Alpha and omega are the first and last letters of the Greek alphabet, so he is everything from start to finish. It echoes God in Isaiah 44:6: “I am the first, and I am the last; and beside me there is no God”."
     }
-   ]
+   ],
+   "chapter": "https://www.biblegateway.com/passage/?search={chapter}&version=KJV",
+   "names": {
+    "Apocalisse": "Revelation"
+   },
+   "read": {
+    "heading": "Read the whole books (King James Version)",
+    "note": "Each opens at chapter 1; the arrows at the end of every chapter lead to the next.",
+    "links": [
+     {
+      "text": "The whole King James Bible, book by book (Bible Gateway)",
+      "href": "https://www.biblegateway.com/versions/King-James-Version-KJV-Bible/#booklist"
+     },
+     {
+      "text": "The whole King James Bible as one book (Project Gutenberg)",
+      "href": "https://www.gutenberg.org/ebooks/10"
+     },
+     {
+      "text": "Genesis, from chapter 1",
+      "href": "https://www.biblegateway.com/passage/?search=Genesis+1&version=KJV"
+     },
+     {
+      "text": "Job, from chapter 1",
+      "href": "https://www.biblegateway.com/passage/?search=Job+1&version=KJV"
+     },
+     {
+      "text": "Psalms, from chapter 1",
+      "href": "https://www.biblegateway.com/passage/?search=Psalms+1&version=KJV"
+     },
+     {
+      "text": "Ecclesiastes, from chapter 1",
+      "href": "https://www.biblegateway.com/passage/?search=Ecclesiastes+1&version=KJV"
+     },
+     {
+      "text": "Song of Solomon, from chapter 1",
+      "href": "https://www.biblegateway.com/passage/?search=Song+of+Solomon+1&version=KJV"
+     },
+     {
+      "text": "Jeremiah, from chapter 1",
+      "href": "https://www.biblegateway.com/passage/?search=Jeremiah+1&version=KJV"
+     },
+     {
+      "text": "Matthew, from chapter 1",
+      "href": "https://www.biblegateway.com/passage/?search=Matthew+1&version=KJV"
+     },
+     {
+      "text": "Mark, from chapter 1",
+      "href": "https://www.biblegateway.com/passage/?search=Mark+1&version=KJV"
+     },
+     {
+      "text": "John, from chapter 1",
+      "href": "https://www.biblegateway.com/passage/?search=John+1&version=KJV"
+     },
+     {
+      "text": "1 Corinthians, from chapter 1",
+      "href": "https://www.biblegateway.com/passage/?search=1+Corinthians+1&version=KJV"
+     },
+     {
+      "text": "Revelation, from chapter 1",
+      "href": "https://www.biblegateway.com/passage/?search=Revelation+1&version=KJV"
+     }
+    ]
+   }
   }
  }
 }

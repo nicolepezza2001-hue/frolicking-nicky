@@ -750,6 +750,10 @@
     const head = el('h3', null, verse.ref); head.id = 'fn-verse-dialog-ref';
     const inner = el('div', 'fn-verse-inner');
     inner.append(close, head, el('blockquote', null, verse.text), el('p', null, verse.about));
+    if (verse.chapter) {
+      const more = el('p', 'fn-verse-more'), a = el('a', null, 'Read the whole chapter ↗︎');
+      a.href = verse.chapter; a.target = '_blank'; a.rel = 'noopener noreferrer'; more.append(a); inner.append(more);
+    }
     verseDialog.replaceChildren(inner); verseDialog.showModal(); close.focus();
   };
   const renderLesson = (topic, name, lessons, index) => {

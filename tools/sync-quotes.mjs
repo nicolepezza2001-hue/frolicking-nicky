@@ -202,6 +202,11 @@ for (const [key, p] of Object.entries(passages)) {
   book.blocks.forEach(b => { const a = p.about?.[fp(b.text)]; if (a) Object.assign(b, a); });
   if (p.lead && book.blocks.length) book.blocks.unshift({ type: 'heading', text: p.lead });
   (p.passages || []).forEach(x => book.blocks.push(x.heading ? { type: 'heading', text: x.heading } : { type: 'paragraph', text: x.text, ref: x.ref, about: x.about }));
+  // Each reference links to its whole chapter, and the page ends with links to read the whole books
+  const chapter = ref => { const m = ref.match(/^(.+?) (\d+):[\d–-]+$/); return m && p.chapter?.replace('{chapter}', encodeURIComponent((p.names?.[m[1]] || m[1]) + ' ' + m[2]).replace(/%20/g, '+')); };
+  book.blocks.forEach(b => { if (b.ref && chapter(b.ref)) b.chapter = chapter(b.ref); });
+  if (p.read) book.blocks.push({ type: 'heading', text: p.read.heading }, ...(p.read.note ? [{ type: 'note', text: p.read.note }] : []),
+    ...p.read.links.map(l => ({ type: 'link', text: l.text, href: l.href })));
 }
 
 // Whole poems Nicky asked for (tools/quote-poems.json) follow her quotes on their book's page, one stanza per row with a
