@@ -193,6 +193,17 @@ const said = new Set(), start = s => s.replace(/\n— [^\n]*$/, '').toLowerCase(
 const twice = x => { const k = start(x.text); if (x.type !== 'paragraph' || k.length < 40) return false; return said.has(k.slice(0, 80)) || !said.add(k.slice(0, 80)); };
 for (const b of Object.values(books)) b.blocks = b.blocks.filter(x => !twice(x));
 
+// Passages Nicky asked for outside Notion (tools/quote-passages.json, e.g. her Bible verses by theme): a heading before her
+// own quotes, a reference and background for some of them, then the passages, each with its reference and background
+// (shown in a small window when she clicks it, study.js)
+const passages = JSON.parse(await readFile(new URL('quote-passages.json', import.meta.url), 'utf8').catch(() => '{}')).books || {};
+for (const [key, p] of Object.entries(passages)) {
+  const book = books[key]; if (!book) continue;
+  book.blocks.forEach(b => { const a = p.about?.[fp(b.text)]; if (a) Object.assign(b, a); });
+  if (p.lead && book.blocks.length) book.blocks.unshift({ type: 'heading', text: p.lead });
+  (p.passages || []).forEach(x => book.blocks.push(x.heading ? { type: 'heading', text: x.heading } : { type: 'paragraph', text: x.text, ref: x.ref, about: x.about }));
+}
+
 // Whole poems Nicky asked for (tools/quote-poems.json) follow her quotes on their book's page, one stanza per row with a
 // column for the English and one for the Italian, so the book gets its own page even when she kept
 // a single quote from it

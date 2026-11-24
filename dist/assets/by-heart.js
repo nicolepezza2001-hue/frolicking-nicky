@@ -254,7 +254,7 @@
       const lines = texts.every(t => !t.includes('\n') && t.length <= VERSE) && texts.length > 1;
       const stanzas = lines ? verse4(texts) : texts.flatMap(parts);
       const id = 'q-' + hash(book.id + '|' + texts.join('\n'));
-      QUOTES.set(id, { id, book: book.id, block: run.end, unit: lines ? 'stanza' : 'part', title: from || book.title, author: from ? '' : book.author,
+      QUOTES.set(id, { id, book: book.id, block: run.end, unit: lines ? 'stanza' : 'part', title: from || (run.items.length === 1 && run.items[0].ref) || book.title, author: from ? '' : book.author,
         versions: [{ lang: '', label: '', stanzas }] });
     });
   });

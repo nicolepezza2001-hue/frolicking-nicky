@@ -737,6 +737,21 @@
 
   // Readable lesson views use the same hash navigation as the study topics.
   // Silver Age poetry and French (imported from Nicky's notes) share one reading layout.
+  // The small window with a verse's background (her Bible page in Quotes)
+  let verseDialog;
+  const verseWindow = verse => {
+    if (!verseDialog) {
+      verseDialog = el('dialog', 'fn-verse-dialog'); verseDialog.setAttribute('aria-labelledby', 'fn-verse-dialog-ref');
+      verseDialog.addEventListener('click', e => { if (e.target === verseDialog) verseDialog.close(); });
+      document.body.append(verseDialog);
+    }
+    const close = el('button', 'fn-verse-close', '×'); close.type = 'button'; close.setAttribute('aria-label', 'Close');
+    close.addEventListener('click', () => verseDialog.close());
+    const head = el('h3', null, verse.ref); head.id = 'fn-verse-dialog-ref';
+    const inner = el('div', 'fn-verse-inner');
+    inner.append(close, head, el('blockquote', null, verse.text), el('p', null, verse.about));
+    verseDialog.replaceChildren(inner); verseDialog.showModal(); close.focus();
+  };
   const renderLesson = (topic, name, lessons, index) => {
     const original = lessons[index], o = edited(original.id);
     const lesson = o ? { ...original, title: o.title || original.title, blocks: lessonText.parse(o.text || ''), images: o.images || {}, originalBlocks: original.blocks } : original;
@@ -770,7 +785,20 @@
         list = null; const p = el('p', 'fn-lesson-link'), a = el('a', null, block.text + ' ↗︎');
         a.href = block.href; a.target = '_blank'; a.rel = 'noopener noreferrer'; p.append(a); notes.append(p);
       } else if (block.type === 'paragraph') {
-        list = null; const paragraph = el('p', null, block.text); paragraph.dataset.noteBlock = blockIndex; notes.append(paragraph);
+        list = null; const paragraph = el('p', null, block.text); paragraph.dataset.noteBlock = blockIndex;
+        // A quote with a reference and background (her Bible verses): the reference sits above it, and clicking either
+        // opens the background in a small window (kept on an edited page by matching the words)
+        const known = block.about ? block : (original.blocks || []).find(b => b.about && b.text === block.text);
+        if (known) {
+          const ref = el('p', 'fn-verse-ref'), open = el('button', null, known.ref); open.type = 'button';
+          open.addEventListener('click', () => verseWindow(known)); ref.append(open); notes.append(ref);
+          paragraph.classList.add('fn-verse');
+          paragraph.addEventListener('click', e => {
+            const marking = sec.querySelector('.fn-highlight-mode[aria-pressed="true"]');
+            if (!marking && !e.target.closest('mark') && (getSelection()?.isCollapsed ?? true)) verseWindow(known);
+          });
+        }
+        notes.append(paragraph);
       } else {
         if (!list) { list = el('ul'); notes.append(list); }
         const paragraph = el('li', null, block.text); paragraph.dataset.noteBlock = blockIndex; list.append(paragraph);

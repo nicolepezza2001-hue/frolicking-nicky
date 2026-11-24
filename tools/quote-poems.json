@@ -431,22 +431,6 @@
      ]
     }
    ]
-  },
-  "john-3-19": {
-   "book": "gospel-of-john",
-   "title": "John 3:19",
-   "author": "King James Bible",
-   "heading": "John 3:19",
-   "note": "The Gospel according to St John, chapter 3, verse 19, in the King James Bible (1611; standard 1769 text). English only.",
-   "versions": [
-    {
-     "lang": "en",
-     "label": "English",
-     "stanzas": [
-      "And this is the condemnation, that light is come into the world, and men loved darkness rather than light, because their deeds were evil."
-     ]
-    }
-   ]
   }
  }
 }

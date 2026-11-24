@@ -531,3 +531,19 @@ article.fn-lesson .fn-heart-quote .fn-listen,article.fn-lesson .fn-heart-open .f
 .fn-exercise-score{color:var(--st-purple);font:italic 500 1.3rem 'Cormorant Garamond',Georgia,serif;margin-top:14px}
 @media(max-width:760px){.fn-exercise-sheet input[type=text]{font-size:17px}}
 .fn-exercise .fn-study-btn{background:var(--st-purple);color:#faeac0}
+
+/* Her Bible page in Quotes: each verse has its reference above it; clicking either opens its background in a small window */
+article.fn-lesson[id^="quote-"] .fn-lesson-notes p.fn-verse-ref{margin:1.7em 0 .05em;font-style:normal;white-space:normal}
+article.fn-lesson[id^="quote-"] .fn-lesson-notes p.fn-verse-ref+p{margin-top:0}
+.fn-verse-ref button{background:none;border:0;padding:0;cursor:inherit;color:var(--st-purple);font:600 .78rem/1.4 Georgia,serif;letter-spacing:.14em;text-transform:uppercase;opacity:.62;border-bottom:1px dotted currentColor;transition:opacity .3s}
+.fn-verse-ref button:hover,.fn-verse-ref button:focus-visible{opacity:1;outline:none}
+.fn-lesson-notes p.fn-verse{cursor:inherit}
+.fn-verse-dialog{max-width:520px;width:calc(100% - 32px);max-height:85vh;overflow:auto;border:1px solid #2b1e3855;border-radius:12px;background:#faeac0;color:var(--st-purple);padding:0;box-shadow:0 30px 80px #000000aa}
+.fn-verse-dialog::backdrop{background:#150e1dbb}
+.fn-verse-inner{position:relative;padding:26px 28px 24px;font:17px/1.7 Georgia,serif}
+.fn-verse-dialog h3{font:800 1.6rem/1.3 'Arnold Boecklin',Georgia,serif;margin:0 32px 12px 0}
+.fn-verse-dialog blockquote{margin:0 0 16px;padding:0 0 14px;border-bottom:1px solid #2b1e3833;font:italic 1.2rem/1.5 'Cormorant Garamond',Georgia,serif}
+.fn-verse-dialog p{margin:0}
+.fn-verse-close{position:absolute;top:12px;right:14px;background:none;border:0;color:var(--st-purple);font:1.7rem/1 'Cormorant Garamond',Georgia,serif;cursor:inherit;opacity:.6;padding:4px 8px}
+.fn-verse-close:hover,.fn-verse-close:focus-visible{opacity:1;outline:none}
+@media(max-width:760px){.fn-verse-inner{padding:22px 20px 20px;font-size:16px}}
