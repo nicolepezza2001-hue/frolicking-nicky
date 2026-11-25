@@ -1237,6 +1237,138 @@ window.FN_FRENCH_LESSONS = [
     "blocks": [
       {
         "type": "heading",
+        "text": "25 November"
+      },
+      {
+        "type": "note",
+        "text": "Auberge de jeunesse = Youth hostel"
+      },
+      {
+        "type": "note",
+        "text": "Le toit = The roof"
+      },
+      {
+        "type": "note",
+        "text": "6 = six"
+      },
+      {
+        "type": "note",
+        "text": "16 = seize"
+      },
+      {
+        "type": "note",
+        "text": "Pierre = stone"
+      },
+      {
+        "type": "note",
+        "text": "Proche de = Close to, near"
+      },
+      {
+        "type": "note",
+        "text": "Prier = to pray"
+      },
+      {
+        "type": "note",
+        "text": "Ils s'asseyaient = They used to sit, they were sitting"
+      },
+      {
+        "type": "note",
+        "text": "Par terre = On the floor, on the ground"
+      },
+      {
+        "type": "note",
+        "text": "Bougie = Candela"
+      },
+      {
+        "type": "note",
+        "text": "Une légende / Une rumeur = A legend / A rumour"
+      },
+      {
+        "type": "note",
+        "text": "Mauvais = bad"
+      },
+      {
+        "type": "note",
+        "text": "Pour purifier leur esprit = To purify their mind (spirit)"
+      },
+      {
+        "type": "note",
+        "text": "Saint = Saint, holy"
+      },
+      {
+        "type": "note",
+        "text": "Une femme chilienne = A Chilean woman"
+      },
+      {
+        "type": "note",
+        "text": "Il est prêtre = He is a priest"
+      },
+      {
+        "type": "note",
+        "text": "Supprimer = to cancel"
+      },
+      {
+        "type": "note",
+        "text": "Les gens louent ses services = People hire his services"
+      },
+      {
+        "type": "note",
+        "text": "Sur son téléphone = On his/her phone"
+      },
+      {
+        "type": "note",
+        "text": "Les preuves = The proof, the evidence"
+      },
+      {
+        "type": "note",
+        "text": "Très haut = Very high"
+      },
+      {
+        "type": "note",
+        "text": "Vierge = Virgo (also: virgin)"
+      },
+      {
+        "type": "note",
+        "text": "Sagittaire = Sagittarius"
+      },
+      {
+        "type": "note",
+        "text": "J'ai choisi de ne pas l'écouter = I chose not to listen to him/her"
+      },
+      {
+        "type": "note",
+        "text": "ça ne devrait pas être une religion = It shouldn't be a religion"
+      },
+      {
+        "type": "note",
+        "text": "prédire l'avenir = to predict the future"
+      },
+      {
+        "type": "note",
+        "text": "Demander de l'aide = To ask for help"
+      },
+      {
+        "type": "note",
+        "text": "Presque = almost"
+      },
+      {
+        "type": "note",
+        "text": "Je lui ai dit = I told him/her"
+      },
+      {
+        "type": "note",
+        "text": "citation = quote"
+      },
+      {
+        "type": "note",
+        "text": "Gorgée = A sip, a gulp"
+      },
+      {
+        "type": "note",
+        "text": "suivre = seguire"
+      },
+      {
+        "type": "heading",
         "text": "18 November"
       },
       {
@@ -3666,5 +3798,20 @@ window.FN_FRENCH_VOCAB = [
   "id": "fr-92",
   "word": "son bras droit",
   "en": "his/her right-hand man (or woman)"
+  },
+  {
+  "id": "fr-93",
+  "word": "presque (C’est presque fini)",
+  "en": "almost"
+  },
+  {
+  "id": "fr-94",
+  "word": "supprimer (J’ai supprimé le message)",
+  "en": "to delete, to cancel"
+  },
+  {
+  "id": "fr-95",
+  "word": "une preuve (les preuves)",
+  "en": "proof, evidence"
   }
 ];
