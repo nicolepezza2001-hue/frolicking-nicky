@@ -36,6 +36,48 @@ export const visitSeasons = {
     reasons: ['Freddo; Takayama innevata e chiusure per il Capodanno.','Giornate fredde in città; neve a Takayama.','Ideale per la fioritura dei ciliegi di fine mese; all’inizio di marzo fa più fresco. La folla e i prezzi più alti valgono la pena.','I ciliegi in fiore lo rendono una scelta top nonostante folla e prezzi più alti. I tempi della fioritura variano; la Golden Week inizia a fine aprile.','Ideale dopo la Golden Week, prima delle piogge principali.','Stagione delle piogge; tieni flessibili i programmi all’aperto.','La pioggia lascia il posto a caldo e umidità intensi.','Molto caldo e umido; i viaggi per l’Obon aumentano la domanda.','Caldo persistente e rischio più alto di disagi per i tifoni.','Più piacevole da esplorare; Takayama più fresca e domanda autunnale.','Giornate frizzanti e foliage; i posti più famosi di Kyoto restano affollati.','Spesso asciutto in città; montagne fredde e chiusure di fine anno.'],
     sources: [['JNTO · maggio e Golden Week','https://www.japan.travel/en/guide/may/'],['JNTO · estate','https://www.japan.travel/en/guide/summer-guide/'],['JNTO · settembre','https://www.japan.travel/en/guide/september/'],['JNTO · stagioni di viaggio e festività','https://www.japan.travel/en/gc/tips/']]
   },
+  'merida': {
+      "scope": "Per Mérida e le gite di questo itinerario.",
+      "ratings": [
+            "Best",
+            "Best",
+            "Good",
+            "Okay",
+            "Avoid",
+            "Okay",
+            "Okay",
+            "Okay",
+            "Okay",
+            "Okay",
+            "Good",
+            "Best"
+      ],
+      "note": "La mia scelta: da dicembre a febbraio, il periodo più asciutto e meno caldo, con i fenicotteri a Celestún. Fa caldo tutto l’anno: da marzo a maggio è il momento peggiore, e da giugno a ottobre è umido e piovoso, con i temporali più probabili a settembre.",
+      "reasons": [
+            "Asciutto, il mese meno caldo.",
+            "Giornate asciutte e calde.",
+            "Asciutto, e il caldo aumenta.",
+            "Molto caldo e asciutto.",
+            "Il mese più caldo: spesso 37°C o più.",
+            "Iniziano le piogge; umido.",
+            "Caldo, con acquazzoni il pomeriggio.",
+            "Caldo, con acquazzoni il pomeriggio.",
+            "Il mese più piovoso; stagione delle tempeste.",
+            "Le piogge calano; ancora umido.",
+            "Più asciutto e un po’ meno caldo.",
+            "Asciutto e caldo; affollato a Natale."
+      ],
+      "sources": [
+            [
+                  "Climates to Travel · Mérida",
+                  "https://climatestotravel.com/climate/mexico/mérida"
+            ],
+            [
+                  "Lonely Planet · Best time to visit Mérida",
+                  "https://www.lonelyplanet.com/articles/best-time-to-visit-merida"
+            ]
+      ]
+  },
   'san-cristobal-de-las-casas': {
       "scope": "Per San Cristóbal de las Casas e le gite di questo itinerario.",
       "ratings": [
