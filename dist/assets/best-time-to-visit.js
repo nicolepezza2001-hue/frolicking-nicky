@@ -1,5 +1,5 @@
-import { visitSeasons as seasonsEn } from './visit-seasons.js?v=3';
-import { visitSeasons as seasonsIt } from './visit-seasons.it.js?v=3';
+import { visitSeasons as seasonsEn } from './visit-seasons.js?v=4';
+import { visitSeasons as seasonsIt } from './visit-seasons.it.js?v=4';
 
 const IT = document.documentElement.lang === 'it';
 const visitSeasons = IT ? seasonsIt : seasonsEn;

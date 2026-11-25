@@ -36,6 +36,48 @@ export const visitSeasons = {
     reasons: ['Cold; snowy Takayama and New Year closures.','Cold city days; snow in Takayama.','Best for the late-month cherry blossom season; earlier March is cooler. Crowds and higher prices are worth it.','Cherry blossoms make this a top pick despite crowds and higher prices. Bloom timing varies; Golden Week begins late April.','Best after Golden Week, before the main rains.','Rainy season; allow flexible outdoor plans.','Rain gives way to intense heat and humidity.','Very hot and humid; Obon travel adds demand.','Lingering heat and elevated typhoon disruption risk.','More comfortable exploring; cooler Takayama and autumn demand.','Crisp days and foliage; popular Kyoto spots stay busy.','Often dry in the cities; cold mountains and year-end closures.'],
     sources: [['JNTO · May & Golden Week','https://www.japan.travel/en/guide/may/'],['JNTO · summer','https://www.japan.travel/en/guide/summer-guide/'],['JNTO · September','https://www.japan.travel/en/guide/september/'],['JNTO · travel seasons & holidays','https://www.japan.travel/en/gc/tips/']]
   },
+  'merida': {
+      "scope": "For Mérida and the day trips in this itinerary.",
+      "ratings": [
+            "Best",
+            "Best",
+            "Good",
+            "Okay",
+            "Avoid",
+            "Okay",
+            "Okay",
+            "Okay",
+            "Okay",
+            "Okay",
+            "Good",
+            "Best"
+      ],
+      "note": "My pick: December to February, the driest and least hot stretch, with flamingos at Celestún. It is hot all year: March to May is the fiercest, and June to October is humid and rainy, with storms most likely in September.",
+      "reasons": [
+            "Dry and the least hot month.",
+            "Dry, warm days.",
+            "Dry, and the heat builds.",
+            "Very hot and dry.",
+            "The hottest month: often 37°C or more.",
+            "The rains begin; humid.",
+            "Hot, with afternoon downpours.",
+            "Hot, with afternoon downpours.",
+            "The wettest month; storm season.",
+            "The rains ease; still humid.",
+            "Drier and a little less hot.",
+            "Dry and warm; busy around Christmas."
+      ],
+      "sources": [
+            [
+                  "Climates to Travel · Mérida",
+                  "https://climatestotravel.com/climate/mexico/mérida"
+            ],
+            [
+                  "Lonely Planet · Best time to visit Mérida",
+                  "https://www.lonelyplanet.com/articles/best-time-to-visit-merida"
+            ]
+      ]
+  },
   'san-cristobal-de-las-casas': {
       "scope": "For San Cristóbal de las Casas and the day trips in this itinerary.",
       "ratings": [

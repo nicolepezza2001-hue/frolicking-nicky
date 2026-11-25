@@ -90,3 +90,8 @@ Photos are credited Wikimedia Commons stock until Nicky sends her own.
 ## Guanajuato
 
 `/mexico/guanajuato` and `/it/messico/guanajuato` are standalone one-day itineraries using the Bratislava journal layout. San Miguel keeps a short internal day-trip link. The dedicated `assets/guanajuato.js` checklist imports the six original San Miguel ticks on first visit, then stores progress independently under `frolicking-nicky-guanajuato-v1`, shared across languages. Photos by Hugoacostac and Juan Pablo M. Bastida are credited on the pages (CC BY-SA 3.0).
+
+
+## Mérida
+
+`/mexico/merida` and `/it/messico/merida` use the Mexico City format, built from the San Cristóbal page: data in `assets/merida.js` / `merida.it.js` (key `frolicking-nicky-merida-v1`), map links in the `meridaMapStops` block of `maps.js`. The days out are still undecided, so the page shows three options (A, B, C) in a `section.before#options` block after the pace note, and the Uxmal, cenote-day, Chichén Itzá (birthday Tuesday) and Valladolid cards cover all three; trim to the chosen one when Nicky decides; Celestún and El Cuyo sit under "If we have time". Food, cafés and coworking are in `OPTIONAL_IDS` and don’t count towards progress. Photos are credited Wikimedia Commons stock until Nicky sends her own.
