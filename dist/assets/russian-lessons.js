@@ -1,5 +1,7 @@
 // Nicky’s Russian notes, imported from her Notion page “Russian”. Preserve the source wording.
 // Each page opens from the Russian path; FN_RUSSIAN_VOCAB seeds the Russian vocabulary page.
+// Vocab rule (Nicky, Nov 2026): examples, synonyms and other Russian go in "word" (left); "en" (right) holds only the English
+// meaning, so hiding one side never gives the answer away. To fix a seed already in her list, keep its old wording in "was".
 window.FN_RUSSIAN_LESSONS = [
   {
     "id": "russian-wishes",
@@ -1130,8 +1132,9 @@ window.FN_RUSSIAN_VOCAB = [
   },
   {
   "id": "ru-54",
-  "word": "Иди нахуй",
-  "en": "go fuck yourself (хуй = dick)"
+  "word": "Иди нахуй (хуй = dick)",
+  "en": "go fuck yourself",
+  "was": { "word": "Иди нахуй", "en": "go fuck yourself (хуй = dick)" }
   },
   {
   "id": "ru-55",
@@ -1160,8 +1163,9 @@ window.FN_RUSSIAN_VOCAB = [
   },
   {
   "id": "ru-60",
-  "word": "кроссовки и носки",
-  "en": "sneakers and socks (я носил двое носков)"
+  "word": "кроссовки и носки (я носил двое носков)",
+  "en": "sneakers and socks",
+  "was": { "word": "кроссовки и носки", "en": "sneakers and socks (я носил двое носков)" }
   },
   {
   "id": "ru-61",
@@ -1280,13 +1284,15 @@ window.FN_RUSSIAN_VOCAB = [
   },
   {
   "id": "ru-84",
-  "word": "Несомне́нно",
-  "en": "Без сомнений"
+  "word": "Несомне́нно (= Без сомнений)",
+  "en": "undoubtedly, without a doubt",
+  "was": { "word": "Несомне́нно", "en": "Без сомнений" }
   },
   {
   "id": "ru-85",
-  "word": "морж",
-  "en": "кто-то, кому нравится купаться в ледяно́й  (лидинОй) воде"
+  "word": "морж (кто-то, кому нравится купаться в ледяно́й (лидинОй) воде)",
+  "en": "a walrus; a winter swimmer",
+  "was": { "word": "морж", "en": "кто-то, кому нравится купаться в ледяно́й  (лидинОй) воде" }
   },
   {
   "id": "ru-86",
@@ -1405,8 +1411,9 @@ window.FN_RUSSIAN_VOCAB = [
   },
   {
   "id": "ru-109",
-  "word": "трудится",
-  "en": "работает"
+  "word": "трудится (= работает)",
+  "en": "works, toils",
+  "was": { "word": "трудится", "en": "работает" }
   },
   {
   "id": "ru-110",
@@ -1520,12 +1527,14 @@ window.FN_RUSSIAN_VOCAB = [
   },
   {
   "id": "ru-132",
-  "word": "вдохновлять / вдохновить",
-  "en": "to inspire (imperfective / perfective; кого? на что?)"
+  "word": "вдохновлять / вдохновить (кого? на что?)",
+  "en": "to inspire",
+  "was": { "word": "вдохновлять / вдохновить", "en": "to inspire (imperfective / perfective; кого? на что?)" }
   },
   {
   "id": "ru-133",
-  "word": "притворяться / притвориться",
-  "en": "to pretend (+ instrumental: притворяться больным; or что…); also делать вид"
+  "word": "притворяться / притвориться (+ instrumental: притворяться больным; or что…; also делать вид)",
+  "en": "to pretend",
+  "was": { "word": "притворяться / притвориться", "en": "to pretend (+ instrumental: притворяться больным; or что…); also делать вид" }
   }
 ];

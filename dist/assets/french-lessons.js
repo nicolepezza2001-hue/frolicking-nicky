@@ -1,6 +1,8 @@
 // Nicky’s French notes, imported from her Notion page “French”. Preserve the source wording.
 // Each subject is a page on the French path (like the Silver Age lessons); “Past lessons” holds her class notes by date.
 // FN_FRENCH_VOCAB seeds the French vocabulary page (her “IMPORTANT” table).
+// Vocab rule (Nicky, Nov 2026): examples, alternatives and other French go in "word" (left); "en" (right) holds only the English
+// meaning, so hiding one side never gives the answer away. To fix a seed already in her list, keep its old wording in "was".
 window.FN_FRENCH_LESSONS = [
   {
     "id": "french-present-continuous",
@@ -3565,23 +3567,27 @@ window.FN_FRENCH_VOCAB = [
   },
   {
   "id": "fr-75",
-  "word": "faire semblant (de + infinitif)",
-  "en": "to pretend (prétendre means “to claim”)"
+  "word": "faire semblant (de + infinitif) (≠ prétendre, to claim)",
+  "en": "to pretend",
+  "was": { "word": "faire semblant (de + infinitif)", "en": "to pretend (prétendre means “to claim”)" }
   },
   {
   "id": "fr-76",
-  "word": "le pognon",
-  "en": "money (slang; also le fric, la thune)"
+  "word": "le pognon (also le fric, la thune)",
+  "en": "money (slang)",
+  "was": { "word": "le pognon", "en": "money (slang; also le fric, la thune)" }
   },
   {
   "id": "fr-77",
-  "word": "dingue",
-  "en": "crazy, amazing (slang: C’est dingue !)"
+  "word": "dingue (C’est dingue !)",
+  "en": "crazy, amazing (slang)",
+  "was": { "word": "dingue", "en": "crazy, amazing (slang: C’est dingue !)" }
   },
   {
   "id": "fr-78",
-  "word": "le boulot",
-  "en": "work, a job (slang; bosser: to work)"
+  "word": "le boulot (verb: bosser)",
+  "en": "work, a job (slang)",
+  "was": { "word": "le boulot", "en": "work, a job (slang; bosser: to work)" }
   },
   {
   "id": "fr-79",
@@ -3590,18 +3596,21 @@ window.FN_FRENCH_VOCAB = [
   },
   {
   "id": "fr-80",
-  "word": "un gars",
-  "en": "a guy (slang; also un mec)"
+  "word": "un gars (also un mec)",
+  "en": "a guy (slang)",
+  "was": { "word": "un gars", "en": "a guy (slang; also un mec)" }
   },
   {
   "id": "fr-81",
-  "word": "un flic",
-  "en": "a cop (slang; verlan: un keuf)"
+  "word": "un flic (verlan: un keuf)",
+  "en": "a cop (slang)",
+  "was": { "word": "un flic", "en": "a cop (slang; verlan: un keuf)" }
   },
   {
   "id": "fr-82",
-  "word": "une caisse",
-  "en": "a car (slang; also une bagnole)"
+  "word": "une caisse (also une bagnole)",
+  "en": "a car (slang)",
+  "was": { "word": "une caisse", "en": "a car (slang; also une bagnole)" }
   },
   {
   "id": "fr-83",
@@ -3610,8 +3619,9 @@ window.FN_FRENCH_VOCAB = [
   },
   {
   "id": "fr-84",
-  "word": "s’éloigner de",
-  "en": "to drift away from, to move away from (Ils se sont éloignés de moi)"
+  "word": "s’éloigner de (Ils se sont éloignés de moi)",
+  "en": "to drift away from, to move away from",
+  "was": { "word": "s’éloigner de", "en": "to drift away from, to move away from (Ils se sont éloignés de moi)" }
   },
   {
   "id": "fr-85",
@@ -3630,23 +3640,27 @@ window.FN_FRENCH_VOCAB = [
   },
   {
   "id": "fr-88",
-  "word": "être en colère contre",
-  "en": "to be angry at (Je suis en colère contre lui)"
+  "word": "être en colère contre (Je suis en colère contre lui)",
+  "en": "to be angry at",
+  "was": { "word": "être en colère contre", "en": "to be angry at (Je suis en colère contre lui)" }
   },
   {
   "id": "fr-89",
-  "word": "je suis stressée",
-  "en": "I am stressed (stressé for a man)"
+  "word": "je suis stressée (stressé for a man)",
+  "en": "I am stressed",
+  "was": { "word": "je suis stressée", "en": "I am stressed (stressé for a man)" }
   },
   {
   "id": "fr-90",
-  "word": "blessant(e)",
-  "en": "hurtful (Ils disent des choses très blessantes)"
+  "word": "blessant(e) (Ils disent des choses très blessantes)",
+  "en": "hurtful",
+  "was": { "word": "blessant(e)", "en": "hurtful (Ils disent des choses très blessantes)" }
   },
   {
   "id": "fr-91",
-  "word": "ouvert(e) d’esprit",
-  "en": "open-minded (J’ai essayé d’être ouverte d’esprit)"
+  "word": "ouvert(e) d’esprit (J’ai essayé d’être ouverte d’esprit)",
+  "en": "open-minded",
+  "was": { "word": "ouvert(e) d’esprit", "en": "open-minded (J’ai essayé d’être ouverte d’esprit)" }
   },
   {
   "id": "fr-92",

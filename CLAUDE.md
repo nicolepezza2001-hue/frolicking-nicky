@@ -224,6 +224,9 @@ a separate Europe close-up, the map legend or the trip buttons under the map on 
   `fn-study-v1` under `vocab`. "Quiz me" runs up to ten words (either direction or mixed): she types the translation, Check shows the answer (lenient match, plus an "I was right" button); misses
   are counted in `fn-study-v1` under `quiz` and make a word come back more often. `FN_FRENCH_VOCAB` (her Notion "IMPORTANT" table) seeds the French list once
   (`seeded` in `fn-study-v1`), so words she removes or edits stay that way.
+  **Examples go on the left** (Nicky, Nov 2026): example sentences, alternatives, synonyms and any French/Russian
+  belong in `word`; `en` holds only the English meaning (short labels like "slang" are fine), so hiding one side never
+  gives the answer away. Correct a seed already in her list by keeping its old wording in `was`.
 - **Irregular verbs** (`#french-verbs`, `assets/french-verbs.js`; Nicky asked for it): a French path step before Vocabulary. 31
   irregular verbs, each a drop-down with its tables (présent, passé composé, imparfait, futur, conditionnel, subjonctif,
   passé simple), built from a few forms per verb (`VERBS`, `SUBJ`). "Test yourself": pick tenses, then one form at a time,
