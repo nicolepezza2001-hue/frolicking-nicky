@@ -94,4 +94,4 @@ Photos are credited Wikimedia Commons stock until Nicky sends her own.
 
 ## Mérida
 
-`/mexico/merida` and `/it/messico/merida` use the Mexico City format, built from the San Cristóbal page: data in `assets/merida.js` / `merida.it.js` (key `frolicking-nicky-merida-v1`), map links in the `meridaMapStops` block of `maps.js`. Two ★ Saturdays (Chichén Itzá with Cenote Ik Kil, and Uxmal); Celestún and El Cuyo sit under "If we have time". Food, cafés and coworking are in `OPTIONAL_IDS` and don’t count towards progress. Photos are credited Wikimedia Commons stock until Nicky sends her own.
+`/mexico/merida` and `/it/messico/merida` use the Mexico City format, built from the San Cristóbal page: data in `assets/merida.js` / `merida.it.js` (key `frolicking-nicky-merida-v1`), map links in the `meridaMapStops` block of `maps.js`. Chichén Itzá with Cenote Ik Kil is a Tuesday off (Daniele’s birthday), Uxmal a ★ Saturday, and one Saturday is still open; Celestún and El Cuyo sit under "If we have time". Food, cafés and coworking are in `OPTIONAL_IDS` and don’t count towards progress. Photos are credited Wikimedia Commons stock until Nicky sends her own.
