@@ -76,6 +76,8 @@ Italian copies and the best-time-to-visit data.
 
 ## Where things live
 
+- **Destination cards are in alphabetical order** by the title shown (Nicky, Nov 2026), on the home and My travels pages in both languages and in `trips.json`; a leading "Il"/"The" and accents are ignored. Slot new cards in where they belong, not at the end.
+
 - **Where I’ve been map** (home and My travels, EN + IT): `dist/assets/world-map.svg` and
   `world-map.it.svg`, generated from Natural Earth data. Under it, a "See all 41 countries" /
   "Vedi tutti i 41 paesi" drop-down lists every country by continent (written into the four pages;

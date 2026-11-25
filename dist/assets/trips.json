@@ -1,12 +1,39 @@
 [
   {
-    "country": "Austria",
-    "city": "Vienna",
-    "length": "3-week stay",
-    "url": "/austria/vienna",
-    "image": "vienna-church.jpeg",
-    "alt": "A church interior in Vienna, with Gothic arches, chandeliers and a carved stone staircase",
-    "desc": "Three weeks of exploring, arranged into four suggested days plus extra museum stops."
+    "country": "Slovakia",
+    "city": "Bratislava",
+    "length": "One day on foot",
+    "url": "/slovakia/bratislava",
+    "image": "bratislava.jpg",
+    "alt": "Bratislava Castle",
+    "desc": "Urban House brunch, Old Town wandering, castle views and flexible dinner choices."
+  },
+  {
+    "country": "Mexico",
+    "city": "Guanajuato",
+    "length": "One day",
+    "url": "/mexico/guanajuato",
+    "image": "/assets/gto-personal-facades.jpg",
+    "alt": "Yellow Guanajuato façades with flower-filled balconies",
+    "desc": "Colourful lanes, El Pípila views and market lunch. An unhurried day trip from San Miguel."
+  },
+  {
+    "country": "Japan",
+    "city": "Japan for first-timers",
+    "length": "About a month",
+    "url": "/japan",
+    "desc": "Tokyo, Kyoto, Osaka and a weekend in Takayama.",
+    "image": "japan-1000106035.jpeg",
+    "alt": "Snow-capped Mount Fuji across a lake"
+  },
+  {
+    "country": "Mexico",
+    "city": "Mérida",
+    "length": "2 weeks · planned",
+    "url": "/mexico/merida",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Calle_60_y_Calle_61%2C_M%C3%A9rida%2C_Yucat%C3%A1n.jpg/1280px-Calle_60_y_Calle_61%2C_M%C3%A9rida%2C_Yucat%C3%A1n.jpg",
+    "alt": "A street of green, peach and red colonial houses in the centre of Mérida",
+    "desc": "The old centre, Paseo de Montejo, free music in the squares and three days out: Uxmal, cenotes and Chichén Itzá."
   },
   {
     "country": "Mexico",
@@ -16,15 +43,6 @@
     "image": "bellas-artes.jpg",
     "alt": "The Palacio de Bellas Artes and its golden dome in Mexico City",
     "desc": "Slow afternoons, neighbourhood wandering, good food and two Saturday adventures."
-  },
-  {
-    "country": "Mexico",
-    "city": "San Miguel de Allende",
-    "length": "2 weeks · planned",
-    "url": "/mexico/san-miguel-de-allende",
-    "image": "/assets/sma-dusk.jpg",
-    "alt": "The Parroquia above a San Miguel lane at dusk",
-    "desc": "Rooftop coffees, cobbled wandering, a cooking class and two Saturdays out: Guanajuato, then horses and hot springs."
   },
   {
     "country": "Mexico",
@@ -55,12 +73,21 @@
   },
   {
     "country": "Mexico",
-    "city": "Mérida",
+    "city": "San Miguel de Allende",
     "length": "2 weeks · planned",
-    "url": "/mexico/merida",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Calle_60_y_Calle_61%2C_M%C3%A9rida%2C_Yucat%C3%A1n.jpg/1280px-Calle_60_y_Calle_61%2C_M%C3%A9rida%2C_Yucat%C3%A1n.jpg",
-    "alt": "A street of green, peach and red colonial houses in the centre of Mérida",
-    "desc": "The old centre, Paseo de Montejo, free music in the squares and three days out: Uxmal, cenotes and Chichén Itzá."
+    "url": "/mexico/san-miguel-de-allende",
+    "image": "/assets/sma-dusk.jpg",
+    "alt": "The Parroquia above a San Miguel lane at dusk",
+    "desc": "Rooftop coffees, cobbled wandering, a cooking class and two Saturdays out: Guanajuato, then horses and hot springs."
+  },
+  {
+    "country": "Austria",
+    "city": "Vienna",
+    "length": "3-week stay",
+    "url": "/austria/vienna",
+    "image": "vienna-church.jpeg",
+    "alt": "A church interior in Vienna, with Gothic arches, chandeliers and a carved stone staircase",
+    "desc": "Three weeks of exploring, arranged into four suggested days plus extra museum stops."
   },
   {
     "country": "Vietnam",
@@ -70,32 +97,5 @@
     "image": "vietnam-river-view.jpeg",
     "alt": "A river winding between green fields and limestone mountains",
     "desc": "Phu Quoc, Hanoi, Ninh Binh, Ha Long Bay, the Ha Giang Loop and Hoi An."
-  },
-  {
-    "country": "Japan",
-    "city": "Japan for first-timers",
-    "length": "About a month",
-    "url": "/japan",
-    "desc": "Tokyo, Kyoto, Osaka and a weekend in Takayama.",
-    "image": "japan-1000106035.jpeg",
-    "alt": "Snow-capped Mount Fuji across a lake"
-  },
-  {
-    "country": "Slovakia",
-    "city": "Bratislava",
-    "length": "One day on foot",
-    "url": "/slovakia/bratislava",
-    "image": "bratislava.jpg",
-    "alt": "Bratislava Castle",
-    "desc": "Urban House brunch, Old Town wandering, castle views and flexible dinner choices."
-  },
-  {
-    "country": "Mexico",
-    "city": "Guanajuato",
-    "length": "One day",
-    "url": "/mexico/guanajuato",
-    "image": "/assets/gto-personal-facades.jpg",
-    "alt": "Yellow Guanajuato façades with flower-filled balconies",
-    "desc": "Colourful lanes, El Pípila views and market lunch. An unhurried day trip from San Miguel."
   }
 ]
