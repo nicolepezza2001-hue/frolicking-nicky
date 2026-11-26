@@ -820,6 +820,233 @@ window.FN_SILVER_AGE_LESSONS = [
     ]
   },
   {
+    "id": "silver-age-bely",
+    "number": 4,
+    "title": "Andrey Bely",
+    "blocks": [
+      {
+        "type": "heading",
+        "text": "Life: the mathematician’s son"
+      },
+      {
+        "type": "note",
+        "text": "Andrey Bely (Андрей Белый, 1880–1934) is a major Russian Symbolist poet, novelist and literary theorist. “Andrey Bely” (Andrew White) is not his real name: he was born Boris Nikolaevich Bugaev, in Moscow, in 1880."
+      },
+      {
+        "type": "note",
+        "text": "His father, Nikolai Bugaev, was a famous mathematician, a professor at Moscow University, who married one of his students, twenty years younger than him. A crazy genius of a household, and a deeply cultured atmosphere to grow up in."
+      },
+      {
+        "type": "note",
+        "text": "Everyone expected Boris to become a mathematician too, but from the beginning he wanted to study literature instead."
+      },
+      {
+        "type": "note",
+        "text": "Unlike many writers of his generation, he never left Russia for good. He was fluent in English, French and German and could easily have emigrated, but he stayed: he felt he would not have been able to write outside Russia."
+      },
+      {
+        "type": "heading",
+        "text": "A generation that needed new ways"
+      },
+      {
+        "type": "note",
+        "text": "Bely was Blok’s exact contemporary (both born in 1880) and grew up in an age of experimentation. He was raised on 19th-century Realism, but when he turned twenty it was 1900: his generation felt the need for new ways of writing."
+      },
+      {
+        "type": "note",
+        "text": "The previous generation had been shaped by the emancipation of the serfs (1861) and the Great Reforms. The younger generation took those for granted and faced new challenges instead: above all the Revolution of 1905, then the First World War and the Revolution of 1917, which made people feel the old world was coming to an end."
+      },
+      {
+        "type": "note",
+        "text": "Before 1917, Russia had never really had a revolution, rather like Britain and unlike France. The one exception was the Decembrist revolt of 1825. There was a long internal stability, and it crumbled because of industrialisation."
+      },
+      {
+        "type": "note",
+        "text": "Russia industrialised faster than any other country, creating a new underprivileged class faster than ever. And because of urbanisation, the privileged and the underprivileged lived very close to each other. London, by contrast, was sharply divided between East and West, so the two worlds never came into contact."
+      },
+      {
+        "type": "note",
+        "text": "Nicholas II was a weak tsar, and by 1903 the situation was dire. Russia was the only absolute monarchy in Europe with no constitution and no parliament: a remnant of medieval times. After the Revolution of 1905 he signed the October Manifesto, and Russia became a constitutional monarchy."
+      },
+      {
+        "type": "note",
+        "text": "Dostoevsky (like Dickens in England) had already begun not only to observe inequality but to ask questions about it: why did Raskolnikov do what he did? The new generation went further, drawn to mysticism, forbidden things and experimentation of every kind, sexual too."
+      },
+      {
+        "type": "note",
+        "text": "Russian Symbolism grew out of all this, as part of the wider European modernist movement. The Silver Age was a time of literary experimentation, fascinated by mysticism, philosophy, myth, psychology and the possibilities of artistic form, and it rejected the idea that literature should simply reproduce observable reality."
+      },
+      {
+        "type": "heading",
+        "text": "Symbolism: the world beyond appearance"
+      },
+      {
+        "type": "note",
+        "text": "Look at Mikhail Vrubel’s Demon Seated (1890), a Symbolist painting. On the first level it is simply a man sitting. But beyond him lies a deeper, metaphysical reality: what is that background? Is it hell or heaven?"
+      },
+      {
+        "type": "note",
+        "text": "That is the Symbolist idea: visible reality is only one level of existence, and behind it lies a spiritual world. The artist doesn’t merely describe the world but reveals its hidden meanings through symbols, which connect the material and the spiritual, the individual and the universal, the present and the eternal."
+      },
+      {
+        "type": "note",
+        "text": "A symbol is not just an object standing for a single idea: it can generate many interconnected meanings."
+      },
+      {
+        "type": "note",
+        "text": "Bely was especially interested in the relationship between words (artistic form) and spiritual transformation."
+      },
+      {
+        "type": "heading",
+        "text": "Solovyov, Sophia and the throuple"
+      },
+      {
+        "type": "note",
+        "text": "Bely’s private life was part of the rebellion. Writers used to be conventional family men; Bely was part of a throuple with Blok and Blok’s wife, Lyubov Mendeleeva."
+      },
+      {
+        "type": "note",
+        "text": "He began with a collection of poems, Gold in Azure (Золото в лазури, 1904): the title evokes icons, religious paintings with their gold backgrounds. It made his name as an experimental poet."
+      },
+      {
+        "type": "note",
+        "text": "They all loved Italy, as Gogol had before them (Gogol is a predecessor of Symbolism)."
+      },
+      {
+        "type": "note",
+        "text": "Bely was deeply influenced by Vladimir Solovyov, especially his idea of the unity of the material and spiritual worlds. For Solovyov, Sophia (the Wisdom of God) is the image of the Eternal Feminine: she unites the material and the spiritual world and brings forth spiritual renewal, and woman is its earthly representation."
+      },
+      {
+        "type": "note",
+        "text": "Many of these artists leaned towards Catholicism. It started with Gogol, who was half Polish, lived in Rome and wanted to convert."
+      },
+      {
+        "type": "note",
+        "text": "Both Blok and Bely saw Lyubov as the living representation of this figure, so Bely couldn’t have sex with her either. The three of them went out together, but she was very frustrated, so she had affairs with other people; Blok and Bely had affairs with other women too."
+      },
+      {
+        "type": "heading",
+        "text": "Music and the experiment in form"
+      },
+      {
+        "type": "note",
+        "text": "Like Blok, Bely moved away from realism towards musicality and experimentation. He believed literature could carry meaning through sound, rhythm and structure, not only through words and images."
+      },
+      {
+        "type": "note",
+        "text": "His early prose works, the Symphonies (Симфонии, 1902–1908), are a hybrid genre between poetry and prose: unusual syntax, rhythm, repetition, alliteration, recurring motifs and variations, like a musical composition. In this prose, form matters as much as meaning: a repeated sound or phrase can create an emotional or symbolic effect before you even understand what it means."
+      },
+      {
+        "type": "note",
+        "text": "Music was going through the same experiment at the same time: Stravinsky, Scriabin, early Shostakovich."
+      },
+      {
+        "type": "note",
+        "text": "That is why Bely is so hard to translate, like Joyce."
+      },
+      {
+        "type": "heading",
+        "text": "The Silver Dove (1909)"
+      },
+      {
+        "type": "note",
+        "text": "The Silver Dove (Серебряный голубь, 1909) is Bely’s first novel. Its protagonist, Pyotr Daryalsky, is a Moscow intellectual who goes to the Russian countryside."
+      },
+      {
+        "type": "note",
+        "text": "Daryalsky realises it is nothing like the Tolstoyan countryside: the people are strange, and he gets involved with a mystical sect, in which a woman represents Christ. He is drawn in by his dissatisfaction with modern intellectual life."
+      },
+      {
+        "type": "note",
+        "text": "The novel asks: what is spiritual renewal, and is it possible? Or are you just destroying yourself and others? The modern intellectual can’t handle this world and can’t get out of it; he is forced to do horrible things."
+      },
+      {
+        "type": "note",
+        "text": "The dove is the Holy Spirit. Nobody had written about these things before: Bely opened a can of worms, and readers were fascinated. At its centre is the clash between modern, rational, educated culture and the irrational, mystical world of popular Russian religion."
+      },
+      {
+        "type": "heading",
+        "text": "Petersburg (1913–1914)"
+      },
+      {
+        "type": "note",
+        "text": "Petersburg (Петербург) was serialised in 1913–1914 (in book form in 1916, revised in 1922). It was written in the years around the Revolution of 1905 and is set in the imperial capital during that unrest."
+      },
+      {
+        "type": "note",
+        "text": "The plot: Senator Apollon Apollonovich Ableukhov and his son Nikolai, who becomes involved in a revolutionary conspiracy and is ordered to assassinate his father with a bomb. A conflict between ideological and family obligations."
+      },
+      {
+        "type": "note",
+        "text": "Petersburg is an unconventional city, where all the weird things in Russian literature happen: Gogol wrote about it, and it is the city of Crime and Punishment."
+      },
+      {
+        "type": "note",
+        "text": "It is named after Peter the Great, and after St Peter, but in the novel the city is not holy: it is just “Petersburg”, not Sankt-Peterburg."
+      },
+      {
+        "type": "note",
+        "text": "Peter the Great was considered a strange man: manic-depressive, epileptic, 203 cm tall. The city was raised by the will of one manic person, and it became a great grave (thousands died building it). Then came the Decembrist revolt there, and the unrest of the early 1900s."
+      },
+      {
+        "type": "note",
+        "text": "It is a psychologically unstable place, climate included: its relationship with the river and the sea is precarious, and it still floods today."
+      },
+      {
+        "type": "note",
+        "text": "The ground itself is unstable: when they tried to build a metro in the 1870s it was a catastrophe, and it is still precarious now. Unlike Venice, the city has no wooden foundations."
+      },
+      {
+        "type": "note",
+        "text": "In the novel the city is both a real place (the second largest city in Europe after London) and a political centre, but also the product of troubled consciousnesses: everyone in the novel has their own image of the city. It is where history, politics and psychological instability meet."
+      },
+      {
+        "type": "note",
+        "text": "Nikolai is an unreliable narrator. The narrative jumps quickly between characters, perspectives and levels of consciousness, and the borders between reality, memory, fantasy and hallucination keep dissolving."
+      },
+      {
+        "type": "note",
+        "text": "The fragmented structure mirrors the breakdown of the political and social order, and the language mixes satire, philosophy, grotesque images and musical patterns. The form of the novel embodies the historical crisis it describes."
+      },
+      {
+        "type": "heading",
+        "text": "Later life"
+      },
+      {
+        "type": "note",
+        "text": "The Revolution of 1917 changed how Bely understood history and spiritual renewal. He became a follower of Rudolf Steiner and his anthroposophy."
+      },
+      {
+        "type": "note",
+        "text": "His later works explore memory, childhood and language: Kotik Letaev (Котик Летаев, 1917–1918) rebuilds the world of early childhood with experimental techniques, and Moscow (Москва, 1926–1932) returns to conspiracy, intellectual crisis and the instability of modern life. His constant question: can individual consciousness find spiritual freedom in a world shaped by historical catastrophe?"
+      },
+      {
+        "type": "note",
+        "text": "He had nothing to do with the Bolsheviks. Interestingly, they never touched him: he stayed outside politics before, during and after the Revolution, and lived decently as a translator. Intellectuals revered him."
+      },
+      {
+        "type": "note",
+        "text": "He died in 1934: the true end of the Symbolist era."
+      },
+      {
+        "type": "heading",
+        "text": "Bely and the modernist novel"
+      },
+      {
+        "type": "note",
+        "text": "Everything written after the 1920s has been influenced by Bely. He challenged the assumption that literature has to represent reality perfectly: instead, writers experiment, in many different ways, with rhythm, syntax, perspective and structure."
+      },
+      {
+        "type": "note",
+        "text": "When Ulysses was published in 1922, Russian intellectuals read it and thought it sounded familiar. Yet Joyce couldn’t have read Bely: Petersburg hadn’t been translated."
+      },
+      {
+        "type": "note",
+        "text": "In both, form is also function: the form is the goal, a way of demonstrating that you can write in a different way. Bely makes literary form itself a subject of philosophical and historical inquiry, and that is why he still matters."
+      }
+    ]
+  },
+  {
     "id": "silver-age-bely-ivanov",
     "kicker": "Study notes · Silver Age poetry",
     "title": "Andrei Bely & Vyacheslav Ivanov",

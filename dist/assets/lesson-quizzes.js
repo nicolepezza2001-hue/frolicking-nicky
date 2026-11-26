@@ -507,6 +507,26 @@ window.FN_LESSON_QUIZZES = {
     ['Who walks in front of the twelve guards, in white?', 'Jesus / Christ / Jesus Christ / Христос'],
     ['The year Blok died', '1921']
   ],
+  'silver-age-bely': [
+    ['Andrey Bely’s real name', 'Boris Bugaev / Boris Nikolaevich Bugaev / Bugaev'],
+    ['What was Bely’s father?', 'a mathematician / mathematician / a famous mathematician'],
+    ['The year Bely and Blok were both born', '1880'],
+    ['The document that made Russia a constitutional monarchy in 1905', 'the October Manifesto / October Manifesto'],
+    ['The Symbolist painter of Demon Seated', 'Mikhail Vrubel / Vrubel / Vrubel’'],
+    ['Bely’s first poetry collection (1904)', 'Gold in Azure / Золото в лазури'],
+    ['For Solovyov, Sophia is the image of the Eternal…', 'Feminine / Eternal Feminine'],
+    ['Bely’s early musical prose works are called…', 'Symphonies / the Symphonies / Симфонии'],
+    ['Bely’s first novel (1909)', 'The Silver Dove / Silver Dove / Серебряный голубь'],
+    ['In The Silver Dove, the dove stands for…', 'the Holy Spirit / Holy Spirit'],
+    ['Daryalsky gets involved with a …', 'sect / mystical sect / a sect'],
+    ['In Petersburg, the son is ordered to kill…', 'his father / father / the senator / the father'],
+    ['The senator’s son in Petersburg', 'Nikolai / Nikolai Ableukhov'],
+    ['Petersburg is named after Peter the Great, but also after…', 'St Peter / Saint Peter / Peter'],
+    ['Bely became a follower of Rudolf …', 'Steiner'],
+    ['How did Bely earn his living under the Bolsheviks?', 'as a translator / translator / translating'],
+    ['The year Bely died, the true end of Symbolism', '1934'],
+    ['The novel of 1922 that sounded familiar to Russian intellectuals', 'Ulysses']
+  ],
   'silver-age-bely-ivanov': [
     ['Ivanov’s salon on Tavricheskaya Street was called…', 'the Tower / Башня / Tower'],
     ['The philosopher behind the younger Symbolists', 'Vladimir Solovyov / Solovyov'],
