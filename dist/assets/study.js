@@ -71,6 +71,9 @@
       name: ['Russian', 'Russo'],
       why: ['B2 and climbing: my own notes and words, then the finer points (participles, prefixes, register).',
             'B2 e oltre: i miei appunti e le mie parole, poi le finezze (participi, prefissi, registro).'],
+      // The book Nicky is reading (she asked, Nov 2026); a gentle once-a-day reminder on the painting points here too
+      reading: { id: 'gogol-nose', title: 'Gogol, «Нос»', sub: 'The Nose', note: 'Russian beside English, page by page.',
+                 href: 'https://bilinguator.com/en/online?book=1&page=1' },
       path: [ // Each opens its page in FN_RUSSIAN_LESSONS (russian-lessons.js), in order: Nicky's three Notion pages, then study notes
         ['Wishing someone well', 'Хороших выходных! Хорошего дня!'],
         ['Describing a picture', 'На картине изображено…'],
@@ -549,6 +552,14 @@
     const counter = el('p', 'fn-study-count group-count');
     head.append(h2, counter); sec.append(head);
     const why = pick(t.why); if (why) sec.append(el('p', 'fn-study-why', why));
+    if (t.reading) {
+      const r = t.reading, box = el('div', 'fn-reading');
+      box.append(el('p', 'fn-study-label', state.remind?.[r.id]?.done ? 'Read' : 'Reading now'));
+      const a = el('a', 'fn-reading-title'); a.href = r.href; a.target = '_blank'; a.rel = 'noopener noreferrer';
+      const ru = el('span', null, r.title); ru.lang = 'ru';
+      a.append(ru, el('em', null, ' · ' + r.sub + ' ↗︎'));
+      box.append(a, el('small', null, r.note)); sec.append(box);
+    }
 
     const grid = el('div', 'fn-study-grid');
     const left = el('div');
@@ -851,7 +862,37 @@
     // On a narrow (portrait) screen the painting is wider than the screen: start in the middle, swipe for the rest
     if (scene && !isView) requestAnimationFrame(() => { scene.scrollLeft = (scene.scrollWidth - scene.clientWidth) / 2; });
   };
-  addEventListener('hashchange', show); show();
+  // A gentle reminder on the painting, at most once a day, for the book she is reading (Russian page, "Reading now").
+  // Nicky asked for it; "Done, stop reminding me" ends it. Kept in fn-study-v1 under remind, so it syncs.
+  const reminder = (() => {
+    const r = TOPICS.find(t => t.reading)?.reading; if (!r || !scene) return null;
+    state.remind ||= {};
+    const mem = () => (state.remind[r.id] ||= {});
+    const today = () => { const d = new Date(); return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`; };
+    let card = null;
+    const close = () => { if (!card) return; const c = card; card = null; c.classList.remove('is-shown'); setTimeout(() => c.remove(), 600); };
+    const open = () => {
+      if (card || mem().done || mem().day === today()) return;
+      mem().day = today(); save();
+      card = el('aside', 'fn-reminder'); card.setAttribute('role', 'status'); card.setAttribute('aria-label', 'A reminder');
+      const line = el('p'); const ru = el('span', null, r.title); ru.lang = 'ru';
+      line.append('A few pages of ', ru, ' today?');
+      const go = el('a', 'fn-reminder-go', 'Read ' + r.sub + ' ↗︎'); go.href = r.href; go.target = '_blank'; go.rel = 'noopener noreferrer';
+      go.addEventListener('click', close);
+      const later = el('button', 'fn-reminder-btn', 'Not now'); later.type = 'button'; later.addEventListener('click', close);
+      const done = el('button', 'fn-reminder-btn', 'Done, stop reminding me'); done.type = 'button';
+      done.addEventListener('click', () => {
+        mem().done = true; save(); close();
+        const label = document.querySelector('#russian .fn-reading .fn-study-label'); if (label) label.textContent = 'Read';
+      });
+      const row = el('div', 'fn-reminder-row'); row.append(go, later, done);
+      card.append(line, row); document.body.append(card);
+      setTimeout(() => card?.classList.add('is-shown'), 900); // after the painting settles
+    };
+    return { open, close };
+  })();
+  const showWithReminder = () => { show(); if (scene && !scene.hidden) reminder?.open(); else reminder?.close(); };
+  addEventListener('hashchange', showWithReminder); showWithReminder();
 
   // A new topic: a name and, optionally, one line on why
   const nf = document.getElementById('fn-study-new');
