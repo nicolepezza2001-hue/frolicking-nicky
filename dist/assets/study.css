@@ -537,7 +537,7 @@ article.fn-lesson[id^="quote-"] .fn-lesson-notes p.fn-verse-ref{margin:1.7em 0 .
 article.fn-lesson[id^="quote-"] .fn-lesson-notes p.fn-verse-ref+p{margin-top:0}
 .fn-verse-ref button{background:none;border:0;padding:0;cursor:inherit;color:var(--st-purple);font:600 .78rem/1.4 Georgia,serif;letter-spacing:.14em;text-transform:uppercase;opacity:.62;border-bottom:1px dotted currentColor;transition:opacity .3s}
 .fn-verse-ref button:hover,.fn-verse-ref button:focus-visible{opacity:1;outline:none}
-.fn-lesson-notes p.fn-verse{cursor:inherit}
+.fn-lesson-notes p.fn-verse{cursor:pointer}
 .fn-verse-dialog{max-width:520px;width:calc(100% - 32px);max-height:85vh;overflow:auto;border:1px solid #2b1e3855;border-radius:12px;background:#faeac0;color:var(--st-purple);padding:0;box-shadow:0 30px 80px #000000aa}
 .fn-verse-dialog::backdrop{background:#150e1dbb}
 .fn-verse-inner{position:relative;padding:26px 28px 24px;font:17px/1.7 Georgia,serif}
@@ -550,3 +550,20 @@ article.fn-lesson[id^="quote-"] .fn-lesson-notes p.fn-verse-ref+p{margin-top:0}
 .fn-verse-dialog p.fn-verse-more{margin-top:14px;font-size:.92em}
 .fn-verse-more a{color:var(--st-purple);text-decoration:none;border-bottom:1px solid #2b1e3866}
 .fn-verse-more a:hover,.fn-verse-more a:focus-visible{border-bottom-color:currentColor;outline:none}
+/* Reading now (Russian page) and its once-a-day reminder on the painting */
+.fn-reading{max-width:660px;margin:-14px 0 34px}
+.fn-reading .fn-study-label{display:table;margin-bottom:10px}
+.fn-reading-title{display:inline-block;color:var(--st-yellow);text-decoration:none;font-size:1.35rem;border-bottom:1px solid #f3d99555}
+.fn-reading-title:hover{border-bottom-color:var(--st-yellow)}
+.fn-reading-title em{color:var(--st-cream);font-size:1.05rem}
+.fn-reading small{display:block;color:var(--st-soft);font-style:italic;margin-top:4px}
+.fn-reminder{position:fixed;z-index:20;left:50%;bottom:max(22px,env(safe-area-inset-bottom));transform:translate(-50%,12px);width:min(440px,calc(100vw - 32px));box-sizing:border-box;padding:16px 22px 14px;background:#150e1de6;border:1px solid var(--st-line);border-radius:14px;box-shadow:0 18px 50px #000000a6,inset 0 0 60px #f3d9950a;color:var(--st-cream);font:400 1.05rem/1.45 'Cormorant Garamond',Georgia,serif;text-align:center;opacity:0;pointer-events:none;transition:opacity .6s ease,transform .6s ease;-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px)}
+.fn-reminder.is-shown{opacity:1;transform:translate(-50%,0);pointer-events:auto}
+.fn-reminder p{margin:0 0 8px;font-style:italic}
+.fn-reminder p span{font-style:normal;color:var(--st-yellow)}
+.fn-reminder-row{display:flex;flex-wrap:wrap;justify-content:center;align-items:baseline;gap:6px 18px}
+.fn-reminder-go{color:var(--st-yellow);text-decoration:none;border-bottom:1px solid #f3d99555}
+.fn-reminder-go:hover{border-bottom-color:var(--st-yellow)}
+.fn-reminder-btn{background:none;border:0;padding:0;color:var(--st-soft);font:italic 400 .95rem 'Cormorant Garamond',Georgia,serif;cursor:pointer}
+.fn-reminder-btn:hover{color:var(--st-yellow)}
+@media (prefers-reduced-motion:reduce){.fn-reminder{transition:none}}

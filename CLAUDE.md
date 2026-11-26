@@ -269,6 +269,11 @@ a separate Europe close-up, the map legend or the trip buttons under the map on 
   `by-heart.js`), lesson-quiz questions she missed that have come back, and vocabulary words she keeps missing. A small "Today"
   link sits at the right of the bar on the study's pages. Missed lesson-quiz questions are kept in `fn-study-v1` under `review`
   (by lesson id) and come back after 2, then 4, then 8 days, first in the next quiz on that lesson; a right answer moves them on.
+- **Reading now** (Nicky asked, Nov 2026): the Russian page shows the book she is reading under its opening line
+  (`reading` in its `TOPICS` entry: Gogol's «Нос», bilingual on Bilinguator). On the painting a small card fades in at the
+  bottom, at most once a day, asking her to read a few pages: "Read The Nose", "Not now", "Done, stop reminding me".
+  It is the only thing ever shown over the painting, and only until dismissed. Kept in `fn-study-v1` under `remind` (synced).
+  A new book = change `reading` (new `id`, so the reminder starts again).
 - **Search and Surprise me** (top of Quotes, `assets/quotes.js`): search finds words in every quote, author and book (up to 60
   shown); a result opens its book page at that quote with a soft glow. "Surprise me" opens a random quote the same way.
 - **Read aloud**: a small fine-line speaker beside each poem's and quote's Learn by heart link, in the read step and after
